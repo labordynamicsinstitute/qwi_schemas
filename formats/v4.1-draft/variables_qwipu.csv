@@ -1,0 +1,33 @@
+Indicator Variable,Status Flag,Indicator Name
+Emp,sEmp,Beginning-of-Quarter Employment: Counts
+EmpEnd,sEmpEnd,End-of-Quarter Employment: Counts
+EmpS,sEmpS,Full-Quarter Employment (Stable): Counts
+EmpSpv,sEmpSpv,Full-Quarter Employment in the Previous Quarter: Counts
+EmpTotal,sEmpTotal,Employment - Reference Quarter: Counts
+HirA,sHirA,Hires All: Counts (Accessions)
+HirN,sHirN,Hires New: Counts
+HirR,sHirR,Hires Recalls: Counts
+Sep,sSep,Separations: Counts
+HirAEnd,sHirAEnd,End-of-Quarter Hires
+HirAEndR,sHirAEndR,End-of-Quarter Hiring Rate
+SepBeg,sSepBeg,Beginning-of-Quarter Separations
+SepBegR,sSepBegR,Beginning-of-Quarter Separation Rate
+HirAs,sHirAs,Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+HirNs,sHirNs,Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+SepS,sSepS,Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+SepSnx,sSepSnx,Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
+TurnOvrS,sTurnOvrS,Turnover (Stable)
+FrmJbGn,sFrmJbGn,Firm Job Gains: Counts (Job Creation)
+FrmJobLs,sFrmJobLs,Firm Job Loss: Counts (Job Destruction)
+FrmJbC,sFrmJbC,Firm Job Change: Net Change
+HirAEndRepl,sHirAEndRepl,Replacement Hires
+HirAEndReplr,sHirAEndReplr,Replacement Hiring Rate
+FrmJbGnS,sFrmJbGnS,Firm Job Gains (Stable): Counts
+FrmJbLsS,sFrmJbLsS,Firm Job Loss (Stable): Counts
+FrmJbCS,sFrmJbCS,Job Change (Stable): Net Change
+EarnS,sEarnS,Full Quarter Employment (Stable): Average Monthly Earnings
+EarnBeg,sEarnBeg,Beginning-of-Quarter Employment: Average Monthly Earnings
+EarnHirAS,sEarnHirAS,Hires All (Stable): Average Monthly Earnings
+EarnHireNS,sEarnHireNS,Hires New (Stable): Average Monthly Earnings
+EarnSepS,sEarnSepS,Separations (Stable): Average Monthly Earnings
+Payroll,sPayroll,Total Quarterly Payroll: Sum

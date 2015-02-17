@@ -1,0 +1,9 @@
+type,Description,Explanation,url
+qwi,Quarterly Workforce Indicators Public Use Counts (QWIPU),"The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).",http://lehd.ces.census.gov/data/#qwi
+lodes,LEHD Origin-Destination Employment Statistics (LODES),"LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.",http://lehd.ces.census.gov/data/#lodes
+j2j,Job-to-Job Flows Counts (J2J),"Counts of hires and separations, to and from employment and non-employment, summed across all establishments",tbd
+j2jod,Job-to-Job Flows Origin-Destination,"Origin and destination flows and earnings, tabulated by the destination establishment",tbd,
+j2jr,Job-to-Job Flows Rates,"Hiring and separation rates, to and from employment and nonemployment, summed across all establishments",tbd,
+qwir,Quarterly Workforce Indicators Public Use Rates,"Rates for flow variables in the Quarterly Workforce Indicators (QWI)",tbd
+qwiv,Quarterly Workforce Indicators Variability Measures,"Variability measures for Quarterly Workforce Indicators (QWI)",tbd
+

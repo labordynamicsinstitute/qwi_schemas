@@ -1,0 +1,109 @@
+agg_level,worker_char,firm_char,firm_orig_char,j2j,j2jr,j2jod,qwi,geo_level,ind_level,by_ownercode,by_sex,by_agegrp,by_race,by_ethnicity,by_education,by_firmage,by_firmsize
+1,,,,0,1,0,0,N,A,0,0,0,0,0,0,0,0
+2,Ethnicity,,,0,1,0,0,N,A,0,0,0,0,1,0,0,0
+3,Race,,,0,1,0,0,N,A,0,0,0,1,0,0,0,0
+4,Race * Ethnicity,,,0,1,0,0,N,A,0,0,0,1,1,0,0,0
+5,Education,,,0,1,0,0,N,A,0,0,0,0,0,1,0,0
+6,Age,,,0,1,0,0,N,A,0,0,1,0,0,0,0,0
+7,Sex,,,0,1,0,0,N,A,0,1,0,0,0,0,0,0
+8,Sex * Education,,,0,1,0,0,N,A,0,1,0,0,0,1,0,0
+9,Sex * Age,,,0,1,0,0,N,A,0,1,1,0,0,0,0,0
+10,,Firm Size,,0,1,0,0,N,A,0,0,0,0,0,0,0,1
+11,Ethnicity,Firm Size,,0,0,0,0,N,A,0,0,0,0,1,0,0,1
+12,Race,Firm Size,,0,0,0,0,N,A,0,0,0,1,0,0,0,1
+13,Race * Ethnicity,Firm Size,,0,0,0,0,N,A,0,0,0,1,1,0,0,1
+14,Education,Firm Size,,0,0,0,0,N,A,0,0,0,0,0,1,0,1
+15,Age,Firm Size,,0,0,0,0,N,A,0,0,1,0,0,0,0,1
+16,Sex,Firm Size,,0,0,0,0,N,A,0,1,0,0,0,0,0,1
+17,Sex * Education,Firm Size,,0,0,0,0,N,A,0,1,0,0,0,1,0,1
+18,Sex * Age,Firm Size,,0,0,0,0,N,A,0,1,1,0,0,0,0,1
+19,,Firm Age,,0,1,0,0,N,A,0,0,0,0,0,0,1,0
+20,Ethnicity,Firm Age,,0,0,0,0,N,A,0,0,0,0,1,0,1,0
+21,Race,Firm Age,,0,0,0,0,N,A,0,0,0,1,0,0,1,0
+22,Race * Ethnicity,Firm Age,,0,0,0,0,N,A,0,0,0,1,1,0,1,0
+23,Education,Firm Age,,0,0,0,0,N,A,0,0,0,0,0,1,1,0
+24,Age,Firm Age,,0,0,0,0,N,A,0,0,1,0,0,0,1,0
+25,Sex,Firm Age,,0,0,0,0,N,A,0,1,0,0,0,0,1,0
+26,Sex * Education,Firm Age,,0,0,0,0,N,A,0,1,0,0,0,1,1,0
+27,Sex * Age,Firm Age,,0,0,0,0,N,A,0,1,1,0,0,0,1,0
+28,,NAICS Sector,,0,1,0,0,N,S,0,0,0,0,0,0,0,0
+29,Ethnicity,NAICS Sector,,0,0,0,0,N,S,0,0,0,0,1,0,0,0
+30,Race,NAICS Sector,,0,0,0,0,N,S,0,0,0,1,0,0,0,0
+31,Race * Ethnicity,NAICS Sector,,0,0,0,0,N,S,0,0,0,1,1,0,0,0
+32,Education,NAICS Sector,,0,0,0,0,N,S,0,0,0,0,0,1,0,0
+33,Age,NAICS Sector,,0,0,0,0,N,S,0,0,1,0,0,0,0,0
+34,Sex,NAICS Sector,,0,0,0,0,N,S,0,1,0,0,0,0,0,0
+35,Sex * Education,NAICS Sector,,0,0,0,0,N,S,0,1,0,0,0,1,0,0
+36,Sex * Age,NAICS Sector,,0,0,0,0,N,S,0,1,1,0,0,0,0,0
+37,,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,0,0,0,0,0,1
+38,Ethnicity,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,0,0,1,0,0,1
+39,Race,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,0,1,0,0,0,1
+40,Race * Ethnicity,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,0,1,1,0,0,1
+41,Education,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,0,0,0,1,0,1
+42,Age,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,0,1,0,0,0,0,1
+43,Sex,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,1,0,0,0,0,0,1
+44,Sex * Education,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,1,0,0,0,1,0,1
+45,Sex * Age,NAICS Sector * Firm Size,,0,0,0,0,N,S,0,1,1,0,0,0,0,1
+46,,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,0,0,0,0,1,0
+47,Ethnicity,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,0,0,1,0,1,0
+48,Race,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,0,1,0,0,1,0
+49,Race * Ethnicity,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,0,1,1,0,1,0
+50,Education,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,0,0,0,1,1,0
+51,Age,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,0,1,0,0,0,1,0
+52,Sex,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,1,0,0,0,0,1,0
+53,Sex * Education,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,1,0,0,0,1,1,0
+54,Sex * Age,NAICS Sector * Firm Age,,0,0,0,0,N,S,0,1,1,0,0,0,1,0
+55,,State,,0,0,0,0,S,A,0,0,0,0,0,0,0,0
+56,Ethnicity,State,,0,0,0,0,S,A,0,0,0,0,1,0,0,0
+57,Race,State,,0,0,0,0,S,A,0,0,0,1,0,0,0,0
+58,Race * Ethnicity,State,,0,0,0,0,S,A,0,0,0,1,1,0,0,0
+59,Education,State,,0,0,0,0,S,A,0,0,0,0,0,1,0,0
+60,Age,State,,0,0,0,0,S,A,0,0,1,0,0,0,0,0
+61,Sex,State,,0,0,0,0,S,A,0,1,0,0,0,0,0,0
+62,Sex * Education,State,,0,0,0,0,S,A,0,1,0,0,0,1,0,0
+63,Sex * Age,State,,0,0,0,0,S,A,0,1,1,0,0,0,0,0
+64,,State * Firm Size,,0,0,0,0,S,A,0,0,0,0,0,0,0,1
+65,Ethnicity,State * Firm Size,,0,0,0,0,S,A,0,0,0,0,1,0,0,1
+66,Race,State * Firm Size,,0,0,0,0,S,A,0,0,0,1,0,0,0,1
+67,Race * Ethnicity,State * Firm Size,,0,0,0,0,S,A,0,0,0,1,1,0,0,1
+68,Education,State * Firm Size,,0,0,0,0,S,A,0,0,0,0,0,1,0,1
+69,Age,State * Firm Size,,0,0,0,0,S,A,0,0,1,0,0,0,0,1
+70,Sex,State * Firm Size,,0,0,0,0,S,A,0,1,0,0,0,0,0,1
+71,Sex * Education,State * Firm Size,,0,0,0,0,S,A,0,1,0,0,0,1,0,1
+72,Sex * Age,State * Firm Size,,0,0,0,0,S,A,0,1,1,0,0,0,0,1
+73,,State * Firm Age,,0,0,0,0,S,A,0,0,0,0,0,0,1,0
+74,Ethnicity,State * Firm Age,,0,0,0,0,S,A,0,0,0,0,1,0,1,0
+75,Race,State * Firm Age,,0,0,0,0,S,A,0,0,0,1,0,0,1,0
+76,Race * Ethnicity,State * Firm Age,,0,0,0,0,S,A,0,0,0,1,1,0,1,0
+77,Education,State * Firm Age,,0,0,0,0,S,A,0,0,0,0,0,1,1,0
+78,Age,State * Firm Age,,0,0,0,0,S,A,0,0,1,0,0,0,1,0
+79,Sex,State * Firm Age,,0,0,0,0,S,A,0,1,0,0,0,0,1,0
+80,Sex * Education,State * Firm Age,,0,0,0,0,S,A,0,1,0,0,0,1,1,0
+81,Sex * Age,State * Firm Age,,0,0,0,0,S,A,0,1,1,0,0,0,1,0
+82,,State * NAICS Sector,,0,0,0,0,S,S,0,0,0,0,0,0,0,0
+83,Ethnicity,State * NAICS Sector,,0,0,0,0,S,S,0,0,0,0,1,0,0,0
+84,Race,State * NAICS Sector,,0,0,0,0,S,S,0,0,0,1,0,0,0,0
+85,Race * Ethnicity,State * NAICS Sector,,0,0,0,0,S,S,0,0,0,1,1,0,0,0
+86,Education,State * NAICS Sector,,0,0,0,0,S,S,0,0,0,0,0,1,0,0
+87,Age,State * NAICS Sector,,0,0,0,0,S,S,0,0,1,0,0,0,0,0
+88,Sex,State * NAICS Sector,,0,0,0,0,S,S,0,1,0,0,0,0,0,0
+89,Sex * Education,State * NAICS Sector,,0,0,0,0,S,S,0,1,0,0,0,1,0,0
+90,Sex * Age,State * NAICS Sector,,0,0,0,0,S,S,0,1,1,0,0,0,0,0
+91,,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,0,0,0,0,0,1
+92,Ethnicity,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,0,0,1,0,0,1
+93,Race,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,0,1,0,0,0,1
+94,Race * Ethnicity,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,0,1,1,0,0,1
+95,Education,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,0,0,0,1,0,1
+96,Age,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,0,1,0,0,0,0,1
+97,Sex,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,1,0,0,0,0,0,1
+98,Sex * Education,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,1,0,0,0,1,0,1
+99,Sex * Age,State * NAICS Sector * Firm Size,,0,0,0,0,S,S,0,1,1,0,0,0,0,1
+100,,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,0,0,0,0,1,0
+101,Ethnicity,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,0,0,1,0,1,0
+102,Race,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,0,1,0,0,1,0
+103,Race * Ethnicity,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,0,1,1,0,1,0
+104,Education,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,0,0,0,1,1,0
+105,Age,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,0,1,0,0,0,1,0
+106,Sex,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,1,0,0,0,0,1,0
+107,Sex * Education,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,1,0,0,0,1,1,0
+108,Sex * Age,State * NAICS Sector * Firm Age,,0,0,0,0,S,S,0,1,1,0,0,0,1,0

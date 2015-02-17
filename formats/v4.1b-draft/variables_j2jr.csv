@@ -1,0 +1,17 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name
+MHireR,all_doma2_rate,sMHireR,Main Job Accessions - Rate
+MSepR,all_doms2_rate,sMSepR,Main Job Separations - Rate
+MJobStartR,all_dest_rate,sMJobStartRate,Main Job Starts - Rate 
+MJobEndR,all_orgin_rate,sMJobEndRate,Main Job Ends - Rate 
+EEHireR,eea_rate,sEEHireRate,EE Accessions - Rate 
+EESepR,ees_rate,sEESepR,EE Separations - Rate 
+AQHireR,aq_doma2_rate,sAQHireR,AQ Accessions - Short Duration Nonemployment Spell - Rate
+AQSepR,aq_doms2_rate,sAQSepR,AQ Separations - Short Duration Nonemployment Spell - Rate
+J2JHireR,eeall_doma2_rate,sJ2JHireR,Job-to-Job Accessions - Rate 
+J2JSepR,eeall_doms2_rate,sJ2JSepR,Job-to-Job Separations - Rate 
+NEHireR,ne_doma2_rate,sNEHireR,Main Job Accessions - Any Nonemployment Spell - Rate
+ENSepR,en_doms2_rate,sENSepR,Main Job Separations - Any Nonemployment Spell - Rate
+NEPersistR,ne2_doma2_rate,sNEPersistR,Main Job Accessions - Persistent Nonemployment Spell - Rate
+ENPersistR,en2_doms2_rate,sENPersistR,Main Job Separations - Persistent Nonemployment Spell - Rate
+NEFullQR,ne2p_doma2_rate,sNEFullQR,Main Job Accessions - Full-qtr Nonemployment Spell - Rate
+ENFullQR,en2p_doms2_rate,sENFullQR,Main Job Separations - Full-qtr Nonemployment Spell - Rate

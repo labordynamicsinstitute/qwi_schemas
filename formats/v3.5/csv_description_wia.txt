@@ -1,0 +1,1957 @@
+/**************************************************************
+ This file contains the a listing of the data columns in all the 
+ csv files on the DVD.  Note that the column names are already  
+ included as the first row in each of the csv files, but this can 
+ be used as further documentation.  Each of the columns in each  
+ of the csv files is listed separately and in the order they assume.
+ in the csv.
+****************************************************************/
+
+
+
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naics3_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naics3_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naics4_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naics4_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naics3_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naics3_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_naics4_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_naics4_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_naics3_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_naics3_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naicssec_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naicssec_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naics3_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naics3_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naicssec_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naicssec_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naicssec_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naicssec_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naicssec_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naicssec_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naicssec_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naicssec_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_naics3_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_naics3_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naicssec_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naicssec     Group: NAICS Sector code
+naicssecfm   Group: NAICS Sector name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naicssec_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naics3_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naics3_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_naics4_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_naics4_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naics3_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naics3_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_wib_naics4_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+wib          Group: WIB code
+wibfm        Group: WIB name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_wib_naics4_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naics4_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naics4_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naics4_all.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naics4_all.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naics3_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naics3       Group: NAICS 3-digit industry code
+naics3fm     Group: NAICS 3-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naics3_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_metro_naics4_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+metro        Group: FIPS Metro Area code
+metrofm      Group: FIPS Metro Area name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_metro_naics4_pri.csv
+*****************************************************************/
+ 
+ 
+ 
+ 
+/***************************************************************
+Column names and descriptions for CSV file qwi_ak_wia_county_naics4_pri.csv
+in the same order they are included in the csv file.
+*****************************************************************/
+ 
+CreateDate   File Creation Date
+state        Group: FIPS state numeric code
+year         Time: Year
+quarter      Time: Quarter
+qwi_geo      Group: QWI Geocode
+county       Group: FIPS County code
+countyfm     Group: FIPS County name
+qwi_ind      Group: QWI NAICS Industry Code
+naics4       Group: NAICS 4-digit industry code
+naics4fm     Group: NAICS 4-digit industry name
+ownercode    Group: Ownership group code
+ownerfm      Group: Ownership group name
+sex          Group: Gender code
+sexfm        Group: Gender name
+agegrp       Group: Age group code (WIA)
+agegrpfm     Group: Age group name (WIA)
+HirA         Hires All: Counts
+Emp          Employment: Counts
+EmpEnd       Employment end-of-quarter: Counts
+EmpS         Employment stable jobs: Counts
+TurnOvrS     Turnover stable jobs: Ratio
+HirAS        Hires All stable jobs: Counts
+FrmJbGnS     Firm Gain stable jobs: Counts
+FrmJbLsS     Firm Loss stable jobs: Counts
+FrmJbCS      Firm stable jobs change: Net Change
+SepS         Separations stable jobs: Counts
+HirN         Hires New: Counts
+HirNS        Hires New stable jobs: Counts
+FrmJbGn      Firm Job Gains: Counts
+FrmJbLs      Firm Job Loss: Counts
+FrmJbC       Firm jobs change: Net Change
+HirR         Hires Recalls: Counts
+Sep          Separations: Counts
+EmpTotal     Employment reference quarter: Counts
+Payroll      Total quarterly payroll: Sum
+NEmpHirA     Hires All: Average quarters of non-employment
+NEmpHirN     Hires New: Average quarters of non-employment
+NEmpHirR     Hire Recalls: Average quarters of non-employment
+NEmpSep      Separations: Average periods of non-employment
+EarnEnd      Employees end-of-quarter : Average monthly earnings
+EarnS        Employees stable jobs: Average monthly earnings
+EarnHirAS    Hires All stable jobs: Average monthly earnings
+EarnSepS     Separations stable jobs: Average monthly earnings
+EarnHirNS    Hires New stable jobs: Average monthly earnings
+EarnHirAC    Hires All: Average change in monthly earnings
+EarnSepC     Separations: Average change in monthly earnings
+sHirA        Status: Hires All: Counts
+sEmp         Status: Employment: Counts
+sEmpEnd      Status: Employment end-of-quarter: Counts
+sEmpS        Status: Employment stable jobs: Counts
+sTurnOvrS    Status: Turnover stable jobs: Ratio
+sHirAS       Status: Hires All stable jobs: Counts
+sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+sFrmJbCS     Status: Firm stable jobs change: Net Change
+sSepS        Status: Separations stable jobs: Counts
+sHirN        Status: Hires New: Counts
+sHirNS       Status: Hires New stable jobs: Counts
+sFrmJbGn     Status: Firm Job Gains: Counts
+sFrmJbLs     Status: Firm Job Loss: Counts
+sFrmJbC      Status: Firm jobs change: Net Change
+sHirR        Status: Hires Recalls: Counts
+sSep         Status: Separations: Counts
+sEmpTotal    Status: Employment reference quarter: Counts
+sPayroll     Status: Total quarterly payroll: Sum
+sNEmpHirA    Status: Hires All: Average quarters of non-employment
+sNEmpHirN    Status: Hires New: Average quarters of non-employment
+sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+sNEmpSep     Status: Separations: Average periods of non-employment
+sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+sEarnS       Status: Employees stable jobs: Average monthly earnings
+sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+sEarnHirAC   Status: Hires All: Average change in monthly earnings
+sEarnSepC    Status: Separations: Average change in monthly earnings
+ 
+/***************************************************************
+End of Column names and descriptions for CSV file qwi_ak_wia_county_naics4_pri.csv
+*****************************************************************/
+ 

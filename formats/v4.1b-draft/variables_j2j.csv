@@ -1,0 +1,19 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name
+MHire,all_doma2,sHire,Main Job Accessions - Counts
+MSep,all_doms2,sSep,Main Job Separations - Counts
+MJobStart,all_dest,sMJobStart,Main Job Starts - Counts (hires + main source of earnings changes)
+MJobEnd,all_orig,sMJobEnd,Main Job Ends - Counts (separations + main source of earnings changes)
+EEHire,ee_doma2,sEEHire,EE Accessions - Counts
+EESep,ee_doms2,sEESep,EE Separations - Counts
+AQHire,aq_doma2,sAQHire,AQ Accessions - Short Duration Nonemployment Spell - Counts
+AQSep,aq_doms2,sAQSep,AQ Separations - Short Duration Nonemployment Spell - Counts
+J2JHire,eeall_doma2,sJ2JHire,Job-to-Job Accessions - Counts
+J2JSep,eeall_doms2,sJ2JSep,Job-to-Job Separations - Counts
+NEHire,ne_doma2,sNEHire,Main Job Accessions - Any Nonemployment Spell - Counts
+ENSep,en_doms2,sENSep,Main Job Separations - Any Nonemployment Spell - Counts
+NEPersist,ne2_doma2,sNEPersist,Main Job Accessions - Persistent Nonemployment Spell - Counts
+ENPersist,en2_doms2,sENPersist,Main Job Separations - Persistent Nonemployment Spell - Counts
+NEFullQ,ne2p_doma2,sNEFullQ,Main Job Accessions - Full-qtr Nonemployment Spell - Counts
+ENFullQ,en2p_doms2,sENFullQ,Main Job Separations - Full-qtr Nonemployment Spell - Counts
+MainB,domB,sMainB,Main Job - Beginning of Quarter - Counts
+MainE,domE,sMainE,Main Job - End of Quarter - Counts
