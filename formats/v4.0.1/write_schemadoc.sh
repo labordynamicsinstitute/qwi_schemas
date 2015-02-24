@@ -51,7 +51,7 @@ http://lehd.ces.census.gov/data/ and at an (occassional) mirror site at http://d
 
 This document describes the data schema for QWI files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[].
+with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
 
 Basic Schema
@@ -178,7 +178,7 @@ echo "
 ( link:${arg}[] )
 
 Only a small subset of available values shown.
-The 2007 NAICS (North American Industry Classification System) is used for all years.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -239,7 +239,7 @@ include::tmp.csv[]
 
 ==== Detailed state and substate level values
 
-For a full listing of all valid geography codes, see http://www.census.gov/geo/maps-data/data/tiger.html.
+For a full listing of all valid geography codes (except for WIA codes), see http://www.census.gov/geo/maps-data/data/tiger.html.
 Note about geography codes: Four types of geography codes are represented with this field. Each geography
 has its own code structure.
 
@@ -249,7 +249,7 @@ has its own code structure.
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
-The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
+The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
 
 
 [format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
@@ -284,6 +284,12 @@ include::$arg[]
 
 <<<
 
+== [[changes]] Changes
+
+=== Version 4.0.1
+- switched NAICS coding from 2007 to 2012
+
+<<<
 *******************
 This version: $Revision: 607 $
 *******************

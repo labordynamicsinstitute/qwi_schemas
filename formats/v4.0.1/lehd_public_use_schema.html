@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.8" />
-<title>LEHD Public Use Data Schema v4.0</title>
+<title>LEHD Public Use Data Schema v4.0.1</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(3);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use Data Schema v4.0</h1>
+<h1>LEHD Public Use Data Schema v4.0.1</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">12 November 2014</span>
+<span id="revdate">24 February 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -50,7 +50,7 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and at an (occassional) mirror site at <a href="http://download.vrdc.cornell.edu/qwipu/">http://download.vrdc.cornell.edu/qwipu/</a>.</p></div>
 <div class="paragraph"><p>This document describes the data schema for QWI files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>.</p></div>
+with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>. Changes relative to the original v4.0 version are listed <a href="#changes">at the end</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -893,7 +893,7 @@ cellspacing="0" cellpadding="4">
 <h4 id="_industry_2">2.11.2. Industry</h4>
 <div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
 <div class="paragraph"><p>Only a small subset of available values shown.
-The 2007 NAICS (North American Industry Classification System) is used for all years.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
 For a full listing of all valid NAICS codes, see <a href="http://www.census.gov/eos/www/naics/">http://www.census.gov/eos/www/naics/</a>.</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1113,7 +1113,7 @@ cellspacing="0" cellpadding="4">
 </div>
 <div class="sect3">
 <h4 id="_detailed_state_and_substate_level_values">2.12.3. Detailed state and substate level values</h4>
-<div class="paragraph"><p>For a full listing of all valid geography codes, see <a href="http://www.census.gov/geo/maps-data/data/tiger.html">http://www.census.gov/geo/maps-data/data/tiger.html</a>.
+<div class="paragraph"><p>For a full listing of all valid geography codes (except for WIA codes), see <a href="http://www.census.gov/geo/maps-data/data/tiger.html">http://www.census.gov/geo/maps-data/data/tiger.html</a>.
 Note about geography codes: Four types of geography codes are represented with this field. Each geography
 has its own code structure.</p></div>
 <div class="ulist"><ul>
@@ -1145,7 +1145,7 @@ The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.</p></div>
+<div class="paragraph"><p>The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="50%"
@@ -1436,6 +1436,21 @@ cellspacing="0" cellpadding="4">
 </table>
 </div>
 <div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">4. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_version_4_0_1">4.1. Version 4.0.1</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+switched NAICS coding from 2007 to 2012
+</p>
+</li>
+</ul></div>
+<div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph"><p>This version: : 607 $</p></div>
@@ -1443,10 +1458,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 </div>
+</div>
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-11-12 14:53:49 EST
+Last updated 2015-02-24 17:52:52 EST
 </div>
 </div>
 </body>
