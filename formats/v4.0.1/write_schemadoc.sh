@@ -30,7 +30,7 @@ asciifile=lehd_public_use_schema.asciidoc
 echo "= LEHD Public Use Data Schema $version" > $asciifile
 echo 'Lars Vilhuber <lars.vilhuber@cornell.edu>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"--param toc.section.depth=${toclevels}\"
+// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
 
