@@ -137,7 +137,7 @@ Some of the data products noted above do not exist yet.
 ==============================================
 
 *******************
-This version: $Revision: 595 $
+This version: $(date )
 *******************
 " >> $asciifile
 echo "$asciifile created"
