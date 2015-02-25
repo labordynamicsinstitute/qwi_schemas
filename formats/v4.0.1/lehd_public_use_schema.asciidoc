@@ -3,7 +3,7 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 24 February 2015
 // a2x: --dblatex-opts "--param toc.section.depth=3"
 
-( link:lehd_public_use_schema.pdf[Printable version] )
+( link:QWIPU_Data_Schema.pdf[Printable version] )
 
 [IMPORTANT]
 .Important

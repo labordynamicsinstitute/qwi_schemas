@@ -32,7 +32,7 @@ echo 'Lars Vilhuber <lars.vilhuber@cornell.edu>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"--param toc.section.depth=${toclevels}\"
 
-( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
+( link:QWIPU_Data_Schema.pdf[Printable version] )
 
 [IMPORTANT]
 .Important
