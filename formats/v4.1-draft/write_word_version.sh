@@ -8,13 +8,13 @@ echo "
 	$0 [start|version]
 
 	will build the format documentation from CSV files and a template.
-	
+
 	Providing a format version overrides the automatically defined one
 	"
 	exit 1
 fi
 
-if [[ "$1" = "start" ]] 
+if [[ "$1" = "start" ]]
 then
 # parse version from directory
    cwd=$(pwd)
@@ -30,13 +30,13 @@ asciifile=lehd_public_use_schema.asciidoc
 echo "= LEHD Public Use Data Schema $version" > $asciifile
 echo 'Lars Vilhuber <lars.vilhuber@census.gov>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"--param toc.section.depth=${toclevels}\"
+// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema. 
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at 
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ .
 
 This document describes the data schema for LEHD files. For each variable,
@@ -81,26 +81,26 @@ Column name
 [ ... ]
 |===================================================
 
-Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section. 
-While all indicators are included in the CSV files, only the requested indicators 
+Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section.
+While all indicators are included in the CSV files, only the requested indicators
 will be included in data outputs from the LED Extraction Tool.
 
 <<<
 
 === [[identifiers]]Identifiers
-Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type. 
+Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
 Identifiers without the year and quarter component can be considered a series identifier.
 " >> $asciifile
 
 ############################## Identifiers
-for arg in  lehd_mapping_identifiers.csv 
+for arg in  lehd_mapping_identifiers.csv
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
-  echo "==== $name 
+  echo "==== $name
 ( link:${arg}[] )
 
-Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications 
-to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>. 
+Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
+to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
 
 [width=\"80%\",format=\"csv\",cols=\"<3,6*^1\",options=\"header\"]
 |===================================================
@@ -113,7 +113,7 @@ done
 for arg in   $(ls lehd_identifiers_*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/ident/Ident/')"
-  echo "==== $name 
+  echo "==== $name
 ( link:${arg}[] )
 
 [width=\"100%\",format=\"csv\",cols=\"2*^1,<3\",options=\"header\"]
@@ -125,12 +125,12 @@ include::$arg[]
 " >> $asciifile
 done
 
-################################# Variables 
+################################# Variables
 echo "
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. 
+list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
 
 ==== National QWI and state-level QWI ====
 
@@ -141,7 +141,7 @@ include::variables_qwipu.csv[]
 |===================================================
 <<<
 
-==== Job-to-job flow counts (J2J) 
+==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
 |===================================================
@@ -149,7 +149,7 @@ include::variables_j2j.csv[]
 |===================================================
 <<<
 
-==== Job-to-job flow rates (J2JR) 
+==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
 |===================================================
@@ -172,15 +172,15 @@ include::variables_j2jod.csv[]
 ################################ Formats
 echo "
 == [[catvars]]Categorical Variables
-Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table. 
+Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.
 
 " >> $asciifile
 
 # we do industry and geo last
-for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips") 
+for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips")
 do
   name=$(echo ${arg%*.csv}| sed 's/label_//')
-  echo "=== $name 
+  echo "=== $name
 ( link:${arg}[] )
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -195,9 +195,9 @@ done
 
   echo "<<<
 === $name ===
-  
+
  " >> $asciifile
-  
+
 for arg in   $(ls label_ind_level*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /')"
@@ -223,8 +223,8 @@ echo "
 ==== Industry
 ( link:${arg}[] )
 
-Only a small subset of available values shown. 
-The 2007 NAICS (North American Industry Classification System) is used for all years. 
+Only a small subset of available values shown.
+The 2007 NAICS (North American Industry Classification System) is used for all years.
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -253,7 +253,7 @@ done
   echo "=== $name ===
 
   " >> $asciifile
-  
+
 for arg in   $(ls label_geo_level*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
@@ -272,7 +272,7 @@ done
 
 echo "
 Geography labels are provided in separate files by state. Note that cross-state CBSA will have
-state-specific parts, and thus will appear in multiple files. 
+state-specific parts, and thus will appear in multiple files.
 A separate link:$nsfile[$nsfile] contains values and labels
 for all entities of geo_level 'n' or 's', and is a summary of separately available files.
 
@@ -284,25 +284,25 @@ for all entities of geo_level 'n' or 's', and is a summary of separately availab
 include::tmp.csv[]
 |===================================================
 
-==== Detailed state and substate level values 
+==== Detailed state and substate level values
 
 For a full listing of all valid geography codes, see http://www.census.gov/geo/maps-data/data/tiger.html.
-Note about geography codes: Four types of geography codes are represented with this field. Each geography 
-has its own code structure. 
+Note about geography codes: Four types of geography codes are represented with this field. Each geography
+has its own code structure.
 
-- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code. 
-- County is the 5-digit FIPS code. 
-- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division. 
-** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas. 
-** In J2J, tabulations are based on the complete metropolitan/micropolitan area. 
-- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners. 
+- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code.
+- County is the 5-digit FIPS code.
+- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
+** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
+** In J2J, tabulations are based on the complete metropolitan/micropolitan area.
+- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
 The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
 
 [IMPORTANT]
 .Important
 ==============================================
-The above section should include hyperlinks to 
+The above section should include hyperlinks to
 the appropriate reference.
 ==============================================
 
@@ -314,10 +314,10 @@ State,Format file" >> $asciifile
   do
   	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile
-  done  
+  done
 echo "|===================================================" >> $asciifile
 
-################################# Variables 
+################################# Variables
 # finish file
 
 nsfile=label_agg_level.csv
@@ -346,8 +346,8 @@ echo "
 == [[statusflags]]Status flags
 ( link:${arg}[] )
 
-Each status flag in the tables above contains one of the following valid values. 
-The values and their interpretation are listed in the table below. 
+Each status flag in the tables above contains one of the following valid values.
+The values and their interpretation are listed in the table below.
 
 [IMPORTANT]
 .Important
@@ -362,6 +362,16 @@ include::$arg[]
 |===================================================
 
 <<<
+
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+
+=== Version 4.1-draft from 4.0
+- added J2J, National QWI specs
+
 
 *******************
 This version: $(date)

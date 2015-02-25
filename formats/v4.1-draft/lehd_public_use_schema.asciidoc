@@ -1,13 +1,13 @@
 = LEHD Public Use Data Schema v4.1-draft
 Lars Vilhuber <lars.vilhuber@census.gov>
-13 November 2014
-// a2x: --dblatex-opts "--param toc.section.depth=3"
+25 February 2015
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_public_use_schema.pdf[Printable version] )
 
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema. 
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at 
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ .
 
 This document describes the data schema for LEHD files. For each variable,
@@ -52,21 +52,21 @@ Column name
 [ ... ]
 |===================================================
 
-Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section. 
-While all indicators are included in the CSV files, only the requested indicators 
+Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section.
+While all indicators are included in the CSV files, only the requested indicators
 will be included in data outputs from the LED Extraction Tool.
 
 <<<
 
 === [[identifiers]]Identifiers
-Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type. 
+Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
 Identifiers without the year and quarter component can be considered a series identifier.
 
-==== Mapping for Identifiers 
+==== Mapping for Identifiers
 ( link:lehd_mapping_identifiers.csv[] )
 
-Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications 
-to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>. 
+Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
+to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
 
 [width="80%",format="csv",cols="<3,6*^1",options="header"]
 |===================================================
@@ -74,7 +74,7 @@ include::lehd_mapping_identifiers.csv[]
 |===================================================
 <<<
 
-==== Identifiers for j2j 
+==== Identifiers for j2j
 ( link:lehd_identifiers_j2j.csv[] )
 
 [width="100%",format="csv",cols="2*^1,<3",options="header"]
@@ -84,7 +84,7 @@ include::lehd_identifiers_j2j.csv[]
 <<<
 
 
-==== Identifiers for j2jod 
+==== Identifiers for j2jod
 ( link:lehd_identifiers_j2jod.csv[] )
 
 [width="100%",format="csv",cols="2*^1,<3",options="header"]
@@ -94,7 +94,7 @@ include::lehd_identifiers_j2jod.csv[]
 <<<
 
 
-==== Identifiers for qwi 
+==== Identifiers for qwi
 ( link:lehd_identifiers_qwi.csv[] )
 
 [width="100%",format="csv",cols="2*^1,<3",options="header"]
@@ -108,7 +108,7 @@ include::lehd_identifiers_qwi.csv[]
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. 
+list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
 
 ==== National QWI and state-level QWI ====
 
@@ -119,7 +119,7 @@ include::variables_qwipu.csv[]
 |===================================================
 <<<
 
-==== Job-to-job flow counts (J2J) 
+==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
 [width="95%",format="csv",cols="3*^2,<5",options="header"]
 |===================================================
@@ -127,7 +127,7 @@ include::variables_j2j.csv[]
 |===================================================
 <<<
 
-==== Job-to-job flow rates (J2JR) 
+==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
 [width="95%",format="csv",cols="3*^2,<5",options="header"]
 |===================================================
@@ -147,10 +147,10 @@ include::variables_j2jod.csv[]
 
 
 == [[catvars]]Categorical Variables
-Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table. 
+Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.
 
 
-=== agegrp 
+=== agegrp
 ( link:label_agegrp.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -158,7 +158,7 @@ Categorical variable descriptions are displayed above each table, with the varia
 include::label_agegrp.csv[]
 |===================================================
 
-=== education 
+=== education
 ( link:label_education.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -166,7 +166,7 @@ include::label_agegrp.csv[]
 include::label_education.csv[]
 |===================================================
 
-=== ethnicity 
+=== ethnicity
 ( link:label_ethnicity.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -174,7 +174,7 @@ include::label_education.csv[]
 include::label_ethnicity.csv[]
 |===================================================
 
-=== firmage 
+=== firmage
 ( link:label_firmage.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -182,7 +182,7 @@ include::label_ethnicity.csv[]
 include::label_firmage.csv[]
 |===================================================
 
-=== firmsize 
+=== firmsize
 ( link:label_firmsize.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -190,7 +190,7 @@ include::label_firmage.csv[]
 include::label_firmsize.csv[]
 |===================================================
 
-=== ownercode 
+=== ownercode
 ( link:label_ownercode.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -198,7 +198,7 @@ include::label_firmsize.csv[]
 include::label_ownercode.csv[]
 |===================================================
 
-=== periodicity 
+=== periodicity
 ( link:label_periodicity.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -206,7 +206,7 @@ include::label_ownercode.csv[]
 include::label_periodicity.csv[]
 |===================================================
 
-=== quarter 
+=== quarter
 ( link:label_quarter.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -214,7 +214,7 @@ include::label_periodicity.csv[]
 include::label_quarter.csv[]
 |===================================================
 
-=== race 
+=== race
 ( link:label_race.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -222,7 +222,7 @@ include::label_quarter.csv[]
 include::label_race.csv[]
 |===================================================
 
-=== seasonadj 
+=== seasonadj
 ( link:label_seasonadj.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -230,7 +230,7 @@ include::label_race.csv[]
 include::label_seasonadj.csv[]
 |===================================================
 
-=== sex 
+=== sex
 ( link:label_sex.csv[] )
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
@@ -240,7 +240,7 @@ include::label_sex.csv[]
 
 <<<
 === Industry ===
-  
+
  
 [[ind_level]]
 ==== Industry levels
@@ -255,8 +255,8 @@ include::label_ind_level.csv[]
 ==== Industry
 ( link:label_industry.csv[] )
 
-Only a small subset of available values shown. 
-The 2007 NAICS (North American Industry Classification System) is used for all years. 
+Only a small subset of available values shown.
+The 2007 NAICS (North American Industry Classification System) is used for all years.
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
@@ -281,7 +281,7 @@ include::label_geo_level.csv[]
 
 
 Geography labels are provided in separate files by state. Note that cross-state CBSA will have
-state-specific parts, and thus will appear in multiple files. 
+state-specific parts, and thus will appear in multiple files.
 A separate link:label_fipsnum.csv[label_fipsnum.csv] contains values and labels
 for all entities of geo_level 'n' or 's', and is a summary of separately available files.
 
@@ -293,25 +293,25 @@ for all entities of geo_level 'n' or 's', and is a summary of separately availab
 include::tmp.csv[]
 |===================================================
 
-==== Detailed state and substate level values 
+==== Detailed state and substate level values
 
 For a full listing of all valid geography codes, see http://www.census.gov/geo/maps-data/data/tiger.html.
-Note about geography codes: Four types of geography codes are represented with this field. Each geography 
-has its own code structure. 
+Note about geography codes: Four types of geography codes are represented with this field. Each geography
+has its own code structure.
 
-- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code. 
-- County is the 5-digit FIPS code. 
-- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division. 
-** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas. 
-** In J2J, tabulations are based on the complete metropolitan/micropolitan area. 
-- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners. 
+- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code.
+- County is the 5-digit FIPS code.
+- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
+** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
+** In J2J, tabulations are based on the complete metropolitan/micropolitan area.
+- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
 The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
 
 [IMPORTANT]
 .Important
 ==============================================
-The above section should include hyperlinks to 
+The above section should include hyperlinks to
 the appropriate reference.
 ==============================================
 
@@ -387,8 +387,8 @@ include::label_agg_level-reduced.csv[]
 == [[statusflags]]Status flags
 ( link:label_flags.csv[] )
 
-Each status flag in the tables above contains one of the following valid values. 
-The values and their interpretation are listed in the table below. 
+Each status flag in the tables above contains one of the following valid values.
+The values and their interpretation are listed in the table below.
 
 [IMPORTANT]
 .Important
@@ -404,7 +404,17 @@ include::label_flags.csv[]
 
 <<<
 
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+
+=== Version 4.1-draft from 4.0
+- added J2J, National QWI specs
+
+
 *******************
-This version: : 615 $
+This version: Wed Feb 25 10:50:15 EST 2015
 *******************
 

@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1-draft ******
 Lars Vilhuber
 <lars.vilhuber@census.gov>
-13 November 2014
+25 February 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -530,12 +530,10 @@ values. The values and their interpretation are listed in the table below.
 flag label
  -2  no data available in this category for this quarter
  -1  data not available to compute this estimate
-  0  zero employment estimated or zero estimated denominator in a ratio - zero
-     released
   1  OK
   5  Value suppressed because it does not meet US Census Bureau publication
      standards.
-  6  Value calculated from other released measures
+  6  Value calculated from other released measures - no significant distortion
   7  Value calculated from other released measures - some of which have
      significantly distorted data
   9  Data significantly distorted - fuzzed value released
@@ -543,6 +541,12 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This version: : 615 $
+6.  Changes
+**** 6.1. This version from previous releases of this document ****
+    * 2015-02-25: corrected flag values
+    * 2015-02-25: documents are now identified by date, not revision
+**** 6.2. Version 4.1-draft from 4.0 ****
+    * added J2J, National QWI specs
+This version: Wed Feb 25 10:50:15 EST 2015
 ===============================================================================
-Last updated 2014-11-13 20:44:54 EST
+Last updated 2015-02-25 10:50:15 EST
