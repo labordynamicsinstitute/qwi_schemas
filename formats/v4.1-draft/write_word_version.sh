@@ -364,7 +364,7 @@ include::$arg[]
 <<<
 
 *******************
-This version: $Revision: 615 $
+This version: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
