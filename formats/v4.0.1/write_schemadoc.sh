@@ -196,7 +196,7 @@ done
 	# construct the NS file
 	nsfile=label_fipsnum.csv
 	echo "geography,label" > $nsfile
-	grep -h -E "^[0-9][0-9]," label_geography_??.csv >> $nsfile
+	grep -h -E "^[0-9][0-9]," ??/label_geography.csv >> $nsfile
 
 	# construct the sample fips file
 	head -8 $nsfile > tmp.csv
@@ -224,7 +224,7 @@ include::$arg[]
 done
 
 echo "
-Geography labels are provided in separate files by state. Note that cross-state CBSA will have
+Geography labels are provided in separate files, in directories by state. Note that cross-state CBSA will have
 state-specific parts, and thus will appear in multiple files.
 A separate link:$nsfile[$nsfile] contains values and labels
 for all entities of geo_level 'n' or 's', and is a summary of separately available files.
@@ -256,9 +256,9 @@ The 2014 vintage of Census TIGER geography is used for all tabulations as of the
 |===================================================
 State,Format file" >> $asciifile
 
-  for arg in $(ls label_geography_??.csv)
+  for arg in $(ls  ??/label_geography.csv)
   do
-  	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+  	state=$(dirname ${arg}|tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile
   done
 echo "|===================================================" >> $asciifile

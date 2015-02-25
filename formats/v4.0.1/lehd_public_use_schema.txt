@@ -251,10 +251,10 @@ geo_level label
       M   Metropolitan/Micropolitan
       S   States
       W   Workforce Investment Areas
-Geography labels are provided in separate files by state. Note that cross-state
-CBSA will have state-specific parts, and thus will appear in multiple files. A
-separate label_fipsnum.csv contains values and labels for all entities of
-geo_level n or s, and is a summary of separately available files.
+Geography labels are provided in separate files, in directories by state. Note
+that cross-state CBSA will have state-specific parts, and thus will appear in
+multiple files. A separate label_fipsnum.csv contains values and labels for all
+entities of geo_level n or s, and is a summary of separately available files.
 *** 2.12.2. State-level values ***
 ( label_fipsnum.csv )
 geography label
@@ -291,56 +291,56 @@ geography has its own code structure.
 The 2014 vintage of Census TIGER geography is used for all tabulations as of
 the 2014Q3 release.
 State         Format file
-  AK  label_geography_ak.csv
-  AL  label_geography_al.csv
-  AR  label_geography_ar.csv
-  AZ  label_geography_az.csv
-  CA  label_geography_ca.csv
-  CO  label_geography_co.csv
-  CT  label_geography_ct.csv
-  DC  label_geography_dc.csv
-  DE  label_geography_de.csv
-  FL  label_geography_fl.csv
-  GA  label_geography_ga.csv
-  HI  label_geography_hi.csv
-  IA  label_geography_ia.csv
-  ID  label_geography_id.csv
-  IL  label_geography_il.csv
-  IN  label_geography_in.csv
-  KS  label_geography_ks.csv
-  KY  label_geography_ky.csv
-  LA  label_geography_la.csv
-  MD  label_geography_md.csv
-  ME  label_geography_me.csv
-  MI  label_geography_mi.csv
-  MN  label_geography_mn.csv
-  MO  label_geography_mo.csv
-  MS  label_geography_ms.csv
-  MT  label_geography_mt.csv
-  NC  label_geography_nc.csv
-  ND  label_geography_nd.csv
-  NE  label_geography_ne.csv
-  NH  label_geography_nh.csv
-  NJ  label_geography_nj.csv
-  NM  label_geography_nm.csv
-  NV  label_geography_nv.csv
-  NY  label_geography_ny.csv
-  OH  label_geography_oh.csv
-  OK  label_geography_ok.csv
-  OR  label_geography_or.csv
-  PA  label_geography_pa.csv
-  RI  label_geography_ri.csv
-  SC  label_geography_sc.csv
-  SD  label_geography_sd.csv
-  TN  label_geography_tn.csv
-  TX  label_geography_tx.csv
-  UT  label_geography_ut.csv
-  VA  label_geography_va.csv
-  VT  label_geography_vt.csv
-  WA  label_geography_wa.csv
-  WI  label_geography_wi.csv
-  WV  label_geography_wv.csv
-  WY  label_geography_wy.csv
+  AK  ak/label_geography.csv
+  AL  al/label_geography.csv
+  AR  ar/label_geography.csv
+  AZ  az/label_geography.csv
+  CA  ca/label_geography.csv
+  CO  co/label_geography.csv
+  CT  ct/label_geography.csv
+  DC  dc/label_geography.csv
+  DE  de/label_geography.csv
+  FL  fl/label_geography.csv
+  GA  ga/label_geography.csv
+  HI  hi/label_geography.csv
+  IA  ia/label_geography.csv
+  ID  id/label_geography.csv
+  IL  il/label_geography.csv
+  IN  in/label_geography.csv
+  KS  ks/label_geography.csv
+  KY  ky/label_geography.csv
+  LA  la/label_geography.csv
+  MD  md/label_geography.csv
+  ME  me/label_geography.csv
+  MI  mi/label_geography.csv
+  MN  mn/label_geography.csv
+  MO  mo/label_geography.csv
+  MS  ms/label_geography.csv
+  MT  mt/label_geography.csv
+  NC  nc/label_geography.csv
+  ND  nd/label_geography.csv
+  NE  ne/label_geography.csv
+  NH  nh/label_geography.csv
+  NJ  nj/label_geography.csv
+  NM  nm/label_geography.csv
+  NV  nv/label_geography.csv
+  NY  ny/label_geography.csv
+  OH  oh/label_geography.csv
+  OK  ok/label_geography.csv
+  OR  or/label_geography.csv
+  PA  pa/label_geography.csv
+  RI  ri/label_geography.csv
+  SC  sc/label_geography.csv
+  SD  sd/label_geography.csv
+  TN  tn/label_geography.csv
+  TX  tx/label_geography.csv
+  UT  ut/label_geography.csv
+  VA  va/label_geography.csv
+  VT  vt/label_geography.csv
+  WA  wa/label_geography.csv
+  WI  wi/label_geography.csv
+  WV  wv/label_geography.csv
+  WY  wy/label_geography.csv
 3. Status flags
 ( label_flags.csv )
 Each status flag in the tables above contains one of the following valid
@@ -366,4 +366,4 @@ flag label
     * switched NAICS coding from 2007 to 2012
 This version: : 607 $
 ===============================================================================
-Last updated 2015-02-24 17:52:52 EST
+Last updated 2015-02-24 19:08:51 EST

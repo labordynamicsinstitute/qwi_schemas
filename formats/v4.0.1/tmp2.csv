@@ -1,0 +1,18 @@
+industry,label
+00,"All NAICS Sectors"
+000,"All NAICS Subsectors"
+0000,"All NAICS Industry Groups"
+11,"Agriculture, Forestry, Fishing and Hunting"
+111,"Crop Production"
+1111,"Oilseed and Grain Farming"
+1112,"Vegetable and Melon Farming"
+...,
+2382,"Building Equipment Contractors"
+2383,"Building Finishing Contractors"
+2389,"Other Specialty Trade Contractors"
+31-33,"Manufacturing"
+311,"Food Manufacturing"
+3111,"Animal Food Manufacturing"
+3112,"Grain and Oilseed Milling"
+3113,"Sugar and Confectionery Product Manufacturing"
+...,
