@@ -286,12 +286,12 @@ include::$arg[]
 
 == [[changes]] Changes
 
-=== Version 4.0.1
-- switched NAICS coding from 2007 to 2012
+=== Version 4.0.1 from 4.0
+- 2015-02-24: switched NAICS coding from 2007 to 2012
 
 <<<
 *******************
-This version: $Revision: 607 $
+This version: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"

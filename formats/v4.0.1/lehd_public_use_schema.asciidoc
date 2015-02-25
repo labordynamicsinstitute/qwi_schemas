@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-24 February 2015
+25 February 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -310,11 +310,11 @@ include::label_flags.csv[]
 
 == [[changes]] Changes
 
-=== Version 4.0.1
-- switched NAICS coding from 2007 to 2012
+=== Version 4.0.1 from 4.0
+- 2015-02-24: switched NAICS coding from 2007 to 2012
 
 <<<
 *******************
-This version: : 607 $
+This version: Wed Feb 25 10:45:16 EST 2015
 *******************
 
