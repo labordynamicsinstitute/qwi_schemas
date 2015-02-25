@@ -30,7 +30,7 @@ asciifile=lehd_public_use_schema.asciidoc
 echo "= LEHD Public Use Data Schema $version" > $asciifile
 echo 'Lars Vilhuber <lars.vilhuber@census.gov>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"--param toc.section.depth=${toclevels}\"
+// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
@@ -478,16 +478,25 @@ include::$arg[]
 
 <<<
 
-" >> $asciifile
-echo '
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+
+=== Version 4.1b-draft from 4.0
+- added J2J, National QWI specs
+- added QWI Variability specs
+
+
 *******************
 This version: $(date)
 *******************
-' >> $asciifile
+" >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels  $asciifile
+asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels $asciifile
 [[ -f $(basename $asciifile .asciidoc).html  ]] && echo "$(basename $asciifile .asciidoc).html created"
-a2x -f pdf -a icons -a toc -a numbered  $asciifile
+a2x -f pdf -a icons -a toc -a numbered $asciifile
 [[ -f $(basename $asciifile .asciidoc).pdf  ]] && echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"

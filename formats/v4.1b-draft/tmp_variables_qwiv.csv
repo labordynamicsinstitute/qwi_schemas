@@ -1,0 +1,21 @@
+Variability measure,Alternate name,Name of variable
+vt_Emp,vt_B,Total variation of Beginning-of-Quarter Employment: Counts
+vt_EmpEnd,vt_E,Total variation of End-of-Quarter Employment: Counts
+vt_EmpS,vt_F,Total variation of Full-Quarter Employment (Stable): Counts
+...,,
+df_Emp,df_B,Degrees of freedom for VT of Beginning-of-Quarter Employment: Counts
+df_EmpEnd,df_E,Degrees of freedom for VT of End-of-Quarter Employment: Counts
+df_EmpS,df_F,Degrees of freedom for VT of Full-Quarter Employment (Stable): Counts
+...,,
+mr_Emp,mr_B,Missingness ratio for Beginning-of-Quarter Employment: Counts
+mr_EmpEnd,mr_E,Missingness ratio for End-of-Quarter Employment: Counts
+mr_EmpS,mr_F,Missingness ratio for Full-Quarter Employment (Stable): Counts
+...,,
+vw_Emp,vw_B,Average within-implicate variability for Beginning-of-Quarter Employment: Counts
+vw_EmpEnd,vw_E,Average within-implicate variability for End-of-Quarter Employment: Counts
+vw_EmpS,vw_F,Average within-implicate variability for Full-Quarter Employment (Stable): Counts
+...,,
+vb_Emp,vb_B,Between-implicate variability for Beginning-of-Quarter Employment: Counts
+vb_EmpEnd,vb_E,Between-implicate variability for End-of-Quarter Employment: Counts
+vb_EmpS,vb_F,Between-implicate variability for Full-Quarter Employment (Stable): Counts
+...,,
