@@ -2,15 +2,16 @@
 ****** LEHD Public Use Data Schema v4.0 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-12 November 2014
+25 February 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
             This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] compiled from publicly accessible information (in particular
+            (QWIPU_Data_Schema.pdf as of 2015-02-25) by Lars Vilhuber (Labor
+            Dynamics_Institute,_Cornell_University). Feedback is welcome.
+            Please write us at lars.vilhuber@cornell.edu.
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
 following data schema. These data are available as Comma-Separated Value (CSV)
@@ -287,7 +288,7 @@ structure.
             of the full CBSA areas.
     * The WIA code is constructed from the 2-digit state FIPS code and the 6-
       digit WIA identifier provided by LED State Partners.
-The 2013 vintage of Census TIGER geography is used for all tabulations as of
+The 2014 vintage of Census TIGER geography is used for all tabulations as of
 the 2014Q3 release.
 State         Format file
   AK  label_geography_ak.csv
@@ -347,12 +348,10 @@ values. The values and their interpretation are listed in the table below.
 flag label
  -2  no data available in this category for this quarter
  -1  data not available to compute this estimate
-  0  zero employment estimated or zero estimated denominator in a ratio - zero
-     released
   1  OK
   5  Value suppressed because it does not meet US Census Bureau publication
      standards.
-  6  Value calculated from other released measures
+  6  Value calculated from other released measures - no significant distortion
   7  Value calculated from other released measures - some of which have
      significantly distorted data
   9  Data significantly distorted - fuzzed value released
@@ -360,6 +359,14 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This version: : 607 $
+***** 4. Changes *****
+From previous releases of this document:
+    * 2015-02-25: added date of production (replaces Revision)
+    * 2015-02-25: corrected flag values to reflect 2015 version of
+      QWIPU_Data_Schema.pdf
+    * 2015-02-25: added reference to source document
+From previous versions of the schema:
+    * v4.0: replaces v3.5
+This version: Wed Feb 25 10:42:44 EST 2015
 ===============================================================================
-Last updated 2014-11-12 14:53:49 EST
+Last updated 2015-02-25 10:42:44 EST
