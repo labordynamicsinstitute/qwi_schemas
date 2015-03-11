@@ -1,9 +1,11 @@
 = LEHD Public Use Data Schema v4.0.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-25 February 2015
+10 March 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
+
+
 
 [IMPORTANT]
 .Important
@@ -13,6 +15,7 @@ by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Corn
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
+	
 
 
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
@@ -183,10 +186,11 @@ include::label_ind_level.csv[]
 
 
 ==== Industry
-( link:label_industry.csv[] )
+( link:label_industry2012.csv[] )
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
@@ -308,13 +312,16 @@ include::label_flags.csv[]
 
 <<<
 
+
 == [[changes]] Changes
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: switched NAICS coding from 2007 to 2012
+- 2015-02-24: removed obsolete flag values
+
 
 <<<
 *******************
-This version: Wed Feb 25 10:45:16 EST 2015
+This revision: Tue Mar 10 14:02:09 EDT 2015
 *******************
 

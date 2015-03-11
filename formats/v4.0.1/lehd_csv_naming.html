@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
-<title>LEHD Public Use CSV Naming Schema v4.0 - CSV Naming Convention</title>
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use CSV Naming Schema v4.0.1 - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,8 +17,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema v4.0 - CSV Naming Convention</h1>
-<span id="author">12 November 2014</span><br />
+<h1>LEHD Public Use CSV Naming Schema v4.0.1 - CSV Naming Convention</h1>
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">10 March 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -28,16 +30,6 @@ asciidoc.install(2);
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="lehd_csv_naming.pdf">Printable version</a> )</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_purpose">1. Purpose</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
-<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -55,7 +47,23 @@ Feedback is welcome. Please write us at
 </div>
 </div>
 <div class="sect1">
-<h2 id="_basic_schema">2. Basic Schema</h2>
+<h2 id="_purpose">1. Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
+<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extends">2. Extends</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_schema">3. Basic Schema</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
 some other identifier.</p></div>
@@ -64,7 +72,7 @@ some other identifier.</p></div>
 <pre><code>[TYPE]_[DETAILS].csv</code></pre>
 </div></div>
 <div class="sect2">
-<h3 id="_qwipu_from_the_led_extraction_tool">2.1. QWIPU from the LED Extraction Tool</h3>
+<h3 id="_qwipu_from_the_led_extraction_tool">3.1. QWIPU from the LED Extraction Tool</h3>
 <div class="paragraph"><p>CSV files downloaded through the  LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a> follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
@@ -73,21 +81,21 @@ some other identifier.</p></div>
 <div class="paragraph"><p>where <code>[id]</code> is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.</p></div>
 </div>
 <div class="sect2">
-<h3 id="_other_files">2.2. Other files</h3>
+<h3 id="_other_files">3.2. Other files</h3>
 <div class="paragraph"><p>Full CSV files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</code></pre>
+<pre><code>[type]_[fipsalpha]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</code></pre>
 </div></div>
 <div class="paragraph"><p>where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.</p></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_description_of_filename_components">3. Description of Filename Components</h2>
+<h2 id="_description_of_filename_components">4. Description of Filename Components</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_types">3.1. Types</h3>
+<h3 id="_types">4.1. Types</h3>
 <div class="paragraph"><p>( <a href="naming_type.csv">naming_type.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -118,7 +126,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_fipsalpha">3.2. fipsalpha</h3>
+<h3 id="_fipsalpha">4.2. fipsalpha</h3>
 <div class="paragraph"><p>( <a href="naming_fipsalpha.csv">naming_fipsalpha.csv</a> )</p></div>
 <div class="paragraph"><p>This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in <a href="label_fipsnum.csv">label_fipsnum.csv</a>, based on FIPS PUB 5-2.</p></div>
 <div class="tableblock">
@@ -144,7 +152,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_demo">3.3. demo</h3>
+<h3 id="_demo">4.3. demo</h3>
 <div class="paragraph"><p>( <a href="naming_demo.csv">naming_demo.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -179,9 +187,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_fas">3.4. fas</h3>
+<h3 id="_fas">4.4. fas</h3>
 <div class="paragraph"><p>( <a href="naming_fas.csv">naming_fas.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -212,9 +221,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_geocat">3.5. geocat</h3>
+<h3 id="_geocat">4.5. geocat</h3>
 <div class="paragraph"><p>( <a href="naming_geocat.csv">naming_geocat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -253,9 +263,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_indcat">3.6. indcat</h3>
+<h3 id="_indcat">4.6. indcat</h3>
 <div class="paragraph"><p>( <a href="naming_indcat.csv">naming_indcat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -290,9 +301,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_owncat">3.7. owncat</h3>
+<h3 id="_owncat">4.7. owncat</h3>
 <div class="paragraph"><p>( <a href="naming_owncat.csv">naming_owncat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -323,9 +335,10 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_sa">3.8. sa</h3>
+<h3 id="_sa">4.8. sa</h3>
 <div class="paragraph"><p>( <a href="naming_sa.csv">naming_sa.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -352,9 +365,31 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">5. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_version_4_0_1_from_4_0">5.1. Version 4.0.1 from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-02-24: switched NAICS coding from 2007 to 2012
+</p>
+</li>
+<li>
+<p>
+2015-02-24: removed obsolete flag values
+</p>
+</li>
+</ul></div>
+<div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This version: : 607 $</p></div>
+<div class="paragraph"><p>This revision: Tue Mar 10 14:01:56 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -363,7 +398,7 @@ cellspacing="0" cellpadding="4">
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-11-12 14:53:41 EST
+Last updated 2015-03-10 14:01:56 EDT
 </div>
 </div>
 </body>

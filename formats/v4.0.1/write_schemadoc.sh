@@ -9,7 +9,7 @@ echo "
 
 	will build the format documentation from CSV files and a template.
 
-	Providing a format version overrides the automatically defined one
+	Version = cornell|draft|official changes a note in the document
 	"
 	exit 1
 fi
@@ -17,23 +17,30 @@ fi
 if [[ "$1" = "start" ]]
 then
 # parse version from directory
-   cwd=$(pwd)
-   version=${cwd##*/}
+   version=cornell
 else
    version=$1
 fi
+cwd=$(pwd)
+numversion=${cwd##*/}
 # convert the column definitions to CSV
 sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definitions.txt | tail -n +2 > tmp.csv
 
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
-echo "= LEHD Public Use Data Schema $version" > $asciifile
+echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo 'Lars Vilhuber <lars.vilhuber@cornell.edu>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
 
+" >> $asciifile
+# A note on the relevance/beta/draft status of this file.
+
+case $version in
+	cornell)
+	echo "
 [IMPORTANT]
 .Important
 ==============================================
@@ -42,7 +49,31 @@ by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Corn
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
+	" >> $asciifile
+	;;
+	draft)
+	echo "
+[IMPORTANT]
+.Important
+==============================================
+This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
+or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+==============================================
+	" >> $asciifile
+	;;
+	official)
+	echo "
+[IMPORTANT]
+.Important
+==============================================
+Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_4.0.1[erika.mcentarfer@census.gov]
+or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_4.0.1[lars.vilhuber@census.gov].
+==============================================
+	" >> $asciifile
+	;;
+esac
 
+echo "
 
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
  are available for download with the following data schema.
@@ -166,7 +197,7 @@ include::$arg[]
 |===================================================
 " >> $asciifile
 
-arg=label_industry.csv
+arg=label_industry2012.csv
 	# construct the sample industry file
 	head -8 $arg > tmp2.csv
 	echo "...," >> tmp2.csv
@@ -179,6 +210,7 @@ echo "
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -284,14 +316,16 @@ include::$arg[]
 
 <<<
 
-== [[changes]] Changes
+" >> $asciifile
 
-=== Version 4.0.1 from 4.0
-- 2015-02-24: switched NAICS coding from 2007 to 2012
+
+cat CHANGES.txt >> $asciifile
+
+echo "
 
 <<<
 *******************
-This version: $(date)
+This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
