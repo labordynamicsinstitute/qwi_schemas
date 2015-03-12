@@ -78,8 +78,8 @@ esac
 echo "
 Purpose
 -------
-The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
-are available for download with the following data schema.
+The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
