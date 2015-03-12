@@ -197,7 +197,7 @@ include::$arg[]
 |===================================================
 " >> $asciifile
 
-arg=label_industry2012.csv
+arg=label_industry.csv
 	# construct the sample industry file
 	head -8 $arg > tmp2.csv
 	echo "...," >> tmp2.csv

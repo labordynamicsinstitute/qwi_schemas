@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-10 March 2015
+12 March 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -186,7 +186,7 @@ include::label_ind_level.csv[]
 
 
 ==== Industry
-( link:label_industry2012.csv[] )
+( link:label_industry.csv[] )
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
@@ -322,6 +322,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Tue Mar 10 14:02:09 EDT 2015
+This revision: Thu Mar 12 08:49:56 EDT 2015
 *******************
 
