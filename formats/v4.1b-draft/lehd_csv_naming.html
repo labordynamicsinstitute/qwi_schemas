@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
 <title>LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
@@ -18,7 +18,9 @@ asciidoc.install(2);
 <body class="article">
 <div id="header">
 <h1>LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention</h1>
-<span id="author">21 November 2014</span><br />
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">11 March 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -28,6 +30,20 @@ asciidoc.install(2);
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="lehd_csv_naming.pdf">Printable version</a> )</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+</td>
+</tr></table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -38,19 +54,6 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
 <div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
-<div class="admonitionblock">
-<table><tr>
-<td class="icon">
-<img src="./images/icons/important.png" alt="Important" />
-</td>
-<td class="content">
-<div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at
-
-<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_draft">lars.vilhuber@cornell.edu</a>.</p></div>
-</td>
-</tr></table>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -88,7 +91,7 @@ some other identifier.</p></div>
 <div class="paragraph"><p>Full CSV files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[type]_[geocat]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</code></pre>
+<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</code></pre>
 </div></div>
 <div class="paragraph"><p>where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.</p></div>
 </div>
@@ -146,7 +149,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">j2jr</p></td>
 <td align="left" valign="top"><p class="table">Job-to-Job Flows Rates</p></td>
 <td align="left" valign="top"><p class="table">Hiring and separation rates, to and from employment and nonemployment, summed across all establishments</p></td>
-<td align="left" valign="top"><p class="table">tbd</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/j2j_beta.html">http://lehd.ces.census.gov/data/j2j_beta.html</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">qwir</p></td>
@@ -165,9 +168,9 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_fipsalpha">5.2. fipsalpha</h3>
-<div class="paragraph"><p>( <a href="naming_fipsalpha.csv">naming_fipsalpha.csv</a> )</p></div>
-<div class="paragraph"><p>This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in <a href="label_fipsnum.csv">label_fipsnum.csv</a>, based on <a href="https://catalog.data.gov/dataset/fips-state-codes">FIPS PUB 5-2</a>.</p></div>
+<h3 id="_geohi">5.2. geohi</h3>
+<div class="paragraph"><p>( <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></div>
+<div class="paragraph"><p>This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in <a href="label_fipsnum.csv">label_fipsnum.csv</a>, based on <a href="https://catalog.data.gov/dataset/fips-state-codes">FIPS PUB 5-2</a>. It is expanded to encompass additional codes denoting national coverage, or a collection of states.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="60%"
@@ -183,12 +186,16 @@ cellspacing="0" cellpadding="4">
 </thead>
 <tbody>
 <tr>
-<td align="center" valign="top"><p class="table">st</p></td>
-<td align="left" valign="top"><p class="table">Any legal 2-character state postal code (see <a href="naming_fipsalpha.csv">naming_fipsalpha.csv</a> ))</p></td>
+<td align="center" valign="top"><p class="table">all</p></td>
+<td align="left" valign="top"><p class="table">Collection of all available states</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">us</p></td>
 <td align="left" valign="top"><p class="table">National data (50 states + DC)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st</p></td>
+<td align="left" valign="top"><p class="table">Any legal 2-character state postal code (see <a href="naming_geohi.csv">naming_geohi.csv</a> ))</p></td>
 </tr>
 </tbody>
 </table>
@@ -230,6 +237,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_fas">5.4. fas</h3>
@@ -263,6 +271,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_geocat">5.5. geocat</h3>
@@ -304,6 +313,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_indcat">5.6. indcat</h3>
@@ -341,6 +351,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_owncat">5.7. owncat</h3>
@@ -374,6 +385,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_sa">5.8. sa</h3>
@@ -403,6 +415,57 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">6. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_this_version_from_previous_releases_of_this_document">6.1. This version from previous releases of this document</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-02-25: corrected flag values
+</p>
+</li>
+<li>
+<p>
+2015-02-25: documents are now identified by date, not revision
+</p>
+</li>
+<li>
+<p>
+2015-03-10: Correction of the TIGER vintage that is used for geographic references
+</p>
+</li>
+<li>
+<p>
+2015-03-11: Added URL for J2J
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_1b_draft_from_4_0">6.2. Version 4.1b-draft from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+added J2J, National QWI spec
+</p>
+</li>
+<li>
+<p>
+added geohi category of ALL, US
+</p>
+</li>
+<li>
+<p>
+added definitions of variability measures
+</p>
+</li>
+</ul></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -414,9 +477,10 @@ cellspacing="0" cellpadding="4">
 </td>
 </tr></table>
 </div>
+<div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This version: : 637 $</p></div>
+<div class="paragraph"><p>This revision: Wed Mar 11 23:21:37 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -425,7 +489,7 @@ cellspacing="0" cellpadding="4">
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-11-21 13:49:35 EST
+Last updated 2015-03-11 23:21:37 EDT
 </div>
 </div>
 </body>

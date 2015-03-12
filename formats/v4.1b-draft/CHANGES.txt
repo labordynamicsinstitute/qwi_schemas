@@ -1,0 +1,13 @@
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+- 2015-03-10: Correction of the TIGER vintage that is used for geographic references
+- 2015-03-11: Added URL for J2J
+- 2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
+
+=== Version 4.1b-draft from 4.0
+- added J2J, National QWI spec
+- added geohi category of ALL, US
+- added definitions of variability measures

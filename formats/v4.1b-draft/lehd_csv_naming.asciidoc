@@ -1,7 +1,21 @@
 = LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention
-21 November 2014
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+11 March 2015
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+
 
 Purpose
 -------
@@ -11,15 +25,6 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
 This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
-
-[IMPORTANT]
-.Important
-==============================================
-This specification is draft. Feedback is welcome. Please write us at
-//link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov] or
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_draft[lars.vilhuber@cornell.edu].
-==============================================
-
 
 Extends
 -------
@@ -50,7 +55,7 @@ where +[id]+ is the Request ID (a unique string of characters) generated every t
 === Other files
 Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
 --------------------------------
-[type]_[geocat]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
 --------------------------------
 where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
 
@@ -67,16 +72,17 @@ where each component is described in more detail below. Schema files detailing l
 include::naming_type.csv[]
 |===================================================
 
-=== fipsalpha
-( link:naming_fipsalpha.csv[] )
+=== geohi
+( link:naming_geohi.csv[] )
 
-This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2].
+This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2]. It is expanded to encompass additional codes denoting national coverage, or a collection of states.
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
 |===================================================
 type,Description
-st,Any legal 2-character state postal code (see link:naming_fipsalpha.csv[] ))
+all,Collection of all available states
 us,National data (50 states + DC)
+st,Any legal 2-character state postal code (see link:naming_geohi.csv[] ))
 |===================================================
 
 === demo
@@ -87,6 +93,9 @@ us,National data (50 states + DC)
 include::naming_demo.csv[]
 |===================================================
 
+<<<
+
+
 === fas
 ( link:naming_fas.csv[] )
 
@@ -94,6 +103,9 @@ include::naming_demo.csv[]
 |===================================================
 include::naming_fas.csv[]
 |===================================================
+
+<<<
+
 
 === geocat
 ( link:naming_geocat.csv[] )
@@ -103,6 +115,9 @@ include::naming_fas.csv[]
 include::naming_geocat.csv[]
 |===================================================
 
+<<<
+
+
 === indcat
 ( link:naming_indcat.csv[] )
 
@@ -110,6 +125,9 @@ include::naming_geocat.csv[]
 |===================================================
 include::naming_indcat.csv[]
 |===================================================
+
+<<<
+
 
 === owncat
 ( link:naming_owncat.csv[] )
@@ -119,6 +137,9 @@ include::naming_indcat.csv[]
 include::naming_owncat.csv[]
 |===================================================
 
+<<<
+
+
 === sa
 ( link:naming_sa.csv[] )
 
@@ -127,6 +148,21 @@ include::naming_owncat.csv[]
 include::naming_sa.csv[]
 |===================================================
 
+<<<
+
+
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+- 2015-03-10: Correction of the TIGER vintage that is used for geographic references
+- 2015-03-11: Added URL for J2J
+
+=== Version 4.1b-draft from 4.0
+- added J2J, National QWI spec
+- added geohi category of ALL, US
+- added definitions of variability measures
 
 [IMPORTANT]
 .Important
@@ -134,7 +170,8 @@ include::naming_sa.csv[]
 Some of the data products noted above do not exist yet.
 ==============================================
 
+<<<
 *******************
-This version: : 637 $
+This revision: Wed Mar 11 23:21:37 EDT 2015
 *******************
 
