@@ -1,24 +1,30 @@
 = LEHD Public Use CSV Naming Schema v4.1-draft - CSV Naming Convention
-04 November 2014
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+11 March 2015
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
-Purpose
--------
-The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema. 
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at 
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/. 
 
-This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
 
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
-or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 
+
+Purpose
+-------
+The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
+This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
 
 Extends
 -------
@@ -32,7 +38,7 @@ For the specified files, this is the first schema.
 Basic Schema
 ------------
 
-All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or 
+All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
 some other identifier.
 
 -------------------
@@ -51,7 +57,7 @@ Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/da
 --------------------------------
 [type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
 --------------------------------
-where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website. 
+where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
 
 
 
@@ -66,7 +72,7 @@ where each component is described in more detail below. Schema files detailing l
 include::naming_type.csv[]
 |===================================================
 
-=== fipsalpha 
+=== fipsalpha
 ( link:naming_fipsalpha.csv[] )
 
 This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on FIPS PUB 5-2.
@@ -78,7 +84,7 @@ st,Any legal 2-character state postal code (see link:naming_fipsalpha.csv[] ))
 us,National data (50 states + DC)
 |===================================================
 
-=== demo 
+=== demo
 ( link:naming_demo.csv[] )
 
 
@@ -88,7 +94,10 @@ us,National data (50 states + DC)
 include::naming_demo.csv[]
 |===================================================
 
-=== fas 
+<<<
+
+
+=== fas
 ( link:naming_fas.csv[] )
 
 
@@ -98,7 +107,10 @@ include::naming_demo.csv[]
 include::naming_fas.csv[]
 |===================================================
 
-=== geocat 
+<<<
+
+
+=== geocat
 ( link:naming_geocat.csv[] )
 
 
@@ -108,7 +120,10 @@ include::naming_fas.csv[]
 include::naming_geocat.csv[]
 |===================================================
 
-=== indcat 
+<<<
+
+
+=== indcat
 ( link:naming_indcat.csv[] )
 
 
@@ -118,7 +133,10 @@ include::naming_geocat.csv[]
 include::naming_indcat.csv[]
 |===================================================
 
-=== owncat 
+<<<
+
+
+=== owncat
 ( link:naming_owncat.csv[] )
 
 
@@ -128,7 +146,10 @@ include::naming_indcat.csv[]
 include::naming_owncat.csv[]
 |===================================================
 
-=== sa 
+<<<
+
+
+=== sa
 ( link:naming_sa.csv[] )
 
 
@@ -138,6 +159,17 @@ include::naming_owncat.csv[]
 include::naming_sa.csv[]
 |===================================================
 
+<<<
+
+
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+
+=== Version 4.1-draft from 4.0
+- added J2J, National QWI spec
 
 [IMPORTANT]
 .Important
@@ -145,7 +177,8 @@ include::naming_sa.csv[]
 Some of the data products noted above do not exist yet.
 ==============================================
 
+<<<
 *******************
-This version: : 594 $
+This revision: Wed Mar 11 22:04:42 EDT 2015
 *******************
 

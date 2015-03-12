@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
 <title>LEHD Public Use Data Schema v4.1-draft</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema v4.1-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@census.gov">lars.vilhuber@census.gov</a>&gt;</code></span><br />
-<span id="revdate">25 February 2015</span>
+<span id="revdate">11 March 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -30,13 +30,6 @@ asciidoc.install(3);
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="lehd_public_use_schema.pdf">Printable version</a> )</p></div>
-<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> .</p></div>
-<div class="paragraph"><p>This document describes the data schema for LEHD files. For each variable,
-a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>.</p></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -44,31 +37,28 @@ with header variable definitions. The naming conventions of the data files is do
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft">erika.mcentarfer@census.gov</a>
-or <a href="mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft">lars.vilhuber@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
+<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> .</p></div>
+<div class="paragraph"><p>This document describes the data schema for LEHD files. For each variable,
+a set of allowable values is defined. Definitions are provided as CSV files,
+with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>. Changes relative to the original v4.0 version are listed <a href="#changes">at the end</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_extends">1. Extends</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_supersedes">2. Supersedes</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>For the specified files, this is the first schema.</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_basic_schema">3. Basic Schema</h2>
+<h2 id="_basic_schema">1. Basic Schema</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Each file is structured as a CSV file. The first columns contain <a href="#identifiers">[identifiers]</a>, subsequent columns contain <a href="#indicators">[indicators]</a>, followed by <a href="#statusflags">status flags</a>.</p></div>
 <div class="sect2">
-<h3 id="_generic_structure">3.1. Generic structure</h3>
+<h3 id="_generic_structure">1.1. Generic structure</h3>
 <div class="tableblock">
 <table rules="all"
 width="30%"
@@ -126,11 +116,11 @@ will be included in data outputs from the LED Extraction Tool.</p></div>
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_identifiers_a_identifiers">3.2. <a id="identifiers"></a>Identifiers</h3>
+<h3 id="_a_id_identifiers_a_identifiers">1.2. <a id="identifiers"></a>Identifiers</h3>
 <div class="paragraph"><p>Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
 Identifiers without the year and quarter component can be considered a series identifier.</p></div>
 <div class="sect3">
-<h4 id="_mapping_for_identifiers">3.2.1. Mapping for Identifiers</h4>
+<h4 id="_mapping_for_identifiers">1.2.1. Mapping for Identifiers</h4>
 <div class="paragraph"><p>( <a href="lehd_mapping_identifiers.csv">lehd_mapping_identifiers.csv</a> )</p></div>
 <div class="paragraph"><p>Each of the released files has a set of variables uniquely identifying records (<em>Identifiers</em>). The table below relates the set of identifier specifications
 to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <a href="#catvars">Categorical Variables</a>.</p></div>
@@ -191,7 +181,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_j2j">3.2.2. Identifiers for j2j</h4>
+<h4 id="_identifiers_for_j2j">1.2.2. Identifiers for j2j</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_j2j.csv">lehd_identifiers_j2j.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -300,7 +290,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_j2jod">3.2.3. Identifiers for j2jod</h4>
+<h4 id="_identifiers_for_j2jod">1.2.3. Identifiers for j2jod</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_j2jod.csv">lehd_identifiers_j2jod.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -444,7 +434,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_qwi">3.2.4. Identifiers for qwi</h4>
+<h4 id="_identifiers_for_qwi">1.2.4. Identifiers for qwi</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_qwi.csv">lehd_identifiers_qwi.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -550,11 +540,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_indicators_a_indicators">3.3. <a id="indicators"></a>Indicators</h3>
+<h3 id="_a_id_indicators_a_indicators">1.3. <a id="indicators"></a>Indicators</h3>
 <div class="paragraph"><p>The following tables and associated mapping files
 list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator.</p></div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi">3.3.1. National QWI and state-level QWI</h4>
+<h4 id="_national_qwi_and_state_level_qwi">1.3.1. National QWI and state-level QWI</h4>
 <div class="paragraph"><p>( <a href="variables_qwipu.csv">variables_qwipu.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -738,7 +728,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_counts_j2j">3.3.2. Job-to-job flow counts (J2J)</h4>
+<h4 id="_job_to_job_flow_counts_j2j">1.3.2. Job-to-job flow counts (J2J)</h4>
 <div class="paragraph"><p>( <a href="variables_j2j.csv">variables_j2j.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -872,7 +862,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_rates_j2jr">3.3.3. Job-to-job flow rates (J2JR)</h4>
+<h4 id="_job_to_job_flow_rates_j2jr">1.3.3. Job-to-job flow rates (J2JR)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jr.csv">variables_j2jr.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -994,7 +984,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_origin_destination_j2jod">3.3.4. Job-to-job flow Origin-Destination (J2JOD)</h4>
+<h4 id="_job_to_job_flow_origin_destination_j2jod">1.3.4. Job-to-job flow Origin-Destination (J2JOD)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jod.csv">variables_j2jod.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1072,11 +1062,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_catvars_a_categorical_variables">4. <a id="catvars"></a>Categorical Variables</h2>
+<h2 id="_a_id_catvars_a_categorical_variables">2. <a id="catvars"></a>Categorical Variables</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.</p></div>
 <div class="sect2">
-<h3 id="_agegrp">4.1. agegrp</h3>
+<h3 id="_agegrp">2.1. agegrp</h3>
 <div class="paragraph"><p>( <a href="label_agegrp.csv">label_agegrp.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1133,7 +1123,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_education">4.2. education</h3>
+<h3 id="_education">2.2. education</h3>
 <div class="paragraph"><p>( <a href="label_education.csv">label_education.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1178,7 +1168,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ethnicity">4.3. ethnicity</h3>
+<h3 id="_ethnicity">2.3. ethnicity</h3>
 <div class="paragraph"><p>( <a href="label_ethnicity.csv">label_ethnicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1211,7 +1201,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmage">4.4. firmage</h3>
+<h3 id="_firmage">2.4. firmage</h3>
 <div class="paragraph"><p>( <a href="label_firmage.csv">label_firmage.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1260,7 +1250,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmsize">4.5. firmsize</h3>
+<h3 id="_firmsize">2.5. firmsize</h3>
 <div class="paragraph"><p>( <a href="label_firmsize.csv">label_firmsize.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1309,7 +1299,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ownercode">4.6. ownercode</h3>
+<h3 id="_ownercode">2.6. ownercode</h3>
 <div class="paragraph"><p>( <a href="label_ownercode.csv">label_ownercode.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1342,7 +1332,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_periodicity">4.7. periodicity</h3>
+<h3 id="_periodicity">2.7. periodicity</h3>
 <div class="paragraph"><p>( <a href="label_periodicity.csv">label_periodicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1371,7 +1361,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quarter">4.8. quarter</h3>
+<h3 id="_quarter">2.8. quarter</h3>
 <div class="paragraph"><p>( <a href="label_quarter.csv">label_quarter.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1408,7 +1398,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_race">4.9. race</h3>
+<h3 id="_race">2.9. race</h3>
 <div class="paragraph"><p>( <a href="label_race.csv">label_race.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1461,7 +1451,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_seasonadj">4.10. seasonadj</h3>
+<h3 id="_seasonadj">2.10. seasonadj</h3>
 <div class="paragraph"><p>( <a href="label_seasonadj.csv">label_seasonadj.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1490,7 +1480,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_sex">4.11. sex</h3>
+<h3 id="_sex">2.11. sex</h3>
 <div class="paragraph"><p>( <a href="label_sex.csv">label_sex.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1524,9 +1514,9 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_industry">4.12. Industry</h3>
+<h3 id="_industry">2.12. Industry</h3>
 <div class="sect3">
-<h4 id="ind_level">4.12.1. Industry levels</h4>
+<h4 id="ind_level">2.12.1. Industry levels</h4>
 <div class="paragraph"><p>( <a href="label_ind_level.csv">label_ind_level.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1563,7 +1553,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_industry_2">4.12.2. Industry</h4>
+<h4 id="_industry_2">2.12.2. Industry</h4>
 <div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
 <div class="paragraph"><p>Only a small subset of available values shown.
 The 2007 NAICS (North American Industry Classification System) is used for all years.
@@ -1657,9 +1647,9 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geography">4.13. Geography</h3>
+<h3 id="_geography">2.13. Geography</h3>
 <div class="sect3">
-<h4 id="geo_level">4.13.1. Geographic levels</h4>
+<h4 id="geo_level">2.13.1. Geographic levels</h4>
 <div class="paragraph"><p>( <a href="label_geo_level.csv">label_geo_level.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1704,7 +1694,7 @@ A separate <a href="label_fipsnum.csv">label_fipsnum.csv</a> contains values and
 for all entities of geo_level <em>n</em> or <em>s</em>, and is a summary of separately available files.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_national_and_state_level_values">4.13.2. National and state-level values</h4>
+<h4 id="_national_and_state_level_values">2.13.2. National and state-level values</h4>
 <div class="paragraph"><p>( <a href="label_fipsnum.csv">label_fipsnum.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1789,8 +1779,8 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_detailed_state_and_substate_level_values">4.13.3. Detailed state and substate level values</h4>
-<div class="paragraph"><p>For a full listing of all valid geography codes, see <a href="http://www.census.gov/geo/maps-data/data/tiger.html">http://www.census.gov/geo/maps-data/data/tiger.html</a>.
+<h4 id="_detailed_state_and_substate_level_values">2.13.3. Detailed state and substate level values</h4>
+<div class="paragraph"><p>For a full listing of all valid geography codes (except for WIA codes), see <a href="http://www.census.gov/geo/maps-data/data/tiger.html">http://www.census.gov/geo/maps-data/data/tiger.html</a>.
 Note about geography codes: Four types of geography codes are represented with this field. Each geography
 has its own code structure.</p></div>
 <div class="ulist"><ul>
@@ -1827,7 +1817,7 @@ The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.</p></div>
+<div class="paragraph"><p>The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.</p></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -2061,7 +2051,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aggregation_level">4.14. Aggregation level</h3>
+<h3 id="_aggregation_level">2.14. Aggregation level</h3>
 <div class="paragraph"><p>( <a href="label_agg_level.csv">label_agg_level.csv</a> )</p></div>
 <div class="paragraph"><p>The linked file (<a href="label_agg_level.csv">label_agg_level.csv</a> ) has columns indicating exactly which detailed variabes are included.  Columns <a href="#geo_level">geo_level</a> and <a href="#ind_level">ind_level</a> are explained above.</p></div>
 <div class="tableblock">
@@ -2174,7 +2164,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_statusflags_a_status_flags">5. <a id="statusflags"></a>Status flags</h2>
+<h2 id="_a_id_statusflags_a_status_flags">3. <a id="statusflags"></a>Status flags</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="label_flags.csv">label_flags.csv</a> )</p></div>
 <div class="paragraph"><p>Each status flag in the tables above contains one of the following valid values.
@@ -2251,10 +2241,10 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_changes_a_changes">6. <a id="changes"></a> Changes</h2>
+<h2 id="_a_id_changes_a_changes">4. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_this_version_from_previous_releases_of_this_document">6.1. This version from previous releases of this document</h3>
+<h3 id="_this_version_from_previous_releases_of_this_document">4.1. This version from previous releases of this document</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -2266,20 +2256,26 @@ cellspacing="0" cellpadding="4">
 2015-02-25: documents are now identified by date, not revision
 </p>
 </li>
-</ul></div>
-</div>
-<div class="sect2">
-<h3 id="_version_4_1_draft_from_4_0">6.2. Version 4.1-draft from 4.0</h3>
-<div class="ulist"><ul>
 <li>
 <p>
-added J2J, National QWI specs
+2015-03-10: Correction of the TIGER vintage htat is used for geographic references
 </p>
 </li>
 </ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_1_draft_from_4_0">4.2. Version 4.1-draft from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+added J2J, National QWI spec
+</p>
+</li>
+</ul></div>
+<div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This version: Wed Feb 25 10:50:15 EST 2015</p></div>
+<div class="paragraph"><p>This revision: Wed Mar 11 22:10:17 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -2288,7 +2284,7 @@ added J2J, National QWI specs
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-02-25 10:50:15 EST
+Last updated 2015-03-11 22:10:17 EDT
 </div>
 </div>
 </body>

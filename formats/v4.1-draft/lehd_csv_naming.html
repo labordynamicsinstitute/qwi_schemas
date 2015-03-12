@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
 <title>LEHD Public Use CSV Naming Schema v4.1-draft - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
@@ -18,7 +18,9 @@ asciidoc.install(2);
 <body class="article">
 <div id="header">
 <h1>LEHD Public Use CSV Naming Schema v4.1-draft - CSV Naming Convention</h1>
-<span id="author">04 November 2014</span><br />
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">11 March 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -28,16 +30,6 @@ asciidoc.install(2);
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="lehd_csv_naming.pdf">Printable version</a> )</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_purpose">1. Purpose</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
-<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -45,11 +37,23 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft">erika.mcentarfer@census.gov</a>
-or <a href="mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft">lars.vilhuber@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose">1. Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
+<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -229,6 +233,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_fas">5.4. fas</h3>
@@ -262,6 +267,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_geocat">5.5. geocat</h3>
@@ -303,6 +309,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_indcat">5.6. indcat</h3>
@@ -340,6 +347,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_owncat">5.7. owncat</h3>
@@ -373,6 +381,7 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
 <h3 id="_sa">5.8. sa</h3>
@@ -402,6 +411,37 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">6. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_this_version_from_previous_releases_of_this_document">6.1. This version from previous releases of this document</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-02-25: corrected flag values
+</p>
+</li>
+<li>
+<p>
+2015-02-25: documents are now identified by date, not revision
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_1_draft_from_4_0">6.2. Version 4.1-draft from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+added J2J, National QWI spec
+</p>
+</li>
+</ul></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -413,9 +453,10 @@ cellspacing="0" cellpadding="4">
 </td>
 </tr></table>
 </div>
+<div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This version: : 594 $</p></div>
+<div class="paragraph"><p>This revision: Wed Mar 11 22:04:42 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -424,7 +465,7 @@ cellspacing="0" cellpadding="4">
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-11-04 17:20:55 EST
+Last updated 2015-03-11 22:04:42 EDT
 </div>
 </div>
 </body>

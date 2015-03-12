@@ -9,7 +9,7 @@ echo "
 
 	will build the format documentation from CSV files and a template.
 
-	Providing a format version overrides the automatically defined one
+	Version = cornell|draft|official changes a note in the document
 	"
 	exit 1
 fi
@@ -17,22 +17,63 @@ fi
 if [[ "$1" = "start" ]]
 then
 # parse version from directory
-   cwd=$(pwd)
-   version=${cwd##*/}
+   version=cornell
 else
    version=$1
 fi
+cwd=$(pwd)
+numversion=${cwd##*/}
 # convert the column definitions to CSV
 sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definitions.txt | tail -n +2 > tmp.csv
 
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
-echo "= LEHD Public Use Data Schema $version" > $asciifile
+echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo 'Lars Vilhuber <lars.vilhuber@census.gov>' >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
+
+" >> $asciifile
+# A note on the relevance/beta/draft status of this file.
+
+case $version in
+	cornell)
+	echo "
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+	" >> $asciifile
+	;;
+	draft)
+	echo "
+[IMPORTANT]
+.Important
+==============================================
+This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
+or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+==============================================
+	" >> $asciifile
+	;;
+	official)
+	echo "
+[IMPORTANT]
+.Important
+==============================================
+Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_4.0.1[erika.mcentarfer@census.gov]
+or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_4.0.1[lars.vilhuber@census.gov].
+==============================================
+	" >> $asciifile
+	;;
+esac
+
+echo "
 
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
@@ -41,22 +82,8 @@ http://lehd.ces.census.gov/data/ .
 
 This document describes the data schema for LEHD files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[].
+with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
-[IMPORTANT]
-.Important
-==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
-or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
-==============================================
-
-Extends
--------
-This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.
-
-Supersedes
-----------
-For the specified files, this is the first schema.
 
 Basic Schema
 ------------
@@ -286,7 +313,7 @@ include::tmp.csv[]
 
 ==== Detailed state and substate level values
 
-For a full listing of all valid geography codes, see http://www.census.gov/geo/maps-data/data/tiger.html.
+For a full listing of all valid geography codes (except for WIA codes), see http://www.census.gov/geo/maps-data/data/tiger.html.
 Note about geography codes: Four types of geography codes are represented with this field. Each geography
 has its own code structure.
 
@@ -297,7 +324,7 @@ has its own code structure.
 ** In J2J, tabulations are based on the complete metropolitan/micropolitan area.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
-The 2013 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
+The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
 
 [IMPORTANT]
 .Important
@@ -363,18 +390,16 @@ include::$arg[]
 
 <<<
 
-== [[changes]] Changes
-
-=== This version from previous releases of this document
-- 2015-02-25: corrected flag values
-- 2015-02-25: documents are now identified by date, not revision
-
-=== Version 4.1-draft from 4.0
-- added J2J, National QWI specs
+" >> $asciifile
 
 
+cat CHANGES.txt >> $asciifile
+
+echo "
+
+<<<
 *******************
-This version: $(date)
+This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
