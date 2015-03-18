@@ -20,6 +20,14 @@ then
 else
 	version=$1
 fi
+case $version in
+	cornell|draft)
+	author=lars.vilhuber@cornell.edu
+	;;
+	official)
+	author=lars.vilhuber@census.gov
+	;;
+esac
 cwd=$(pwd)
 # parse version from directory
 numversion=${cwd##*/}
@@ -29,7 +37,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_csv_naming.asciidoc
 echo "= LEHD Public Use CSV Naming Schema $numversion - CSV Naming Convention"> $asciifile
-echo 'Lars Vilhuber <lars.vilhuber@cornell.edu>' >> $asciifile
+echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
