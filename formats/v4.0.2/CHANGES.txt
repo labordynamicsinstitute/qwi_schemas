@@ -1,5 +1,8 @@
 == [[changes]] Changes
 
 === Version 4.0.1 from 4.0
-- 2015-02-24: switched NAICS coding from 2007 to 2012
 - 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+=== Version 4.0.2 from 4.0.1
+- 2015-04-01: switched NAICS coding from 2007 to 2012

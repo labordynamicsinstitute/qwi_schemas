@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-12 March 2015
+01 April 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -316,12 +316,12 @@ include::label_flags.csv[]
 == [[changes]] Changes
 
 === Version 4.0.1 from 4.0
-- 2015-02-24: switched NAICS coding from 2007 to 2012
 - 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
 
 
 <<<
 *******************
-This revision: Thu Mar 12 08:49:56 EDT 2015
+This revision: Wed Apr  1 11:19:31 EDT 2015
 *******************
 
