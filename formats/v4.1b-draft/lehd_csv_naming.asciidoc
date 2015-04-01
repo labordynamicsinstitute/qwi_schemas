@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-11 March 2015
+17 March 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -82,7 +82,7 @@ This component is based on the alphabetic FIPS state code equivalent to the nume
 type,Description
 all,Collection of all available states
 us,National data (50 states + DC)
-st,Any legal 2-character state postal code (see link:naming_geohi.csv[] ))
+st,Any legal 2-character state postal code (see link:naming_geohi.csv[] )
 |===================================================
 
 === demo
@@ -158,6 +158,8 @@ include::naming_sa.csv[]
 - 2015-02-25: documents are now identified by date, not revision
 - 2015-03-10: Correction of the TIGER vintage that is used for geographic references
 - 2015-03-11: Added URL for J2J
+- 2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
+- 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
 
 === Version 4.1b-draft from 4.0
 - added J2J, National QWI spec
@@ -172,6 +174,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Wed Mar 11 23:21:37 EDT 2015
+This revision: Tue Mar 17 22:12:13 EDT 2015
 *******************
 

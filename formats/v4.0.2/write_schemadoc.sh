@@ -21,6 +21,14 @@ then
 else
    version=$1
 fi
+case $version in
+	cornell|draft)
+	author=lars.vilhuber@cornell.edu
+	;;
+	official)
+	author=lars.vilhuber@census.gov
+	;;
+esac
 cwd=$(pwd)
 numversion=${cwd##*/}
 # convert the column definitions to CSV
@@ -29,11 +37,11 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
-echo 'Lars Vilhuber <lars.vilhuber@census.gov>' >> $asciifile
+echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 
-( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
+( link:QWIPU_Data_Schema.pdf[Printable version] )
 
 " >> $asciifile
 # A note on the relevance/beta/draft status of this file.
@@ -75,12 +83,12 @@ esac
 
 echo "
 
-The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema.
+The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+ are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ .
+http://lehd.ces.census.gov/data/ and at an (occassional) mirror site at http://download.vrdc.cornell.edu/qwipu/.
 
-This document describes the data schema for LEHD files. For each variable,
+This document describes the data schema for QWI files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
 with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
@@ -120,22 +128,6 @@ Identifiers without the year and quarter component can be considered a series id
 " >> $asciifile
 
 ############################## Identifiers
-for arg in  lehd_mapping_identifiers.csv
-do
-  name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
-  echo "==== $name
-( link:${arg}[] )
-
-Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
-to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
-
-[width=\"80%\",format=\"csv\",cols=\"<3,6*^1\",options=\"header\"]
-|===================================================
-include::$arg[]
-|===================================================
-<<<
-" >> $asciifile
-done
 
 for arg in   $(ls lehd_identifiers_*csv)
 do
@@ -159,151 +151,14 @@ echo "
 The following tables and associated mapping files
 list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
 
-==== National QWI and state-level QWI ====
 
 ( link:variables_qwipu.csv[variables_qwipu.csv] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
 |===================================================
 include::variables_qwipu.csv[]
 |===================================================
-<<<
-
-==== Job-to-job flow counts (J2J)
-( link:variables_j2j.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
-|===================================================
-include::variables_j2j.csv[]
-|===================================================
-<<<
-
-==== Job-to-job flow rates (J2JR)
-( link:variables_j2jr.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
-|===================================================
-include::variables_j2jr.csv[]
-|===================================================
-<<<
-
-==== Job-to-job flow Origin-Destination (J2JOD)
-( link:variables_j2jod.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"^3,^2,^3,<5\",options=\"header\"]
-|===================================================
-include::variables_j2jod.csv[]
-|===================================================
-<<<
 
 <<<
-" >> $asciifile
-
-
-################################# Variability measures
-for arg in   $(ls variables_*v.csv)
-do
-	tmpfile=tmp_$arg
-	head -4 $arg  > $tmpfile
-	echo "...,," >> $tmpfile
-	grep "df_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-	grep "mr_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-	grep "vw_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-	grep "vb_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-done
-
-echo "
-<<<
-=== [[vmeasures]]Variability measures
-The following tables and associated mapping files
-list the variability measures available on each file.  The ''Variability measure'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles.  The ''Variable Name'' is a more verbose description of the variability measure.
-
-Three variability measures are published:
-
-* Total variability, prefixed by vt_
-* Degrees of freedom, prefixed by df_
-* Missingness ratio, prefixed by mr_
-
-A missing variability measure indicates a structural zero in the corresponding indicator.
-
-//Not all indicators have associated variability measures. For more details, see the following document TBD.
-
-==== Generic structure
-
-[width=\"30%\",format=\"csv\",cols=\"<2\",options=\"header\"]
-|===================================================
-Column name
-[ Identifier1 ]
-[ Identifier2 ]
-[ Identifier3 ]
-[ ... ]
-[ Total variation for Indicator 1 ]
-[ Total variation for Indicator 2 ]
-[ Total variation for Indicator 3 ]
-[ ... ]
-[ Degrees of freedom for Indicator 1 ]
-[ Degrees of freedom for Indicator 2 ]
-[ Degrees of freedom for Indicator 3 ]
-[ ... ]
-[ Missingness ratio for Indicator 1 ]
-[ Missingness ratio for Indicator 2 ]
-[ Missingness ratio for Indicator 3 ]
-[ ... ]
-[ Average within-implicate variability for Indicator 1 ]
-[ Average within-implicate variability for Indicator 2 ]
-[ Average within-implicate variability for Indicator 3 ]
-[ ... ]
-[ Between-implicate variability for Indicator 1 ]
-[ Between-implicate variability for Indicator 2 ]
-[ Between-implicate variability for Indicator 3 ]
-[ ... ]
-|===================================================
-
-
-Note: A full list of indicators for each type of file are shown  in the <<indicators,Indicators>> section. In the tables below, only a sample
-of variability measures are printed, but the complete list is available in the linked CSV schema files.
-
-<<<
-
-==== National QWI and state-level QWI ====
-
-( link:variables_qwiv.csv[variables_qwiv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
-|===================================================
-include::tmp_variables_qwiv.csv[]
-|===================================================
-
-<<<
-
-==== Job-to-job flow counts (J2J)
-Soon.
-//( link:variables_j2j.csv[] )
-//[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
-//|===================================================
-//include::tmp_variables_j2jv.csv[]
-//|===================================================
-//<<<
-//
-
-==== Job-to-job flow rates (J2JR)
-Soon.
-//( link:variables_j2jr.csv[] )
-//[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
-//|===================================================
-//include::tmp_variables_j2jrv.csv[]
-//|===================================================
-//<<<
-
-==== Job-to-job flow Origin-Destination (J2JOD)
-Soon.
-//( link:variables_j2jod.csv[] )
-//[width=\"95%\",format=\"csv\",cols=\"^3,^2,^3,<5\",options=\"header\"]
-//|===================================================
-//include::tmp_variables_j2jodv.csv[]
-//|===================================================
-
-<<<
-
 " >> $asciifile
 
 
@@ -362,7 +217,8 @@ echo "
 ( link:${arg}[] )
 
 Only a small subset of available values shown.
-The 2007 NAICS (North American Industry Classification System) is used for all years.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -379,9 +235,8 @@ done
   name=Geography
 	# construct the NS file
 	nsfile=label_fipsnum.csv
-	#echo "geography,label" > $nsfile
-	#echo "00,National (50 States + DC)" >> $nsfile
-	#grep -h -E "^[0-9][0-9]," label_geography_??.csv | sort -n -k 1 >> $nsfile
+	echo "geography,label" > $nsfile
+	grep -h -E "^[0-9][0-9]," ??/label_geography.csv >> $nsfile
 
 	# construct the sample fips file
 	head -8 $nsfile > tmp.csv
@@ -409,12 +264,12 @@ include::$arg[]
 done
 
 echo "
-Geography labels are provided in separate files by state. Note that cross-state CBSA will have
+Geography labels are provided in separate files, in directories by state. Note that cross-state CBSA will have
 state-specific parts, and thus will appear in multiple files.
 A separate link:$nsfile[$nsfile] contains values and labels
 for all entities of geo_level 'n' or 's', and is a summary of separately available files.
 
-==== National and state-level values ====
+==== State-level values ====
 ( link:$nsfile[] )
 
 [width=\"40%\",format=\"csv\",cols=\"^1,<3\",options=\"header\"]
@@ -432,50 +287,24 @@ has its own code structure.
 - County is the 5-digit FIPS code.
 - Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
-** In J2J, tabulations are based on the complete metropolitan/micropolitan area.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
 The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
 
-[IMPORTANT]
-.Important
-==============================================
-The above section should include hyperlinks to
-the appropriate reference.
-==============================================
 
 [format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
 |===================================================
 State,Format file" >> $asciifile
 
-  for arg in $(ls label_geography_??.csv)
+  for arg in $(ls  ??/label_geography.csv)
   do
-  	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+  	state=$(dirname ${arg}|tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile
   done
 echo "|===================================================" >> $asciifile
 
 ################################# Variables
 # finish file
-
-nsfile=label_agg_level.csv
-nsfileshort=label_agg_level-reduced.csv
-
-head -11 $nsfile > $nsfileshort
-
-echo "
-<<<
-=== Aggregation level
-( link:$nsfile[] )
-
-The linked file (link:$nsfile[] ) has columns indicating exactly which detailed variabes are included.  Columns <<geo_level,geo_level>> and <<ind_level,ind_level>> are explained above.
-
-
-[width=\"90%\",format=\"csv\",cols=\">2,5*<3\",options=\"header\"]
-|===================================================
-include::$nsfileshort[]
-|===================================================
-">> $asciifile
 
 
 arg=label_flags.csv
@@ -486,12 +315,6 @@ echo "
 
 Each status flag in the tables above contains one of the following valid values.
 The values and their interpretation are listed in the table below.
-
-[IMPORTANT]
-.Important
-==============================================
-Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status flags with values 10 or above only appear in online applications, not in CSV files.
-==============================================
 
 
 [width=\"80%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -518,5 +341,6 @@ asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels $asciifi
 [[ -f $(basename $asciifile .asciidoc).html  ]] && echo "$(basename $asciifile .asciidoc).html created"
 a2x -f pdf -a icons -a toc -a numbered $asciifile
 [[ -f $(basename $asciifile .asciidoc).pdf  ]] && echo "$(basename $asciifile .asciidoc).pdf created"
+mv $(basename $asciifile .asciidoc).pdf "QWIPU_Data_Schema.pdf" && echo "$(basename $asciifile .asciidoc).pdf moved to QWIPU_Data_Schema.pdf"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
