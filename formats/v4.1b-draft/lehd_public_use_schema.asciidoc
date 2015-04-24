@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.1b-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-17 March 2015
+24 April 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -109,13 +109,25 @@ include::lehd_identifiers_qwi.csv[]
 The following tables and associated mapping files
 list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
 
-==== National QWI and state-level QWI ====
+==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwipu.csv[variables_qwipu.csv] )
 [width="95%",format="csv",cols="3*^2,<5",options="header"]
 |===================================================
 include::variables_qwipu.csv[]
 |===================================================
+<<<
+
+==== National QWI and state-level QWI rates (QWIPUR) ====
+
+( link:variables_qwipur.csv[variables_qwipur.csv] )
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+|===================================================
+include::variables_qwipur.csv[]
+|===================================================
+
+where *AvgEmp = (Emp + EmpEnd)/2* and *AvgEmpS = (EmpSpv + EmpS)/2*.
+
 <<<
 
 ==== Job-to-job flow counts (J2J)
@@ -507,15 +519,17 @@ include::label_flags.csv[]
 - 2015-03-11: Added URL for J2J
 - 2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
 - 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
+- 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
 
 === Version 4.1b-draft from 4.0
 - added J2J, National QWI spec
 - added geohi category of ALL, US
 - added definitions of variability measures
+- added definitions of rates on separate file
 
 
 <<<
 *******************
-This revision: Tue Mar 17 22:12:00 EDT 2015
+This revision: Fri Apr 24 17:12:12 EDT 2015
 *******************
 

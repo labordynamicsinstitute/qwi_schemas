@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-17 March 2015
+24 April 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -131,7 +131,7 @@ applications. When given, the 'Alternate name' may appear in related
 documentation and articles. The 'Status Flag' is used to indicate publication
 or data quality status (see Status_Flags). The 'Indicator Name' is a more
 verbose description of the indicator.
-*** 1.3.1. National QWI and state-level QWI ***
+*** 1.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwipu.csv )
 Indicator Variable Alternate name  Status Flag  Indicator Name
            Emp              B           sEmp    Beginning-of-Quarter
@@ -140,7 +140,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Counts
           EmpS              F           sEmpS   Full-Quarter Employment
                                                 (Stable): Counts
-         EmpSpv          Fprev        sEmpSpv   Full-Quarter Employment in the
+         EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment in the
                                                 Previous Quarter: Counts
        EmpTotal             M        sEmpTotal  Employment - Reference Quarter:
                                                 Counts
@@ -162,7 +162,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
           SepS              S3          sSepS   Separations (Stable): Counts
                                                 (Flow out of Full-Quarter
                                                 Employment)
-         SepSnx            S3R        sSepSnx   Separations (Stable): Next
+         SepSnx           FSnx        sSepSnx   Separations (Stable): Next
                                                 Quarter: Counts (Flow out of
                                                 Full-Quarter Employment)
        TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
@@ -189,7 +189,55 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
                                                 Monthly Earnings
         Payroll             W1       sPayroll   Total Quarterly Payroll: Sum
-*** 1.3.2. Job-to-job flow counts (J2J) ***
+*** 1.3.2. National QWI and state-level QWI rates (QWIPUR) ***
+( variables_qwipur.csv )
+Indicator Variable Alternate name     Status Flag   Indicator Name      Base
+      HirA_rate             AR         sHirA_rate   Hiring Rate         AvgEmp
+                                                    (Accessions)
+      HirN_rate            H1R         sHirN_rate   New Hiring Rate     AvgEmp
+      HirR_rate            R1R         sHirR_rate   Recall Rate         AvgEmp
+       Sep_rate             SR          sSep_rate   Separation Rate     AvgEmp
+    HirAEnd_rate           A2R       sHirAEnd_rate  End-of-Quarter      AvgEmp
+                                                    Hiring Rate
+     SepBeg_rate           S2R       sSepBeg_rate   Beginning-of-       AvgEmp
+                                                    Quarter Separation
+                                                    Rate
+      HirAs_rate           A3R        sHirAs_rate   Stable Hiring Rate  AvgEmpS
+                                                    (Flows into Full-
+                                                    Quarter Employment)
+      HirNs_rate           H3R        sHirNs_rate   Stable New Hiring   AvgEmpS
+                                                    Rate (New Hires to
+                                                    Full-Quarter
+                                                    Status)
+      SepS_rate            S3R         sSepS_rate   Stable Separation   AvgEmpS
+                                                    Rate (Flow out of
+                                                    Full-Quarter
+                                                    Employment)
+     SepSnx_rate         FSnxR       sSepSnx_rate   Stable Separation   AvgEmpS
+                                                    Rate: Next Quarter
+                                                    (Flow out of Full-
+                                                    Quarter Employment)
+   TurnOvrS_rate           FTR      sTurnOvrS_rate  Turnover Rate       AvgEmp
+                                                    (Stable)
+    FrmJbGn_rate           JCR       sFrmJbGn_rate  Firm Job Gain Rate  AvgEmp
+                                                    (Job Creation Rate)
+   FrmJobLs_rate           JDR      sFrmJobLs_rate  Firm Job Loss Rate  AvgEmp
+                                                    (Job Destruction
+                                                    Rate)
+     FrmJbC_rate           JFR       sFrmJbC_rate   Firm Job Change     AvgEmp
+                                                    Rate: Net Change
+                                                    Rate
+ HirAEndRepl_rate          EIR    sHirAEndRepl_rate Replacement Hiring  AvgEmp
+                                                    Rate
+   FrmJbGnS_rate          FJCR      sFrmJbGnS_rate  Firm Job Gain Rate  AvgEmpS
+                                                    (Stable)
+   FrmJbLsS_rate          FJDR      sFrmJbLsS_rate  Firm Job Loss Rate  AvgEmpS
+                                                    (Stable)
+    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     AvgEmpS
+                                                    (Stable): Net
+                                                    Change Rate
+where AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
+*** 1.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
 Indicator Variable Alternate name Status Flag Indicator Name
          MHire        all_doma2       sHire   Main Job Accessions - Counts
@@ -223,7 +271,7 @@ Indicator Variable Alternate name Status Flag Indicator Name
                                               Counts
          MainE            domE       sMainE   Main Job - End of Quarter -
                                               Counts
-*** 1.3.3. Job-to-job flow rates (J2JR) ***
+*** 1.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
 Indicator Variable  Alternate name    Status Flag  Indicator Name
          MHireR     all_doma2_rate       sMHireR   Main Job Accessions - Rate
@@ -257,7 +305,7 @@ Indicator Variable  Alternate name    Status Flag  Indicator Name
        ENFullQR    en2p_doms2_rate     sENFullQR   Main Job Separations - Full-
                                                    qtr Nonemployment Spell -
                                                    Rate
-*** 1.3.4. Job-to-job flow Origin-Destination (J2JOD) ***
+*** 1.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate name       Status Flag   Indicator Name
             EE              ee                sEE     Direct Job Flows - Counts
@@ -654,10 +702,13 @@ flag label
     * 2015-03-17: Changing of naming convention for to-be-released files based
       on federal government from fg → of. At this time, no such files have been
       released.
+    * 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative
+      rate names
 **** 4.2. Version 4.1b-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
-This revision: Tue Mar 17 22:12:00 EDT 2015
+    * added definitions of rates on separate file
+This revision: Fri Apr 24 17:12:12 EDT 2015
 ===============================================================================
-Last updated 2015-03-17 22:12:00 EDT
+Last updated 2015-04-24 17:12:12 EDT

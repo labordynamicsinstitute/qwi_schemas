@@ -2,7 +2,7 @@ Indicator Variable,Alternate name,Status Flag,Indicator Name
 Emp,B,sEmp,Beginning-of-Quarter Employment: Counts
 EmpEnd,E,sEmpEnd,End-of-Quarter Employment: Counts
 EmpS,F,sEmpS,Full-Quarter Employment (Stable): Counts
-EmpSpv,Fprev,sEmpSpv,Full-Quarter Employment in the Previous Quarter: Counts
+EmpSpv,Fpv,sEmpSpv,Full-Quarter Employment in the Previous Quarter: Counts
 EmpTotal,M,sEmpTotal,Employment - Reference Quarter: Counts
 HirA,A,sHirA,Hires All: Counts (Accessions)
 HirN,H1,sHirN,Hires New: Counts
@@ -15,7 +15,7 @@ SepBegR,S2R,sSepBegR,Beginning-of-Quarter Separation Rate
 HirAs,A3,sHirAs,Hires All (Stable): Counts (Flows into Full-Quarter Employment)
 HirNs,H3,sHirNs,Hires New (Stable): Counts (New Hires to Full-Quarter Status)
 SepS,S3,sSepS,Separations (Stable): Counts (Flow out of Full-Quarter Employment)
-SepSnx,S3R,sSepSnx,Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
+SepSnx,FSnx,sSepSnx,Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 TurnOvrS,FT,sTurnOvrS,Turnover (Stable)
 FrmJbGn,JC,sFrmJbGn,Firm Job Gains: Counts (Job Creation)
 FrmJobLs,JD,sFrmJobLs,Firm Job Loss: Counts (Job Destruction)

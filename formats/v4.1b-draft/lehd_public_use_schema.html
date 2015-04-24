@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema v4.1b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">17 March 2015</span>
+<span id="revdate">24 April 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -544,7 +544,7 @@ cellspacing="0" cellpadding="4">
 <div class="paragraph"><p>The following tables and associated mapping files
 list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator.</p></div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi">1.3.1. National QWI and state-level QWI</h4>
+<h4 id="_national_qwi_and_state_level_qwi_qwipu">1.3.1. National QWI and state-level QWI (QWIPU)</h4>
 <div class="paragraph"><p>( <a href="variables_qwipu.csv">variables_qwipu.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -584,7 +584,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EmpSpv</p></td>
-<td align="center" valign="top"><p class="table">Fprev</p></td>
+<td align="center" valign="top"><p class="table">Fpv</p></td>
 <td align="center" valign="top"><p class="table">sEmpSpv</p></td>
 <td align="left" valign="top"><p class="table">Full-Quarter Employment in the Previous Quarter: Counts</p></td>
 </tr>
@@ -662,7 +662,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">SepSnx</p></td>
-<td align="center" valign="top"><p class="table">S3R</p></td>
+<td align="center" valign="top"><p class="table">FSnx</p></td>
 <td align="center" valign="top"><p class="table">sSepSnx</p></td>
 <td align="left" valign="top"><p class="table">Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)</p></td>
 </tr>
@@ -762,7 +762,162 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_counts_j2j">1.3.2. Job-to-job flow counts (J2J)</h4>
+<h4 id="_national_qwi_and_state_level_qwi_rates_qwipur">1.3.2. National QWI and state-level QWI rates (QWIPUR)</h4>
+<div class="paragraph"><p>( <a href="variables_qwipur.csv">variables_qwipur.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="95%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="38%" />
+<col width="15%" />
+<thead>
+<tr>
+<th align="center" valign="top">Indicator Variable</th>
+<th align="center" valign="top">Alternate name</th>
+<th align="center" valign="top">Status Flag</th>
+<th align="left" valign="top">Indicator Name</th>
+<th align="left" valign="top">Base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">AR</p></td>
+<td align="center" valign="top"><p class="table">sHirA_rate</p></td>
+<td align="left" valign="top"><p class="table">Hiring Rate (Accessions)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">H1R</p></td>
+<td align="center" valign="top"><p class="table">sHirN_rate</p></td>
+<td align="left" valign="top"><p class="table">New Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">R1R</p></td>
+<td align="center" valign="top"><p class="table">sHirR_rate</p></td>
+<td align="left" valign="top"><p class="table">Recall Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Sep_rate</p></td>
+<td align="center" valign="top"><p class="table">SR</p></td>
+<td align="center" valign="top"><p class="table">sSep_rate</p></td>
+<td align="left" valign="top"><p class="table">Separation Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEnd_rate</p></td>
+<td align="center" valign="top"><p class="table">A2R</p></td>
+<td align="center" valign="top"><p class="table">sHirAEnd_rate</p></td>
+<td align="left" valign="top"><p class="table">End-of-Quarter Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepBeg_rate</p></td>
+<td align="center" valign="top"><p class="table">S2R</p></td>
+<td align="center" valign="top"><p class="table">sSepBeg_rate</p></td>
+<td align="left" valign="top"><p class="table">Beginning-of-Quarter Separation Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAs_rate</p></td>
+<td align="center" valign="top"><p class="table">A3R</p></td>
+<td align="center" valign="top"><p class="table">sHirAs_rate</p></td>
+<td align="left" valign="top"><p class="table">Stable Hiring Rate (Flows into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirNs_rate</p></td>
+<td align="center" valign="top"><p class="table">H3R</p></td>
+<td align="center" valign="top"><p class="table">sHirNs_rate</p></td>
+<td align="left" valign="top"><p class="table">Stable New Hiring Rate (New Hires to Full-Quarter Status)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepS_rate</p></td>
+<td align="center" valign="top"><p class="table">S3R</p></td>
+<td align="center" valign="top"><p class="table">sSepS_rate</p></td>
+<td align="left" valign="top"><p class="table">Stable Separation Rate (Flow out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepSnx_rate</p></td>
+<td align="center" valign="top"><p class="table">FSnxR</p></td>
+<td align="center" valign="top"><p class="table">sSepSnx_rate</p></td>
+<td align="left" valign="top"><p class="table">Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">TurnOvrS_rate</p></td>
+<td align="center" valign="top"><p class="table">FTR</p></td>
+<td align="center" valign="top"><p class="table">sTurnOvrS_rate</p></td>
+<td align="left" valign="top"><p class="table">Turnover Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbGn_rate</p></td>
+<td align="center" valign="top"><p class="table">JCR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbGn_rate</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Gain Rate (Job Creation Rate)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJobLs_rate</p></td>
+<td align="center" valign="top"><p class="table">JDR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJobLs_rate</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Loss Rate (Job Destruction Rate)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbC_rate</p></td>
+<td align="center" valign="top"><p class="table">JFR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbC_rate</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Change Rate: Net Change Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEndRepl_rate</p></td>
+<td align="center" valign="top"><p class="table">EIR</p></td>
+<td align="center" valign="top"><p class="table">sHirAEndRepl_rate</p></td>
+<td align="left" valign="top"><p class="table">Replacement Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmp</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbGnS_rate</p></td>
+<td align="center" valign="top"><p class="table">FJCR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbGnS_rate</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Gain Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbLsS_rate</p></td>
+<td align="center" valign="top"><p class="table">FJDR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbLsS_rate</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Loss Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbCS_rate</p></td>
+<td align="center" valign="top"><p class="table">FJFR</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbCS_rate</p></td>
+<td align="left" valign="top"><p class="table">Job Change Rate (Stable): Net Change Rate</p></td>
+<td align="left" valign="top"><p class="table">AvgEmpS</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>where <strong>AvgEmp = (Emp + EmpEnd)/2</strong> and <strong>AvgEmpS = (EmpSpv + EmpS)/2</strong>.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_job_to_job_flow_counts_j2j">1.3.3. Job-to-job flow counts (J2J)</h4>
 <div class="paragraph"><p>( <a href="variables_j2j.csv">variables_j2j.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -896,7 +1051,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_rates_j2jr">1.3.3. Job-to-job flow rates (J2JR)</h4>
+<h4 id="_job_to_job_flow_rates_j2jr">1.3.4. Job-to-job flow rates (J2JR)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jr.csv">variables_j2jr.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1018,7 +1173,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_origin_destination_j2jod">1.3.4. Job-to-job flow Origin-Destination (J2JOD)</h4>
+<h4 id="_job_to_job_flow_origin_destination_j2jod">1.3.5. Job-to-job flow Origin-Destination (J2JOD)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jod.csv">variables_j2jod.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1211,7 +1366,7 @@ of variability measures are printed, but the complete list is available in the l
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi_2">1.4.2. National QWI and state-level QWI</h4>
+<h4 id="_national_qwi_and_state_level_qwi">1.4.2. National QWI and state-level QWI</h4>
 <div class="paragraph"><p>( <a href="variables_qwiv.csv">variables_qwiv.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2569,6 +2724,11 @@ cellspacing="0" cellpadding="4">
 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released.
 </p>
 </li>
+<li>
+<p>
+2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -2589,11 +2749,16 @@ added geohi category of ALL, US
 added definitions of variability measures
 </p>
 </li>
+<li>
+<p>
+added definitions of rates on separate file
+</p>
+</li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Mar 17 22:12:00 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Fri Apr 24 17:12:12 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -2602,7 +2767,7 @@ added definitions of variability measures
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-03-17 22:12:00 EDT
+Last updated 2015-04-24 17:12:12 EDT
 </div>
 </div>
 </body>

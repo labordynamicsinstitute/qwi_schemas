@@ -167,13 +167,26 @@ echo "
 The following tables and associated mapping files
 list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
 
-==== National QWI and state-level QWI ====
+==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwipu.csv[variables_qwipu.csv] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
 |===================================================
 include::variables_qwipu.csv[]
 |===================================================
+<<<
+
+==== National QWI and state-level QWI rates (QWIPUR) ====
+
+( link:variables_qwipur.csv[variables_qwipur.csv] )
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+|===================================================
+include::variables_qwipur.csv[]
+|===================================================
+
+where the column *Base* indicates the denominator used to compute the rate,
+with *AvgEmp = (Emp + EmpEnd)/2* and *AvgEmpS = (EmpSpv + EmpS)/2*.
+
 <<<
 
 ==== Job-to-job flow counts (J2J)
