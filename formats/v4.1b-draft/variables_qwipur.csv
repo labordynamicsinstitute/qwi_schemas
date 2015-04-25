@@ -9,11 +9,11 @@ HirAs_rate,A3R,sHirAs_rate,Stable Hiring Rate (Flows into Full-Quarter Employmen
 HirNs_rate,H3R,sHirNs_rate,Stable New Hiring Rate (New Hires to Full-Quarter Status),AvgEmpS
 SepS_rate,S3R,sSepS_rate,Stable Separation Rate (Flow out of Full-Quarter Employment),AvgEmpS
 SepSnx_rate,FSnxR,sSepSnx_rate,Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment),AvgEmpS
-TurnOvrS_rate,FTR,sTurnOvrS_rate,Turnover Rate (Stable),AvgEmp
+TurnOvrS_rate,FTR,sTurnOvrS_rate,Turnover Rate (Stable),2*EmpS
 FrmJbGn_rate,JCR,sFrmJbGn_rate,Firm Job Gain Rate (Job Creation Rate),AvgEmp
 FrmJobLs_rate,JDR,sFrmJobLs_rate,Firm Job Loss Rate (Job Destruction Rate),AvgEmp
 FrmJbC_rate,JFR,sFrmJbC_rate,Firm Job Change Rate: Net Change Rate,AvgEmp
 HirAEndRepl_rate,EIR,sHirAEndRepl_rate,Replacement Hiring Rate,AvgEmp
 FrmJbGnS_rate,FJCR,sFrmJbGnS_rate,Firm Job Gain Rate (Stable),AvgEmpS
 FrmJbLsS_rate,FJDR,sFrmJbLsS_rate,Firm Job Loss Rate (Stable),AvgEmpS
-FrmJbCS_rate,FJFR,sFrmJbCS_rate,Job Change Rate (Stable): Net Change Rate,2*EmpS
+FrmJbCS_rate,FJFR,sFrmJbCS_rate,Job Change Rate (Stable): Net Change Rate,AvgEmpS

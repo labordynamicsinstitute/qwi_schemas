@@ -217,7 +217,7 @@ Indicator Variable Alternate name     Status Flag   Indicator Name      Base
                                                     Rate: Next Quarter
                                                     (Flow out of Full-
                                                     Quarter Employment)
-   TurnOvrS_rate           FTR      sTurnOvrS_rate  Turnover Rate       AvgEmp
+   TurnOvrS_rate           FTR      sTurnOvrS_rate  Turnover Rate       2*EmpS
                                                     (Stable)
     FrmJbGn_rate           JCR       sFrmJbGn_rate  Firm Job Gain Rate  AvgEmp
                                                     (Job Creation Rate)
@@ -233,7 +233,7 @@ Indicator Variable Alternate name     Status Flag   Indicator Name      Base
                                                     (Stable)
    FrmJbLsS_rate          FJDR      sFrmJbLsS_rate  Firm Job Loss Rate  AvgEmpS
                                                     (Stable)
-    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     2*EmpS
+    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     AvgEmpS
                                                     (Stable): Net
                                                     Change Rate
 where the column Base indicates the denominator used to compute the rate, with
@@ -710,6 +710,6 @@ flag label
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
-This revision: Fri Apr 24 22:05:39 EDT 2015
+This revision: Fri Apr 24 22:07:22 EDT 2015
 ===============================================================================
-Last updated 2015-04-24 22:05:39 EDT
+Last updated 2015-04-24 22:07:22 EDT
