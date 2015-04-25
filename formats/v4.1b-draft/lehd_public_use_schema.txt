@@ -233,10 +233,11 @@ Indicator Variable Alternate name     Status Flag   Indicator Name      Base
                                                     (Stable)
    FrmJbLsS_rate          FJDR      sFrmJbLsS_rate  Firm Job Loss Rate  AvgEmpS
                                                     (Stable)
-    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     AvgEmpS
+    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     2*EmpS
                                                     (Stable): Net
                                                     Change Rate
-where AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
+where the column Base indicates the denominator used to compute the rate, with
+AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
 *** 1.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
 Indicator Variable Alternate name Status Flag Indicator Name
@@ -709,6 +710,6 @@ flag label
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
-This revision: Fri Apr 24 17:12:12 EDT 2015
+This revision: Fri Apr 24 22:05:39 EDT 2015
 ===============================================================================
-Last updated 2015-04-24 17:12:12 EDT
+Last updated 2015-04-24 22:05:39 EDT

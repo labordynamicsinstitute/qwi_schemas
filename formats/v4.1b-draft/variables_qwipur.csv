@@ -16,4 +16,4 @@ FrmJbC_rate,JFR,sFrmJbC_rate,Firm Job Change Rate: Net Change Rate,AvgEmp
 HirAEndRepl_rate,EIR,sHirAEndRepl_rate,Replacement Hiring Rate,AvgEmp
 FrmJbGnS_rate,FJCR,sFrmJbGnS_rate,Firm Job Gain Rate (Stable),AvgEmpS
 FrmJbLsS_rate,FJDR,sFrmJbLsS_rate,Firm Job Loss Rate (Stable),AvgEmpS
-FrmJbCS_rate,FJFR,sFrmJbCS_rate,Job Change Rate (Stable): Net Change Rate,AvgEmpS
+FrmJbCS_rate,FJFR,sFrmJbCS_rate,Job Change Rate (Stable): Net Change Rate,2*EmpS

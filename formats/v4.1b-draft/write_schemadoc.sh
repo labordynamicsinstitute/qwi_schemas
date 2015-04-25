@@ -541,3 +541,6 @@ a2x -f pdf -a icons -a toc -a numbered $asciifile
 [[ -f $(basename $asciifile .asciidoc).pdf  ]] && echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
+echo "Removing tmp files"
+rm tmp*
+
