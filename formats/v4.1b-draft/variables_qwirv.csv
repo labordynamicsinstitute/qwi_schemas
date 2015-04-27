@@ -1,0 +1,109 @@
+Indicator Variable,Alternate name,Indicator Name
+st_HirA_rate,st_AR,Standard error of Hiring Rate (Accessions)
+st_HirN_rate,st_H1R,Standard error of New Hiring Rate
+st_HirR_rate,st_R1R,Standard error of Recall Rate
+st_Sep_rate,st_SR,Standard error of Separation Rate
+st_HirAEnd_rate,st_A2R,Standard error of End-of-Quarter Hiring Rate
+st_SepBeg_rate,st_S2R,Standard error of Beginning-of-Quarter Separation Rate
+st_HirAs_rate,st_A3R,Standard error of Stable Hiring Rate (Flows into Full-Quarter Employment)
+st_HirNs_rate,st_H3R,Standard error of Stable New Hiring Rate (New Hires to Full-Quarter Status)
+st_SepS_rate,st_S3R,Standard error of Stable Separation Rate (Flow out of Full-Quarter Employment)
+st_SepSnx_rate,st_FSnxR,Standard error of Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+st_TurnOvrS_rate,st_FTR,Standard error of Turnover Rate (Stable)
+st_FrmJbGn_rate,st_JCR,Standard error of Firm Job Gain Rate (Job Creation Rate)
+st_FrmJobLs_rate,st_JDR,Standard error of Firm Job Loss Rate (Job Destruction Rate)
+st_FrmJbC_rate,st_JFR,Standard error of Firm Job Change Rate: Net Change Rate
+st_HirAEndRepl_rate,st_EIR,Standard error of Replacement Hiring Rate
+st_FrmJbGnS_rate,st_FJCR,Standard error of Firm Job Gain Rate (Stable)
+st_FrmJbLsS_rate,st_FJDR,Standard error of Firm Job Loss Rate (Stable)
+st_FrmJbCS_rate,st_FJFR,Standard error of Job Change Rate (Stable): Net Change Rate
+vt_HirA_rate,vt_AR,Total variation of Hiring Rate (Accessions)
+vt_HirN_rate,vt_H1R,Total variation of New Hiring Rate
+vt_HirR_rate,vt_R1R,Total variation of Recall Rate
+vt_Sep_rate,vt_SR,Total variation of Separation Rate
+vt_HirAEnd_rate,vt_A2R,Total variation of End-of-Quarter Hiring Rate
+vt_SepBeg_rate,vt_S2R,Total variation of Beginning-of-Quarter Separation Rate
+vt_HirAs_rate,vt_A3R,Total variation of Stable Hiring Rate (Flows into Full-Quarter Employment)
+vt_HirNs_rate,vt_H3R,Total variation of Stable New Hiring Rate (New Hires to Full-Quarter Status)
+vt_SepS_rate,vt_S3R,Total variation of Stable Separation Rate (Flow out of Full-Quarter Employment)
+vt_SepSnx_rate,vt_FSnxR,Total variation of Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+vt_TurnOvrS_rate,vt_FTR,Total variation of Turnover Rate (Stable)
+vt_FrmJbGn_rate,vt_JCR,Total variation of Firm Job Gain Rate (Job Creation Rate)
+vt_FrmJobLs_rate,vt_JDR,Total variation of Firm Job Loss Rate (Job Destruction Rate)
+vt_FrmJbC_rate,vt_JFR,Total variation of Firm Job Change Rate: Net Change Rate
+vt_HirAEndRepl_rate,vt_EIR,Total variation of Replacement Hiring Rate
+vt_FrmJbGnS_rate,vt_FJCR,Total variation of Firm Job Gain Rate (Stable)
+vt_FrmJbLsS_rate,vt_FJDR,Total variation of Firm Job Loss Rate (Stable)
+vt_FrmJbCS_rate,vt_FJFR,Total variation of Job Change Rate (Stable): Net Change Rate
+vb_HirA_rate,vb_AR,Between-implicate variability for Hiring Rate (Accessions)
+vb_HirN_rate,vb_H1R,Between-implicate variability for New Hiring Rate
+vb_HirR_rate,vb_R1R,Between-implicate variability for Recall Rate
+vb_Sep_rate,vb_SR,Between-implicate variability for Separation Rate
+vb_HirAEnd_rate,vb_A2R,Between-implicate variability for End-of-Quarter Hiring Rate
+vb_SepBeg_rate,vb_S2R,Between-implicate variability for Beginning-of-Quarter Separation Rate
+vb_HirAs_rate,vb_A3R,Between-implicate variability for Stable Hiring Rate (Flows into Full-Quarter Employment)
+vb_HirNs_rate,vb_H3R,Between-implicate variability for Stable New Hiring Rate (New Hires to Full-Quarter Status)
+vb_SepS_rate,vb_S3R,Between-implicate variability for Stable Separation Rate (Flow out of Full-Quarter Employment)
+vb_SepSnx_rate,vb_FSnxR,Between-implicate variability for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+vb_TurnOvrS_rate,vb_FTR,Between-implicate variability for Turnover Rate (Stable)
+vb_FrmJbGn_rate,vb_JCR,Between-implicate variability for Firm Job Gain Rate (Job Creation Rate)
+vb_FrmJobLs_rate,vb_JDR,Between-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
+vb_FrmJbC_rate,vb_JFR,Between-implicate variability for Firm Job Change Rate: Net Change Rate
+vb_HirAEndRepl_rate,vb_EIR,Between-implicate variability for Replacement Hiring Rate
+vb_FrmJbGnS_rate,vb_FJCR,Between-implicate variability for Firm Job Gain Rate (Stable)
+vb_FrmJbLsS_rate,vb_FJDR,Between-implicate variability for Firm Job Loss Rate (Stable)
+vb_FrmJbCS_rate,vb_FJFR,Between-implicate variability for Job Change Rate (Stable): Net Change Rate
+vm_HirA_rate,vm_AR,Between-implicate variability for Hiring Rate (Accessions)
+vm_HirN_rate,vm_H1R,Between-implicate variability for New Hiring Rate
+vm_HirR_rate,vm_R1R,Between-implicate variability for Recall Rate
+vm_Sep_rate,vm_SR,Between-implicate variability for Separation Rate
+vm_HirAEnd_rate,vm_A2R,Between-implicate variability for End-of-Quarter Hiring Rate
+vm_SepBeg_rate,vm_S2R,Between-implicate variability for Beginning-of-Quarter Separation Rate
+vm_HirAs_rate,vm_A3R,Between-implicate variability for Stable Hiring Rate (Flows into Full-Quarter Employment)
+vm_HirNs_rate,vm_H3R,Between-implicate variability for Stable New Hiring Rate (New Hires to Full-Quarter Status)
+vm_SepS_rate,vm_S3R,Between-implicate variability for Stable Separation Rate (Flow out of Full-Quarter Employment)
+vm_SepSnx_rate,vm_FSnxR,Between-implicate variability for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+vm_TurnOvrS_rate,vm_FTR,Between-implicate variability for Turnover Rate (Stable)
+vm_FrmJbGn_rate,vm_JCR,Between-implicate variability for Firm Job Gain Rate (Job Creation Rate)
+vm_FrmJobLs_rate,vm_JDR,Between-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
+vm_FrmJbC_rate,vm_JFR,Between-implicate variability for Firm Job Change Rate: Net Change Rate
+vm_HirAEndRepl_rate,vm_EIR,Between-implicate variability for Replacement Hiring Rate
+vm_FrmJbGnS_rate,vm_FJCR,Between-implicate variability for Firm Job Gain Rate (Stable)
+vm_FrmJbLsS_rate,vm_FJDR,Between-implicate variability for Firm Job Loss Rate (Stable)
+vm_FrmJbCS_rate,vm_FJFR,Between-implicate variability for Job Change Rate (Stable): Net Change Rate
+df_HirA_rate,df_AR,Degrees of freedom for VT of Hiring Rate (Accessions)
+df_HirN_rate,df_H1R,Degrees of freedom for VT of New Hiring Rate
+df_HirR_rate,df_R1R,Degrees of freedom for VT of Recall Rate
+df_Sep_rate,df_SR,Degrees of freedom for VT of Separation Rate
+df_HirAEnd_rate,df_A2R,Degrees of freedom for VT of End-of-Quarter Hiring Rate
+df_SepBeg_rate,df_S2R,Degrees of freedom for VT of Beginning-of-Quarter Separation Rate
+df_HirAs_rate,df_A3R,Degrees of freedom for VT of Stable Hiring Rate (Flows into Full-Quarter Employment)
+df_HirNs_rate,df_H3R,Degrees of freedom for VT of Stable New Hiring Rate (New Hires to Full-Quarter Status)
+df_SepS_rate,df_S3R,Degrees of freedom for VT of Stable Separation Rate (Flow out of Full-Quarter Employment)
+df_SepSnx_rate,df_FSnxR,Degrees of freedom for VT of Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+df_TurnOvrS_rate,df_FTR,Degrees of freedom for VT of Turnover Rate (Stable)
+df_FrmJbGn_rate,df_JCR,Degrees of freedom for VT of Firm Job Gain Rate (Job Creation Rate)
+df_FrmJobLs_rate,df_JDR,Degrees of freedom for VT of Firm Job Loss Rate (Job Destruction Rate)
+df_FrmJbC_rate,df_JFR,Degrees of freedom for VT of Firm Job Change Rate: Net Change Rate
+df_HirAEndRepl_rate,df_EIR,Degrees of freedom for VT of Replacement Hiring Rate
+df_FrmJbGnS_rate,df_FJCR,Degrees of freedom for VT of Firm Job Gain Rate (Stable)
+df_FrmJbLsS_rate,df_FJDR,Degrees of freedom for VT of Firm Job Loss Rate (Stable)
+df_FrmJbCS_rate,df_FJFR,Degrees of freedom for VT of Job Change Rate (Stable): Net Change Rate
+mr_HirA_rate,mr_AR,Missingness ratio for Hiring Rate (Accessions)
+mr_HirN_rate,mr_H1R,Missingness ratio for New Hiring Rate
+mr_HirR_rate,mr_R1R,Missingness ratio for Recall Rate
+mr_Sep_rate,mr_SR,Missingness ratio for Separation Rate
+mr_HirAEnd_rate,mr_A2R,Missingness ratio for End-of-Quarter Hiring Rate
+mr_SepBeg_rate,mr_S2R,Missingness ratio for Beginning-of-Quarter Separation Rate
+mr_HirAs_rate,mr_A3R,Missingness ratio for Stable Hiring Rate (Flows into Full-Quarter Employment)
+mr_HirNs_rate,mr_H3R,Missingness ratio for Stable New Hiring Rate (New Hires to Full-Quarter Status)
+mr_SepS_rate,mr_S3R,Missingness ratio for Stable Separation Rate (Flow out of Full-Quarter Employment)
+mr_SepSnx_rate,mr_FSnxR,Missingness ratio for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+mr_TurnOvrS_rate,mr_FTR,Missingness ratio for Turnover Rate (Stable)
+mr_FrmJbGn_rate,mr_JCR,Missingness ratio for Firm Job Gain Rate (Job Creation Rate)
+mr_FrmJobLs_rate,mr_JDR,Missingness ratio for Firm Job Loss Rate (Job Destruction Rate)
+mr_FrmJbC_rate,mr_JFR,Missingness ratio for Firm Job Change Rate: Net Change Rate
+mr_HirAEndRepl_rate,mr_EIR,Missingness ratio for Replacement Hiring Rate
+mr_FrmJbGnS_rate,mr_FJCR,Missingness ratio for Firm Job Gain Rate (Stable)
+mr_FrmJbLsS_rate,mr_FJDR,Missingness ratio for Firm Job Loss Rate (Stable)
+mr_FrmJbCS_rate,mr_FJFR,Missingness ratio for Job Change Rate (Stable): Net Change Rate
