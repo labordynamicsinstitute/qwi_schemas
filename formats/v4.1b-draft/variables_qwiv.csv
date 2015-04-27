@@ -5,16 +5,16 @@ st_EmpS,st_F,Standard error of Full-Quarter Employment (Stable): Counts
 st_EmpSpv,st_Fpv,Standard error of Full-Quarter Employment in the Previous Quarter: Counts
 st_EmpTotal,st_M,Standard error of Employment - Reference Quarter: Counts
 st_HirA,st_A,Standard error of Hires All: Counts (Accessions)
-st_HirN,st_H1,Standard error of Hires New: Counts
-st_HirR,st_R1,Standard error of Hires Recalls: Counts
+st_HirN,st_H,Standard error of Hires New: Counts
+st_HirR,st_R,Standard error of Hires Recalls: Counts
 st_Sep,st_S,Standard error of Separations: Counts
-st_HirAEnd,st_A2,Standard error of End-of-Quarter Hires
-st_HirAEndR,st_A2R,Standard error of End-of-Quarter Hiring Rate
-st_SepBeg,st_S2,Standard error of Beginning-of-Quarter Separations
-st_SepBegR,st_S2R,Standard error of Beginning-of-Quarter Separation Rate
-st_HirAs,st_A3,Standard error of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-st_HirNs,st_H3,Standard error of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-st_SepS,st_S3,Standard error of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+st_HirAEnd,st_CA,Standard error of End-of-Quarter Hires
+st_HirAEndR,st_CAR,Standard error of End-of-Quarter Hiring Rate
+st_SepBeg,st_CS,Standard error of Beginning-of-Quarter Separations
+st_SepBegR,st_CSR,Standard error of Beginning-of-Quarter Separation Rate
+st_HirAs,st_FA,Standard error of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+st_HirNs,st_FH,Standard error of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+st_SepS,st_FS,Standard error of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 st_SepSnx,st_FSnx,Standard error of Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 st_TurnOvrS,st_FT,Standard error of Turnover (Stable)
 st_FrmJbGn,st_JC,Standard error of Firm Job Gains: Counts (Job Creation)
@@ -37,16 +37,16 @@ vt_EmpS,vt_F,Total variation of Full-Quarter Employment (Stable): Counts
 vt_EmpSpv,vt_Fpv,Total variation of Full-Quarter Employment in the Previous Quarter: Counts
 vt_EmpTotal,vt_M,Total variation of Employment - Reference Quarter: Counts
 vt_HirA,vt_A,Total variation of Hires All: Counts (Accessions)
-vt_HirN,vt_H1,Total variation of Hires New: Counts
-vt_HirR,vt_R1,Total variation of Hires Recalls: Counts
+vt_HirN,vt_H,Total variation of Hires New: Counts
+vt_HirR,vt_R,Total variation of Hires Recalls: Counts
 vt_Sep,vt_S,Total variation of Separations: Counts
-vt_HirAEnd,vt_A2,Total variation of End-of-Quarter Hires
-vt_HirAEndR,vt_A2R,Total variation of End-of-Quarter Hiring Rate
-vt_SepBeg,vt_S2,Total variation of Beginning-of-Quarter Separations
-vt_SepBegR,vt_S2R,Total variation of Beginning-of-Quarter Separation Rate
-vt_HirAs,vt_A3,Total variation of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-vt_HirNs,vt_H3,Total variation of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-vt_SepS,vt_S3,Total variation of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+vt_HirAEnd,vt_CA,Total variation of End-of-Quarter Hires
+vt_HirAEndR,vt_CAR,Total variation of End-of-Quarter Hiring Rate
+vt_SepBeg,vt_CS,Total variation of Beginning-of-Quarter Separations
+vt_SepBegR,vt_CSR,Total variation of Beginning-of-Quarter Separation Rate
+vt_HirAs,vt_FA,Total variation of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+vt_HirNs,vt_FH,Total variation of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+vt_SepS,vt_FS,Total variation of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 vt_SepSnx,vt_FSnx,Total variation of Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 vt_TurnOvrS,vt_FT,Total variation of Turnover (Stable)
 vt_FrmJbGn,vt_JC,Total variation of Firm Job Gains: Counts (Job Creation)
@@ -69,16 +69,16 @@ vb_EmpS,vb_F,Between-implicate variability for Full-Quarter Employment (Stable):
 vb_EmpSpv,vb_Fpv,Between-implicate variability for Full-Quarter Employment in the Previous Quarter: Counts
 vb_EmpTotal,vb_M,Between-implicate variability for Employment - Reference Quarter: Counts
 vb_HirA,vb_A,Between-implicate variability for Hires All: Counts (Accessions)
-vb_HirN,vb_H1,Between-implicate variability for Hires New: Counts
-vb_HirR,vb_R1,Between-implicate variability for Hires Recalls: Counts
+vb_HirN,vb_H,Between-implicate variability for Hires New: Counts
+vb_HirR,vb_R,Between-implicate variability for Hires Recalls: Counts
 vb_Sep,vb_S,Between-implicate variability for Separations: Counts
-vb_HirAEnd,vb_A2,Between-implicate variability for End-of-Quarter Hires
-vb_HirAEndR,vb_A2R,Between-implicate variability for End-of-Quarter Hiring Rate
-vb_SepBeg,vb_S2,Between-implicate variability for Beginning-of-Quarter Separations
-vb_SepBegR,vb_S2R,Between-implicate variability for Beginning-of-Quarter Separation Rate
-vb_HirAs,vb_A3,Between-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-vb_HirNs,vb_H3,Between-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-vb_SepS,vb_S3,Between-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+vb_HirAEnd,vb_CA,Between-implicate variability for End-of-Quarter Hires
+vb_HirAEndR,vb_CAR,Between-implicate variability for End-of-Quarter Hiring Rate
+vb_SepBeg,vb_CS,Between-implicate variability for Beginning-of-Quarter Separations
+vb_SepBegR,vb_CSR,Between-implicate variability for Beginning-of-Quarter Separation Rate
+vb_HirAs,vb_FA,Between-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+vb_HirNs,vb_FH,Between-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+vb_SepS,vb_FS,Between-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 vb_SepSnx,vb_FSnx,Between-implicate variability for Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 vb_TurnOvrS,vb_FT,Between-implicate variability for Turnover (Stable)
 vb_FrmJbGn,vb_JC,Between-implicate variability for Firm Job Gains: Counts (Job Creation)
@@ -101,16 +101,16 @@ vm_EmpS,vm_F,Average within-implicate variability for Full-Quarter Employment (S
 vm_EmpSpv,vm_Fpv,Average within-implicate variability for Full-Quarter Employment in the Previous Quarter: Counts
 vm_EmpTotal,vm_M,Average within-implicate variability for Employment - Reference Quarter: Counts
 vm_HirA,vm_A,Average within-implicate variability for Hires All: Counts (Accessions)
-vm_HirN,vm_H1,Average within-implicate variability for Hires New: Counts
-vm_HirR,vm_R1,Average within-implicate variability for Hires Recalls: Counts
+vm_HirN,vm_H,Average within-implicate variability for Hires New: Counts
+vm_HirR,vm_R,Average within-implicate variability for Hires Recalls: Counts
 vm_Sep,vm_S,Average within-implicate variability for Separations: Counts
-vm_HirAEnd,vm_A2,Average within-implicate variability for End-of-Quarter Hires
-vm_HirAEndR,vm_A2R,Average within-implicate variability for End-of-Quarter Hiring Rate
-vm_SepBeg,vm_S2,Average within-implicate variability for Beginning-of-Quarter Separations
-vm_SepBegR,vm_S2R,Average within-implicate variability for Beginning-of-Quarter Separation Rate
-vm_HirAs,vm_A3,Average within-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-vm_HirNs,vm_H3,Average within-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-vm_SepS,vm_S3,Average within-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+vm_HirAEnd,vm_CA,Average within-implicate variability for End-of-Quarter Hires
+vm_HirAEndR,vm_CAR,Average within-implicate variability for End-of-Quarter Hiring Rate
+vm_SepBeg,vm_CS,Average within-implicate variability for Beginning-of-Quarter Separations
+vm_SepBegR,vm_CSR,Average within-implicate variability for Beginning-of-Quarter Separation Rate
+vm_HirAs,vm_FA,Average within-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+vm_HirNs,vm_FH,Average within-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+vm_SepS,vm_FS,Average within-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 vm_SepSnx,vm_FSnx,Average within-implicate variability for Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 vm_TurnOvrS,vm_FT,Average within-implicate variability for Turnover (Stable)
 vm_FrmJbGn,vm_JC,Average within-implicate variability for Firm Job Gains: Counts (Job Creation)
@@ -133,16 +133,16 @@ df_EmpS,df_F,Degrees of freedom for VT of Full-Quarter Employment (Stable): Coun
 df_EmpSpv,df_Fpv,Degrees of freedom for VT of Full-Quarter Employment in the Previous Quarter: Counts
 df_EmpTotal,df_M,Degrees of freedom for VT of Employment - Reference Quarter: Counts
 df_HirA,df_A,Degrees of freedom for VT of Hires All: Counts (Accessions)
-df_HirN,df_H1,Degrees of freedom for VT of Hires New: Counts
-df_HirR,df_R1,Degrees of freedom for VT of Hires Recalls: Counts
+df_HirN,df_H,Degrees of freedom for VT of Hires New: Counts
+df_HirR,df_R,Degrees of freedom for VT of Hires Recalls: Counts
 df_Sep,df_S,Degrees of freedom for VT of Separations: Counts
-df_HirAEnd,df_A2,Degrees of freedom for VT of End-of-Quarter Hires
-df_HirAEndR,df_A2R,Degrees of freedom for VT of End-of-Quarter Hiring Rate
-df_SepBeg,df_S2,Degrees of freedom for VT of Beginning-of-Quarter Separations
-df_SepBegR,df_S2R,Degrees of freedom for VT of Beginning-of-Quarter Separation Rate
-df_HirAs,df_A3,Degrees of freedom for VT of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-df_HirNs,df_H3,Degrees of freedom for VT of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-df_SepS,df_S3,Degrees of freedom for VT of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+df_HirAEnd,df_CA,Degrees of freedom for VT of End-of-Quarter Hires
+df_HirAEndR,df_CAR,Degrees of freedom for VT of End-of-Quarter Hiring Rate
+df_SepBeg,df_CS,Degrees of freedom for VT of Beginning-of-Quarter Separations
+df_SepBegR,df_CSR,Degrees of freedom for VT of Beginning-of-Quarter Separation Rate
+df_HirAs,df_FA,Degrees of freedom for VT of Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+df_HirNs,df_FH,Degrees of freedom for VT of Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+df_SepS,df_FS,Degrees of freedom for VT of Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 df_SepSnx,df_FSnx,Degrees of freedom for VT of Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 df_TurnOvrS,df_FT,Degrees of freedom for VT of Turnover (Stable)
 df_FrmJbGn,df_JC,Degrees of freedom for VT of Firm Job Gains: Counts (Job Creation)
@@ -165,16 +165,16 @@ mr_EmpS,mr_F,Missingness ratio for Full-Quarter Employment (Stable): Counts
 mr_EmpSpv,mr_Fpv,Missingness ratio for Full-Quarter Employment in the Previous Quarter: Counts
 mr_EmpTotal,mr_M,Missingness ratio for Employment - Reference Quarter: Counts
 mr_HirA,mr_A,Missingness ratio for Hires All: Counts (Accessions)
-mr_HirN,mr_H1,Missingness ratio for Hires New: Counts
-mr_HirR,mr_R1,Missingness ratio for Hires Recalls: Counts
+mr_HirN,mr_H,Missingness ratio for Hires New: Counts
+mr_HirR,mr_R,Missingness ratio for Hires Recalls: Counts
 mr_Sep,mr_S,Missingness ratio for Separations: Counts
-mr_HirAEnd,mr_A2,Missingness ratio for End-of-Quarter Hires
-mr_HirAEndR,mr_A2R,Missingness ratio for End-of-Quarter Hiring Rate
-mr_SepBeg,mr_S2,Missingness ratio for Beginning-of-Quarter Separations
-mr_SepBegR,mr_S2R,Missingness ratio for Beginning-of-Quarter Separation Rate
-mr_HirAs,mr_A3,Missingness ratio for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-mr_HirNs,mr_H3,Missingness ratio for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-mr_SepS,mr_S3,Missingness ratio for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+mr_HirAEnd,mr_CA,Missingness ratio for End-of-Quarter Hires
+mr_HirAEndR,mr_CAR,Missingness ratio for End-of-Quarter Hiring Rate
+mr_SepBeg,mr_CS,Missingness ratio for Beginning-of-Quarter Separations
+mr_SepBegR,mr_CSR,Missingness ratio for Beginning-of-Quarter Separation Rate
+mr_HirAs,mr_FA,Missingness ratio for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+mr_HirNs,mr_FH,Missingness ratio for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+mr_SepS,mr_FS,Missingness ratio for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 mr_SepSnx,mr_FSnx,Missingness ratio for Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 mr_TurnOvrS,mr_FT,Missingness ratio for Turnover (Stable)
 mr_FrmJbGn,mr_JC,Missingness ratio for Firm Job Gains: Counts (Job Creation)

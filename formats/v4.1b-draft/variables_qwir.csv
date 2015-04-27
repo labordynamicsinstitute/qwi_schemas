@@ -1,13 +1,13 @@
 Indicator Variable,Alternate name,Status Flag,Indicator Name,Base
 HirA_rate,AR,sHirA_rate,Hiring Rate (Accessions),AvgEmp
-HirN_rate,H1R,sHirN_rate,New Hiring Rate,AvgEmp
-HirR_rate,R1R,sHirR_rate,Recall Rate,AvgEmp
+HirN_rate,HR,sHirN_rate,New Hiring Rate,AvgEmp
+HirR_rate,RR,sHirR_rate,Recall Rate,AvgEmp
 Sep_rate,SR,sSep_rate,Separation Rate,AvgEmp
-HirAEnd_rate,A2R,sHirAEnd_rate,End-of-Quarter Hiring Rate,AvgEmp
-SepBeg_rate,S2R,sSepBeg_rate,Beginning-of-Quarter Separation Rate,AvgEmp
-HirAs_rate,A3R,sHirAs_rate,Stable Hiring Rate (Flows into Full-Quarter Employment),AvgEmpS
-HirNs_rate,H3R,sHirNs_rate,Stable New Hiring Rate (New Hires to Full-Quarter Status),AvgEmpS
-SepS_rate,S3R,sSepS_rate,Stable Separation Rate (Flow out of Full-Quarter Employment),AvgEmpS
+HirAEnd_rate,CAR,sHirAEnd_rate,End-of-Quarter Hiring Rate,AvgEmp
+SepBeg_rate,CSR,sSepBeg_rate,Beginning-of-Quarter Separation Rate,AvgEmp
+HirAs_rate,FAR,sHirAs_rate,Stable Hiring Rate (Flows into Full-Quarter Employment),AvgEmpS
+HirNs_rate,FHR,sHirNs_rate,Stable New Hiring Rate (New Hires to Full-Quarter Status),AvgEmpS
+SepS_rate,FSR,sSepS_rate,Stable Separation Rate (Flow out of Full-Quarter Employment),AvgEmpS
 SepSnx_rate,FSnxR,sSepSnx_rate,Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment),AvgEmpS
 TurnOvrS_rate,FTR,sTurnOvrS_rate,Turnover Rate (Stable),2*EmpS
 FrmJbGn_rate,JCR,sFrmJbGn_rate,Firm Job Gain Rate (Job Creation Rate),AvgEmp

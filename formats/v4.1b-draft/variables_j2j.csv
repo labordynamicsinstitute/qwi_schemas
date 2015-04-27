@@ -1,6 +1,6 @@
 Indicator Variable,Alternate name,Status Flag,Indicator Name
-MHire,all_doma2,sHire,Main Job Accessions - Counts
-MSep,all_doms2,sSep,Main Job Separations - Counts
+MHire,all_doma2,sMHire,Main Job Accessions - Counts
+MSep,all_doms2,sMSep,Main Job Separations - Counts
 MJobStart,all_dest,sMJobStart,Main Job Starts - Counts (hires + main source of earnings changes)
 MJobEnd,all_orig,sMJobEnd,Main Job Ends - Counts (separations + main source of earnings changes)
 EEHire,ee_doma2,sEEHire,EE Accessions - Counts
