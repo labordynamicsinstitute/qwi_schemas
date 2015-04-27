@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema v4.1b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">24 April 2015</span>
+<span id="revdate">26 April 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -545,7 +545,7 @@ cellspacing="0" cellpadding="4">
 list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator.</p></div>
 <div class="sect3">
 <h4 id="_national_qwi_and_state_level_qwi_qwipu">1.3.1. National QWI and state-level QWI (QWIPU)</h4>
-<div class="paragraph"><p>( <a href="variables_qwipu.csv">variables_qwipu.csv</a> )</p></div>
+<div class="paragraph"><p>( <a href="variables_qwi.csv">variables_qwi.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
 width="95%"
@@ -763,7 +763,7 @@ cellspacing="0" cellpadding="4">
 </div>
 <div class="sect3">
 <h4 id="_national_qwi_and_state_level_qwi_rates_qwipur">1.3.2. National QWI and state-level QWI rates (QWIPUR)</h4>
-<div class="paragraph"><p>( <a href="variables_qwipur.csv">variables_qwipur.csv</a> )</p></div>
+<div class="paragraph"><p>( <a href="variables_qwir.csv">variables_qwir.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
 width="95%"
@@ -1300,6 +1300,18 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">[ Standard error for Indicator 1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Standard error for Indicator 2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Standard error for Indicator 3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table">[ Total variation for Indicator 1 ]</p></td>
 </tr>
 <tr>
@@ -1307,6 +1319,30 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">[ Total variation for Indicator 3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 3 ]</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
@@ -1335,30 +1371,6 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
 </tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 1 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 2 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Average within-implicate variability for Indicator 3 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 1 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 2 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ Between-implicate variability for Indicator 3 ]</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1379,12 +1391,32 @@ cellspacing="0" cellpadding="4">
 <col width="55%" />
 <thead>
 <tr>
-<th align="center" valign="top">Variability measure</th>
+<th align="center" valign="top">Indicator Variable</th>
 <th align="center" valign="top">Alternate name</th>
-<th align="left" valign="top">Name of variable</th>
+<th align="left" valign="top">Indicator Name</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="center" valign="top"><p class="table">st_Emp</p></td>
+<td align="center" valign="top"><p class="table">st_B</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">st_E</p></td>
+<td align="left" valign="top"><p class="table">Standard error of End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st_EmpS</p></td>
+<td align="center" valign="top"><p class="table">st_F</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
 <tr>
 <td align="center" valign="top"><p class="table">vt_Emp</p></td>
 <td align="center" valign="top"><p class="table">vt_B</p></td>
@@ -1399,6 +1431,31 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">vt_EmpS</p></td>
 <td align="center" valign="top"><p class="table">vt_F</p></td>
 <td align="left" valign="top"><p class="table">Total variation of Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_Emp</p></td>
+<td align="center" valign="top"><p class="table">vb_B</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">vb_E</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_EmpS</p></td>
+<td align="center" valign="top"><p class="table">vb_F</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
@@ -1440,25 +1497,64 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">mr_F</p></td>
 <td align="left" valign="top"><p class="table">Missingness ratio for Full-Quarter Employment (Stable): Counts</p></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_national_qwi_and_state_level_qwi_2">1.4.3. National QWI and state-level QWI</h4>
+<div class="paragraph"><p>( <a href="variables_qwirv.csv">variables_qwirv.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="95%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="22%" />
+<col width="22%" />
+<col width="55%" />
+<thead>
+<tr>
+<th align="center" valign="top">Indicator Variable</th>
+<th align="center" valign="top">Alternate name</th>
+<th align="left" valign="top">Indicator Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">st_Emp</p></td>
+<td align="center" valign="top"><p class="table">st_B</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">st_E</p></td>
+<td align="left" valign="top"><p class="table">Standard error of End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st_EmpS</p></td>
+<td align="center" valign="top"><p class="table">st_F</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
 <td align="center" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vw_Emp</p></td>
-<td align="center" valign="top"><p class="table">vw_B</p></td>
-<td align="left" valign="top"><p class="table">Average within-implicate variability for Beginning-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_Emp</p></td>
+<td align="center" valign="top"><p class="table">vt_B</p></td>
+<td align="left" valign="top"><p class="table">Total variation of Beginning-of-Quarter Employment: Counts</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vw_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">vw_E</p></td>
-<td align="left" valign="top"><p class="table">Average within-implicate variability for End-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">vt_E</p></td>
+<td align="left" valign="top"><p class="table">Total variation of End-of-Quarter Employment: Counts</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vw_EmpS</p></td>
-<td align="center" valign="top"><p class="table">vw_F</p></td>
-<td align="left" valign="top"><p class="table">Average within-implicate variability for Full-Quarter Employment (Stable): Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_EmpS</p></td>
+<td align="center" valign="top"><p class="table">vt_F</p></td>
+<td align="left" valign="top"><p class="table">Total variation of Full-Quarter Employment (Stable): Counts</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
@@ -1485,21 +1581,61 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">df_Emp</p></td>
+<td align="center" valign="top"><p class="table">df_B</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">df_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">df_E</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">df_EmpS</p></td>
+<td align="center" valign="top"><p class="table">df_F</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">mr_Emp</p></td>
+<td align="center" valign="top"><p class="table">mr_B</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">mr_EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">mr_E</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">mr_EmpS</p></td>
+<td align="center" valign="top"><p class="table">mr_F</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_counts_j2j_2">1.4.3. Job-to-job flow counts (J2J)</h4>
+<h4 id="_job_to_job_flow_counts_j2j_2">1.4.4. Job-to-job flow counts (J2J)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_rates_j2jr_2">1.4.4. Job-to-job flow rates (J2JR)</h4>
+<h4 id="_job_to_job_flow_rates_j2jr_2">1.4.5. Job-to-job flow rates (J2JR)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_origin_destination_j2jod_2">1.4.5. Job-to-job flow Origin-Destination (J2JOD)</h4>
+<h4 id="_job_to_job_flow_origin_destination_j2jod_2">1.4.6. Job-to-job flow Origin-Destination (J2JOD)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 <div style="page-break-after:always"></div>
 </div>
@@ -2759,7 +2895,7 @@ added definitions of rates on separate file
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Fri Apr 24 22:07:22 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Sun Apr 26 22:05:20 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -2768,7 +2904,7 @@ added definitions of rates on separate file
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-04-24 22:07:22 EDT
+Last updated 2015-04-26 22:05:20 EDT
 </div>
 </div>
 </body>

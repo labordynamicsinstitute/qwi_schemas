@@ -1,4 +1,4 @@
-Indicator Variable,Alternate name,Indicator Name
+Variability measure,Alternate name,Variable name
 st_Emp,st_B,Standard error of Beginning-of-Quarter Employment: Counts
 st_EmpEnd,st_E,Standard error of End-of-Quarter Employment: Counts
 st_EmpS,st_F,Standard error of Full-Quarter Employment (Stable): Counts
@@ -95,38 +95,38 @@ vb_EarnHirAS,vb_ZWFA,Between-implicate variability for Hires All (Stable): Avera
 vb_EarnHireNS,vb_ZWFH,Between-implicate variability for Hires New (Stable): Average Monthly Earnings
 vb_EarnSepS,vb_ZWFS,Between-implicate variability for Separations (Stable): Average Monthly Earnings
 vb_Payroll,vb_W1,Between-implicate variability for Total Quarterly Payroll: Sum
-vm_Emp,vm_B,Between-implicate variability for Beginning-of-Quarter Employment: Counts
-vm_EmpEnd,vm_E,Between-implicate variability for End-of-Quarter Employment: Counts
-vm_EmpS,vm_F,Between-implicate variability for Full-Quarter Employment (Stable): Counts
-vm_EmpSpv,vm_Fpv,Between-implicate variability for Full-Quarter Employment in the Previous Quarter: Counts
-vm_EmpTotal,vm_M,Between-implicate variability for Employment - Reference Quarter: Counts
-vm_HirA,vm_A,Between-implicate variability for Hires All: Counts (Accessions)
-vm_HirN,vm_H1,Between-implicate variability for Hires New: Counts
-vm_HirR,vm_R1,Between-implicate variability for Hires Recalls: Counts
-vm_Sep,vm_S,Between-implicate variability for Separations: Counts
-vm_HirAEnd,vm_A2,Between-implicate variability for End-of-Quarter Hires
-vm_HirAEndR,vm_A2R,Between-implicate variability for End-of-Quarter Hiring Rate
-vm_SepBeg,vm_S2,Between-implicate variability for Beginning-of-Quarter Separations
-vm_SepBegR,vm_S2R,Between-implicate variability for Beginning-of-Quarter Separation Rate
-vm_HirAs,vm_A3,Between-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-vm_HirNs,vm_H3,Between-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
-vm_SepS,vm_S3,Between-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
-vm_SepSnx,vm_FSnx,Between-implicate variability for Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
-vm_TurnOvrS,vm_FT,Between-implicate variability for Turnover (Stable)
-vm_FrmJbGn,vm_JC,Between-implicate variability for Firm Job Gains: Counts (Job Creation)
-vm_FrmJobLs,vm_JD,Between-implicate variability for Firm Job Loss: Counts (Job Destruction)
-vm_FrmJbC,vm_JF,Between-implicate variability for Firm Job Change: Net Change
-vm_HirAEndRepl,vm_EI,Between-implicate variability for Replacement Hires
-vm_HirAEndReplr,vm_EIR,Between-implicate variability for Replacement Hiring Rate
-vm_FrmJbGnS,vm_FJC,Between-implicate variability for Firm Job Gains (Stable): Counts
-vm_FrmJbLsS,vm_FJD,Between-implicate variability for Firm Job Loss (Stable): Counts
-vm_FrmJbCS,vm_FJF,Between-implicate variability for Job Change (Stable): Net Change
-vm_EarnS,vm_ZW3,Between-implicate variability for Full Quarter Employment (Stable): Average Monthly Earnings
-vm_EarnBeg,vm_ZW1,Between-implicate variability for Beginning-of-Quarter Employment: Average Monthly Earnings
-vm_EarnHirAS,vm_ZWFA,Between-implicate variability for Hires All (Stable): Average Monthly Earnings
-vm_EarnHireNS,vm_ZWFH,Between-implicate variability for Hires New (Stable): Average Monthly Earnings
-vm_EarnSepS,vm_ZWFS,Between-implicate variability for Separations (Stable): Average Monthly Earnings
-vm_Payroll,vm_W1,Between-implicate variability for Total Quarterly Payroll: Sum
+vm_Emp,vm_B,Average within-implicate variability for Beginning-of-Quarter Employment: Counts
+vm_EmpEnd,vm_E,Average within-implicate variability for End-of-Quarter Employment: Counts
+vm_EmpS,vm_F,Average within-implicate variability for Full-Quarter Employment (Stable): Counts
+vm_EmpSpv,vm_Fpv,Average within-implicate variability for Full-Quarter Employment in the Previous Quarter: Counts
+vm_EmpTotal,vm_M,Average within-implicate variability for Employment - Reference Quarter: Counts
+vm_HirA,vm_A,Average within-implicate variability for Hires All: Counts (Accessions)
+vm_HirN,vm_H1,Average within-implicate variability for Hires New: Counts
+vm_HirR,vm_R1,Average within-implicate variability for Hires Recalls: Counts
+vm_Sep,vm_S,Average within-implicate variability for Separations: Counts
+vm_HirAEnd,vm_A2,Average within-implicate variability for End-of-Quarter Hires
+vm_HirAEndR,vm_A2R,Average within-implicate variability for End-of-Quarter Hiring Rate
+vm_SepBeg,vm_S2,Average within-implicate variability for Beginning-of-Quarter Separations
+vm_SepBegR,vm_S2R,Average within-implicate variability for Beginning-of-Quarter Separation Rate
+vm_HirAs,vm_A3,Average within-implicate variability for Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+vm_HirNs,vm_H3,Average within-implicate variability for Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+vm_SepS,vm_S3,Average within-implicate variability for Separations (Stable): Counts (Flow out of Full-Quarter Employment)
+vm_SepSnx,vm_FSnx,Average within-implicate variability for Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
+vm_TurnOvrS,vm_FT,Average within-implicate variability for Turnover (Stable)
+vm_FrmJbGn,vm_JC,Average within-implicate variability for Firm Job Gains: Counts (Job Creation)
+vm_FrmJobLs,vm_JD,Average within-implicate variability for Firm Job Loss: Counts (Job Destruction)
+vm_FrmJbC,vm_JF,Average within-implicate variability for Firm Job Change: Net Change
+vm_HirAEndRepl,vm_EI,Average within-implicate variability for Replacement Hires
+vm_HirAEndReplr,vm_EIR,Average within-implicate variability for Replacement Hiring Rate
+vm_FrmJbGnS,vm_FJC,Average within-implicate variability for Firm Job Gains (Stable): Counts
+vm_FrmJbLsS,vm_FJD,Average within-implicate variability for Firm Job Loss (Stable): Counts
+vm_FrmJbCS,vm_FJF,Average within-implicate variability for Job Change (Stable): Net Change
+vm_EarnS,vm_ZW3,Average within-implicate variability for Full Quarter Employment (Stable): Average Monthly Earnings
+vm_EarnBeg,vm_ZW1,Average within-implicate variability for Beginning-of-Quarter Employment: Average Monthly Earnings
+vm_EarnHirAS,vm_ZWFA,Average within-implicate variability for Hires All (Stable): Average Monthly Earnings
+vm_EarnHireNS,vm_ZWFH,Average within-implicate variability for Hires New (Stable): Average Monthly Earnings
+vm_EarnSepS,vm_ZWFS,Average within-implicate variability for Separations (Stable): Average Monthly Earnings
+vm_Payroll,vm_W1,Average within-implicate variability for Total Quarterly Payroll: Sum
 df_Emp,df_B,Degrees of freedom for VT of Beginning-of-Quarter Employment: Counts
 df_EmpEnd,df_E,Degrees of freedom for VT of End-of-Quarter Employment: Counts
 df_EmpS,df_F,Degrees of freedom for VT of Full-Quarter Employment (Stable): Counts

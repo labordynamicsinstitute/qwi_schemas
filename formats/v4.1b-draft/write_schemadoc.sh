@@ -169,19 +169,19 @@ list the indicators available on each file.  The ''Indicator Variable'' is the s
 
 ==== National QWI and state-level QWI (QWIPU) ====
 
-( link:variables_qwipu.csv[variables_qwipu.csv] )
+( link:variables_qwi.csv[variables_qwi.csv] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
 |===================================================
-include::variables_qwipu.csv[]
+include::variables_qwi.csv[]
 |===================================================
 <<<
 
 ==== National QWI and state-level QWI rates (QWIPUR) ====
 
-( link:variables_qwipur.csv[variables_qwipur.csv] )
+( link:variables_qwir.csv[variables_qwir.csv] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
 |===================================================
-include::variables_qwipur.csv[]
+include::variables_qwir.csv[]
 |===================================================
 
 where the column *Base* indicates the denominator used to compute the rate,
@@ -223,29 +223,35 @@ do
 	tmpfile=tmp_$arg
 	head -4 $arg  > $tmpfile
 	echo "...,," >> $tmpfile
-	grep "df_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-	grep "mr_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
-	grep "vw_" $arg | head -3 >> $tmpfile
+	grep "vt_" $arg | head -3 >> $tmpfile
 	echo "...,," >> $tmpfile
 	grep "vb_" $arg | head -3 >> $tmpfile
 	echo "...,," >> $tmpfile
+	grep "vw_" $arg | head -3 >> $tmpfile
+	echo "...,," >> $tmpfile
+	grep "df_" $arg | head -3 >> $tmpfile
+	echo "...,," >> $tmpfile
+	grep "mr_" $arg | head -3 >> $tmpfile
 done
 
 echo "
 <<<
 === [[vmeasures]]Variability measures
 The following tables and associated mapping files
-list the variability measures available on each file.  The ''Variability measure'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles.  The ''Variable Name'' is a more verbose description of the variability measure.
+list the variability measures available on each file.  The ''Variability Measure'' is the short name of the variable on the CSV files,
+suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate Name'' may appear in related documentation and articles.
+The ''Variable Name'' is a more verbose description of the variability measure.
 
-Three variability measures are published:
+Six variability measures are published:
 
 * Total variability, prefixed by vt_
+* Standard error, prefixed by st_, and computed as the square root of Total Variability
+* Between-implicate variability, prefixed by vb_
+* Average within-implicate variability, prefixed by vw_
 * Degrees of freedom, prefixed by df_
 * Missingness ratio, prefixed by mr_
 
-A missing variability measure indicates a structural zero in the corresponding indicator.
+A missing variability measure indicates a structural zero in the corresponding indicator. This is currently not associated with a flag.
 
 //Not all indicators have associated variability measures. For more details, see the following document TBD.
 
@@ -258,9 +264,21 @@ Column name
 [ Identifier2 ]
 [ Identifier3 ]
 [ ... ]
+[ Standard error for Indicator 1 ]
+[ Standard error for Indicator 2 ]
+[ Standard error for Indicator 3 ]
+[ ... ]
 [ Total variation for Indicator 1 ]
 [ Total variation for Indicator 2 ]
 [ Total variation for Indicator 3 ]
+[ ... ]
+[ Between-implicate variability for Indicator 1 ]
+[ Between-implicate variability for Indicator 2 ]
+[ Between-implicate variability for Indicator 3 ]
+[ ... ]
+[ Average within-implicate variability for Indicator 1 ]
+[ Average within-implicate variability for Indicator 2 ]
+[ Average within-implicate variability for Indicator 3 ]
 [ ... ]
 [ Degrees of freedom for Indicator 1 ]
 [ Degrees of freedom for Indicator 2 ]
@@ -269,14 +287,6 @@ Column name
 [ Missingness ratio for Indicator 1 ]
 [ Missingness ratio for Indicator 2 ]
 [ Missingness ratio for Indicator 3 ]
-[ ... ]
-[ Average within-implicate variability for Indicator 1 ]
-[ Average within-implicate variability for Indicator 2 ]
-[ Average within-implicate variability for Indicator 3 ]
-[ ... ]
-[ Between-implicate variability for Indicator 1 ]
-[ Between-implicate variability for Indicator 2 ]
-[ Between-implicate variability for Indicator 3 ]
 [ ... ]
 |===================================================
 
@@ -293,6 +303,16 @@ of variability measures are printed, but the complete list is available in the l
 |===================================================
 include::tmp_variables_qwiv.csv[]
 |===================================================
+
+<<<
+==== National QWI and state-level QWI ====
+
+( link:variables_qwirv.csv[variables_qwirv.csv] )
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
+|===================================================
+include::tmp_variables_qwiv.csv[]
+|===================================================
+
 
 <<<
 
@@ -543,4 +563,3 @@ html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciido
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
 echo "Removing tmp files"
 rm tmp*
-

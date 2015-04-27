@@ -20,7 +20,7 @@ outfile=$(basename $file .csv)v.csv
 
 prefixes="st vt vb vm df mr"
 
-head -1 $file | awk -F, ' OFS="," { print $1, $2, $4 }' > $outfile
+echo "Variability measure,Alternate name,Variable name" > $outfile
 
 for prefix in $prefixes
 do
@@ -34,7 +34,7 @@ do
     vb)
     name="Between-implicate variability for "
     ;;
-    vw)
+    vm)
     name="Average within-implicate variability for "
     ;;
     mr)

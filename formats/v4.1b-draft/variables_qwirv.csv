@@ -1,4 +1,4 @@
-Indicator Variable,Alternate name,Indicator Name
+Variability measure,Alternate name,Variable name
 st_HirA_rate,st_AR,Standard error of Hiring Rate (Accessions)
 st_HirN_rate,st_H1R,Standard error of New Hiring Rate
 st_HirR_rate,st_R1R,Standard error of Recall Rate
@@ -53,24 +53,24 @@ vb_HirAEndRepl_rate,vb_EIR,Between-implicate variability for Replacement Hiring 
 vb_FrmJbGnS_rate,vb_FJCR,Between-implicate variability for Firm Job Gain Rate (Stable)
 vb_FrmJbLsS_rate,vb_FJDR,Between-implicate variability for Firm Job Loss Rate (Stable)
 vb_FrmJbCS_rate,vb_FJFR,Between-implicate variability for Job Change Rate (Stable): Net Change Rate
-vm_HirA_rate,vm_AR,Between-implicate variability for Hiring Rate (Accessions)
-vm_HirN_rate,vm_H1R,Between-implicate variability for New Hiring Rate
-vm_HirR_rate,vm_R1R,Between-implicate variability for Recall Rate
-vm_Sep_rate,vm_SR,Between-implicate variability for Separation Rate
-vm_HirAEnd_rate,vm_A2R,Between-implicate variability for End-of-Quarter Hiring Rate
-vm_SepBeg_rate,vm_S2R,Between-implicate variability for Beginning-of-Quarter Separation Rate
-vm_HirAs_rate,vm_A3R,Between-implicate variability for Stable Hiring Rate (Flows into Full-Quarter Employment)
-vm_HirNs_rate,vm_H3R,Between-implicate variability for Stable New Hiring Rate (New Hires to Full-Quarter Status)
-vm_SepS_rate,vm_S3R,Between-implicate variability for Stable Separation Rate (Flow out of Full-Quarter Employment)
-vm_SepSnx_rate,vm_FSnxR,Between-implicate variability for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
-vm_TurnOvrS_rate,vm_FTR,Between-implicate variability for Turnover Rate (Stable)
-vm_FrmJbGn_rate,vm_JCR,Between-implicate variability for Firm Job Gain Rate (Job Creation Rate)
-vm_FrmJobLs_rate,vm_JDR,Between-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
-vm_FrmJbC_rate,vm_JFR,Between-implicate variability for Firm Job Change Rate: Net Change Rate
-vm_HirAEndRepl_rate,vm_EIR,Between-implicate variability for Replacement Hiring Rate
-vm_FrmJbGnS_rate,vm_FJCR,Between-implicate variability for Firm Job Gain Rate (Stable)
-vm_FrmJbLsS_rate,vm_FJDR,Between-implicate variability for Firm Job Loss Rate (Stable)
-vm_FrmJbCS_rate,vm_FJFR,Between-implicate variability for Job Change Rate (Stable): Net Change Rate
+vm_HirA_rate,vm_AR,Average within-implicate variability for Hiring Rate (Accessions)
+vm_HirN_rate,vm_H1R,Average within-implicate variability for New Hiring Rate
+vm_HirR_rate,vm_R1R,Average within-implicate variability for Recall Rate
+vm_Sep_rate,vm_SR,Average within-implicate variability for Separation Rate
+vm_HirAEnd_rate,vm_A2R,Average within-implicate variability for End-of-Quarter Hiring Rate
+vm_SepBeg_rate,vm_S2R,Average within-implicate variability for Beginning-of-Quarter Separation Rate
+vm_HirAs_rate,vm_A3R,Average within-implicate variability for Stable Hiring Rate (Flows into Full-Quarter Employment)
+vm_HirNs_rate,vm_H3R,Average within-implicate variability for Stable New Hiring Rate (New Hires to Full-Quarter Status)
+vm_SepS_rate,vm_S3R,Average within-implicate variability for Stable Separation Rate (Flow out of Full-Quarter Employment)
+vm_SepSnx_rate,vm_FSnxR,Average within-implicate variability for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
+vm_TurnOvrS_rate,vm_FTR,Average within-implicate variability for Turnover Rate (Stable)
+vm_FrmJbGn_rate,vm_JCR,Average within-implicate variability for Firm Job Gain Rate (Job Creation Rate)
+vm_FrmJobLs_rate,vm_JDR,Average within-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
+vm_FrmJbC_rate,vm_JFR,Average within-implicate variability for Firm Job Change Rate: Net Change Rate
+vm_HirAEndRepl_rate,vm_EIR,Average within-implicate variability for Replacement Hiring Rate
+vm_FrmJbGnS_rate,vm_FJCR,Average within-implicate variability for Firm Job Gain Rate (Stable)
+vm_FrmJbLsS_rate,vm_FJDR,Average within-implicate variability for Firm Job Loss Rate (Stable)
+vm_FrmJbCS_rate,vm_FJFR,Average within-implicate variability for Job Change Rate (Stable): Net Change Rate
 df_HirA_rate,df_AR,Degrees of freedom for VT of Hiring Rate (Accessions)
 df_HirN_rate,df_H1R,Degrees of freedom for VT of New Hiring Rate
 df_HirR_rate,df_R1R,Degrees of freedom for VT of Recall Rate
