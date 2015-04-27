@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-26 April 2015
+27 April 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -145,21 +145,21 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        EmpTotal             M        sEmpTotal  Employment - Reference Quarter:
                                                 Counts
           HirA              A           sHirA   Hires All: Counts (Accessions)
-          HirN              H1          sHirN   Hires New: Counts
-          HirR              R1          sHirR   Hires Recalls: Counts
+          HirN              H           sHirN   Hires New: Counts
+          HirR              R           sHirR   Hires Recalls: Counts
            Sep              S           sSep    Separations: Counts
-        HirAEnd             A2       sHirAEnd   End-of-Quarter Hires
-       HirAEndR            A2R       sHirAEndR  End-of-Quarter Hiring Rate
-         SepBeg             S2        sSepBeg   Beginning-of-Quarter
+        HirAEnd             CA       sHirAEnd   End-of-Quarter Hires
+       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring Rate
+         SepBeg             CS        sSepBeg   Beginning-of-Quarter
                                                 Separations
-        SepBegR            S2R       sSepBegR   Beginning-of-Quarter Separation
+        SepBegR            CSR       sSepBegR   Beginning-of-Quarter Separation
                                                 Rate
-         HirAs              A3         sHirAs   Hires All (Stable): Counts
+         HirAs              FA         sHirAs   Hires All (Stable): Counts
                                                 (Flows into Full-Quarter
                                                 Employment)
-         HirNs              H3         sHirNs   Hires New (Stable): Counts (New
+         HirNs              FH         sHirNs   Hires New (Stable): Counts (New
                                                 Hires to Full-Quarter Status)
-          SepS              S3          sSepS   Separations (Stable): Counts
+          SepS              FS          sSepS   Separations (Stable): Counts
                                                 (Flow out of Full-Quarter
                                                 Employment)
          SepSnx           FSnx        sSepSnx   Separations (Stable): Next
@@ -194,22 +194,22 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
 Indicator Variable Alternate name     Status Flag   Indicator Name      Base
       HirA_rate             AR         sHirA_rate   Hiring Rate         AvgEmp
                                                     (Accessions)
-      HirN_rate            H1R         sHirN_rate   New Hiring Rate     AvgEmp
-      HirR_rate            R1R         sHirR_rate   Recall Rate         AvgEmp
+      HirN_rate             HR         sHirN_rate   New Hiring Rate     AvgEmp
+      HirR_rate             RR         sHirR_rate   Recall Rate         AvgEmp
        Sep_rate             SR          sSep_rate   Separation Rate     AvgEmp
-    HirAEnd_rate           A2R       sHirAEnd_rate  End-of-Quarter      AvgEmp
+    HirAEnd_rate           CAR       sHirAEnd_rate  End-of-Quarter      AvgEmp
                                                     Hiring Rate
-     SepBeg_rate           S2R       sSepBeg_rate   Beginning-of-       AvgEmp
+     SepBeg_rate           CSR       sSepBeg_rate   Beginning-of-       AvgEmp
                                                     Quarter Separation
                                                     Rate
-      HirAs_rate           A3R        sHirAs_rate   Stable Hiring Rate  AvgEmpS
+      HirAs_rate           FAR        sHirAs_rate   Stable Hiring Rate  AvgEmpS
                                                     (Flows into Full-
                                                     Quarter Employment)
-      HirNs_rate           H3R        sHirNs_rate   Stable New Hiring   AvgEmpS
+      HirNs_rate           FHR        sHirNs_rate   Stable New Hiring   AvgEmpS
                                                     Rate (New Hires to
                                                     Full-Quarter
                                                     Status)
-      SepS_rate            S3R         sSepS_rate   Stable Separation   AvgEmpS
+      SepS_rate            FSR         sSepS_rate   Stable Separation   AvgEmpS
                                                     Rate (Flow out of
                                                     Full-Quarter
                                                     Employment)
@@ -241,8 +241,8 @@ AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
 *** 1.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
 Indicator Variable Alternate name Status Flag Indicator Name
-         MHire        all_doma2       sHire   Main Job Accessions - Counts
-          MSep        all_doms2        sSep   Main Job Separations - Counts
+         MHire        all_doma2      sMHire   Main Job Accessions - Counts
+          MSep        all_doms2       sMSep   Main Job Separations - Counts
       MJobStart        all_dest   sMJobStart  Main Job Starts - Counts (hires +
                                               main source of earnings changes)
         MJobEnd        all_orig     sMJobEnd  Main Job Ends - Counts
@@ -274,38 +274,60 @@ Indicator Variable Alternate name Status Flag Indicator Name
                                               Counts
 *** 1.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
-Indicator Variable  Alternate name    Status Flag  Indicator Name
-         MHireR     all_doma2_rate       sMHireR   Main Job Accessions - Rate
-         MSepR      all_doms2_rate        sMSepR   Main Job Separations - Rate
-      MJobStartR     all_dest_rate  sMJobStartRate Main Job Starts - Rate
-       MJobEndR     all_orgin_rate   sMJobEndRate  Main Job Ends - Rate
-        EEHireR          eea_rate     sEEHireRate  EE Accessions - Rate
-         EESepR          ees_rate        sEESepR   EE Separations - Rate
-        AQHireR      aq_doma2_rate      sAQHireR   AQ Accessions - Short
-                                                   Duration Nonemployment Spell
-                                                   - Rate
-         AQSepR      aq_doms2_rate       sAQSepR   AQ Separations - Short
-                                                   Duration Nonemployment Spell
-                                                   - Rate
-       J2JHireR    eeall_doma2_rate    sJ2JHireR   Job-to-Job Accessions - Rate
-        J2JSepR    eeall_doms2_rate     sJ2JSepR   Job-to-Job Separations -
-                                                   Rate
-        NEHireR      ne_doma2_rate      sNEHireR   Main Job Accessions - Any
-                                                   Nonemployment Spell - Rate
-         ENSepR      en_doms2_rate       sENSepR   Main Job Separations - Any
-                                                   Nonemployment Spell - Rate
-      NEPersistR    ne2_doma2_rate    sNEPersistR  Main Job Accessions -
-                                                   Persistent Nonemployment
-                                                   Spell - Rate
-      ENPersistR    en2_doms2_rate    sENPersistR  Main Job Separations -
-                                                   Persistent Nonemployment
-                                                   Spell - Rate
-       NEFullQR    ne2p_doma2_rate     sNEFullQR   Main Job Accessions - Full-
-                                                   qtr Nonemployment Spell -
-                                                   Rate
-       ENFullQR    en2p_doms2_rate     sENFullQR   Main Job Separations - Full-
-                                                   qtr Nonemployment Spell -
-                                                   Rate
+Indicator   Alternate name    Status Flag  Indicator Name     Base
+ Variable
+   MHireR   all_doma2_rate       sMHireR   Main Job           (MainB+MainE)/2
+                                           Accessions - Rate
+   MSepR    all_doms2_rate        sMSepR   Main Job           (MainB+MainE)/2
+                                           Separations - Rate
+MJobStartR   all_dest_rate  sMJobStartRate Main Job Starts -  (MainB+MainE)/2
+                                           Rate
+ MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends -    (MainB+MainE)/2
+                                           Rate
+  EEHireR        eea_rate     sEEHireRate  EE Accessions -    (MainB+MainE)/2
+                                           Rate
+   EESepR        ees_rate        sEESepR   EE Separations -   (MainB+MainE)/2
+                                           Rate
+  AQHireR    aq_doma2_rate      sAQHireR   AQ Accessions -    (MainB+MainE)/2
+                                           Short Duration
+                                           Nonemployment
+                                           Spell - Rate
+   AQSepR    aq_doms2_rate       sAQSepR   AQ Separations -   (MainB+MainE)/2
+                                           Short Duration
+                                           Nonemployment
+                                           Spell - Rate
+ J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job         (MainB+MainE)/2
+                                           Accessions - Rate
+  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job         (MainB+MainE)/2
+                                           Separations - Rate
+  NEHireR    ne_doma2_rate      sNEHireR   Main Job           (MainB+MainE)/2
+                                           Accessions - Any
+                                           Nonemployment
+                                           Spell - Rate
+   ENSepR    en_doms2_rate       sENSepR   Main Job           (MainB+MainE)/2
+                                           Separations - Any
+                                           Nonemployment
+                                           Spell - Rate
+NEPersistR  ne2_doma2_rate    sNEPersistR  Main Job           (MainB+MainE)/2
+                                           Accessions -
+                                           Persistent
+                                           Nonemployment
+                                           Spell - Rate
+ENPersistR  en2_doms2_rate    sENPersistR  Main Job           (MainB+MainE)/2
+                                           Separations -
+                                           Persistent
+                                           Nonemployment
+                                           Spell - Rate
+ NEFullQR  ne2p_doma2_rate     sNEFullQR   Main Job           (MainB+MainE)/2
+                                           Accessions - Full-
+                                           qtr Nonemployment
+                                           Spell - Rate
+ ENFullQR  en2p_doms2_rate     sENFullQR   Main Job           (MainB+MainE)/2
+                                           Separations -
+                                           Full-qtr
+                                           Nonemployment
+                                           Spell - Rate
+where the column Base indicates the denominator used to compute the rate.
 *** 1.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate name       Status Flag   Indicator Name
@@ -751,11 +773,14 @@ flag label
       released.
     * 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative
       rate names
+    * 2015-04-26: Changes to name of variable schema files (qwipu → qwi),
+      addition of variability variable schema files.
 **** 4.2. Version 4.1b-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
-This revision: Sun Apr 26 22:46:51 EDT 2015
+    * added naming convention for additional files
+This revision: Mon Apr 27 18:15:48 EDT 2015
 ===============================================================================
-Last updated 2015-04-26 22:46:51 EDT
+Last updated 2015-04-27 18:15:48 EDT

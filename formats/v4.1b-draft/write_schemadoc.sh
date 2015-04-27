@@ -199,10 +199,13 @@ include::variables_j2j.csv[]
 
 ==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
+
+where the column *Base* indicates the denominator used to compute the rate.
+
 <<<
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
