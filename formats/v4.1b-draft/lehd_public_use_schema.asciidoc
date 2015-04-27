@@ -161,15 +161,20 @@ include::variables_j2jod.csv[]
 <<<
 === [[vmeasures]]Variability measures
 The following tables and associated mapping files
-list the variability measures available on each file.  The ''Variability measure'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles.  The ''Variable Name'' is a more verbose description of the variability measure.
+list the variability measures available on each file.  The ''Variability Measure'' is the short name of the variable on the CSV files,
+suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate Name'' may appear in related documentation and articles.
+The ''Variable Name'' is a more verbose description of the variability measure.
 
-Three variability measures are published:
+Six variability measures are published:
 
 * Total variability, prefixed by vt_
+* Standard error, prefixed by st_, and computed as the square root of Total Variability
+* Between-implicate variability, prefixed by vb_
+* Average within-implicate variability, prefixed by vw_
 * Degrees of freedom, prefixed by df_
 * Missingness ratio, prefixed by mr_
 
-A missing variability measure indicates a structural zero in the corresponding indicator.
+A missing variability measure indicates a structural zero in the corresponding indicator. This is currently not associated with a flag.
 
 //Not all indicators have associated variability measures. For more details, see the following document TBD.
 
@@ -545,6 +550,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Sun Apr 26 22:05:20 EDT 2015
+This revision: Sun Apr 26 22:46:51 EDT 2015
 *******************
 

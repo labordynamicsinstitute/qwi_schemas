@@ -1253,12 +1253,29 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_a_id_vmeasures_a_variability_measures">1.4. <a id="vmeasures"></a>Variability measures</h3>
 <div class="paragraph"><p>The following tables and associated mapping files
-list the variability measures available on each file.  The <em>'Variability measure</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles.  The <em>'Variable Name</em>' is a more verbose description of the variability measure.</p></div>
-<div class="paragraph"><p>Three variability measures are published:</p></div>
+list the variability measures available on each file.  The <em>'Variability Measure</em>' is the short name of the variable on the CSV files,
+suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate Name</em>' may appear in related documentation and articles.
+The <em>'Variable Name</em>' is a more verbose description of the variability measure.</p></div>
+<div class="paragraph"><p>Six variability measures are published:</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
 Total variability, prefixed by vt_
+</p>
+</li>
+<li>
+<p>
+Standard error, prefixed by st_, and computed as the square root of Total Variability
+</p>
+</li>
+<li>
+<p>
+Between-implicate variability, prefixed by vb_
+</p>
+</li>
+<li>
+<p>
+Average within-implicate variability, prefixed by vw_
 </p>
 </li>
 <li>
@@ -1272,7 +1289,7 @@ Missingness ratio, prefixed by mr_
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>A missing variability measure indicates a structural zero in the corresponding indicator.</p></div>
+<div class="paragraph"><p>A missing variability measure indicates a structural zero in the corresponding indicator. This is currently not associated with a flag.</p></div>
 <div class="sect3">
 <h4 id="_generic_structure_2">1.4.1. Generic structure</h4>
 <div class="tableblock">
@@ -1391,9 +1408,9 @@ cellspacing="0" cellpadding="4">
 <col width="55%" />
 <thead>
 <tr>
-<th align="center" valign="top">Indicator Variable</th>
+<th align="center" valign="top">Variability measure</th>
 <th align="center" valign="top">Alternate name</th>
-<th align="left" valign="top">Indicator Name</th>
+<th align="left" valign="top">Variable name</th>
 </tr>
 </thead>
 <tbody>
@@ -1515,9 +1532,9 @@ cellspacing="0" cellpadding="4">
 <col width="55%" />
 <thead>
 <tr>
-<th align="center" valign="top">Indicator Variable</th>
+<th align="center" valign="top">Variability measure</th>
 <th align="center" valign="top">Alternate name</th>
-<th align="left" valign="top">Indicator Name</th>
+<th align="left" valign="top">Variable name</th>
 </tr>
 </thead>
 <tbody>
@@ -2895,7 +2912,7 @@ added definitions of rates on separate file
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Sun Apr 26 22:05:20 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Sun Apr 26 22:46:51 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -2904,7 +2921,7 @@ added definitions of rates on separate file
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-04-26 22:05:20 EDT
+Last updated 2015-04-26 22:46:51 EDT
 </div>
 </div>
 </body>

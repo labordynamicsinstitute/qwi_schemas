@@ -341,17 +341,21 @@ AQFullQEarn_change    faq_dearn   sAQFullQEarn_change Stable Job to Stable Job
                                                       Change
 1.4. Variability measures
 The following tables and associated mapping files list the variability measures
-available on each file. The 'Variability measure' is the short name of the
+available on each file. The 'Variability Measure' is the short name of the
 variable on the CSV files, suitable for machine processing in a wide variety of
-statistical applications. When given, the 'Alternate name' may appear in
+statistical applications. When given, the 'Alternate Name' may appear in
 related documentation and articles. The 'Variable Name' is a more verbose
 description of the variability measure.
-Three variability measures are published:
+Six variability measures are published:
     * Total variability, prefixed by vt_
+    * Standard error, prefixed by st_, and computed as the square root of Total
+      Variability
+    * Between-implicate variability, prefixed by vb_
+    * Average within-implicate variability, prefixed by vw_
     * Degrees of freedom, prefixed by df_
     * Missingness ratio, prefixed by mr_
 A missing variability measure indicates a structural zero in the corresponding
-indicator.
+indicator. This is currently not associated with a flag.
 *** 1.4.1. Generic structure ***
 Column name
 [ Identifier1 ]
@@ -387,80 +391,80 @@ Indicators section. In the tables below, only a sample of variability measures
 are printed, but the complete list is available in the linked CSV schema files.
 *** 1.4.2. National QWI and state-level QWI ***
 ( variables_qwiv.csv )
-Indicator Variable Alternate name Indicator Name
-         st_Emp           st_B    Standard error of Beginning-of-Quarter
-                                  Employment: Counts
-      st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
-                                  Counts
-        st_EmpS           st_F    Standard error of Full-Quarter Employment
-                                  (Stable): Counts
-           …
-         vt_Emp           vt_B    Total variation of Beginning-of-Quarter
-                                  Employment: Counts
-      vt_EmpEnd           vt_E    Total variation of End-of-Quarter Employment:
-                                  Counts
-        vt_EmpS           vt_F    Total variation of Full-Quarter Employment
-                                  (Stable): Counts
-           …
-         vb_Emp           vb_B    Between-implicate variability for Beginning-
-                                  of-Quarter Employment: Counts
-      vb_EmpEnd           vb_E    Between-implicate variability for End-of-
-                                  Quarter Employment: Counts
-        vb_EmpS           vb_F    Between-implicate variability for Full-
-                                  Quarter Employment (Stable): Counts
-           …
-           …
-         df_Emp           df_B    Degrees of freedom for VT of Beginning-of-
-                                  Quarter Employment: Counts
-      df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
-                                  Employment: Counts
-        df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
-                                  Employment (Stable): Counts
-           …
-         mr_Emp           mr_B    Missingness ratio for Beginning-of-Quarter
-                                  Employment: Counts
-      mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
-                                  Employment: Counts
-        mr_EmpS           mr_F    Missingness ratio for Full-Quarter Employment
-                                  (Stable): Counts
+Variability measure Alternate name Variable name
+         st_Emp            st_B    Standard error of Beginning-of-Quarter
+                                   Employment: Counts
+       st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
+                                   Counts
+         st_EmpS           st_F    Standard error of Full-Quarter Employment
+                                   (Stable): Counts
+            …
+         vt_Emp            vt_B    Total variation of Beginning-of-Quarter
+                                   Employment: Counts
+       vt_EmpEnd           vt_E    Total variation of End-of-Quarter
+                                   Employment: Counts
+         vt_EmpS           vt_F    Total variation of Full-Quarter Employment
+                                   (Stable): Counts
+            …
+         vb_Emp            vb_B    Between-implicate variability for Beginning-
+                                   of-Quarter Employment: Counts
+       vb_EmpEnd           vb_E    Between-implicate variability for End-of-
+                                   Quarter Employment: Counts
+         vb_EmpS           vb_F    Between-implicate variability for Full-
+                                   Quarter Employment (Stable): Counts
+            …
+            …
+         df_Emp            df_B    Degrees of freedom for VT of Beginning-of-
+                                   Quarter Employment: Counts
+       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
+                                   Employment: Counts
+         df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
+                                   Employment (Stable): Counts
+            …
+         mr_Emp            mr_B    Missingness ratio for Beginning-of-Quarter
+                                   Employment: Counts
+       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
+                                   Employment: Counts
+         mr_EmpS           mr_F    Missingness ratio for Full-Quarter
+                                   Employment (Stable): Counts
 *** 1.4.3. National QWI and state-level QWI ***
 ( variables_qwirv.csv )
-Indicator Variable Alternate name Indicator Name
-         st_Emp           st_B    Standard error of Beginning-of-Quarter
-                                  Employment: Counts
-      st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
-                                  Counts
-        st_EmpS           st_F    Standard error of Full-Quarter Employment
-                                  (Stable): Counts
-           …
-         vt_Emp           vt_B    Total variation of Beginning-of-Quarter
-                                  Employment: Counts
-      vt_EmpEnd           vt_E    Total variation of End-of-Quarter Employment:
-                                  Counts
-        vt_EmpS           vt_F    Total variation of Full-Quarter Employment
-                                  (Stable): Counts
-           …
-         vb_Emp           vb_B    Between-implicate variability for Beginning-
-                                  of-Quarter Employment: Counts
-      vb_EmpEnd           vb_E    Between-implicate variability for End-of-
-                                  Quarter Employment: Counts
-        vb_EmpS           vb_F    Between-implicate variability for Full-
-                                  Quarter Employment (Stable): Counts
-           …
-           …
-         df_Emp           df_B    Degrees of freedom for VT of Beginning-of-
-                                  Quarter Employment: Counts
-      df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
-                                  Employment: Counts
-        df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
-                                  Employment (Stable): Counts
-           …
-         mr_Emp           mr_B    Missingness ratio for Beginning-of-Quarter
-                                  Employment: Counts
-      mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
-                                  Employment: Counts
-        mr_EmpS           mr_F    Missingness ratio for Full-Quarter Employment
-                                  (Stable): Counts
+Variability measure Alternate name Variable name
+         st_Emp            st_B    Standard error of Beginning-of-Quarter
+                                   Employment: Counts
+       st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
+                                   Counts
+         st_EmpS           st_F    Standard error of Full-Quarter Employment
+                                   (Stable): Counts
+            …
+         vt_Emp            vt_B    Total variation of Beginning-of-Quarter
+                                   Employment: Counts
+       vt_EmpEnd           vt_E    Total variation of End-of-Quarter
+                                   Employment: Counts
+         vt_EmpS           vt_F    Total variation of Full-Quarter Employment
+                                   (Stable): Counts
+            …
+         vb_Emp            vb_B    Between-implicate variability for Beginning-
+                                   of-Quarter Employment: Counts
+       vb_EmpEnd           vb_E    Between-implicate variability for End-of-
+                                   Quarter Employment: Counts
+         vb_EmpS           vb_F    Between-implicate variability for Full-
+                                   Quarter Employment (Stable): Counts
+            …
+            …
+         df_Emp            df_B    Degrees of freedom for VT of Beginning-of-
+                                   Quarter Employment: Counts
+       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
+                                   Employment: Counts
+         df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
+                                   Employment (Stable): Counts
+            …
+         mr_Emp            mr_B    Missingness ratio for Beginning-of-Quarter
+                                   Employment: Counts
+       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
+                                   Employment: Counts
+         mr_EmpS           mr_F    Missingness ratio for Full-Quarter
+                                   Employment (Stable): Counts
 *** 1.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 1.4.5. Job-to-job flow rates (J2JR) ***
@@ -752,6 +756,6 @@ flag label
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
-This revision: Sun Apr 26 22:05:20 EDT 2015
+This revision: Sun Apr 26 22:46:51 EDT 2015
 ===============================================================================
-Last updated 2015-04-26 22:05:20 EDT
+Last updated 2015-04-26 22:46:51 EDT
