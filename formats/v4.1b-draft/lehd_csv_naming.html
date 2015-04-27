@@ -20,7 +20,7 @@ asciidoc.install(2);
 <h1>LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">17 March 2015</span>
+<span id="revdate">26 April 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -122,18 +122,6 @@ cellspacing="0" cellpadding="4">
 </thead>
 <tbody>
 <tr>
-<td align="center" valign="top"><p class="table">qwi</p></td>
-<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Counts (QWIPU)</p></td>
-<td align="left" valign="top"><p class="table">The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).</p></td>
-<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a></p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">lodes</p></td>
-<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES)</p></td>
-<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.</p></td>
-<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#lodes">http://lehd.ces.census.gov/data/#lodes</a></p></td>
-</tr>
-<tr>
 <td align="center" valign="top"><p class="table">j2j</p></td>
 <td align="left" valign="top"><p class="table">Job-to-Job Flows Counts (J2J)</p></td>
 <td align="left" valign="top"><p class="table">Counts of hires and separations, to and from employment and non-employment, summed across all establishments</p></td>
@@ -152,9 +140,27 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/j2j_beta.html">http://lehd.ces.census.gov/data/j2j_beta.html</a></p></td>
 </tr>
 <tr>
+<td align="center" valign="top"><p class="table">lodes</p></td>
+<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES)</p></td>
+<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#lodes">http://lehd.ces.census.gov/data/#lodes</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwi</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Counts (QWIPU)</p></td>
+<td align="left" valign="top"><p class="table">The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a></p></td>
+</tr>
+<tr>
 <td align="center" valign="top"><p class="table">qwir</p></td>
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Rates</p></td>
 <td align="left" valign="top"><p class="table">Rates for flow variables in the Quarterly Workforce Indicators (QWI)</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwirv</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures for Rates</p></td>
+<td align="left" valign="top"><p class="table">Variability measures for rates in the Quarterly Workforce Indicators (QWI)</p></td>
 <td align="left" valign="top"><p class="table">tbd</p></td>
 </tr>
 <tr>
@@ -455,6 +461,16 @@ cellspacing="0" cellpadding="4">
 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released.
 </p>
 </li>
+<li>
+<p>
+2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
+</p>
+</li>
+<li>
+<p>
+2015-04-26: Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability variable schema files.
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -475,6 +491,16 @@ added geohi category of ALL, US
 added definitions of variability measures
 </p>
 </li>
+<li>
+<p>
+added definitions of rates on separate file
+</p>
+</li>
+<li>
+<p>
+added naming convention for additional files
+</p>
+</li>
 </ul></div>
 <div class="admonitionblock">
 <table><tr>
@@ -490,7 +516,7 @@ added definitions of variability measures
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Mar 17 22:12:13 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Sun Apr 26 23:14:00 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -499,7 +525,7 @@ added definitions of variability measures
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-03-17 22:12:13 EDT
+Last updated 2015-04-26 23:14:00 EDT
 </div>
 </div>
 </body>
