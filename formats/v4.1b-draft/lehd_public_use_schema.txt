@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-27 April 2015
+28 April 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -168,7 +168,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
         FrmJbGn             JC       sFrmJbGn   Firm Job Gains: Counts (Job
                                                 Creation)
-       FrmJobLs             JD       sFrmJobLs  Firm Job Loss: Counts (Job
+        FrmJbLs             JD       sFrmJobLs  Firm Job Loss: Counts (Job
                                                 Destruction)
          FrmJbC             JF        sFrmJbC   Firm Job Change: Net Change
      HirAEndRepl            EI    sHirAEndRepl  Replacement Hires
@@ -184,7 +184,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Earnings
       EarnHirAS           ZWFA      sEarnHirAS  Hires All (Stable): Average
                                                 Monthly Earnings
-      EarnHireNS          ZWFH     sEarnHireNS  Hires New (Stable): Average
+      EarnHirNS           ZWFH     sEarnHireNS  Hires New (Stable): Average
                                                 Monthly Earnings
        EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
                                                 Monthly Earnings
@@ -775,12 +775,13 @@ flag label
       rate names
     * 2015-04-26: Changes to name of variable schema files (qwipu → qwi),
       addition of variability variable schema files.
+    * 2015-04-28: Fixed small typos in QWI variable short names
 **** 4.2. Version 4.1b-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
     * added naming convention for additional files
-This revision: Mon Apr 27 18:15:48 EDT 2015
+This revision: Tue Apr 28 17:58:47 EDT 2015
 ===============================================================================
-Last updated 2015-04-27 18:15:48 EDT
+Last updated 2015-04-28 17:58:47 EDT

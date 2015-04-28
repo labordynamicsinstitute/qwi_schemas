@@ -1,0 +1,893 @@
+1 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M0) 
+      Licensed to CORNELL UNIVERSITY-T&R, Site 70084769.
+NOTE: This session is executing on the Linux 3.11.10-25-desktop (LIN X64) platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 12.3 (maintenance)
+      SAS/ETS 12.3 (maintenance)
+      SAS/OR 12.3 (maintenance)
+      SAS/IML 12.3 (maintenance)
+      SAS/QC 12.3 (maintenance)
+
+NOTE: Additional host information:
+
+ Linux LIN X64 3.11.10-25-desktop #1 SMP PREEMPT Wed Dec 17 17:57:03 UTC 2014 (8210f77) x86_64 openSUSE 13.1 (x86_64) VERSION = 
+      13.1 CODENAME = Bottle 
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: AUTOEXEC processing beginning; file is /home/vilhuber/autoexec.sas.
+
+NOTE: Libref HERE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /slow_home/vilhuber/Workspace-unencrypted/git/qwi_schemas/formats/v4.1b-draft
+
+NOTE: AUTOEXEC processing completed.
+
+1          /*
+2             Author: Lars Vilhuber
+3             Based on code by Stephen Tibbets
+4          
+5             this program is designed to read the CSV files for the SAS formats
+6             into a SAS formats library.
+7          */
+2 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+8          
+9          %let schemaver=v4.1b-draft;
+10         %let baseurl=http://download.vrdc.cornell.edu/qwipu.experimental/formats/&schemaver.;
+11         
+12         
+13         data fmtnames;
+14         	length myinfile $300;
+15         	input myinfile;
+16         datalines;
+
+NOTE: The data set WORK.FMTNAMES has 14 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+31         ;;
+32         run;
+33         
+34         %macro readinfmts(baseurl=,fmtnames=WORK.fmtnames);
+35         
+36         %let dsid = %sysfunc(open(&fmtnames.));
+37         %let nobs=%sysfunc(attrn(&dsid,nobs));
+38         %let rc = %sysfunc(close(&dsid));
+39         
+40         libname LIBRARY (work);
+41         
+42         %do counter=1 %to &nobs.;
+43         data _null_;
+44         set fmtnames;
+45         if _n_=&counter then
+46         call symput('myinfile',trim(left(myinfile)));
+47         run;
+48         
+49         
+50         %put INFO: reading in &myinfile.;
+51         
+52         /* now read it in */
+53         filename stuff url "&baseurl./&myinfile.";
+54         
+55         data fmt;
+56         length start $20 label $300 fmtname $8;
+57         infile stuff firstobs=2 dsd dlm=',' end=done ;
+58         	do while (not done);
+59         		input start label;
+60         		** the format name is the first seven characters of the file name **;
+61         		fmtname='$'||substr(scan("&myinfile",2,"_."),1,7);
+62         		output;
+63         	end;
+64         	run;
+65         
+66         proc append base=fmts data=fmt;
+67         run;
+68         
+69         /* check for dups */
+70         	proc sort data=fmts nodups;
+71         	by fmtname start;
+72         run;
+3 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+73         %end; /* end counter */
+74         %mend;
+75         
+76         /* run it */
+77         %readinfmts(baseurl=&baseurl.,fmtnames=WORK.fmtnames);
+NOTE: Libref LIBRARY was successfully assigned as follows: 
+      Levels:           1
+      Engine(1):        V9 
+      Physical Name(1): /tmp/SAS_work2C970000478D_garnier.cloutier-vilhuber.net
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_periodicity.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_periodicity.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 2 records were read from the infile STUFF.
+      The minimum record length was 15.
+      The maximum record length was 18.
+NOTE: The data set WORK.FMT has 2 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.18 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: BASE data set does not exist. DATA file is being copied to BASE file.
+NOTE: There were 2 observations read from the data set WORK.FMT.
+NOTE: The data set WORK.FMTS has 2 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 2 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 2 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+4 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_seasonadj.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_seasonadj.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 2 records were read from the infile STUFF.
+      The minimum record length was 23.
+      The maximum record length was 27.
+NOTE: The data set WORK.FMT has 2 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 2 observations read from the data set WORK.FMT.
+NOTE: 2 observations added.
+NOTE: The data set WORK.FMTS has 4 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 4 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 4 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_geo_level.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_geo_level.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+5 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
+6         W,"Workforce Investment Areas" 30
+start=W label=Workforce Investment Areas fmtname=$geo done=1 _ERROR_=1 _N_=1
+NOTE: DATA STEP stopped due to looping.
+NOTE: 5 records were read from the infile STUFF.
+      The minimum record length was 10.
+      The maximum record length was 30.
+NOTE: The data set WORK.FMT has 5 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.16 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 5 observations read from the data set WORK.FMT.
+NOTE: 5 observations added.
+NOTE: The data set WORK.FMTS has 9 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 9 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 9 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_ind_level.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_ind_level.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+6 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: LOST CARD.
+start=  label=NAICS Industry Groups fmtname=$ind done=1 _ERROR_=1 _N_=1
+NOTE: 5 records were read from the infile STUFF.
+      The minimum record length was 0.
+      The maximum record length was 25.
+NOTE: SAS went to a new line when INPUT statement reached past the end of a line.
+NOTE: The data set WORK.FMT has 4 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 4 observations read from the data set WORK.FMT.
+NOTE: 4 observations added.
+NOTE: The data set WORK.FMTS has 13 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 13 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 13 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_industry.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_industry.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 436 records were read from the infile STUFF.
+      The minimum record length was 10.
+      The maximum record length was 114.
+NOTE: The data set WORK.FMT has 436 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.20 seconds
+      cpu time            0.00 seconds
+7 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 436 observations read from the data set WORK.FMT.
+NOTE: 436 observations added.
+NOTE: The data set WORK.FMTS has 449 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 449 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 449 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_ownercode.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_ownercode.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 3 records were read from the infile STUFF.
+      The minimum record length was 15.
+      The maximum record length was 24.
+NOTE: The data set WORK.FMT has 3 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 3 observations read from the data set WORK.FMT.
+NOTE: 3 observations added.
+NOTE: The data set WORK.FMTS has 452 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+8 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+
+NOTE: There were 452 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 452 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_sex.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_sex.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
+4         2,"Female" 10
+start=2 label=Female fmtname=$sex done=1 _ERROR_=1 _N_=1
+NOTE: DATA STEP stopped due to looping.
+NOTE: 3 records were read from the infile STUFF.
+      The minimum record length was 8.
+      The maximum record length was 13.
+NOTE: The data set WORK.FMT has 3 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.16 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 3 observations read from the data set WORK.FMT.
+NOTE: 3 observations added.
+NOTE: The data set WORK.FMTS has 455 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 455 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 455 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+9 The SAS System                                                                                       17:31 Tuesday, April 21, 2015
+
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_agegrp.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_agegrp.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
+10        A08,"65-99" 11
+start=A08 label=65-99 fmtname=$agegrp done=1 _ERROR_=1 _N_=1
+NOTE: DATA STEP stopped due to looping.
+NOTE: 9 records were read from the infile STUFF.
+      The minimum record length was 11.
+      The maximum record length was 22.
+NOTE: The data set WORK.FMT has 9 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 9 observations read from the data set WORK.FMT.
+NOTE: 9 observations added.
+NOTE: The data set WORK.FMTS has 464 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 464 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 464 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+10 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_race.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_race.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
+9         A7,"Two or More Race Groups" 28
+start=A7 label=Two or More Race Groups fmtname=$race done=1 _ERROR_=1 _N_=1
+NOTE: DATA STEP stopped due to looping.
+NOTE: 8 records were read from the infile STUFF.
+      The minimum record length was 14.
+      The maximum record length was 52.
+NOTE: The data set WORK.FMT has 8 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 8 observations read from the data set WORK.FMT.
+NOTE: 8 observations added.
+NOTE: The data set WORK.FMTS has 472 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 472 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 472 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+11 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_ethnicity.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_ethnicity.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 3 records were read from the infile STUFF.
+      The minimum record length was 20.
+      The maximum record length was 27.
+NOTE: The data set WORK.FMT has 3 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.16 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 3 observations read from the data set WORK.FMT.
+NOTE: 3 observations added.
+NOTE: The data set WORK.FMTS has 475 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 475 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 475 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_education.csv
+
+NOTE: The infile STUFF is:
+12 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_education.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 6 records were read from the infile STUFF.
+      The minimum record length was 26.
+      The maximum record length was 70.
+NOTE: The data set WORK.FMT has 6 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.20 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 6 observations read from the data set WORK.FMT.
+NOTE: 6 observations added.
+NOTE: The data set WORK.FMTS has 481 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 481 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 481 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_firmage.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_firmage.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 7 records were read from the infile STUFF.
+      The minimum record length was 13.
+      The maximum record length was 26.
+NOTE: The data set WORK.FMT has 7 observations and 3 variables.
+13 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+NOTE: DATA statement used (Total process time):
+      real time           0.34 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 7 observations read from the data set WORK.FMT.
+NOTE: 7 observations added.
+NOTE: The data set WORK.FMTS has 488 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 488 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 488 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+INFO: reading in label_firmsize.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_firmsize.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: DATA STEP stopped due to looping.
+NOTE: 7 records were read from the infile STUFF.
+      The minimum record length was 18.
+      The maximum record length was 27.
+NOTE: The data set WORK.FMT has 7 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.30 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 7 observations read from the data set WORK.FMT.
+NOTE: 7 observations added.
+NOTE: The data set WORK.FMTS has 495 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+14 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 495 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 495 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 14 observations read from the data set WORK.FMTNAMES.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+INFO: reading in label_flags.csv
+
+NOTE: The infile STUFF is:
+      Filename=http://download.vrdc.cornell.edu/qwipu.experimental/formats/v4.1b-draft/label_flags.csv,
+      Local Host Name=garnier.cloutier-vilhuber.net,
+      Local Host IP addr=192.168.1.6,
+      Service Hostname Name=vrdc3203.vrdc.cornell.edu,
+      Service IP addr=128.84.5.53,Service Name=httpd,
+      Service Portno=80,Lrecl=32767,Recfm=Variable
+
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+NOTE: Invalid third argument to function SUBSTR at line 77 column 21.
+RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
+11         12,Aggregate of cells - some of which have significantly distorted data 72
+start=12 label=Aggregate of cells - some of which have significantly distorted data fmtname=$flags done=1 _ERROR_=1 _N_=1
+NOTE: DATA STEP stopped due to looping.
+NOTE: 10 records were read from the infile STUFF.
+      The minimum record length was 5.
+      The maximum record length was 112.
+NOTE: The data set WORK.FMT has 10 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.26 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Appending WORK.FMT to WORK.FMTS.
+NOTE: There were 10 observations read from the data set WORK.FMT.
+NOTE: 10 observations added.
+NOTE: The data set WORK.FMTS has 505 observations and 3 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+15 The SAS System                                                                                      17:31 Tuesday, April 21, 2015
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 505 observations read from the data set WORK.FMTS.
+NOTE: 0 duplicate observations were deleted.
+NOTE: The data set WORK.FMTS has 505 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+78         
+79         proc format cntlin=fmts library=LIBRARY;
+NOTE: Format $AGEGRP has been written to LIBRARY.FORMATS.
+NOTE: Format $EDUCATI has been written to LIBRARY.FORMATS.
+NOTE: Format $ETHNICI has been written to LIBRARY.FORMATS.
+NOTE: Format $FIRMAGE has been written to LIBRARY.FORMATS.
+NOTE: Format $FIRMSIZ has been written to LIBRARY.FORMATS.
+NOTE: Format $FLAGS has been written to LIBRARY.FORMATS.
+NOTE: Format $GEO has been written to LIBRARY.FORMATS.
+NOTE: Format $IND has been written to LIBRARY.FORMATS.
+NOTE: Format $INDUSTR has been written to LIBRARY.FORMATS.
+NOTE: Format $OWNERCO has been written to LIBRARY.FORMATS.
+NOTE: Format $PERIODI has been written to LIBRARY.FORMATS.
+NOTE: Format $RACE has been written to LIBRARY.FORMATS.
+NOTE: Format $SEASONA has been written to LIBRARY.FORMATS.
+NOTE: Format $SEX has been written to LIBRARY.FORMATS.
+
+NOTE: There were 505 observations read from the data set WORK.FMTS.
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+80         proc format fmtlib library=LIBRARY;
+81         	select :;
+82         quit;
+
+NOTE: The PROCEDURE FORMAT printed pages 1-13.
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           3.03 seconds
+      cpu time            0.26 seconds
+      

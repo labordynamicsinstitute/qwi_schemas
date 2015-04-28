@@ -9,6 +9,7 @@
 - 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
 - 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
 - 2015-04-26: Changes to name of variable schema files (qwipu -> qwi), addition of variability variable schema files.
+- 2015-04-28: Fixed small typos in QWI variable short names
 
 === Version 4.1b-draft from 4.0
 - added J2J, National QWI spec

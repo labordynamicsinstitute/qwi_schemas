@@ -1,0 +1,711 @@
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   1
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $AGEGRP  LENGTH:   16   NUMBER OF VALUES:    9        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  16  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|A00             |A00             |All Ages (14-99)                        |
+|A01             |A01             |14-18                                   |
+|A02             |A02             |19-21                                   |
+|A03             |A03             |22-24                                   |
+|A04             |A04             |25-34                                   |
+|A05             |A05             |35-44                                   |
+|A06             |A06             |45-54                                   |
+|A07             |A07             |55-64                                   |
+|A08             |A08             |65-99                                   |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $EDUCATI LENGTH:   65   NUMBER OF VALUES:    6        |
+|   MIN LENGTH:   1  MAX LENGTH:  65  DEFAULT LENGTH:  65  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|E0              |E0              |All Education Categories                |
+|E1              |E1              |Less than high school                   |
+|E2              |E2              |High school or equivalent, no college   |
+|E3              |E3              |Some college or Associate degree        |
+|E4              |E4              |Bachelor's degree or advanced degree    |
+|E5              |E5              |Educational attainment not available (wo|
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $ETHNICI LENGTH:   22   NUMBER OF VALUES:    3        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  22  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|A0              |A0              |All Ethnicities                         |
+|A1              |A1              |Not Hispanic or Latino                  |
+|A2              |A2              |Hispanic or Latino                      |
+----------------------------------------------------------------------------
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   2
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $FIRMAGE LENGTH:   22   NUMBER OF VALUES:    7        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  22  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|0               |0               |All Firm Ages                           |
+|1               |1               |0-1 Years                               |
+|2               |2               |2-3 Years                               |
+|3               |3               |4-5 Years                               |
+|4               |4               |6-10 Years                              |
+|5               |5               |11+ Years                               |
+|N               |N               |Firm Age Not Available                  |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $FIRMSIZ LENGTH:   23   NUMBER OF VALUES:    7        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  23  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|0               |0               |All Firm Sizes                          |
+|1               |1               |0-19 Employees                          |
+|2               |2               |20-49 Employees                         |
+|3               |3               |50-249 Employees                        |
+|4               |4               |250-499 Employees                       |
+|5               |5               |500+ Employees                          |
+|N               |N               |Firm Size Not Available                 |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $FLAGS   LENGTH:  108   NUMBER OF VALUES:   10        |
+|   MIN LENGTH:   1  MAX LENGTH: 108  DEFAULT LENGTH: 108  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|-1              |-1              |data not available to compute this estim|
+|-2              |-2              |no data available in this category for t|
+|1               |1               |OK                                      |
+|10              |10              |Aggregate of cells - no significant dist|
+|11              |11              |Aggregate of cells not released because |
+|12              |12              |Aggregate of cells - some of which have |
+|5               |5               |Value suppressed because it does not mee|
+|6               |6               |Value calculated from other released mea|
+|7               |7               |Value calculated from other released mea|
+|9               |9               |Data significantly distorted - fuzzed va|
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $GEO     LENGTH:   26   NUMBER OF VALUES:    5        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  26  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|C               |C               |Counties                                |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   3
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $GEO     LENGTH:   26   NUMBER OF VALUES:    5        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  26  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|M               |M               |Metropolitan/Micropolitan               |
+|N               |N               |National (50 States + DC)               |
+|S               |S               |States                                  |
+|W               |W               |Workforce Investment Areas              |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $IND     LENGTH:   21   NUMBER OF VALUES:    4        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  21  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|3               |3               |NAICS Subsectors                        |
+|4               |4               |NAICS Industry Groups                   |
+|A               |A               |All Industries                          |
+|S               |S               |NAICS Sectors                           |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|00              |00              |All NAICS Sectors                       |
+|000             |000             |All NAICS Subsectors                    |
+|0000            |0000            |All NAICS Industry Groups               |
+|11              |11              |Agriculture, Forestry, Fishing and Hunti|
+|111             |111             |Crop Production                         |
+|1111            |1111            |Oilseed and Grain Farming               |
+|1112            |1112            |Vegetable and Melon Farming             |
+|1113            |1113            |Fruit and Tree Nut Farming              |
+|1114            |1114            |Greenhouse, Nursery, and Floriculture Pr|
+|1119            |1119            |Other Crop Farming                      |
+|112             |112             |Animal Production                       |
+|1121            |1121            |Cattle Ranching and Farming             |
+|1122            |1122            |Hog and Pig Farming                     |
+|1123            |1123            |Poultry and Egg Production              |
+|1124            |1124            |Sheep and Goat Farming                  |
+|1125            |1125            |Aquaculture                             |
+|1129            |1129            |Other Animal Production                 |
+|113             |113             |Forestry and Logging                    |
+|1131            |1131            |Timber Tract Operations                 |
+|1132            |1132            |Forest Nurseries and Gathering of Forest|
+|1133            |1133            |Logging                                 |
+|114             |114             |Fishing, Hunting and Trapping           |
+|1141            |1141            |Fishing                                 |
+|1142            |1142            |Hunting and Trapping                    |
+|115             |115             |Support Activities for Agriculture and F|
+|1151            |1151            |Support Activities for Crop Production  |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   4
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|1152            |1152            |Support Activities for Animal Production|
+|1153            |1153            |Support Activities for Forestry         |
+|21              |21              |Mining, Quarrying, and Oil and Gas Extra|
+|211             |211             |Oil and Gas Extraction                  |
+|2111            |2111            |Oil and Gas Extraction                  |
+|212             |212             |Mining (except Oil and Gas)             |
+|2121            |2121            |Coal Mining                             |
+|2122            |2122            |Metal Ore Mining                        |
+|2123            |2123            |Nonmetallic Mineral Mining and Quarrying|
+|213             |213             |Support Activities for Mining           |
+|2131            |2131            |Support Activities for Mining           |
+|22              |22              |Utilities                               |
+|221             |221             |Utilities                               |
+|2211            |2211            |Electric Power Generation, Transmission |
+|2212            |2212            |Natural Gas Distribution                |
+|2213            |2213            |Water, Sewage and Other Systems         |
+|23              |23              |Construction                            |
+|236             |236             |Construction of Buildings               |
+|2361            |2361            |Residential Building Construction       |
+|2362            |2362            |Nonresidential Building Construction    |
+|237             |237             |Heavy and Civil Engineering Construction|
+|2371            |2371            |Utility System Construction             |
+|2372            |2372            |Land Subdivision                        |
+|2373            |2373            |Highway, Street, and Bridge Construction|
+|2379            |2379            |Other Heavy and Civil Engineering Constr|
+|238             |238             |Specialty Trade Contractors             |
+|2381            |2381            |Foundation, Structure, and Building Exte|
+|2382            |2382            |Building Equipment Contractors          |
+|2383            |2383            |Building Finishing Contractors          |
+|2389            |2389            |Other Specialty Trade Contractors       |
+|31-33           |31-33           |Manufacturing                           |
+|311             |311             |Food Manufacturing                      |
+|3111            |3111            |Animal Food Manufacturing               |
+|3112            |3112            |Grain and Oilseed Milling               |
+|3113            |3113            |Sugar and Confectionery Product Manufact|
+|3114            |3114            |Fruit and Vegetable Preserving and Speci|
+|3115            |3115            |Dairy Product Manufacturing             |
+|3116            |3116            |Animal Slaughtering and Processing      |
+|3117            |3117            |Seafood Product Preparation and Packagin|
+|3118            |3118            |Bakeries and Tortilla Manufacturing     |
+|3119            |3119            |Other Food Manufacturing                |
+|312             |312             |Beverage and Tobacco Product Manufacturi|
+|3121            |3121            |Beverage Manufacturing                  |
+|3122            |3122            |Tobacco Manufacturing                   |
+|313             |313             |Textile Mills                           |
+|3131            |3131            |Fiber, Yarn, and Thread Mills           |
+|3132            |3132            |Fabric Mills                            |
+|3133            |3133            |Textile and Fabric Finishing and Fabric |
+|314             |314             |Textile Product Mills                   |
+|3141            |3141            |Textile Furnishings Mills               |
+|3149            |3149            |Other Textile Product Mills             |
+|315             |315             |Apparel Manufacturing                   |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   5
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|3151            |3151            |Apparel Knitting Mills                  |
+|3152            |3152            |Cut and Sew Apparel Manufacturing       |
+|3159            |3159            |Apparel Accessories and Other Apparel Ma|
+|316             |316             |Leather and Allied Product Manufacturing|
+|3161            |3161            |Leather and Hide Tanning and Finishing  |
+|3162            |3162            |Footwear Manufacturing                  |
+|3169            |3169            |Other Leather and Allied Product Manufac|
+|321             |321             |Wood Product Manufacturing              |
+|3211            |3211            |Sawmills and Wood Preservation          |
+|3212            |3212            |Veneer, Plywood, and Engineered Wood Pro|
+|3219            |3219            |Other Wood Product Manufacturing        |
+|322             |322             |Paper Manufacturing                     |
+|3221            |3221            |Pulp, Paper, and Paperboard Mills       |
+|3222            |3222            |Converted Paper Product Manufacturing   |
+|323             |323             |Printing and Related Support Activities |
+|3231            |3231            |Printing and Related Support Activities |
+|324             |324             |Petroleum and Coal Products Manufacturin|
+|3241            |3241            |Petroleum and Coal Products Manufacturin|
+|325             |325             |Chemical Manufacturing                  |
+|3251            |3251            |Basic Chemical Manufacturing            |
+|3252            |3252            |Resin, Synthetic Rubber, and Artificial |
+|3253            |3253            |Pesticide, Fertilizer, and Other Agricul|
+|3254            |3254            |Pharmaceutical and Medicine Manufacturin|
+|3255            |3255            |Paint, Coating, and Adhesive Manufacturi|
+|3256            |3256            |Soap, Cleaning Compound, and Toilet Prep|
+|3259            |3259            |Other Chemical Product and Preparation M|
+|326             |326             |Plastics and Rubber Products Manufacturi|
+|3261            |3261            |Plastics Product Manufacturing          |
+|3262            |3262            |Rubber Product Manufacturing            |
+|327             |327             |Nonmetallic Mineral Product Manufacturin|
+|3271            |3271            |Clay Product and Refractory Manufacturin|
+|3272            |3272            |Glass and Glass Product Manufacturing   |
+|3273            |3273            |Cement and Concrete Product Manufacturin|
+|3274            |3274            |Lime and Gypsum Product Manufacturing   |
+|3279            |3279            |Other Nonmetallic Mineral Product Manufa|
+|331             |331             |Primary Metal Manufacturing             |
+|3311            |3311            |Iron and Steel Mills and Ferroalloy Manu|
+|3312            |3312            |Steel Product Manufacturing from Purchas|
+|3313            |3313            |Alumina and Aluminum Production and Proc|
+|3314            |3314            |Nonferrous Metal (except Aluminum) Produ|
+|3315            |3315            |Foundries                               |
+|332             |332             |Fabricated Metal Product Manufacturing  |
+|3321            |3321            |Forging and Stamping                    |
+|3322            |3322            |Cutlery and Handtool Manufacturing      |
+|3323            |3323            |Architectural and Structural Metals Manu|
+|3324            |3324            |Boiler, Tank, and Shipping Container Man|
+|3325            |3325            |Hardware Manufacturing                  |
+|3326            |3326            |Spring and Wire Product Manufacturing   |
+|3327            |3327            |Machine Shops; Turned Product; and Screw|
+|3328            |3328            |Coating, Engraving, Heat Treating, and A|
+|3329            |3329            |Other Fabricated Metal Product Manufactu|
+|333             |333             |Machinery Manufacturing                 |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   6
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|3331            |3331            |Agriculture, Construction, and Mining Ma|
+|3332            |3332            |Industrial Machinery Manufacturing      |
+|3333            |3333            |Commercial and Service Industry Machiner|
+|3334            |3334            |Ventilation, Heating, Air-Conditioning, |
+|3335            |3335            |Metalworking Machinery Manufacturing    |
+|3336            |3336            |Engine, Turbine, and Power Transmission |
+|3339            |3339            |Other General Purpose Machinery Manufact|
+|334             |334             |Computer and Electronic Product Manufact|
+|3341            |3341            |Computer and Peripheral Equipment Manufa|
+|3342            |3342            |Communications Equipment Manufacturing  |
+|3343            |3343            |Audio and Video Equipment Manufacturing |
+|3344            |3344            |Semiconductor and Other Electronic Compo|
+|3345            |3345            |Navigational, Measuring, Electromedical,|
+|3346            |3346            |Manufacturing and Reproducing Magnetic a|
+|335             |335             |Electrical Equipment, Appliance, and Com|
+|3351            |3351            |Electric Lighting Equipment Manufacturin|
+|3352            |3352            |Household Appliance Manufacturing       |
+|3353            |3353            |Electrical Equipment Manufacturing      |
+|3359            |3359            |Other Electrical Equipment and Component|
+|336             |336             |Transportation Equipment Manufacturing  |
+|3361            |3361            |Motor Vehicle Manufacturing             |
+|3362            |3362            |Motor Vehicle Body and Trailer Manufactu|
+|3363            |3363            |Motor Vehicle Parts Manufacturing       |
+|3364            |3364            |Aerospace Product and Parts Manufacturin|
+|3365            |3365            |Railroad Rolling Stock Manufacturing    |
+|3366            |3366            |Ship and Boat Building                  |
+|3369            |3369            |Other Transportation Equipment Manufactu|
+|337             |337             |Furniture and Related Product Manufactur|
+|3371            |3371            |Household and Institutional Furniture an|
+|3372            |3372            |Office Furniture (including Fixtures) Ma|
+|3379            |3379            |Other Furniture Related Product Manufact|
+|339             |339             |Miscellaneous Manufacturing             |
+|3391            |3391            |Medical Equipment and Supplies Manufactu|
+|3399            |3399            |Other Miscellaneous Manufacturing       |
+|42              |42              |Wholesale Trade                         |
+|423             |423             |Merchant Wholesalers, Durable Goods     |
+|4231            |4231            |Motor Vehicle and Motor Vehicle Parts an|
+|4232            |4232            |Furniture and Home Furnishing Merchant W|
+|4233            |4233            |Lumber and Other Construction Materials |
+|4234            |4234            |Professional and Commercial Equipment an|
+|4235            |4235            |Metal and Mineral (except Petroleum) Mer|
+|4236            |4236            |Electrical and Electronic Goods Merchant|
+|4237            |4237            |Hardware, and Plumbing and Heating Equip|
+|4238            |4238            |Machinery, Equipment, and Supplies Merch|
+|4239            |4239            |Miscellaneous Durable Goods Merchant Who|
+|424             |424             |Merchant Wholesalers, Nondurable Goods  |
+|4241            |4241            |Paper and Paper Product Merchant Wholesa|
+|4242            |4242            |Drugs and Druggists' Sundries Merchant W|
+|4243            |4243            |Apparel, Piece Goods, and Notions Mercha|
+|4244            |4244            |Grocery and Related Product Merchant Who|
+|4245            |4245            |Farm Product Raw Material Merchant Whole|
+|4246            |4246            |Chemical and Allied Products Merchant Wh|
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   7
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|4247            |4247            |Petroleum and Petroleum Products Merchan|
+|4248            |4248            |Beer, Wine, and Distilled Alcoholic Beve|
+|4249            |4249            |Miscellaneous Nondurable Goods Merchant |
+|425             |425             |Wholesale Electronic Markets and Agents |
+|4251            |4251            |Wholesale Electronic Markets and Agents |
+|44-45           |44-45           |Retail Trade                            |
+|441             |441             |Motor Vehicle and Parts Dealers         |
+|4411            |4411            |Automobile Dealers                      |
+|4412            |4412            |Other Motor Vehicle Dealers             |
+|4413            |4413            |Automotive Parts, Accessories, and Tire |
+|442             |442             |Furniture and Home Furnishings Stores   |
+|4421            |4421            |Furniture Stores                        |
+|4422            |4422            |Home Furnishings Stores                 |
+|443             |443             |Electronics and Appliance Stores        |
+|4431            |4431            |Electronics and Appliance Stores        |
+|444             |444             |Building Material and Garden Equipment a|
+|4441            |4441            |Building Material and Supplies Dealers  |
+|4442            |4442            |Lawn and Garden Equipment and Supplies S|
+|445             |445             |Food and Beverage Stores                |
+|4451            |4451            |Grocery Stores                          |
+|4452            |4452            |Specialty Food Stores                   |
+|4453            |4453            |Beer, Wine, and Liquor Stores           |
+|446             |446             |Health and Personal Care Stores         |
+|4461            |4461            |Health and Personal Care Stores         |
+|447             |447             |Gasoline Stations                       |
+|4471            |4471            |Gasoline Stations                       |
+|448             |448             |Clothing and Clothing Accessories Stores|
+|4481            |4481            |Clothing Stores                         |
+|4482            |4482            |Shoe Stores                             |
+|4483            |4483            |Jewelry, Luggage, and Leather Goods Stor|
+|451             |451             |Sporting Goods, Hobby, Book, and Music S|
+|4511            |4511            |Sporting Goods, Hobby, and Musical Instr|
+|4512            |4512            |Book, Periodical, and Music Stores      |
+|452             |452             |General Merchandise Stores              |
+|4521            |4521            |Department Stores                       |
+|4529            |4529            |Other General Merchandise Stores        |
+|453             |453             |Miscellaneous Store Retailers           |
+|4531            |4531            |Florists                                |
+|4532            |4532            |Office Supplies, Stationery, and Gift St|
+|4533            |4533            |Used Merchandise Stores                 |
+|4539            |4539            |Other Miscellaneous Store Retailers     |
+|454             |454             |Nonstore Retailers                      |
+|4541            |4541            |Electronic Shopping and Mail-Order House|
+|4542            |4542            |Vending Machine Operators               |
+|4543            |4543            |Direct Selling Establishments           |
+|48-49           |48-49           |Transportation and Warehousing          |
+|481             |481             |Air Transportation                      |
+|4811            |4811            |Scheduled Air Transportation            |
+|4812            |4812            |Nonscheduled Air Transportation         |
+|482             |482             |Rail Transportation                     |
+|4821            |4821            |Rail Transportation                     |
+|483             |483             |Water Transportation                    |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   8
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|4831            |4831            |Deep Sea, Coastal, and Great Lakes Water|
+|4832            |4832            |Inland Water Transportation             |
+|484             |484             |Truck Transportation                    |
+|4841            |4841            |General Freight Trucking                |
+|4842            |4842            |Specialized Freight Trucking            |
+|485             |485             |Transit and Ground Passenger Transportat|
+|4851            |4851            |Urban Transit Systems                   |
+|4852            |4852            |Interurban and Rural Bus Transportation |
+|4853            |4853            |Taxi and Limousine Service              |
+|4854            |4854            |School and Employee Bus Transportation  |
+|4855            |4855            |Charter Bus Industry                    |
+|4859            |4859            |Other Transit and Ground Passenger Trans|
+|486             |486             |Pipeline Transportation                 |
+|4861            |4861            |Pipeline Transportation of Crude Oil    |
+|4862            |4862            |Pipeline Transportation of Natural Gas  |
+|4869            |4869            |Other Pipeline Transportation           |
+|487             |487             |Scenic and Sightseeing Transportation   |
+|4871            |4871            |Scenic and Sightseeing Transportation, L|
+|4872            |4872            |Scenic and Sightseeing Transportation, W|
+|4879            |4879            |Scenic and Sightseeing Transportation, O|
+|488             |488             |Support Activities for Transportation   |
+|4881            |4881            |Support Activities for Air Transportatio|
+|4882            |4882            |Support Activities for Rail Transportati|
+|4883            |4883            |Support Activities for Water Transportat|
+|4884            |4884            |Support Activities for Road Transportati|
+|4885            |4885            |Freight Transportation Arrangement      |
+|4889            |4889            |Other Support Activities for Transportat|
+|491             |491             |Postal Service                          |
+|4911            |4911            |Postal Service                          |
+|492             |492             |Couriers and Messengers                 |
+|4921            |4921            |Couriers and Express Delivery Services  |
+|4922            |4922            |Local Messengers and Local Delivery     |
+|493             |493             |Warehousing and Storage                 |
+|4931            |4931            |Warehousing and Storage                 |
+|51              |51              |Information                             |
+|511             |511             |Publishing Industries (except Internet) |
+|5111            |5111            |Newspaper, Periodical, Book, and Directo|
+|5112            |5112            |Software Publishers                     |
+|512             |512             |Motion Picture and Sound Recording Indus|
+|5121            |5121            |Motion Picture and Video Industries     |
+|5122            |5122            |Sound Recording Industries              |
+|515             |515             |Broadcasting (except Internet)          |
+|5151            |5151            |Radio and Television Broadcasting       |
+|5152            |5152            |Cable and Other Subscription Programming|
+|517             |517             |Telecommunications                      |
+|5171            |5171            |Wired Telecommunications Carriers       |
+|5172            |5172            |Wireless Telecommunications Carriers (ex|
+|5174            |5174            |Satellite Telecommunications            |
+|5179            |5179            |Other Telecommunications                |
+|518             |518             |Data Processing, Hosting and Related Ser|
+|5182            |5182            |Data Processing, Hosting, and Related Se|
+|519             |519             |Other Information Services              |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015   9
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|5191            |5191            |Other Information Services              |
+|52              |52              |Finance and Insurance                   |
+|521             |521             |Monetary Authorities-Central Bank       |
+|5211            |5211            |Monetary Authorities-Central Bank       |
+|522             |522             |Credit Intermediation and Related Activi|
+|5221            |5221            |Depository Credit Intermediation        |
+|5222            |5222            |Nondepository Credit Intermediation     |
+|5223            |5223            |Activities Related to Credit Intermediat|
+|523             |523             |Securities, Commodity Contracts, and Oth|
+|5231            |5231            |Securities and Commodity Contracts Inter|
+|5232            |5232            |Securities and Commodity Exchanges      |
+|5239            |5239            |Other Financial Investment Activities   |
+|524             |524             |Insurance Carriers and Related Activitie|
+|5241            |5241            |Insurance Carriers                      |
+|5242            |5242            |Agencies, Brokerages, and Other Insuranc|
+|525             |525             |Funds, Trusts, and Other Financial Vehic|
+|5251            |5251            |Insurance and Employee Benefit Funds    |
+|5259            |5259            |Other Investment Pools and Funds        |
+|53              |53              |Real Estate and Rental and Leasing      |
+|531             |531             |Real Estate                             |
+|5311            |5311            |Lessors of Real Estate                  |
+|5312            |5312            |Offices of Real Estate Agents and Broker|
+|5313            |5313            |Activities Related to Real Estate       |
+|532             |532             |Rental and Leasing Services             |
+|5321            |5321            |Automotive Equipment Rental and Leasing |
+|5322            |5322            |Consumer Goods Rental                   |
+|5323            |5323            |General Rental Centers                  |
+|5324            |5324            |Commercial and Industrial Machinery and |
+|533             |533             |Lessors of Nonfinancial Intangible Asset|
+|5331            |5331            |Lessors of Nonfinancial Intangible Asset|
+|54              |54              |Professional, Scientific, and Technical |
+|541             |541             |Professional, Scientific, and Technical |
+|5411            |5411            |Legal Services                          |
+|5412            |5412            |Accounting, Tax Preparation, Bookkeeping|
+|5413            |5413            |Architectural, Engineering, and Related |
+|5414            |5414            |Specialized Design Services             |
+|5415            |5415            |Computer Systems Design and Related Serv|
+|5416            |5416            |Management, Scientific, and Technical Co|
+|5417            |5417            |Scientific Research and Development Serv|
+|5418            |5418            |Advertising, Public Relations, and Relat|
+|5419            |5419            |Other Professional, Scientific, and Tech|
+|55              |55              |Management of Companies and Enterprises |
+|551             |551             |Management of Companies and Enterprises |
+|5511            |5511            |Management of Companies and Enterprises |
+|56              |56              |Administrative and Support and Waste Man|
+|561             |561             |Administrative and Support Services     |
+|5611            |5611            |Office Administrative Services          |
+|5612            |5612            |Facilities Support Services             |
+|5613            |5613            |Employment Services                     |
+|5614            |5614            |Business Support Services               |
+|5615            |5615            |Travel Arrangement and Reservation Servi|
+|5616            |5616            |Investigation and Security Services     |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015  10
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|5617            |5617            |Services to Buildings and Dwellings     |
+|5619            |5619            |Other Support Services                  |
+|562             |562             |Waste Management and Remediation Service|
+|5621            |5621            |Waste Collection                        |
+|5622            |5622            |Waste Treatment and Disposal            |
+|5629            |5629            |Remediation and Other Waste Management S|
+|61              |61              |Educational Services                    |
+|611             |611             |Educational Services                    |
+|6111            |6111            |Elementary and Secondary Schools        |
+|6112            |6112            |Junior Colleges                         |
+|6113            |6113            |Colleges, Universities, and Professional|
+|6114            |6114            |Business Schools and Computer and Manage|
+|6115            |6115            |Technical and Trade Schools             |
+|6116            |6116            |Other Schools and Instruction           |
+|6117            |6117            |Educational Support Services            |
+|62              |62              |Health Care and Social Assistance       |
+|621             |621             |Ambulatory Health Care Services         |
+|6211            |6211            |Offices of Physicians                   |
+|6212            |6212            |Offices of Dentists                     |
+|6213            |6213            |Offices of Other Health Practitioners   |
+|6214            |6214            |Outpatient Care Centers                 |
+|6215            |6215            |Medical and Diagnostic Laboratories     |
+|6216            |6216            |Home Health Care Services               |
+|6219            |6219            |Other Ambulatory Health Care Services   |
+|622             |622             |Hospitals                               |
+|6221            |6221            |General Medical and Surgical Hospitals  |
+|6222            |6222            |Psychiatric and Substance Abuse Hospital|
+|6223            |6223            |Specialty (except Psychiatric and Substa|
+|623             |623             |Nursing and Residential Care Facilities |
+|6231            |6231            |Nursing Care Facilities                 |
+|6232            |6232            |Residential Mental Retardation, Mental H|
+|6233            |6233            |Community Care Facilities for the Elderl|
+|6239            |6239            |Other Residential Care Facilities       |
+|624             |624             |Social Assistance                       |
+|6241            |6241            |Individual and Family Services          |
+|6242            |6242            |Community Food and Housing, and Emergenc|
+|6243            |6243            |Vocational Rehabilitation Services      |
+|6244            |6244            |Child Day Care Services                 |
+|71              |71              |Arts, Entertainment, and Recreation     |
+|711             |711             |Performing Arts, Spectator Sports, and R|
+|7111            |7111            |Performing Arts Companies               |
+|7112            |7112            |Spectator Sports                        |
+|7113            |7113            |Promoters of Performing Arts, Sports, an|
+|7114            |7114            |Agents and Managers for Artists, Athlete|
+|7115            |7115            |Independent Artists, Writers, and Perfor|
+|712             |712             |Museums, Historical Sites, and Similar I|
+|7121            |7121            |Museums, Historical Sites, and Similar I|
+|713             |713             |Amusement, Gambling, and Recreation Indu|
+|7131            |7131            |Amusement Parks and Arcades             |
+|7132            |7132            |Gambling Industries                     |
+|7139            |7139            |Other Amusement and Recreation Industrie|
+|72              |72              |Accommodation and Food Services         |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015  11
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $INDUSTR LENGTH:  107   NUMBER OF VALUES:  436        |
+|   MIN LENGTH:   1  MAX LENGTH: 107  DEFAULT LENGTH: 107  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|721             |721             |Accommodation                           |
+|7211            |7211            |Traveler Accommodation                  |
+|7212            |7212            |RV (Recreational Vehicle) Parks and Recr|
+|7213            |7213            |Rooming and Boarding Houses             |
+|722             |722             |Food Services and Drinking Places       |
+|7221            |7221            |Full-Service Restaurants                |
+|7222            |7222            |Limited-Service Eating Places           |
+|7223            |7223            |Special Food Services                   |
+|7224            |7224            |Drinking Places (Alcoholic Beverages)   |
+|81              |81              |Other Services (except Public Administra|
+|811             |811             |Repair and Maintenance                  |
+|8111            |8111            |Automotive Repair and Maintenance       |
+|8112            |8112            |Electronic and Precision Equipment Repai|
+|8113            |8113            |Commercial and Industrial Machinery and |
+|8114            |8114            |Personal and Household Goods Repair and |
+|812             |812             |Personal and Laundry Services           |
+|8121            |8121            |Personal Care Services                  |
+|8122            |8122            |Death Care Services                     |
+|8123            |8123            |Drycleaning and Laundry Services        |
+|8129            |8129            |Other Personal Services                 |
+|813             |813             |Religious, Grantmaking, Civic, Professio|
+|8131            |8131            |Religious Organizations                 |
+|8132            |8132            |Grantmaking and Giving Services         |
+|8133            |8133            |Social Advocacy Organizations           |
+|8134            |8134            |Civic and Social Organizations          |
+|8139            |8139            |Business, Professional, Labor, Political|
+|814             |814             |Private Households                      |
+|8141            |8141            |Private Households                      |
+|92              |92              |Public Administration                   |
+|921             |921             |Executive, Legislative, and Other Genera|
+|9211            |9211            |Executive, Legislative, and Other Genera|
+|922             |922             |Justice, Public Order, and Safety Activi|
+|9221            |9221            |Justice, Public Order, and Safety Activi|
+|923             |923             |Administration of Human Resource Program|
+|9231            |9231            |Administration of Human Resource Program|
+|924             |924             |Administration of Environmental Quality |
+|9241            |9241            |Administration of Environmental Quality |
+|925             |925             |Administration of Housing Programs, Urba|
+|9251            |9251            |Administration of Housing Programs, Urba|
+|926             |926             |Administration of Economic Programs     |
+|9261            |9261            |Administration of Economic Program      |
+|927             |927             |Space Research and Technology           |
+|9271            |9271            |Space Research and Technology           |
+|928             |928             |National Security and International Affa|
+|9281            |9281            |National Security and International Affa|
+|99              |99              |Other                                   |
+----------------------------------------------------------------------------
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015  12
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $OWNERCO LENGTH:   18   NUMBER OF VALUES:    3        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  18  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|A00             |A00             |All (1-5)                               |
+|A01             |A01             |Federal government                      |
+|A05             |A05             |All Private (5)                         |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $PERIODI LENGTH:   14   NUMBER OF VALUES:    2        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  14  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|A               |A               |Annual data                             |
+|Q               |Q               |Quarterly data                          |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $RACE    LENGTH:   47   NUMBER OF VALUES:    8        |
+|   MIN LENGTH:   1  MAX LENGTH:  47  DEFAULT LENGTH:  47  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|A0              |A0              |All Races                               |
+|A1              |A1              |White Alone                             |
+|A2              |A2              |Black or African American Alone         |
+|A3              |A3              |American Indian or Alaska Native Alone  |
+|A4              |A4              |Asian Alone                             |
+|A5              |A5              |Native Hawaiian or Other Pacific Islande|
+|A6              |A6              |Some Other Race Alone (Not Used)        |
+|A7              |A7              |Two or More Race Groups                 |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $SEASONA LENGTH:   23   NUMBER OF VALUES:    2        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:  23  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|S               |S               |Seasonally adjusted                     |
+|U               |U               |Not seasonally adjusted                 |
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+|       FORMAT NAME: $SEX     LENGTH:    9   NUMBER OF VALUES:    3        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:   9  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL  (VER. V7|V8   21APR2015:17:31:08)|
+|----------------+----------------+----------------------------------------|
+|0               |0               |All Sexes                               |
+The SAS System                                                                                     17:31 Tuesday, April 21, 2015  13
+
+-----------------+----------------+-----------------------------------------
+|       FORMAT NAME: $SEX     LENGTH:    9   NUMBER OF VALUES:    3        |
+|   MIN LENGTH:   1  MAX LENGTH:  40  DEFAULT LENGTH:   9  FUZZ:        0  |
+|--------------------------------------------------------------------------|
+|START           |END             |LABEL                           (CONT'D)|
+|----------------+----------------+----------------------------------------|
+|1               |1               |Male                                    |
+|2               |2               |Female                                  |
+----------------------------------------------------------------------------
