@@ -21,10 +21,10 @@ else
 	version=$1
 fi
 case $version in
-	cornell|draft)
+	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	official)
+	official|draft)
 	author=lars.vilhuber@census.gov
 	;;
 esac
@@ -66,7 +66,7 @@ link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@corne
 .Important
 ==============================================
 This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
-or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+or link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
 ==============================================
 	" >> $asciifile
 	;;
@@ -76,7 +76,7 @@ echo "
 .Important
 ==============================================
 Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_4.0.1[erika.mcentarfer@census.gov]
-or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_4.0.1[lars.vilhuber@census.gov].
+or link:mailto:${author}?subject=LEHD_Schema[${author}].
 ==============================================
 	" >> $asciifile
 	;;
