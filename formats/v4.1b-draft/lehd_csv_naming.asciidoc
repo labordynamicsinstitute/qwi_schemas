@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-26 April 2015
+29 April 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -162,6 +162,7 @@ include::naming_sa.csv[]
 - 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
 - 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
 - 2015-04-26: Changes to name of variable schema files (qwipu -> qwi), addition of variability variable schema files.
+- 2015-04-28: Fixed small typos in QWI variable short names
 
 === Version 4.1b-draft from 4.0
 - added J2J, National QWI spec
@@ -178,6 +179,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Sun Apr 26 23:14:00 EDT 2015
+This revision: Wed Apr 29 10:03:19 EDT 2015
 *******************
 
