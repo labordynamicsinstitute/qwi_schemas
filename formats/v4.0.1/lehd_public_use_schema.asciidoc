@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-01 April 2015
+30 April 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -189,8 +189,7 @@ include::label_ind_level.csv[]
 ( link:label_industry.csv[] )
 
 Only a small subset of available values shown.
-The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
+The 2007 NAICS (North American Industry Classification System) is used for all years.
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
@@ -322,6 +321,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Wed Apr  1 11:19:31 EDT 2015
+This revision: Thu Apr 30 11:36:23 EDT 2015
 *******************
 

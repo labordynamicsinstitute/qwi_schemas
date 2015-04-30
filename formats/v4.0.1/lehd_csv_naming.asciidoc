@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema v4.0.1 - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-01 April 2015
+30 April 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -165,6 +165,6 @@ include::naming_sa.csv[]
 
 <<<
 *******************
-This revision: Wed Apr  1 11:19:39 EDT 2015
+This revision: Thu Apr 30 11:36:05 EDT 2015
 *******************
 

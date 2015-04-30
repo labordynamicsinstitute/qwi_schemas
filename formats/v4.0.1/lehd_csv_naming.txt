@@ -2,7 +2,7 @@
 ****** LEHD Public Use CSV Naming Schema v4.0.1 - CSV Naming Convention ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-01 April 2015
+30 April 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -107,6 +107,6 @@ type Description
 **** 5.1. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
-This revision: Wed Apr 1 11:19:39 EDT 2015
+This revision: Thu Apr 30 11:36:05 EDT 2015
 ===============================================================================
-Last updated 2015-04-01 11:19:39 EDT
+Last updated 2015-04-30 11:36:05 EDT
