@@ -505,19 +505,19 @@ echo "|===================================================" >> $asciifile
 nsfile=label_agg_level.csv
 nsfileshort=label_agg_level-reduced.csv
 
-head -11 $nsfile > $nsfileshort
+#head -11 $nsfile > $nsfileshort
 
 echo "
 <<<
 === Aggregation level
 ( link:$nsfile[] )
 
-The linked file (link:$nsfile[] ) has columns indicating exactly which detailed variabes are included.  Columns <<geo_level,geo_level>> and <<ind_level,ind_level>> are explained above.
+The linked file (link:$nsfile[] ) has columns indicating exactly which detailed variables are included.  Columns <<geo_level,geo_level>> and <<ind_level,ind_level>> are explained above.
 
 
-[width=\"90%\",format=\"csv\",cols=\">2,5*<3\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\">1,3*<2,14*<1\",options=\"header\"]
 |===================================================
-include::$nsfileshort[]
+include::$nsfile[]
 |===================================================
 ">> $asciifile
 

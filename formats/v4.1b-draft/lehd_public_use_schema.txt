@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-29 April 2015
+15 May 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -724,19 +724,42 @@ State         Format file
 **** 2.14. Aggregation level ****
 ( label_agg_level.csv )
 The linked file (label_agg_level.csv ) has columns indicating exactly which
-detailed variabes are included. Columns geo_level and ind_level are explained
+detailed variables are included. Columns geo_level and ind_level are explained
 above.
-agg_level worker_char      firm_char firm_orig_char j2j j2jr
-        1                                           0   1
-        2 Ethnicity                                 0   1
-        3 Race                                      0   1
-        4 Race * Ethnicity                          0   1
-        5 Education                                 0   1
-        6 Age                                       0   1
-        7 Sex                                       0   1
-        8 Sex * Education                           0   1
-        9 Sex * Age                                 0   1
-       10                  Firm Size                0   1
+agg_level worker_char firm_char firm_orig_char j2j j2jr j2jod qwi geo_level ind_level by_ownercode by_sex by_agegrp by_race by_ethnicity by_education by_firmage by_firmsize
+        1                                      1   1              N         A         0            0      0         0       0            0            0          0
+        2 Sex                                  1   1              N         A         0            1      0         0       0            0            0          0
+        3 Age                                  1   1              N         A         0            0      1         0       0            0            0          0
+        4 Sex * Age                            1   1              N         A         0            1      1         0       0            0            0          0
+        5 Race                                 1   1              N         A         0            0      0         1       0            0            0          0
+        9 Ethnicity                            1   1              N         A         0            0      0         0       1            0            0          0
+       13 Race *                               1   1              N         A         0            0      0         1       1            0            0          0
+          Ethnicity
+       17 Education                            1   1              N         A         0            0      0         0       0            1            0          0
+       18 Sex *                                1   1              N         A         0            1      0         0       0            1            0          0
+          Education
+       65             Firm Age                 1   1              N         A         0            0      0         0       0            0            1          0
+      129             Firm Size                1   1              N         A         0            0      0         0       0            0            0          1
+      257             NAICS                    1   1              N         S         0            0      0         0       0            0            0          0
+                      Sector
+     1025             State                    1   1              S         A         0            0      0         0       0            0            0          0
+     1026 Sex         State                    1   1              S         A         0            1      0         0       0            0            0          0
+     1027 Age         State                    1   1              S         A         0            0      1         0       0            0            0          0
+     1028 Sex * Age   State                    1   1              S         A         0            1      1         0       0            0            0          0
+     1029 Race        State                    1   1              S         A         0            0      0         1       0            0            0          0
+     1033 Ethnicity   State                    1   1              S         A         0            0      0         0       1            0            0          0
+     1037 Race *      State                    1   1              S         A         0            0      0         1       1            0            0          0
+          Ethnicity
+     1041 Education   State                    1   1              S         A         0            0      0         0       0            1            0          0
+     1042 Sex *       State                    1   1              S         A         0            1      0         0       0            1            0          0
+          Education
+     1089             Firm Age                 1   1              S         A         0            0      0         0       0            0            1          0
+                      * State
+     1153             Firm Size                1   1              S         A         0            0      0         0       0            0            0          1
+                      * State
+     1281             NAICS                    1   1              S         S         0            0      0         0       0            0            0          0
+                      Sector *
+                      State
 3. Status flags
 ( label_flags.csv )
 Each status flag in the tables above contains one of the following valid
@@ -782,6 +805,6 @@ flag label
     * added definitions of variability measures
     * added definitions of rates on separate file
     * added naming convention for additional files
-This revision: Wed Apr 29 10:03:28 EDT 2015
+This revision: Fri May 15 11:55:01 EDT 2015
 ===============================================================================
-Last updated 2015-04-29 10:03:28 EDT
+Last updated 2015-05-15 11:55:01 EDT
