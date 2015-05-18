@@ -512,7 +512,25 @@ echo "
 === Aggregation level
 ( link:$nsfile[] )
 
-The linked file (link:$nsfile[] ) has columns indicating exactly which detailed variables are included.  Columns <<geo_level,geo_level>> and <<ind_level,ind_level>> are explained above.
+Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. These different tabulations are each assigned a unique aggregation level, represented by the *agg_level* variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
+*agg_level* is currently only reported for  J2J data products.
+
+
+The following variables are included in the (link:$nsfile[agg_level.csv] )  file:
+
+- agg_level - index representing level of aggregation reported on a given record.
+- worker_char - demographic (worker) characteristics reported on record.
+- firm_char - firm/establishment characteristics reported on record. In origin-destination tabulations, these will be the characteristics of the destination firm.
+- firm_orig_char - firm/establishment characteristics of origin firm reported on record (origin-destination tabulations, only)
+- j2j, j2jr, qwi - flags indicating which tabulations are included with each data product. The variable will be filled in with 1 if the data product is available on listed dimensions.
+
+The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
+
+- <<geo_level,geo_level>> - geographic level of table, as per 2.13.1.
+- <<ind_level,ind_level>> - industry level of table, as per 2.12.1.
+- by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
+
+These flags will be expanded to include origin characteristics in a later release.
 
 
 [width=\"90%\",format=\"csv\",cols=\">1,3*<2,14*<1\",options=\"header\"]

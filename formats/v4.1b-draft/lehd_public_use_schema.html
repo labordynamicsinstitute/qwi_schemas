@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema v4.1b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">15 May 2015</span>
+<span id="revdate">18 May 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -2674,7 +2674,55 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_aggregation_level">2.14. Aggregation level</h3>
 <div class="paragraph"><p>( <a href="label_agg_level.csv">label_agg_level.csv</a> )</p></div>
-<div class="paragraph"><p>The linked file (<a href="label_agg_level.csv">label_agg_level.csv</a> ) has columns indicating exactly which detailed variables are included.  Columns <a href="#geo_level">geo_level</a> and <a href="#ind_level">ind_level</a> are explained above.</p></div>
+<div class="paragraph"><p>Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. These different tabulations are each assigned a unique aggregation level, represented by the <strong>agg_level</strong> variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
+<strong>agg_level</strong> is currently only reported for  J2J data products.</p></div>
+<div class="paragraph"><p>The following variables are included in the (<a href="label_agg_level.csv">agg_level.csv</a> )  file:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+agg_level - index representing level of aggregation reported on a given record.
+</p>
+</li>
+<li>
+<p>
+worker_char - demographic (worker) characteristics reported on record.
+</p>
+</li>
+<li>
+<p>
+firm_char - firm/establishment characteristics reported on record. In origin-destination tabulations, these will be the characteristics of the destination firm.
+</p>
+</li>
+<li>
+<p>
+firm_orig_char - firm/establishment characteristics of origin firm reported on record (origin-destination tabulations, only)
+</p>
+</li>
+<li>
+<p>
+j2j, j2jr, qwi - flags indicating which tabulations are included with each data product. The variable will be filled in with 1 if the data product is available on listed dimensions.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="#geo_level">geo_level</a> - geographic level of table, as per 2.13.1.
+</p>
+</li>
+<li>
+<p>
+<a href="#ind_level">ind_level</a> - industry level of table, as per 2.12.1.
+</p>
+</li>
+<li>
+<p>
+by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>These flags will be expanded to include origin characteristics in a later release.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="90%"
@@ -3336,6 +3384,11 @@ cellspacing="0" cellpadding="4">
 2015-04-28: Fixed small typos in QWI variable short names
 </p>
 </li>
+<li>
+<p>
+2015-05-18: Updated agg_level description, replaced agg_level.csv file
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -3366,11 +3419,16 @@ added definitions of rates on separate file
 added naming convention for additional files
 </p>
 </li>
+<li>
+<p>
+added agg_level variable
+</p>
+</li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Fri May 15 11:55:01 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Mon May 18 08:46:50 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -3379,7 +3437,7 @@ added naming convention for additional files
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-05-15 11:55:01 EDT
+Last updated 2015-05-18 08:46:50 EDT
 </div>
 </div>
 </body>
