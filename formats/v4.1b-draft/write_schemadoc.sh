@@ -25,7 +25,7 @@ case $version in
 	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	official|draf)
+	official|draft)
 	author=lars.vilhuber@census.gov
 	;;
 esac
