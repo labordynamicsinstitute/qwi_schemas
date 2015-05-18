@@ -731,8 +731,8 @@ starts from 1, representing a national level grand total (all industries,
 workers, etc.), and progresses through different combinations of
 characteristics. There are gaps in the progression to leave space for
 aggregation levels that may be included in future data releases. agg_level is
-currently only reported for J2J data products.
-The following variables are included in the (agg_level.csv ) file:
+currently reported only for J2J data products.
+The following variables are included in the agg_level.csv file:
     * agg_level - index representing level of aggregation reported on a given
       record.
     * worker_char - demographic (worker) characteristics reported on record.
@@ -833,6 +833,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Mon May 18 08:46:50 EDT 2015
+This revision: Mon May 18 13:32:36 EDT 2015
 ===============================================================================
-Last updated 2015-05-18 08:46:50 EDT
+Last updated 2015-05-18 13:32:36 EDT

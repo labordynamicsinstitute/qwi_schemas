@@ -513,10 +513,10 @@ echo "
 ( link:$nsfile[] )
 
 Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. These different tabulations are each assigned a unique aggregation level, represented by the *agg_level* variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
-*agg_level* is currently only reported for  J2J data products.
+*agg_level* is currently  reported only for  J2J data products.
 
 
-The following variables are included in the (link:$nsfile[agg_level.csv] )  file:
+The following variables are included in the link:$nsfile[agg_level.csv]   file:
 
 - agg_level - index representing level of aggregation reported on a given record.
 - worker_char - demographic (worker) characteristics reported on record.
