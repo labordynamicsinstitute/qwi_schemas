@@ -313,7 +313,7 @@ include::tmp_variables_qwiv.csv[]
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
 [width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
 |===================================================
-include::tmp_variables_qwiv.csv[]
+include::tmp_variables_qwirv.csv[]
 |===================================================
 
 

@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.1b-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-18 May 2015
+22 May 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -236,7 +236,7 @@ include::tmp_variables_qwiv.csv[]
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
 [width="95%",format="csv",cols="2*^2,<5",options="header"]
 |===================================================
-include::tmp_variables_qwiv.csv[]
+include::tmp_variables_qwirv.csv[]
 |===================================================
 
 
@@ -564,6 +564,7 @@ include::label_flags.csv[]
 - 2015-04-26: Changes to name of variable schema files (qwipu -> qwi), addition of variability variable schema files.
 - 2015-04-28: Fixed small typos in QWI variable short names
 - 2015-05-18: Updated agg_level description, replaced agg_level.csv file
+- 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
 
 === Version 4.1b-draft from 4.0
 - added J2J, National QWI spec
@@ -576,6 +577,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon May 18 13:32:36 EDT 2015
+This revision: Fri May 22 14:50:27 EDT 2015
 *******************
 

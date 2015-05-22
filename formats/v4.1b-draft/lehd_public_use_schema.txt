@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-18 May 2015
+22 May 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -452,41 +452,31 @@ Variability measure Alternate name Variable name
 *** 1.4.3. National QWI and state-level QWI ***
 ( variables_qwirv.csv )
 Variability measure Alternate name Variable name
-         st_Emp            st_B    Standard error of Beginning-of-Quarter
-                                   Employment: Counts
-       st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
-                                   Counts
-         st_EmpS           st_F    Standard error of Full-Quarter Employment
-                                   (Stable): Counts
+     st_HirA_rate         st_AR    Standard error of Hiring Rate (Accessions)
+     st_HirN_rate         st_HR    Standard error of New Hiring Rate
+     st_HirR_rate         st_RR    Standard error of Recall Rate
             …
-         vt_Emp            vt_B    Total variation of Beginning-of-Quarter
-                                   Employment: Counts
-       vt_EmpEnd           vt_E    Total variation of End-of-Quarter
-                                   Employment: Counts
-         vt_EmpS           vt_F    Total variation of Full-Quarter Employment
-                                   (Stable): Counts
+     vt_HirA_rate         vt_AR    Total variation of Hiring Rate (Accessions)
+     vt_HirN_rate         vt_HR    Total variation of New Hiring Rate
+     vt_HirR_rate         vt_RR    Total variation of Recall Rate
             …
-         vb_Emp            vb_B    Between-implicate variability for Beginning-
-                                   of-Quarter Employment: Counts
-       vb_EmpEnd           vb_E    Between-implicate variability for End-of-
-                                   Quarter Employment: Counts
-         vb_EmpS           vb_F    Between-implicate variability for Full-
-                                   Quarter Employment (Stable): Counts
+     vb_HirA_rate         vb_AR    Between-implicate variability for Hiring
+                                   Rate (Accessions)
+     vb_HirN_rate         vb_HR    Between-implicate variability for New Hiring
+                                   Rate
+     vb_HirR_rate         vb_RR    Between-implicate variability for Recall
+                                   Rate
             …
             …
-         df_Emp            df_B    Degrees of freedom for VT of Beginning-of-
-                                   Quarter Employment: Counts
-       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
-                                   Employment: Counts
-         df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
-                                   Employment (Stable): Counts
+     df_HirA_rate         df_AR    Degrees of freedom for VT of Hiring Rate
+                                   (Accessions)
+     df_HirN_rate         df_HR    Degrees of freedom for VT of New Hiring Rate
+     df_HirR_rate         df_RR    Degrees of freedom for VT of Recall Rate
             …
-         mr_Emp            mr_B    Missingness ratio for Beginning-of-Quarter
-                                   Employment: Counts
-       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
-                                   Employment: Counts
-         mr_EmpS           mr_F    Missingness ratio for Full-Quarter
-                                   Employment (Stable): Counts
+     mr_HirA_rate         mr_AR    Missingness ratio for Hiring Rate
+                                   (Accessions)
+     mr_HirN_rate         mr_HR    Missingness ratio for New Hiring Rate
+     mr_HirR_rate         mr_RR    Missingness ratio for Recall Rate
 *** 1.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 1.4.5. Job-to-job flow rates (J2JR) ***
@@ -826,6 +816,8 @@ flag label
       addition of variability variable schema files.
     * 2015-04-28: Fixed small typos in QWI variable short names
     * 2015-05-18: Updated agg_level description, replaced agg_level.csv file
+    * 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No
+      change to actual metadata.
 **** 4.2. Version 4.1b-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -833,6 +825,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Mon May 18 13:32:36 EDT 2015
+This revision: Fri May 22 14:50:27 EDT 2015
 ===============================================================================
-Last updated 2015-05-18 13:32:36 EDT
+Last updated 2015-05-22 14:50:27 EDT

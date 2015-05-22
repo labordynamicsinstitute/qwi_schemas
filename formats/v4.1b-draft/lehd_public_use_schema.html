@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema v4.1b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">18 May 2015</span>
+<span id="revdate">22 May 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -1558,39 +1558,19 @@ cellspacing="0" cellpadding="4">
 </thead>
 <tbody>
 <tr>
-<td align="center" valign="top"><p class="table">st_Emp</p></td>
-<td align="center" valign="top"><p class="table">st_B</p></td>
-<td align="left" valign="top"><p class="table">Standard error of Beginning-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">st_HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">st_AR</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Hiring Rate (Accessions)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">st_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">st_E</p></td>
-<td align="left" valign="top"><p class="table">Standard error of End-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">st_HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">st_HR</p></td>
+<td align="left" valign="top"><p class="table">Standard error of New Hiring Rate</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">st_EmpS</p></td>
-<td align="center" valign="top"><p class="table">st_F</p></td>
-<td align="left" valign="top"><p class="table">Standard error of Full-Quarter Employment (Stable): Counts</p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">&#8230;</p></td>
-<td align="center" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">vt_Emp</p></td>
-<td align="center" valign="top"><p class="table">vt_B</p></td>
-<td align="left" valign="top"><p class="table">Total variation of Beginning-of-Quarter Employment: Counts</p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">vt_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">vt_E</p></td>
-<td align="left" valign="top"><p class="table">Total variation of End-of-Quarter Employment: Counts</p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">vt_EmpS</p></td>
-<td align="center" valign="top"><p class="table">vt_F</p></td>
-<td align="left" valign="top"><p class="table">Total variation of Full-Quarter Employment (Stable): Counts</p></td>
+<td align="center" valign="top"><p class="table">st_HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">st_RR</p></td>
+<td align="left" valign="top"><p class="table">Standard error of Recall Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
@@ -1598,19 +1578,39 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vb_Emp</p></td>
-<td align="center" valign="top"><p class="table">vb_B</p></td>
-<td align="left" valign="top"><p class="table">Between-implicate variability for Beginning-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">vt_AR</p></td>
+<td align="left" valign="top"><p class="table">Total variation of Hiring Rate (Accessions)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vb_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">vb_E</p></td>
-<td align="left" valign="top"><p class="table">Between-implicate variability for End-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">vt_HR</p></td>
+<td align="left" valign="top"><p class="table">Total variation of New Hiring Rate</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">vb_EmpS</p></td>
-<td align="center" valign="top"><p class="table">vb_F</p></td>
-<td align="left" valign="top"><p class="table">Between-implicate variability for Full-Quarter Employment (Stable): Counts</p></td>
+<td align="center" valign="top"><p class="table">vt_HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">vt_RR</p></td>
+<td align="left" valign="top"><p class="table">Total variation of Recall Rate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="center" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">vb_AR</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for Hiring Rate (Accessions)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">vb_HR</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for New Hiring Rate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">vb_HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">vb_RR</p></td>
+<td align="left" valign="top"><p class="table">Between-implicate variability for Recall Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
@@ -1623,19 +1623,19 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">df_Emp</p></td>
-<td align="center" valign="top"><p class="table">df_B</p></td>
-<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Beginning-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">df_HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">df_AR</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Hiring Rate (Accessions)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">df_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">df_E</p></td>
-<td align="left" valign="top"><p class="table">Degrees of freedom for VT of End-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">df_HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">df_HR</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of New Hiring Rate</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">df_EmpS</p></td>
-<td align="center" valign="top"><p class="table">df_F</p></td>
-<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Full-Quarter Employment (Stable): Counts</p></td>
+<td align="center" valign="top"><p class="table">df_HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">df_RR</p></td>
+<td align="left" valign="top"><p class="table">Degrees of freedom for VT of Recall Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">&#8230;</p></td>
@@ -1643,19 +1643,19 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">mr_Emp</p></td>
-<td align="center" valign="top"><p class="table">mr_B</p></td>
-<td align="left" valign="top"><p class="table">Missingness ratio for Beginning-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">mr_HirA_rate</p></td>
+<td align="center" valign="top"><p class="table">mr_AR</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for Hiring Rate (Accessions)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">mr_EmpEnd</p></td>
-<td align="center" valign="top"><p class="table">mr_E</p></td>
-<td align="left" valign="top"><p class="table">Missingness ratio for End-of-Quarter Employment: Counts</p></td>
+<td align="center" valign="top"><p class="table">mr_HirN_rate</p></td>
+<td align="center" valign="top"><p class="table">mr_HR</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for New Hiring Rate</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">mr_EmpS</p></td>
-<td align="center" valign="top"><p class="table">mr_F</p></td>
-<td align="left" valign="top"><p class="table">Missingness ratio for Full-Quarter Employment (Stable): Counts</p></td>
+<td align="center" valign="top"><p class="table">mr_HirR_rate</p></td>
+<td align="center" valign="top"><p class="table">mr_RR</p></td>
+<td align="left" valign="top"><p class="table">Missingness ratio for Recall Rate</p></td>
 </tr>
 </tbody>
 </table>
@@ -3389,6 +3389,11 @@ cellspacing="0" cellpadding="4">
 2015-05-18: Updated agg_level description, replaced agg_level.csv file
 </p>
 </li>
+<li>
+<p>
+2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -3428,7 +3433,7 @@ added agg_level variable
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon May 18 13:32:36 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Fri May 22 14:50:27 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -3437,7 +3442,7 @@ added agg_level variable
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-05-18 13:32:36 EDT
+Last updated 2015-05-22 14:50:27 EDT
 </div>
 </div>
 </body>
