@@ -449,7 +449,7 @@ Variability measure Alternate name Variable name
                                    Employment: Counts
          mr_EmpS           mr_F    Missingness ratio for Full-Quarter
                                    Employment (Stable): Counts
-*** 1.4.3. National QWI and state-level QWI ***
+*** 1.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
 Variability measure Alternate name Variable name
      st_HirA_rate         st_AR    Standard error of Hiring Rate (Accessions)
@@ -825,6 +825,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Fri May 22 14:50:27 EDT 2015
+This revision: Fri May 22 15:29:46 EDT 2015
 ===============================================================================
-Last updated 2015-05-22 14:50:27 EDT
+Last updated 2015-05-22 15:29:46 EDT

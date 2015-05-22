@@ -231,7 +231,7 @@ include::tmp_variables_qwiv.csv[]
 |===================================================
 
 <<<
-==== National QWI and state-level QWI ====
+==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
 [width="95%",format="csv",cols="2*^2,<5",options="header"]
@@ -577,6 +577,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Fri May 22 14:50:27 EDT 2015
+This revision: Fri May 22 15:29:46 EDT 2015
 *******************
 

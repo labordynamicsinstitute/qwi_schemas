@@ -308,7 +308,7 @@ include::tmp_variables_qwiv.csv[]
 |===================================================
 
 <<<
-==== National QWI and state-level QWI ====
+==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
 [width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
