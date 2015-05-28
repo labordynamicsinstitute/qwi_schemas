@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-22 May 2015
+27 May 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -191,51 +191,44 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
         Payroll             W1       sPayroll   Total Quarterly Payroll: Sum
 *** 1.3.2. National QWI and state-level QWI rates (QWIPUR) ***
 ( variables_qwir.csv )
-Indicator Variable Alternate name     Status Flag   Indicator Name      Base
-      HirA_rate             AR         sHirA_rate   Hiring Rate         AvgEmp
-                                                    (Accessions)
-      HirN_rate             HR         sHirN_rate   New Hiring Rate     AvgEmp
-      HirR_rate             RR         sHirR_rate   Recall Rate         AvgEmp
-       Sep_rate             SR          sSep_rate   Separation Rate     AvgEmp
-    HirAEnd_rate           CAR       sHirAEnd_rate  End-of-Quarter      AvgEmp
-                                                    Hiring Rate
-     SepBeg_rate           CSR       sSepBeg_rate   Beginning-of-       AvgEmp
-                                                    Quarter Separation
-                                                    Rate
-      HirAs_rate           FAR        sHirAs_rate   Stable Hiring Rate  AvgEmpS
-                                                    (Flows into Full-
-                                                    Quarter Employment)
-      HirNs_rate           FHR        sHirNs_rate   Stable New Hiring   AvgEmpS
-                                                    Rate (New Hires to
-                                                    Full-Quarter
-                                                    Status)
-      SepS_rate            FSR         sSepS_rate   Stable Separation   AvgEmpS
-                                                    Rate (Flow out of
-                                                    Full-Quarter
-                                                    Employment)
-     SepSnx_rate         FSnxR       sSepSnx_rate   Stable Separation   AvgEmpS
-                                                    Rate: Next Quarter
-                                                    (Flow out of Full-
-                                                    Quarter Employment)
-   TurnOvrS_rate           FTR      sTurnOvrS_rate  Turnover Rate       2*EmpS
-                                                    (Stable)
-    FrmJbGn_rate           JCR       sFrmJbGn_rate  Firm Job Gain Rate  AvgEmp
-                                                    (Job Creation Rate)
-   FrmJobLs_rate           JDR      sFrmJobLs_rate  Firm Job Loss Rate  AvgEmp
-                                                    (Job Destruction
-                                                    Rate)
-     FrmJbC_rate           JFR       sFrmJbC_rate   Firm Job Change     AvgEmp
-                                                    Rate: Net Change
-                                                    Rate
- HirAEndRepl_rate          EIR    sHirAEndRepl_rate Replacement Hiring  AvgEmp
-                                                    Rate
-   FrmJbGnS_rate          FJCR      sFrmJbGnS_rate  Firm Job Gain Rate  AvgEmpS
-                                                    (Stable)
-   FrmJbLsS_rate          FJDR      sFrmJbLsS_rate  Firm Job Loss Rate  AvgEmpS
-                                                    (Stable)
-    FrmJbCS_rate          FJFR       sFrmJbCS_rate  Job Change Rate     AvgEmpS
-                                                    (Stable): Net
-                                                    Change Rate
+Indicator Variable Alternate name  Status Flag  Indicator Name          Base
+         HirAR              AR         sHirAR   Hiring Rate             AvgEmp
+                                                (Accessions)
+         HirNR              HR         sHirNR   New Hiring Rate         AvgEmp
+         HirRR              RR         sHirRR   Recall Rate             AvgEmp
+          SepR              SR          sSepR   Separation Rate         AvgEmp
+       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring   AvgEmp
+                                                Rate
+        SepBegR            CSR       sSepBegR   Beginning-of-Quarter    AvgEmp
+                                                Separation Rate
+         HirAsR            FAR        sHirAsR   Stable Hiring Rate      AvgEmpS
+                                                (Flows into Full-
+                                                Quarter Employment)
+         HirNsR            FHR        sHirNsR   Stable New Hiring Rate  AvgEmpS
+                                                (New Hires to Full-
+                                                Quarter Status)
+         SepSR             FSR         sSepSR   Stable Separation Rate  AvgEmpS
+                                                (Flow out of Full-
+                                                Quarter Employment)
+        SepSnxR          FSnxR       sSepSnxR   Stable Separation Rate: AvgEmpS
+                                                Next Quarter (Flow out
+                                                of Full-Quarter
+                                                Employment)
+      TurnOvrSR            FTR      sTurnOvrSR  Turnover Rate (Stable)  2*EmpS
+       FrmJbGnR            JCR       sFrmJbGnR  Firm Job Gain Rate (Job AvgEmp
+                                                Creation Rate)
+       FrmJbLsR            JDR       sFrmJbLsR  Firm Job Loss Rate (Job AvgEmp
+                                                Destruction Rate)
+        FrmJbCR            JFR       sFrmJbCR   Firm Job Change Rate:   AvgEmp
+                                                Net Change Rate
+    HirAEndReplR           EIR    sHirAEndReplR Replacement Hiring Rate AvgEmp
+      FrmJbGnSR           FJCR      sFrmJbGnSR  Firm Job Gain Rate      AvgEmpS
+                                                (Stable)
+      FrmJbLsSR           FJDR      sFrmJbLsSR  Firm Job Loss Rate      AvgEmpS
+                                                (Stable)
+       FrmJbCSR           FJFR       sFrmJbCSR  Job Change Rate         AvgEmpS
+                                                (Stable): Net Change
+                                                Rate
 where the column Base indicates the denominator used to compute the rate, with
 AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
 *** 1.3.3. Job-to-job flow counts (J2J) ***
@@ -452,31 +445,31 @@ Variability measure Alternate name Variable name
 *** 1.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
 Variability measure Alternate name Variable name
-     st_HirA_rate         st_AR    Standard error of Hiring Rate (Accessions)
-     st_HirN_rate         st_HR    Standard error of New Hiring Rate
-     st_HirR_rate         st_RR    Standard error of Recall Rate
+        st_HirAR          st_AR    Standard error of Hiring Rate (Accessions)
+        st_HirNR          st_HR    Standard error of New Hiring Rate
+        st_HirRR          st_RR    Standard error of Recall Rate
             …
-     vt_HirA_rate         vt_AR    Total variation of Hiring Rate (Accessions)
-     vt_HirN_rate         vt_HR    Total variation of New Hiring Rate
-     vt_HirR_rate         vt_RR    Total variation of Recall Rate
+        vt_HirAR          vt_AR    Total variation of Hiring Rate (Accessions)
+        vt_HirNR          vt_HR    Total variation of New Hiring Rate
+        vt_HirRR          vt_RR    Total variation of Recall Rate
             …
-     vb_HirA_rate         vb_AR    Between-implicate variability for Hiring
+        vb_HirAR          vb_AR    Between-implicate variability for Hiring
                                    Rate (Accessions)
-     vb_HirN_rate         vb_HR    Between-implicate variability for New Hiring
+        vb_HirNR          vb_HR    Between-implicate variability for New Hiring
                                    Rate
-     vb_HirR_rate         vb_RR    Between-implicate variability for Recall
+        vb_HirRR          vb_RR    Between-implicate variability for Recall
                                    Rate
             …
             …
-     df_HirA_rate         df_AR    Degrees of freedom for VT of Hiring Rate
+        df_HirAR          df_AR    Degrees of freedom for VT of Hiring Rate
                                    (Accessions)
-     df_HirN_rate         df_HR    Degrees of freedom for VT of New Hiring Rate
-     df_HirR_rate         df_RR    Degrees of freedom for VT of Recall Rate
+        df_HirNR          df_HR    Degrees of freedom for VT of New Hiring Rate
+        df_HirRR          df_RR    Degrees of freedom for VT of Recall Rate
             …
-     mr_HirA_rate         mr_AR    Missingness ratio for Hiring Rate
+        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate
                                    (Accessions)
-     mr_HirN_rate         mr_HR    Missingness ratio for New Hiring Rate
-     mr_HirR_rate         mr_RR    Missingness ratio for Recall Rate
+        mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate
+        mr_HirRR          mr_RR    Missingness ratio for Recall Rate
 *** 1.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 1.4.5. Job-to-job flow rates (J2JR) ***
@@ -825,6 +818,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Fri May 22 15:29:46 EDT 2015
+This revision: Wed May 27 20:04:36 EDT 2015
 ===============================================================================
-Last updated 2015-05-22 15:29:46 EDT
+Last updated 2015-05-27 20:04:36 EDT
