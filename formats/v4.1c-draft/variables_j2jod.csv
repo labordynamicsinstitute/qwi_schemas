@@ -1,0 +1,9 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name
+EE,ee,sEE,Direct Job Flows - Counts
+AQHire,aq_doma2,sAQHire,Main Job Accessions - Short Nonemployment Spell - Counts
+EEFullQ,fee,sEEFullQ,Stable Job to Stable Job Direct Flows - Counts
+AQFullQHire,faq_doma2,sAQFullQHire,Stable Job Accessions From Stable Jobs - Short Nonemployment Spell Between Jobs - Counts
+EEFullQEarn_dest,fee_kfqearn,sEEFullQEarn_dest,Stable Job to Stable Job Direct Flow - Average Full-Quarter Earnings in First Full Quarter of Job
+EEFullQEarn_change,fee_dearn,sEEFullQEarn_change,Stable Job to Stable Job Direct Flow - Average Percentage Real Earnings Change
+AQFullQEarn_dest,faq_kfqearn,sAQFullQEarn_dest,Stable Job to Stable Job Direct Flow - Short Nonemployment Spell Between Jobs - Average Full-Quarter Earnings in First Full Quarter of Job
+AQFullQEarn_change,faq_dearn,sAQFullQEarn_change,Stable Job to Stable Job Direct Flow - Short Nonemployment Spell Between Jobs - Average Percentage Real Earnings Change
