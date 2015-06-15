@@ -26,7 +26,7 @@ case $version in
 	author=lars.vilhuber@cornell.edu
 	;;
 	official|draft)
-	author=lars.vilhuber@census.gov
+	author=ces.qwi.feedback@census.gov
 	;;
 esac
 cwd=$(pwd)
@@ -64,8 +64,7 @@ link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@corne
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
-or link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
 ==============================================
 	" >> $asciifile
 	;;
@@ -74,8 +73,7 @@ or link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
 [IMPORTANT]
 .Important
 ==============================================
-Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_4.0.1[erika.mcentarfer@census.gov]
-or link:mailto:${author}?subject=LEHD_Schema[${author}].
+Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schema[${author}].
 ==============================================
 	" >> $asciifile
 	;;
