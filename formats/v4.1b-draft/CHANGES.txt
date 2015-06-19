@@ -14,7 +14,7 @@
 - 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
 - 2015-06-09: Fixed a minor coding error in label_fipsnum.csv
 
-=== Version 4.1c-draft from 4.0
+=== Version 4.1b-draft from 4.0
 - added J2J, National QWI spec
 - added geohi category of ALL, US
 - added definitions of variability measures
