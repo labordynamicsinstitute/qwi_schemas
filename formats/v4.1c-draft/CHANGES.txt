@@ -12,7 +12,8 @@
 - 2015-04-28: Fixed small typos in QWI variable short names
 - 2015-05-18: Updated agg_level description, replaced agg_level.csv file
 - 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
-- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv. 
+- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+- 2015-08-07: Minor text change for agg_level, modified agg_level file.
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec

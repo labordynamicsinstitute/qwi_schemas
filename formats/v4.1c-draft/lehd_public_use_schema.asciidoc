@@ -1,5 +1,5 @@
 = LEHD Public Use Data Schema v4.1c-draft
-Lars Vilhuber <ces.qwi.feedback@census.gov>
+Lars Vilhuber <lars.vilhuber@cornell.edu>
 07 August 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
@@ -10,7 +10,10 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -565,7 +568,8 @@ include::label_flags.csv[]
 - 2015-04-28: Fixed small typos in QWI variable short names
 - 2015-05-18: Updated agg_level description, replaced agg_level.csv file
 - 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
-- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv. 
+- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+- 2015-08-07: Minor text change for agg_level, modified agg_level file.
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec
@@ -578,6 +582,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Fri Aug  7 21:22:12 EDT 2015
+This revision: Fri Aug  7 21:27:52 EDT 2015
 *******************
 

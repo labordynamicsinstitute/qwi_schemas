@@ -1,14 +1,16 @@
 
 ****** LEHD Public Use Data Schema v4.1c-draft ******
 Lars Vilhuber
-<ces.qwi.feedback@census.gov>
+<lars.vilhuber@cornell.edu>
 07 August 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at ces.qwi.feedback@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
 are available for download with the following data schema. These data are
@@ -803,6 +805,7 @@ flag label
       change to actual metadata.
     * 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a
       concatenation of geography files as label_geography_all.csv.
+    * 2015-08-07: Minor text change for agg_level, modified agg_level file.
 **** 4.2. Version 4.1c-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -810,6 +813,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Fri Aug 7 21:22:12 EDT 2015
+This revision: Fri Aug 7 21:27:52 EDT 2015
 ===============================================================================
-Last updated 2015-08-07 21:22:12 EDT
+Last updated 2015-08-07 21:27:52 EDT
