@@ -221,7 +221,7 @@ echo "
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see Schema v4.0.1).
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]

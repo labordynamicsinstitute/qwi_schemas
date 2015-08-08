@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.0.2 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-01 April 2015
+07 August 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -224,7 +224,7 @@ ind_level label
 ( label_industry.csv )
 Only a small subset of available values shown. The 2012 NAICS (North American
 Industry Classification System) is used for all years. QWI releases prior to
-R2015Q2 used the 2007 NAICS classification (see Schema v4.0). For a full
+R2015Q3 used the 2007 NAICS classification (see Schema v4.0.1). For a full
 listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 industry label
     00   All NAICS Sectors
@@ -361,11 +361,13 @@ flag label
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
 4.  Changes
-**** 4.1. Version 4.0.1 from 4.0 ****
+**** 4.1. This version (revisions) ****
+    * 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+**** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
-**** 4.2. Version 4.0.2 from 4.0.1 ****
+**** 4.3. Version 4.0.2 from 4.0.1 ****
     * 2015-04-01: switched NAICS coding from 2007 to 2012
-This revision: Wed Apr 1 11:20:09 EDT 2015
+This revision: Fri Aug 7 21:26:10 EDT 2015
 ===============================================================================
-Last updated 2015-04-01 11:20:09 EDT
+Last updated 2015-08-07 21:26:10 EDT

@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.2
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-01 April 2015
+07 August 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -190,7 +190,7 @@ include::label_ind_level.csv[]
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q2 used the 2007 NAICS classification (see Schema v4.0).
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see Schema v4.0.1).
 For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
@@ -315,6 +315,9 @@ include::label_flags.csv[]
 
 == [[changes]] Changes
 
+=== This version (revisions)
+- 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
 - 2015-04-01: updated IL, NE geography definitions
@@ -325,6 +328,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Wed Apr  1 11:20:09 EDT 2015
+This revision: Fri Aug  7 21:26:10 EDT 2015
 *******************
 
