@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
 <title>LEHD Public Use Data Schema v4.1c-draft</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
@@ -19,8 +19,8 @@ asciidoc.install(3);
 <div id="header">
 <h1>LEHD Public Use Data Schema v4.1c-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">09 June 2015</span>
+<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="revdate">07 August 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,10 +37,7 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
-Feedback is welcome. Please write us at
-<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -2668,8 +2665,8 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_aggregation_level">2.14. Aggregation level</h3>
 <div class="paragraph"><p>( <a href="label_agg_level.csv">label_agg_level.csv</a> )</p></div>
-<div class="paragraph"><p>Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. These different tabulations are each assigned a unique aggregation level, represented by the <strong>agg_level</strong> variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
-<strong>agg_level</strong> is currently  reported only for  J2J data products.</p></div>
+<div class="paragraph"><p>Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.</p></div>
+<div class="paragraph"><p><strong>agg_level</strong> is currently  reported only for  J2J data products.</p></div>
 <div class="paragraph"><p>The following variables are included in the <a href="label_agg_level.csv">agg_level.csv</a>   file:</p></div>
 <div class="ulist"><ul>
 <li>
@@ -2684,17 +2681,32 @@ worker_char - demographic (worker) characteristics reported on record.
 </li>
 <li>
 <p>
-firm_char - firm/establishment characteristics reported on record. In origin-destination tabulations, these will be the characteristics of the destination firm.
+firm_char - firm characteristics reported on record. In origin-destination  tabulations, these will be the characteristics of the destination firm.
 </p>
 </li>
 <li>
 <p>
-firm_orig_char - firm/establishment characteristics of origin firm reported on record (origin-destination tabulations, only)
+firm_orig_char - characteristics of origin firm reported on record (O-D tabulations, only)
 </p>
 </li>
 <li>
 <p>
-j2j, j2jr, qwi - flags indicating which tabulations are included with each data product. The variable will be filled in with 1 if the data product is available on listed dimensions.
+j2j - Flag: Aggregation level available on J2J counts tables
+</p>
+</li>
+<li>
+<p>
+j2jr - Flag: Aggregation level available on J2J rates tables
+</p>
+</li>
+<li>
+<p>
+j2jod - Flag: Aggregation level available on J2J O-D  tables.
+</p>
+</li>
+<li>
+<p>
+qwi - Flag: Aggregation level available on QWI (placeholder for future integration)
 </p>
 </li>
 </ul></div>
@@ -2716,30 +2728,21 @@ by_ variables - flags indicating other dimensions reported, including ownership,
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>These flags will be expanded to include origin characteristics in a later release.</p></div>
+<div class="paragraph"><p>These flags will be expanded to include origin characteristics in a later release. A shortened representation of the file is provided below, the complete file is available in the link above.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="90%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="4%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
+<col width="8%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
 <thead>
 <tr>
 <th align="right" valign="top">agg_level</th>
@@ -2751,15 +2754,6 @@ cellspacing="0" cellpadding="4">
 <th align="left" valign="top">j2jod</th>
 <th align="left" valign="top">qwi</th>
 <th align="left" valign="top">geo_level</th>
-<th align="left" valign="top">ind_level</th>
-<th align="left" valign="top">by_ownercode</th>
-<th align="left" valign="top">by_sex</th>
-<th align="left" valign="top">by_agegrp</th>
-<th align="left" valign="top">by_race</th>
-<th align="left" valign="top">by_ethnicity</th>
-<th align="left" valign="top">by_education</th>
-<th align="left" valign="top">by_firmage</th>
-<th align="left" valign="top">by_firmsize</th>
 </tr>
 </thead>
 <tbody>
@@ -2770,18 +2764,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">2</p></td>
@@ -2790,18 +2775,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">3</p></td>
@@ -2810,18 +2786,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">4</p></td>
@@ -2830,18 +2797,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">5</p></td>
@@ -2850,18 +2808,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">9</p></td>
@@ -2870,18 +2819,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">13</p></td>
@@ -2890,78 +2830,20 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">17</p></td>
-<td align="left" valign="top"><p class="table">Education</p></td>
+<td align="right" valign="top"><p class="table">&#8230;</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">18</p></td>
-<td align="left" valign="top"><p class="table">Sex * Education</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">65</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">Firm Age</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">129</p></td>
@@ -2970,18 +2852,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">257</p></td>
@@ -2990,18 +2863,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">N</p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">1025</p></td>
@@ -3010,238 +2874,64 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">1026</p></td>
-<td align="left" valign="top"><p class="table">Sex</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
+<td align="right" valign="top"><p class="table">&#8230;</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">1027</p></td>
-<td align="left" valign="top"><p class="table">Age</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
+<td align="right" valign="top"><p class="table">12353</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">Destination [Firm Age]</p></td>
+<td align="left" valign="top"><p class="table">Origin [Firm Age]</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">1028</p></td>
-<td align="left" valign="top"><p class="table">Sex * Age</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
+<td align="right" valign="top"><p class="table">13313</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">Destination [State]</p></td>
+<td align="left" valign="top"><p class="table">Origin [Firm Age]</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">1029</p></td>
-<td align="left" valign="top"><p class="table">Race</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
+<td align="right" valign="top"><p class="table">13377</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">Destination [Firm Age * State]</p></td>
+<td align="left" valign="top"><p class="table">Origin [Firm Age]</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">1033</p></td>
-<td align="left" valign="top"><p class="table">Ethnicity</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
+<td align="right" valign="top"><p class="table">&#8230;</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1037</p></td>
-<td align="left" valign="top"><p class="table">Race * Ethnicity</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1041</p></td>
-<td align="left" valign="top"><p class="table">Education</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1042</p></td>
-<td align="left" valign="top"><p class="table">Sex * Education</p></td>
-<td align="left" valign="top"><p class="table">State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1089</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">Firm Age * State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1153</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">Firm Size * State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">A</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-</tr>
-<tr>
-<td align="right" valign="top"><p class="table">1281</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">NAICS Sector * State</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table">1</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">S</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
 </tr>
 </tbody>
 </table>
@@ -3396,7 +3086,7 @@ cellspacing="0" cellpadding="4">
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1b_draft_from_4_0">4.2. Version 4.1b-draft from 4.0</h3>
+<h3 id="_version_4_1c_draft_from_4_0">4.2. Version 4.1c-draft from 4.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -3432,7 +3122,7 @@ added agg_level variable
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Jun  9 15:38:29 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Fri Aug  7 21:22:12 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -3441,7 +3131,7 @@ added agg_level variable
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-06-09 15:38:29 EDT
+Last updated 2015-08-07 21:22:12 EDT
 </div>
 </div>
 </body>

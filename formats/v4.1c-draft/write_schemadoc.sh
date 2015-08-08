@@ -516,16 +516,22 @@ echo "|===================================================" >> $asciifile
 # finish file
 
 nsfile=label_agg_level.csv
-nsfileshort=label_agg_level-reduced.csv
+nsfileshort=tmp_label_agg_level.csv
 
-#head -11 $nsfile > $nsfileshort
+head -8 $nsfile > $nsfileshort
+echo "...,,,,,,,,,," >> $nsfileshort
+head -14 $nsfile | tail -3 >> $nsfileshort
+echo "...,,,,,,,,,," >> $nsfileshort
+head -29 $nsfile | tail -3 >> $nsfileshort
+echo "...,,,,,,,,,," >> $nsfileshort
 
 echo "
 <<<
 === Aggregation level
 ( link:$nsfile[] )
 
-Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. These different tabulations are each assigned a unique aggregation level, represented by the *agg_level* variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
+Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
+
 *agg_level* is currently  reported only for  J2J data products.
 
 
@@ -533,9 +539,12 @@ The following variables are included in the link:$nsfile[agg_level.csv]   file:
 
 - agg_level - index representing level of aggregation reported on a given record.
 - worker_char - demographic (worker) characteristics reported on record.
-- firm_char - firm/establishment characteristics reported on record. In origin-destination tabulations, these will be the characteristics of the destination firm.
-- firm_orig_char - firm/establishment characteristics of origin firm reported on record (origin-destination tabulations, only)
-- j2j, j2jr, qwi - flags indicating which tabulations are included with each data product. The variable will be filled in with 1 if the data product is available on listed dimensions.
+- firm_char - firm characteristics reported on record. In origin-destination  tabulations, these will be the characteristics of the destination firm.
+- firm_orig_char - characteristics of origin firm reported on record (O-D tabulations, only)
+- j2j - Flag: Aggregation level available on J2J counts tables
+- j2jr - Flag: Aggregation level available on J2J rates tables
+- j2jod - Flag: Aggregation level available on J2J O-D  tables.
+- qwi - Flag: Aggregation level available on QWI (placeholder for future integration)
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
 
@@ -543,12 +552,12 @@ The characteristics available on an aggregation level are repeated using a serie
 - <<ind_level,ind_level>> - industry level of table, as per 2.12.1.
 - by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
 
-These flags will be expanded to include origin characteristics in a later release.
+These flags will be expanded to include origin characteristics in a later release. A shortened representation of the file is provided below, the complete file is available in the link above.
 
 
-[width=\"90%\",format=\"csv\",cols=\">1,3*<2,14*<1\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\">1,3*<2,5*<1\",options=\"header\"]
 |===================================================
-include::$nsfile[]
+include::$nsfileshort[]
 |===================================================
 ">> $asciifile
 
