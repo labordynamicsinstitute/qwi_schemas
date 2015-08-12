@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.1c-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-07 August 2015
+12 August 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -570,6 +570,7 @@ include::label_flags.csv[]
 - 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
 - 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
 - 2015-08-07: Minor text change for agg_level, modified agg_level file.
+- 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec
@@ -582,6 +583,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Fri Aug  7 21:27:52 EDT 2015
+This revision: Wed Aug 12 11:19:24 EDT 2015
 *******************
 

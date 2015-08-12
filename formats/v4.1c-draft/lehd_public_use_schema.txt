@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema v4.1c-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 August 2015
+12 August 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -323,37 +323,16 @@ ENPersistR  en2_doms2_rate    sENPersistR  Main Job           (MainB+MainE)/2
 where the column Base indicates the denominator used to compute the rate.
 *** 1.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
-Indicator Variable Alternate name       Status Flag   Indicator Name
-            EE              ee                sEE     Direct Job Flows - Counts
-         AQHire        aq_doma2            sAQHire    Main Job Accessions -
-                                                      Short Nonemployment Spell
-                                                      - Counts
-        EEFullQ            fee            sEEFullQ    Stable Job to Stable Job
-                                                      Direct Flows - Counts
-     AQFullQHire      faq_doma2        sAQFullQHire   Stable Job Accessions
-                                                      From Stable Jobs - Short
-                                                      Nonemployment Spell
-                                                      Between Jobs - Counts
- EEFullQEarn_dest    fee_kfqearn   sEEFullQEarn_dest  Stable Job to Stable Job
-                                                      Direct Flow - Average
-                                                      Full-Quarter Earnings in
-                                                      First Full Quarter of Job
-EEFullQEarn_change    fee_dearn   sEEFullQEarn_change Stable Job to Stable Job
-                                                      Direct Flow - Average
-                                                      Percentage Real Earnings
-                                                      Change
- AQFullQEarn_dest    faq_kfqearn   sAQFullQEarn_dest  Stable Job to Stable Job
-                                                      Direct Flow - Short
-                                                      Nonemployment Spell
-                                                      Between Jobs - Average
-                                                      Full-Quarter Earnings in
-                                                      First Full Quarter of Job
-AQFullQEarn_change    faq_dearn   sAQFullQEarn_change Stable Job to Stable Job
-                                                      Direct Flow - Short
-                                                      Nonemployment Spell
-                                                      Between Jobs - Average
-                                                      Percentage Real Earnings
-                                                      Change
+Indicator Variable Alternate name Status Flag  Indicator Name
+            EE              ee          sEE    Direct Job Flows - Counts
+         AQHire        aq_doma2      sAQHire   Main Job Accessions - Short
+                                               Nonemployment Spell - Counts
+        EEFullQ            fee       sEEFullQ  Stable Job to Stable Job Direct
+                                               Flows - Counts
+     AQFullQHire      faq_doma2   sAQFullQHire Stable Job Accessions From
+                                               Stable Jobs - Short
+                                               Nonemployment Spell Between Jobs
+                                               - Counts
 1.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -806,6 +785,8 @@ flag label
     * 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a
       concatenation of geography files as label_geography_all.csv.
     * 2015-08-07: Minor text change for agg_level, modified agg_level file.
+    * 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they
+      are not on the current beta J2JOD files.
 **** 4.2. Version 4.1c-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -813,6 +794,6 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Fri Aug 7 21:27:52 EDT 2015
+This revision: Wed Aug 12 11:19:24 EDT 2015
 ===============================================================================
-Last updated 2015-08-07 21:27:52 EDT
+Last updated 2015-08-12 11:19:24 EDT
