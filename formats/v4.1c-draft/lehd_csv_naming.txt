@@ -1,9 +1,9 @@
 
-****** LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention
+****** LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention
 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-29 April 2015
+25 August 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -29,18 +29,18 @@ For the specified files, this is the first schema.
 ***** 4. Basic Schema *****
 All files are preceded by a file type definition, followed by additional
 information on the aggregation level of the file, or some other identifier.
-[TYPE]_[DETAILS].csv
+[TYPE]_[DETAILS].[EXT]
 **** 4.1. QWIPU from the LED Extraction Tool ****
-CSV files downloaded through the LED Extraction Tool at http://
+Files downloaded through the LED Extraction Tool at http://
 ledextract.ces.census.gov/ follow the following naming convention:
-[type]_[id].csv
+[type]_[id].[EXT]
 where [id] is the Request ID (a unique string of characters) generated every
 time Submit Request'' is clicked. The ID references each query submission made
 to the database.
 **** 4.2. Other files ****
-Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/
-data follow the following naming convention:
-[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
+Files downloaded from the LEHD website at http://lehd.ces.census.gov/data
+follow the following naming convention:
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]
 where each component is described in more detail below. Schema files detailing
 legal values for each component can be downloaded from this website.
 ***** 5. Description of Filename Components *****
@@ -150,6 +150,8 @@ oslp State, local, and private ownership categories (QWI Code A00)
 type Description
   s  Seasonally adjusted
   u  Not seasonally adjusted
+**** 5.9. ext ****
+( naming_ext.csv )
 6.  Changes
 **** 6.1. This version from previous releases of this document ****
     * 2015-02-25: corrected flag values
@@ -167,14 +169,23 @@ type Description
     * 2015-04-26: Changes to name of variable schema files (qwipu → qwi),
       addition of variability variable schema files.
     * 2015-04-28: Fixed small typos in QWI variable short names
-**** 6.2. Version 4.1b-draft from 4.0 ****
+    * 2015-05-18: Updated agg_level description, replaced agg_level.csv file
+    * 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No
+      change to actual metadata.
+    * 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a
+      concatenation of geography files as label_geography_all.csv.
+    * 2015-08-07: Minor text change for agg_level, modified agg_level file.
+    * 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they
+      are not on the current beta J2JOD files.
+**** 6.2. Version 4.1c-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
     * added naming convention for additional files
+    * added agg_level variable
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Wed Apr 29 10:03:19 EDT 2015
+This revision: Tue Aug 25 23:23:49 EDT 2015
 ===============================================================================
-Last updated 2015-04-29 10:03:19 EDT
+Last updated 2015-08-25 23:23:49 EDT

@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.9" />
-<title>LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention</title>
+<meta name="generator" content="AsciiDoc 8.6.8" />
+<title>LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema v4.1b-draft - CSV Naming Convention</h1>
+<h1>LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">29 April 2015</span>
+<span id="revdate">25 August 2015</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -75,23 +75,23 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 some other identifier.</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[TYPE]_[DETAILS].csv</code></pre>
+<pre><code>[TYPE]_[DETAILS].[EXT]</code></pre>
 </div></div>
 <div class="sect2">
 <h3 id="_qwipu_from_the_led_extraction_tool">4.1. QWIPU from the LED Extraction Tool</h3>
-<div class="paragraph"><p>CSV files downloaded through the  LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a> follow the following naming convention:</p></div>
+<div class="paragraph"><p>Files downloaded through the  LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a> follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[type]_[id].csv</code></pre>
+<pre><code>[type]_[id].[EXT]</code></pre>
 </div></div>
 <div class="paragraph"><p>where <code>[id]</code> is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.</p></div>
 </div>
 <div class="sect2">
 <h3 id="_other_files">4.2. Other files</h3>
-<div class="paragraph"><p>Full CSV files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
+<div class="paragraph"><p>Files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</code></pre>
+<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]</code></pre>
 </div></div>
 <div class="paragraph"><p>where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.</p></div>
 </div>
@@ -423,6 +423,11 @@ cellspacing="0" cellpadding="4">
 </div>
 <div style="page-break-after:always"></div>
 </div>
+<div class="sect2">
+<h3 id="_ext">5.9. ext</h3>
+<div class="paragraph"><p>( <a href="naming_ext.csv">naming_ext.csv</a> )</p></div>
+<div style="page-break-after:always"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -476,10 +481,35 @@ cellspacing="0" cellpadding="4">
 2015-04-28: Fixed small typos in QWI variable short names
 </p>
 </li>
+<li>
+<p>
+2015-05-18: Updated agg_level description, replaced agg_level.csv file
+</p>
+</li>
+<li>
+<p>
+2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
+</p>
+</li>
+<li>
+<p>
+2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+</p>
+</li>
+<li>
+<p>
+2015-08-07: Minor text change for agg_level, modified agg_level file.
+</p>
+</li>
+<li>
+<p>
+2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1b_draft_from_4_0">6.2. Version 4.1b-draft from 4.0</h3>
+<h3 id="_version_4_1c_draft_from_4_0">6.2. Version 4.1c-draft from 4.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -506,6 +536,11 @@ added definitions of rates on separate file
 added naming convention for additional files
 </p>
 </li>
+<li>
+<p>
+added agg_level variable
+</p>
+</li>
 </ul></div>
 <div class="admonitionblock">
 <table><tr>
@@ -521,7 +556,7 @@ added naming convention for additional files
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Wed Apr 29 10:03:19 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Tue Aug 25 23:23:49 EDT 2015</p></div>
 </div></div>
 </div>
 </div>
@@ -530,7 +565,7 @@ added naming convention for additional files
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-04-29 10:03:19 EDT
+Last updated 2015-08-25 23:23:49 EDT
 </div>
 </div>
 </body>
