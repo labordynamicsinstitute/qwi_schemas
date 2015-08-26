@@ -1,0 +1,4 @@
+type,Description
+csv,"Comma-Separated file"
+pdf,"PDF file (printable)"
+xls,"Excel file (only select output)"

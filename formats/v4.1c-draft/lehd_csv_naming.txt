@@ -152,6 +152,10 @@ type Description
   u  Not seasonally adjusted
 **** 5.9. ext ****
 ( naming_ext.csv )
+type Description
+csv  Comma-Separated file
+pdf  PDF file (printable)
+xls  Excel file (only select output)
 6.  Changes
 **** 6.1. This version from previous releases of this document ****
     * 2015-02-25: corrected flag values
@@ -177,6 +181,8 @@ type Description
     * 2015-08-07: Minor text change for agg_level, modified agg_level file.
     * 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they
       are not on the current beta J2JOD files.
+    * 2015-08-25: Added a extension component [ext] to the file naming
+      convention to reflect availability of Excel files (and PDF files)
 **** 6.2. Version 4.1c-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -186,6 +192,6 @@ type Description
     * added agg_level variable
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Tue Aug 25 23:23:49 EDT 2015
+This revision: Tue Aug 25 23:26:26 EDT 2015
 ===============================================================================
-Last updated 2015-08-25 23:23:49 EDT
+Last updated 2015-08-25 23:26:26 EDT
