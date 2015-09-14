@@ -1,6 +1,6 @@
-= LEHD Public Use CSV Naming Schema v4.0.2 - CSV Naming Convention
+= LEHD Public Use CSV Naming Schema v4.0.3 - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-01 April 2015
+14 September 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -158,6 +158,9 @@ include::naming_sa.csv[]
 
 == [[changes]] Changes
 
+=== This version (revisions)
+- 2015-09-14: Initial release
+
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
 - 2015-04-01: updated IL, NE geography definitions
@@ -165,9 +168,12 @@ include::naming_sa.csv[]
 === Version 4.0.2 from 4.0.1
 - 2015-04-01: switched NAICS coding from 2007 to 2012
 
+=== Version 4.0.3 from 4.0.2
+- 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
+
 
 <<<
 *******************
-This revision: Wed Apr  1 11:20:02 EDT 2015
+This revision: Mon Sep 14 11:18:52 EDT 2015
 *******************
 
