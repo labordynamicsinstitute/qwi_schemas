@@ -1,8 +1,8 @@
 
-****** LEHD Public Use Data Schema v4.0.2 ******
+****** LEHD Public Use Data Schema v4.0.3 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 August 2015
+14 September 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -267,6 +267,7 @@ geography label
      08   Colorado
      09   Connecticut
      …
+     46   South Dakota
      47   Tennessee
      48   Texas
      49   Utah
@@ -274,7 +275,6 @@ geography label
      50   Vermont
      53   Washington
      55   Wisconsin
-     54   West Virginia
 *** 2.12.3. Detailed state and substate level values ***
 For a full listing of all valid geography codes (except for WIA codes), see
 http://www.census.gov/geo/maps-data/data/tiger.html. Note about geography
@@ -311,6 +311,7 @@ State         Format file
   KS  ks/label_geography.csv
   KY  ky/label_geography.csv
   LA  la/label_geography.csv
+  MA  ma/label_geography.csv
   MD  md/label_geography.csv
   ME  me/label_geography.csv
   MI  mi/label_geography.csv
@@ -362,12 +363,15 @@ flag label
  12  Aggregate of cells - some of which have significantly distorted data
 4.  Changes
 **** 4.1. This version (revisions) ****
-    * 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+    * 2015-09-14: Initial release
 **** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
 **** 4.3. Version 4.0.2 from 4.0.1 ****
     * 2015-04-01: switched NAICS coding from 2007 to 2012
-This revision: Fri Aug 7 21:26:10 EDT 2015
+**** 4.4. Version 4.0.3 from 4.0.2 ****
+    * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
+      MA.
+This revision: Mon Sep 14 11:17:38 EDT 2015
 ===============================================================================
-Last updated 2015-08-07 21:26:10 EDT
+Last updated 2015-09-14 11:17:38 EDT

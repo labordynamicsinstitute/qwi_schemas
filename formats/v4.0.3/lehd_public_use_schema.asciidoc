@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema v4.0.2
+= LEHD Public Use Data Schema v4.0.3
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-07 August 2015
+14 September 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -264,6 +264,7 @@ IN,link:in/label_geography.csv[]
 KS,link:ks/label_geography.csv[]
 KY,link:ky/label_geography.csv[]
 LA,link:la/label_geography.csv[]
+MA,link:ma/label_geography.csv[]
 MD,link:md/label_geography.csv[]
 ME,link:me/label_geography.csv[]
 MI,link:mi/label_geography.csv[]
@@ -316,7 +317,7 @@ include::label_flags.csv[]
 == [[changes]] Changes
 
 === This version (revisions)
-- 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+- 2015-09-14: Initial release
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -325,9 +326,12 @@ include::label_flags.csv[]
 === Version 4.0.2 from 4.0.1
 - 2015-04-01: switched NAICS coding from 2007 to 2012
 
+=== Version 4.0.3 from 4.0.2
+- 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
+
 
 <<<
 *******************
-This revision: Fri Aug  7 21:26:10 EDT 2015
+This revision: Mon Sep 14 11:17:38 EDT 2015
 *******************
 
