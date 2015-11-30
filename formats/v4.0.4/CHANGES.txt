@@ -12,3 +12,6 @@
 
 === Version 4.0.3 from 4.0.2
 - 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
+
+=== Version 4.0.4 from 4.0.3
+- 2015-11-30: updated OR.

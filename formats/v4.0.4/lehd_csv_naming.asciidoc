@@ -171,9 +171,12 @@ include::naming_sa.csv[]
 === Version 4.0.3 from 4.0.2
 - 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
 
+=== Version 4.0.4 from 4.0.3
+- 2015-11-30: updated OR.
+
 
 <<<
 *******************
-This revision: Mon Nov 30 11:03:01 EST 2015
+This revision: Mon Nov 30 11:13:03 EST 2015
 *******************
 
