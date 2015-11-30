@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema v4.0.3
+= LEHD Public Use Data Schema v4.0.4
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-14 September 2015
+30 November 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -332,6 +332,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Sep 14 11:17:38 EDT 2015
+This revision: Mon Nov 30 11:03:11 EST 2015
 *******************
 
