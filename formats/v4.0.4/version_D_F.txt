@@ -1,0 +1,2 @@
+(TAB TYPE) (STATE) (FIPS) (SYEAR:Q)-(EYEAR:Q) (FORMAT VERSION) (RyyyyQq release) (internal version ID)
+QWISA_F     AK      02       2000:1-2013:1     V4.0             R2013Q4           qwipu_ak_20131213_1026
