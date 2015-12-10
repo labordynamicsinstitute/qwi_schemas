@@ -246,9 +246,9 @@ done
 	head -50 $nsfile | tail -8  >> tmp.csv
 
 	# construct the composite file from separate files
-        head -1 label_geography_ak.csv > label_geography_all.csv
+  head -1 ak/label_geography.csv > label_geography_all.csv
 	echo '00,"National (50 States + DC)"' >> label_geography_all.csv
-	for arg in $(ls label_geography_??.csv)
+	for arg in $(ls ??/label_geography.csv)
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done

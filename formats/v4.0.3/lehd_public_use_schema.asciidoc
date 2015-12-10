@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema v4.0.3
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-14 September 2015
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+10 December 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -10,10 +10,8 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
+.
 ==============================================
 	
 
@@ -21,7 +19,7 @@ link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@corne
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
  are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and at an (occassional) mirror site at http://download.vrdc.cornell.edu/qwipu/.
+http://lehd.ces.census.gov/data/ .
 
 This document describes the data schema for QWI files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -239,8 +237,10 @@ has its own code structure.
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
-The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
+The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2014Q3 release.
 
+For convenience, a composite file containing all geocodes is available as
+link:label_geography_all.csv[].
 
 [format="csv",width="50%",cols="^1,^3",options="header"]
 |===================================================
@@ -318,6 +318,7 @@ include::label_flags.csv[]
 
 === This version (revisions)
 - 2015-09-14: Initial release
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -332,6 +333,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Sep 14 11:17:38 EDT 2015
+This revision: Thu Dec 10 11:50:55 EST 2015
 *******************
 

@@ -1,21 +1,19 @@
 
 ****** LEHD Public Use Data Schema v4.0.2 ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-07 August 2015
+<ces.qwi.feedback@census.gov>
+10 December 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov. .
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
 following data schema. These data are available as Comma-Separated Value (CSV)
 files through the LEHD website’s Data page at http://lehd.ces.census.gov/data/
-and at an (occassional) mirror site at http://download.vrdc.cornell.edu/qwipu/.
+.
 This document describes the data schema for QWI files. For each variable, a set
 of allowable values is defined. Definitions are provided as CSV files, with
 header variable definitions. The naming conventions of the data files is
@@ -290,7 +288,9 @@ geography has its own code structure.
     * The WIA code is constructed from the 2-digit state FIPS code and the 6-
       digit WIA identifier provided by LED State Partners.
 The 2014 vintage of Census TIGER geography is used for all tabulations as of
-the 2014Q3 release.
+the R2014Q3 release.
+For convenience, a composite file containing all geocodes is available as
+label_geography_all.csv.
 State         Format file
   AK  ak/label_geography.csv
   AL  al/label_geography.csv
@@ -363,11 +363,13 @@ flag label
 4.  Changes
 **** 4.1. This version (revisions) ****
     * 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+    * 2015-12-10: Added consolidated geography label file
+      label_geography_all.csv
 **** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
 **** 4.3. Version 4.0.2 from 4.0.1 ****
     * 2015-04-01: switched NAICS coding from 2007 to 2012
-This revision: Fri Aug 7 21:26:10 EDT 2015
+This revision: Thu Dec 10 11:49:46 EST 2015
 ===============================================================================
-Last updated 2015-08-07 21:26:10 EDT
+Last updated 2015-12-10 11:49:46 EST
