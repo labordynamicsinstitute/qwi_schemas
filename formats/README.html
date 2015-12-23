@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview, .markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; overflow: scroll; box-sizing: border-box; padding: 20px; background-color: rgb(255, 255, 255); }
+.markdown-preview > :first-child, .markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview > :last-child, .markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview a:not([href]), .markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview .absent, .markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview .anchor, .markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview .anchor:focus, .markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview h1 .octicon-link, .markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview h2 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview h3 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview h4 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview h5 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview h6 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview h1:hover .anchor, .markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview h2:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview h3:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview h4:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview h5:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview h6:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview h6:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview h1 tt, .markdown-preview[data-use-github-style] h1 tt, .markdown-preview h2 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview h3 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview h4 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview h5 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview h6 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview h1 code, .markdown-preview[data-use-github-style] h1 code, .markdown-preview h2 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview h3 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview h4 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview h5 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview h6 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview h1 .anchor, .markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview h2, .markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview h2 .anchor, .markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview h3, .markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview h3 .anchor, .markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview h4, .markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview h4 .anchor, .markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview h5, .markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview h5 .anchor, .markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview h6, .markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview h6 .anchor, .markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview p, .markdown-preview[data-use-github-style] p, .markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote, .markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol, .markdown-preview dl, .markdown-preview[data-use-github-style] dl, .markdown-preview table, .markdown-preview[data-use-github-style] table, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview hr, .markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview ul.no-list, .markdown-preview[data-use-github-style] ul.no-list, .markdown-preview ol.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview ul ul, .markdown-preview[data-use-github-style] ul ul, .markdown-preview ul ol, .markdown-preview[data-use-github-style] ul ol, .markdown-preview ol ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview ol ul, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview li > p, .markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview dl, .markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview dl dt, .markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview dl dd, .markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview blockquote > :first-child, .markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview blockquote > :last-child, .markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview table, .markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: normal; }
+.markdown-preview table th, .markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview table th, .markdown-preview[data-use-github-style] table th, .markdown-preview table td, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview table tr, .markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview table tr:nth-child(2n), .markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview img, .markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview span.frame, .markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview span.frame > span, .markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview span.frame span img, .markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview span.frame span span, .markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview span.align-center, .markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-center > span, .markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview span.align-center span img, .markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview span.align-right, .markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-right > span, .markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview span.align-right span img, .markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview span.float-left, .markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview span.float-left span, .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview span.float-right, .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview span.float-right > span, .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview code::before, .markdown-preview[data-use-github-style] code::before, .markdown-preview tt::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview code::after, .markdown-preview[data-use-github-style] code::after, .markdown-preview tt::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: ' '; }
+.markdown-preview code br, .markdown-preview[data-use-github-style] code br, .markdown-preview tt br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview del code, .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview pre > code, .markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview .highlight, .markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview pre, .markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview pre code, .markdown-preview[data-use-github-style] pre code, .markdown-preview pre tt, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview pre code::before, .markdown-preview[data-use-github-style] pre code::before, .markdown-preview pre tt::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview pre code::after, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview pre tt::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview kbd, .markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview, .markdown-preview[data-use-github-style], .markdown-preview code, .markdown-preview[data-use-github-style] code { color: rgb(51, 51, 51); }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { -webkit-font-smoothing: antialiased; cursor: text; }
+.markdown-preview > h1:first-child, .markdown-preview[data-use-github-style] > h1:first-child, .markdown-preview > h1:first-child + h2, .markdown-preview[data-use-github-style] > h1:first-child + h2, .markdown-preview > h2:first-child, .markdown-preview[data-use-github-style] > h2:first-child, .markdown-preview > h3:first-child, .markdown-preview[data-use-github-style] > h3:first-child, .markdown-preview > h4:first-child, .markdown-preview[data-use-github-style] > h4:first-child, .markdown-preview > h5:first-child, .markdown-preview[data-use-github-style] > h5:first-child, .markdown-preview > h6:first-child, .markdown-preview[data-use-github-style] > h6:first-child { margin-top: 0px; padding-top: 0px; }
+.markdown-preview a, .markdown-preview[data-use-github-style] a, .markdown-preview a code, .markdown-preview[data-use-github-style] a code { color: rgb(65, 131, 196); }
+.markdown-preview a:first-child h1, .markdown-preview[data-use-github-style] a:first-child h1, .markdown-preview a:first-child h2, .markdown-preview[data-use-github-style] a:first-child h2, .markdown-preview a:first-child h3, .markdown-preview[data-use-github-style] a:first-child h3, .markdown-preview a:first-child h4, .markdown-preview[data-use-github-style] a:first-child h4, .markdown-preview a:first-child h5, .markdown-preview[data-use-github-style] a:first-child h5, .markdown-preview a:first-child h6, .markdown-preview[data-use-github-style] a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+.markdown-preview h1 + p, .markdown-preview[data-use-github-style] h1 + p, .markdown-preview h2 + p, .markdown-preview[data-use-github-style] h2 + p, .markdown-preview h3 + p, .markdown-preview[data-use-github-style] h3 + p, .markdown-preview h4 + p, .markdown-preview[data-use-github-style] h4 + p, .markdown-preview h5 + p, .markdown-preview[data-use-github-style] h5 + p, .markdown-preview h6 + p, .markdown-preview[data-use-github-style] h6 + p { margin-top: 0px; }
+.markdown-preview li p.first, .markdown-preview[data-use-github-style] li p.first { display: inline-block; }
+.markdown-preview ul li > :first-child, .markdown-preview[data-use-github-style] ul li > :first-child, .markdown-preview ol li > :first-child, .markdown-preview[data-use-github-style] ol li > :first-child, .markdown-preview ul li ul:first-of-type, .markdown-preview[data-use-github-style] ul li ul:first-of-type, .markdown-preview ol li ul:first-of-type, .markdown-preview[data-use-github-style] ol li ul:first-of-type { margin-top: 0px; }
+.markdown-preview ol > li, .markdown-preview[data-use-github-style] ol > li { list-style-type: decimal; }
+.markdown-preview ul > li, .markdown-preview[data-use-github-style] ul > li { list-style-type: disc; }
+.markdown-preview dl dt:first-child, .markdown-preview[data-use-github-style] dl dt:first-child { padding: 0px; }
+.markdown-preview dl dt > :first-child, .markdown-preview[data-use-github-style] dl dt > :first-child { margin-top: 0px; }
+.markdown-preview dl dt > :last-child, .markdown-preview[data-use-github-style] dl dt > :last-child { margin-bottom: 0px; }
+.markdown-preview dl dd > :first-child, .markdown-preview[data-use-github-style] dl dd > :first-child { margin-top: 0px; }
+.markdown-preview dl dd > :last-child, .markdown-preview[data-use-github-style] dl dd > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote p, .markdown-preview[data-use-github-style] blockquote p { font-size: 16px; line-height: 1.5; }
+.markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { padding: 16px; overflow: auto; font-size: 84%; line-height: 1.45; border-radius: 3px; background-color: rgb(248, 246, 241); }
+.markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { margin-bottom: 16px; word-break: normal; }
+.markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt, .markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { font-family: Consolas, 'Liberation Mono', Courier, monospace; }
+.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { height: 20px; width: 20px; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 1px dashed rgba(250, 128, 114, 0.5);
+}
+
+/*
+@cyan:         #35a766;
+@blue:         #5977d3;
+@purple:       #8100c6;
+@green:        #8fad06;
+@red:          #d24d4d;
+@orange:       #cd8e21;
+@light-orange: #e3a92d;
+*/
+pre.editor-colors,
+pre.editor-colors::shadow,
+.host {
+  background-color: #f8f6f1;
+  color: #2b3f6a;
+}
+pre.editor-colors .line.cursor-line,
+pre.editor-colors::shadow .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(228, 220, 200, 0.2);
+}
+pre.editor-colors .wrap-guide,
+pre.editor-colors::shadow .wrap-guide,
+.host .wrap-guide {
+  background-color: #e0dad3;
+}
+pre.editor-colors .indent-guide,
+pre.editor-colors::shadow .indent-guide,
+.host .indent-guide {
+  color: rgba(169, 193, 214, 0.7);
+}
+pre.editor-colors .invisible-character,
+pre.editor-colors::shadow .invisible-character,
+.host .invisible-character {
+  color: rgba(169, 193, 214, 0.7);
+}
+pre.editor-colors .gutter-container,
+pre.editor-colors::shadow .gutter-container,
+.host .gutter-container {
+  margin-right: 0.8em;
+}
+pre.editor-colors .gutter,
+pre.editor-colors::shadow .gutter,
+.host .gutter {
+  background-color: #e0dad3;
+  color: #2a120a;
+}
+pre.editor-colors .gutter .line-number,
+pre.editor-colors::shadow .gutter .line-number,
+.host .gutter .line-number {
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+pre.editor-colors::shadow .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: #c7bcaf;
+  color: #2a120a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+pre.editor-colors::shadow .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  color: #2a120a;
+}
+pre.editor-colors .line-number.folded,
+pre.editor-colors::shadow .line-number.folded,
+.host .line-number.folded,
+pre.editor-colors .line-number:after,
+pre.editor-colors::shadow .line-number:after,
+.host .line-number:after,
+pre.editor-colors .fold-marker:after,
+pre.editor-colors::shadow .fold-marker:after,
+.host .fold-marker:after {
+  color: #255f93;
+}
+pre.editor-colors .selection .region,
+pre.editor-colors::shadow .selection .region,
+.host .selection .region {
+  background-color: #e4dcc8;
+}
+.bracket-matcher .region {
+  background-color: rgba(237, 169, 251, 0.61);
+}
+.comment {
+  color: #9ca3b0;
+  font-style: italic;
+}
+.entity.name.type {
+  color: #379566;
+}
+.entity.other.inherited-class {
+  color: #8f932b;
+}
+.keyword {
+  color: #8f932b;
+}
+.keyword.control {
+  color: #2b3f6a;
+  font-weight: bold;
+}
+.keyword.operator {
+  font-weight: bold;
+  color: #1c4b33;
+}
+.keyword.other.special-method {
+  color: #5e78e1;
+}
+.keyword.other.attribute-name {
+  color: #2b3f6a;
+  font-weight: bold;
+}
+.keyword.other.unit {
+  color: #8f932b;
+}
+.storage {
+  color: #5e78e1;
+}
+.storage.todo,
+.storage.idea,
+.storage.fixme,
+.storage.hack {
+  color: #8100c6;
+  background-color: rgba(227, 169, 45, 0.1);
+  text-decoration: none;
+  border-bottom: rgba(169, 193, 214, 0.7);
+  border-width: 0px 0px 1px 0px;
+  border-style: none none dotted none;
+}
+.constant {
+  color: #c16161;
+}
+.constant.character.escape {
+  color: #8f932b;
+}
+.constant.numeric {
+  color: #c16161;
+}
+.constant.other.color {
+  color: #8f932b;
+}
+.constant.other.symbol {
+  color: #8f932b;
+}
+.variable {
+  color: #5e78e1;
+}
+.variable.interpolation {
+  color: #3354d9;
+}
+.invalid.illegal {
+  background-color: #c16161;
+  color: #f8f6f1;
+}
+.string.interpolated {
+  background-color: rgba(255, 204, 0, 0.03);
+}
+.string.quoted {
+  background-color: rgba(255, 204, 0, 0.03);
+  color: rgba(106, 68, 28, 0.77);
+}
+.string.regexp {
+  color: #379566;
+}
+.string.regexp .source.ruby.embedded {
+  color: #d08e25;
+}
+.string.other.link {
+  color: #c16161;
+}
+.punctuation.definition.comment {
+  color: #808999;
+}
+.punctuation.definition.tag {
+  color: #ac4343;
+}
+.punctuation.definition.parameters.end,
+.punctuation.definition.arguments.end,
+.punctuation.definition.parameters.begin,
+.punctuation.definition.arguments.begin {
+  color: #6e7daa;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #5e78e1;
+}
+.punctuation.definition.bold {
+  color: bold-color;
+  font-weight: bold;
+}
+.punctuation.section.embedded {
+  color: #ac4343;
+}
+.support.class {
+  color: #379566;
+}
+.support.function {
+  color: #d08e25;
+}
+.entity.name.function {
+  color: #d08e25;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #2b3f6a;
+}
+.entity.name.section {
+  color: #c16161;
+}
+.entity.name.tag {
+  color: #5e78e1;
+}
+.entity.name.label {
+  color: #5e78e1;
+}
+.entity.other.attribute-name {
+  color: #d08e25;
+}
+.entity.other.attribute-name.id {
+  color: #5e78e1;
+}
+.meta.class {
+  color: #2b3f6a;
+}
+.meta.method {
+  color: #255f93;
+}
+.meta.link {
+  color: #d08e25;
+}
+.meta.require {
+  color: #5e78e1;
+}
+.meta.selector {
+  color: #d08e25;
+}
+.meta.separator {
+  color: #2b3f6a;
+}
+.none {
+  color: red;
+}
+/*---------------------------------------
+ below: optional extra stuff for addon packages
+-----------------------------------------*/
+.highlights .highlight-selected .region {
+  border-radius: 4px;
+  box-sizing: content-box;
+  padding: 0 1px 0 0;
+  margin: -1px 0 0 -1px;
+  background-color: transparent;
+  border-width: 1.5px;
+  border-style: dashed;
+}
+.highlights .highlight-selected.light-theme .region {
+  border-color: rgba(238, 11, 143, 0.8);
+}
+.highlights .highlight-selected.light-theme.background .region {
+  background-color: rgba(236, 13, 132, 0.35);
+}
+pre.editor-colors[data-grammar="source gfm"]::shadow .gutter-container {
+  margin-right: 2em;
+}
+.markup.changed {
+  color: #8100c6;
+}
+.markup.deleted {
+  color: #c16161;
+}
+.markup.italic {
+  color: #0e72aa;
+  font-style: italic;
+}
+.markup.bold {
+  color: #0a537b;
+  font-weight: bold;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #5e78e1;
+}
+.markup.inserted {
+  color: #8f932b;
+}
+.markup.list {
+  color: #e24129;
+  font-weight: bold;
+}
+.markup.raw {
+  background-color: rgba(245, 250, 252, 0.65);
+  color: #2a120a;
+}
+.markup.raw.inline {
+  color: #8f932b;
+}
+.markup.strike {
+  text-decoration: line-through;
+}
+.markup.underline {
+  text-decoration: none;
+  border-bottom: rgba(169, 193, 214, 0.7);
+  border-width: 0px 0px 1px 0px;
+  border-style: none none solid none;
+}
+.markup.heading {
+  color: #2a120a;
+  font-weight: normal;
+}
+.markup.heading.heading-1 {
+  font-weight: 900;
+  opacity: 1.0;
+}
+.markup.heading.heading-2 {
+  font-weight: 800;
+  opacity: 0.9;
+}
+.markup.heading.heading-3 {
+  font-weight: 700;
+  opacity: 0.85;
+}
+.markup.heading.heading-4,
+.markup.heading.heading-5,
+.markup.heading.heading-6 {
+  opacity: 0.80;
+}
+.markup.heading.marker {
+  color: rgba(42, 18, 10, 0.55);
+}
+.gfm .support {
+  color: #6e7daa;
+}
+.gfm .markup.heading {
+  font-weight: normal;
+}
+.gfm.variable {
+  color: #5e78e1;
+}
+.gfm.entity {
+  color: #255f93;
+}
+.gfm.punctuation.definition.begin,
+.gfm.punctuation.definition.end {
+  color: #6e7daa;
+}
+.gfm.username {
+  color: #aa5c08;
+}
+.gfm.mention {
+  color: rgba(169, 86, 31, 0.43);
+}
+.gfm.list {
+  color: #e24129;
+  font-weight: bold;
+}
+.gfm.critic.addition {
+  color: #8f932b;
+}
+.gfm.critic.addition.marker {
+  color: rgba(143, 147, 43, 0.5) !important;
+}
+.gfm.critic.deletion {
+  color: #c16161;
+}
+.gfm.critic .deletion.marker {
+  color: rgba(193, 97, 97, 0.5) !important;
+}
+.gfm.critic.substitution {
+  color: #d08e25;
+}
+.gfm.critic.substitution.marker {
+  color: rgba(208, 142, 37, 0.5) !important;
+}
+.gfm.critic.substitution.operator {
+  color: #a5701d !important;
+}
+.gfm.critic.comment {
+  color: #9ca3b0;
+}
+.gfm.critic.comment.marker {
+  color: rgba(156, 163, 176, 0.5) !important;
+}
+.gfm.critic.highlight {
+  color: #5e78e1;
+}
+.gfm.critic.highlight.marker {
+  color: rgba(94, 120, 225, 0.5) !important;
+}
+.comment.quote {
+  color: rgba(126, 81, 33, 0.77);
+  font-style: italic;
+}
+.comment.quote .italic {
+  font-style: italic;
+  color: rgba(158, 56, 1, 0.77);
+}
+.comment.quote .bold {
+  color: rgba(126, 81, 33, 0.77);
+  font-weight: bold;
+}
+.pfm.math {
+  background: rgba(143, 147, 43, 0.1);
+  color: #8f932b;
+}
+.pfm.math .gfm.support {
+  color: #696c1f;
+}
+.pfm.math .punctuation.arguments {
+  color: #c87373;
+}
+.pfm.math .tex.constant {
+  color: #d08e25;
+}
+.pfm.math .tex.constant.numeric {
+  color: #8f932b;
+}
+.pfm.definition.block {
+  background: rgba(94, 120, 225, 0.1);
+}
+.pfm.footnote {
+  color: #2b3f6a;
+}
+.text.bibtex .entry-key {
+  color: #aa5c08;
+  font-weight: bold;
+}
+.text.bibtex .begin,
+.text.bibtex .end {
+  color: #2b3f6a;
+}
+.text.bibtex .punctuation.definition.keyword {
+  opacity: 0.7;
+}
+.source .js.brace.round,
+.source .js.brace.curly {
+  color: #5e6fa0;
+}
+.source .js.punctuation.terminator.statement {
+  color: #255f93;
+}
+.source .js.delimiter.method.period {
+  color: #6e7daa;
+}
+.source .js.delimiter.object.comma {
+  color: #5e6fa0;
+}
+.source .js.variable.language.js {
+  color: #379566;
+}
+.css .punctuation.separator.key-value {
+  color: #255f93;
+}
+.body.vala {
+  color: #2b3f6a;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="lehd-public-use-data-schemas">LEHD Public Use Data Schemas</h1>
+<h2 id="scope">Scope</h2>
+<p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J), are available for download according to structural and file naming schema. The data themselves are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> as well as through the <a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p>
+<p>For each variable, a set of allowable values is defined. Definitions of allowable values are provided as CSV files, with header variable definitions. The naming conventions of the data files is documented separately, in a similar fashion.</p>
+<h2 id="history">History</h2>
+<p>The first published schema for the Quarterly Workforce Indicators (QWI) was <a href="v3.5">v3.5</a>, used for QWI files releases through R2013Q1. No formal document describing the schema was released, but a user-contributed &quot;<a href="v3.5/QWI-cheatsheet.txt">Cheatsheet</a>&quot; was available. A restructuring of the data and file naming conventions lead to <a href="V4.0">V4.0</a> for releases starting with R2013Q2. The newer schema was described in the form of a <a href="V4.0/QWIPU_Data_Schema.pdf">PDF document</a> that was occassionally updated to reflect corrections and enhancements. All data releases were accompanied by a set of CSV files for allowable values of variables and flags, accompanying each collection of tabulations for each state.</p>
+<p>Starting with release R2015Q2, a more formal and flexible structure was implemented, and published as <a href="V4.0.1">V4.0.1</a>. As changes occur to elements of the schema, version numbers are incremented (see <a href="#Versioning">Versioning</a>). Broader changes are first published as draft schemas (typically used by draft or &quot;beta&quot; releases of data), before becoming finalized. All versions are retained on this server.</p>
+<h2 id="usage">Usage</h2>
+<p>Each data release is accompanied by a file specifying a compact notation for metadata. For instance, the R2014Q4 release of Missouri QWI by race and ethnicity for all firm types (archived <a href="http://download.vrdc.cornell.edu/qwipu/R2014Q4/mo/rh/f/">here</a> or <a href="http://lehd.ces.census.gov/pub/mo/R2014Q4/DVD-rh_f/">here</a>) would have a file called &#39;version_rh_f.txt&#39; with the following content:</p>
+<p><pre class="editor-colors lang-text"></pre>
+where the fifth component (<code>V4.0</code>) identifies the schema being used. Thus, all value labels, the naming and structure of the files, the geographic and industry coding vintages, etc. can be deduced from the information available in the <a href="V4.0">V4.0</a> directory.</p>
+<h2 id="versioning">Versioning</h2>
+<p>Versioning rules follow <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning V2.0.0</a>, which states that</p>
+<blockquote>
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
+<ul>
+<li>MAJOR version when you make incompatible API changes,</li>
+<li>MINOR version when you add functionality in a backwards-compatible manner, and</li>
+<li>PATCH version when you make backwards-compatible bug fixes.</li>
+</ul>
+</blockquote>
+<p>In practice,</p>
+<ul>
+<li>LEHD increments the major number when a new data format is used that would drop import by outside systems (variables are dropped, are in a different order, existing variables change names; file naming conventions change for existing files)</li>
+<li>LEHD increments the minor number when<ul>
+<li>variables are added, without changing order of existing variables</li>
+<li>new types of data are added (e.g., J2J, LODES) without changing existing files</li>
+<li>changes in values are of a &quot;significant&quot; nature</li>
+<li>changes to the structure of the schema documentation are made</li>
+</ul>
+</li>
+<li>LEHD increments the &quot;patch&quot; number when changes are made to existing codes that do not break import of data, or change the interpretation of the data in a significant way<ul>
+<li>a description is corrected</li>
+<li>a set of value labels is changed in a minimal way</li>
+</ul>
+</li>
+<li>LEHD does not increment the version number when corrections to the human readable schema documentation itself are made, but does indicate such changes in the CHANGE section and by dating the resulting files.</li>
+</ul>
+<p>Examples of &quot;patch&quot;-level changes are:</p>
+<ul>
+<li>updated geography definitions (changes in state-specific geographies impacting a small set of areas, for instance a WIB or a small number of counties) (see CHANGES in <a href="V4.0.1/CHANGES.txt">V4.0.1</a>, <a href="V4.0.2/CHANGES.txt">V4.0.2</a>, <a href="V4.0.3/CHANGES.txt">V4.0.3</a> for examples)</li>
+<li>change in NAICS coding affecting only a small number of industries (see CHANGES in <a href="V4.0.2/CHANGES.txt">V4.0.2</a> for an example). Switching from SIC to NAICS would have been a &#39;major&#39; version number change, changing from NAICS 1997 to 2007 - which had more significant changes, but did not fundamentally change the way the data are read in - would have been a &#39;minor&#39; version number change.</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<p>This section is reserved for documentation of changes to the versioning schema itself, as well as for description of major version changes related to the schema documentation.</p>
+<ul>
+<li><a href="v3.5">v3.5</a> First documented schema</li>
+<li><a href="V4.0">V4.0</a> Second documented schema, change in file naming conventions; added and dropped variables.</li>
+<li><a href="V4.0.1">V4.0.1</a> First formally structured schema documentation of V4 schema.</li>
+<li>V4.1 Additional files and variables.</li>
+</ul></body>
+</html>
