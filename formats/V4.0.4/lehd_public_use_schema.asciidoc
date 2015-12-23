@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema v4.0.4
-Lars Vilhuber <ces.qwi.feedback@census.gov>
-10 December 2015
+= LEHD Public Use Data Schema V4.0.4
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+22 December 2015
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -10,8 +10,10 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
-.
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -188,8 +190,8 @@ include::label_ind_level.csv[]
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see Schema v4.0.1).
-For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see (../V4.0.1)[Schema v4.0.1]).
+For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
 |===================================================
@@ -237,7 +239,7 @@ has its own code structure.
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
-The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2014Q3 release.
+The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.
 
 For convenience, a composite file containing all geocodes is available as
 link:label_geography_all.csv[].
@@ -319,6 +321,8 @@ include::label_flags.csv[]
 === This version (revisions)
 - 2015-09-14: Initial release
 - 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2015-12-22: Updated the identification of the correct geo vintage
+- 2015-12-22: Added a link to NAICS 2012 tables
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -332,10 +336,11 @@ include::label_flags.csv[]
 
 === Version 4.0.4 from 4.0.3
 - 2015-11-30: updated OR.
+- 2015-12-22: Removing the 99 row in industry values - only used for internal error checking
 
 
 <<<
 *******************
-This revision: Thu Dec 10 11:52:33 EST 2015
+This revision: Tue Dec 22 22:36:54 EST 2015
 *******************
 
