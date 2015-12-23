@@ -1,14 +1,16 @@
 
-****** LEHD Public Use Data Schema v4.0.3 ******
+****** LEHD Public Use Data Schema V4.0.3 ******
 Lars Vilhuber
-<ces.qwi.feedback@census.gov>
-10 December 2015
+<lars.vilhuber@cornell.edu>
+22 December 2015
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] Feedback is welcome. Please write us at
-            ces.qwi.feedback@census.gov. .
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
 following data schema. These data are available as Comma-Separated Value (CSV)
@@ -287,8 +289,8 @@ geography has its own code structure.
             of the full CBSA areas.
     * The WIA code is constructed from the 2-digit state FIPS code and the 6-
       digit WIA identifier provided by LED State Partners.
-The 2014 vintage of Census TIGER geography is used for all tabulations as of
-the R2014Q3 release.
+The 2015 vintage of Census TIGER/Line geography is used for all tabulations as
+of the R2015Q4 release.
 For convenience, a composite file containing all geocodes is available as
 label_geography_all.csv.
 State         Format file
@@ -366,6 +368,7 @@ flag label
     * 2015-09-14: Initial release
     * 2015-12-10: Added consolidated geography label file
       label_geography_all.csv
+    * 2015-12-22: Updated the identification of the correct geo vintage
 **** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
@@ -374,6 +377,6 @@ flag label
 **** 4.4. Version 4.0.3 from 4.0.2 ****
     * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
       MA.
-This revision: Thu Dec 10 11:50:55 EST 2015
+This revision: Tue Dec 22 22:35:49 EST 2015
 ===============================================================================
-Last updated 2015-12-10 11:50:55 EST
+Last updated 2015-12-22 22:35:49 EST
