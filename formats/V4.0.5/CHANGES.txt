@@ -1,10 +1,7 @@
 == [[changes]] Changes
 
 === This version (revisions)
-- 2015-09-14: Initial release
-- 2015-12-10: Added consolidated geography label file label_geography_all.csv
-- 2015-12-22: Updated the identification of the correct geo vintage
-- 2015-12-22: Added a link to NAICS 2012 tables
+- 2015-03-15: Initial release
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -18,4 +15,12 @@
 
 === Version 4.0.4 from 4.0.3
 - 2015-11-30: updated OR.
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2015-12-22: Updated the identification of the correct geo vintage
+- 2015-12-22: Added a link to NAICS 2012 tables
 - 2015-12-22: Removing the 99 row in industry values - only used for internal error checking
+
+=== Version 4.0.5 from 4.0.4
+- 2016-03-15: updated MO (new WIB code).
+- 2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+- 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema

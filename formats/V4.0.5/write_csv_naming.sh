@@ -16,9 +16,10 @@ fi
 
 if [[ "$1" = "start" ]]
 then
-	version=cornell
+# parse version from directory
+   version=cornell
 else
-	version=$1
+   version=$1
 fi
 case $version in
 	cornell)
@@ -32,7 +33,6 @@ case $version in
 	;;
 esac
 cwd=$(pwd)
-# parse version from directory
 numversion=${cwd##*/}
 # convert the column definitions to CSV
 sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definitions.txt | tail -n +2 > tmp.csv
@@ -47,12 +47,11 @@ echo "$(date +%d\ %B\ %Y)
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
 " >> $asciifile
-
 # A note on the relevance/beta/draft status of this file.
 
 case $version in
 	cornell)
-echo "
+	echo "
 [IMPORTANT]
 .Important
 ==============================================
@@ -61,24 +60,24 @@ by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Corn
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-" >> $asciifile
-  ;;
+	" >> $asciifile
+	;;
 	draft)
 	echo "
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:erika.mcentarfer@census.gov?subject=LEHD_Schema_draft[erika.mcentarfer@census.gov]
-or link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
 ==============================================
 	" >> $asciifile
 	;;
 	official)
-echo "
+	echo "
 [IMPORTANT]
 .Important
 ==============================================
 Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
+.
 ==============================================
 	" >> $asciifile
 	;;
@@ -93,7 +92,12 @@ are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
+This document describes the file naming schema for LEHD-provided CSV files. 
+
+Schema for Data File Contents
+-----------------------------
+
+The contents (schema) are described in  link:lehd_public_use_schema.html[].
 
 Extends
 -------

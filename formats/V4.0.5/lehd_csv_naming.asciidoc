@@ -1,6 +1,6 @@
-= LEHD Public Use CSV Naming Schema v4.0.4 - CSV Naming Convention
+= LEHD Public Use CSV Naming Schema V4.0.5 - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-30 November 2015
+15 March 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -15,7 +15,7 @@ by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Corn
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -24,7 +24,12 @@ are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
+This document describes the file naming schema for LEHD-provided CSV files. 
+
+Schema for Data File Contents
+-----------------------------
+
+The contents (schema) are described in  link:lehd_public_use_schema.html[].
 
 Extends
 -------
@@ -159,7 +164,7 @@ include::naming_sa.csv[]
 == [[changes]] Changes
 
 === This version (revisions)
-- 2015-09-14: Initial release
+- 2015-03-15: Initial release
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -173,10 +178,19 @@ include::naming_sa.csv[]
 
 === Version 4.0.4 from 4.0.3
 - 2015-11-30: updated OR.
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2015-12-22: Updated the identification of the correct geo vintage
+- 2015-12-22: Added a link to NAICS 2012 tables
+- 2015-12-22: Removing the 99 row in industry values - only used for internal error checking
+
+=== Version 4.0.5 from 4.0.4
+- 2016-03-15: updated MO (new WIB code).
+- 2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+- 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
 
 
 <<<
 *******************
-This revision: Mon Nov 30 11:13:03 EST 2015
+This revision: Tue Mar 15 10:57:39 EDT 2016
 *******************
 

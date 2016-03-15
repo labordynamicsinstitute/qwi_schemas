@@ -83,21 +83,31 @@ Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?
 	;;
 esac
 
+# start the schema description
 echo "
-
+Purpose
+-------
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
  are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ .
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
 
 This document describes the data schema for QWI files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
+with header variable definitions.  Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
+File naming
+-----------
+The naming conventions of the data files is documented in link:lehd_csv_naming.html[].
+
+Extends
+-------
+This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.
 
 Basic Schema
 ------------
-Each file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+Each data file is structured as a CSV file. The first columns contain <<identifiers,identifiers>>, subsequent columns contain <<indicators,indicators>>, followed by <<statusflags,status flags>>.
 
 === Generic structure
 
@@ -246,14 +256,17 @@ done
 	head -50 $nsfile | tail -8  >> tmp.csv
 
 	# construct the composite file from separate files
-  head -1 ak/label_geography.csv > label_geography_all.csv
+	head -1 ak/label_geography.csv > label_geography_all.csv
 	echo '00,"National (50 States + DC)"' >> label_geography_all.csv
 	for arg in $(ls ??/label_geography.csv)
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done
 	cat tmp3.csv | sort -n -k 1 -t , >> label_geography_all.csv
-	rm tmp3.csv
+	# adapt to alternate location
+	[[ -d us ]] || mkdir us
+	mv label_geography_all.csv us/label_geography.csv
+  rm tmp3.csv
 
   echo "=== $name ===
 
@@ -264,8 +277,7 @@ do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
   echo "[[$name]]
 ==== Geographic levels
-
-
+[[$arg]]
 ( link:${arg}[] )
 
 [width=\"40%\",format=\"csv\",cols=\"^1,<3\",options=\"header\"]
@@ -279,7 +291,7 @@ echo "
 Geography labels are provided in separate files, in directories by state. Note that cross-state CBSA will have
 state-specific parts, and thus will appear in multiple files.
 A separate link:$nsfile[$nsfile] contains values and labels
-for all entities of geo_level 'n' or 's', and is a summary of separately available files.
+for all entities of <<geo_level,geo_level>> 'n' or 's', and is a summary of separately available files. For convenience
 
 ==== State-level values ====
 ( link:$nsfile[] )
@@ -292,25 +304,25 @@ include::tmp.csv[]
 ==== Detailed state and substate level values
 
 For a full listing of all valid geography codes (except for WIA codes), see http://www.census.gov/geo/maps-data/data/tiger.html.
-Note about geography codes: Four types of geography codes are represented with this field. Each geography
-has its own code structure.
+Note about geography codes: Four types of geography codes are represented with this field, depending on the value of <<geo_level,geo_level>>.
+Each geography has its own code structure:
 
-- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code.
-- County is the 5-digit FIPS code.
-- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
+- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code (<<geo_level,geo_level>> = 's')
+- County is the 5-digit FIPS code (<<geo_level,geo_level>> = 'c')
+- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division. (<<geo_level,geo_level>> = 'm')
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
-- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
+- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners. (<<geo_level,geo_level>> = 'w')
 
 The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.
 
 For convenience, a composite file containing all geocodes is available as
-link:label_geography_all.csv[].
+link:us/label_geography.csv[].
 
 [format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
 |===================================================
 State,Format file" >> $asciifile
 
-  for arg in $(ls  ??/label_geography.csv)
+  for arg in $(ls  ??/label_geography.csv | grep -v "us/label_geography.csv")
   do
   	state=$(dirname ${arg}|tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile
