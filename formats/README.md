@@ -37,7 +37,7 @@ In practice,
 * LEHD increments the "patch" number when changes are made to existing codes that do not break import of data, or change the interpretation of the data in a significant way
   - a description is corrected
   - a set of value labels is changed in a minimal way
-* LEHD does not increment the version number when corrections to the human readable schema documentation itself are made, but does indicate such changes in the CHANGE section and by dating the resulting files.
+* LEHD does not increment the version number when corrections to the human readable schema documentation itself are made, but does indicate such changes in the CHANGE section with the calendar date of the revision.
 
 Examples of "patch"-level changes are:
 * updated geography definitions (changes in state-specific geographies impacting a small set of areas, for instance a WIB or a small number of counties) (see CHANGES in [V4.0.1](V4.0.1/CHANGES.txt), [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt) for examples)
