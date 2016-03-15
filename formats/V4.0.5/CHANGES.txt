@@ -1,0 +1,21 @@
+== [[changes]] Changes
+
+=== This version (revisions)
+- 2015-09-14: Initial release
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2015-12-22: Updated the identification of the correct geo vintage
+- 2015-12-22: Added a link to NAICS 2012 tables
+
+=== Version 4.0.1 from 4.0
+- 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+=== Version 4.0.2 from 4.0.1
+- 2015-04-01: switched NAICS coding from 2007 to 2012
+
+=== Version 4.0.3 from 4.0.2
+- 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
+
+=== Version 4.0.4 from 4.0.3
+- 2015-11-30: updated OR.
+- 2015-12-22: Removing the 99 row in industry values - only used for internal error checking
