@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.0.4 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-22 December 2015
+15 March 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -11,20 +11,25 @@ JavaScript must be enabled in your browser to display the table of contents.
 [Important] compiled from publicly accessible information by Lars Vilhuber
             (Labor_Dynamics_Institute,_Cornell_University). Feedback is
             welcome. Please write us at lars.vilhuber@cornell.edu.
+***** 1. Purpose *****
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
 following data schema. These data are available as Comma-Separated Value (CSV)
 files through the LEHD website’s Data page at http://lehd.ces.census.gov/data/
-.
+and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 This document describes the data schema for QWI files. For each variable, a set
 of allowable values is defined. Definitions are provided as CSV files, with
-header variable definitions. The naming conventions of the data files is
-documented in lehd_csv_naming.html. Changes relative to the original v4.0
-version are listed at_the_end.
-***** 1. Basic Schema *****
-Each file is structured as a CSV file. The first columns contain [identifiers],
-subsequent columns contain [indicators], followed by status_flags.
-**** 1.1. Generic structure ****
+header variable definitions. Changes relative to the original v4.0 version are
+listed at_the_end.
+***** 2. File naming *****
+The naming conventions of the data files is documented in lehd_csv_naming.html.
+***** 3. Extends *****
+This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will
+also be compliant with this schema.
+***** 4. Basic Schema *****
+Each data file is structured as a CSV file. The first columns contain
+identifiers, subsequent columns contain indicators, followed by status_flags.
+**** 4.1. Generic structure ****
 Column name
 [ Identifier1 ]
 [ Identifier2 ]
@@ -42,11 +47,11 @@ Note: A full list of indicators for each type of file are shown below in the
 Indicators section. While all indicators are included in the CSV files, only
 the requested indicators will be included in data outputs from the LED
 Extraction Tool.
-1.2. Identifiers
+4.2. Identifiers
 Records, unless otherwise noted, are parts of time-series data. Unique record
 identifiers are noted below, by file type. Identifiers without the year and
 quarter component can be considered a series identifier.
-*** 1.2.1. Identifiers for qwi ***
+*** 4.2.1. Identifiers for qwi ***
 ( lehd_identifiers_qwi.csv )
   Variable    Type  label
 periodicity Char(1) Periodicity of report
@@ -65,7 +70,7 @@ periodicity Char(1) Periodicity of report
   firmsize  Char(1) Group: Firm Size group
      year      Num  Time: Year
    quarter     Num  Time: Quarter
-1.3. Indicators
+4.3. Indicators
 The following tables and associated mapping files list the indicators available
 on each file. The 'Indicator Variable' is the short name of the variable on the
 CSV files, suitable for machine processing in a wide variety of statistical
@@ -130,12 +135,12 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
                                                 Monthly Earnings
         Payroll             W1       sPayroll   Total Quarterly Payroll: Sum
-2. Categorical Variables
+5. Categorical Variables
 Categorical variable descriptions are displayed above each table, with the
 variable name shown in parentheses. Unless otherwise stated, every possible
 value/label combination for each categorical variable is listed. Please note
 that not all values will be available in every table.
-**** 2.1. agegrp ****
+**** 5.1. agegrp ****
 ( label_agegrp.csv )
 agegrp label
   A00  All Ages (14-99)
@@ -147,7 +152,7 @@ agegrp label
   A06  45-54
   A07  55-64
   A08  65-99
-**** 2.2. education ****
+**** 5.2. education ****
 ( label_education.csv )
 education label
      E0   All Education Categories
@@ -156,13 +161,13 @@ education label
      E3   Some college or Associate degree
      E4   Bachelor’s degree or advanced degree
      E5   Educational attainment not available (workers aged 24 or younger)
-**** 2.3. ethnicity ****
+**** 5.3. ethnicity ****
 ( label_ethnicity.csv )
 ethnicity label
      A0   All Ethnicities
      A1   Not Hispanic or Latino
      A2   Hispanic or Latino
-**** 2.4. firmage ****
+**** 5.4. firmage ****
 ( label_firmage.csv )
 firmage label
     0   All Firm Ages
@@ -171,7 +176,7 @@ firmage label
     3   4-5 Years
     4   6-10 Years
     5   11+ Years
-**** 2.5. firmsize ****
+**** 5.5. firmsize ****
 ( label_firmsize.csv )
 firmsize label
      0   All Firm Sizes
@@ -180,17 +185,17 @@ firmsize label
      3   50-249 Employees
      4   250-499 Employees
      5   500+ Employees
-**** 2.6. ownercode ****
+**** 5.6. ownercode ****
 ( label_ownercode.csv )
 ownercode label
     A00   All (1-5)
     A05   All Private (5)
-**** 2.7. periodicity ****
+**** 5.7. periodicity ****
 ( label_periodicity.csv )
 periodicity label
        A    Annual data
        Q    Quarterly data
-**** 2.8. race ****
+**** 5.8. race ****
 ( label_race.csv )
 race label
  A0  All Races
@@ -201,26 +206,26 @@ race label
  A5  Native Hawaiian or Other Pacific Islander Alone
  A6  Some Other Race Alone (Not Used)
  A7  Two or More Race Groups
-**** 2.9. seasonadj ****
+**** 5.9. seasonadj ****
 ( label_seasonadj.csv )
 seasonadj label
       S   Seasonally adjusted
       U   Not seasonally adjusted
-**** 2.10. sex ****
+**** 5.10. sex ****
 ( label_sex.csv )
 sex label
  0  All Sexes
  1  Male
  2  Female
-**** 2.11. Industry ****
-*** 2.11.1. Industry levels ***
+**** 5.11. Industry ****
+*** 5.11.1. Industry levels ***
 ( label_ind_level.csv )
 ind_level label
       3   NAICS Subsectors
       4   NAICS Industry Groups
       A   All Industries
       S   NAICS Sectors
-*** 2.11.2. Industry ***
+*** 5.11.2. Industry ***
 ( label_industry.csv )
 Only a small subset of available values shown. The 2012 NAICS (North American
 Industry Classification System) is used for all years. QWI releases prior to
@@ -245,8 +250,8 @@ industry label
    3112  Grain and Oilseed Milling
    3113  Sugar and Confectionery Product Manufacturing
     …
-**** 2.12. Geography ****
-*** 2.12.1. Geographic levels ***
+**** 5.12. Geography ****
+*** 5.12.1. Geographic levels ***
 ( label_geo_level.csv )
 geo_level label
       C   Counties
@@ -257,7 +262,8 @@ Geography labels are provided in separate files, in directories by state. Note
 that cross-state CBSA will have state-specific parts, and thus will appear in
 multiple files. A separate label_fipsnum.csv contains values and labels for all
 entities of geo_level n or s, and is a summary of separately available files.
-*** 2.12.2. State-level values ***
+For convenience
+*** 5.12.2. State-level values ***
 ( label_fipsnum.csv )
 geography label
      02   Alaska
@@ -276,24 +282,24 @@ geography label
      50   Vermont
      53   Washington
      55   Wisconsin
-*** 2.12.3. Detailed state and substate level values ***
+*** 5.12.3. Detailed state and substate level values ***
 For a full listing of all valid geography codes (except for WIA codes), see
 http://www.census.gov/geo/maps-data/data/tiger.html. Note about geography
-codes: Four types of geography codes are represented with this field. Each
-geography has its own code structure.
-    * State is the 2-digit FIPS code.
-    * County is the 5-digit FIPS code.
+codes: Four types of geography codes are represented with this field, depending
+on the value of geo_level. Each geography has its own code structure:
+    * State is the 2-digit FIPS code (geo_level = s)
+    * County is the 5-digit FIPS code (geo_level = c)
     * Metropolitan/Micropolitan codes are constructed from the 2-digit state
       FIPS code and the 5-digit CBSA code provided by the Census Bureau’s
-      Geography Division.
+      Geography Division. (geo_level = m)
           o In the QWI, the metropolitan/micropolitan areas are the state parts
             of the full CBSA areas.
     * The WIA code is constructed from the 2-digit state FIPS code and the 6-
-      digit WIA identifier provided by LED State Partners.
+      digit WIA identifier provided by LED State Partners. (geo_level = w)
 The 2015 vintage of Census TIGER/Line geography is used for all tabulations as
 of the R2015Q4 release.
-For convenience, a composite file containing all geocodes is available as
-label_geography_all.csv.
+For convenience, a composite file containing all geocodes is available as us/
+label_geography.csv.
 State         Format file
   AK  ak/label_geography.csv
   AL  al/label_geography.csv
@@ -346,7 +352,7 @@ State         Format file
   WI  wi/label_geography.csv
   WV  wv/label_geography.csv
   WY  wy/label_geography.csv
-3. Status flags
+6. Status flags
 ( label_flags.csv )
 Each status flag in the tables above contains one of the following valid
 values. The values and their interpretation are listed in the table below.
@@ -364,25 +370,28 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-4.  Changes
-**** 4.1. This version (revisions) ****
-    * 2015-09-14: Initial release
+7.  Changes
+**** 7.1. This version (revisions) ****
+    * 2015-12-22: Initial release
+    * 2016-03-15: Copied label_geography_all.csv to us/label_geography.csv
+    * 2016-03-15: Added better cross-links between CSV naming schame, and
+      datafile schema
+**** 7.2. Version 4.0.1 from 4.0 ****
+    * 2015-02-24: removed obsolete flag values
+    * 2015-04-01: updated IL, NE geography definitions
+**** 7.3. Version 4.0.2 from 4.0.1 ****
+    * 2015-04-01: switched NAICS coding from 2007 to 2012
+**** 7.4. Version 4.0.3 from 4.0.2 ****
+    * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
+      MA.
+**** 7.5. Version 4.0.4 from 4.0.3 ****
+    * 2015-11-30: updated OR.
     * 2015-12-10: Added consolidated geography label file
       label_geography_all.csv
     * 2015-12-22: Updated the identification of the correct geo vintage
     * 2015-12-22: Added a link to NAICS 2012 tables
-**** 4.2. Version 4.0.1 from 4.0 ****
-    * 2015-02-24: removed obsolete flag values
-    * 2015-04-01: updated IL, NE geography definitions
-**** 4.3. Version 4.0.2 from 4.0.1 ****
-    * 2015-04-01: switched NAICS coding from 2007 to 2012
-**** 4.4. Version 4.0.3 from 4.0.2 ****
-    * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
-      MA.
-**** 4.5. Version 4.0.4 from 4.0.3 ****
-    * 2015-11-30: updated OR.
     * 2015-12-22: Removing the 99 row in industry values - only used for
       internal error checking
-This revision: Tue Dec 22 22:36:54 EST 2015
+This revision: Tue Mar 15 11:00:52 EDT 2016
 ===============================================================================
-Last updated 2015-12-22 22:36:54 EST
+Last updated 2016-03-15 11:00:52 EDT
