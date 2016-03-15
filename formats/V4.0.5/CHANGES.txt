@@ -1,4 +1,5 @@
 == [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
 - 2015-03-15: Initial release

@@ -43,7 +43,7 @@ echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
-
+:ext-relative: {outfilesuffix}
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
 
 " >> $asciifile
@@ -230,7 +230,7 @@ echo "
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see (../V4.0.1)[Schema v4.0.1]).
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
 For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
@@ -361,9 +361,9 @@ This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels $asciifile
+asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfilesuffix=.html $asciifile
 [[ -f $(basename $asciifile .asciidoc).html  ]] && echo "$(basename $asciifile .asciidoc).html created"
-a2x -f pdf -a icons -a toc -a numbered $asciifile
+a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
 [[ -f $(basename $asciifile .asciidoc).pdf  ]] && echo "$(basename $asciifile .asciidoc).pdf created"
 mv $(basename $asciifile .asciidoc).pdf "QWIPU_Data_Schema.pdf" && echo "$(basename $asciifile .asciidoc).pdf moved to QWIPU_Data_Schema.pdf"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt

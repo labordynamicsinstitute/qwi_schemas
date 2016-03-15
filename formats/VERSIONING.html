@@ -56,10 +56,6 @@ structural and file naming schema. The data themselves are available as
 Comma-Separated Value (CSV) files through the LEHD website’s Data page
 at <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> as well as through the
 <a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p></div>
-<div class="paragraph"><p>For each variable, a set of allowable values is defined. Definitions of
-allowable values are provided as CSV files, with header variable
-definitions. The naming conventions of the data files is documented
-separately, in a similar fashion.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -82,21 +78,89 @@ the schema, version numbers are incremented (see
 <a href="#Versioning">Versioning</a>). Broader changes are first published as
 draft schemas (typically used by draft or "beta" releases of data),
 before becoming finalized. All versions are retained on this server.</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="v3.5">v3.5</a> First documented schema
+</p>
+</li>
+<li>
+<p>
+<a href="V4.0">V4.0</a> Second documented schema, change in file naming conventions;
+added and dropped variables.
+</p>
+</li>
+<li>
+<p>
+<a href="V4.0.1">V4.0.1</a> First formally structured schema documentation of V4 schema.
+</p>
+</li>
+<li>
+<p>
+V4.1 Additional files and variables (not finalized yet)
+</p>
+</li>
+</ul></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="usage">3. Usage</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Each data release is accompanied by a file specifying a compact notation
-for metadata. For instance, the R2014Q4 release of Missouri QWI by race
+for metadata. For instance, the R2015Q2 release of Missouri QWI by race
 and ethnicity for all firm types (archived
-<a href="http://download.vrdc.cornell.edu/qwipu/R2014Q4/mo/rh/f/">here</a> or
-<a href="http://lehd.ces.census.gov/pub/mo/R2014Q4/DVD-rh_f/">here</a>) would have a
-file called <em>version_rh_f.txt</em> with the following content:
-where the fifth component (V4.0) identifies the schema being used. Thus,
+<a href="http://download.vrdc.cornell.edu/qwipu/R2015Q2/mo/rh/f/">here</a> or
+<a href="http://lehd.ces.census.gov/pub/mo/R2015Q2/DVD-rh_f/">here</a>) would have a
+file called <em>version_rh_f.txt</em> with the following content:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code>QWIRH_F MO 29 1995:1-2014:3 V4.0.1 R2015Q2 qwipu_mo_20150601_1902</code></pre>
+</div></div>
+<div class="paragraph"><p>where the fifth component (V4.0.1) identifies the schema being used. Thus,
 all value labels, the naming and structure of the files, the geographic
 and industry coding vintages, etc. can be deduced from the information
-available in the V4.0 directory.</p></div>
+available in the <a href="V4.0.1">V4.0.1</a> directory.</p></div>
+<div class="paragraph"><p>Names of data files follow certain rules, which are documented in the file "lehd_csv_naming".</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+In the example above, the file can be found at <a href="V4.0.1/lehd_csv_naming.html">V4.0.1/lehd_csv_naming.html</a>.
+</p>
+</li>
+<li>
+<p>
+The latest version of "lehd_csv_naming" can be found at <a href="latest/lehd_csv_naming.html">latest/lehd_csv_naming.html</a>.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>For each <strong>identifier variable</strong> on the data file, a set of allowable values is defined. Definitions of allowable values are provided as CSV files, with headers. Available <strong>indicator variables</strong> are defined, and labels provided. These definitions are summarized in the file "lehd_public_use_schema" (formerly named "QWIPU_Data_Schema.pdf").</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+For instance, in the example above, the file can be found at link:V4.0.1/lehd_public_use_schema.html
+</p>
+</li>
+<li>
+<p>
+(QWI) <strong>indicators</strong> are named and listed in the section "<a href="V4.0.1/lehd_public_use_schema.html#_a_id_indicators_a_indicators">Indicators</a>" in <a href="V4.0.1/lehd_public_use_schema.html">V4.0.1/lehd_public_use_schema.html</a> in human-readable form, and as machine-readable CSV files at <a href="V4.0.1/variables_qwipu.csv">V4.0.1/variables_qwipu.csv</a> .
+</p>
+</li>
+<li>
+<p>
+<strong>Identifiers</strong> for the QWI files are listed in the section "<a href="V4.0.1/lehd_public_use_schema.html#_a_id_identifiers_a_identifiers">Identifiers</a>" in machine-readable form, and as CSV files at <a href="V4.0.1/lehd_identifiers_qwi.csv">V4.0.1/lehd_identifiers_qwi.csv</a> (note: different files may have different identifiers).
+</p>
+</li>
+<li>
+<p>
+One of the available <strong>identifiers</strong> is "agegrp", for which the allowable values are listed at "<a href="V4.0.1/lehd_public_use_schema.html#_agegrp">agegrp</a>" and provided in machine-readable form at <a href="V4.0.1/label_agegrp.csv">V4.0.1/label_agegrp.csv</a>
+</p>
+</li>
+<li>
+<p>
+The latest version of "lehd_public_use_schema" can be found at <a href="latest/lehd_public_use_schema.html">latest/lehd_public_use_schema.html</a>
+</p>
+</li>
+</ul></div>
 </div>
 </div>
 <div class="sect1">
@@ -133,7 +197,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <li>
 <p>
 LEHD increments the major number when a new data format is used that
-would drop import by outside systems (variables are dropped, are in a
+would break import procedures by outside systems (variables are dropped, are in a
 different order, existing variables change names; file naming
 conventions change for existing files)
 </p>
@@ -142,7 +206,7 @@ conventions change for existing files)
 <p>
 LEHD increments the minor number when
 </p>
-</li>
+<div class="ulist"><ul>
 <li>
 <p>
 variables are added, without changing order of existing variables
@@ -164,13 +228,15 @@ changes in values are of a "significant" nature
 changes to the structure of the schema documentation are made
 </p>
 </li>
+</ul></div>
+</li>
 <li>
 <p>
 LEHD increments the "patch" number when changes are made to existing
 codes that do not break import of data, or change the interpretation of
 the data in a significant way
 </p>
-</li>
+<div class="ulist"><ul>
 <li>
 <p>
 a description is corrected
@@ -181,6 +247,8 @@ a description is corrected
 a set of value labels is changed in a minimal way
 </p>
 </li>
+</ul></div>
+</li>
 <li>
 <p>
 LEHD does not increment the version number when corrections to the
@@ -190,13 +258,26 @@ revision.
 </p>
 </li>
 </ul></div>
-<div class="paragraph"><p>Examples of "patch"-level changes are: * updated geography definitions
+<div class="paragraph"><p>Examples of "patch"-level changes are:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+updated geography definitions
 (changes in state-specific geographies impacting a small set of areas,
 for instance a WIB or a small number of counties) (see CHANGES in
 <a href="V4.0.1/CHANGES.txt">V4.0.1</a>, <a href="V4.0.2/CHANGES.txt">V4.0.2</a>,
-<a href="V4.0.3/CHANGES.txt">V4.0.3</a> for examples) * change in NAICS coding
+<a href="V4.0.3/CHANGES.txt">V4.0.3</a> for examples)
+</p>
+</li>
+<li>
+<p>
+change in NAICS coding
 affecting only a small number of industries (see CHANGES in
-<a href="V4.0.2/CHANGES.txt">V4.0.2</a> for an example). Switching from SIC to
+<a href="V4.0.2/CHANGES.txt">V4.0.2</a> for an example).
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Switching from SIC to
 NAICS would have been a <em>major</em> version number change, changing from
 NAICS 1997 to 2007 - which had more significant changes, but did not
 fundamentally change the way the data are read in - would have been a
@@ -244,36 +325,18 @@ request.</p></div>
 <div class="sect1">
 <h2 id="changes">8. Changes</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>This section is reserved for documentation of changes to the versioning
-schema itself, as well as for description of major version changes
-related to the schema documentation.</p></div>
+<div class="paragraph"><p>This section is reserved for documentation of changes to this document. For documentation of changes to the schema, see the "CHANGES.txt" file in each versioned schema directory.</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-link:v3.5 First documented schema
-</p>
-</li>
-<li>
-<p>
-link:V4.0 Second documented schema, change in file naming conventions;
-added and dropped variables.
-</p>
-</li>
-<li>
-<p>
-link:V4.0.1 First formally structured schema documentation of V4 schema.
-</p>
-</li>
-<li>
-<p>
-V4.1 Additional files and variables (not finalized yet)
+V1.0 2016-03-15: First release.
 </p>
 </li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Mar 15 17:09:19 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Tue Mar 15 18:01:51 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -281,7 +344,7 @@ V4.1 Additional files and variables (not finalized yet)
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-15 17:09:19 EDT
+Last updated 2016-03-15 18:01:51 EDT
 </div>
 </div>
 </body>

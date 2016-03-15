@@ -2,7 +2,7 @@
 Lars Vilhuber <lars.vilhuber@cornell.edu>
 15 March 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
-
+:ext-relative: {outfilesuffix}
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
 
 
@@ -199,7 +199,7 @@ include::label_ind_level.csv[]
 
 Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see (../V4.0.1)[Schema v4.0.1]).
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
 For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
 [width="90%",format="csv",cols="^1,<4",options="header"]
@@ -241,8 +241,9 @@ For a full listing of all valid geography codes (except for WIA codes), see http
 Note about geography codes: Four types of geography codes are represented with this field, depending on the value of <<geo_level,geo_level>>.
 Each geography has its own code structure:
 
-- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code (<<geo_level,geo_level>> = 's')
-- County is the 5-digit FIPS code (<<geo_level,geo_level>> = 'c')
+- State is the 2-digit http://www.census.gov/geo/reference/ansi_statetables.html[FIPS 55-2] (now INCITS 38:200x) code (<<geo_level,geo_level>> = 's')
+- A two-digit '00' reflects coverage for "National (50 States + DC)" (<<geo_level,geo_level>> = 'n')
+- County is the 5-digit http://www.census.gov/geo/reference/codes/cou.html[FIPS 6-4] (now INCITS 31:200x) code (<<geo_level,geo_level>> = 'c')
 - Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division. (<<geo_level,geo_level>> = 'm')
 ** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
 - The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners. (<<geo_level,geo_level>> = 'w')
@@ -250,7 +251,7 @@ Each geography has its own code structure:
 The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.
 
 For convenience, a composite file containing all geocodes is available as
-link:us/label_geography.csv[].
+link:label_geography_all.csv[].
 
 [format="csv",width="50%",cols="^1,^3",options="header"]
 |===================================================
@@ -299,6 +300,7 @@ SC,link:sc/label_geography.csv[]
 SD,link:sd/label_geography.csv[]
 TN,link:tn/label_geography.csv[]
 TX,link:tx/label_geography.csv[]
+US,link:us/label_geography.csv[]
 UT,link:ut/label_geography.csv[]
 VA,link:va/label_geography.csv[]
 VT,link:vt/label_geography.csv[]
@@ -325,6 +327,7 @@ include::label_flags.csv[]
 
 
 == [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
 - 2015-03-15: Initial release
@@ -348,12 +351,14 @@ include::label_flags.csv[]
 
 === Version 4.0.5 from 4.0.4
 - 2016-03-15: updated MO (new WIB code).
-- 2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+- 2016-03-15: Added us/label_geography.csv to have an entry for the National QWI
 - 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
+- 2016-03-15: Corrected label_geo_level.csv to include the national level value.
+- 2016-03-15: Clarified description of geography codes
 
 
 <<<
 *******************
-This revision: Tue Mar 15 10:57:44 EDT 2016
+This revision: Tue Mar 15 16:42:52 EDT 2016
 *******************
 

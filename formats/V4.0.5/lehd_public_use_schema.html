@@ -911,7 +911,7 @@ cellspacing="0" cellpadding="4">
 <div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
 <div class="paragraph"><p>Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see (../V4.0.1)[Schema v4.0.1]).
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see <a href="../V4.0.1">Schema v4.0.1</a>).
 For a full listing of all valid 2012 NAICS codes, see <a href="http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012">http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012</a>.</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1029,6 +1029,10 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
 </tr>
 <tr>
+<td align="center" valign="top"><p class="table">N</p></td>
+<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+</tr>
+<tr>
 <td align="center" valign="top"><p class="table">S</p></td>
 <td align="left" valign="top"><p class="table">States</p></td>
 </tr>
@@ -1110,20 +1114,20 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">00</p></td>
-<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+<td align="center" valign="top"><p class="table">49</p></td>
+<td align="left" valign="top"><p class="table">Utah</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">00</p></td>
-<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+<td align="center" valign="top"><p class="table">51</p></td>
+<td align="left" valign="top"><p class="table">Virginia</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">00</p></td>
-<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+<td align="center" valign="top"><p class="table">50</p></td>
+<td align="left" valign="top"><p class="table">Vermont</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">00</p></td>
-<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+<td align="center" valign="top"><p class="table">53</p></td>
+<td align="left" valign="top"><p class="table">Washington</p></td>
 </tr>
 </tbody>
 </table>
@@ -1137,12 +1141,17 @@ Each geography has its own code structure:</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-State is the 2-digit <a href="http://quickfacts.census.gov/qfd/meta/long_fips.htm">FIPS</a> code (<a href="#geo_level">geo_level</a> = <em>s</em>)
+State is the 2-digit <a href="http://www.census.gov/geo/reference/ansi_statetables.html">FIPS 55-2</a> (now INCITS 38:200x) code (<a href="#geo_level">geo_level</a> = <em>s</em>)
 </p>
 </li>
 <li>
 <p>
-County is the 5-digit FIPS code (<a href="#geo_level">geo_level</a> = <em>c</em>)
+A two-digit <em>00</em> reflects coverage for "National (50 States + DC)" (<a href="#geo_level">geo_level</a> = <em>n</em>)
+</p>
+</li>
+<li>
+<p>
+County is the 5-digit <a href="http://www.census.gov/geo/reference/codes/cou.html">FIPS 6-4</a> (now INCITS 31:200x) code (<a href="#geo_level">geo_level</a> = <em>c</em>)
 </p>
 </li>
 <li>
@@ -1165,7 +1174,7 @@ The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA
 </ul></div>
 <div class="paragraph"><p>The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.</p></div>
 <div class="paragraph"><p>For convenience, a composite file containing all geocodes is available as
-<a href="us/label_geography.csv">us/label_geography.csv</a>.</p></div>
+<a href="label_geography_all.csv">label_geography_all.csv</a>.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="50%"
@@ -1357,6 +1366,10 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table"><a href="tx/label_geography.csv">tx/label_geography.csv</a></p></td>
 </tr>
 <tr>
+<td align="center" valign="top"><p class="table">US</p></td>
+<td align="center" valign="top"><p class="table"><a href="us/label_geography.csv">us/label_geography.csv</a></p></td>
+</tr>
+<tr>
 <td align="center" valign="top"><p class="table">UT</p></td>
 <td align="center" valign="top"><p class="table"><a href="ut/label_geography.csv">ut/label_geography.csv</a></p></td>
 </tr>
@@ -1461,6 +1474,7 @@ cellspacing="0" cellpadding="4">
 <div class="sect1">
 <h2 id="_a_id_changes_a_changes">7. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
+<div class="paragraph"><p>For a description of how schema files are versioned, see <a href="../VERSIONING.html">main directory</a>.</p></div>
 <div class="sect2">
 <h3 id="_this_version_revisions">7.1. This version (revisions)</h3>
 <div class="ulist"><ul>
@@ -1546,7 +1560,7 @@ cellspacing="0" cellpadding="4">
 </li>
 <li>
 <p>
-2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+2016-03-15: Added us/label_geography.csv to have an entry for the National QWI
 </p>
 </li>
 <li>
@@ -1554,11 +1568,21 @@ cellspacing="0" cellpadding="4">
 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
 </p>
 </li>
+<li>
+<p>
+2016-03-15: Corrected label_geo_level.csv to include the national level value.
+</p>
+</li>
+<li>
+<p>
+2016-03-15: Clarified description of geography codes
+</p>
+</li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Mar 15 10:57:44 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Tue Mar 15 16:42:52 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -1567,7 +1591,7 @@ cellspacing="0" cellpadding="4">
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-15 10:57:44 EDT
+Last updated 2016-03-15 16:42:52 EDT
 </div>
 </div>
 </body>

@@ -39,7 +39,8 @@ numversion=${cwd##*/}
 basefile=VERSIONING
 asciifile=${basefile}.asciidoc
 
-echo "= LEHD Public Use Data Schema Versioning" > $asciifile
+echo "LEHD Public Use Data Schema Versioning" > $asciifile
+echo "======================================" >> $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
@@ -104,11 +105,16 @@ asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfi
 [[ -f ${basefile}.html  ]] && echo "${basefile}.html created"
 a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
 [[ -f ${basefile}.pdf  ]] && echo "${basefile}.pdf created"
-html2text ${basefile}.html > ${basefile}.txt
-[[ -f ${basefile}.txt  ]] && echo "${basefile}.txt created"
+a2x -f docbook -a icons -a toc -a numbered  $asciifile
+[[ -f ${basefile}.xml  ]] || echo "Error: ${basefile}.xml not created"
+# workaround for missing title
+head -4 $asciifile > ${basefile}.md
+pandoc -t markdown_strict -f docbook ${basefile}.xml >> ${basefile}.md
+[[ -f ${basefile}.md  ]] && echo "${basefile}.md created"
 echo "Removing tmp files and $asciifile"
 rm tmp*
-#rm $asciifile
+rm $asciifile
+rm ${basefile}.xml
 exit 0
 #
 # ==================== end of script
@@ -125,11 +131,6 @@ structural and file naming schema. The data themselves are available as
 Comma-Separated Value (CSV) files through the LEHD website’s Data page
 at http://lehd.ces.census.gov/data/ as well as through the
 http://ledextract.ces.census.gov/[LED Extraction Tool].
-
-For each variable, a set of allowable values is defined. Definitions of
-allowable values are provided as CSV files, with header variable
-definitions. The naming conventions of the data files is documented
-separately, in a similar fashion.
 
 [[history]]
 History
@@ -154,20 +155,44 @@ link:#Versioning[Versioning]). Broader changes are first published as
 draft schemas (typically used by draft or "beta" releases of data),
 before becoming finalized. All versions are retained on this server.
 
+* link:v3.5[] First documented schema
+* link:V4.0[] Second documented schema, change in file naming conventions;
+added and dropped variables.
+* link:V4.0.1[] First formally structured schema documentation of V4 schema.
+* V4.1 Additional files and variables (not finalized yet)
+
+
 [[usage]]
 Usage
 -----
 
 Each data release is accompanied by a file specifying a compact notation
-for metadata. For instance, the R2014Q4 release of Missouri QWI by race
+for metadata. For instance, the R2015Q2 release of Missouri QWI by race
 and ethnicity for all firm types (archived
-http://download.vrdc.cornell.edu/qwipu/R2014Q4/mo/rh/f/[here] or
-http://lehd.ces.census.gov/pub/mo/R2014Q4/DVD-rh_f/[here]) would have a
+http://download.vrdc.cornell.edu/qwipu/R2015Q2/mo/rh/f/[here] or
+http://lehd.ces.census.gov/pub/mo/R2015Q2/DVD-rh_f/[here]) would have a
 file called 'version_rh_f.txt' with the following content:
-where the fifth component (V4.0) identifies the schema being used. Thus,
+...............................................................
+QWIRH_F MO 29 1995:1-2014:3 V4.0.1 R2015Q2 qwipu_mo_20150601_1902
+...............................................................
+where the fifth component (V4.0.1) identifies the schema being used. Thus,
 all value labels, the naming and structure of the files, the geographic
 and industry coding vintages, etc. can be deduced from the information
-available in the V4.0 directory.
+available in the link:V4.0.1[] directory.
+
+Names of data files follow certain rules, which are documented in the file "lehd_csv_naming".
+
+* In the example above, the file can be found at link:V4.0.1/lehd_csv_naming.html[].
+* The latest version of "lehd_csv_naming" can be found at link:latest/lehd_csv_naming.html[].
+
+For each *identifier variable* on the data file, a set of allowable values is defined. Definitions of allowable values are provided as CSV files, with headers. Available *indicator variables* are defined, and labels provided. These definitions are summarized in the file "lehd_public_use_schema" (formerly named "QWIPU_Data_Schema.pdf").
+
+* For instance, in the example above, the file can be found at link:V4.0.1/lehd_public_use_schema.html
+* (QWI) *indicators* are named and listed in the section "link:V4.0.1/lehd_public_use_schema.html#_a_id_indicators_a_indicators[Indicators]" in link:V4.0.1/lehd_public_use_schema.html[] in human-readable form, and as machine-readable CSV files at link:V4.0.1/variables_qwipu.csv[] .
+* *Identifiers* for the QWI files are listed in the section "link:V4.0.1/lehd_public_use_schema.html#_a_id_identifiers_a_identifiers[Identifiers]" in machine-readable form, and as CSV files at link:V4.0.1/lehd_identifiers_qwi.csv[] (note: different files may have different identifiers).
+* One of the available *identifiers* is "agegrp", for which the allowable values are listed at "link:V4.0.1/lehd_public_use_schema.html#_agegrp[agegrp]" and provided in machine-readable form at link:V4.0.1/label_agegrp.csv[]
+* The latest version of "lehd_public_use_schema" can be found at link:latest/lehd_public_use_schema.html[]
+
 
 [[versioning]]
 Versioning
@@ -188,32 +213,37 @@ ________________________________________________________________________________
 In practice,
 
 * LEHD increments the major number when a new data format is used that
-would drop import by outside systems (variables are dropped, are in a
+would break import procedures by outside systems (variables are dropped, are in a
 different order, existing variables change names; file naming
 conventions change for existing files)
 * LEHD increments the minor number when
-* variables are added, without changing order of existing variables
-* new types of data are added (e.g., J2J, LODES) without changing
+** variables are added, without changing order of existing variables
+** new types of data are added (e.g., J2J, LODES) without changing
 existing files
-* changes in values are of a "significant" nature
-* changes to the structure of the schema documentation are made
+** changes in values are of a "significant" nature
+** changes to the structure of the schema documentation are made
 * LEHD increments the "patch" number when changes are made to existing
 codes that do not break import of data, or change the interpretation of
 the data in a significant way
-* a description is corrected
-* a set of value labels is changed in a minimal way
+** a description is corrected
+** a set of value labels is changed in a minimal way
 * LEHD does not increment the version number when corrections to the
 human readable schema documentation itself are made, but does indicate
 such changes in the CHANGE section with the calendar date of the
 revision.
 
-Examples of "patch"-level changes are: * updated geography definitions
+Examples of "patch"-level changes are:
+
+* updated geography definitions
 (changes in state-specific geographies impacting a small set of areas,
 for instance a WIB or a small number of counties) (see CHANGES in
 link:V4.0.1/CHANGES.txt[V4.0.1], link:V4.0.2/CHANGES.txt[V4.0.2],
-link:V4.0.3/CHANGES.txt[V4.0.3] for examples) * change in NAICS coding
+link:V4.0.3/CHANGES.txt[V4.0.3] for examples)
+* change in NAICS coding
 affecting only a small number of industries (see CHANGES in
-link:V4.0.2/CHANGES.txt[V4.0.2] for an example). Switching from SIC to
+link:V4.0.2/CHANGES.txt[V4.0.2] for an example).
+
+Switching from SIC to
 NAICS would have been a 'major' version number change, changing from
 NAICS 1997 to 2007 - which had more significant changes, but did not
 fundamentally change the way the data are read in - would have been a
@@ -263,12 +293,6 @@ request.
 Changes
 -------
 
-This section is reserved for documentation of changes to the versioning
-schema itself, as well as for description of major version changes
-related to the schema documentation.
+This section is reserved for documentation of changes to this document. For documentation of changes to the schema, see the "CHANGES.txt" file in each versioned schema directory.
 
-* link:v3.5 First documented schema
-* link:V4.0 Second documented schema, change in file naming conventions;
-added and dropped variables.
-* link:V4.0.1 First formally structured schema documentation of V4 schema.
-* V4.1 Additional files and variables (not finalized yet)
+* V1.0 2016-03-15: First release.
