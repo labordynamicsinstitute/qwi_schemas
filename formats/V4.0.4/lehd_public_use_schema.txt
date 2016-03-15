@@ -373,7 +373,6 @@ flag label
 7.  Changes
 **** 7.1. This version (revisions) ****
     * 2015-12-22: Initial release
-    * 2016-03-15: Copied label_geography_all.csv to us/label_geography.csv
     * 2016-03-15: Added better cross-links between CSV naming schame, and
       datafile schema
 **** 7.2. Version 4.0.1 from 4.0 ****
@@ -392,6 +391,6 @@ flag label
     * 2015-12-22: Added a link to NAICS 2012 tables
     * 2015-12-22: Removing the 99 row in industry values - only used for
       internal error checking
-This revision: Tue Mar 15 11:00:52 EDT 2016
+This revision: Tue Mar 15 14:01:47 EDT 2016
 ===============================================================================
-Last updated 2016-03-15 11:00:52 EDT
+Last updated 2016-03-15 14:01:47 EDT
