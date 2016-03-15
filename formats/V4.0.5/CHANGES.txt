@@ -22,5 +22,7 @@
 
 === Version 4.0.5 from 4.0.4
 - 2016-03-15: updated MO (new WIB code).
-- 2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+- 2016-03-15: Added us/label_geography.csv to have an entry for the National QWI
 - 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
+- 2016-03-15: Corrected label_geo_level.csv to include the national level value.
+- 2016-03-15: Clarified description of geography codes
