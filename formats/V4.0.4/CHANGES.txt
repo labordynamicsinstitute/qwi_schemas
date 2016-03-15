@@ -2,7 +2,6 @@
 
 === This version (revisions)
 - 2015-12-22: Initial release
-- 2016-03-15: Copied label_geography_all.csv to us/label_geography.csv
 - 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
 
 === Version 4.0.1 from 4.0

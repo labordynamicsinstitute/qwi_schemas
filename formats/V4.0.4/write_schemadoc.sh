@@ -263,10 +263,7 @@ done
 	  tail -n +2 $arg >> tmp3.csv
 	done
 	cat tmp3.csv | sort -n -k 1 -t , >> label_geography_all.csv
-	# adapt to alternate location
-	[[ -d us ]] || mkdir us
-	mv label_geography_all.csv us/label_geography.csv
-  rm tmp3.csv
+	rm tmp3.csv
 
   echo "=== $name ===
 
