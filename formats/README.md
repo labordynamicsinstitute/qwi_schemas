@@ -43,10 +43,22 @@ Examples of "patch"-level changes are:
 * updated geography definitions (changes in state-specific geographies impacting a small set of areas, for instance a WIB or a small number of counties) (see CHANGES in [V4.0.1](V4.0.1/CHANGES.txt), [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt) for examples)
 * change in NAICS coding affecting only a small number of industries (see CHANGES in [V4.0.2](V4.0.2/CHANGES.txt) for an example). Switching from SIC to NAICS would have been a 'major' version number change, changing from NAICS 1997 to 2007 - which had more significant changes, but did not fundamentally change the way the data are read in - would have been a 'minor' version number change.
 
+Additional revisions within a "patch"-level schema will be identified in the CHANGES.txt by date, but will not otherwise carry a differernt version number. Revisions are only used to correct for bugs, and to improve documentation of the schema itself, but not to change the schema.
+
+## Draft Versions
+LEHD will publish a draft version of minor or major schema changes, in order to be able to allow for comments by the community. A draft schema may also accompany 'beta' data products, where both schema and data are published to elicit comments from the public. Draft versions do not necessarily lead to a final specification, and should be treated as work in progress.
+
+## Curation
+LEHD commits to keeping a public record of all major, minor, and patch versions of the schema in an accessible, public location (currently, at http://lehd.ces.census.gov/data/schema/). Additional revisions are stored internally in code versioning systems, and can be provided upon request.
+
+## Most Current Version
+For convenience, the most current non-draft version is accessible at http://lehd.ces.census.gov/data/schema/current/. However, users should note that at any point in time, data published by LEHD may reference an older schema, as noted in the Usage section above. Users are strongly encouraged to reference a well-specified revision number in their programs, derived from the "version*txt" file provided with each data release.
+
+
 ## Changes
 This section is reserved for documentation of changes to the versioning schema itself, as well as for description of major version changes related to the schema documentation.
 
 * [v3.5](v3.5) First documented schema
 * [V4.0](V4.0) Second documented schema, change in file naming conventions; added and dropped variables.
 * [V4.0.1](V4.0.1) First formally structured schema documentation of V4 schema.
-* V4.1 Additional files and variables.
+* V4.1 Additional files and variables (not finalized yet)
