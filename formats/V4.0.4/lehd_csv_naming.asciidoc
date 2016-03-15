@@ -166,6 +166,7 @@ include::naming_sa.csv[]
 === This version (revisions)
 - 2015-12-22: Initial release
 - 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
+- 2016-03-15: Corrected label_geo_level.csv to include the national level value.
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -187,6 +188,6 @@ include::naming_sa.csv[]
 
 <<<
 *******************
-This revision: Tue Mar 15 14:01:38 EDT 2016
+This revision: Tue Mar 15 16:06:14 EDT 2016
 *******************
 
