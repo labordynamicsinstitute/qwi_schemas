@@ -1,11 +1,11 @@
 Variable,Type,label
 periodicity,Char(1),Periodicity of report
 seasonadj,Char(1),Seasonal Adjustment Indicator
-geo_level,Char(1),Group: Geographic level of aggregation
-geography,Char(8),Group: Geography code
-ind_level,Char(1),Group: Industry level of aggregation
-industry,Char(5),Group: Industry code
-ownercode,Char(3),Group: Ownership group code
+geo_level,Char(1),Group: Geographic level of aggregation of destination job
+geography,Char(8),Group: Geography code of destination job
+ind_level,Char(1),Group: Industry level of aggregation of destination job
+industry,Char(5),Group: Industry code of destination job
+ownercode,Char(3),Group: Ownership group code of destination job
 sex,Char(1),Group: Gender code
 agegrp,Char(3),Group: Age group code (WIA)
 race,Char(2),Group: race
