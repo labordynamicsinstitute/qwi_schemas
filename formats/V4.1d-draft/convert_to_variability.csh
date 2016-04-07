@@ -5,7 +5,7 @@ then
 cat << EOF
   $0 (name of file)
 
-  converts qwipu and qwipur variable names into variability names
+  converts qwi and qwir variable names into variability names
 
 EOF
 exit
@@ -20,7 +20,7 @@ outfile=$(basename $file .csv)v.csv
 
 prefixes="st vt vb vm df mr"
 
-echo "Variability measure,Alternate name,Variable name" > $outfile
+echo "Variability measure,Alternate name,Variable name,Units" > $outfile
 
 for prefix in $prefixes
 do
@@ -46,5 +46,5 @@ do
   esac
 
  tail -n +2 $file |\
-  awk -v prefix=$prefix -v name="$name" -F, ' OFS="," { print prefix"_"$1, prefix"_"$2,name $4 }' >> $outfile
+  awk -v prefix=$prefix -v name="$name" -F, ' OFS="," { print prefix"_"$1, prefix"_"$2,name $4, $5 }' >> $outfile
 done
