@@ -1,9 +1,11 @@
 == [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
 - 2015-09-14: Initial release
 - 2015-12-10: Added consolidated geography label file label_geography_all.csv
 - 2015-12-22: Updated the identification of the correct geo vintage
+- 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and status variables)
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
