@@ -1,0 +1,19 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name,Base
+HirAR,AR,sHirAR,Hiring Rate (Accessions),AvgEmp
+HirNR,HR,sHirNR,New Hiring Rate,AvgEmp
+HirRR,RR,sHirRR,Recall Rate,AvgEmp
+SepR,SR,sSepR,Separation Rate,AvgEmp
+HirAEndR,CAR,sHirAEndR,End-of-Quarter Hiring Rate,AvgEmp
+SepBegR,CSR,sSepBegR,Beginning-of-Quarter Separation Rate,AvgEmp
+HirAsR,FAR,sHirAsR,Stable Hiring Rate (Flows into Full-Quarter Employment),AvgEmpS
+HirNsR,FHR,sHirNsR,Stable New Hiring Rate (New Hires to Full-Quarter Status),AvgEmpS
+SepSR,FSR,sSepSR,Stable Separation Rate (Flow out of Full-Quarter Employment),AvgEmpS
+SepSnxR,FSnxR,sSepSnxR,Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment),AvgEmpS
+TurnOvrSR,FTR,sTurnOvrSR,Turnover Rate (Stable),2*EmpS
+FrmJbGnR,JCR,sFrmJbGnR,Firm Job Gain Rate (Job Creation Rate),AvgEmp
+FrmJbLsR,JDR,sFrmJbLsR,Firm Job Loss Rate (Job Destruction Rate),AvgEmp
+FrmJbCR,JFR,sFrmJbCR,Firm Job Change Rate: Net Change Rate,AvgEmp
+HirAEndReplR,EIR,sHirAEndReplR,Replacement Hiring Rate,AvgEmp
+FrmJbGnSR,FJCR,sFrmJbGnSR,Firm Job Gain Rate (Stable),AvgEmpS
+FrmJbLsSR,FJDR,sFrmJbLsSR,Firm Job Loss Rate (Stable),AvgEmpS
+FrmJbCSR,FJFR,sFrmJbCSR,Job Change Rate (Stable): Net Change Rate,AvgEmpS
