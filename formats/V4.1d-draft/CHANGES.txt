@@ -1,6 +1,6 @@
 == [[changes]] Changes
 
-=== This version from previous releases of this document
+=== This version from previous releases of V4.1 draft schema documents
 - 2015-02-25: corrected flag values
 - 2015-02-25: documents are now identified by date, not revision
 - 2015-03-10: Correction of the TIGER vintage that is used for geographic references
@@ -17,11 +17,18 @@
 - 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
 - 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
 - 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-12: Incorporated all state-level geography from 4.0.5
+- 2016-04-12: Added additional geo_level for CBSA (complete)
+- 2016-04-12: Added additional agg_level values
+- 2016-04-12: Clarified labels of j2jod identifiers
 
-=== Version 4.1c-draft from 4.0
+=== Version 4.1d-draft from 4.0.1
 - added J2J, National QWI spec
 - added geohi category of ALL, US
 - added definitions of variability measures
 - added definitions of rates on separate file
 - added naming convention for additional files
 - added agg_level variable
+- added additional geo_level for CBSA (complete)
+-
