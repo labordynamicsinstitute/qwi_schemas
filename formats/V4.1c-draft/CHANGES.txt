@@ -17,6 +17,7 @@
 - 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
 - 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
 - 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec
