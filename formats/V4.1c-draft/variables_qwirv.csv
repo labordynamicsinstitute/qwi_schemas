@@ -29,7 +29,7 @@ vt_SepSR,vt_FSR,Total variation of Stable Separation Rate (Flow out of Full-Quar
 vt_SepSnxR,vt_FSnxR,Total variation of Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
 vt_TurnOvrSR,vt_FTR,Total variation of Turnover Rate (Stable)
 vt_FrmJbGnR,vt_JCR,Total variation of Firm Job Gain Rate (Job Creation Rate)
-vt_FrmJobLsR,vt_JDR,Total variation of Firm Job Loss Rate (Job Destruction Rate)
+vt_FrmJbLsR,vt_JDR,Total variation of Firm Job Loss Rate (Job Destruction Rate)
 vt_FrmJbCR,vt_JFR,Total variation of Firm Job Change Rate: Net Change Rate
 vt_HirAEndReplR,vt_EIR,Total variation of Replacement Hiring Rate
 vt_FrmJbGnSR,vt_FJCR,Total variation of Firm Job Gain Rate (Stable)
@@ -47,7 +47,7 @@ vb_SepSR,vb_FSR,Between-implicate variability for Stable Separation Rate (Flow o
 vb_SepSnxR,vb_FSnxR,Between-implicate variability for Stable Separation Rate: Next Quarter (Flow out of Full-Quarter Employment)
 vb_TurnOvrSR,vb_FTR,Between-implicate variability for Turnover Rate (Stable)
 vb_FrmJbGnR,vb_JCR,Between-implicate variability for Firm Job Gain Rate (Job Creation Rate)
-vb_FrmJobLsR,vb_JDR,Between-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
+vb_FrmJbLsR,vb_JDR,Between-implicate variability for Firm Job Loss Rate (Job Destruction Rate)
 vb_FrmJbCR,vb_JFR,Between-implicate variability for Firm Job Change Rate: Net Change Rate
 vb_HirAEndReplR,vb_EIR,Between-implicate variability for Replacement Hiring Rate
 vb_FrmJbGnSR,vb_FJCR,Between-implicate variability for Firm Job Gain Rate (Stable)

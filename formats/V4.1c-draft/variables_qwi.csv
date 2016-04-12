@@ -18,7 +18,7 @@ SepS,FS,sSepS,Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 SepSnx,FSnx,sSepSnx,Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 TurnOvrS,FT,sTurnOvrS,Turnover (Stable)
 FrmJbGn,JC,sFrmJbGn,Firm Job Gains: Counts (Job Creation)
-FrmJbLs,JD,sFrmJobLs,Firm Job Loss: Counts (Job Destruction)
+FrmJbLs,JD,sFrmJbLs,Firm Job Loss: Counts (Job Destruction)
 FrmJbC,JF,sFrmJbC,Firm Job Change: Net Change
 HirAEndRepl,EI,sHirAEndRepl,Replacement Hires
 HirAEndReplr,EIR,sHirAEndReplr,Replacement Hiring Rate
@@ -28,6 +28,6 @@ FrmJbCS,FJF,sFrmJbCS,Job Change (Stable): Net Change
 EarnS,ZW3,sEarnS,Full Quarter Employment (Stable): Average Monthly Earnings
 EarnBeg,ZW1,sEarnBeg,Beginning-of-Quarter Employment: Average Monthly Earnings
 EarnHirAS,ZWFA,sEarnHirAS,Hires All (Stable): Average Monthly Earnings
-EarnHirNS,ZWFH,sEarnHireNS,Hires New (Stable): Average Monthly Earnings
+EarnHirNS,ZWFH,sEarnHirNS,Hires New (Stable): Average Monthly Earnings
 EarnSepS,ZWFS,sEarnSepS,Separations (Stable): Average Monthly Earnings
 Payroll,W1,sPayroll,Total Quarterly Payroll: Sum

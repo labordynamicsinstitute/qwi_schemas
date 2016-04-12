@@ -18,7 +18,7 @@ st_SepS,st_FS,Standard error of Separations (Stable): Counts (Flow out of Full-Q
 st_SepSnx,st_FSnx,Standard error of Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 st_TurnOvrS,st_FT,Standard error of Turnover (Stable)
 st_FrmJbGn,st_JC,Standard error of Firm Job Gains: Counts (Job Creation)
-st_FrmJobLs,st_JD,Standard error of Firm Job Loss: Counts (Job Destruction)
+st_FrmJbLs,st_JD,Standard error of Firm Job Loss: Counts (Job Destruction)
 st_FrmJbC,st_JF,Standard error of Firm Job Change: Net Change
 st_HirAEndRepl,st_EI,Standard error of Replacement Hires
 st_HirAEndReplr,st_EIR,Standard error of Replacement Hiring Rate
@@ -28,7 +28,7 @@ st_FrmJbCS,st_FJF,Standard error of Job Change (Stable): Net Change
 st_EarnS,st_ZW3,Standard error of Full Quarter Employment (Stable): Average Monthly Earnings
 st_EarnBeg,st_ZW1,Standard error of Beginning-of-Quarter Employment: Average Monthly Earnings
 st_EarnHirAS,st_ZWFA,Standard error of Hires All (Stable): Average Monthly Earnings
-st_EarnHireNS,st_ZWFH,Standard error of Hires New (Stable): Average Monthly Earnings
+st_EarnHirNS,st_ZWFH,Standard error of Hires New (Stable): Average Monthly Earnings
 st_EarnSepS,st_ZWFS,Standard error of Separations (Stable): Average Monthly Earnings
 st_Payroll,st_W1,Standard error of Total Quarterly Payroll: Sum
 vt_Emp,vt_B,Total variation of Beginning-of-Quarter Employment: Counts
