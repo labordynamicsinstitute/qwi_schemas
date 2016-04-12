@@ -1,6 +1,7 @@
 geo_level,label
+B,"Metropolitan/Micropolitan (complete)"
 C,"Counties"
-M,"Metropolitan/Micropolitan"
+M,"Metropolitan/Micropolitan (state part)"
 N,"National (50 States + DC)"
 S,"States"
 W,"Workforce Investment Areas"
