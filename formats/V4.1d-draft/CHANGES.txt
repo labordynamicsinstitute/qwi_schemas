@@ -23,6 +23,8 @@
 - 2016-04-12: Added additional agg_level values
 - 2016-04-12: Clarified labels of j2jod identifiers
 - 2016-04-12: Renamed label_geography_all as label_geography
+- 2016-04-12: Added a column geo_level to all label_geography_* files
+
 
 === Version 4.1d-draft from 4.0.1
 - added J2J, National QWI spec
@@ -32,4 +34,4 @@
 - added naming convention for additional files
 - added agg_level variable
 - added additional geo_level for CBSA (complete)
--
+- added SHP files and description thereof

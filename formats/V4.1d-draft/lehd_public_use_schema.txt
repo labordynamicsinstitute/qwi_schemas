@@ -887,6 +887,7 @@ flag label
     * 2016-04-12: Added additional agg_level values
     * 2016-04-12: Clarified labels of j2jod identifiers
     * 2016-04-12: Renamed label_geography_all as label_geography
+    * 2016-04-12: Added a column geo_level to all label_geography_* files
 **** 7.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -894,7 +895,8 @@ flag label
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-    * added additional geo_level for CBSA (complete) -
-This revision: Wed Apr 13 16:38:21 EDT 2016
+    * added additional geo_level for CBSA (complete)
+    * added SHP files and description thereof
+This revision: Wed Apr 13 16:59:03 EDT 2016
 ===============================================================================
-Last updated 2016-04-13 16:38:21 EDT
+Last updated 2016-04-13 16:59:03 EDT
