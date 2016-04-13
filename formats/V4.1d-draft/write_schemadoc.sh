@@ -175,15 +175,15 @@ include::variables_qwi.csv[]
 <<<
 
 ==== National QWI and state-level QWI rates (QWIPUR) ====
+Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+
 
 ( link:variables_qwir.csv[variables_qwir.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
 |===================================================
 include::variables_qwir.csv[]
 |===================================================
 
-where the column *Base* indicates the denominator used to compute the rate,
-with *AvgEmp = (Emp + EmpEnd)/2* and *AvgEmpS = (EmpSpv + EmpS)/2*.
 
 <<<
 
@@ -197,12 +197,15 @@ include::variables_j2j.csv[]
 
 ==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
+
+Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+
+
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
 
-where the column *Base* indicates the denominator used to compute the rate.
 
 <<<
 
@@ -223,15 +226,15 @@ for arg in   $(ls variables_*v.csv)
 do
 	tmpfile=tmp_$arg
 	head -4 $arg  > $tmpfile
-	echo "...,," >> $tmpfile
+	echo "...,,," >> $tmpfile
 	grep "vt_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
+	echo "...,,," >> $tmpfile
 	grep "vb_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
+	echo "...,,," >> $tmpfile
 	grep "vw_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
+	echo "...,,," >> $tmpfile
 	grep "df_" $arg | head -3 >> $tmpfile
-	echo "...,," >> $tmpfile
+	echo "...,,," >> $tmpfile
 	grep "mr_" $arg | head -3 >> $tmpfile
 done
 
@@ -300,7 +303,7 @@ of variability measures are printed, but the complete list is available in the l
 ==== National QWI and state-level QWI ====
 
 ( link:variables_qwiv.csv[variables_qwiv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwiv.csv[]
 |===================================================
@@ -309,7 +312,7 @@ include::tmp_variables_qwiv.csv[]
 ==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwirv.csv[]
 |===================================================
@@ -427,16 +430,16 @@ done
 
 	# construct the sample fips file
 	head -8 $nsfile > tmp.csv
-	echo "...," >> tmp.csv
+	echo "...,," >> tmp.csv
 	head -50 $nsfile | tail -8  >> tmp.csv
 
 	# construct the composite file from separate files
-	head -1 label_geography_us.csv > label_geography_all.csv
-	for arg in $(ls label_geography_??.csv)
+	head -1 label_geography_us.csv > label_geography.csv
+	for arg in $(ls label_geography_*.csv)
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done
-	cat tmp3.csv | sort -n -k 1 -t , >> label_geography_all.csv
+	cat tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
 	rm tmp3.csv
 
   echo "=== $name ===
@@ -447,12 +450,15 @@ for arg in   $(ls label_geo_level*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
   echo "[[$name]]
-==== Geographic levels
+==== [[geolevel]] Geographic levels
+Geography labels are provided in separate files by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
+The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2015Q3 release.
+
 
 
 ( link:${arg}[] )
 
-[width=\"40%\",format=\"csv\",cols=\"^1,<3\",options=\"header\"]
+[width=\"80%\",format=\"csv\",cols=\"^1,<3,<8,<8\",options=\"header\"]
 |===================================================
 include::$arg[]
 |===================================================
@@ -460,36 +466,23 @@ include::$arg[]
 done
 
 echo "
-Geography labels are provided in separate files by state. Note that cross-state CBSA will have
-state-specific parts, and thus will appear in multiple files.
-A separate link:$nsfile[$nsfile] contains values and labels
-for all entities of geo_level 'n' or 's', and is a summary of separately available files.
 
 ==== National and state-level values ====
 ( link:$nsfile[] )
 
-[width=\"40%\",format=\"csv\",cols=\"^1,<3\",options=\"header\"]
+The file link:$nsfile[$nsfile] contains values and labels
+for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separately available files.
+
+[width=\"40%\",format=\"csv\",cols=\"^1,<3,^1\",options=\"header\"]
 |===================================================
 include::tmp.csv[]
 |===================================================
 
 ==== Detailed state and substate level values
 
-For a full listing of all valid geography codes (except for WIA codes), see http://www.census.gov/geo/maps-data/data/tiger.html.
-Note about geography codes: Four types of geography codes are represented with this field. Each geography
-has its own code structure.
+Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
 
-- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code. 'us' stands for national scope.
-- County is the 5-digit FIPS code.
-- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
-** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
-** In J2J, tabulations are based on the complete metropolitan/micropolitan area.
-- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
 
-The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2014Q3 release.
-
-For convenience, a composite file containing all geocodes is available as
-link:label_geography_all.csv[].
 
 ">> $asciifile
 
@@ -503,9 +496,14 @@ link:label_geography_all.csv[].
 echo "
 [format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
 |===================================================
-State,Format file" >> $asciifile
-
-  for arg in label_geography_us.csv $(ls label_geography_??.csv|grep -v geography_us)
+Scope,Format file" >> $asciifile
+	for arg in label_geography_us.csv label_geography_cbsa.csv
+	do
+	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+	echo "$state,link:${arg}[]" >> $asciifile
+	done
+  echo "*States*," >> $asciifile
+  for arg in  $(ls label_geography_??.csv|grep -v geography_us)
   do
   	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile
@@ -519,11 +517,11 @@ nsfile=label_agg_level.csv
 nsfileshort=tmp_label_agg_level.csv
 
 head -8 $nsfile > $nsfileshort
-echo "...,,,,,,,,,," >> $nsfileshort
+echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 head -14 $nsfile | tail -3 >> $nsfileshort
-echo "...,,,,,,,,,," >> $nsfileshort
-head -29 $nsfile | tail -3 >> $nsfileshort
-echo "...,,,,,,,,,," >> $nsfileshort
+echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
+head -31 $nsfile | tail -3 >> $nsfileshort
+echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 
 echo "
 <<<
@@ -535,21 +533,18 @@ Measures within the J2J and QWI data products are tabulated on many different di
 *agg_level* is currently  reported only for  J2J data products.
 
 
-The following variables are included in the link:$nsfile[agg_level.csv]   file:
+The following variables are included in the link:$nsfile[label_agg_level.csv]   file:
 
-- agg_level - index representing level of aggregation reported on a given record.
-- worker_char - demographic (worker) characteristics reported on record.
-- firm_char - firm characteristics reported on record. In origin-destination  tabulations, these will be the characteristics of the destination firm.
-- firm_orig_char - characteristics of origin firm reported on record (O-D tabulations, only)
-- j2j - Flag: Aggregation level available on J2J counts tables
-- j2jr - Flag: Aggregation level available on J2J rates tables
-- j2jod - Flag: Aggregation level available on J2J O-D  tables.
-- qwi - Flag: Aggregation level available on QWI (placeholder for future integration)
+[width=\"60%\",format=\"csv\",cols=\"<2,<5\",options=\"header\"]
+|===================================================
+include::variables_agg_level.csv[]
+|===================================================
+
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
 
-- <<geo_level,geo_level>> - geographic level of table, as per 2.13.1.
-- <<ind_level,ind_level>> - industry level of table, as per 2.12.1.
+- <<geolevel,geo_level>> - geographic level of table
+- <<ind_level,ind_level>> - industry level of table
 - by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
 
 These flags will be expanded to include origin characteristics in a later release. A shortened representation of the file is provided below, the complete file is available in the link above.
@@ -605,4 +600,4 @@ a2x -f pdf -a icons -a toc -a numbered $asciifile
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
 echo "Removing tmp files"
-rm tmp*
+#rm tmp*

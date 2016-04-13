@@ -1,16 +1,14 @@
 
-****** LEHD Public Use Data Schema v4.1c-draft ******
+****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-25 August 2015
+<ces.qwi.feedback@census.gov>
+13 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] This specification is draft. Feedback is welcome. Please write us
+            at ces.qwi.feedback@census.gov.
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
 are available for download with the following data schema. These data are
@@ -82,11 +80,12 @@ periodicity Char(1) Periodicity of report
     Variable     Type  label
   periodicity  Char(1) Periodicity of report
    seasonadj   Char(1) Seasonal Adjustment Indicator
-   geo_level   Char(1) Group: Geographic level of aggregation
-   geography   Char(8) Group: Geography code
-   ind_level   Char(1) Group: Industry level of aggregation
-    industry   Char(5) Group: Industry code
-   ownercode   Char(3) Group: Ownership group code
+   geo_level   Char(1) Group: Geographic level of aggregation of destination
+                       job
+   geography   Char(8) Group: Geography code of destination job
+   ind_level   Char(1) Group: Industry level of aggregation of destination job
+    industry   Char(5) Group: Industry code of destination job
+   ownercode   Char(3) Group: Ownership group code of destination job
         sex    Char(1) Group: Gender code
       agegrp   Char(3) Group: Age group code (WIA)
        race    Char(2) Group: race
@@ -134,103 +133,117 @@ verbose description of the indicator.
 *** 1.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
 Indicator Variable Alternate name  Status Flag  Indicator Name
-           Emp              B           sEmp    Beginning-of-Quarter
-                                                Employment: Counts
-         EmpEnd             E         sEmpEnd   End-of-Quarter Employment:
-                                                Counts
+           Emp              B           sEmp    Beginning-of-Quarter Employment
+         EmpEnd             E         sEmpEnd   End-of-Quarter Employment
           EmpS              F           sEmpS   Full-Quarter Employment
-                                                (Stable): Counts
+                                                (Stable)
          EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment in the
-                                                Previous Quarter: Counts
-       EmpTotal             M        sEmpTotal  Employment - Reference Quarter:
-                                                Counts
-          HirA              A           sHirA   Hires All: Counts (Accessions)
-          HirN              H           sHirN   Hires New: Counts
-          HirR              R           sHirR   Hires Recalls: Counts
-           Sep              S           sSep    Separations: Counts
+                                                Previous Quarter
+       EmpTotal             M        sEmpTotal  Employment - Reference Quarter
+          HirA              A           sHirA   Hires (All Accessions)
+          HirN              H           sHirN   New Hires
+          HirR              R           sHirR   Recall Hires
+           Sep              S           sSep    Separations (All)
         HirAEnd             CA       sHirAEnd   End-of-Quarter Hires
        HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring Rate
          SepBeg             CS        sSepBeg   Beginning-of-Quarter
                                                 Separations
         SepBegR            CSR       sSepBegR   Beginning-of-Quarter Separation
                                                 Rate
-         HirAs              FA         sHirAs   Hires All (Stable): Counts
-                                                (Flows into Full-Quarter
+         HirAS              FA         sHirAS   Hires (All Hires into Full-
+                                                Quarter Employment)
+         HirNS              FH         sHirNS   New Hires (New Hires into Full-
+                                                Quarter Employment)
+          SepS              FS          sSepS   Separations (Flows out of Full-
+                                                Quarter Employment)
+         SepSnx           FSnx        sSepSnx   Separations in the Next Quarter
+                                                (Flows out of Full-Quarter
                                                 Employment)
-         HirNs              FH         sHirNs   Hires New (Stable): Counts (New
-                                                Hires to Full-Quarter Status)
-          SepS              FS          sSepS   Separations (Stable): Counts
-                                                (Flow out of Full-Quarter
-                                                Employment)
-         SepSnx           FSnx        sSepSnx   Separations (Stable): Next
-                                                Quarter: Counts (Flow out of
-                                                Full-Quarter Employment)
        TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
-        FrmJbGn             JC       sFrmJbGn   Firm Job Gains: Counts (Job
-                                                Creation)
-        FrmJbLs             JD       sFrmJobLs  Firm Job Loss: Counts (Job
-                                                Destruction)
-         FrmJbC             JF        sFrmJbC   Firm Job Change: Net Change
+        FrmJbGn             JC       sFrmJbGn   Firm Job Gains (Job Creation)
+        FrmJbLs             JD       sFrmJbLs   Firm Job Loss (Job Destruction)
+         FrmJbC             JF        sFrmJbC   Firm Job Change (Net Change)
      HirAEndRepl            EI    sHirAEndRepl  Replacement Hires
     HirAEndReplr           EIR    sHirAEndReplr Replacement Hiring Rate
-       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable): Counts
-       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable): Counts
-        FrmJbCS            FJF       sFrmJbCS   Job Change (Stable): Net Change
-         EarnS             ZW3         sEarnS   Full Quarter Employment
-                                                (Stable): Average Monthly
-                                                Earnings
-        EarnBeg            ZW1       sEarnBeg   Beginning-of-Quarter
-                                                Employment: Average Monthly
-                                                Earnings
-      EarnHirAS           ZWFA      sEarnHirAS  Hires All (Stable): Average
-                                                Monthly Earnings
-      EarnHirNS           ZWFH     sEarnHireNS  Hires New (Stable): Average
-                                                Monthly Earnings
-       EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
-                                                Monthly Earnings
-        Payroll             W1       sPayroll   Total Quarterly Payroll: Sum
-*** 1.3.2. National QWI and state-level QWI rates (QWIPUR) ***
-( variables_qwir.csv )
-Indicator Variable Alternate name  Status Flag  Indicator Name          Base
-         HirAR              AR         sHirAR   Hiring Rate             AvgEmp
-                                                (Accessions)
-         HirNR              HR         sHirNR   New Hiring Rate         AvgEmp
-         HirRR              RR         sHirRR   Recall Rate             AvgEmp
-          SepR              SR          sSepR   Separation Rate         AvgEmp
-       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring   AvgEmp
-                                                Rate
-        SepBegR            CSR       sSepBegR   Beginning-of-Quarter    AvgEmp
-                                                Separation Rate
-         HirAsR            FAR        sHirAsR   Stable Hiring Rate      AvgEmpS
-                                                (Flows into Full-
+       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable)
+       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable)
+        FrmJbCS            FJF       sFrmJbCS   Firm Job Change (Stable; Net
+                                                Change)
+         EarnS             ZW3         sEarnS   Average Monthly Earnings (Full-
                                                 Quarter Employment)
-         HirNsR            FHR        sHirNsR   Stable New Hiring Rate  AvgEmpS
-                                                (New Hires to Full-
-                                                Quarter Status)
-         SepSR             FSR         sSepSR   Stable Separation Rate  AvgEmpS
-                                                (Flow out of Full-
-                                                Quarter Employment)
-        SepSnxR          FSnxR       sSepSnxR   Stable Separation Rate: AvgEmpS
-                                                Next Quarter (Flow out
-                                                of Full-Quarter
+        EarnBeg            ZW1       sEarnBeg   Average Monthly Earnings
+                                                (Beginning-of-Quarter
                                                 Employment)
-      TurnOvrSR            FTR      sTurnOvrSR  Turnover Rate (Stable)  2*EmpS
-       FrmJbGnR            JCR       sFrmJbGnR  Firm Job Gain Rate (Job AvgEmp
-                                                Creation Rate)
-       FrmJbLsR            JDR       sFrmJbLsR  Firm Job Loss Rate (Job AvgEmp
-                                                Destruction Rate)
-        FrmJbCR            JFR       sFrmJbCR   Firm Job Change Rate:   AvgEmp
-                                                Net Change Rate
-    HirAEndReplR           EIR    sHirAEndReplR Replacement Hiring Rate AvgEmp
-      FrmJbGnSR           FJCR      sFrmJbGnSR  Firm Job Gain Rate      AvgEmpS
-                                                (Stable)
-      FrmJbLsSR           FJDR      sFrmJbLsSR  Firm Job Loss Rate      AvgEmpS
-                                                (Stable)
-       FrmJbCSR           FJFR       sFrmJbCSR  Job Change Rate         AvgEmpS
-                                                (Stable): Net Change
-                                                Rate
-where the column Base indicates the denominator used to compute the rate, with
-AvgEmp = (Emp + EmpEnd)/2 and AvgEmpS = (EmpSpv + EmpS)/2.
+      EarnHirAS           ZWFA      sEarnHirAS  Average Monthly Earnings (All
+                                                Hires into Full-Quarter
+                                                Employment)
+      EarnHirNS           ZWFH      sEarnHirNS  Average Monthly Earnings (New
+                                                Hires into Full-Quarter
+                                                Employment)
+       EarnSepS           ZWFS       sEarnSepS  Average Monthly Earnings (Flows
+                                                out of Full-Quarter Employment)
+        Payroll             W1       sPayroll   Total Quarterly Payroll
+*** 1.3.2. National QWI and state-level QWI rates (QWIPUR) ***
+Rates are computed from published data, and are provided as a convenience. The
+column Base indicates the denominator used to compute the rate.
+( variables_qwir.csv )
+  Indicator  Alternate name  Status Flag  Indicator Name  Units Base
+   Variable
+     HirAR            AR         sHirAR   Hiring Rate     Rate  (Emp + EmpEnd)/
+                                          (All                  2
+                                          Accessions)
+     HirNR            HR         sHirNR   New Hiring Rate Rate  (Emp + EmpEnd)/
+                                                                2
+     HirRR            RR         sHirRR   Recall Rate     Rate  (Emp + EmpEnd)/
+                                                                2
+      SepR            SR          sSepR   Separation Rate Rate  (Emp + EmpEnd)/
+                                          (All                  2
+                                          Separations)
+   HirAEndR          CAR       sHirAEndR  End-of-Quarter  Rate  (Emp + EmpEnd)/
+                                          Hiring Rate           2
+   SepBegR           CSR       sSepBegR   Beginning-of-   Rate  (Emp + EmpEnd)/
+                                          Quarter               2
+                                          Separation Rate
+    HirAsR           FAR        sHirAsR   Hiring Rate     Rate  (EmpSpv +
+                                          (Flows into           EmpS)/2
+                                          Full-Quarter
+                                          Employment)
+    HirNsR           FHR        sHirNsR   New Hiring Rate Rate  (EmpSpv +
+                                          (New Hires to         EmpS)/2
+                                          Full-Quarter
+                                          Status)
+     SepSR           FSR         sSepSR   Separation Rate Rate  (EmpSpv +
+                                          (Flows out of         EmpS)/2
+                                          Full-Quarter
+                                          Employment)
+   SepSnxR         FSnxR       sSepSnxR   Separation Rate Rate  (EmpSpv +
+                                          in the Next           EmpS)/2
+                                          Quarter (Flow
+                                          out of Full-
+                                          Quarter
+                                          Employment)
+  TurnOvrSR          FTR      sTurnOvrSR  Turnover Rate   Rate  2*EmpS
+                                          (Stable)
+   FrmJbGnR          JCR       sFrmJbGnR  Firm Job Gain   Rate  (Emp + EmpEnd)/
+                                          Rate (Job             2
+                                          Creation Rate)
+   FrmJbLsR          JDR       sFrmJbLsR  Firm Job Loss   Rate  (Emp + EmpEnd)/
+                                          Rate (Job             2
+                                          Destruction
+                                          Rate)
+   FrmJbCR           JFR       sFrmJbCR   Firm Job Change Rate  (Emp + EmpEnd)/
+                                          Rate (Net             2
+                                          Change Rate)
+HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
+                                          Hiring Rate           2
+  FrmJbGnSR         FJCR      sFrmJbGnSR  Firm Job Gain   Rate  (EmpSpv +
+                                          Rate (Stable)         EmpS)/2
+  FrmJbLsSR         FJDR      sFrmJbLsSR  Firm Job Loss   Rate  (EmpSpv +
+                                          Rate (Stable)         EmpS)/2
+   FrmJbCSR         FJFR       sFrmJbCSR  Firm Job Change Rate  (EmpSpv +
+                                          Rate (Stable;         EmpS)/2
+                                          Net Change
+                                          Rate)
 *** 1.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
 Indicator Variable Alternate name Status Flag Indicator Name
@@ -267,6 +280,8 @@ Indicator Variable Alternate name Status Flag Indicator Name
                                               Counts
 *** 1.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
+Rates are computed from published data, and are provided as a convenience. The
+column Base indicates the denominator used to compute the rate.
 Indicator   Alternate name    Status Flag  Indicator Name     Base
  Variable
    MHireR   all_doma2_rate       sMHireR   Main Job           (MainB+MainE)/2
@@ -320,7 +335,6 @@ ENPersistR  en2_doms2_rate    sENPersistR  Main Job           (MainB+MainE)/2
                                            Full-qtr
                                            Nonemployment
                                            Spell - Rate
-where the column Base indicates the denominator used to compute the rate.
 *** 1.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate name Status Flag  Indicator Name
@@ -385,70 +399,74 @@ Indicators section. In the tables below, only a sample of variability measures
 are printed, but the complete list is available in the linked CSV schema files.
 *** 1.4.2. National QWI and state-level QWI ***
 ( variables_qwiv.csv )
-Variability measure Alternate name Variable name
-         st_Emp            st_B    Standard error of Beginning-of-Quarter
-                                   Employment: Counts
-       st_EmpEnd           st_E    Standard error of End-of-Quarter Employment:
-                                   Counts
-         st_EmpS           st_F    Standard error of Full-Quarter Employment
-                                   (Stable): Counts
+Variability measure Alternate name Variable name                          Units
+         st_Emp            st_B    Standard error of Beginning-of-Quarter Count
+                                   Employment
+       st_EmpEnd           st_E    Standard error of End-of-Quarter       Count
+                                   Employment
+         st_EmpS           st_F    Standard error of Full-Quarter         Count
+                                   Employment (Stable)
             …
-         vt_Emp            vt_B    Total variation of Beginning-of-Quarter
-                                   Employment: Counts
-       vt_EmpEnd           vt_E    Total variation of End-of-Quarter
-                                   Employment: Counts
-         vt_EmpS           vt_F    Total variation of Full-Quarter Employment
-                                   (Stable): Counts
+         vt_Emp            vt_B    Total variation of Beginning-of-       Count
+                                   Quarter Employment
+       vt_EmpEnd           vt_E    Total variation of End-of-Quarter      Count
+                                   Employment
+         vt_EmpS           vt_F    Total variation of Full-Quarter        Count
+                                   Employment (Stable)
             …
-         vb_Emp            vb_B    Between-implicate variability for Beginning-
-                                   of-Quarter Employment: Counts
-       vb_EmpEnd           vb_E    Between-implicate variability for End-of-
-                                   Quarter Employment: Counts
-         vb_EmpS           vb_F    Between-implicate variability for Full-
-                                   Quarter Employment (Stable): Counts
+         vb_Emp            vb_B    Between-implicate variability for      Count
+                                   Beginning-of-Quarter Employment
+       vb_EmpEnd           vb_E    Between-implicate variability for End- Count
+                                   of-Quarter Employment
+         vb_EmpS           vb_F    Between-implicate variability for      Count
+                                   Full-Quarter Employment (Stable)
             …
             …
-         df_Emp            df_B    Degrees of freedom for VT of Beginning-of-
-                                   Quarter Employment: Counts
-       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-Quarter
-                                   Employment: Counts
-         df_EmpS           df_F    Degrees of freedom for VT of Full-Quarter
-                                   Employment (Stable): Counts
+         df_Emp            df_B    Degrees of freedom for VT of           Count
+                                   Beginning-of-Quarter Employment
+       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-   Count
+                                   Quarter Employment
+         df_EmpS           df_F    Degrees of freedom for VT of Full-     Count
+                                   Quarter Employment (Stable)
             …
-         mr_Emp            mr_B    Missingness ratio for Beginning-of-Quarter
-                                   Employment: Counts
-       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter
-                                   Employment: Counts
-         mr_EmpS           mr_F    Missingness ratio for Full-Quarter
-                                   Employment (Stable): Counts
+         mr_Emp            mr_B    Missingness ratio for Beginning-of-    Count
+                                   Quarter Employment
+       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter   Count
+                                   Employment
+         mr_EmpS           mr_F    Missingness ratio for Full-Quarter     Count
+                                   Employment (Stable)
 *** 1.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
-Variability measure Alternate name Variable name
-        st_HirAR          st_AR    Standard error of Hiring Rate (Accessions)
-        st_HirNR          st_HR    Standard error of New Hiring Rate
-        st_HirRR          st_RR    Standard error of Recall Rate
+Variability measure Alternate name Variable name                          Units
+        st_HirAR          st_AR    Standard error of Hiring Rate (All     Rate
+                                   Accessions)
+        st_HirNR          st_HR    Standard error of New Hiring Rate      Rate
+        st_HirRR          st_RR    Standard error of Recall Rate          Rate
             …
-        vt_HirAR          vt_AR    Total variation of Hiring Rate (Accessions)
-        vt_HirNR          vt_HR    Total variation of New Hiring Rate
-        vt_HirRR          vt_RR    Total variation of Recall Rate
+        vt_HirAR          vt_AR    Total variation of Hiring Rate (All    Rate
+                                   Accessions)
+        vt_HirNR          vt_HR    Total variation of New Hiring Rate     Rate
+        vt_HirRR          vt_RR    Total variation of Recall Rate         Rate
             …
-        vb_HirAR          vb_AR    Between-implicate variability for Hiring
-                                   Rate (Accessions)
-        vb_HirNR          vb_HR    Between-implicate variability for New Hiring
+        vb_HirAR          vb_AR    Between-implicate variability for      Rate
+                                   Hiring Rate (All Accessions)
+        vb_HirNR          vb_HR    Between-implicate variability for New  Rate
+                                   Hiring Rate
+        vb_HirRR          vb_RR    Between-implicate variability for      Rate
+                                   Recall Rate
+            …
+            …
+        df_HirAR          df_AR    Degrees of freedom for VT of Hiring    Rate
+                                   Rate (All Accessions)
+        df_HirNR          df_HR    Degrees of freedom for VT of New       Rate
+                                   Hiring Rate
+        df_HirRR          df_RR    Degrees of freedom for VT of Recall    Rate
                                    Rate
-        vb_HirRR          vb_RR    Between-implicate variability for Recall
-                                   Rate
             …
-            …
-        df_HirAR          df_AR    Degrees of freedom for VT of Hiring Rate
-                                   (Accessions)
-        df_HirNR          df_HR    Degrees of freedom for VT of New Hiring Rate
-        df_HirRR          df_RR    Degrees of freedom for VT of Recall Rate
-            …
-        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate
-                                   (Accessions)
-        mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate
-        mr_HirRR          mr_RR    Missingness ratio for Recall Rate
+        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate (All Rate
+                                   Accessions)
+        mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate  Rate
+        mr_HirRR          mr_RR    Missingness ratio for Recall Rate      Rate
 *** 1.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 1.4.5. Job-to-job flow rates (J2JR) ***
@@ -579,110 +597,113 @@ industry label
    3113  Sugar and Confectionery Product Manufacturing
     …
 **** 2.13. Geography ****
-*** 2.13.1. Geographic levels ***
+2.13.1.  Geographic levels
+Geography labels are provided in separate files by scope. Each file
+label_geograpy_SCOPE.csv may contain one or more types of records as flagged by
+geo_level. For convenience, a composite file containing all geocodes is
+available as label_geography.csv. The 2014 vintage of Census TIGER geography is
+used for all tabulations as of the R2015Q3 release.
 ( label_geo_level.csv )
-geo_level label
-      C   Counties
-      M   Metropolitan/Micropolitan
-      N   National (50 States + DC)
-      S   States
-      W   Workforce Investment Areas
-Geography labels are provided in separate files by state. Note that cross-state
-CBSA will have state-specific parts, and thus will appear in multiple files. A
-separate label_fipsnum.csv contains values and labels for all entities of
-geo_level n or s, and is a summary of separately available files.
+geo_level label         description                                                                sourceurl
+      B   Metropolitan/ Identifies 5-digit CBSA code provided by the Census Bureau’s Geography   http://
+          Micropolitan  Division                                                                   www.census.gov/
+          (complete)                                                                               population/metro/
+      C   Counties      Identifies 5-digit FIPS code                                               https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/codes/
+                                                                                                   cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and
+          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division
+          (state part)
+      N   National (50  Custom code using 00 to denote national scope
+          States + DC)
+      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/
+                                                                                                   ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
+          Investment    State Partners
+          Areas
 *** 2.13.2. National and state-level values ***
 ( label_fipsnum.csv )
-geography label
-     00   National (50 States + DC)
-     01   Alabama
-     02   Alaska
-     04   Arizona
-     05   Arkansas
-     06   California
-     08   Colorado
+The file label_fipsnum.csv contains values and labels for all entities of
+geo_level N or S, and is a summary of separately available files.
+geography label                     geo_level
+      0   National (50 States + DC)       N
+      1   Alabama                         S
+      2   Alaska                          S
+      4   Arizona                         S
+      5   Arkansas                        S
+      6   California                      S
+      8   Colorado                        S
      …
-     45   South Carolina
-     46   South Dakota
-     47   Tennessee
-     48   Texas
-     49   Utah
-     50   Vermont
-     51   Virginia
-     53   Washington
+     45   South Carolina                  S
+     46   South Dakota                    S
+     47   Tennessee                       S
+     48   Texas                           S
+     49   Utah                            S
+     50   Vermont                         S
+     51   Virginia                        S
+     53   Washington                      S
 *** 2.13.3. Detailed state and substate level values ***
-For a full listing of all valid geography codes (except for WIA codes), see
-http://www.census.gov/geo/maps-data/data/tiger.html. Note about geography
-codes: Four types of geography codes are represented with this field. Each
-geography has its own code structure.
-    * State is the 2-digit FIPS code. us stands for national scope.
-    * County is the 5-digit FIPS code.
-    * Metropolitan/Micropolitan codes are constructed from the 2-digit state
-      FIPS code and the 5-digit CBSA code provided by the Census Bureau’s
-      Geography Division.
-          o In the QWI, the metropolitan/micropolitan areas are the state parts
-            of the full CBSA areas.
-          o In J2J, tabulations are based on the complete metropolitan/
-            micropolitan area.
-    * The WIA code is constructed from the 2-digit state FIPS code and the 6-
-      digit WIA identifier provided by LED State Partners.
-The 2014 vintage of Census TIGER geography is used for all tabulations as of
-the R2014Q3 release.
-For convenience, a composite file containing all geocodes is available as
-label_geography_all.csv.
-State         Format file
-  US  label_geography_us.csv
-  AK  label_geography_ak.csv
-  AL  label_geography_al.csv
-  AR  label_geography_ar.csv
-  AZ  label_geography_az.csv
-  CA  label_geography_ca.csv
-  CO  label_geography_co.csv
-  CT  label_geography_ct.csv
-  DC  label_geography_dc.csv
-  DE  label_geography_de.csv
-  FL  label_geography_fl.csv
-  GA  label_geography_ga.csv
-  HI  label_geography_hi.csv
-  IA  label_geography_ia.csv
-  ID  label_geography_id.csv
-  IL  label_geography_il.csv
-  IN  label_geography_in.csv
-  KS  label_geography_ks.csv
-  KY  label_geography_ky.csv
-  LA  label_geography_la.csv
-  MA  label_geography_ma.csv
-  MD  label_geography_md.csv
-  ME  label_geography_me.csv
-  MI  label_geography_mi.csv
-  MN  label_geography_mn.csv
-  MO  label_geography_mo.csv
-  MS  label_geography_ms.csv
-  MT  label_geography_mt.csv
-  NC  label_geography_nc.csv
-  ND  label_geography_nd.csv
-  NE  label_geography_ne.csv
-  NH  label_geography_nh.csv
-  NJ  label_geography_nj.csv
-  NM  label_geography_nm.csv
-  NV  label_geography_nv.csv
-  NY  label_geography_ny.csv
-  OH  label_geography_oh.csv
-  OK  label_geography_ok.csv
-  OR  label_geography_or.csv
-  PA  label_geography_pa.csv
-  RI  label_geography_ri.csv
-  SC  label_geography_sc.csv
-  SD  label_geography_sd.csv
-  TN  label_geography_tn.csv
-  TX  label_geography_tx.csv
-  UT  label_geography_ut.csv
-  VA  label_geography_va.csv
-  VT  label_geography_vt.csv
-  WA  label_geography_wa.csv
-  WI  label_geography_wi.csv
-  WV  label_geography_wv.csv
-  WY  label_geography_wy.csv
+Note: cross-state CBSA, in records of type geo_level = M, are present on files
+of type label_geography_XX.csv. A particular cross-state CBSA will appear on
+multiple files.
+Scope           Format file
+   US   label_geography_us.csv
+ CBSA  label_geography_cbsa.csv
+States
+   AK   label_geography_ak.csv
+   AL   label_geography_al.csv
+   AR   label_geography_ar.csv
+   AZ   label_geography_az.csv
+   CA   label_geography_ca.csv
+   CO   label_geography_co.csv
+   CT   label_geography_ct.csv
+   DC   label_geography_dc.csv
+   DE   label_geography_de.csv
+   FL   label_geography_fl.csv
+   GA   label_geography_ga.csv
+   HI   label_geography_hi.csv
+   IA   label_geography_ia.csv
+   ID   label_geography_id.csv
+   IL   label_geography_il.csv
+   IN   label_geography_in.csv
+   KS   label_geography_ks.csv
+   KY   label_geography_ky.csv
+   LA   label_geography_la.csv
+   MA   label_geography_ma.csv
+   MD   label_geography_md.csv
+   ME   label_geography_me.csv
+   MI   label_geography_mi.csv
+   MN   label_geography_mn.csv
+   MO   label_geography_mo.csv
+   MS   label_geography_ms.csv
+   MT   label_geography_mt.csv
+   NC   label_geography_nc.csv
+   ND   label_geography_nd.csv
+   NE   label_geography_ne.csv
+   NH   label_geography_nh.csv
+   NJ   label_geography_nj.csv
+   NM   label_geography_nm.csv
+   NV   label_geography_nv.csv
+   NY   label_geography_ny.csv
+   OH   label_geography_oh.csv
+   OK   label_geography_ok.csv
+   OR   label_geography_or.csv
+   PA   label_geography_pa.csv
+   RI   label_geography_ri.csv
+   SC   label_geography_sc.csv
+   SD   label_geography_sd.csv
+   TN   label_geography_tn.csv
+   TX   label_geography_tx.csv
+   UT   label_geography_ut.csv
+   VA   label_geography_va.csv
+   VT   label_geography_vt.csv
+   WA   label_geography_wa.csv
+   WI   label_geography_wi.csv
+   WV   label_geography_wv.csv
+   WY   label_geography_wy.csv
 **** 2.14. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
@@ -695,24 +716,23 @@ grand total (all industries, workers, etc.), and progresses through different
 combinations of characteristics. There are gaps in the progression to leave
 space for aggregation levels that may be included in future data releases.
 agg_level is currently reported only for J2J data products.
-The following variables are included in the agg_level.csv file:
-    * agg_level - index representing level of aggregation reported on a given
-      record.
-    * worker_char - demographic (worker) characteristics reported on record.
-    * firm_char - firm characteristics reported on record. In origin-
-      destination tabulations, these will be the characteristics of the
-      destination firm.
-    * firm_orig_char - characteristics of origin firm reported on record (O-
-      D tabulations, only)
-    * j2j - Flag: Aggregation level available on J2J counts tables
-    * j2jr - Flag: Aggregation level available on J2J rates tables
-    * j2jod - Flag: Aggregation level available on J2J O-D tables.
-    * qwi - Flag: Aggregation level available on QWI (placeholder for future
-      integration)
+The following variables are included in the label_agg_level.csv file:
+Variable       Description
+agg_level      index representing level of aggregation reported on a given
+               record
+worker_char    demographic (worker) characteristics reported on record
+firm_char      firm characteristics reported on record. These will be the
+               characteristics of the destination firm in O-D tabulations
+firm_orig_char characteristics of origin firm reported on record (O-
+               D tabulations only)
+j2j            Flag: Aggregation level available on J2J counts tables
+j2jr           Flag: Aggregation level available on J2J rates tables
+j2jod          Flag: Aggregation level available on J2J O-D tables
+qwi            Flag: Aggregation level available on QWI
 The characteristics available on an aggregation level are repeated using a
 series of flags following the standard schema:
-    * geo_level - geographic level of table, as per 2.13.1.
-    * ind_level - industry level of table, as per 2.12.1.
+    * geo_level - geographic level of table
+    * ind_level - industry level of table
     * by_ variables - flags indicating other dimensions reported, including
       ownership, demographics, firm age and size.
 These flags will be expanded to include origin characteristics in a later
@@ -730,15 +750,16 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
         …
       129             Firm Size                   1   1    1     0   N
       257             NAICS Sector                1   1    1     0   N
-     1025             State                       1   1    1     0   S
+      513             NAICS                       0   0    0     0   N
+                      Subsector
         …
+     3329             NAICS Sector                1   1    1     0   B
+                      * CBSA-state
+                      part
+    12289                          Origin [Firm   0   0    1     0   N
+                                   Age]
     12353             Destination  Origin [Firm   0   0    0     0   N
                       [Firm Age]   Age]
-    13313             Destination  Origin [Firm   0   0    1     0   S
-                      [State]      Age]
-    13377             Destination  Origin [Firm   0   0    1     0   S
-                      [Firm Age *  Age]
-                      State]
         …
 3. Status flags
 ( label_flags.csv )
@@ -763,7 +784,8 @@ flag label
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
 4.  Changes
-**** 4.1. This version from previous releases of this document ****
+**** 4.1. This version from previous releases of V4.1 draft schema documents
+****
     * 2015-02-25: corrected flag values
     * 2015-02-25: documents are now identified by date, not revision
     * 2015-03-10: Correction of the TIGER vintage that is used for geographic
@@ -789,13 +811,22 @@ flag label
       are not on the current beta J2JOD files.
     * 2015-08-25: Added a extension component [ext] to the file naming
       convention to reflect availability of Excel files (and PDF files)
-**** 4.2. Version 4.1c-draft from 4.0 ****
+    * 2016-03-16: Removed extraneous empty lines
+    * 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-12: Incorporated all state-level geography from 4.0.5
+    * 2016-04-12: Added additional geo_level for CBSA (complete)
+    * 2016-04-12: Added additional agg_level values
+    * 2016-04-12: Clarified labels of j2jod identifiers
+    * 2016-04-12: Renamed label_geography_all as label_geography
+**** 4.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
-This revision: Tue Aug 25 23:26:40 EDT 2015
+    * added additional geo_level for CBSA (complete) -
+This revision: Wed Apr 13 08:20:39 EDT 2016
 ===============================================================================
-Last updated 2015-08-25 23:26:40 EDT
+Last updated 2016-04-13 08:20:39 EDT
