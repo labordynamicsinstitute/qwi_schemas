@@ -8,6 +8,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and status variables)
 - 2016-04-11: Fixed error in CBSA names (failure to actually update to 2014 Geovintage)
 - 2016-04-11: Corrected WIB naming change in Florida and Ohio
+- 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status variables)
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
