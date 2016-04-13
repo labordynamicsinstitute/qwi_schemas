@@ -29,7 +29,7 @@ Shapefiles are used to provide mapping functionality in QWI Explorer and
 Job-to-Job Explorer. They are created by transforming input shapefiles
 sourced from TIGER/Line.
 
-SOURCES
+Sources
 =======
 
 Files are derived from  [TIGER/Line 2015
@@ -47,7 +47,7 @@ shapefiles](https://www.census.gov/geo/maps-data/data/tiger-line.html):
 -   [tl\_2015\_(ST)\_cousub](http://www2.census.gov/geo/tiger/TIGER2015/COUSUB/)
     (for creation of WIA/WIB shapefile)
 
-TRANSFORMATIONS
+Transformations
 ===============
 
 The following major transformations are applied to the input files:
@@ -71,7 +71,7 @@ The following major transformations are applied to the input files:
 -   Each shapefile’s attribute table has been updated to conform to the
     standard LEHD output format, defined in [Format](#format) section
 
-OUTPUTS
+Outputs
 =======
 
 Output shapefiles – grouped by paired products – are listed below. Each
@@ -135,7 +135,7 @@ FORMAT
 </tbody>
 </table>
 
-VALUES
+Values
 ------
 
 ### STUSPS
@@ -233,4 +233,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Wed Apr 13 16:48:15 EDT 2016
+This revision: Wed Apr 13 16:53:08 EDT 2016

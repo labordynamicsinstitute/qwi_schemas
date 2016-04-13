@@ -133,7 +133,7 @@ http://ledextract.ces.census.gov/[LED Extraction Tool].
 Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer.
 They are created by transforming input shapefiles sourced from TIGER/Line.
 
-SOURCES
+Sources
 -------
 Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2015 shapefiles]:
 
@@ -143,7 +143,7 @@ Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.h
 * http://www2.census.gov/geo/tiger/TIGER2015/PLACE/[tl_2015_(ST)_place]  (for creation of WIA/WIB shapefile)
 * http://www2.census.gov/geo/tiger/TIGER2015/COUSUB/[tl_2015_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
-TRANSFORMATIONS
+Transformations
 ---------------
 The following major transformations are applied to the input files:
 
@@ -154,7 +154,7 @@ The following major transformations are applied to the input files:
 * Features from Guam, American Samoa, and the Northern Mariana Islands have been removed because they are not used in current LEHD tabulations.
 * Each shapefile's attribute table has been updated to conform to the standard LEHD output format, defined in <<format,Format>> section
 
-OUTPUTS
+Outputs
 -------
 Output shapefiles – grouped by paired products – are listed below. Each shapefile includes specific notes on its preparation.
 
@@ -166,7 +166,7 @@ Output shapefiles – grouped by paired products – are listed below. Each shap
 include::variables_shp.csv[]
 |===================================================
 
-=== VALUES
+=== Values
 ==== STUSPS
 ( link:label_stusps.csv[] )
 
