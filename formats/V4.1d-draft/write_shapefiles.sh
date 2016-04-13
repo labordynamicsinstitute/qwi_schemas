@@ -130,8 +130,8 @@ Comma-Separated Value (CSV) files through the LEHD website's Data page
 at http://lehd.ces.census.gov/data/ as well as through the
 http://ledextract.ces.census.gov/[LED Extraction Tool].
 
-Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer.
-They are created by transforming input shapefiles sourced from TIGER/Line.
+Shapefiles are used to provide mapping functionality in http://qwiexplorer.ces.census.gov/[QWI Explorer] and Job-to-Job Explorer (coming soon).
+They are created by transforming input shapefiles sourced from https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line].
 
 Sources
 -------

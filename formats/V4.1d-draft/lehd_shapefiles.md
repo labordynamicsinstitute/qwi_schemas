@@ -25,9 +25,11 @@ files through the LEHD website’s Data page at
 <http://lehd.ces.census.gov/data/> as well as through the [LED
 Extraction Tool](http://ledextract.ces.census.gov/).
 
-Shapefiles are used to provide mapping functionality in QWI Explorer and
-Job-to-Job Explorer. They are created by transforming input shapefiles
-sourced from TIGER/Line.
+Shapefiles are used to provide mapping functionality in [QWI
+Explorer](http://qwiexplorer.ces.census.gov/) and Job-to-Job Explorer
+(coming soon). They are created by transforming input shapefiles sourced
+from
+[TIGER/Line](https://www.census.gov/geo/maps-data/data/tiger-line.html).
 
 Sources
 =======
@@ -233,4 +235,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Wed Apr 13 16:53:08 EDT 2016
+This revision: Wed Apr 13 16:54:41 EDT 2016
