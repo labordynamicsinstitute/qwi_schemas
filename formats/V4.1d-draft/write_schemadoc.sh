@@ -25,7 +25,10 @@ case $version in
 	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	official|draft)
+	draft)
+	author=lars.vilhuber@census.gov
+	;;
+	official)
 	author=ces.qwi.feedback@census.gov
 	;;
 esac
@@ -40,7 +43,7 @@ echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
-
+:ext-relative: {outfilesuffix}
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
 " >> $asciifile
@@ -80,16 +83,24 @@ Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schem
 esac
 
 echo "
-
+Purpose
+-------
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ .
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
+with header variable definitions.  Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
+File naming
+-----------
+The naming conventions of the data files is documented in link:lehd_csv_naming.html[].
+
+Replaces
+-------
+This version replaces v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema, but some changes may have been applied to auxiliary data.
 
 Basic Schema
 ------------
@@ -407,8 +418,9 @@ echo "
 ( link:${arg}[] )
 
 Only a small subset of available values shown.
-The 2007 NAICS (North American Industry Classification System) is used for all years.
-For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
+For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
@@ -451,9 +463,10 @@ do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
-Geography labels are provided in separate files by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
-The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2015Q3 release.
+Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
+The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.
 
+Shapefiles are described in a link:lehd_shapefiles[separate document].
 
 
 ( link:${arg}[] )
@@ -593,11 +606,11 @@ This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels $asciifile
+asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfilesuffix=.html $asciifile
 [[ -f $(basename $asciifile .asciidoc).html  ]] && echo "$(basename $asciifile .asciidoc).html created"
-a2x -f pdf -a icons -a toc -a numbered $asciifile
+a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
 [[ -f $(basename $asciifile .asciidoc).pdf  ]] && echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 [[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
 echo "Removing tmp files"
-#rm tmp*
+rm tmp*
