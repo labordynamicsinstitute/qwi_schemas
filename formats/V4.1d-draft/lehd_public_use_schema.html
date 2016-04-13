@@ -19,7 +19,7 @@ asciidoc.install(3);
 <div id="header">
 <h1>LEHD Public Use Data Schema V4.1d-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
 <span id="revdate">13 April 2016</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
@@ -37,25 +37,45 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
-<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
-and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> .</p></div>
-<div class="paragraph"><p>This document describes the data schema for LEHD files. For each variable,
-a set of allowable values is defined. Definitions are provided as CSV files,
-with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>. Changes relative to the original v4.0 version are listed <a href="#changes">at the end</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_basic_schema">1. Basic Schema</h2>
+<h2 id="_purpose">1. Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
+<div class="paragraph"><p>This document describes the data schema for LEHD files. For each variable,
+a set of allowable values is defined. Definitions are provided as CSV files,
+with header variable definitions.  Changes relative to the original v4.0 version are listed <a href="#changes">at the end</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_naming">2. File naming</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_replaces">3. Replaces</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This version replaces v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema, but some changes may have been applied to auxiliary data.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_schema">4. Basic Schema</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Each file is structured as a CSV file. The first columns contain <a href="#identifiers">[identifiers]</a>, subsequent columns contain <a href="#indicators">[indicators]</a>, followed by <a href="#statusflags">status flags</a>.</p></div>
 <div class="sect2">
-<h3 id="_generic_structure">1.1. Generic structure</h3>
+<h3 id="_generic_structure">4.1. Generic structure</h3>
 <div class="tableblock">
 <table rules="all"
 width="30%"
@@ -113,11 +133,11 @@ will be included in data outputs from the LED Extraction Tool.</p></div>
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_identifiers_a_identifiers">1.2. <a id="identifiers"></a>Identifiers</h3>
+<h3 id="_a_id_identifiers_a_identifiers">4.2. <a id="identifiers"></a>Identifiers</h3>
 <div class="paragraph"><p>Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
 Identifiers without the year and quarter component can be considered a series identifier.</p></div>
 <div class="sect3">
-<h4 id="_mapping_for_identifiers">1.2.1. Mapping for Identifiers</h4>
+<h4 id="_mapping_for_identifiers">4.2.1. Mapping for Identifiers</h4>
 <div class="paragraph"><p>( <a href="lehd_mapping_identifiers.csv">lehd_mapping_identifiers.csv</a> )</p></div>
 <div class="paragraph"><p>Each of the released files has a set of variables uniquely identifying records (<em>Identifiers</em>). The table below relates the set of identifier specifications
 to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <a href="#catvars">Categorical Variables</a>.</p></div>
@@ -178,7 +198,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_j2j">1.2.2. Identifiers for j2j</h4>
+<h4 id="_identifiers_for_j2j">4.2.2. Identifiers for j2j</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_j2j.csv">lehd_identifiers_j2j.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -287,7 +307,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_j2jod">1.2.3. Identifiers for j2jod</h4>
+<h4 id="_identifiers_for_j2jod">4.2.3. Identifiers for j2jod</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_j2jod.csv">lehd_identifiers_j2jod.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -431,7 +451,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_qwi">1.2.4. Identifiers for qwi</h4>
+<h4 id="_identifiers_for_qwi">4.2.4. Identifiers for qwi</h4>
 <div class="paragraph"><p>( <a href="lehd_identifiers_qwi.csv">lehd_identifiers_qwi.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -537,11 +557,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_indicators_a_indicators">1.3. <a id="indicators"></a>Indicators</h3>
+<h3 id="_a_id_indicators_a_indicators">4.3. <a id="indicators"></a>Indicators</h3>
 <div class="paragraph"><p>The following tables and associated mapping files
 list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator.</p></div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi_qwipu">1.3.1. National QWI and state-level QWI (QWIPU)</h4>
+<h4 id="_national_qwi_and_state_level_qwi_qwipu">4.3.1. National QWI and state-level QWI (QWIPU)</h4>
 <div class="paragraph"><p>( <a href="variables_qwi.csv">variables_qwi.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -759,7 +779,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi_rates_qwipur">1.3.2. National QWI and state-level QWI rates (QWIPUR)</h4>
+<h4 id="_national_qwi_and_state_level_qwi_rates_qwipur">4.3.2. National QWI and state-level QWI rates (QWIPUR)</h4>
 <div class="paragraph"><p>Rates are computed from published data, and are provided as a convenience. The column <strong>Base</strong> indicates the denominator used to compute the rate.</p></div>
 <div class="paragraph"><p>( <a href="variables_qwir.csv">variables_qwir.csv</a> )</p></div>
 <div class="tableblock">
@@ -934,7 +954,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_counts_j2j">1.3.3. Job-to-job flow counts (J2J)</h4>
+<h4 id="_job_to_job_flow_counts_j2j">4.3.3. Job-to-job flow counts (J2J)</h4>
 <div class="paragraph"><p>( <a href="variables_j2j.csv">variables_j2j.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1068,7 +1088,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_rates_j2jr">1.3.4. Job-to-job flow rates (J2JR)</h4>
+<h4 id="_job_to_job_flow_rates_j2jr">4.3.4. Job-to-job flow rates (J2JR)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jr.csv">variables_j2jr.csv</a> )</p></div>
 <div class="paragraph"><p>Rates are computed from published data, and are provided as a convenience. The column <strong>Base</strong> indicates the denominator used to compute the rate.</p></div>
 <div class="tableblock">
@@ -1209,7 +1229,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_origin_destination_j2jod">1.3.5. Job-to-job flow Origin-Destination (J2JOD)</h4>
+<h4 id="_job_to_job_flow_origin_destination_j2jod">4.3.5. Job-to-job flow Origin-Destination (J2JOD)</h4>
 <div class="paragraph"><p>( <a href="variables_j2jod.csv">variables_j2jod.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1262,7 +1282,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_vmeasures_a_variability_measures">1.4. <a id="vmeasures"></a>Variability measures</h3>
+<h3 id="_a_id_vmeasures_a_variability_measures">4.4. <a id="vmeasures"></a>Variability measures</h3>
 <div class="paragraph"><p>The following tables and associated mapping files
 list the variability measures available on each file.  The <em>'Variability Measure</em>' is the short name of the variable on the CSV files,
 suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate Name</em>' may appear in related documentation and articles.
@@ -1302,7 +1322,7 @@ Missingness ratio, prefixed by mr_
 </ul></div>
 <div class="paragraph"><p>A missing variability measure indicates a structural zero in the corresponding indicator. This is currently not associated with a flag.</p></div>
 <div class="sect3">
-<h4 id="_generic_structure_2">1.4.1. Generic structure</h4>
+<h4 id="_generic_structure_2">4.4.1. Generic structure</h4>
 <div class="tableblock">
 <table rules="all"
 width="30%"
@@ -1407,7 +1427,7 @@ of variability measures are printed, but the complete list is available in the l
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi">1.4.2. National QWI and state-level QWI</h4>
+<h4 id="_national_qwi_and_state_level_qwi">4.4.2. National QWI and state-level QWI</h4>
 <div class="paragraph"><p>( <a href="variables_qwiv.csv">variables_qwiv.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1553,7 +1573,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_national_qwi_and_state_level_qwi_rates">1.4.3. National QWI and state-level QWI rates</h4>
+<h4 id="_national_qwi_and_state_level_qwi_rates">4.4.3. National QWI and state-level QWI rates</h4>
 <div class="paragraph"><p>( <a href="variables_qwirv.csv">variables_qwirv.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1699,15 +1719,15 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_counts_j2j_2">1.4.4. Job-to-job flow counts (J2J)</h4>
+<h4 id="_job_to_job_flow_counts_j2j_2">4.4.4. Job-to-job flow counts (J2J)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_rates_j2jr_2">1.4.5. Job-to-job flow rates (J2JR)</h4>
+<h4 id="_job_to_job_flow_rates_j2jr_2">4.4.5. Job-to-job flow rates (J2JR)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_job_to_job_flow_origin_destination_j2jod_2">1.4.6. Job-to-job flow Origin-Destination (J2JOD)</h4>
+<h4 id="_job_to_job_flow_origin_destination_j2jod_2">4.4.6. Job-to-job flow Origin-Destination (J2JOD)</h4>
 <div class="paragraph"><p>Soon.</p></div>
 <div style="page-break-after:always"></div>
 </div>
@@ -1715,11 +1735,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_catvars_a_categorical_variables">2. <a id="catvars"></a>Categorical Variables</h2>
+<h2 id="_a_id_catvars_a_categorical_variables">5. <a id="catvars"></a>Categorical Variables</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.</p></div>
 <div class="sect2">
-<h3 id="_agegrp">2.1. agegrp</h3>
+<h3 id="_agegrp">5.1. agegrp</h3>
 <div class="paragraph"><p>( <a href="label_agegrp.csv">label_agegrp.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1776,7 +1796,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_education">2.2. education</h3>
+<h3 id="_education">5.2. education</h3>
 <div class="paragraph"><p>( <a href="label_education.csv">label_education.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1821,7 +1841,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ethnicity">2.3. ethnicity</h3>
+<h3 id="_ethnicity">5.3. ethnicity</h3>
 <div class="paragraph"><p>( <a href="label_ethnicity.csv">label_ethnicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1854,7 +1874,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmage">2.4. firmage</h3>
+<h3 id="_firmage">5.4. firmage</h3>
 <div class="paragraph"><p>( <a href="label_firmage.csv">label_firmage.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1903,7 +1923,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmsize">2.5. firmsize</h3>
+<h3 id="_firmsize">5.5. firmsize</h3>
 <div class="paragraph"><p>( <a href="label_firmsize.csv">label_firmsize.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1952,7 +1972,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ownercode">2.6. ownercode</h3>
+<h3 id="_ownercode">5.6. ownercode</h3>
 <div class="paragraph"><p>( <a href="label_ownercode.csv">label_ownercode.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1985,7 +2005,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_periodicity">2.7. periodicity</h3>
+<h3 id="_periodicity">5.7. periodicity</h3>
 <div class="paragraph"><p>( <a href="label_periodicity.csv">label_periodicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2014,7 +2034,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quarter">2.8. quarter</h3>
+<h3 id="_quarter">5.8. quarter</h3>
 <div class="paragraph"><p>( <a href="label_quarter.csv">label_quarter.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2051,7 +2071,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_race">2.9. race</h3>
+<h3 id="_race">5.9. race</h3>
 <div class="paragraph"><p>( <a href="label_race.csv">label_race.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2104,7 +2124,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_seasonadj">2.10. seasonadj</h3>
+<h3 id="_seasonadj">5.10. seasonadj</h3>
 <div class="paragraph"><p>( <a href="label_seasonadj.csv">label_seasonadj.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2133,7 +2153,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_sex">2.11. sex</h3>
+<h3 id="_sex">5.11. sex</h3>
 <div class="paragraph"><p>( <a href="label_sex.csv">label_sex.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2164,12 +2184,245 @@ cellspacing="0" cellpadding="4">
 </tbody>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_stusps">5.12. stusps</h3>
+<div class="paragraph"><p>( <a href="label_stusps.csv">label_stusps.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">geography</th>
+<th align="left" valign="top">stusps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">01</p></td>
+<td align="left" valign="top"><p class="table">AL</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">02</p></td>
+<td align="left" valign="top"><p class="table">AK</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">04</p></td>
+<td align="left" valign="top"><p class="table">AZ</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">05</p></td>
+<td align="left" valign="top"><p class="table">AR</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">06</p></td>
+<td align="left" valign="top"><p class="table">CA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">08</p></td>
+<td align="left" valign="top"><p class="table">CO</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">09</p></td>
+<td align="left" valign="top"><p class="table">CT</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">10</p></td>
+<td align="left" valign="top"><p class="table">DE</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">11</p></td>
+<td align="left" valign="top"><p class="table">DC</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">12</p></td>
+<td align="left" valign="top"><p class="table">FL</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">13</p></td>
+<td align="left" valign="top"><p class="table">GA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">15</p></td>
+<td align="left" valign="top"><p class="table">HI</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">16</p></td>
+<td align="left" valign="top"><p class="table">ID</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">17</p></td>
+<td align="left" valign="top"><p class="table">IL</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">18</p></td>
+<td align="left" valign="top"><p class="table">IN</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">19</p></td>
+<td align="left" valign="top"><p class="table">IA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">20</p></td>
+<td align="left" valign="top"><p class="table">KS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">21</p></td>
+<td align="left" valign="top"><p class="table">KY</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">22</p></td>
+<td align="left" valign="top"><p class="table">LA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">23</p></td>
+<td align="left" valign="top"><p class="table">ME</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">24</p></td>
+<td align="left" valign="top"><p class="table">MD</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">25</p></td>
+<td align="left" valign="top"><p class="table">MA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">26</p></td>
+<td align="left" valign="top"><p class="table">MI</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">27</p></td>
+<td align="left" valign="top"><p class="table">MN</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">28</p></td>
+<td align="left" valign="top"><p class="table">MS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">29</p></td>
+<td align="left" valign="top"><p class="table">MO</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">30</p></td>
+<td align="left" valign="top"><p class="table">MT</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">31</p></td>
+<td align="left" valign="top"><p class="table">NE</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">32</p></td>
+<td align="left" valign="top"><p class="table">NV</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">33</p></td>
+<td align="left" valign="top"><p class="table">NH</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">34</p></td>
+<td align="left" valign="top"><p class="table">NJ</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">35</p></td>
+<td align="left" valign="top"><p class="table">NM</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">36</p></td>
+<td align="left" valign="top"><p class="table">NY</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">37</p></td>
+<td align="left" valign="top"><p class="table">NC</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">38</p></td>
+<td align="left" valign="top"><p class="table">ND</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">39</p></td>
+<td align="left" valign="top"><p class="table">OH</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">40</p></td>
+<td align="left" valign="top"><p class="table">OK</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">41</p></td>
+<td align="left" valign="top"><p class="table">OR</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">42</p></td>
+<td align="left" valign="top"><p class="table">PA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">44</p></td>
+<td align="left" valign="top"><p class="table">RI</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">45</p></td>
+<td align="left" valign="top"><p class="table">SC</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">46</p></td>
+<td align="left" valign="top"><p class="table">SD</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">47</p></td>
+<td align="left" valign="top"><p class="table">TN</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">48</p></td>
+<td align="left" valign="top"><p class="table">TX</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">49</p></td>
+<td align="left" valign="top"><p class="table">UT</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">50</p></td>
+<td align="left" valign="top"><p class="table">VT</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">51</p></td>
+<td align="left" valign="top"><p class="table">VA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">53</p></td>
+<td align="left" valign="top"><p class="table">WA</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">54</p></td>
+<td align="left" valign="top"><p class="table">WV</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">55</p></td>
+<td align="left" valign="top"><p class="table">WI</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">56</p></td>
+<td align="left" valign="top"><p class="table">WY</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">72</p></td>
+<td align="left" valign="top"><p class="table">PR</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">78</p></td>
+<td align="left" valign="top"><p class="table">VI</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_industry">2.12. Industry</h3>
+<h3 id="_industry">5.13. Industry</h3>
 <div class="sect3">
-<h4 id="ind_level">2.12.1. Industry levels</h4>
+<h4 id="ind_level">5.13.1. Industry levels</h4>
 <div class="paragraph"><p>( <a href="label_ind_level.csv">label_ind_level.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2206,11 +2459,12 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_industry_2">2.12.2. Industry</h4>
+<h4 id="_industry_2">5.13.2. Industry</h4>
 <div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
 <div class="paragraph"><p>Only a small subset of available values shown.
-The 2007 NAICS (North American Industry Classification System) is used for all years.
-For a full listing of all valid NAICS codes, see <a href="http://www.census.gov/eos/www/naics/">http://www.census.gov/eos/www/naics/</a>.</p></div>
+The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see <a href="../V4.0.1">Schema v4.0.1</a>).
+For a full listing of all valid 2012 NAICS codes, see <a href="http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012">http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012</a>.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="90%"
@@ -2300,11 +2554,12 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geography">2.13. Geography</h3>
+<h3 id="_geography">5.14. Geography</h3>
 <div class="sect3">
-<h4 id="geo_level">2.13.1. <a id="geolevel"></a> Geographic levels</h4>
-<div class="paragraph"><p>Geography labels are provided in separate files by scope. Each file <em>label_geograpy_SCOPE.csv</em> may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv">label_geography.csv</a>.
-The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2015Q3 release.</p></div>
+<h4 id="geo_level">5.14.1. <a id="geolevel"></a> Geographic levels</h4>
+<div class="paragraph"><p>Geography labels for data files are provided in separate files, by scope. Each file <em>label_geograpy_SCOPE.csv</em> may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv">label_geography.csv</a>.
+The 2015 vintage of   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">Census TIGER/Line geography</a> is used for all tabulations as of the R2015Q4 release.</p></div>
+<div class="paragraph"><p>Shapefiles are described in a <a href="lehd_shapefiles.html">separate document</a>.</p></div>
 <div class="paragraph"><p>( <a href="label_geo_level.csv">label_geo_level.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2365,7 +2620,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_national_and_state_level_values">2.13.2. National and state-level values</h4>
+<h4 id="_national_and_state_level_values">5.14.2. National and state-level values</h4>
 <div class="paragraph"><p>( <a href="label_fipsnum.csv">label_fipsnum.csv</a> )</p></div>
 <div class="paragraph"><p>The file <a href="label_fipsnum.csv">label_fipsnum.csv</a> contains values and labels
 for all entities of <a href="#geolevel">geo_level</a> <em>N</em> or <em>S</em>, and is a summary of separately available files.</p></div>
@@ -2386,37 +2641,37 @@ cellspacing="0" cellpadding="4">
 </thead>
 <tbody>
 <tr>
-<td align="center" valign="top"><p class="table">0</p></td>
+<td align="center" valign="top"><p class="table">00</p></td>
 <td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
 <td align="center" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">1</p></td>
+<td align="center" valign="top"><p class="table">01</p></td>
 <td align="left" valign="top"><p class="table">Alabama</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">2</p></td>
+<td align="center" valign="top"><p class="table">02</p></td>
 <td align="left" valign="top"><p class="table">Alaska</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">4</p></td>
+<td align="center" valign="top"><p class="table">04</p></td>
 <td align="left" valign="top"><p class="table">Arizona</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">5</p></td>
+<td align="center" valign="top"><p class="table">05</p></td>
 <td align="left" valign="top"><p class="table">Arkansas</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">6</p></td>
+<td align="center" valign="top"><p class="table">06</p></td>
 <td align="left" valign="top"><p class="table">California</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">8</p></td>
+<td align="center" valign="top"><p class="table">08</p></td>
 <td align="left" valign="top"><p class="table">Colorado</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 </tr>
@@ -2470,15 +2725,16 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_detailed_state_and_substate_level_values">2.13.3. Detailed state and substate level values</h4>
+<h4 id="_detailed_state_and_substate_level_values">5.14.3. Detailed state and substate level values</h4>
 <div class="paragraph"><p>Note: cross-state CBSA, in records of type <a href="#geolevel">geo_level</a> = M, are present on files of type <em>label_geography_XX.csv</em>. A particular cross-state CBSA will appear on multiple files.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="25%" />
-<col width="75%" />
+<col width="20%" />
+<col width="60%" />
+<col width="20%" />
 <thead>
 <tr>
 <th align="center" valign="top">Scope</th>
@@ -2709,7 +2965,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aggregation_level">2.14. Aggregation level</h3>
+<h3 id="_aggregation_level">5.15. Aggregation level</h3>
 <div class="paragraph"><p>( <a href="label_agg_level.csv">label_agg_level.csv</a> )</p></div>
 <div class="paragraph"><p>Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.</p></div>
 <div class="paragraph"><p><strong>agg_level</strong> is currently  reported only for  J2J data products.</p></div>
@@ -2994,7 +3250,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_statusflags_a_status_flags">3. <a id="statusflags"></a>Status flags</h2>
+<h2 id="_a_id_statusflags_a_status_flags">6. <a id="statusflags"></a>Status flags</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="label_flags.csv">label_flags.csv</a> )</p></div>
 <div class="paragraph"><p>Each status flag in the tables above contains one of the following valid values.
@@ -3071,10 +3327,10 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_changes_a_changes">4. <a id="changes"></a> Changes</h2>
+<h2 id="_a_id_changes_a_changes">7. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_this_version_from_previous_releases_of_v4_1_draft_schema_documents">4.1. This version from previous releases of V4.1 draft schema documents</h3>
+<h3 id="_this_version_from_previous_releases_of_v4_1_draft_schema_documents">7.1. This version from previous releases of V4.1 draft schema documents</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -3189,7 +3445,7 @@ cellspacing="0" cellpadding="4">
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1d_draft_from_4_0_1">4.2. Version 4.1d-draft from 4.0.1</h3>
+<h3 id="_version_4_1d_draft_from_4_0_1">7.2. Version 4.1d-draft from 4.0.1</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -3231,7 +3487,7 @@ added additional geo_level for CBSA (complete)
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Wed Apr 13 08:20:39 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Wed Apr 13 16:38:21 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -3240,7 +3496,7 @@ added additional geo_level for CBSA (complete)
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-04-13 08:20:39 EDT
+Last updated 2016-04-13 16:38:21 EDT
 </div>
 </div>
 </body>

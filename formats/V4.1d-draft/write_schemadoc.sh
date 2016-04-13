@@ -96,7 +96,7 @@ with header variable definitions.  Changes relative to the original v4.0 version
 
 File naming
 -----------
-The naming conventions of the data files is documented in link:lehd_csv_naming.html[].
+The naming conventions of the data files is documented in link:lehd_csv_naming{ext-relative}[].
 
 Replaces
 -------
@@ -447,7 +447,7 @@ done
 
 	# construct the composite file from separate files
 	head -1 label_geography_us.csv > label_geography.csv
-	for arg in $(ls label_geography_*.csv)
+	for arg in $(ls label_geography_*.csv | grep -v cbsa)
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done
@@ -464,9 +464,11 @@ do
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
-The 2015 vintage of Census TIGER/Line geography is used for all tabulations as of the R2015Q4 release.
+The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2015Q4 release.
 
-Shapefiles are described in a link:lehd_shapefiles[separate document].
+
+
+Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
 
 
 ( link:${arg}[] )
@@ -507,7 +509,7 @@ Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are prese
 #==============================================
 
 echo "
-[format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
+[format=\"csv\",width=\"50%\",cols=\"^1,^3,^1\",options=\"header\"]
 |===================================================
 Scope,Format file" >> $asciifile
 	for arg in label_geography_us.csv label_geography_cbsa.csv

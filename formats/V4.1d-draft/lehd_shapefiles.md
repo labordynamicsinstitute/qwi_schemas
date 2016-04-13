@@ -135,6 +135,28 @@ FORMAT
 </tbody>
 </table>
 
+VALUES
+------
+
+### STUSPS
+
+( [label\_stusps.csv](label_stusps.csv) )
+
+FIPS State Postal Code as per
+<https://www.census.gov/geo/reference/codes/cou.html>
+
+### GEOGRAPHY
+
+( [label\_geography.csv](label_geography.csv) ) The valid codes
+correspond to those listed on
+[label\_geography.csv](label_geography.csv).
+
+### NAME
+
+This is a string that corresponds in general to the *label* field on
+[label\_geography.csv](label_geography.csv). Minor deviations for ease
+of exposition are possible.
+
 Common files
 ------------
 
@@ -211,4 +233,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Wed Apr 13 12:52:42 EDT 2016
+This revision: Wed Apr 13 16:48:15 EDT 2016

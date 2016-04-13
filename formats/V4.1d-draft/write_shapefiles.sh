@@ -166,6 +166,19 @@ Output shapefiles – grouped by paired products – are listed below. Each shap
 include::variables_shp.csv[]
 |===================================================
 
+=== VALUES
+==== STUSPS
+( link:label_stusps.csv[] )
+
+FIPS State Postal Code as per https://www.census.gov/geo/reference/codes/cou.html
+
+==== GEOGRAPHY
+( link:label_geography.csv[] )
+The valid codes correspond to those listed on link:label_geography.csv[].
+
+==== NAME
+This is a string that corresponds in general to the 'label' field on link:label_geography.csv[]. Minor deviations for ease of exposition are possible.
+
 === Common files
 ==== State
 ( link:lehd_state.shp[lehd_state.shp] )

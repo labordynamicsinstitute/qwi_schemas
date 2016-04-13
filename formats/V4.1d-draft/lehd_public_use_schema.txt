@@ -1,28 +1,37 @@
 
 ****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
-<ces.qwi.feedback@census.gov>
+<lars.vilhuber@cornell.edu>
 13 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at ces.qwi.feedback@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
+***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
 are available for download with the following data schema. These data are
 available as Comma-Separated Value (CSV) files through the LEHD website’s Data
-page at http://lehd.ces.census.gov/data/ .
+page at http://lehd.ces.census.gov/data/ and through LED Extraction Tool at
+http://ledextract.ces.census.gov/.
 This document describes the data schema for LEHD files. For each variable, a
 set of allowable values is defined. Definitions are provided as CSV files, with
-header variable definitions. The naming conventions of the data files is
-documented in lehd_csv_naming.html. Changes relative to the original v4.0
-version are listed at_the_end.
-***** 1. Basic Schema *****
+header variable definitions. Changes relative to the original v4.0 version are
+listed at_the_end.
+***** 2. File naming *****
+The naming conventions of the data files is documented in lehd_csv_naming.html.
+***** 3. Replaces *****
+This version replaces v4.0. Any file compliant with LEHD or QWI Schema v4.0
+will also be compliant with this schema, but some changes may have been applied
+to auxiliary data.
+***** 4. Basic Schema *****
 Each file is structured as a CSV file. The first columns contain [identifiers],
 subsequent columns contain [indicators], followed by status_flags.
-**** 1.1. Generic structure ****
+**** 4.1. Generic structure ****
 Column name
 [ Identifier1 ]
 [ Identifier2 ]
@@ -40,11 +49,11 @@ Note: A full list of indicators for each type of file are shown below in the
 Indicators section. While all indicators are included in the CSV files, only
 the requested indicators will be included in data outputs from the LED
 Extraction Tool.
-1.2. Identifiers
+4.2. Identifiers
 Records, unless otherwise noted, are parts of time-series data. Unique record
 identifiers are noted below, by file type. Identifiers without the year and
 quarter component can be considered a series identifier.
-*** 1.2.1. Mapping for Identifiers ***
+*** 4.2.1. Mapping for Identifiers ***
 ( lehd_mapping_identifiers.csv )
 Each of the released files has a set of variables uniquely identifying records
 (Identifiers). The table below relates the set of identifier specifications to
@@ -55,7 +64,7 @@ identifiers            QWI NQWI J2J J2JR J2JOD LODES
 lehd_identifiers_qwi    1    1
 lehd_identifiers_j2j             1    1
 lehd_identifiers_j2jod                      1
-*** 1.2.2. Identifiers for j2j ***
+*** 4.2.2. Identifiers for j2j ***
 ( lehd_identifiers_j2j.csv )
   Variable    Type  label
 periodicity Char(1) Periodicity of report
@@ -75,7 +84,7 @@ periodicity Char(1) Periodicity of report
      year      Num  Time: Year
    quarter     Num  Time: Quarter
  agg_level     Num  Aggregation Level Indicator
-*** 1.2.3. Identifiers for j2jod ***
+*** 4.2.3. Identifiers for j2jod ***
 ( lehd_identifiers_j2jod.csv )
     Variable     Type  label
   periodicity  Char(1) Periodicity of report
@@ -103,7 +112,7 @@ industry_orig  Char(5) Group: Industry code of origin job
 ownercode_orig Char(3) Group: Ownership group code of origin job
  firmage_orig  Char(1) Group: Firm Age group of origin job
 firmsize_orig  Char(1) Group: Firm Size group of origin job
-*** 1.2.4. Identifiers for qwi ***
+*** 4.2.4. Identifiers for qwi ***
 ( lehd_identifiers_qwi.csv )
   Variable    Type  label
 periodicity Char(1) Periodicity of report
@@ -122,7 +131,7 @@ periodicity Char(1) Periodicity of report
   firmsize  Char(1) Group: Firm Size group
      year      Num  Time: Year
    quarter     Num  Time: Quarter
-1.3. Indicators
+4.3. Indicators
 The following tables and associated mapping files list the indicators available
 on each file. The 'Indicator Variable' is the short name of the variable on the
 CSV files, suitable for machine processing in a wide variety of statistical
@@ -130,7 +139,7 @@ applications. When given, the 'Alternate name' may appear in related
 documentation and articles. The 'Status Flag' is used to indicate publication
 or data quality status (see Status_Flags). The 'Indicator Name' is a more
 verbose description of the indicator.
-*** 1.3.1. National QWI and state-level QWI (QWIPU) ***
+*** 4.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
 Indicator Variable Alternate name  Status Flag  Indicator Name
            Emp              B           sEmp    Beginning-of-Quarter Employment
@@ -183,7 +192,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        EarnSepS           ZWFS       sEarnSepS  Average Monthly Earnings (Flows
                                                 out of Full-Quarter Employment)
         Payroll             W1       sPayroll   Total Quarterly Payroll
-*** 1.3.2. National QWI and state-level QWI rates (QWIPUR) ***
+*** 4.3.2. National QWI and state-level QWI rates (QWIPUR) ***
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
 ( variables_qwir.csv )
@@ -244,7 +253,7 @@ HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
                                           Rate (Stable;         EmpS)/2
                                           Net Change
                                           Rate)
-*** 1.3.3. Job-to-job flow counts (J2J) ***
+*** 4.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
 Indicator Variable Alternate name Status Flag Indicator Name
          MHire        all_doma2      sMHire   Main Job Accessions - Counts
@@ -278,7 +287,7 @@ Indicator Variable Alternate name Status Flag Indicator Name
                                               Counts
          MainE            domE       sMainE   Main Job - End of Quarter -
                                               Counts
-*** 1.3.4. Job-to-job flow rates (J2JR) ***
+*** 4.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
@@ -335,7 +344,7 @@ ENPersistR  en2_doms2_rate    sENPersistR  Main Job           (MainB+MainE)/2
                                            Full-qtr
                                            Nonemployment
                                            Spell - Rate
-*** 1.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
+*** 4.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate name Status Flag  Indicator Name
             EE              ee          sEE    Direct Job Flows - Counts
@@ -347,7 +356,7 @@ Indicator Variable Alternate name Status Flag  Indicator Name
                                                Stable Jobs - Short
                                                Nonemployment Spell Between Jobs
                                                - Counts
-1.4. Variability measures
+4.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
 variable on the CSV files, suitable for machine processing in a wide variety of
@@ -364,7 +373,7 @@ Six variability measures are published:
     * Missingness ratio, prefixed by mr_
 A missing variability measure indicates a structural zero in the corresponding
 indicator. This is currently not associated with a flag.
-*** 1.4.1. Generic structure ***
+*** 4.4.1. Generic structure ***
 Column name
 [ Identifier1 ]
 [ Identifier2 ]
@@ -397,7 +406,7 @@ Column name
 Note: A full list of indicators for each type of file are shown in the
 Indicators section. In the tables below, only a sample of variability measures
 are printed, but the complete list is available in the linked CSV schema files.
-*** 1.4.2. National QWI and state-level QWI ***
+*** 4.4.2. National QWI and state-level QWI ***
 ( variables_qwiv.csv )
 Variability measure Alternate name Variable name                          Units
          st_Emp            st_B    Standard error of Beginning-of-Quarter Count
@@ -435,7 +444,7 @@ Variability measure Alternate name Variable name                          Units
                                    Employment
          mr_EmpS           mr_F    Missingness ratio for Full-Quarter     Count
                                    Employment (Stable)
-*** 1.4.3. National QWI and state-level QWI rates ***
+*** 4.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
 Variability measure Alternate name Variable name                          Units
         st_HirAR          st_AR    Standard error of Hiring Rate (All     Rate
@@ -467,18 +476,18 @@ Variability measure Alternate name Variable name                          Units
                                    Accessions)
         mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate  Rate
         mr_HirRR          mr_RR    Missingness ratio for Recall Rate      Rate
-*** 1.4.4. Job-to-job flow counts (J2J) ***
+*** 4.4.4. Job-to-job flow counts (J2J) ***
 Soon.
-*** 1.4.5. Job-to-job flow rates (J2JR) ***
+*** 4.4.5. Job-to-job flow rates (J2JR) ***
 Soon.
-*** 1.4.6. Job-to-job flow Origin-Destination (J2JOD) ***
+*** 4.4.6. Job-to-job flow Origin-Destination (J2JOD) ***
 Soon.
-2. Categorical Variables
+5. Categorical Variables
 Categorical variable descriptions are displayed above each table, with the
 variable name shown in parentheses. Unless otherwise stated, every possible
 value/label combination for each categorical variable is listed. Please note
 that not all values will be available in every table.
-**** 2.1. agegrp ****
+**** 5.1. agegrp ****
 ( label_agegrp.csv )
 agegrp label
   A00  All Ages (14-99)
@@ -490,7 +499,7 @@ agegrp label
   A06  45-54
   A07  55-64
   A08  65-99
-**** 2.2. education ****
+**** 5.2. education ****
 ( label_education.csv )
 education label
      E0   All Education Categories
@@ -499,13 +508,13 @@ education label
      E3   Some college or Associate degree
      E4   Bachelor’s degree or advanced degree
      E5   Educational attainment not available (workers aged 24 or younger)
-**** 2.3. ethnicity ****
+**** 5.3. ethnicity ****
 ( label_ethnicity.csv )
 ethnicity label
      A0   All Ethnicities
      A1   Not Hispanic or Latino
      A2   Hispanic or Latino
-**** 2.4. firmage ****
+**** 5.4. firmage ****
 ( label_firmage.csv )
 firmage label
     0   All Firm Ages
@@ -515,7 +524,7 @@ firmage label
     4   6-10 Years
     5   11+ Years
     N   Firm Age Not Available
-**** 2.5. firmsize ****
+**** 5.5. firmsize ****
 ( label_firmsize.csv )
 firmsize label
      0   All Firm Sizes
@@ -525,25 +534,25 @@ firmsize label
      4   250-499 Employees
      5   500+ Employees
      N   Firm Size Not Available
-**** 2.6. ownercode ****
+**** 5.6. ownercode ****
 ( label_ownercode.csv )
 ownercode label
     A00   All (1-5)
     A01   Federal government
     A05   All Private (5)
-**** 2.7. periodicity ****
+**** 5.7. periodicity ****
 ( label_periodicity.csv )
 periodicity label
        A    Annual data
        Q    Quarterly data
-**** 2.8. quarter ****
+**** 5.8. quarter ****
 ( label_quarter.csv )
 quarter label
     1   1st Quarter of the Year (January-March)
     2   2nd Quarter of the Year (April-June)
     3   3rd Quarter of the Year (July-September)
     4   4th Quarter of the Year (October-December)
-**** 2.9. race ****
+**** 5.9. race ****
 ( label_race.csv )
 race label
  A0  All Races
@@ -554,30 +563,88 @@ race label
  A5  Native Hawaiian or Other Pacific Islander Alone
  A6  Some Other Race Alone (Not Used)
  A7  Two or More Race Groups
-**** 2.10. seasonadj ****
+**** 5.10. seasonadj ****
 ( label_seasonadj.csv )
 seasonadj label
       S   Seasonally adjusted
       U   Not seasonally adjusted
-**** 2.11. sex ****
+**** 5.11. sex ****
 ( label_sex.csv )
 sex label
  0  All Sexes
  1  Male
  2  Female
-**** 2.12. Industry ****
-*** 2.12.1. Industry levels ***
+**** 5.12. stusps ****
+( label_stusps.csv )
+geography stusps
+     01   AL
+     02   AK
+     04   AZ
+     05   AR
+     06   CA
+     08   CO
+     09   CT
+     10   DE
+     11   DC
+     12   FL
+     13   GA
+     15   HI
+     16   ID
+     17   IL
+     18   IN
+     19   IA
+     20   KS
+     21   KY
+     22   LA
+     23   ME
+     24   MD
+     25   MA
+     26   MI
+     27   MN
+     28   MS
+     29   MO
+     30   MT
+     31   NE
+     32   NV
+     33   NH
+     34   NJ
+     35   NM
+     36   NY
+     37   NC
+     38   ND
+     39   OH
+     40   OK
+     41   OR
+     42   PA
+     44   RI
+     45   SC
+     46   SD
+     47   TN
+     48   TX
+     49   UT
+     50   VT
+     51   VA
+     53   WA
+     54   WV
+     55   WI
+     56   WY
+     72   PR
+     78   VI
+**** 5.13. Industry ****
+*** 5.13.1. Industry levels ***
 ( label_ind_level.csv )
 ind_level label
       A   All Industries
       S   NAICS Sectors
       3   NAICS Subsectors
       4   NAICS Industry Groups
-*** 2.12.2. Industry ***
+*** 5.13.2. Industry ***
 ( label_industry.csv )
-Only a small subset of available values shown. The 2007 NAICS (North American
-Industry Classification System) is used for all years. For a full listing of
-all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
+Only a small subset of available values shown. The 2012 NAICS (North American
+Industry Classification System) is used for all years. QWI releases prior to
+R2015Q3 used the 2007 NAICS classification (see Schema_v4.0.1). For a full
+listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
+naics/naicsrch?chart=2012.
 industry label
     00   All NAICS Sectors
    000   All NAICS Subsectors
@@ -596,13 +663,14 @@ industry label
    3112  Grain and Oilseed Milling
    3113  Sugar and Confectionery Product Manufacturing
     …
-**** 2.13. Geography ****
-2.13.1.  Geographic levels
-Geography labels are provided in separate files by scope. Each file
-label_geograpy_SCOPE.csv may contain one or more types of records as flagged by
-geo_level. For convenience, a composite file containing all geocodes is
-available as label_geography.csv. The 2014 vintage of Census TIGER geography is
-used for all tabulations as of the R2015Q3 release.
+**** 5.14. Geography ****
+5.14.1.  Geographic levels
+Geography labels for data files are provided in separate files, by scope. Each
+file label_geograpy_SCOPE.csv may contain one or more types of records as
+flagged by geo_level. For convenience, a composite file containing all geocodes
+is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
+geography is used for all tabulations as of the R2015Q4 release.
+Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
 geo_level label         description                                                                sourceurl
       B   Metropolitan/ Identifies 5-digit CBSA code provided by the Census Bureau’s Geography   http://
@@ -624,18 +692,18 @@ geo_level label         description                                             
       W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
           Investment    State Partners
           Areas
-*** 2.13.2. National and state-level values ***
+*** 5.14.2. National and state-level values ***
 ( label_fipsnum.csv )
 The file label_fipsnum.csv contains values and labels for all entities of
 geo_level N or S, and is a summary of separately available files.
 geography label                     geo_level
-      0   National (50 States + DC)       N
-      1   Alabama                         S
-      2   Alaska                          S
-      4   Arizona                         S
-      5   Arkansas                        S
-      6   California                      S
-      8   Colorado                        S
+     00   National (50 States + DC)       N
+     01   Alabama                         S
+     02   Alaska                          S
+     04   Arizona                         S
+     05   Arkansas                        S
+     06   California                      S
+     08   Colorado                        S
      …
      45   South Carolina                  S
      46   South Dakota                    S
@@ -645,7 +713,7 @@ geography label                     geo_level
      50   Vermont                         S
      51   Virginia                        S
      53   Washington                      S
-*** 2.13.3. Detailed state and substate level values ***
+*** 5.14.3. Detailed state and substate level values ***
 Note: cross-state CBSA, in records of type geo_level = M, are present on files
 of type label_geography_XX.csv. A particular cross-state CBSA will appear on
 multiple files.
@@ -704,7 +772,7 @@ States
    WI   label_geography_wi.csv
    WV   label_geography_wv.csv
    WY   label_geography_wy.csv
-**** 2.14. Aggregation level ****
+**** 5.15. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
 dimensions, including demographic characteristics, geography, industry, and
@@ -761,7 +829,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
     12353             Destination  Origin [Firm   0   0    0     0   N
                       [Firm Age]   Age]
         …
-3. Status flags
+6. Status flags
 ( label_flags.csv )
 Each status flag in the tables above contains one of the following valid
 values. The values and their interpretation are listed in the table below.
@@ -783,8 +851,8 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-4.  Changes
-**** 4.1. This version from previous releases of V4.1 draft schema documents
+7.  Changes
+**** 7.1. This version from previous releases of V4.1 draft schema documents
 ****
     * 2015-02-25: corrected flag values
     * 2015-02-25: documents are now identified by date, not revision
@@ -819,7 +887,7 @@ flag label
     * 2016-04-12: Added additional agg_level values
     * 2016-04-12: Clarified labels of j2jod identifiers
     * 2016-04-12: Renamed label_geography_all as label_geography
-**** 4.2. Version 4.1d-draft from 4.0.1 ****
+**** 7.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
@@ -827,6 +895,6 @@ flag label
     * added naming convention for additional files
     * added agg_level variable
     * added additional geo_level for CBSA (complete) -
-This revision: Wed Apr 13 08:20:39 EDT 2016
+This revision: Wed Apr 13 16:38:21 EDT 2016
 ===============================================================================
-Last updated 2016-04-13 08:20:39 EDT
+Last updated 2016-04-13 16:38:21 EDT

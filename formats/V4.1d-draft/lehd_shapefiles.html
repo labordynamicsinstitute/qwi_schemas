@@ -199,17 +199,34 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_common_files">4.2. Common files</h3>
+<h3 id="_values">4.2. VALUES</h3>
 <div class="sect3">
-<h4 id="_state">4.2.1. State</h4>
+<h4 id="_stusps">4.2.1. STUSPS</h4>
+<div class="paragraph"><p>( <a href="label_stusps.csv">label_stusps.csv</a> )</p></div>
+<div class="paragraph"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></div>
+</div>
+<div class="sect3">
+<h4 id="_geography">4.2.2. GEOGRAPHY</h4>
+<div class="paragraph"><p>( <a href="label_geography.csv">label_geography.csv</a> )
+The valid codes correspond to those listed on <a href="label_geography.csv">label_geography.csv</a>.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_name">4.2.3. NAME</h4>
+<div class="paragraph"><p>This is a string that corresponds in general to the <em>label</em> field on <a href="label_geography.csv">label_geography.csv</a>. Minor deviations for ease of exposition are possible.</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_common_files">4.3. Common files</h3>
+<div class="sect3">
+<h4 id="_state">4.3.1. State</h4>
 <div class="paragraph"><p>( <a href="lehd_state.shp">lehd_state.shp</a> )</p></div>
 <div class="paragraph"><p>No transformations occur to this layer other than those listed above.</p></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_qwi_geographies">4.3. QWI Geographies</h3>
+<h3 id="_qwi_geographies">4.4. QWI Geographies</h3>
 <div class="sect3">
-<h4 id="_county">4.3.1. County</h4>
+<h4 id="_county">4.4.1. County</h4>
 <div class="paragraph"><p>( <a href="lehd_county.shp">lehd_county.shp</a> )</p></div>
 <div class="ulist"><ul>
 <li>
@@ -220,7 +237,7 @@ STUSPS is appended to the NAME field so that county names are nationally unique.
 </ul></div>
 </div>
 <div class="sect3">
-<h4 id="_cbsa_within_state">4.3.2. CBSA - within State</h4>
+<h4 id="_cbsa_within_state">4.4.2. CBSA - within State</h4>
 <div class="paragraph"><p>( <a href="lehd_stcbsa.shp">lehd_stcbsa.shp</a> )</p></div>
 <div class="ulist"><ul>
 <li>
@@ -246,15 +263,15 @@ The text "([STUSPS] part)" is appended to the NAME field only for those CBSA fea
 </ul></div>
 </div>
 <div class="sect3">
-<h4 id="_workforce_investment_board_areas">4.3.3. Workforce Investment Board Areas</h4>
+<h4 id="_workforce_investment_board_areas">4.4.3. Workforce Investment Board Areas</h4>
 <div class="paragraph"><p>( <a href="lehd_wib.shp">lehd_wib.shp</a> )</p></div>
 <div class="paragraph"><p>The WIA/WIB shapefiles are built from the Place, County Subdivision, and County shapefiles from TIGER/Line based on definitions provided by the LED state partners.</p></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_job_to_job_flow_geographies">4.4. Job-to-Job Flow Geographies</h3>
+<h3 id="_job_to_job_flow_geographies">4.5. Job-to-Job Flow Geographies</h3>
 <div class="sect3">
-<h4 id="_cbsa_national">4.4.1. CBSA - National</h4>
+<h4 id="_cbsa_national">4.5.1. CBSA - National</h4>
 <div class="paragraph"><p>( <a href="lehd_cbsa.shp">lehd_cbsa.shp</a> )</p></div>
 <div class="ulist"><ul>
 <li>
@@ -304,7 +321,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Wed Apr 13 12:52:42 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Wed Apr 13 16:48:15 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -312,7 +329,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-04-13 12:52:42 EDT
+Last updated 2016-04-13 16:48:15 EDT
 </div>
 </div>
 </body>
