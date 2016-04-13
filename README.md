@@ -3,6 +3,8 @@ Experimental QWIPU Schema files, that may or may not later be incorporated into 
 
 These are NOT official publication standards of any agency. However, they may turn out to be useful.
 
+For official LEHD-published schema, see http://lehd.ces.census.gov/data/schema/
+
 You can browse the following schemas:
 
 * [v3.5](formats/v3.5): Simply a store (incomplete) of the previous version.
