@@ -1,6 +1,6 @@
-= LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-25 August 2015
+= LEHD Public Use CSV Naming Schema V4.1c-draft - CSV Naming Convention
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+13 April 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -10,12 +10,9 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -181,6 +178,10 @@ include::naming_ext.csv[]
 - 2015-08-07: Minor text change for agg_level, modified agg_level file.
 - 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
 - 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+- 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+- 2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec
@@ -198,6 +199,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Aug 25 23:26:26 EDT 2015
+This revision: Wed Apr 13 08:36:12 EDT 2016
 *******************
 

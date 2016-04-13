@@ -1,17 +1,15 @@
 
-****** LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention
+****** LEHD Public Use CSV Naming Schema V4.1c-draft - CSV Naming Convention
 ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-25 August 2015
+<ces.qwi.feedback@census.gov>
+13 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] This specification is draft. Feedback is welcome. Please write us
+            at ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -183,6 +181,12 @@ xls  Excel file (only select output)
       are not on the current beta J2JOD files.
     * 2015-08-25: Added a extension component [ext] to the file naming
       convention to reflect availability of Excel files (and PDF files)
+    * 2016-03-16: Removed extraneous empty lines
+    * 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status
+      variables)
+    * 2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
 **** 6.2. Version 4.1c-draft from 4.0 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -192,6 +196,6 @@ xls  Excel file (only select output)
     * added agg_level variable
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Tue Aug 25 23:26:26 EDT 2015
+This revision: Wed Apr 13 08:36:12 EDT 2016
 ===============================================================================
-Last updated 2015-08-25 23:26:26 EDT
+Last updated 2016-04-13 08:36:12 EDT

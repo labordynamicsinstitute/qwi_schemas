@@ -18,6 +18,8 @@
 - 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
 - 2016-03-16: Removed extraneous empty lines
 - 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+- 2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
 
 === Version 4.1c-draft from 4.0
 - added J2J, National QWI spec

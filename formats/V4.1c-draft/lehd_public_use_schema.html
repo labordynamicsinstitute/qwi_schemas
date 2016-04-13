@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.8" />
-<title>LEHD Public Use Data Schema v4.1c-draft</title>
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use Data Schema V4.1c-draft</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(3);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use Data Schema v4.1c-draft</h1>
+<h1>LEHD Public Use Data Schema V4.1c-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">25 August 2015</span>
+<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="revdate">13 April 2016</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,10 +37,7 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
-Feedback is welcome. Please write us at
-<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -321,27 +318,27 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">geo_level</p></td>
 <td align="center" valign="top"><p class="table">Char(1)</p></td>
-<td align="left" valign="top"><p class="table">Group: Geographic level of aggregation</p></td>
+<td align="left" valign="top"><p class="table">Group: Geographic level of aggregation of destination job</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">geography</p></td>
 <td align="center" valign="top"><p class="table">Char(8)</p></td>
-<td align="left" valign="top"><p class="table">Group: Geography code</p></td>
+<td align="left" valign="top"><p class="table">Group: Geography code of destination job</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">ind_level</p></td>
 <td align="center" valign="top"><p class="table">Char(1)</p></td>
-<td align="left" valign="top"><p class="table">Group: Industry level of aggregation</p></td>
+<td align="left" valign="top"><p class="table">Group: Industry level of aggregation of destination job</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">industry</p></td>
 <td align="center" valign="top"><p class="table">Char(5)</p></td>
-<td align="left" valign="top"><p class="table">Group: Industry code</p></td>
+<td align="left" valign="top"><p class="table">Group: Industry code of destination job</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">ownercode</p></td>
 <td align="center" valign="top"><p class="table">Char(3)</p></td>
-<td align="left" valign="top"><p class="table">Group: Ownership group code</p></td>
+<td align="left" valign="top"><p class="table">Group: Ownership group code of destination job</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">sex</p></td>
@@ -643,15 +640,15 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Beginning-of-Quarter Separation Rate</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">HirAs</p></td>
+<td align="center" valign="top"><p class="table">HirAS</p></td>
 <td align="center" valign="top"><p class="table">FA</p></td>
-<td align="center" valign="top"><p class="table">sHirAs</p></td>
+<td align="center" valign="top"><p class="table">sHirAS</p></td>
 <td align="left" valign="top"><p class="table">Hires All (Stable): Counts (Flows into Full-Quarter Employment)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">HirNs</p></td>
+<td align="center" valign="top"><p class="table">HirNS</p></td>
 <td align="center" valign="top"><p class="table">FH</p></td>
-<td align="center" valign="top"><p class="table">sHirNs</p></td>
+<td align="center" valign="top"><p class="table">sHirNS</p></td>
 <td align="left" valign="top"><p class="table">Hires New (Stable): Counts (New Hires to Full-Quarter Status)</p></td>
 </tr>
 <tr>
@@ -681,7 +678,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbLs</p></td>
 <td align="center" valign="top"><p class="table">JD</p></td>
-<td align="center" valign="top"><p class="table">sFrmJobLs</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbLs</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Loss: Counts (Job Destruction)</p></td>
 </tr>
 <tr>
@@ -741,7 +738,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">EarnHirNS</p></td>
 <td align="center" valign="top"><p class="table">ZWFH</p></td>
-<td align="center" valign="top"><p class="table">sEarnHireNS</p></td>
+<td align="center" valign="top"><p class="table">sEarnHirNS</p></td>
 <td align="left" valign="top"><p class="table">Hires New (Stable): Average Monthly Earnings</p></td>
 </tr>
 <tr>
@@ -827,16 +824,16 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">AvgEmp</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">HirAsR</p></td>
+<td align="center" valign="top"><p class="table">HirASR</p></td>
 <td align="center" valign="top"><p class="table">FAR</p></td>
-<td align="center" valign="top"><p class="table">sHirAsR</p></td>
+<td align="center" valign="top"><p class="table">sHirASR</p></td>
 <td align="left" valign="top"><p class="table">Stable Hiring Rate (Flows into Full-Quarter Employment)</p></td>
 <td align="left" valign="top"><p class="table">AvgEmpS</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">HirNsR</p></td>
+<td align="center" valign="top"><p class="table">HirNSR</p></td>
 <td align="center" valign="top"><p class="table">FHR</p></td>
-<td align="center" valign="top"><p class="table">sHirNsR</p></td>
+<td align="center" valign="top"><p class="table">sHirNSR</p></td>
 <td align="left" valign="top"><p class="table">Stable New Hiring Rate (New Hires to Full-Quarter Status)</p></td>
 <td align="left" valign="top"><p class="table">AvgEmpS</p></td>
 </tr>
@@ -3077,6 +3074,26 @@ cellspacing="0" cellpadding="4">
 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
 </p>
 </li>
+<li>
+<p>
+2016-03-16: Removed extraneous empty lines
+</p>
+</li>
+<li>
+<p>
+2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+</p>
+</li>
+<li>
+<p>
+2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+</p>
+</li>
+<li>
+<p>
+2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -3116,7 +3133,7 @@ added agg_level variable
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Aug 25 23:26:40 EDT 2015</p></div>
+<div class="paragraph"><p>This revision: Wed Apr 13 08:35:56 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -3125,7 +3142,7 @@ added agg_level variable
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-08-25 23:26:40 EDT
+Last updated 2016-04-13 08:35:56 EDT
 </div>
 </div>
 </body>

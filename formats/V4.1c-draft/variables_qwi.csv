@@ -12,8 +12,8 @@ HirAEnd,CA,sHirAEnd,End-of-Quarter Hires
 HirAEndR,CAR,sHirAEndR,End-of-Quarter Hiring Rate
 SepBeg,CS,sSepBeg,Beginning-of-Quarter Separations
 SepBegR,CSR,sSepBegR,Beginning-of-Quarter Separation Rate
-HirAs,FA,sHirAs,Hires All (Stable): Counts (Flows into Full-Quarter Employment)
-HirNs,FH,sHirNs,Hires New (Stable): Counts (New Hires to Full-Quarter Status)
+HirAS,FA,sHirAS,Hires All (Stable): Counts (Flows into Full-Quarter Employment)
+HirNS,FH,sHirNS,Hires New (Stable): Counts (New Hires to Full-Quarter Status)
 SepS,FS,sSepS,Separations (Stable): Counts (Flow out of Full-Quarter Employment)
 SepSnx,FSnx,sSepSnx,Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)
 TurnOvrS,FT,sTurnOvrS,Turnover (Stable)
