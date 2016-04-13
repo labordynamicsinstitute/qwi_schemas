@@ -1,86 +1,86 @@
-geography,label
-46,"South Dakota"
-46003,"Aurora, SD"
-46005,"Beadle, SD"
-46007,"Bennett, SD"
-46009,"Bon Homme, SD"
-46011,"Brookings, SD"
-46013,"Brown, SD"
-46015,"Brule, SD"
-46017,"Buffalo, SD"
-46019,"Butte, SD"
-46021,"Campbell, SD"
-46023,"Charles Mix, SD"
-46025,"Clark, SD"
-46027,"Clay, SD"
-46029,"Codington, SD"
-46031,"Corson, SD"
-46033,"Custer, SD"
-46035,"Davison, SD"
-46037,"Day, SD"
-46039,"Deuel, SD"
-46041,"Dewey, SD"
-46043,"Douglas, SD"
-46045,"Edmunds, SD"
-46047,"Fall River, SD"
-46049,"Faulk, SD"
-46051,"Grant, SD"
-46053,"Gregory, SD"
-46055,"Haakon, SD"
-46057,"Hamlin, SD"
-46059,"Hand, SD"
-46061,"Hanson, SD"
-46063,"Harding, SD"
-46065,"Hughes, SD"
-46067,"Hutchinson, SD"
-46069,"Hyde, SD"
-46071,"Jackson, SD"
-46073,"Jerauld, SD"
-46075,"Jones, SD"
-46077,"Kingsbury, SD"
-46079,"Lake, SD"
-46081,"Lawrence, SD"
-46083,"Lincoln, SD"
-46085,"Lyman, SD"
-46087,"McCook, SD"
-46089,"McPherson, SD"
-46091,"Marshall, SD"
-46093,"Meade, SD"
-46095,"Mellette, SD"
-46097,"Miner, SD"
-46099,"Minnehaha, SD"
-46101,"Moody, SD"
-4610100,"Aberdeen, SD"
-46102,"Oglala Lakota, SD"
-46103,"Pennington, SD"
-46105,"Perkins, SD"
-46107,"Potter, SD"
-46109,"Roberts, SD"
-46111,"Sanborn, SD"
-46115,"Spink, SD"
-46117,"Stanley, SD"
-46119,"Sully, SD"
-46121,"Todd, SD"
-46123,"Tripp, SD"
-46125,"Turner, SD"
-46127,"Union, SD"
-46129,"Walworth, SD"
-46135,"Yankton, SD"
-46137,"Ziebach, SD"
-4615100,"Brookings, SD"
-4626700,"Huron, SD"
-4633580,"Mitchell, SD"
-4638180,"Pierre, SD"
-4639660,"Rapid City, SD"
-46396600,"Rapid City MSA WIB"
-4643580,"Sioux City, IA-NE-SD (SD part)"
-4643620,"Sioux Falls, SD"
-46436200,"Sioux Falls MSA WIB"
-4643940,"Spearfish, SD"
-46460001,"Central Area WIB"
-46460002,"East Area WIB"
-46460003,"West Area WIB"
-4646820,"Vermillion, SD"
-4647980,"Watertown, SD"
-4649460,"Yankton, SD"
-4699999,"Nonmetropolitan, nonmicropolitan"
+geography,label,geo_level
+46,"South Dakota",S
+46003,"Aurora, SD",C
+46005,"Beadle, SD",C
+46007,"Bennett, SD",C
+46009,"Bon Homme, SD",C
+46011,"Brookings, SD",C
+46013,"Brown, SD",C
+46015,"Brule, SD",C
+46017,"Buffalo, SD",C
+46019,"Butte, SD",C
+46021,"Campbell, SD",C
+46023,"Charles Mix, SD",C
+46025,"Clark, SD",C
+46027,"Clay, SD",C
+46029,"Codington, SD",C
+46031,"Corson, SD",C
+46033,"Custer, SD",C
+46035,"Davison, SD",C
+46037,"Day, SD",C
+46039,"Deuel, SD",C
+46041,"Dewey, SD",C
+46043,"Douglas, SD",C
+46045,"Edmunds, SD",C
+46047,"Fall River, SD",C
+46049,"Faulk, SD",C
+46051,"Grant, SD",C
+46053,"Gregory, SD",C
+46055,"Haakon, SD",C
+46057,"Hamlin, SD",C
+46059,"Hand, SD",C
+46061,"Hanson, SD",C
+46063,"Harding, SD",C
+46065,"Hughes, SD",C
+46067,"Hutchinson, SD",C
+46069,"Hyde, SD",C
+46071,"Jackson, SD",C
+46073,"Jerauld, SD",C
+46075,"Jones, SD",C
+46077,"Kingsbury, SD",C
+46079,"Lake, SD",C
+46081,"Lawrence, SD",C
+46083,"Lincoln, SD",C
+46085,"Lyman, SD",C
+46087,"McCook, SD",C
+46089,"McPherson, SD",C
+46091,"Marshall, SD",C
+46093,"Meade, SD",C
+46095,"Mellette, SD",C
+46097,"Miner, SD",C
+46099,"Minnehaha, SD",C
+46101,"Moody, SD",C
+4610100,"Aberdeen, SD",M
+46102,"Oglala Lakota, SD",C
+46103,"Pennington, SD",C
+46105,"Perkins, SD",C
+46107,"Potter, SD",C
+46109,"Roberts, SD",C
+46111,"Sanborn, SD",C
+46115,"Spink, SD",C
+46117,"Stanley, SD",C
+46119,"Sully, SD",C
+46121,"Todd, SD",C
+46123,"Tripp, SD",C
+46125,"Turner, SD",C
+46127,"Union, SD",C
+46129,"Walworth, SD",C
+46135,"Yankton, SD",C
+46137,"Ziebach, SD",C
+4615100,"Brookings, SD",M
+4626700,"Huron, SD",M
+4633580,"Mitchell, SD",M
+4638180,"Pierre, SD",M
+4639660,"Rapid City, SD",M
+46396600,"Rapid City MSA WIB",W
+4643580,"Sioux City, IA-NE-SD (SD part)",M
+4643620,"Sioux Falls, SD",M
+46436200,"Sioux Falls MSA WIB",W
+4643940,"Spearfish, SD",M
+46460001,"Central Area WIB",W
+46460002,"East Area WIB",W
+46460003,"West Area WIB",W
+4646820,"Vermillion, SD",M
+4647980,"Watertown, SD",M
+4649460,"Yankton, SD",M
+4699999,"Nonmetropolitan, nonmicropolitan",M

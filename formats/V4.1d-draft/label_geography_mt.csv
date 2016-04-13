@@ -1,68 +1,68 @@
-geography,label
-30,"Montana"
-30001,"Beaverhead, MT"
-30003,"Big Horn, MT"
-30005,"Blaine, MT"
-30007,"Broadwater, MT"
-30009,"Carbon, MT"
-30011,"Carter, MT"
-30013,"Cascade, MT"
-30015,"Chouteau, MT"
-30017,"Custer, MT"
-30019,"Daniels, MT"
-30021,"Dawson, MT"
-30023,"Deer Lodge, MT"
-30025,"Fallon, MT"
-30027,"Fergus, MT"
-30029,"Flathead, MT"
-30031,"Gallatin, MT"
-30033,"Garfield, MT"
-30035,"Glacier, MT"
-30037,"Golden Valley, MT"
-30039,"Granite, MT"
-30041,"Hill, MT"
-30043,"Jefferson, MT"
-30045,"Judith Basin, MT"
-30047,"Lake, MT"
-30049,"Lewis and Clark, MT"
-30051,"Liberty, MT"
-30053,"Lincoln, MT"
-30055,"McCone, MT"
-30057,"Madison, MT"
-30059,"Meagher, MT"
-30061,"Mineral, MT"
-30063,"Missoula, MT"
-30065,"Musselshell, MT"
-30067,"Park, MT"
-30069,"Petroleum, MT"
-30071,"Phillips, MT"
-30073,"Pondera, MT"
-30075,"Powder River, MT"
-30077,"Powell, MT"
-30079,"Prairie, MT"
-30081,"Ravalli, MT"
-30083,"Richland, MT"
-30085,"Roosevelt, MT"
-30087,"Rosebud, MT"
-30089,"Sanders, MT"
-30091,"Sheridan, MT"
-30093,"Silver Bow, MT"
-30095,"Stillwater, MT"
-30097,"Sweet Grass, MT"
-30099,"Teton, MT"
-30100001,"01 CEP WIB"
-30100002,"02 Balance of State WIB"
-30101,"Toole, MT"
-30103,"Treasure, MT"
-30105,"Valley, MT"
-30107,"Wheatland, MT"
-30109,"Wibaux, MT"
-30111,"Yellowstone, MT"
-3013740,"Billings, MT"
-3014580,"Bozeman, MT"
-3015580,"Butte-Silver Bow, MT"
-3024500,"Great Falls, MT"
-3025740,"Helena, MT"
-3028060,"Kalispell, MT"
-3033540,"Missoula, MT"
-3099999,"Nonmetropolitan, nonmicropolitan"
+geography,label,geo_level
+30,"Montana",S
+30001,"Beaverhead, MT",C
+30003,"Big Horn, MT",C
+30005,"Blaine, MT",C
+30007,"Broadwater, MT",C
+30009,"Carbon, MT",C
+30011,"Carter, MT",C
+30013,"Cascade, MT",C
+30015,"Chouteau, MT",C
+30017,"Custer, MT",C
+30019,"Daniels, MT",C
+30021,"Dawson, MT",C
+30023,"Deer Lodge, MT",C
+30025,"Fallon, MT",C
+30027,"Fergus, MT",C
+30029,"Flathead, MT",C
+30031,"Gallatin, MT",C
+30033,"Garfield, MT",C
+30035,"Glacier, MT",C
+30037,"Golden Valley, MT",C
+30039,"Granite, MT",C
+30041,"Hill, MT",C
+30043,"Jefferson, MT",C
+30045,"Judith Basin, MT",C
+30047,"Lake, MT",C
+30049,"Lewis and Clark, MT",C
+30051,"Liberty, MT",C
+30053,"Lincoln, MT",C
+30055,"McCone, MT",C
+30057,"Madison, MT",C
+30059,"Meagher, MT",C
+30061,"Mineral, MT",C
+30063,"Missoula, MT",C
+30065,"Musselshell, MT",C
+30067,"Park, MT",C
+30069,"Petroleum, MT",C
+30071,"Phillips, MT",C
+30073,"Pondera, MT",C
+30075,"Powder River, MT",C
+30077,"Powell, MT",C
+30079,"Prairie, MT",C
+30081,"Ravalli, MT",C
+30083,"Richland, MT",C
+30085,"Roosevelt, MT",C
+30087,"Rosebud, MT",C
+30089,"Sanders, MT",C
+30091,"Sheridan, MT",C
+30093,"Silver Bow, MT",C
+30095,"Stillwater, MT",C
+30097,"Sweet Grass, MT",C
+30099,"Teton, MT",C
+30100001,"01 CEP WIB",W
+30100002,"02 Balance of State WIB",W
+30101,"Toole, MT",C
+30103,"Treasure, MT",C
+30105,"Valley, MT",C
+30107,"Wheatland, MT",C
+30109,"Wibaux, MT",C
+30111,"Yellowstone, MT",C
+3013740,"Billings, MT",M
+3014580,"Bozeman, MT",M
+3015580,"Butte-Silver Bow, MT",M
+3024500,"Great Falls, MT",M
+3025740,"Helena, MT",M
+3028060,"Kalispell, MT",M
+3033540,"Missoula, MT",M
+3099999,"Nonmetropolitan, nonmicropolitan",M
