@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-13 April 2016
+14 April 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
@@ -84,6 +84,13 @@ FORMAT
 
 ( [variables\_shp.csv](variables_shp.csv) )
 
+Files are distributed as [ESRI
+Shapefiles](http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml),
+packaged as [ZIP](https://en.wikipedia.org/wiki/Zip_(file_format))
+files. The SHP component of these archives is described here. Other
+components (dbf, prj, shx) files are not documented here, we refer users
+to <http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml> .
+
 <table>
 <col width="14%" />
 <col width="14%" />
@@ -164,7 +171,7 @@ Common files
 
 ### State
 
-( [lehd\_state.shp](lehd_state.shp) )
+( [lehd\_state.zip](lehd_state.zip) )
 
 No transformations occur to this layer other than those listed above.
 
@@ -173,14 +180,14 @@ QWI Geographies
 
 ### County
 
-( [lehd\_county.shp](lehd_county.shp) )
+( [lehd\_county.zip](lehd_county.zip) )
 
 -   STUSPS is appended to the NAME field so that county names are
     nationally unique. Example: "Cook, IL"
 
 ### CBSA - within State
 
-( [lehd\_stcbsa.shp](lehd_stcbsa.shp) )
+( [lehd\_stcbsa.zip](lehd_stcbsa.zip) )
 
 -   All features are split into state-specific CBSA features by
     intersecting each feature with the state shapefile features.
@@ -200,7 +207,7 @@ QWI Geographies
 
 ### Workforce Investment Board Areas
 
-( [lehd\_wib.shp](lehd_wib.shp) )
+( [lehd\_wib.zip](lehd_wib.zip) )
 
 The WIA/WIB shapefiles are built from the Place, County Subdivision, and
 County shapefiles from TIGER/Line based on definitions provided by the
@@ -211,7 +218,7 @@ Job-to-Job Flow Geographies
 
 ### CBSA - National
 
-( [lehd\_cbsa.shp](lehd_cbsa.shp) )
+( [lehd\_cbsa.zip](lehd_cbsa.zip) )
 
 -   The state remainder areas are added to the shapefile as new
     features. They are assigned unique codes ([STUSPS]+999) and names
@@ -235,4 +242,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Wed Apr 13 16:54:41 EDT 2016
+This revision: Thu Apr 14 13:12:22 EDT 2016
