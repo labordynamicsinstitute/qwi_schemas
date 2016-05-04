@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-13 April 2016
+04 May 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -141,57 +141,73 @@ or data quality status (see Status_Flags). The 'Indicator Name' is a more
 verbose description of the indicator.
 *** 4.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
-Indicator Variable Alternate name  Status Flag  Indicator Name
-           Emp              B           sEmp    Beginning-of-Quarter Employment
-         EmpEnd             E         sEmpEnd   End-of-Quarter Employment
-          EmpS              F           sEmpS   Full-Quarter Employment
+Indicator Variable Alternate name  Status Flag  Indicator Name          Units
+           Emp              B           sEmp    Beginning-of-Quarter    Count
+                                                Employment
+         EmpEnd             E         sEmpEnd   End-of-Quarter          Count
+                                                Employment
+          EmpS              F           sEmpS   Full-Quarter Employment Count
                                                 (Stable)
-         EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment in the
-                                                Previous Quarter
-       EmpTotal             M        sEmpTotal  Employment - Reference Quarter
-          HirA              A           sHirA   Hires (All Accessions)
-          HirN              H           sHirN   New Hires
-          HirR              R           sHirR   Recall Hires
-           Sep              S           sSep    Separations (All)
-        HirAEnd             CA       sHirAEnd   End-of-Quarter Hires
-       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring Rate
-         SepBeg             CS        sSepBeg   Beginning-of-Quarter
-                                                Separations
-        SepBegR            CSR       sSepBegR   Beginning-of-Quarter Separation
+         EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment Count
+                                                in the Previous Quarter
+       EmpTotal             M        sEmpTotal  Employment - Reference  Count
+                                                Quarter
+          HirA              A           sHirA   Hires (All Accessions)  Count
+          HirN              H           sHirN   New Hires               Count
+          HirR              R           sHirR   Recall Hires            Count
+           Sep              S           sSep    Separations (All)       Count
+        HirAEnd             CA       sHirAEnd   End-of-Quarter Hires    Count
+       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring   Rate
                                                 Rate
-         HirAS              FA         sHirAS   Hires (All Hires into Full-
-                                                Quarter Employment)
-         HirNS              FH         sHirNS   New Hires (New Hires into Full-
-                                                Quarter Employment)
-          SepS              FS          sSepS   Separations (Flows out of Full-
-                                                Quarter Employment)
-         SepSnx           FSnx        sSepSnx   Separations in the Next Quarter
-                                                (Flows out of Full-Quarter
+         SepBeg             CS        sSepBeg   Beginning-of-Quarter    Count
+                                                Separations
+        SepBegR            CSR       sSepBegR   Beginning-of-Quarter    Rate
+                                                Separation Rate
+         HirAS              FA         sHirAS   Hires (All Hires into   Count
+                                                Full-Quarter
                                                 Employment)
-       TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
-        FrmJbGn             JC       sFrmJbGn   Firm Job Gains (Job Creation)
-        FrmJbLs             JD       sFrmJbLs   Firm Job Loss (Job Destruction)
-         FrmJbC             JF        sFrmJbC   Firm Job Change (Net Change)
-     HirAEndRepl            EI    sHirAEndRepl  Replacement Hires
-    HirAEndReplr           EIR    sHirAEndReplr Replacement Hiring Rate
-       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable)
-       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable)
-        FrmJbCS            FJF       sFrmJbCS   Firm Job Change (Stable; Net
+         HirNS              FH         sHirNS   New Hires (New Hires    Count
+                                                into Full-Quarter
+                                                Employment)
+          SepS              FS          sSepS   Separations (Flows out  Count
+                                                of Full-Quarter
+                                                Employment)
+         SepSnx           FSnx        sSepSnx   Separations in the Next Count
+                                                Quarter (Flows out of
+                                                Full-Quarter
+                                                Employment)
+       TurnOvrS             FT       sTurnOvrS  Turnover (Stable)       Rate
+        FrmJbGn             JC       sFrmJbGn   Firm Job Gains (Job     Count
+                                                Creation)
+        FrmJbLs             JD       sFrmJbLs   Firm Job Loss (Job      Count
+                                                Destruction)
+         FrmJbC             JF        sFrmJbC   Firm Job Change (Net    Count
                                                 Change)
-         EarnS             ZW3         sEarnS   Average Monthly Earnings (Full-
+     HirAEndRepl            EI    sHirAEndRepl  Replacement Hires       Count
+    HirAEndReplr           EIR    sHirAEndReplr Replacement Hiring Rate Rate
+       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable) Count
+       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable)  Count
+        FrmJbCS            FJF       sFrmJbCS   Firm Job Change         Count
+                                                (Stable; Net Change)
+         EarnS             ZW3         sEarnS   Average Monthly         Dollars
+                                                Earnings (Full-Quarter
+                                                Employment)
+        EarnBeg            ZW1       sEarnBeg   Average Monthly         Dollars
+                                                Earnings (Beginning-of-
                                                 Quarter Employment)
-        EarnBeg            ZW1       sEarnBeg   Average Monthly Earnings
-                                                (Beginning-of-Quarter
+      EarnHirAS           ZWFA      sEarnHirAS  Average Monthly         Dollars
+                                                Earnings (All Hires
+                                                into Full-Quarter
                                                 Employment)
-      EarnHirAS           ZWFA      sEarnHirAS  Average Monthly Earnings (All
-                                                Hires into Full-Quarter
+      EarnHirNS           ZWFH      sEarnHirNS  Average Monthly         Dollars
+                                                Earnings (New Hires
+                                                into Full-Quarter
                                                 Employment)
-      EarnHirNS           ZWFH      sEarnHirNS  Average Monthly Earnings (New
-                                                Hires into Full-Quarter
+       EarnSepS           ZWFS       sEarnSepS  Average Monthly         Dollars
+                                                Earnings (Flows out of
+                                                Full-Quarter
                                                 Employment)
-       EarnSepS           ZWFS       sEarnSepS  Average Monthly Earnings (Flows
-                                                out of Full-Quarter Employment)
-        Payroll             W1       sPayroll   Total Quarterly Payroll
+        Payroll             W1       sPayroll   Total Quarterly Payroll Dollars
 *** 4.3.2. National QWI and state-level QWI rates (QWIPUR) ***
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
@@ -897,6 +913,6 @@ flag label
     * added agg_level variable
     * added additional geo_level for CBSA (complete)
     * added SHP files and description thereof
-This revision: Wed Apr 13 16:59:03 EDT 2016
+This revision: Wed May 4 11:20:32 EDT 2016
 ===============================================================================
-Last updated 2016-04-13 16:59:03 EDT
+Last updated 2016-05-04 11:20:32 EDT

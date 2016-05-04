@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema V4.1d-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">13 April 2016</span>
+<span id="revdate">04 May 2016</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -568,16 +568,18 @@ list the indicators available on each file.  The <em>'Indicator Variable</em>' i
 width="95%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="18%" />
-<col width="18%" />
-<col width="18%" />
-<col width="45%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="38%" />
+<col width="15%" />
 <thead>
 <tr>
 <th align="center" valign="top">Indicator Variable</th>
 <th align="center" valign="top">Alternate name</th>
 <th align="center" valign="top">Status Flag</th>
 <th align="left" valign="top">Indicator Name</th>
+<th align="left" valign="top">Units</th>
 </tr>
 </thead>
 <tbody>
@@ -586,192 +588,224 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">B</p></td>
 <td align="center" valign="top"><p class="table">sEmp</p></td>
 <td align="left" valign="top"><p class="table">Beginning-of-Quarter Employment</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EmpEnd</p></td>
 <td align="center" valign="top"><p class="table">E</p></td>
 <td align="center" valign="top"><p class="table">sEmpEnd</p></td>
 <td align="left" valign="top"><p class="table">End-of-Quarter Employment</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EmpS</p></td>
 <td align="center" valign="top"><p class="table">F</p></td>
 <td align="center" valign="top"><p class="table">sEmpS</p></td>
 <td align="left" valign="top"><p class="table">Full-Quarter Employment (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EmpSpv</p></td>
 <td align="center" valign="top"><p class="table">Fpv</p></td>
 <td align="center" valign="top"><p class="table">sEmpSpv</p></td>
 <td align="left" valign="top"><p class="table">Full-Quarter Employment in the Previous Quarter</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EmpTotal</p></td>
 <td align="center" valign="top"><p class="table">M</p></td>
 <td align="center" valign="top"><p class="table">sEmpTotal</p></td>
 <td align="left" valign="top"><p class="table">Employment - Reference Quarter</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirA</p></td>
 <td align="center" valign="top"><p class="table">A</p></td>
 <td align="center" valign="top"><p class="table">sHirA</p></td>
 <td align="left" valign="top"><p class="table">Hires (All Accessions)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirN</p></td>
 <td align="center" valign="top"><p class="table">H</p></td>
 <td align="center" valign="top"><p class="table">sHirN</p></td>
 <td align="left" valign="top"><p class="table">New Hires</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirR</p></td>
 <td align="center" valign="top"><p class="table">R</p></td>
 <td align="center" valign="top"><p class="table">sHirR</p></td>
 <td align="left" valign="top"><p class="table">Recall Hires</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">Sep</p></td>
 <td align="center" valign="top"><p class="table">S</p></td>
 <td align="center" valign="top"><p class="table">sSep</p></td>
 <td align="left" valign="top"><p class="table">Separations (All)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirAEnd</p></td>
 <td align="center" valign="top"><p class="table">CA</p></td>
 <td align="center" valign="top"><p class="table">sHirAEnd</p></td>
 <td align="left" valign="top"><p class="table">End-of-Quarter Hires</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirAEndR</p></td>
 <td align="center" valign="top"><p class="table">CAR</p></td>
 <td align="center" valign="top"><p class="table">sHirAEndR</p></td>
 <td align="left" valign="top"><p class="table">End-of-Quarter Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">SepBeg</p></td>
 <td align="center" valign="top"><p class="table">CS</p></td>
 <td align="center" valign="top"><p class="table">sSepBeg</p></td>
 <td align="left" valign="top"><p class="table">Beginning-of-Quarter Separations</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">SepBegR</p></td>
 <td align="center" valign="top"><p class="table">CSR</p></td>
 <td align="center" valign="top"><p class="table">sSepBegR</p></td>
 <td align="left" valign="top"><p class="table">Beginning-of-Quarter Separation Rate</p></td>
+<td align="left" valign="top"><p class="table">Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirAS</p></td>
 <td align="center" valign="top"><p class="table">FA</p></td>
 <td align="center" valign="top"><p class="table">sHirAS</p></td>
 <td align="left" valign="top"><p class="table">Hires (All Hires into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirNS</p></td>
 <td align="center" valign="top"><p class="table">FH</p></td>
 <td align="center" valign="top"><p class="table">sHirNS</p></td>
 <td align="left" valign="top"><p class="table">New Hires (New Hires into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">SepS</p></td>
 <td align="center" valign="top"><p class="table">FS</p></td>
 <td align="center" valign="top"><p class="table">sSepS</p></td>
 <td align="left" valign="top"><p class="table">Separations (Flows out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">SepSnx</p></td>
 <td align="center" valign="top"><p class="table">FSnx</p></td>
 <td align="center" valign="top"><p class="table">sSepSnx</p></td>
 <td align="left" valign="top"><p class="table">Separations in the Next Quarter (Flows out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">TurnOvrS</p></td>
 <td align="center" valign="top"><p class="table">FT</p></td>
 <td align="center" valign="top"><p class="table">sTurnOvrS</p></td>
 <td align="left" valign="top"><p class="table">Turnover (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbGn</p></td>
 <td align="center" valign="top"><p class="table">JC</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbGn</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Gains (Job Creation)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbLs</p></td>
 <td align="center" valign="top"><p class="table">JD</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbLs</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Loss (Job Destruction)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbC</p></td>
 <td align="center" valign="top"><p class="table">JF</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbC</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Change (Net Change)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirAEndRepl</p></td>
 <td align="center" valign="top"><p class="table">EI</p></td>
 <td align="center" valign="top"><p class="table">sHirAEndRepl</p></td>
 <td align="left" valign="top"><p class="table">Replacement Hires</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">HirAEndReplr</p></td>
 <td align="center" valign="top"><p class="table">EIR</p></td>
 <td align="center" valign="top"><p class="table">sHirAEndReplr</p></td>
 <td align="left" valign="top"><p class="table">Replacement Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">Rate</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbGnS</p></td>
 <td align="center" valign="top"><p class="table">FJC</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbGnS</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Gains (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbLsS</p></td>
 <td align="center" valign="top"><p class="table">FJD</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbLsS</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Loss (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">FrmJbCS</p></td>
 <td align="center" valign="top"><p class="table">FJF</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbCS</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Change (Stable; Net Change)</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EarnS</p></td>
 <td align="center" valign="top"><p class="table">ZW3</p></td>
 <td align="center" valign="top"><p class="table">sEarnS</p></td>
 <td align="left" valign="top"><p class="table">Average Monthly Earnings (Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EarnBeg</p></td>
 <td align="center" valign="top"><p class="table">ZW1</p></td>
 <td align="center" valign="top"><p class="table">sEarnBeg</p></td>
 <td align="left" valign="top"><p class="table">Average Monthly Earnings (Beginning-of-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EarnHirAS</p></td>
 <td align="center" valign="top"><p class="table">ZWFA</p></td>
 <td align="center" valign="top"><p class="table">sEarnHirAS</p></td>
 <td align="left" valign="top"><p class="table">Average Monthly Earnings (All Hires into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EarnHirNS</p></td>
 <td align="center" valign="top"><p class="table">ZWFH</p></td>
 <td align="center" valign="top"><p class="table">sEarnHirNS</p></td>
 <td align="left" valign="top"><p class="table">Average Monthly Earnings (New Hires into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EarnSepS</p></td>
 <td align="center" valign="top"><p class="table">ZWFS</p></td>
 <td align="center" valign="top"><p class="table">sEarnSepS</p></td>
 <td align="left" valign="top"><p class="table">Average Monthly Earnings (Flows out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">Payroll</p></td>
 <td align="center" valign="top"><p class="table">W1</p></td>
 <td align="center" valign="top"><p class="table">sPayroll</p></td>
 <td align="left" valign="top"><p class="table">Total Quarterly Payroll</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
 </tr>
 </tbody>
 </table>
@@ -3496,7 +3530,7 @@ added SHP files and description thereof
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Wed Apr 13 16:59:03 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Wed May  4 11:20:32 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -3505,7 +3539,7 @@ added SHP files and description thereof
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-04-13 16:59:03 EDT
+Last updated 2016-05-04 11:20:32 EDT
 </div>
 </div>
 </body>

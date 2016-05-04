@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1d-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-13 April 2016
+04 May 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -120,7 +120,7 @@ list the indicators available on each file.  The ''Indicator Variable'' is the s
 ==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwi.csv[variables_qwi.csv] )
-[width="95%",format="csv",cols="3*^2,<5",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
 |===================================================
 include::variables_qwi.csv[]
 |===================================================
@@ -607,6 +607,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Wed Apr 13 16:59:03 EDT 2016
+This revision: Wed May  4 11:20:32 EDT 2016
 *******************
 

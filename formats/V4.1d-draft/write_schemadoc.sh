@@ -179,7 +179,7 @@ list the indicators available on each file.  The ''Indicator Variable'' is the s
 ==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwi.csv[variables_qwi.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
 |===================================================
 include::variables_qwi.csv[]
 |===================================================
