@@ -1,0 +1,9 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2016-08-08: Initial release
+
+=== Version 4.0.5 from 4.1-rc1
+- 2016-08-08: Implemented select changes from V4.1d-draft:
+  - Changed structure of state-level geography labels (flat directory structure)

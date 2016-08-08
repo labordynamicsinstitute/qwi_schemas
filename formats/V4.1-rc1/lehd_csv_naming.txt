@@ -1,0 +1,133 @@
+
+****** LEHD Public Use CSV Naming Schema V4.0.5 - CSV Naming Convention ******
+Lars Vilhuber
+<lars.vilhuber@cornell.edu>
+15 March 2016
+Table of Contents
+JavaScript must be enabled in your browser to display the table of contents.
+( Printable_version )
+            Important
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
+***** 1. Purpose *****
+The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
+Employer-Household Dynamics Program are available for download with the
+following data schema. These data are available as Comma-Separated Value (CSV)
+files through the LEHD website’s Data page at http://lehd.ces.census.gov/data/
+and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+This document describes the file naming schema for LEHD-provided CSV files.
+***** 2. Schema for Data File Contents *****
+The contents (schema) are described in lehd_public_use_schema.html.
+***** 3. Extends *****
+This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will
+also be compliant with this schema.
+***** 4. Basic Schema *****
+All files are preceded by a file type definition, followed by additional
+information on the aggregation level of the file, or some other identifier.
+[TYPE]_[DETAILS].csv
+**** 4.1. QWIPU from the LED Extraction Tool ****
+CSV files downloaded through the LED Extraction Tool at http://
+ledextract.ces.census.gov/ follow the following naming convention:
+[type]_[id].csv
+where [id] is the Request ID (a unique string of characters) generated every
+time Submit Request'' is clicked. The ID references each query submission made
+to the database.
+**** 4.2. Other files ****
+Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/
+data follow the following naming convention:
+[type]_[fipsalpha]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
+where each component is described in more detail below. Schema files detailing
+legal values for each component can be downloaded from this website.
+***** 5. Description of Filename Components *****
+**** 5.1. Types ****
+( naming_type.csv )
+type Description           Explanation                url
+qwi  Quarterly Workforce   The Quarterly Workforce    http://
+     Indicators Public Use Indicators (QWI) are a set lehd.ces.census.gov/data/
+     Counts (QWIPU)        of economic indicators     #qwi
+                           including employment, job
+                           creation, earnings, and
+                           other measures of
+                           employment flows. The QWI
+                           are reported using
+                           detailed firm
+                           characteristics
+                           (geography, industry, age,
+                           size) and worker
+                           demographics information
+                           (sex, age, education,
+                           race, ethnicity).
+**** 5.2. fipsalpha ****
+( naming_fipsalpha.csv )
+This component is the alphabetic FIPS state code equivalent to the numeric FIPS
+code in label_fipsnum.csv, based on FIPS PUB 5-2.
+type Description
+ st  Any legal 2-character state postal code (see naming_fipsalpha.csv ))
+**** 5.3. demo ****
+( naming_demo.csv )
+type Description
+  d  All demographics
+ rh  Race by Ethnicity tabulations
+ sa  Sex by Age tabulations
+ se  Sex by Education tabulations
+**** 5.4. fas ****
+( naming_fas.csv )
+type Description
+  f  All firm sizes and ages
+ fa  Tabulations by firm age
+ fs  Tabulations by firm size
+**** 5.5. geocat ****
+( naming_geocat.csv )
+type Description
+ gc  Counties
+ gm  Metropolitan/Micropolitan
+ gn  National (50 States + DC)
+ gs  States
+ gw  Workforce Investment Areas
+**** 5.6. indcat ****
+( naming_indcat.csv )
+type Description
+  n  all industries
+ ns  NAICS sectors
+ n3  NAICS subsectors
+ n4  NAICS industry groups
+**** 5.7. owncat ****
+( naming_owncat.csv )
+type Description
+ fg  Federal government (QWI Code A01)
+ op  All Private (QWI Code A05)
+oslp State, local, and private ownership categories (QWI Code A00)
+**** 5.8. sa ****
+( naming_sa.csv )
+type Description
+  s  Seasonally adjusted
+  u  Not seasonally adjusted
+6.  Changes
+**** 6.1. This version (revisions) ****
+    * 2015-03-15: Initial release
+**** 6.2. Version 4.0.1 from 4.0 ****
+    * 2015-02-24: removed obsolete flag values
+    * 2015-04-01: updated IL, NE geography definitions
+**** 6.3. Version 4.0.2 from 4.0.1 ****
+    * 2015-04-01: switched NAICS coding from 2007 to 2012
+**** 6.4. Version 4.0.3 from 4.0.2 ****
+    * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
+      MA.
+**** 6.5. Version 4.0.4 from 4.0.3 ****
+    * 2015-11-30: updated OR.
+    * 2015-12-10: Added consolidated geography label file
+      label_geography_all.csv
+    * 2015-12-22: Updated the identification of the correct geo vintage
+    * 2015-12-22: Added a link to NAICS 2012 tables
+    * 2015-12-22: Removing the 99 row in industry values - only used for
+      internal error checking
+**** 6.6. Version 4.0.5 from 4.0.4 ****
+    * 2016-03-15: updated MO (new WIB code).
+    * 2016-03-15: Moved label_geography_all.csv to us/label_geography.csv
+    * 2016-03-15: Added better cross-links between CSV naming schame, and
+      datafile schema
+This revision: Tue Mar 15 10:57:39 EDT 2016
+===============================================================================
+Last updated 2016-03-15 10:57:39 EDT
