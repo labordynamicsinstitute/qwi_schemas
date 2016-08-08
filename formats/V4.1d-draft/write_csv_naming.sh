@@ -110,6 +110,16 @@ some other identifier.
 [TYPE]_[DETAILS].[EXT]
 -------------------
 
+( link:naming_convention.csv[] )
+" >> $asciifile
+
+# transform the convention file to prevent typographical interpretation by asciidoc
+cat naming_convention.csv | sed 's+_+\\_+g' | sed 's+\\_\[id\]+_[id]+' | sed 's+\\_\[sa\]+_[sa]+'> tmp_naming_convention.csv
+echo "
+[width=\"90%\",format=\"csv\",delim=\",\",cols=\"^1,<3,<5\",options=\"header\"]
+|===================================================
+include::tmp_naming_convention.csv[]
+|===================================================
 
 === QWIPU from the LED Extraction Tool
 Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
@@ -200,3 +210,4 @@ a2x -f pdf -a icons -a toc -a numbered -a linkcss $asciifile
 echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 echo "$(basename $asciifile .asciidoc).txt created"
+#rm tmp*
