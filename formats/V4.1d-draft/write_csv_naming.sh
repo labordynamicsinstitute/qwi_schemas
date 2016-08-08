@@ -210,4 +210,5 @@ a2x -f pdf -a icons -a toc -a numbered -a linkcss $asciifile
 echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 echo "$(basename $asciifile .asciidoc).txt created"
-#rm tmp*
+echo "Deleting tmp files"
+rm tmp*

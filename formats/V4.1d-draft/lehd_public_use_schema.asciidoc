@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1d-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-04 May 2016
+08 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -607,6 +607,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Wed May  4 11:20:32 EDT 2016
+This revision: Mon Aug  8 15:19:21 EDT 2016
 *******************
 

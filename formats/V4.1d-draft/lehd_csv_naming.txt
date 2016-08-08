@@ -1,9 +1,9 @@
 
-****** LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention
+****** LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-25 August 2015
+08 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -30,6 +30,19 @@ For the specified files, this is the first schema.
 All files are preceded by a file type definition, followed by additional
 information on the aggregation level of the file, or some other identifier.
 [TYPE]_[DETAILS].[EXT]
+( naming_convention.csv )
+                 type       Used By                 Description
+            [type]_[id]     qwix                    CSV files queried from the
+                                                    LED Extraction Tool at
+                                                    http://
+                                                    ledextract.ces.census.gov/.
+   [type]_[geohi]_[demo]_   qwi qwir qwiv qwivr j2j Common convention for
+  [fas]_[geocat]_[indcat]_  j2jr j2jod              currently provided files.
+       [ownercat]_[sa]
+      [type]_[geohi]_       j2j j2jr j2jod          Certain files are provided
+[all,all_aggregations]_[sa]                         in a consolidated format
+                                                    containing multiple
+                                                    aggregations.
 **** 4.1. QWIPU from the LED Extraction Tool ****
 Files downloaded through the LED Extraction Tool at http://
 ledextract.ces.census.gov/ follow the following naming convention:
@@ -156,8 +169,10 @@ type Description
 csv  Comma-Separated file
 pdf  PDF file (printable)
 xls  Excel file (only select output)
+xlsx Excel file (not available for larger files)
 6.  Changes
-**** 6.1. This version from previous releases of this document ****
+**** 6.1. This version from previous releases of V4.1 draft schema documents
+****
     * 2015-02-25: corrected flag values
     * 2015-02-25: documents are now identified by date, not revision
     * 2015-03-10: Correction of the TIGER vintage that is used for geographic
@@ -183,15 +198,26 @@ xls  Excel file (only select output)
       are not on the current beta J2JOD files.
     * 2015-08-25: Added a extension component [ext] to the file naming
       convention to reflect availability of Excel files (and PDF files)
-**** 6.2. Version 4.1c-draft from 4.0 ****
+    * 2016-03-16: Removed extraneous empty lines
+    * 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-12: Incorporated all state-level geography from 4.0.5
+    * 2016-04-12: Added additional geo_level for CBSA (complete)
+    * 2016-04-12: Added additional agg_level values
+    * 2016-04-12: Clarified labels of j2jod identifiers
+    * 2016-04-12: Renamed label_geography_all as label_geography
+    * 2016-04-12: Added a column geo_level to all label_geography_* files
+**** 6.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
     * added definitions of variability measures
     * added definitions of rates on separate file
     * added naming convention for additional files
     * added agg_level variable
+    * added additional geo_level for CBSA (complete)
+    * added SHP files and description thereof
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Tue Aug 25 23:26:26 EDT 2015
+This revision: Mon Aug 8 15:20:34 EDT 2016
 ===============================================================================
-Last updated 2015-08-25 23:26:26 EDT
+Last updated 2016-08-08 15:20:34 EDT

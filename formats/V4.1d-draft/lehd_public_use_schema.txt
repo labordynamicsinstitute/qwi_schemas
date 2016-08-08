@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-04 May 2016
+08 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -913,6 +913,6 @@ flag label
     * added agg_level variable
     * added additional geo_level for CBSA (complete)
     * added SHP files and description thereof
-This revision: Wed May 4 11:20:32 EDT 2016
+This revision: Mon Aug 8 15:19:21 EDT 2016
 ===============================================================================
-Last updated 2016-05-04 11:20:32 EDT
+Last updated 2016-08-08 15:19:21 EDT
