@@ -16,23 +16,20 @@ fi
 
 if [[ "$1" = "start" ]]
 then
-# parse version from directory
-   version=cornell
+	version=cornell
 else
-   version=$1
+	version=$1
 fi
 case $version in
 	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	draft)
-	author=lars.vilhuber@census.gov
-	;;
-	official)
+	official|draft)
 	author=ces.qwi.feedback@census.gov
 	;;
 esac
 cwd=$(pwd)
+# parse version from directory
 numversion=${cwd##*/}
 # convert the column definitions to CSV
 sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definitions.txt | tail -n +2 > tmp.csv
@@ -47,11 +44,12 @@ echo "$(date +%d\ %B\ %Y)
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
 " >> $asciifile
+
 # A note on the relevance/beta/draft status of this file.
 
 case $version in
 	cornell)
-	echo "
+echo "
 [IMPORTANT]
 .Important
 ==============================================
@@ -60,8 +58,8 @@ by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Corn
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-	" >> $asciifile
-	;;
+" >> $asciifile
+  ;;
 	draft)
 	echo "
 [IMPORTANT]
@@ -72,12 +70,11 @@ This specification is draft. Feedback is welcome. Please write us at link:mailto
 	" >> $asciifile
 	;;
 	official)
-	echo "
+echo "
 [IMPORTANT]
 .Important
 ==============================================
-Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
-.
+Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
 ==============================================
 	" >> $asciifile
 	;;
@@ -87,8 +84,8 @@ esac
 echo "
 Purpose
 -------
-The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
-are available for download with the following data schema.
+The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
@@ -101,7 +98,12 @@ The contents (schema) are described in  link:lehd_public_use_schema.html[].
 
 Extends
 -------
-This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.
+This version reimplements some features from  V4.0. Many files compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema, but compatibility is not guaranteed.
+
+Supersedes
+----------
+This version supersedes V4.0.5, for files released as of RXXXX.
+
 
 Basic Schema
 ------------
@@ -110,20 +112,31 @@ All files are preceded by a file type definition, followed by additional informa
 some other identifier.
 
 -------------------
-[TYPE]_[DETAILS].csv
+[TYPE]_[DETAILS].[EXT]
 -------------------
 
+( link:naming_convention.csv[] )
+" >> $asciifile
+
+# transform the convention file to prevent typographical interpretation by asciidoc
+cat naming_convention.csv | sed 's+_+\\_+g' | sed 's+\\_\[id\]+_[id]+' | sed 's+\\_\[sa\]+_[sa]+'> tmp_naming_convention.csv
+echo "
+[width=\"90%\",format=\"csv\",delim=\",\",cols=\"^1,<3,<5\",options=\"header\"]
+|===================================================
+include::tmp_naming_convention.csv[]
+|===================================================
+
 === QWIPU from the LED Extraction Tool
-CSV files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
 ------------------------------------
-[type]_[id].csv
+[type]_[id].[EXT]
 ------------------------------------
 where +[id]+ is the Request ID (a unique string of characters) generated every time ``Submit Request'' is clicked. The ID references each query submission made to the database.
 
 === Other files
-Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
+Files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
 --------------------------------
-[type]_[fipsalpha]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]
 --------------------------------
 where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
 
@@ -146,27 +159,27 @@ include::naming_type.csv[]
 
 ######################## other components
 # start with fips postal
-name=fipsalpha
+name=geohi
   arg=naming_$name.csv
   echo "=== $name
 ( link:${arg}[] )
 
-This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on FIPS PUB 5-2.
+This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2]. It is expanded to encompass additional codes denoting national coverage, or a collection of states.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
 type,Description
-st,Any legal 2-character state postal code (see link:${arg}[] ))
+$(egrep "^all" $arg)
+$(egrep "^us" $arg)
+st,Any legal 2-character state postal code (see link:${arg}[] )
 |===================================================
 " >> $asciifile
 
-for name in demo fas geocat indcat owncat sa
+for name in demo fas geocat indcat owncat sa ext
 do
   arg=naming_$name.csv
   echo "=== $name
 ( link:${arg}[] )
-
-$( [[ $name = geohi ]] && echo 'This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_geohi.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2].')
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
@@ -178,9 +191,17 @@ include::$arg[]
 " >> $asciifile
 done
 
+# extensions
+
+
 cat CHANGES.txt >> $asciifile
 
 echo "
+[IMPORTANT]
+.Important
+==============================================
+Some of the data products noted above do not exist yet.
+==============================================
 
 <<<
 *******************
@@ -194,3 +215,5 @@ a2x -f pdf -a icons -a toc -a numbered -a linkcss $asciifile
 echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 echo "$(basename $asciifile .asciidoc).txt created"
+echo "Deleting tmp files"
+rm tmp*
