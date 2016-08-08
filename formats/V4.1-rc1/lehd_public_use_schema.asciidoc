@@ -571,7 +571,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 === This version (revisions)
 - 2016-08-08: Initial release
 
-=== Version 4.0.5 from 4.1-rc1
+=== Version 4.1-rc1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
   - Changed structure of state-level geography labels (flat directory structure) e5dbe97
   - Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
@@ -593,7 +593,8 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Added additional legal values for firmage and firmsize, as used by J2J a32bb4c
   - Added Federal government to files  (for National QWI) 942dd0a, 1654288
   - Clarified description of filenaming components 8888529, 8d580f6
-  - Sundry small additional changes, building out the schema
+  - Sundry small additional changes, building out the schema 28d7c6f
+  - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
 
 For additional details, please consult the previous draft versions:
 
@@ -605,6 +606,6 @@ For additional details, please consult the previous draft versions:
 
 <<<
 *******************
-This revision: Mon Aug  8 18:04:16 EDT 2016
+This revision: Mon Aug  8 18:12:26 EDT 2016
 *******************
 
