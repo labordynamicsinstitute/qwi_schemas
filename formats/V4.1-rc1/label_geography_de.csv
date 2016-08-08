@@ -1,10 +1,10 @@
-geography,label
-10,"Delaware"
-10000001,"01 Delaware WIB"
-10001,"Kent, DE"
-10003,"New Castle, DE"
-10005,"Sussex, DE"
-1020100,"Dover, DE"
-1037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (DE part)"
-1041540,"Salisbury, MD-DE (DE part)"
-1099999,"Nonmetropolitan, nonmicropolitan"
+geography,label,geo_level
+10,"Delaware",S
+10000001,"01 Delaware WIB",W
+10001,"Kent, DE",C
+10003,"New Castle, DE",C
+10005,"Sussex, DE",C
+1020100,"Dover, DE",M
+1037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (DE part)",M
+1041540,"Salisbury, MD-DE (DE part)",M
+1099999,"Nonmetropolitan, nonmicropolitan",M

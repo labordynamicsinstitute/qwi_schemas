@@ -1,102 +1,102 @@
-geography,label
-01,"Alabama"
-01001,"Autauga, AL"
-01003,"Baldwin, AL"
-01005,"Barbour, AL"
-01007,"Bibb, AL"
-01009,"Blount, AL"
-01010001,"Workforce Development Region 1"
-01010002,"Workforce Development Region 2"
-01010003,"Workforce Development Region 3"
-01010004,"Workforce Development Region 4"
-01010005,"Workforce Development Region 5"
-01010006,"Workforce Development Region 6"
-01010007,"Workforce Development Region 7"
-01010008,"Workforce Development Region 8"
-01010009,"Workforce Development Region 9"
-01010010,"Workforce Development Region 10"
-01011,"Bullock, AL"
-01013,"Butler, AL"
-01015,"Calhoun, AL"
-01017,"Chambers, AL"
-01019,"Cherokee, AL"
-01021,"Chilton, AL"
-01023,"Choctaw, AL"
-01025,"Clarke, AL"
-01027,"Clay, AL"
-01029,"Cleburne, AL"
-01031,"Coffee, AL"
-01033,"Colbert, AL"
-01035,"Conecuh, AL"
-01037,"Coosa, AL"
-01039,"Covington, AL"
-01041,"Crenshaw, AL"
-01043,"Cullman, AL"
-01045,"Dale, AL"
-01047,"Dallas, AL"
-01049,"DeKalb, AL"
-01051,"Elmore, AL"
-01053,"Escambia, AL"
-01055,"Etowah, AL"
-01057,"Fayette, AL"
-01059,"Franklin, AL"
-01061,"Geneva, AL"
-01063,"Greene, AL"
-01065,"Hale, AL"
-01067,"Henry, AL"
-01069,"Houston, AL"
-01071,"Jackson, AL"
-01073,"Jefferson, AL"
-01075,"Lamar, AL"
-01077,"Lauderdale, AL"
-01079,"Lawrence, AL"
-01081,"Lee, AL"
-01083,"Limestone, AL"
-01085,"Lowndes, AL"
-01087,"Macon, AL"
-01089,"Madison, AL"
-01091,"Marengo, AL"
-01093,"Marion, AL"
-01095,"Marshall, AL"
-01097,"Mobile, AL"
-01099,"Monroe, AL"
-01101,"Montgomery, AL"
-01103,"Morgan, AL"
-01105,"Perry, AL"
-01107,"Pickens, AL"
-0110700,"Albertville, AL"
-01109,"Pike, AL"
-01111,"Randolph, AL"
-01113,"Russell, AL"
-01115,"St. Clair, AL"
-0111500,"Anniston-Oxford-Jacksonville, AL"
-01117,"Shelby, AL"
-01119,"Sumter, AL"
-01121,"Talladega, AL"
-0112220,"Auburn-Opelika, AL"
-01123,"Tallapoosa, AL"
-01125,"Tuscaloosa, AL"
-01127,"Walker, AL"
-01129,"Washington, AL"
-01131,"Wilcox, AL"
-01133,"Winston, AL"
-0113820,"Birmingham-Hoover, AL"
-0117980,"Columbus, GA-AL (AL part)"
-0118980,"Cullman, AL"
-0119300,"Daphne-Fairhope-Foley, AL"
-0119460,"Decatur, AL"
-0120020,"Dothan, AL"
-0121460,"Enterprise, AL"
-0122520,"Florence-Muscle Shoals, AL"
-0123460,"Gadsden, AL"
-0126620,"Huntsville, AL"
-0133660,"Mobile, AL"
-0133860,"Montgomery, AL"
-0137120,"Ozark, AL"
-0142460,"Scottsboro, AL"
-0142820,"Selma, AL"
-0145180,"Talladega-Sylacauga, AL"
-0145980,"Troy, AL"
-0146220,"Tuscaloosa, AL"
-0146740,"Valley, AL"
-0199999,"Nonmetropolitan, nonmicropolitan"
+geography,label,geo_level
+01,"Alabama",S
+01001,"Autauga, AL",C
+01003,"Baldwin, AL",C
+01005,"Barbour, AL",C
+01007,"Bibb, AL",C
+01009,"Blount, AL",C
+01010001,"Workforce Development Region 1",W
+01010002,"Workforce Development Region 2",W
+01010003,"Workforce Development Region 3",W
+01010004,"Workforce Development Region 4",W
+01010005,"Workforce Development Region 5",W
+01010006,"Workforce Development Region 6",W
+01010007,"Workforce Development Region 7",W
+01010008,"Workforce Development Region 8",W
+01010009,"Workforce Development Region 9",W
+01010010,"Workforce Development Region 10",W
+01011,"Bullock, AL",C
+01013,"Butler, AL",C
+01015,"Calhoun, AL",C
+01017,"Chambers, AL",C
+01019,"Cherokee, AL",C
+01021,"Chilton, AL",C
+01023,"Choctaw, AL",C
+01025,"Clarke, AL",C
+01027,"Clay, AL",C
+01029,"Cleburne, AL",C
+01031,"Coffee, AL",C
+01033,"Colbert, AL",C
+01035,"Conecuh, AL",C
+01037,"Coosa, AL",C
+01039,"Covington, AL",C
+01041,"Crenshaw, AL",C
+01043,"Cullman, AL",C
+01045,"Dale, AL",C
+01047,"Dallas, AL",C
+01049,"DeKalb, AL",C
+01051,"Elmore, AL",C
+01053,"Escambia, AL",C
+01055,"Etowah, AL",C
+01057,"Fayette, AL",C
+01059,"Franklin, AL",C
+01061,"Geneva, AL",C
+01063,"Greene, AL",C
+01065,"Hale, AL",C
+01067,"Henry, AL",C
+01069,"Houston, AL",C
+01071,"Jackson, AL",C
+01073,"Jefferson, AL",C
+01075,"Lamar, AL",C
+01077,"Lauderdale, AL",C
+01079,"Lawrence, AL",C
+01081,"Lee, AL",C
+01083,"Limestone, AL",C
+01085,"Lowndes, AL",C
+01087,"Macon, AL",C
+01089,"Madison, AL",C
+01091,"Marengo, AL",C
+01093,"Marion, AL",C
+01095,"Marshall, AL",C
+01097,"Mobile, AL",C
+01099,"Monroe, AL",C
+01101,"Montgomery, AL",C
+01103,"Morgan, AL",C
+01105,"Perry, AL",C
+01107,"Pickens, AL",C
+0110700,"Albertville, AL",M
+01109,"Pike, AL",C
+01111,"Randolph, AL",C
+01113,"Russell, AL",C
+01115,"St. Clair, AL",C
+0111500,"Anniston-Oxford-Jacksonville, AL",M
+01117,"Shelby, AL",C
+01119,"Sumter, AL",C
+01121,"Talladega, AL",C
+0112220,"Auburn-Opelika, AL",M
+01123,"Tallapoosa, AL",C
+01125,"Tuscaloosa, AL",C
+01127,"Walker, AL",C
+01129,"Washington, AL",C
+01131,"Wilcox, AL",C
+01133,"Winston, AL",C
+0113820,"Birmingham-Hoover, AL",M
+0117980,"Columbus, GA-AL (AL part)",M
+0118980,"Cullman, AL",M
+0119300,"Daphne-Fairhope-Foley, AL",M
+0119460,"Decatur, AL",M
+0120020,"Dothan, AL",M
+0121460,"Enterprise, AL",M
+0122520,"Florence-Muscle Shoals, AL",M
+0123460,"Gadsden, AL",M
+0126620,"Huntsville, AL",M
+0133660,"Mobile, AL",M
+0133860,"Montgomery, AL",M
+0137120,"Ozark, AL",M
+0142460,"Scottsboro, AL",M
+0142820,"Selma, AL",M
+0145180,"Talladega-Sylacauga, AL",M
+0145980,"Troy, AL",M
+0146220,"Tuscaloosa, AL",M
+0146740,"Valley, AL",M
+0199999,"Nonmetropolitan, nonmicropolitan",M

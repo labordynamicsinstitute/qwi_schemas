@@ -1,42 +1,42 @@
-geography,label
-04,"Arizona"
-04001,"Apache, AZ"
-04003,"Cochise, AZ"
-04004005,"Cochise County LWIB"
-04004010,"Gila/Pinal LWIB"
-04004015,"Graham County LWIB"
-04004020,"Greenlee County LWIB"
-04004025,"City of Phoenix LWIB"
-04004030,"Pima County LWIB"
-04004035,"Maricopa County LWIB"
-04004040,"Santa Cruz County LWIB"
-04004045,"Yuma County LWIB"
-04004060,"Apache/Navajo LWIB"
-04004065,"Coconino County LWIB"
-04004070,"Mohave/LaPaz LWIB"
-04004080,"Yavapai County LWIB"
-04005,"Coconino, AZ"
-04007,"Gila, AZ"
-04009,"Graham, AZ"
-04011,"Greenlee, AZ"
-04012,"La Paz, AZ"
-04013,"Maricopa, AZ"
-04015,"Mohave, AZ"
-04017,"Navajo, AZ"
-04019,"Pima, AZ"
-04021,"Pinal, AZ"
-04023,"Santa Cruz, AZ"
-04025,"Yavapai, AZ"
-04027,"Yuma, AZ"
-0422380,"Flagstaff, AZ"
-0429420,"Lake Havasu City-Kingman, AZ"
-0435700,"Nogales, AZ"
-0437740,"Payson, AZ"
-0438060,"Phoenix-Mesa-Scottsdale, AZ"
-0439140,"Prescott, AZ"
-0440940,"Safford, AZ"
-0443320,"Show Low, AZ"
-0443420,"Sierra Vista-Douglas, AZ"
-0446060,"Tucson, AZ"
-0449740,"Yuma, AZ"
-0499999,"Nonmetropolitan, nonmicropolitan"
+geography,label,geo_level
+04,"Arizona",S
+04001,"Apache, AZ",C
+04003,"Cochise, AZ",C
+04004005,"Cochise County LWIB",W
+04004010,"Gila/Pinal LWIB",W
+04004015,"Graham County LWIB",W
+04004020,"Greenlee County LWIB",W
+04004025,"City of Phoenix LWIB",W
+04004030,"Pima County LWIB",W
+04004035,"Maricopa County LWIB",W
+04004040,"Santa Cruz County LWIB",W
+04004045,"Yuma County LWIB",W
+04004060,"Apache/Navajo LWIB",W
+04004065,"Coconino County LWIB",W
+04004070,"Mohave/LaPaz LWIB",W
+04004080,"Yavapai County LWIB",W
+04005,"Coconino, AZ",C
+04007,"Gila, AZ",C
+04009,"Graham, AZ",C
+04011,"Greenlee, AZ",C
+04012,"La Paz, AZ",C
+04013,"Maricopa, AZ",C
+04015,"Mohave, AZ",C
+04017,"Navajo, AZ",C
+04019,"Pima, AZ",C
+04021,"Pinal, AZ",C
+04023,"Santa Cruz, AZ",C
+04025,"Yavapai, AZ",C
+04027,"Yuma, AZ",C
+0422380,"Flagstaff, AZ",M
+0429420,"Lake Havasu City-Kingman, AZ",M
+0435700,"Nogales, AZ",M
+0437740,"Payson, AZ",M
+0438060,"Phoenix-Mesa-Scottsdale, AZ",M
+0439140,"Prescott, AZ",M
+0440940,"Safford, AZ",M
+0443320,"Show Low, AZ",M
+0443420,"Sierra Vista-Douglas, AZ",M
+0446060,"Tucson, AZ",M
+0449740,"Yuma, AZ",M
+0499999,"Nonmetropolitan, nonmicropolitan",M
