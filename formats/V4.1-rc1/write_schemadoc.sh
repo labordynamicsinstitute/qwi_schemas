@@ -105,6 +105,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 Supersedes
 ----------
 This version supersedes V4.0.5, for files released as of RXXXX.
+
 Basic Schema
 ------------
 Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
