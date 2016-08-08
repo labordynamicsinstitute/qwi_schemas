@@ -4742,21 +4742,15 @@ geography,label,geo_level
 40000010,"10 East Central WIA",W
 40000011,"11 Cleveland WIA",W
 40000012,"12 Eastern WIA",W
-41410001,"01 MTC Training & Placement Services WIB",W
-41410002,"02 Worksystems, Inc. WIB",W
-41410003,"03 Mid-Willamette Workforce Consortium WIB",W
-41410004,"04 Community Services Consortium WIB",W
-41410005,"05 Lane Workforce Partnership WIB",W
-41410006,"06 Umpqua Training & Employment Inc WIB",W
-41410007,"07 S Coast Business Employment Corporation WIB",W
-41410008,"08 The Job Council WIB",W
-41410009,"09 Mid-Columbia Council of Governments WIB",W
-41410010,"10 Central Oregon Intergovernmental Council WIB",W
-41410011,"11 Klamath-Lake Employment Training Inst WIB",W
-41410012,"12 Community Action Program of E Central OR WIB",W
-41410013,"13 Training & Employment Consortium WIB",W
-41410014,"14 Training & Employment Consortium WIB",W
-41410015,"15 Workforce Investment Council of Clackamas WIB",W
+41410001,"Northwest Oregon WIA",W
+41410002,"Portland Metro WIA",W
+41410003,"Clackamas WIA",W
+41410004,"Mid-Valley WIA",W
+41410005,"Lane WIA",W
+41410006,"Southwestern Oregon WIA",W
+41410007,"Rogue Valley WIA",W
+41410008,"Central Oregon/East Cascades WIA",W
+41410009,"Eastern Oregon WIA",W
 44440001,"Workforce Solutions of Providence/Cranston",W
 44440002,"Workforce Partnership of Greater Rhode Island",W
 45000010,"10 Pendleton District W",W

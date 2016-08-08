@@ -1,5 +1,5 @@
 = LEHD Public Use Data Schema V4.1d-draft
-Lars Vilhuber <lars.vilhuber@cornell.edu>
+Lars Vilhuber <lars.vilhuber@census.gov>
 08 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
@@ -10,10 +10,7 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
 ==============================================
 	
 
@@ -607,6 +604,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Aug  8 15:19:21 EDT 2016
+This revision: Mon Aug  8 18:08:51 EDT 2016
 *******************
 
