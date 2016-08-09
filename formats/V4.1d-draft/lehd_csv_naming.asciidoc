@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-08 August 2016
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+09 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -10,12 +10,9 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -196,6 +193,7 @@ include::naming_ext.csv[]
 - 2016-04-12: Clarified labels of j2jod identifiers
 - 2016-04-12: Renamed label_geography_all as label_geography
 - 2016-04-12: Added a column geo_level to all label_geography_* files
+- 2016-08-08: Corrected erroneous Oregon geography labels.
 
 
 === Version 4.1d-draft from 4.0.1
@@ -216,6 +214,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Aug  8 15:20:34 EDT 2016
+This revision: Tue Aug  9 07:59:09 EDT 2016
 *******************
 

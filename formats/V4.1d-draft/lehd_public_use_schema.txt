@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
 <lars.vilhuber@census.gov>
-08 August 2016
+09 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -902,6 +902,7 @@ flag label
     * 2016-04-12: Clarified labels of j2jod identifiers
     * 2016-04-12: Renamed label_geography_all as label_geography
     * 2016-04-12: Added a column geo_level to all label_geography_* files
+    * 2016-08-08: Corrected erroneous Oregon geography labels.
 **** 7.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -911,6 +912,6 @@ flag label
     * added agg_level variable
     * added additional geo_level for CBSA (complete)
     * added SHP files and description thereof
-This revision: Mon Aug 8 18:08:51 EDT 2016
+This revision: Tue Aug 9 07:58:55 EDT 2016
 ===============================================================================
-Last updated 2016-08-08 18:08:51 EDT
+Last updated 2016-08-09 07:58:55 EDT
