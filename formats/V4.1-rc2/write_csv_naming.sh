@@ -89,7 +89,7 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files. 
+This document describes the file naming schema for LEHD-provided CSV files. The naming schema for shapefiles is described in a link:lehd_shapefiles{ext-relative}[separate document].
 
 Schema for Data File Contents
 -----------------------------

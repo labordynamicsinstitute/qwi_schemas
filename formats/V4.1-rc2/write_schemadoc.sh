@@ -472,6 +472,8 @@ The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html
 
 
 
+Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
+
 
 ( link:${arg}[] )
 
