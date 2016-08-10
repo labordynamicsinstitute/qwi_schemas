@@ -1,19 +1,19 @@
-Indicator Variable,Alternate name,Status Flag,Indicator Name
-MHire,all_doma2,sMHire,Main Job Accessions - Counts
-MSep,all_doms2,sMSep,Main Job Separations - Counts
-MJobStart,all_dest,sMJobStart,Main Job Starts - Counts (hires + main source of earnings changes)
-MJobEnd,all_orig,sMJobEnd,Main Job Ends - Counts (separations + main source of earnings changes)
-EEHire,ee_doma2,sEEHire,EE Accessions - Counts
-EESep,ee_doms2,sEESep,EE Separations - Counts
-AQHire,aq_doma2,sAQHire,AQ Accessions - Short Duration Nonemployment Spell - Counts
-AQSep,aq_doms2,sAQSep,AQ Separations - Short Duration Nonemployment Spell - Counts
-J2JHire,eeall_doma2,sJ2JHire,Job-to-Job Accessions - Counts
-J2JSep,eeall_doms2,sJ2JSep,Job-to-Job Separations - Counts
-NEHire,ne_doma2,sNEHire,Main Job Accessions - Any Nonemployment Spell - Counts
-ENSep,en_doms2,sENSep,Main Job Separations - Any Nonemployment Spell - Counts
-NEPersist,ne2_doma2,sNEPersist,Main Job Accessions - Persistent Nonemployment Spell - Counts
-ENPersist,en2_doms2,sENPersist,Main Job Separations - Persistent Nonemployment Spell - Counts
-NEFullQ,ne2p_doma2,sNEFullQ,Main Job Accessions - Full-qtr Nonemployment Spell - Counts
-ENFullQ,en2p_doms2,sENFullQ,Main Job Separations - Full-qtr Nonemployment Spell - Counts
-MainB,domB,sMainB,Main Job - Beginning of Quarter - Counts
-MainE,domE,sMainE,Main Job - End of Quarter - Counts
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Application Name,Description,Units
+MHire,all_doma2,sMHire,Main Job Accessions,Hires,Hires into a worker's main job,Count
+MSep,all_doms2,sMSep,Main Job Separations ,Separations ,Separations from a worker's main job,Count
+MJobStart,all_dest,sMJobStart,Main Job Starts (hires + main source of earnings changes),Main Job Starts,New main jobs due to hires and instances when a previously existing secondary job becomes the main source of earnings,Count
+MJobEnd,all_orig,sMJobEnd,Main Job Ends (separations + main source of earnings changes),Main Job Ends,End of main jobs due to separations and instances when another job becomes the main source of earnings,Count
+EEHire,ee_doma2,sEEHire,EE Accessions,Job-to-Job Hires (Continuous Employment),Hires following a separation with no observed nonemployment spell,Count
+EESep,ee_doms2,sEESep,EE Separations,Job-to-Job Separations (Continuous Employment),Separations followed by a hire with no observed nonemployment spell,Count
+AQHire,aq_doma2,sAQHire,AQ Accessions - Short Duration Nonemployment Spell,Job-to-Job Hires (Brief Nonemployment),Hires following a separation with a short nonemployment spell,Count
+AQSep,aq_doms2,sAQSep,AQ Separations - Short Duration Nonemployment Spell,Job-to-Job Separations (Brief Nonemployment),Separations followed by a hire with a short nonemployment spell,Count
+J2JHire,eeall_doma2,sJ2JHire,Job-to-Job Accessions,Job-to-Job Hires,Hires following a separation (short or no observed nonemployment spell),Count
+J2JSep,eeall_doms2,sJ2JSep,Job-to-Job Separations,Job-to-Job Separations,Separations followed by a hire (short or no observed nonemployment spell),Count
+NEHire,ne_doma2,sNEHire,Main Job Accessions - Any Nonemployment Spell,Hires from Nonemployment,Hires following any spell of nonemployment,Count
+ENSep,en_doms2,sENSep,Main Job Separations - Any Nonemployment Spell,Separations to Nonemployment,Separations into any spell of nonemployment,Count
+NEPersist,ne2_doma2,sNEPersist,Main Job Accessions - Persistent Nonemployment Spell,Hires from Persistent Nonemployment,Hires following a spell of persistent nonemployment,Count
+ENPersist,en2_doms2,sENPersist,Main Job Separations - Persistent Nonemployment Spell,Separations to Persistent Nonemployment,Separations into a spell of persistent nonemployment,Count
+NEFullQ,ne2p_doma2,sNEFullQ,Main Job Accessions - Full-qtr Nonemployment Spell,Hires from Full-Quarter Nonemployment,Hires following a spell of full-quarter nonemployment (does not include intermittently employed),Count
+ENFullQ,en2p_doms2,sENFullQ,Main Job Separations - Full-qtr Nonemployment Spell,Separations to Full-Quarter Nonemployment,Separations into a spell of full-quarter nonemployment (does not include intermittently employed),Count
+MainB,domB,sMainB,Main Job - Beginning of Quarter,Employment (Beginning of Quarter),Main jobs held on the first day of the quarter,Count
+MainE,domE,sMainE,Main Job - End of Quarter,Employment (End of Quarter),Main jobs held on the last day of the quarter,Count
