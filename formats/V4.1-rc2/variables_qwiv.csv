@@ -1,0 +1,193 @@
+Variability measure,Alternate name,Variable name,Units
+st_Emp,st_B,Standard error of Beginning-of-Quarter Employment,Count
+st_EmpEnd,st_E,Standard error of End-of-Quarter Employment,Count
+st_EmpS,st_F,Standard error of Full-Quarter Employment (Stable),Count
+st_EmpSpv,st_Fpv,Standard error of Full-Quarter Employment in the Previous Quarter,Count
+st_EmpTotal,st_M,Standard error of Employment - Reference Quarter,Count
+st_HirA,st_A,Standard error of Hires (All Accessions),Count
+st_HirN,st_H,Standard error of New Hires,Count
+st_HirR,st_R,Standard error of Recall Hires,Count
+st_Sep,st_S,Standard error of Separations (All),Count
+st_HirAEnd,st_CA,Standard error of End-of-Quarter Hires,Count
+st_HirAEndR,st_CAR,Standard error of End-of-Quarter Hiring Rate,Rate
+st_SepBeg,st_CS,Standard error of Beginning-of-Quarter Separations,Count
+st_SepBegR,st_CSR,Standard error of Beginning-of-Quarter Separation Rate,Rate
+st_HirAS,st_FA,Standard error of Hires (All Hires into Full-Quarter Employment),Count
+st_HirNS,st_FH,Standard error of New Hires (New Hires into Full-Quarter Employment),Count
+st_SepS,st_FS,Standard error of Separations (Flows out of Full-Quarter Employment),Count
+st_SepSnx,st_FSnx,Standard error of Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+st_TurnOvrS,st_FT,Standard error of Turnover (Stable),Rate
+st_FrmJbGn,st_JC,Standard error of Firm Job Gains (Job Creation),Count
+st_FrmJbLs,st_JD,Standard error of Firm Job Loss (Job Destruction),Count
+st_FrmJbC,st_JF,Standard error of Firm Job Change (Net Change),Count
+st_HirAEndRepl,st_EI,Standard error of Replacement Hires,Count
+st_HirAEndReplr,st_EIR,Standard error of Replacement Hiring Rate,Rate
+st_FrmJbGnS,st_FJC,Standard error of Firm Job Gains (Stable),Count
+st_FrmJbLsS,st_FJD,Standard error of Firm Job Loss (Stable),Count
+st_FrmJbCS,st_FJF,Standard error of Firm Job Change (Stable; Net Change),Count
+st_EarnS,st_ZW3,Standard error of Average Monthly Earnings (Full-Quarter Employment),Dollars
+st_EarnBeg,st_ZW1,Standard error of Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+st_EarnHirAS,st_ZWFA,Standard error of Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+st_EarnHirNS,st_ZWFH,Standard error of Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+st_EarnSepS,st_ZWFS,Standard error of Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+st_Payroll,st_W1,Standard error of Total Quarterly Payroll,Dollars
+vt_Emp,vt_B,Total variation of Beginning-of-Quarter Employment,Count
+vt_EmpEnd,vt_E,Total variation of End-of-Quarter Employment,Count
+vt_EmpS,vt_F,Total variation of Full-Quarter Employment (Stable),Count
+vt_EmpSpv,vt_Fpv,Total variation of Full-Quarter Employment in the Previous Quarter,Count
+vt_EmpTotal,vt_M,Total variation of Employment - Reference Quarter,Count
+vt_HirA,vt_A,Total variation of Hires (All Accessions),Count
+vt_HirN,vt_H,Total variation of New Hires,Count
+vt_HirR,vt_R,Total variation of Recall Hires,Count
+vt_Sep,vt_S,Total variation of Separations (All),Count
+vt_HirAEnd,vt_CA,Total variation of End-of-Quarter Hires,Count
+vt_HirAEndR,vt_CAR,Total variation of End-of-Quarter Hiring Rate,Rate
+vt_SepBeg,vt_CS,Total variation of Beginning-of-Quarter Separations,Count
+vt_SepBegR,vt_CSR,Total variation of Beginning-of-Quarter Separation Rate,Rate
+vt_HirAS,vt_FA,Total variation of Hires (All Hires into Full-Quarter Employment),Count
+vt_HirNS,vt_FH,Total variation of New Hires (New Hires into Full-Quarter Employment),Count
+vt_SepS,vt_FS,Total variation of Separations (Flows out of Full-Quarter Employment),Count
+vt_SepSnx,vt_FSnx,Total variation of Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+vt_TurnOvrS,vt_FT,Total variation of Turnover (Stable),Rate
+vt_FrmJbGn,vt_JC,Total variation of Firm Job Gains (Job Creation),Count
+vt_FrmJbLs,vt_JD,Total variation of Firm Job Loss (Job Destruction),Count
+vt_FrmJbC,vt_JF,Total variation of Firm Job Change (Net Change),Count
+vt_HirAEndRepl,vt_EI,Total variation of Replacement Hires,Count
+vt_HirAEndReplr,vt_EIR,Total variation of Replacement Hiring Rate,Rate
+vt_FrmJbGnS,vt_FJC,Total variation of Firm Job Gains (Stable),Count
+vt_FrmJbLsS,vt_FJD,Total variation of Firm Job Loss (Stable),Count
+vt_FrmJbCS,vt_FJF,Total variation of Firm Job Change (Stable; Net Change),Count
+vt_EarnS,vt_ZW3,Total variation of Average Monthly Earnings (Full-Quarter Employment),Dollars
+vt_EarnBeg,vt_ZW1,Total variation of Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+vt_EarnHirAS,vt_ZWFA,Total variation of Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+vt_EarnHirNS,vt_ZWFH,Total variation of Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+vt_EarnSepS,vt_ZWFS,Total variation of Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+vt_Payroll,vt_W1,Total variation of Total Quarterly Payroll,Dollars
+vb_Emp,vb_B,Between-implicate variability for Beginning-of-Quarter Employment,Count
+vb_EmpEnd,vb_E,Between-implicate variability for End-of-Quarter Employment,Count
+vb_EmpS,vb_F,Between-implicate variability for Full-Quarter Employment (Stable),Count
+vb_EmpSpv,vb_Fpv,Between-implicate variability for Full-Quarter Employment in the Previous Quarter,Count
+vb_EmpTotal,vb_M,Between-implicate variability for Employment - Reference Quarter,Count
+vb_HirA,vb_A,Between-implicate variability for Hires (All Accessions),Count
+vb_HirN,vb_H,Between-implicate variability for New Hires,Count
+vb_HirR,vb_R,Between-implicate variability for Recall Hires,Count
+vb_Sep,vb_S,Between-implicate variability for Separations (All),Count
+vb_HirAEnd,vb_CA,Between-implicate variability for End-of-Quarter Hires,Count
+vb_HirAEndR,vb_CAR,Between-implicate variability for End-of-Quarter Hiring Rate,Rate
+vb_SepBeg,vb_CS,Between-implicate variability for Beginning-of-Quarter Separations,Count
+vb_SepBegR,vb_CSR,Between-implicate variability for Beginning-of-Quarter Separation Rate,Rate
+vb_HirAS,vb_FA,Between-implicate variability for Hires (All Hires into Full-Quarter Employment),Count
+vb_HirNS,vb_FH,Between-implicate variability for New Hires (New Hires into Full-Quarter Employment),Count
+vb_SepS,vb_FS,Between-implicate variability for Separations (Flows out of Full-Quarter Employment),Count
+vb_SepSnx,vb_FSnx,Between-implicate variability for Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+vb_TurnOvrS,vb_FT,Between-implicate variability for Turnover (Stable),Rate
+vb_FrmJbGn,vb_JC,Between-implicate variability for Firm Job Gains (Job Creation),Count
+vb_FrmJbLs,vb_JD,Between-implicate variability for Firm Job Loss (Job Destruction),Count
+vb_FrmJbC,vb_JF,Between-implicate variability for Firm Job Change (Net Change),Count
+vb_HirAEndRepl,vb_EI,Between-implicate variability for Replacement Hires,Count
+vb_HirAEndReplr,vb_EIR,Between-implicate variability for Replacement Hiring Rate,Rate
+vb_FrmJbGnS,vb_FJC,Between-implicate variability for Firm Job Gains (Stable),Count
+vb_FrmJbLsS,vb_FJD,Between-implicate variability for Firm Job Loss (Stable),Count
+vb_FrmJbCS,vb_FJF,Between-implicate variability for Firm Job Change (Stable; Net Change),Count
+vb_EarnS,vb_ZW3,Between-implicate variability for Average Monthly Earnings (Full-Quarter Employment),Dollars
+vb_EarnBeg,vb_ZW1,Between-implicate variability for Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+vb_EarnHirAS,vb_ZWFA,Between-implicate variability for Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+vb_EarnHirNS,vb_ZWFH,Between-implicate variability for Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+vb_EarnSepS,vb_ZWFS,Between-implicate variability for Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+vb_Payroll,vb_W1,Between-implicate variability for Total Quarterly Payroll,Dollars
+vm_Emp,vm_B,Average within-implicate variability for Beginning-of-Quarter Employment,Count
+vm_EmpEnd,vm_E,Average within-implicate variability for End-of-Quarter Employment,Count
+vm_EmpS,vm_F,Average within-implicate variability for Full-Quarter Employment (Stable),Count
+vm_EmpSpv,vm_Fpv,Average within-implicate variability for Full-Quarter Employment in the Previous Quarter,Count
+vm_EmpTotal,vm_M,Average within-implicate variability for Employment - Reference Quarter,Count
+vm_HirA,vm_A,Average within-implicate variability for Hires (All Accessions),Count
+vm_HirN,vm_H,Average within-implicate variability for New Hires,Count
+vm_HirR,vm_R,Average within-implicate variability for Recall Hires,Count
+vm_Sep,vm_S,Average within-implicate variability for Separations (All),Count
+vm_HirAEnd,vm_CA,Average within-implicate variability for End-of-Quarter Hires,Count
+vm_HirAEndR,vm_CAR,Average within-implicate variability for End-of-Quarter Hiring Rate,Rate
+vm_SepBeg,vm_CS,Average within-implicate variability for Beginning-of-Quarter Separations,Count
+vm_SepBegR,vm_CSR,Average within-implicate variability for Beginning-of-Quarter Separation Rate,Rate
+vm_HirAS,vm_FA,Average within-implicate variability for Hires (All Hires into Full-Quarter Employment),Count
+vm_HirNS,vm_FH,Average within-implicate variability for New Hires (New Hires into Full-Quarter Employment),Count
+vm_SepS,vm_FS,Average within-implicate variability for Separations (Flows out of Full-Quarter Employment),Count
+vm_SepSnx,vm_FSnx,Average within-implicate variability for Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+vm_TurnOvrS,vm_FT,Average within-implicate variability for Turnover (Stable),Rate
+vm_FrmJbGn,vm_JC,Average within-implicate variability for Firm Job Gains (Job Creation),Count
+vm_FrmJbLs,vm_JD,Average within-implicate variability for Firm Job Loss (Job Destruction),Count
+vm_FrmJbC,vm_JF,Average within-implicate variability for Firm Job Change (Net Change),Count
+vm_HirAEndRepl,vm_EI,Average within-implicate variability for Replacement Hires,Count
+vm_HirAEndReplr,vm_EIR,Average within-implicate variability for Replacement Hiring Rate,Rate
+vm_FrmJbGnS,vm_FJC,Average within-implicate variability for Firm Job Gains (Stable),Count
+vm_FrmJbLsS,vm_FJD,Average within-implicate variability for Firm Job Loss (Stable),Count
+vm_FrmJbCS,vm_FJF,Average within-implicate variability for Firm Job Change (Stable; Net Change),Count
+vm_EarnS,vm_ZW3,Average within-implicate variability for Average Monthly Earnings (Full-Quarter Employment),Dollars
+vm_EarnBeg,vm_ZW1,Average within-implicate variability for Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+vm_EarnHirAS,vm_ZWFA,Average within-implicate variability for Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+vm_EarnHirNS,vm_ZWFH,Average within-implicate variability for Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+vm_EarnSepS,vm_ZWFS,Average within-implicate variability for Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+vm_Payroll,vm_W1,Average within-implicate variability for Total Quarterly Payroll,Dollars
+df_Emp,df_B,Degrees of freedom for VT of Beginning-of-Quarter Employment,Count
+df_EmpEnd,df_E,Degrees of freedom for VT of End-of-Quarter Employment,Count
+df_EmpS,df_F,Degrees of freedom for VT of Full-Quarter Employment (Stable),Count
+df_EmpSpv,df_Fpv,Degrees of freedom for VT of Full-Quarter Employment in the Previous Quarter,Count
+df_EmpTotal,df_M,Degrees of freedom for VT of Employment - Reference Quarter,Count
+df_HirA,df_A,Degrees of freedom for VT of Hires (All Accessions),Count
+df_HirN,df_H,Degrees of freedom for VT of New Hires,Count
+df_HirR,df_R,Degrees of freedom for VT of Recall Hires,Count
+df_Sep,df_S,Degrees of freedom for VT of Separations (All),Count
+df_HirAEnd,df_CA,Degrees of freedom for VT of End-of-Quarter Hires,Count
+df_HirAEndR,df_CAR,Degrees of freedom for VT of End-of-Quarter Hiring Rate,Rate
+df_SepBeg,df_CS,Degrees of freedom for VT of Beginning-of-Quarter Separations,Count
+df_SepBegR,df_CSR,Degrees of freedom for VT of Beginning-of-Quarter Separation Rate,Rate
+df_HirAS,df_FA,Degrees of freedom for VT of Hires (All Hires into Full-Quarter Employment),Count
+df_HirNS,df_FH,Degrees of freedom for VT of New Hires (New Hires into Full-Quarter Employment),Count
+df_SepS,df_FS,Degrees of freedom for VT of Separations (Flows out of Full-Quarter Employment),Count
+df_SepSnx,df_FSnx,Degrees of freedom for VT of Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+df_TurnOvrS,df_FT,Degrees of freedom for VT of Turnover (Stable),Rate
+df_FrmJbGn,df_JC,Degrees of freedom for VT of Firm Job Gains (Job Creation),Count
+df_FrmJbLs,df_JD,Degrees of freedom for VT of Firm Job Loss (Job Destruction),Count
+df_FrmJbC,df_JF,Degrees of freedom for VT of Firm Job Change (Net Change),Count
+df_HirAEndRepl,df_EI,Degrees of freedom for VT of Replacement Hires,Count
+df_HirAEndReplr,df_EIR,Degrees of freedom for VT of Replacement Hiring Rate,Rate
+df_FrmJbGnS,df_FJC,Degrees of freedom for VT of Firm Job Gains (Stable),Count
+df_FrmJbLsS,df_FJD,Degrees of freedom for VT of Firm Job Loss (Stable),Count
+df_FrmJbCS,df_FJF,Degrees of freedom for VT of Firm Job Change (Stable; Net Change),Count
+df_EarnS,df_ZW3,Degrees of freedom for VT of Average Monthly Earnings (Full-Quarter Employment),Dollars
+df_EarnBeg,df_ZW1,Degrees of freedom for VT of Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+df_EarnHirAS,df_ZWFA,Degrees of freedom for VT of Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+df_EarnHirNS,df_ZWFH,Degrees of freedom for VT of Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+df_EarnSepS,df_ZWFS,Degrees of freedom for VT of Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+df_Payroll,df_W1,Degrees of freedom for VT of Total Quarterly Payroll,Dollars
+mr_Emp,mr_B,Missingness ratio for Beginning-of-Quarter Employment,Count
+mr_EmpEnd,mr_E,Missingness ratio for End-of-Quarter Employment,Count
+mr_EmpS,mr_F,Missingness ratio for Full-Quarter Employment (Stable),Count
+mr_EmpSpv,mr_Fpv,Missingness ratio for Full-Quarter Employment in the Previous Quarter,Count
+mr_EmpTotal,mr_M,Missingness ratio for Employment - Reference Quarter,Count
+mr_HirA,mr_A,Missingness ratio for Hires (All Accessions),Count
+mr_HirN,mr_H,Missingness ratio for New Hires,Count
+mr_HirR,mr_R,Missingness ratio for Recall Hires,Count
+mr_Sep,mr_S,Missingness ratio for Separations (All),Count
+mr_HirAEnd,mr_CA,Missingness ratio for End-of-Quarter Hires,Count
+mr_HirAEndR,mr_CAR,Missingness ratio for End-of-Quarter Hiring Rate,Rate
+mr_SepBeg,mr_CS,Missingness ratio for Beginning-of-Quarter Separations,Count
+mr_SepBegR,mr_CSR,Missingness ratio for Beginning-of-Quarter Separation Rate,Rate
+mr_HirAS,mr_FA,Missingness ratio for Hires (All Hires into Full-Quarter Employment),Count
+mr_HirNS,mr_FH,Missingness ratio for New Hires (New Hires into Full-Quarter Employment),Count
+mr_SepS,mr_FS,Missingness ratio for Separations (Flows out of Full-Quarter Employment),Count
+mr_SepSnx,mr_FSnx,Missingness ratio for Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+mr_TurnOvrS,mr_FT,Missingness ratio for Turnover (Stable),Rate
+mr_FrmJbGn,mr_JC,Missingness ratio for Firm Job Gains (Job Creation),Count
+mr_FrmJbLs,mr_JD,Missingness ratio for Firm Job Loss (Job Destruction),Count
+mr_FrmJbC,mr_JF,Missingness ratio for Firm Job Change (Net Change),Count
+mr_HirAEndRepl,mr_EI,Missingness ratio for Replacement Hires,Count
+mr_HirAEndReplr,mr_EIR,Missingness ratio for Replacement Hiring Rate,Rate
+mr_FrmJbGnS,mr_FJC,Missingness ratio for Firm Job Gains (Stable),Count
+mr_FrmJbLsS,mr_FJD,Missingness ratio for Firm Job Loss (Stable),Count
+mr_FrmJbCS,mr_FJF,Missingness ratio for Firm Job Change (Stable; Net Change),Count
+mr_EarnS,mr_ZW3,Missingness ratio for Average Monthly Earnings (Full-Quarter Employment),Dollars
+mr_EarnBeg,mr_ZW1,Missingness ratio for Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+mr_EarnHirAS,mr_ZWFA,Missingness ratio for Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+mr_EarnHirNS,mr_ZWFH,Missingness ratio for Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+mr_EarnSepS,mr_ZWFS,Missingness ratio for Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+mr_Payroll,mr_W1,Missingness ratio for Total Quarterly Payroll,Dollars

@@ -1,0 +1,33 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name,Units
+Emp,B,sEmp,Beginning-of-Quarter Employment,Count
+EmpEnd,E,sEmpEnd,End-of-Quarter Employment,Count
+EmpS,F,sEmpS,Full-Quarter Employment (Stable),Count
+EmpSpv,Fpv,sEmpSpv,Full-Quarter Employment in the Previous Quarter,Count
+EmpTotal,M,sEmpTotal,Employment - Reference Quarter,Count
+HirA,A,sHirA,Hires (All Accessions),Count
+HirN,H,sHirN,New Hires,Count
+HirR,R,sHirR,Recall Hires,Count
+Sep,S,sSep,Separations (All),Count
+HirAEnd,CA,sHirAEnd,End-of-Quarter Hires,Count
+HirAEndR,CAR,sHirAEndR,End-of-Quarter Hiring Rate,Rate
+SepBeg,CS,sSepBeg,Beginning-of-Quarter Separations,Count
+SepBegR,CSR,sSepBegR,Beginning-of-Quarter Separation Rate,Rate
+HirAS,FA,sHirAS,Hires (All Hires into Full-Quarter Employment),Count
+HirNS,FH,sHirNS,New Hires (New Hires into Full-Quarter Employment),Count
+SepS,FS,sSepS,Separations (Flows out of Full-Quarter Employment),Count
+SepSnx,FSnx,sSepSnx,Separations in the Next Quarter (Flows out of Full-Quarter Employment),Count
+TurnOvrS,FT,sTurnOvrS,Turnover (Stable),Rate
+FrmJbGn,JC,sFrmJbGn,Firm Job Gains (Job Creation),Count
+FrmJbLs,JD,sFrmJbLs,Firm Job Loss (Job Destruction),Count
+FrmJbC,JF,sFrmJbC,Firm Job Change (Net Change),Count
+HirAEndRepl,EI,sHirAEndRepl,Replacement Hires,Count
+HirAEndReplr,EIR,sHirAEndReplr,Replacement Hiring Rate,Rate
+FrmJbGnS,FJC,sFrmJbGnS,Firm Job Gains (Stable),Count
+FrmJbLsS,FJD,sFrmJbLsS,Firm Job Loss (Stable),Count
+FrmJbCS,FJF,sFrmJbCS,Firm Job Change (Stable; Net Change),Count
+EarnS,ZW3,sEarnS,Average Monthly Earnings (Full-Quarter Employment),Dollars
+EarnBeg,ZW1,sEarnBeg,Average Monthly Earnings (Beginning-of-Quarter Employment),Dollars
+EarnHirAS,ZWFA,sEarnHirAS,Average Monthly Earnings (All Hires into Full-Quarter Employment),Dollars
+EarnHirNS,ZWFH,sEarnHirNS,Average Monthly Earnings (New Hires into Full-Quarter Employment),Dollars
+EarnSepS,ZWFS,sEarnSepS,Average Monthly Earnings (Flows out of Full-Quarter Employment),Dollars
+Payroll,W1,sPayroll,Total Quarterly Payroll,Dollars
