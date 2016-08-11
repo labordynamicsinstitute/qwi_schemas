@@ -1,5 +1,7 @@
-Indicator Variable,Alternate name,Status Flag,Indicator Name
-EE,ee,sEE,Direct Job Flows - Counts
-AQHire,aq_doma2,sAQHire,Main Job Accessions - Short Nonemployment Spell - Counts
-EEFullQ,fee,sEEFullQ,Stable Job to Stable Job Direct Flows - Counts
-AQFullQHire,faq_doma2,sAQFullQHire,Stable Job Accessions From Stable Jobs - Short Nonemployment Spell Between Jobs - Counts
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Units
+EE,ee,sEE,Job-to-Job Flows (Continuous Employment),Count
+AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Count
+J2J,ee+aq_doma2,sJ2J,Job-to-Job Flows,Count
+EEFullQ,fee,sEEFullQ,Stable Job-to-Job Flows (Continuous Employment),Count
+AQFullQHire,faq_doma2,sAQFullQHire,Stable Job-to-Job Flows (Brief Nonemployment),Count
+J2JFullQ,fee+faq_doma2,sJ2JFullQ,Stable Job-to-Job Flows,Count
