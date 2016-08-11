@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema V4.1-rc1
+= LEHD Public Use Data Schema V4.1-rc2
 Lars Vilhuber <lars.vilhuber@census.gov>
-08 August 2016
+10 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -423,6 +423,8 @@ The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html
 
 
 
+Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
+
 
 ( link:label_geo_level.csv[] )
 
@@ -606,6 +608,6 @@ For additional details, please consult the previous draft versions:
 
 <<<
 *******************
-This revision: Mon Aug  8 18:12:26 EDT 2016
+This revision: Wed Aug 10 22:39:56 EDT 2016
 *******************
 

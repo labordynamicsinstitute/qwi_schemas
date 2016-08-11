@@ -1,8 +1,8 @@
 
-****** LEHD Public Use Data Schema V4.1-rc1 ******
+****** LEHD Public Use Data Schema V4.1-rc2 ******
 Lars Vilhuber
 <lars.vilhuber@census.gov>
-08 August 2016
+10 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -272,107 +272,107 @@ HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
                                           Rate)
 *** 5.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
-Indicator Variable Alternate name Status Flag Indicator Name
-         MHire        all_doma2      sMHire   Main Job Accessions - Counts
-          MSep        all_doms2       sMSep   Main Job Separations - Counts
-      MJobStart        all_dest   sMJobStart  Main Job Starts - Counts (hires +
-                                              main source of earnings changes)
-        MJobEnd        all_orig     sMJobEnd  Main Job Ends - Counts
-                                              (separations + main source of
-                                              earnings changes)
-         EEHire        ee_doma2      sEEHire  EE Accessions - Counts
-         EESep         ee_doms2      sEESep   EE Separations - Counts
+Indicator Variable Alternate Name Status Flag Indicator Name
+         MHire        all_doma2      sMHire   Main Job Accessions
+          MSep        all_doms2       sMSep   Main Job Separations
+      MJobStart        all_dest   sMJobStart  Main Job Starts (hires + main
+                                              source of earnings changes)
+        MJobEnd        all_orig     sMJobEnd  Main Job Ends (separations + main
+                                              source of earnings changes)
+         EEHire        ee_doma2      sEEHire  EE Accessions
+         EESep         ee_doms2      sEESep   EE Separations
          AQHire        aq_doma2      sAQHire  AQ Accessions - Short Duration
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
          AQSep         aq_doms2      sAQSep   AQ Separations - Short Duration
-                                              Nonemployment Spell - Counts
-        J2JHire      eeall_doma2    sJ2JHire  Job-to-Job Accessions - Counts
-         J2JSep      eeall_doms2     sJ2JSep  Job-to-Job Separations - Counts
+                                              Nonemployment Spell
+        J2JHire      eeall_doma2    sJ2JHire  Job-to-Job Accessions
+         J2JSep      eeall_doms2     sJ2JSep  Job-to-Job Separations
          NEHire        ne_doma2      sNEHire  Main Job Accessions - Any
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
          ENSep         en_doms2      sENSep   Main Job Separations - Any
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
       NEPersist       ne2_doma2   sNEPersist  Main Job Accessions - Persistent
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
       ENPersist       en2_doms2   sENPersist  Main Job Separations - Persistent
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
         NEFullQ       ne2p_doma2    sNEFullQ  Main Job Accessions - Full-qtr
-                                              Nonemployment Spell - Counts
+                                              Nonemployment Spell
         ENFullQ       en2p_doms2    sENFullQ  Main Job Separations - Full-qtr
-                                              Nonemployment Spell - Counts
-         MainB            domB       sMainB   Main Job - Beginning of Quarter -
-                                              Counts
-         MainE            domE       sMainE   Main Job - End of Quarter -
-                                              Counts
+                                              Nonemployment Spell
+         MainB            domB       sMainB   Main Job - Beginning of Quarter
+         MainE            domE       sMainE   Main Job - End of Quarter
 *** 5.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
-Indicator   Alternate name    Status Flag  Indicator Name     Base
+Indicator   Alternate Name    Status Flag  Indicator Name    Application Name
  Variable
-   MHireR   all_doma2_rate       sMHireR   Main Job           (MainB+MainE)/2
-                                           Accessions - Rate
-   MSepR    all_doms2_rate        sMSepR   Main Job           (MainB+MainE)/2
-                                           Separations - Rate
-MJobStartR   all_dest_rate  sMJobStartRate Main Job Starts -  (MainB+MainE)/2
-                                           Rate
- MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends -    (MainB+MainE)/2
-                                           Rate
-  EEHireR        eea_rate     sEEHireRate  EE Accessions -    (MainB+MainE)/2
-                                           Rate
-   EESepR        ees_rate        sEESepR   EE Separations -   (MainB+MainE)/2
-                                           Rate
-  AQHireR    aq_doma2_rate      sAQHireR   AQ Accessions -    (MainB+MainE)/2
-                                           Short Duration
+   MHireR   all_doma2_rate       sMHireR   Main Job          Hires
+                                           Accessions
+   MSepR    all_doms2_rate        sMSepR   Main Job          Separations
+                                           Separations
+MJobStartR   all_dest_rate  sMJobStartRate Main Job Starts   Main Job Starts
+ MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends     Main Job Ends
+  EEHireR        eea_rate     sEEHireRate  EE Accessions     Job-to-Job Hires
+                                                             (Continuous
+                                                             Employment)
+   EESepR        ees_rate        sEESepR   EE Separations    Job-to-Job
+                                                             Separations
+                                                             (Continuous
+                                                             Employment)
+  AQHireR    aq_doma2_rate      sAQHireR   AQ Accessions -   Job-to-Job Hires
+                                           Short Duration    (Brief
+                                           Nonemployment     Nonemployment)
+                                           Spell
+   AQSepR    aq_doms2_rate       sAQSepR   AQ Separations -  Job-to-Job
+                                           Short Duration    Separations (Brief
+                                           Nonemployment     Nonemployment)
+                                           Spell
+ J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job        Job-to-Job Hires
+                                           Accessions
+  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job        Job-to-Job
+                                           Separations       Separations
+  NEHireR    ne_doma2_rate      sNEHireR   Main Job          Hires from
+                                           Accessions - Any  Nonemployment
                                            Nonemployment
-                                           Spell - Rate
-   AQSepR    aq_doms2_rate       sAQSepR   AQ Separations -   (MainB+MainE)/2
-                                           Short Duration
+                                           Spell
+   ENSepR    en_doms2_rate       sENSepR   Main Job          Separations to
+                                           Separations - Any Nonemployment
                                            Nonemployment
-                                           Spell - Rate
- J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job         (MainB+MainE)/2
-                                           Accessions - Rate
-  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job         (MainB+MainE)/2
-                                           Separations - Rate
-  NEHireR    ne_doma2_rate      sNEHireR   Main Job           (MainB+MainE)/2
-                                           Accessions - Any
+                                           Spell
+NEPersistR  ne2_doma2_rate    sNEPersistR  Main Job          Hires from
+                                           Accessions -      Persistent
+                                           Persistent        Nonemployment
                                            Nonemployment
-                                           Spell - Rate
-   ENSepR    en_doms2_rate       sENSepR   Main Job           (MainB+MainE)/2
-                                           Separations - Any
+                                           Spell
+ENPersistR  en2_doms2_rate    sENPersistR  Main Job          Separations to
+                                           Separations -     Persistent
+                                           Persistent        Nonemployment
                                            Nonemployment
-                                           Spell - Rate
-NEPersistR  ne2_doma2_rate    sNEPersistR  Main Job           (MainB+MainE)/2
-                                           Accessions -
-                                           Persistent
+                                           Spell
+ NEFullQR  ne2p_doma2_rate     sNEFullQR   Main Job          Hires from Full-
+                                           Accessions -      Quarter
+                                           Full-qtr          Nonemployment
                                            Nonemployment
-                                           Spell - Rate
-ENPersistR  en2_doms2_rate    sENPersistR  Main Job           (MainB+MainE)/2
-                                           Separations -
-                                           Persistent
+                                           Spell
+ ENFullQR  en2p_doms2_rate     sENFullQR   Main Job          Separations to
+                                           Separations -     Full-Quarter
+                                           Full-qtr          Nonemployment
                                            Nonemployment
-                                           Spell - Rate
- NEFullQR  ne2p_doma2_rate     sNEFullQR   Main Job           (MainB+MainE)/2
-                                           Accessions - Full-
-                                           qtr Nonemployment
-                                           Spell - Rate
- ENFullQR  en2p_doms2_rate     sENFullQR   Main Job           (MainB+MainE)/2
-                                           Separations -
-                                           Full-qtr
-                                           Nonemployment
-                                           Spell - Rate
+                                           Spell
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
-Indicator Variable Alternate name Status Flag  Indicator Name
-            EE              ee          sEE    Direct Job Flows - Counts
+Indicator Variable Alternate Name Status Flag  Indicator Name
+            EE              ee          sEE    Direct Job Flows
          AQHire        aq_doma2      sAQHire   Main Job Accessions - Short
-                                               Nonemployment Spell - Counts
+                                               Nonemployment Spell
+           J2J       ee+aq_doma2        sJ2J   Job-to-Job Flows
         EEFullQ            fee       sEEFullQ  Stable Job to Stable Job Direct
-                                               Flows - Counts
+                                               Flows
      AQFullQHire      faq_doma2   sAQFullQHire Stable Job Accessions From
                                                Stable Jobs - Short
                                                Nonemployment Spell Between Jobs
-                                               - Counts
+       J2JFullQ    fee+faq_doma2    sJ2JFullQ  Stable Job-to-Job Flows
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -687,6 +687,7 @@ file label_geograpy_SCOPE.csv may contain one or more types of records as
 flagged by geo_level. For convenience, a composite file containing all geocodes
 is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
 geography is used for all tabulations as of the R2015Q4 release.
+Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
 geo_level label         description                                                                sourceurl
       B   Metropolitan/ Identifies 5-digit CBSA code provided by the Census Bureau’s Geography   http://
@@ -911,6 +912,6 @@ For additional details, please consult the previous draft versions:
     * ../V4.1b-draft
     * ../V4.1c-draft
     * ../V4.1d-draft
-This revision: Mon Aug 8 18:12:26 EDT 2016
+This revision: Wed Aug 10 22:39:56 EDT 2016
 ===============================================================================
-Last updated 2016-08-08 18:12:26 EDT
+Last updated 2016-08-10 22:39:56 EDT

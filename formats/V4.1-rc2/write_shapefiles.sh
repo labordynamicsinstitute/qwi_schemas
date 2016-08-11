@@ -158,6 +158,15 @@ Outputs
 -------
 Output shapefiles – grouped by paired products – are listed below. Each shapefile includes specific notes on its preparation.
 
+Basic Naming Schema
+-------------------
+
+All files are preceded by "lehd_shp", followed by additional information on the geography definition it contains, as outlined below.
+
+-------------------
+lehd_shp_[DETAILS].zip
+-------------------
+
 === [[format]] FORMAT
 ( link:variables_shp.csv[variables_shp.csv] )
 
@@ -183,19 +192,19 @@ This is a string that corresponds in general to the 'label' field on link:label_
 
 === Common files
 ==== State
-( link:lehd_state.zip[lehd_state.zip] )
+( link:lehd_shp_state.zip[lehd_shp_state.zip] )
 
 No transformations occur to this layer other than those listed above.
 
 ===  QWI Geographies
 
 ==== County
-( link:lehd_county.zip[] )
+( link:lehd_shp_county.zip[] )
 
 * STUSPS is appended to the NAME field so that county names are nationally unique. Example: "Cook, IL"
 
 ==== CBSA - within State
-( link:lehd_stcbsa.zip[] )
+( link:lehd_shp_stcbsa.zip[] )
 
 * All features are split into state-specific CBSA features by intersecting each feature with the state shapefile features.
 * The STUSPS field is added during the intersect with the state shapefile.
@@ -203,13 +212,13 @@ No transformations occur to this layer other than those listed above.
 * The text "([STUSPS] part)" is appended to the NAME field only for those CBSA features that are split by state lines.
 
 ==== Workforce Investment Board Areas
-( link:lehd_wib.zip[] )
+( link:lehd_shp_wib.zip[] )
 
 The WIA/WIB shapefiles are built from the Place, County Subdivision, and County shapefiles from TIGER/Line based on definitions provided by the LED state partners.
 
 === Job-to-Job Flow Geographies
 ==== CBSA - National
-( link:lehd_cbsa.zip[] )
+( link:lehd_shp_cbsa.zip[] )
 
 * The state remainder areas are added to the shapefile as new features.  They are assigned unique codes ([STUSPS]+999) and names (“Not in metro/micro area, [STUSPS]”).
 
