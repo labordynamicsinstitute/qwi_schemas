@@ -12,7 +12,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 ==== In more detail
   - added geohi category of ALL, US, add naming_geohi.csv 89617e3
-  - added naming convention for additional files
+  - added naming convention for additional filesb
   - added agg_level variable 89617e3, 2149623
   - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files. 89617e3
   - Addition of a column identifying the type of variable on QWI 89617e3
@@ -28,6 +28,10 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Clarified description of filenaming components 8888529, 8d580f6
   - Sundry small additional changes, building out the schema 28d7c6f
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
+
+=== Version 4.1-rc2 from 4.1-rc1
+- 2016-08-10: Added description of SHP files
+- 2016-08-11: Modified Indicator Names for J2J variable metadata.
 
 For additional details, please consult the previous draft versions:
 
