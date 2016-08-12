@@ -25,7 +25,7 @@ case $version in
 	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	draft)
+	draft|*)
 	author=Patrick.Hayward@census.gov
 	;;
 	official)
@@ -58,7 +58,7 @@ This document is not an official Census Bureau publication. It is compiled from 
 by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. " >> $asciifile
 	;;
-	draft)
+	draft|*)
 	echo "
 [IMPORTANT]
 .Important

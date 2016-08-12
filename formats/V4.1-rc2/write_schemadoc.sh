@@ -28,7 +28,7 @@ case $version in
 	draft)
 	author=lars.vilhuber@census.gov
 	;;
-	official)
+	official|lehd)
 	author=ces.qwi.feedback@census.gov
 	;;
 esac
@@ -71,7 +71,7 @@ This specification is draft. Feedback is welcome. Please write us at link:mailto
 ==============================================
 	" >> $asciifile
 	;;
-	official)
+	official|lehd)
 	echo "
 [IMPORTANT]
 .Important
