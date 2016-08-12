@@ -7,3 +7,4 @@ qwi,Quarterly Workforce Indicators Public Use Counts (QWIPU),"The Quarterly Work
 qwir,Quarterly Workforce Indicators Public Use Rates,"Rates for flow variables in the Quarterly Workforce Indicators (QWI)",tbd
 qwirv,Quarterly Workforce Indicators Variability Measures for Rates,"Variability measures for rates in the Quarterly Workforce Indicators (QWI)",tbd
 qwiv,Quarterly Workforce Indicators Variability Measures,"Variability measures for Quarterly Workforce Indicators (QWI)",tbd
+lehd_shp,LEHD Shapefiles,"Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer",lehd_shapefiles.html
