@@ -40,6 +40,7 @@ echo "= LEHD Public Use CSV Naming Schema $numversion - CSV Naming Convention"> 
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
+:ext-relative: {outfilesuffix}
 
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
 
@@ -89,12 +90,13 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files. The naming schema for shapefiles is described in a link:lehd_shapefiles{ext-relative}[separate document].
+This document describes the file naming schema for LEHD-provided CSV files.
 
 Schema for Data File Contents
 -----------------------------
 
-The contents (schema) are described in  link:lehd_public_use_schema.html[].
+The contents (schema) for LEHD data files are described in  link:lehd_public_use_schema.{ext-relative}[].
+The contents (schema) for shapefiles are described in link:lehd_shapefiles{ext-relative}[].
 
 Extends
 -------
@@ -209,9 +211,9 @@ This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss $asciifile
+asciidoc -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.html $asciifile
 echo "$(basename $asciifile .asciidoc).html created"
-a2x -f pdf -a icons -a toc -a numbered -a linkcss $asciifile
+a2x -f pdf -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.pdf $asciifile
 echo "$(basename $asciifile .asciidoc).pdf created"
 html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 echo "$(basename $asciifile .asciidoc).txt created"

@@ -1,9 +1,9 @@
 
-****** LEHD Public Use CSV Naming Schema V4.1-rc1 - CSV Naming Convention
+****** LEHD Public Use CSV Naming Schema V4.1-rc2 - CSV Naming Convention
 ******
 Lars Vilhuber
 <ces.qwi.feedback@census.gov>
-08 August 2016
+12 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -19,7 +19,9 @@ page at http://lehd.ces.census.gov/data/ and through LED Extraction Tool at
 http://ledextract.ces.census.gov/.
 This document describes the file naming schema for LEHD-provided CSV files.
 ***** 2. Schema for Data File Contents *****
-The contents (schema) are described in lehd_public_use_schema.html.
+The contents (schema) for LEHD data files are described in
+lehd_public_use_schema..html. The contents (schema) for shapefiles are
+described in lehd_shapefiles.html.
 ***** 3. Extends *****
 This version reimplements some features from V4.0. Many files compliant with
 LEHD or QWI Schema v4.0 will also be compliant with this schema, but
@@ -39,6 +41,8 @@ information on the aggregation level of the file, or some other identifier.
  [type]_[geohi]_[demo]_  qwi qwir qwiv qwivr j2j Common convention for
 [fas]_[geocat]_[indcat]_ j2jr j2jod              currently provided files.
     [ownercat]_[sa]
+      [type]\_[geocat]   shapefiles              ZIP files containing data
+                                                 for shapefiles
 **** 5.1. QWIPU from the LED Extraction Tool ****
 Files downloaded through the LED Extraction Tool at http://
 ledextract.ces.census.gov/ follow the following naming convention:
@@ -55,61 +59,66 @@ legal values for each component can be downloaded from this website.
 ***** 6. Description of Filename Components *****
 **** 6.1. Types ****
 ( naming_type.csv )
-type  Description              Explanation              url
- j2j  Job-to-Job Flows Counts  Counts of hires and      tbd
-      (J2J)                    separations, to and from
-                               employment and non-
-                               employment, summed
-                               across all
-                               establishments
-j2jod Job-to-Job Flows Origin- Origin and destination   tbd
-      Destination              flows and earnings,
-                               tabulated by the
-                               destination
-                               establishment
-j2jr  Job-to-Job Flows Rates   Hiring and separation    http://
-                               rates, to and from       lehd.ces.census.gov/
-                               employment and           data/j2j_beta.html
-                               nonemployment, summed
-                               across all
-                               establishments
-lodes LEHD Origin-Destination  LEHD Origin-Destination  http://
-      Employment Statistics    Employment Statistics    lehd.ces.census.gov/
-      (LODES)                  (LODES) used by          data/#lodes
-                               OnTheMap. Version 7 and
-                               higher of LODES was
-                               enumerated by 2010
-                               census blocks. Version 6
-                               and lower of LODES were
-                               enumerated with 2000
-                               census blocks.
- qwi  Quarterly Workforce      The Quarterly Workforce  http://
-      Indicators Public Use    Indicators (QWI) are a   lehd.ces.census.gov/
-      Counts (QWIPU)           set of economic          data/#qwi
-                               indicators including
-                               employment, job
-                               creation, earnings, and
-                               other measures of
-                               employment flows. The
-                               QWI are reported using
-                               detailed firm
-                               characteristics
-                               (geography, industry,
-                               age, size) and worker
-                               demographics information
-                               (sex, age, education,
-                               race, ethnicity).
-qwir  Quarterly Workforce      Rates for flow variables tbd
-      Indicators Public Use    in the Quarterly
-      Rates                    Workforce Indicators
-                               (QWI)
-qwirv Quarterly Workforce      Variability measures for tbd
-      Indicators Variability   rates in the Quarterly
-      Measures for Rates       Workforce Indicators
-                               (QWI)
-qwiv  Quarterly Workforce      Variability measures for tbd
-      Indicators Variability   Quarterly Workforce
-      Measures                 Indicators (QWI)
+   type  Description              Explanation              url
+   j2j   Job-to-Job Flows Counts  Counts of hires and      tbd
+         (J2J)                    separations, to and from
+                                  employment and non-
+                                  employment, summed
+                                  across all
+                                  establishments
+  j2jod  Job-to-Job Flows Origin- Origin and destination   tbd
+         Destination              flows and earnings,
+                                  tabulated by the
+                                  destination
+                                  establishment
+   j2jr  Job-to-Job Flows Rates   Hiring and separation    http://
+                                  rates, to and from       lehd.ces.census.gov/
+                                  employment and           data/j2j_beta.html
+                                  nonemployment, summed
+                                  across all
+                                  establishments
+  lodes  LEHD Origin-Destination  LEHD Origin-Destination  http://
+         Employment Statistics    Employment Statistics    lehd.ces.census.gov/
+         (LODES)                  (LODES) used by          data/#lodes
+                                  OnTheMap. Version 7 and
+                                  higher of LODES was
+                                  enumerated by 2010
+                                  census blocks. Version 6
+                                  and lower of LODES were
+                                  enumerated with 2000
+                                  census blocks.
+   qwi   Quarterly Workforce      The Quarterly Workforce  http://
+         Indicators Public Use    Indicators (QWI) are a   lehd.ces.census.gov/
+         Counts (QWIPU)           set of economic          data/#qwi
+                                  indicators including
+                                  employment, job
+                                  creation, earnings, and
+                                  other measures of
+                                  employment flows. The
+                                  QWI are reported using
+                                  detailed firm
+                                  characteristics
+                                  (geography, industry,
+                                  age, size) and worker
+                                  demographics information
+                                  (sex, age, education,
+                                  race, ethnicity).
+   qwir  Quarterly Workforce      Rates for flow variables tbd
+         Indicators Public Use    in the Quarterly
+         Rates                    Workforce Indicators
+                                  (QWI)
+  qwirv  Quarterly Workforce      Variability measures for tbd
+         Indicators Variability   rates in the Quarterly
+         Measures for Rates       Workforce Indicators
+                                  (QWI)
+   qwiv  Quarterly Workforce      Variability measures for tbd
+         Indicators Variability   Quarterly Workforce
+         Measures                 Indicators (QWI)
+lehd_shp LEHD Shapefiles          Shapefiles are used to   lehd_shapefiles.html
+                                  provide mapping
+                                  functionality in QWI
+                                  Explorer and Job-to-Job
+                                  Explorer
 **** 6.2. geohi ****
 ( naming_geohi.csv )
 This component is based on the alphabetic FIPS state code equivalent to the
@@ -136,6 +145,7 @@ type Description
 **** 6.5. geocat ****
 ( naming_geocat.csv )
 type Description
+ gb  Metropolitan/Micropolitan (complete)
  gc  Counties
  gm  Metropolitan/Micropolitan
  gn  National (50 States + DC)
@@ -167,6 +177,7 @@ pdf  PDF file (printable)
 xls  Excel file (only select output)
 xlsx Excel file (not available for larger files)
 7.  Changes
+For a description of how schema files are versioned, see main_directory.
 **** 7.1. This version (revisions) ****
     * 2016-08-08: Initial release
 **** 7.2. Version 4.1-rc1 from 4.0.5 ****
@@ -179,7 +190,7 @@ xlsx Excel file (not available for larger files)
       sources in label_geo_level.csv 1eb399f,27a2674
 *** 7.2.1. In more detail ***
     * added geohi category of ALL, US, add naming_geohi.csv 89617e3
-    * added naming convention for additional files
+    * added naming convention for additional filesb
     * added agg_level variable 89617e3, 2149623
     * Changes to name of variable schema files (qwipu → qwi), addition of
       variability and rate variable schema files. 89617e3
@@ -204,6 +215,9 @@ xlsx Excel file (not available for larger files)
     * Changing of naming convention for to-be-released files based on federal
       government from fg → of. At this time, no such files have been released.
       3a0975e
+**** 7.3. Version 4.1-rc2 from 4.1-rc1 ****
+    * 2016-08-10: Added description,definition of SHP files
+    * 2016-08-11: Modified Indicator Names for J2J variable metadata.
 For additional details, please consult the previous draft versions:
     * ../V4.1-draft
     * ../V4.1b-draft
@@ -211,6 +225,6 @@ For additional details, please consult the previous draft versions:
     * ../V4.1d-draft
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Mon Aug 8 18:12:59 EDT 2016
+This revision: Fri Aug 12 14:00:21 EDT 2016
 ===============================================================================
-Last updated 2016-08-08 18:12:59 EDT
+Last updated 2016-08-12 14:00:21 EDT

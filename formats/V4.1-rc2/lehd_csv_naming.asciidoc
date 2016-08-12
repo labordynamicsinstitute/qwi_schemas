@@ -1,7 +1,8 @@
-= LEHD Public Use CSV Naming Schema V4.1-rc1 - CSV Naming Convention
+= LEHD Public Use CSV Naming Schema V4.1-rc2 - CSV Naming Convention
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-08 August 2016
+12 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+:ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
@@ -21,12 +22,13 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files. 
+This document describes the file naming schema for LEHD-provided CSV files.
 
 Schema for Data File Contents
 -----------------------------
 
-The contents (schema) are described in  link:lehd_public_use_schema.html[].
+The contents (schema) for LEHD data files are described in  link:lehd_public_use_schema.{ext-relative}[].
+The contents (schema) for shapefiles are described in link:lehd_shapefiles{ext-relative}[].
 
 Extends
 -------
@@ -186,7 +188,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 ==== In more detail
   - added geohi category of ALL, US, add naming_geohi.csv 89617e3
-  - added naming convention for additional files
+  - added naming convention for additional filesb
   - added agg_level variable 89617e3, 2149623
   - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files. 89617e3
   - Addition of a column identifying the type of variable on QWI 89617e3
@@ -203,6 +205,10 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Sundry small additional changes, building out the schema 28d7c6f
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
 
+=== Version 4.1-rc2 from 4.1-rc1
+- 2016-08-10: Added description,definition of SHP files
+- 2016-08-11: Modified Indicator Names for J2J variable metadata.
+
 For additional details, please consult the previous draft versions:
 
 - link:../V4.1-draft[../V4.1-draft]
@@ -218,6 +224,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Aug  8 18:12:59 EDT 2016
+This revision: Fri Aug 12 14:00:21 EDT 2016
 *******************
 

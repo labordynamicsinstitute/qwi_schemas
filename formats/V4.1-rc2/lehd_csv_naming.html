@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.9" />
-<title>LEHD Public Use CSV Naming Schema V4.1-rc1 - CSV Naming Convention</title>
+<title>LEHD Public Use CSV Naming Schema V4.1-rc2 - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema V4.1-rc1 - CSV Naming Convention</h1>
+<h1>LEHD Public Use CSV Naming Schema V4.1-rc2 - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
-<span id="revdate">08 August 2016</span>
+<span id="revdate">12 August 2016</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -56,7 +56,8 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 <div class="sect1">
 <h2 id="_schema_for_data_file_contents">2. Schema for Data File Contents</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
+<div class="paragraph"><p>The contents (schema) for LEHD data files are described in  <a href="lehd_public_use_schema..html">lehd_public_use_schema..html</a>.
+The contents (schema) for shapefiles are described in <a href="lehd_shapefiles.html">lehd_shapefiles.html</a>.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -106,6 +107,11 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]</p></td>
 <td align="left" valign="top"><p class="table">qwi qwir qwiv qwivr j2j j2jr j2jod</p></td>
 <td align="left" valign="top"><p class="table">Common convention for currently provided files.</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">[type]\_[geocat]</p></td>
+<td align="left" valign="top"><p class="table">shapefiles</p></td>
+<td align="left" valign="top"><p class="table">ZIP files containing data for shapefiles</p></td>
 </tr>
 </tbody>
 </table>
@@ -201,6 +207,12 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures</p></td>
 <td align="left" valign="top"><p class="table">Variability measures for Quarterly Workforce Indicators (QWI)</p></td>
 <td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">lehd_shp</p></td>
+<td align="left" valign="top"><p class="table">LEHD Shapefiles</p></td>
+<td align="left" valign="top"><p class="table">Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer</p></td>
+<td align="left" valign="top"><p class="table">lehd_shapefiles.html</p></td>
 </tr>
 </tbody>
 </table>
@@ -329,6 +341,10 @@ cellspacing="0" cellpadding="4">
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="center" valign="top"><p class="table">gb</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (complete)</p></td>
+</tr>
 <tr>
 <td align="center" valign="top"><p class="table">gc</p></td>
 <td align="left" valign="top"><p class="table">Counties</p></td>
@@ -499,7 +515,7 @@ cellspacing="0" cellpadding="4">
 <div class="sect1">
 <h2 id="_a_id_changes_a_changes">7. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
-<div class="paragraph"><p></p></div>
+<div class="paragraph"><p>For a description of how schema files are versioned, see <a href="../VERSIONING.html">main directory</a>.</p></div>
 <div class="sect2">
 <h3 id="_this_version_revisions">7.1. This version (revisions)</h3>
 <div class="ulist"><ul>
@@ -544,7 +560,7 @@ added geohi category of ALL, US, add naming_geohi.csv 89617e3
 </li>
 <li>
 <p>
-added naming convention for additional files
+added naming convention for additional filesb
 </p>
 </li>
 <li>
@@ -623,6 +639,22 @@ Changing of naming convention for to-be-released files based on federal governme
 </p>
 </li>
 </ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_1_rc2_from_4_1_rc1">7.3. Version 4.1-rc2 from 4.1-rc1</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2016-08-10: Added description,definition of SHP files
+</p>
+</li>
+<li>
+<p>
+2016-08-11: Modified Indicator Names for J2J variable metadata.
+</p>
+</li>
+</ul></div>
 <div class="paragraph"><p>For additional details, please consult the previous draft versions:</p></div>
 <div class="ulist"><ul>
 <li>
@@ -660,9 +692,8 @@ Changing of naming convention for to-be-released files based on federal governme
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Aug  8 18:12:59 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Fri Aug 12 14:00:21 EDT 2016</p></div>
 </div></div>
-</div>
 </div>
 </div>
 </div>
@@ -670,7 +701,7 @@ Changing of naming convention for to-be-released files based on federal governme
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-08-08 18:12:59 EDT
+Last updated 2016-08-12 14:00:21 EDT
 </div>
 </div>
 </body>

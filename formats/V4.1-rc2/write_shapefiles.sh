@@ -101,7 +101,7 @@ asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfi
 [[ -f ${basefile}.html  ]] && echo "${basefile}.html created"
 a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
 [[ -f ${basefile}.pdf  ]] && echo "${basefile}.pdf created"
-a2x -f docbook -a icons -a toc -a numbered  $asciifile
+a2x -f docbook -a icons -a toc -a numbered -a outfilesuffix=.md  $asciifile
 [[ -f ${basefile}.xml  ]] || echo "Error: ${basefile}.xml not created"
 # workaround for missing title
 head -4 $asciifile > ${basefile}.md
