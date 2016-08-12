@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1-rc2
 Lars Vilhuber <lars.vilhuber@census.gov>
-10 August 2016
+12 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -142,7 +142,7 @@ include::variables_qwir.csv[]
 
 ==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
-[width="95%",format="csv",cols="3*^2,<5",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
 |===================================================
 include::variables_j2j.csv[]
 |===================================================
@@ -154,7 +154,7 @@ include::variables_j2j.csv[]
 Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
 
 
-[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<2,<2",options="header"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
@@ -164,7 +164,7 @@ include::variables_j2jr.csv[]
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
 ( link:variables_j2jod.csv[] )
-[width="95%",format="csv",cols="^3,^2,^3,<5",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
 |===================================================
 include::variables_j2jod.csv[]
 |===================================================
@@ -581,7 +581,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 ==== In more detail
   - added geohi category of ALL, US, add naming_geohi.csv 89617e3
-  - added naming convention for additional files
+  - added naming convention for additional filesb
   - added agg_level variable 89617e3, 2149623
   - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files. 89617e3
   - Addition of a column identifying the type of variable on QWI 89617e3
@@ -598,6 +598,10 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Sundry small additional changes, building out the schema 28d7c6f
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
 
+=== Version 4.1-rc2 from 4.1-rc1
+- 2016-08-10: Added description of SHP files
+- 2016-08-11: Modified Indicator Names for J2J variable metadata.
+
 For additional details, please consult the previous draft versions:
 
 - link:../V4.1-draft[../V4.1-draft]
@@ -608,6 +612,6 @@ For additional details, please consult the previous draft versions:
 
 <<<
 *******************
-This revision: Wed Aug 10 22:39:56 EDT 2016
+This revision: Fri Aug 12 12:25:59 EDT 2016
 *******************
 

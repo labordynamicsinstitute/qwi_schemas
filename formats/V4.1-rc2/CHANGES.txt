@@ -30,7 +30,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
 
 === Version 4.1-rc2 from 4.1-rc1
-- 2016-08-10: Added description of SHP files
+- 2016-08-10: Added description,definition of SHP files
 - 2016-08-11: Modified Indicator Names for J2J variable metadata.
 
 For additional details, please consult the previous draft versions:

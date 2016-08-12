@@ -19,7 +19,7 @@ asciidoc.install(3);
 <div id="header">
 <h1>LEHD Public Use Shapefile Data</h1>
 <span id="author">Heath Hayward, Matthew Graham, Lars Vilhuber &lt;Patrick.Hayward@census.gov&gt;</span><br />
-<span id="revdate">10 August 2016</span>
+<span id="revdate">12 August 2016</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -135,8 +135,60 @@ Each shapefile&#8217;s attribute table has been updated to conform to the standa
 <h2 id="_outputs">4. Outputs</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Output shapefiles – grouped by paired products – are listed below. Each shapefile includes specific notes on its preparation.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_naming_schema">5. Basic Naming Schema</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>All files follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>[type]]_[geocat].zip</code></pre>
+</div></div>
+<div class="paragraph"><p>where [type] = lehd_shp and <a href="naming_geocat.csv">geocat</a> contains</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">gb</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (complete)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gc</p></td>
+<td align="left" valign="top"><p class="table">Counties</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gm</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gn</p></td>
+<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gs</p></td>
+<td align="left" valign="top"><p class="table">States</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gw</p></td>
+<td align="left" valign="top"><p class="table">Workforce Investment Areas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect2">
-<h3 id="_a_id_format_a_format">4.1. <a id="format"></a> FORMAT</h3>
+<h3 id="_a_id_format_a_format">5.1. <a id="format"></a> FORMAT</h3>
 <div class="paragraph"><p>( <a href="variables_shp.csv">variables_shp.csv</a> )</p></div>
 <div class="paragraph"><p>Files are distributed as <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">ESRI Shapefiles</a>, packaged as <a href="https://en.wikipedia.org/wiki/Zip_(file_format)">ZIP</a> files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml</a> .</p></div>
 <div class="tableblock">
@@ -198,35 +250,35 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_values">4.2. Values</h3>
+<h3 id="_values">5.2. Values</h3>
 <div class="sect3">
-<h4 id="_stusps">4.2.1. STUSPS</h4>
+<h4 id="_stusps">5.2.1. STUSPS</h4>
 <div class="paragraph"><p>( <a href="label_stusps.csv">label_stusps.csv</a> )</p></div>
 <div class="paragraph"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></div>
 </div>
 <div class="sect3">
-<h4 id="_geography">4.2.2. GEOGRAPHY</h4>
+<h4 id="_geography">5.2.2. GEOGRAPHY</h4>
 <div class="paragraph"><p>( <a href="label_geography.csv">label_geography.csv</a> )
 The valid codes correspond to those listed on <a href="label_geography.csv">label_geography.csv</a>.</p></div>
 </div>
 <div class="sect3">
-<h4 id="_name">4.2.3. NAME</h4>
+<h4 id="_name">5.2.3. NAME</h4>
 <div class="paragraph"><p>This is a string that corresponds in general to the <em>label</em> field on <a href="label_geography.csv">label_geography.csv</a>. Minor deviations for ease of exposition are possible.</p></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_common_files">4.3. Common files</h3>
+<h3 id="_common_files">5.3. Common files</h3>
 <div class="sect3">
-<h4 id="_state">4.3.1. State</h4>
-<div class="paragraph"><p>( <a href="lehd_state.zip">lehd_state.zip</a> )</p></div>
+<h4 id="_state">5.3.1. State</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gs.zip">lehd_shp_gs.zip</a> )</p></div>
 <div class="paragraph"><p>No transformations occur to this layer other than those listed above.</p></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_qwi_geographies">4.4. QWI Geographies</h3>
+<h3 id="_qwi_geographies">5.4. QWI Geographies</h3>
 <div class="sect3">
-<h4 id="_county">4.4.1. County</h4>
-<div class="paragraph"><p>( <a href="lehd_county.zip">lehd_county.zip</a> )</p></div>
+<h4 id="_county">5.4.1. County</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gc.zip">lehd_shp_gc.zip</a> )</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -236,8 +288,8 @@ STUSPS is appended to the NAME field so that county names are nationally unique.
 </ul></div>
 </div>
 <div class="sect3">
-<h4 id="_cbsa_within_state">4.4.2. CBSA - within State</h4>
-<div class="paragraph"><p>( <a href="lehd_stcbsa.zip">lehd_stcbsa.zip</a> )</p></div>
+<h4 id="_cbsa_within_state">5.4.2. CBSA - within State</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gm.zip">lehd_shp_gm.zip</a> )</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -262,16 +314,16 @@ The text "([STUSPS] part)" is appended to the NAME field only for those CBSA fea
 </ul></div>
 </div>
 <div class="sect3">
-<h4 id="_workforce_investment_board_areas">4.4.3. Workforce Investment Board Areas</h4>
-<div class="paragraph"><p>( <a href="lehd_wib.zip">lehd_wib.zip</a> )</p></div>
+<h4 id="_workforce_investment_board_areas">5.4.3. Workforce Investment Board Areas</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gw.zip">lehd_shp_gw.zip</a> )</p></div>
 <div class="paragraph"><p>The WIA/WIB shapefiles are built from the Place, County Subdivision, and County shapefiles from TIGER/Line based on definitions provided by the LED state partners.</p></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_job_to_job_flow_geographies">4.5. Job-to-Job Flow Geographies</h3>
+<h3 id="_job_to_job_flow_geographies">5.5. Job-to-Job Flow Geographies</h3>
 <div class="sect3">
-<h4 id="_cbsa_national">4.5.1. CBSA - National</h4>
-<div class="paragraph"><p>( <a href="lehd_cbsa.zip">lehd_cbsa.zip</a> )</p></div>
+<h4 id="_cbsa_national">5.5.1. CBSA - National</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gb.zip">lehd_shp_gb.zip</a> )</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -284,7 +336,7 @@ The state remainder areas are added to the shapefile as new features.  They are 
 </div>
 </div>
 <div class="sect1">
-<h2 id="versioning">5. Versioning</h2>
+<h2 id="versioning">6. Versioning</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Versioning rules follow <a href="http://semver.org/spec/v2.0.0.html">Semantic
 Versioning V2.0.0</a>, which states that</p></div>
@@ -315,12 +367,12 @@ PATCH version when you make backwards-compatible bug fixes.
 </div>
 </div>
 <div class="sect1">
-<h2 id="changes">6. Changes</h2>
+<h2 id="changes">7. Changes</h2>
 <div class="sectionbody">
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Wed Aug 10 10:56:10 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Fri Aug 12 13:02:20 EDT 2016</p></div>
 </div></div>
 </div>
 </div>
@@ -328,7 +380,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-08-10 10:56:10 EDT
+Last updated 2016-08-12 13:02:20 EDT
 </div>
 </div>
 </body>
