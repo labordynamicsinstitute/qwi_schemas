@@ -225,6 +225,6 @@ For additional details, please consult the previous draft versions:
     * ../V4.1d-draft
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Fri Aug 12 14:00:21 EDT 2016
+This revision: Fri Aug 12 14:05:06 EDT 2016
 ===============================================================================
-Last updated 2016-08-12 14:00:21 EDT
+Last updated 2016-08-12 14:05:06 EDT

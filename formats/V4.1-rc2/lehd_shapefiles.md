@@ -15,10 +15,10 @@ Scope
 The public-use data from the Longitudinal Employer-Household Dynamics
 Program, including the Quarterly Workforce Indicators (QWI) and
 Job-to-Job Flows (J2J), are available for download according to
-[structural](lehd_public_use_schema) and [file naming](lehd_csv_naming)
-schema. The data themselves are available as Comma-Separated Value (CSV)
-files through the LEHD website’s Data page at
-<http://lehd.ces.census.gov/data/> as well as through the [LED
+[structural](lehd_public_use_schema.md) and [file
+naming](lehd_csv_naming.md) schema. The data themselves are available as
+Comma-Separated Value (CSV) files through the LEHD website’s Data page
+at <http://lehd.ces.census.gov/data/> as well as through the [LED
 Extraction Tool](http://ledextract.ces.census.gov/).
 
 Shapefiles are used to provide mapping functionality in [QWI
@@ -288,4 +288,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Fri Aug 12 13:02:20 EDT 2016
+This revision: Fri Aug 12 14:05:40 EDT 2016

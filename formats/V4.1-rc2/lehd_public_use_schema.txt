@@ -16,10 +16,11 @@ are available for download with the following data schema. These data are
 available as Comma-Separated Value (CSV) files through the LEHD website’s Data
 page at http://lehd.ces.census.gov/data/ and through LED Extraction Tool at
 http://ledextract.ces.census.gov/.
-This document describes the data schema for LEHD files. For each variable, a
-set of allowable values is defined. Definitions are provided as CSV files, with
-header variable definitions. Changes relative to the original v4.0 version are
-listed at_the_end.
+This document describes the data schema for LEHD files. LEHD-provided SHP files
+are separately described in lehd_shapefiles.html. For each variable, a set of
+allowable values is defined. Definitions are provided as CSV files, with header
+variable definitions. Changes relative to the original v4.0 version are listed
+at_the_end.
 ***** 2. File naming *****
 The naming conventions of the data files is documented in lehd_csv_naming.html.
 ***** 3. Extends *****
@@ -895,13 +896,13 @@ For a description of how schema files are versioned, see main_directory.
       government from fg → of. At this time, no such files have been released.
       3a0975e
 **** 8.3. Version 4.1-rc2 from 4.1-rc1 ****
-    * 2016-08-10: Added description of SHP files
+    * 2016-08-10: Added description,definition of SHP files
     * 2016-08-11: Modified Indicator Names for J2J variable metadata.
 For additional details, please consult the previous draft versions:
     * ../V4.1-draft
     * ../V4.1b-draft
     * ../V4.1c-draft
     * ../V4.1d-draft
-This revision: Fri Aug 12 12:25:59 EDT 2016
+This revision: Fri Aug 12 14:05:26 EDT 2016
 ===============================================================================
-Last updated 2016-08-12 12:25:59 EDT
+Last updated 2016-08-12 14:05:26 EDT

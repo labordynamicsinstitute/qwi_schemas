@@ -21,7 +21,7 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the data schema for LEHD files. For each variable,
+This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
 with header variable definitions.  Changes relative to the original v4.0 version are listed <<changes,at the end>>.
 
@@ -599,7 +599,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 3a0975e
 
 === Version 4.1-rc2 from 4.1-rc1
-- 2016-08-10: Added description of SHP files
+- 2016-08-10: Added description,definition of SHP files
 - 2016-08-11: Modified Indicator Names for J2J variable metadata.
 
 For additional details, please consult the previous draft versions:
@@ -612,6 +612,6 @@ For additional details, please consult the previous draft versions:
 
 <<<
 *******************
-This revision: Fri Aug 12 12:25:59 EDT 2016
+This revision: Fri Aug 12 14:05:26 EDT 2016
 *******************
 
