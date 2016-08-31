@@ -65,6 +65,7 @@ geography,label,geo_level
 01105,"Perry, AL",C
 01107,"Pickens, AL",C
 0110700,"Albertville, AL",M
+0110760,"Alexander City, AL",M
 01109,"Pike, AL",C
 01111,"Randolph, AL",C
 01113,"Russell, AL",C
@@ -73,6 +74,7 @@ geography,label,geo_level
 01117,"Shelby, AL",C
 01119,"Sumter, AL",C
 01121,"Talladega, AL",C
+0112120,"Atmore, AL",M
 0112220,"Auburn-Opelika, AL",M
 01123,"Tallapoosa, AL",C
 01125,"Tuscaloosa, AL",C
@@ -87,7 +89,9 @@ geography,label,geo_level
 0119460,"Decatur, AL",M
 0120020,"Dothan, AL",M
 0121460,"Enterprise, AL",M
+0121640,"Eufaula, AL-GA (AL part)",M
 0122520,"Florence-Muscle Shoals, AL",M
+0122840,"Fort Payne, AL",M
 0123460,"Gadsden, AL",M
 0126620,"Huntsville, AL",M
 0133660,"Mobile, AL",M

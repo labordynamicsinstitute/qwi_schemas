@@ -9,6 +9,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Changed structure of state-level geography labels (flat directory structure) e5dbe97
   - Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
   - added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv 1eb399f,27a2674
+- 2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
 
 ==== In more detail
   - added geohi category of ALL, US, add naming_geohi.csv 89617e3
@@ -32,6 +33,9 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 === Version 4.1-rc2 from 4.1-rc1
 - 2016-08-10: Added description,definition of SHP files
 - 2016-08-11: Modified Indicator Names for J2J variable metadata.
+
+=== Version 4.1-rc3 from 4.1-rc2
+- 2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
 
 For additional details, please consult the previous draft versions:
 
