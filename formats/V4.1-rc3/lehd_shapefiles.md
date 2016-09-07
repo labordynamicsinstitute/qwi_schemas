@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
-12 August 2016
+07 September 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
@@ -26,6 +26,14 @@ Explorer](http://qwiexplorer.ces.census.gov/) and Job-to-Job Explorer
 (coming soon). They are created by transforming input shapefiles sourced
 from
 [TIGER/Line](https://www.census.gov/geo/maps-data/data/tiger-line.html).
+New TIGER/Line shapefiles are typically released by the Census Bureau’s
+Geography Division in August of each year, which are then processed by
+the LEHD program as new tabulation areas for the
+QWI[<http://lehd.ces.census.gov/data/#qwi>] and
+J2J[<http://lehd.ces.census.gov/data/#j2j>] data products. The LEHD
+shapefiles will be made available in the data schema in coordination
+with the public release of QWI and J2J data products, usually in
+November or December of each year.
 
 Sources
 =======
@@ -63,8 +71,8 @@ The following major transformations are applied to the input files:
     unnecessary complexity from the features.
 
 -   Features from Guam, American Samoa, and the Northern Mariana Islands
-    have been removed because they are not used in current
-    LEHD tabulations.
+    have been removed because they are not used in current LEHD
+    tabulations.
 
 -   Each shapefile’s attribute table has been updated to conform to the
     standard LEHD output format, defined in [Format](#format) section
@@ -82,13 +90,11 @@ All files follow the following naming convention:
 
     [type]]_[geocat].zip
 
-where \[type\] = lehd\_shp and [geocat](naming_geocat.csv) contains
+where [type] = lehd\_shp and [geocat](naming_geocat.csv) contains
 
 <table>
-<colgroup>
 <col width="20%" />
 <col width="80%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">type</th>
@@ -136,12 +142,10 @@ components (dbf, prj, shx) files are not documented here, we refer users
 to <http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml> .
 
 <table>
-<colgroup>
 <col width="14%" />
 <col width="14%" />
 <col width="35%" />
 <col width="35%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">column</th>
@@ -154,13 +158,13 @@ to <http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml> .
 <tr class="odd">
 <td align="left"><p>STUSPS</p></td>
 <td align="left"><p>State USPS code</p></td>
-<td align="left"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html" class="uri">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
+<td align="left"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
 <td align="left"><p>string</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GEOGRAPHY</p></td>
 <td align="left"><p>Nationally unique identifier</p></td>
-<td align="left"><p>Derived from Nationally Unique Federal Information Processing Series (FIPS) Code as per <a href="https://www.census.gov/geo/reference/ansi.html" class="uri">https://www.census.gov/geo/reference/ansi.html</a> (see notes)</p></td>
+<td align="left"><p>Derived from Nationally Unique Federal Information Processing Series (FIPS) Code as per <a href="https://www.census.gov/geo/reference/ansi.html">https://www.census.gov/geo/reference/ansi.html</a> (see notes)</p></td>
 <td align="left"><p>string</p></td>
 </tr>
 <tr class="odd">
@@ -178,13 +182,13 @@ to <http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml> .
 <tr class="odd">
 <td align="left"><p>INTPTLAT</p></td>
 <td align="left"><p>Internal Point Latitude</p></td>
-<td align="left"><p>Internal Point Latitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/" class="uri">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td align="left"><p>Internal Point Latitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
 <td align="left"><p>double</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>INTPTLON</p></td>
 <td align="left"><p>Internal Point Longitude</p></td>
-<td align="left"><p>Internal Point Longitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/" class="uri">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td align="left"><p>Internal Point Longitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
 <td align="left"><p>double</p></td>
 </tr>
 </tbody>
@@ -238,17 +242,17 @@ QWI Geographies
 -   All features are split into state-specific CBSA features by
     intersecting each feature with the state shapefile features.
 
--   The STUSPS field is added during the intersect with the
-    state shapefile.
+-   The STUSPS field is added during the intersect with the state
+    shapefile.
 
 -   STFIPS (i.e. FIPS State Code as per
     <https://www.census.gov/geo/reference/ansi_statetables.html>) is
     prepended to the CBSA code
     (<https://www.census.gov/population/metro/data/def.html>) to create
-    the GEOGRAPHY field to distinguish state-parts of the same
-    CBSA (i.e. make them nationally unique).
+    the GEOGRAPHY field to distinguish state-parts of the same CBSA
+    (i.e. make them nationally unique).
 
--   The text "(\[STUSPS\] part)" is appended to the NAME field only for
+-   The text "([STUSPS] part)" is appended to the NAME field only for
     those CBSA features that are split by state lines.
 
 ### Workforce Investment Board Areas
@@ -266,9 +270,9 @@ Job-to-Job Flow Geographies
 
 ( [lehd\_shp\_gb.zip](lehd_shp_gb.zip) )
 
--   The state remainder areas are added to the shapefile as
-    new features. They are assigned unique codes (\[STUSPS\]+999) and
-    names (“Not in metro/micro area, \[STUSPS\]”).
+-   The state remainder areas are added to the shapefile as new
+    features. They are assigned unique codes ([STUSPS]+999) and names
+    (“Not in metro/micro area, [STUSPS]”).
 
 Versioning
 ==========
@@ -288,4 +292,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Fri Aug 12 14:12:11 EDT 2016
+This revision: Wed Sep 7 14:45:56 EDT 2016
