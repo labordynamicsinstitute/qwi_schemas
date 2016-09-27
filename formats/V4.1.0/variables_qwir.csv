@@ -1,0 +1,19 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name,Units,Base
+HirAR,AR,sHirAR,Hiring Rate (All Accessions),Rate,(Emp + EmpEnd)/2
+HirNR,HR,sHirNR,New Hiring Rate,Rate,(Emp + EmpEnd)/2
+HirRR,RR,sHirRR,Recall Rate,Rate,(Emp + EmpEnd)/2
+SepR,SR,sSepR,Separation Rate (All Separations),Rate,(Emp + EmpEnd)/2
+HirAEndR,CAR,sHirAEndR,End-of-Quarter Hiring Rate,Rate,(Emp + EmpEnd)/2
+SepBegR,CSR,sSepBegR,Beginning-of-Quarter Separation Rate,Rate,(Emp + EmpEnd)/2
+HirAsR,FAR,sHirAsR,Hiring Rate (Flows into Full-Quarter Employment),Rate,(EmpSpv + EmpS)/2
+HirNsR,FHR,sHirNsR,New Hiring Rate (New Hires to Full-Quarter Status),Rate,(EmpSpv + EmpS)/2
+SepSR,FSR,sSepSR,Separation Rate (Flows out of Full-Quarter Employment),Rate,(EmpSpv + EmpS)/2
+SepSnxR,FSnxR,sSepSnxR,Separation Rate in the Next Quarter (Flow out of Full-Quarter Employment),Rate,(EmpSpv + EmpS)/2
+TurnOvrSR,FTR,sTurnOvrSR,Turnover Rate (Stable),Rate,2*EmpS
+FrmJbGnR,JCR,sFrmJbGnR,Firm Job Gain Rate (Job Creation Rate),Rate,(Emp + EmpEnd)/2
+FrmJbLsR,JDR,sFrmJbLsR,Firm Job Loss Rate (Job Destruction Rate),Rate,(Emp + EmpEnd)/2
+FrmJbCR,JFR,sFrmJbCR,Firm Job Change Rate (Net Change Rate),Rate,(Emp + EmpEnd)/2
+HirAEndReplR,EIR,sHirAEndReplR,Replacement Hiring Rate,Rate,(Emp + EmpEnd)/2
+FrmJbGnSR,FJCR,sFrmJbGnSR,Firm Job Gain Rate (Stable),Rate,(EmpSpv + EmpS)/2
+FrmJbLsSR,FJDR,sFrmJbLsSR,Firm Job Loss Rate (Stable),Rate,(EmpSpv + EmpS)/2
+FrmJbCSR,FJFR,sFrmJbCSR,Firm Job Change Rate (Stable; Net Change Rate),Rate,(EmpSpv + EmpS)/2
