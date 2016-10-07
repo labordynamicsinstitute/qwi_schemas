@@ -808,9 +808,8 @@ series of flags following the standard schema:
     * ind_level - industry level of table
     * by_ variables - flags indicating other dimensions reported, including
       ownership, demographics, firm age and size.
-These flags will be expanded to include origin characteristics in a later
-release. A shortened representation of the file is provided below, the complete
-file is available in the link above.
+A shortened representation of the file is provided below, the complete file is
+available in the link above.
 agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
         1                                         1   1    1     0   N
         2 Sex                                     1   1    1     0   N
@@ -862,7 +861,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2016-09-26: Initial release
     * 2016-10-06: Fixed a rendering issue with an empty column.
     * 2016-10-06: Modified the label for firm age and firm size to contain
-      mention of "Not Available For Public-Sector Firms" -
+      mention of "Not Available For Public-Sector Firms"
+    * 2016-10-06: Changed description of agg_level
 **** 8.2. Version 4.1 from 4.0.5 ****
     * 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
     * Changed structure of state-level geography labels (flat directory
@@ -898,6 +898,6 @@ For a description of how schema files are versioned, see main_directory.
     * Sundry small additional changes, building out the schema
     * Changing of naming convention for to-be-released files based on federal
       government from fg → of. At this time, no such files have been released.
-This revision: Fri Oct 7 15:54:59 EDT 2016
+This revision: Fri Oct 7 17:18:23 EDT 2016
 ===============================================================================
-Last updated 2016-10-07 15:54:59 EDT
+Last updated 2016-10-07 17:18:23 EDT

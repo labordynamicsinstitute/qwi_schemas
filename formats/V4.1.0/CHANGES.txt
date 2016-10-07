@@ -5,7 +5,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2016-09-26: Initial release
 - 2016-10-06: Fixed a rendering issue with an empty column.
 - 2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
--
+- 2016-10-06: Changed description of agg_level
 
 === Version 4.1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
@@ -31,6 +31,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
   - Changed fipsnum to force readin of FIPS as character, include geo_level, US.
   - Added additional legal values for firmage and firmsize, as used by J2J
   - Added Federal government to files  (for National QWI)
-  - Clarified description of filenaming components 
+  - Clarified description of filenaming components
   - Sundry small additional changes, building out the schema
   - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
