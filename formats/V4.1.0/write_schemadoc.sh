@@ -566,7 +566,7 @@ The characteristics available on an aggregation level are repeated using a serie
 - <<ind_level,ind_level>> - industry level of table
 - by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
 
-These flags will be expanded to include origin characteristics in a later release. A shortened representation of the file is provided below, the complete file is available in the link above.
+A shortened representation of the file is provided below, the complete file is available in the link above.
 
 
 [width=\"90%\",format=\"csv\",cols=\">1,3*<2,5*<1\",options=\"header\"]
