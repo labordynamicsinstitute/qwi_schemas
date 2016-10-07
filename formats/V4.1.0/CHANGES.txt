@@ -19,18 +19,18 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 ==== In more detail
   - added geohi category of ALL, US, add naming_geohi.csv
   - added naming convention for additional files
-  - added agg_level variable 89617e3,
+  - added agg_level variable
   - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files.
   - Addition of a column identifying the type of variable on QWI
   - Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf
   - Addition of variable schema description for J2J
-  - Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files) d9f8387
+  - Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
   - Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision
   - Added a concatenation of geography files as label_geography.csv.
   - Added a column geo_level to all label_geography_* files
   - Changed fipsnum to force readin of FIPS as character, include geo_level, US.
   - Added additional legal values for firmage and firmsize, as used by J2J
-  - Added Federal government to files  (for National QWI) 942dd0a,
-  - Clarified description of filenaming components 8888529,
+  - Added Federal government to files  (for National QWI)
+  - Clarified description of filenaming components 
   - Sundry small additional changes, building out the schema
-  - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released. 
+  - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
