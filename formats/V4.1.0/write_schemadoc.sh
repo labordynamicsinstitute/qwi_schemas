@@ -513,7 +513,7 @@ Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are prese
 #==============================================
 
 echo "
-[format=\"csv\",width=\"50%\",cols=\"^1,^3,^1\",options=\"header\"]
+[format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
 |===================================================
 Scope,Format file" >> $asciifile
 	for arg in label_geography_us.csv label_geography_cbsa.csv
