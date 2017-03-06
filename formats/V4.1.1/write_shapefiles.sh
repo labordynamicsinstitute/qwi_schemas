@@ -130,19 +130,19 @@ Comma-Separated Value (CSV) files through the LEHD website's Data page
 at http://lehd.ces.census.gov/data/ as well as through the
 http://ledextract.ces.census.gov/[LED Extraction Tool].
 
-Shapefiles are used to provide mapping functionality in http://qwiexplorer.ces.census.gov/[QWI Explorer] and Job-to-Job Explorer (coming soon).
+Shapefiles are used to provide mapping functionality in http://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer (Beta)].
 They are created by transforming input shapefiles sourced from https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line].
 New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[http://lehd.ces.census.gov/data/#qwi] and J2J[http://lehd.ces.census.gov/data/#j2j] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
 
 Sources
 -------
-Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2015 shapefiles]:
+Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2016 shapefiles]:
 
-* http://www2.census.gov/geo/tiger/TIGER2015/STATE/[tl_2015_us_state]
-* http://www2.census.gov/geo/tiger/TIGER2015/COUNTY/[tl_2015_us_county]
-* http://www2.census.gov/geo/tiger/TIGER2015/CBSA/[tl_2015_us_cbsa]
-* http://www2.census.gov/geo/tiger/TIGER2015/PLACE/[tl_2015_(ST)_place]  (for creation of WIA/WIB shapefile)
-* http://www2.census.gov/geo/tiger/TIGER2015/COUSUB/[tl_2015_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* http://www2.census.gov/geo/tiger/TIGER2016/STATE/[tl_2016_us_state]
+* http://www2.census.gov/geo/tiger/TIGER2016/COUNTY/[tl_2016_us_county]
+* http://www2.census.gov/geo/tiger/TIGER2016/CBSA/[tl_2016_us_cbsa]
+* http://www2.census.gov/geo/tiger/TIGER2016/PLACE/[tl_2016_(ST)_place]  (for creation of WIA/WIB shapefile)
+* http://www2.census.gov/geo/tiger/TIGER2016/COUSUB/[tl_2016_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
@@ -226,10 +226,10 @@ No transformations occur to this layer other than those listed above.
 The WIA/WIB shapefiles are built from the Place, County Subdivision, and County shapefiles from TIGER/Line based on definitions provided by the LED state partners.
 
 === Job-to-Job Flow Geographies
-==== CBSA - National
+==== Metropolitan (complete)
 ( link:lehd_shp_gb.zip[] )
 
-* The state remainder areas are added to the shapefile as new features.  They are assigned unique codes ([STUSPS]+999) and names (“Not in metro/micro area, [STUSPS]”).
+* Micropolitan areas are removed and state remainder areas are added as new features. State remainders are assigned unique codes ([STUSPS]+999) and names ("Not in metropolitan area, [STUSPS]").
 
 [[versioning]]
 Versioning
