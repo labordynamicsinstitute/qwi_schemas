@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1.0
-Lars Vilhuber <lars.vilhuber@census.gov>
-07 October 2016
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+06 March 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -10,7 +10,10 @@ Lars Vilhuber <lars.vilhuber@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -35,7 +38,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.0.5, for files released as of R2016Q4.
 
 Basic Schema
 ------------
@@ -575,6 +578,8 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2016-10-06: Fixed a rendering issue with an empty column.
 - 2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
 - 2016-10-06: Changed description of agg_level
+- 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
 
 === Version 4.1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
@@ -607,6 +612,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Fri Oct  7 17:18:23 EDT 2016
+This revision: Mon Mar  6 21:09:44 EST 2017
 *******************
 

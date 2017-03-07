@@ -1,14 +1,16 @@
 
 ****** LEHD Public Use Data Schema V4.1.0 ******
 Lars Vilhuber
-<lars.vilhuber@census.gov>
-07 October 2016
+<lars.vilhuber@cornell.edu>
+06 March 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at lars.vilhuber@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -28,7 +30,7 @@ This version reimplements some features from V4.0. Many files compliant with
 LEHD or QWI Schema v4.0 will also be compliant with this schema, but
 compatibility is not guaranteed.
 ***** 4. Supersedes *****
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.0.5, for files released as of R2016Q4.
 ***** 5. Basic Schema *****
 Each data file is structured as a CSV file. The first columns contain
 [identifiers], subsequent columns contain [indicators], followed by status
@@ -355,12 +357,10 @@ Indicator Variable Alternate Name Status Flag  Indicator Name           Units
                                                (Continuous Employment)
          AQHire        aq_doma2      sAQHire   Job-to-Job Flows (Brief  Count
                                                Nonemployment)
-           J2J       ee+aq_doma2        sJ2J   Job-to-Job Flows         Count
         EEFullQ            fee       sEEFullQ  Stable Job-to-Job Flows  Count
                                                (Continuous Employment)
      AQFullQHire      faq_doma2   sAQFullQHire Stable Job-to-Job Flows  Count
                                                (Brief Nonemployment)
-       J2JFullQ    fee+faq_doma2    sJ2JFullQ  Stable Job-to-Job Flows  Count
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -863,6 +863,10 @@ For a description of how schema files are versioned, see main_directory.
     * 2016-10-06: Modified the label for firm age and firm size to contain
       mention of "Not Available For Public-Sector Firms"
     * 2016-10-06: Changed description of agg_level
+    * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
+      actually on the CSV file
+    * 2017-03-06: Corrected bad reference to release RXXXX, which should have
+      been R2016Q4
 **** 8.2. Version 4.1 from 4.0.5 ****
     * 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
     * Changed structure of state-level geography labels (flat directory
@@ -898,6 +902,6 @@ For a description of how schema files are versioned, see main_directory.
     * Sundry small additional changes, building out the schema
     * Changing of naming convention for to-be-released files based on federal
       government from fg → of. At this time, no such files have been released.
-This revision: Fri Oct 7 17:18:23 EDT 2016
+This revision: Mon Mar 6 21:09:44 EST 2017
 ===============================================================================
-Last updated 2016-10-07 17:18:23 EDT
+Last updated 2017-03-06 21:09:44 EST
