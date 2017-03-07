@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1.1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-06 March 2017
+07 March 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -586,10 +586,12 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
 - 2017-03-06: Added additional aggregation levels, changed some labels
 - 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-07: Updated 2016 geography in shapefiles
+- 2017-03-07: Corrected naming of files inside shapefile ZIP files
 
 
 <<<
 *******************
-This revision: Mon Mar  6 21:10:54 EST 2017
+This revision: Tue Mar  7 08:58:06 EST 2017
 *******************
 

@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1.1 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-06 March 2017
+07 March 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -872,6 +872,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-03-06: Added additional aggregation levels, changed some labels
     * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
       actually on the CSV file
-This revision: Mon Mar 6 21:10:54 EST 2017
+    * 2017-03-07: Updated 2016 geography in shapefiles
+    * 2017-03-07: Corrected naming of files inside shapefile ZIP files
+This revision: Tue Mar 7 08:58:06 EST 2017
 ===============================================================================
-Last updated 2017-03-06 21:10:54 EST
+Last updated 2017-03-07 08:58:06 EST
