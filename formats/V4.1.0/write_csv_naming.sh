@@ -95,7 +95,7 @@ This document describes the file naming schema for LEHD-provided CSV files.
 Schema for Data File Contents
 -----------------------------
 
-The contents (schema) for LEHD data files are described in  link:lehd_public_use_schema.{ext-relative}[].
+The contents (schema) for LEHD data files are described in  link:lehd_public_use_schema{ext-relative}[].
 The contents (schema) for shapefiles are described in link:lehd_shapefiles{ext-relative}[].
 
 Extends

@@ -19,8 +19,8 @@ asciidoc.install(2);
 <div id="header">
 <h1>LEHD Public Use CSV Naming Schema V4.1.0 - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
-<span id="revdate">26 September 2016</span>
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">07 March 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,7 +37,10 @@ asciidoc.install(2);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -56,7 +59,7 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 <div class="sect1">
 <h2 id="_schema_for_data_file_contents">2. Schema for Data File Contents</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>The contents (schema) for LEHD data files are described in  <a href="lehd_public_use_schema..html">lehd_public_use_schema..html</a>.
+<div class="paragraph"><p>The contents (schema) for LEHD data files are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.
 The contents (schema) for shapefiles are described in <a href="lehd_shapefiles.html">lehd_shapefiles.html</a>.</p></div>
 </div>
 </div>
@@ -524,6 +527,36 @@ cellspacing="0" cellpadding="4">
 2016-09-26: Initial release
 </p>
 </li>
+<li>
+<p>
+2016-10-06: Fixed a rendering issue with an empty column.
+</p>
+</li>
+<li>
+<p>
+2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
+</p>
+</li>
+<li>
+<p>
+2016-10-06: Changed description of agg_level
+</p>
+</li>
+<li>
+<p>
+2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+</p>
+</li>
+<li>
+<p>
+2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
+</p>
+</li>
+<li>
+<p>
+2017-03-07: Corrected naming of files inside shapefile ZIP files
+</p>
+</li>
 </ul></div>
 </div>
 <div class="sect2">
@@ -536,7 +569,7 @@ cellspacing="0" cellpadding="4">
 </li>
 <li>
 <p>
-Changed structure of state-level geography labels (flat directory structure) e5dbe97
+Changed structure of state-level geography labels (flat directory structure)
 </p>
 </li>
 <li>
@@ -546,7 +579,7 @@ Describes National QWI files and J2J files (both of which are still in beta), ad
 </li>
 <li>
 <p>
-added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv 1eb399f,27a2674
+added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv
 </p>
 </li>
 <li>
@@ -570,87 +603,87 @@ added additional geo_level for CBSA (complete), additional description, sources 
 <div class="ulist"><ul>
 <li>
 <p>
-added geohi category of ALL, US, add naming_geohi.csv 89617e3
+added geohi category of ALL, US, add naming_geohi.csv
 </p>
 </li>
 <li>
 <p>
-added naming convention for additional filesb
+added naming convention for additional files
 </p>
 </li>
 <li>
 <p>
-added agg_level variable 89617e3, 2149623
+added agg_level variable
 </p>
 </li>
 <li>
 <p>
-Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability and rate variable schema files. 89617e3
+Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability and rate variable schema files.
 </p>
 </li>
 <li>
 <p>
-Addition of a column identifying the type of variable on QWI 89617e3
+Addition of a column identifying the type of variable on QWI
 </p>
 </li>
 <li>
 <p>
-Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf 89617e3
+Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf
 </p>
 </li>
 <li>
 <p>
-Addition of variable schema description for J2J 1a57250
+Addition of variable schema description for J2J
 </p>
 </li>
 <li>
 <p>
-Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files) d9f8387 f7cc524
+Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
 </p>
 </li>
 <li>
 <p>
-Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision 8136f0c
+Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision
 </p>
 </li>
 <li>
 <p>
-Added a concatenation of geography files as label_geography.csv. 8136f0c, 39ecfc9
+Added a concatenation of geography files as label_geography.csv.
 </p>
 </li>
 <li>
 <p>
-Added a column geo_level to all label_geography_* files a32bb4c
+Added a column geo_level to all label_geography_* files
 </p>
 </li>
 <li>
 <p>
-Changed fipsnum to force readin of FIPS as character, include geo_level, US.  a32bb4c
+Changed fipsnum to force readin of FIPS as character, include geo_level, US.
 </p>
 </li>
 <li>
 <p>
-Added additional legal values for firmage and firmsize, as used by J2J a32bb4c
+Added additional legal values for firmage and firmsize, as used by J2J
 </p>
 </li>
 <li>
 <p>
-Added Federal government to files  (for National QWI) 942dd0a, 1654288
+Added Federal government to files  (for National QWI)
 </p>
 </li>
 <li>
 <p>
-Clarified description of filenaming components 8888529, 8d580f6
+Clarified description of filenaming components
 </p>
 </li>
 <li>
 <p>
-Sundry small additional changes, building out the schema 28d7c6f
+Sundry small additional changes, building out the schema
 </p>
 </li>
 <li>
 <p>
-Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released. 3a0975e
+Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released.
 </p>
 </li>
 </ul></div>
@@ -668,7 +701,7 @@ Changing of naming convention for to-be-released files based on federal governme
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Sep 26 20:35:41 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Tue Mar  7 13:48:39 EST 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -679,7 +712,7 @@ Changing of naming convention for to-be-released files based on federal governme
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2016-09-26 20:35:41 EDT
+ 2017-03-07 13:48:39 EST
 </div>
 </div>
 </body>
