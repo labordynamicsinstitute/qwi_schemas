@@ -18,8 +18,8 @@ asciidoc.install(3);
 <body class="article">
 <div id="header">
 <h1>LEHD Public Use Shapefile Data</h1>
-<span id="author">Heath Hayward, Matthew Graham, Lars Vilhuber &lt;Patrick.Hayward@census.gov&gt;</span><br />
-<span id="revdate">26 September 2016</span>
+<span id="author">Heath Hayward, Matthew Graham, Lars Vilhuber &lt;lars.vilhuber@cornell.edu&gt;</span><br />
+<span id="revdate">06 March 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -36,9 +36,11 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome.
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome.
 Please write us at
-<a href="mailto:Patrick.Hayward@census.gov?subject=LEHD_Shapefiles">Patrick.Hayward@census.gov</a>.</p></div>
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -56,7 +58,7 @@ The data themselves are available as
 Comma-Separated Value (CSV) files through the LEHD website&#8217;s Data page
 at <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> as well as through the
 <a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p></div>
-<div class="paragraph"><p>Shapefiles are used to provide mapping functionality in <a href="http://qwiexplorer.ces.census.gov/">QWI Explorer</a> and Job-to-Job Explorer (coming soon).
+<div class="paragraph"><p>Shapefiles are used to provide mapping functionality in <a href="http://qwiexplorer.ces.census.gov/">QWI Explorer</a> and <a href="https://j2jexplorer.ces.census.gov/">Job-to-Job Explorer (Beta)</a>.
 They are created by transforming input shapefiles sourced from <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line</a>.
 New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[<a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a>] and J2J[<a href="http://lehd.ces.census.gov/data/#j2j">http://lehd.ces.census.gov/data/#j2j</a>] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.</p></div>
 </div>
@@ -64,31 +66,31 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 <div class="sect1">
 <h2 id="_sources">2. Sources</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Files are derived from   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line 2015 shapefiles</a>:</p></div>
+<div class="paragraph"><p>Files are derived from   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line 2016 shapefiles</a>:</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-<a href="http://www2.census.gov/geo/tiger/TIGER2015/STATE/">tl_2015_us_state</a>
+<a href="http://www2.census.gov/geo/tiger/TIGER2016/STATE/">tl_2016_us_state</a>
 </p>
 </li>
 <li>
 <p>
-<a href="http://www2.census.gov/geo/tiger/TIGER2015/COUNTY/">tl_2015_us_county</a>
+<a href="http://www2.census.gov/geo/tiger/TIGER2016/COUNTY/">tl_2016_us_county</a>
 </p>
 </li>
 <li>
 <p>
-<a href="http://www2.census.gov/geo/tiger/TIGER2015/CBSA/">tl_2015_us_cbsa</a>
+<a href="http://www2.census.gov/geo/tiger/TIGER2016/CBSA/">tl_2016_us_cbsa</a>
 </p>
 </li>
 <li>
 <p>
-<a href="http://www2.census.gov/geo/tiger/TIGER2015/PLACE/">tl_2015_(ST)_place</a>  (for creation of WIA/WIB shapefile)
+<a href="http://www2.census.gov/geo/tiger/TIGER2016/PLACE/">tl_2016_(ST)_place</a>  (for creation of WIA/WIB shapefile)
 </p>
 </li>
 <li>
 <p>
-<a href="http://www2.census.gov/geo/tiger/TIGER2015/COUSUB/">tl_2015_(ST)_cousub</a> (for creation of WIA/WIB shapefile)
+<a href="http://www2.census.gov/geo/tiger/TIGER2016/COUSUB/">tl_2016_(ST)_cousub</a> (for creation of WIA/WIB shapefile)
 </p>
 </li>
 </ul></div>
@@ -163,7 +165,7 @@ cellspacing="0" cellpadding="4">
 <tbody>
 <tr>
 <td align="center" valign="top"><p class="table">gb</p></td>
-<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (complete)</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan (complete)</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gc</p></td>
@@ -171,7 +173,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gm</p></td>
-<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (state parts)</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gn</p></td>
@@ -260,11 +262,11 @@ cellspacing="0" cellpadding="4">
 <div class="sect3">
 <h4 id="_geography">5.2.2. GEOGRAPHY</h4>
 <div class="paragraph"><p>( <a href="label_geography.csv">label_geography.csv</a> )
-The valid codes correspond to those listed on <a href="label_geography.csv">label_geography.csv</a>.</p></div>
+The valid codes correspond to those listed on <a href="label_geography.csv">label_geography.csv</a> and <a href="label_geography_cbsa.csv">label_geography_cbsa.csv</a>.</p></div>
 </div>
 <div class="sect3">
 <h4 id="_name">5.2.3. NAME</h4>
-<div class="paragraph"><p>This is a string that corresponds in general to the <em>label</em> field on <a href="label_geography.csv">label_geography.csv</a>. Minor deviations for ease of exposition are possible.</p></div>
+<div class="paragraph"><p>This is a string that corresponds in general to the <em>label</em> field on <a href="label_geography.csv">label_geography.csv</a> and <a href="label_geography_cbsa.csv">label_geography_cbsa.csv</a>. Minor deviations for ease of exposition are possible.</p></div>
 </div>
 </div>
 <div class="sect2">
@@ -323,12 +325,12 @@ The text "([STUSPS] part)" is appended to the NAME field only for those CBSA fea
 <div class="sect2">
 <h3 id="_job_to_job_flow_geographies">5.5. Job-to-Job Flow Geographies</h3>
 <div class="sect3">
-<h4 id="_cbsa_national">5.5.1. CBSA - National</h4>
+<h4 id="_metropolitan_complete">5.5.1. Metropolitan (complete)</h4>
 <div class="paragraph"><p>( <a href="lehd_shp_gb.zip">lehd_shp_gb.zip</a> )</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-The state remainder areas are added to the shapefile as new features.  They are assigned unique codes ([STUSPS]+999) and names (“Not in metro/micro area, [STUSPS]”).
+Micropolitan areas are removed and state remainder areas are added as new features. State remainders are assigned unique codes ([STUSPS]+999) and names ("Not in metropolitan area, [STUSPS]").
 </p>
 </li>
 </ul></div>
@@ -373,7 +375,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Sep 26 20:36:10 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Mon Mar  6 19:50:27 EST 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -382,7 +384,7 @@ PATCH version when you make backwards-compatible bug fixes.
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2016-09-26 20:36:10 EDT
+ 2017-03-06 19:50:27 EST
 </div>
 </div>
 </body>

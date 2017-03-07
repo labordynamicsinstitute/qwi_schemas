@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema V4.1.0
-Lars Vilhuber <lars.vilhuber@census.gov>
-07 October 2016
+= LEHD Public Use Data Schema V4.1.1
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+06 March 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -10,7 +10,10 @@ Lars Vilhuber <lars.vilhuber@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -458,7 +461,7 @@ Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are prese
 |===================================================
 Scope,Format file
 US,link:label_geography_us.csv[]
-CBSA,link:label_geography_cbsa.csv[]
+METRO,link:label_geography_metro.csv[]
 *States*,
 AK,link:label_geography_ak.csv[]
 AL,link:label_geography_al.csv[]
@@ -571,42 +574,21 @@ include::label_flags.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2016-09-26: Initial release
-- 2016-10-06: Fixed a rendering issue with an empty column.
-- 2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
-- 2016-10-06: Changed description of agg_level
+- 2017-03-06: Initial release
 
-=== Version 4.1 from 4.0.5
-- 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
-  - Changed structure of state-level geography labels (flat directory structure)
-  - Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
-  - added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv
-- 2016-08-10: Added description,definition of SHP files
-- 2016-08-11: Modified Indicator Names for J2J variable metadata.
-- 2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
-
-==== In more detail
-  - added geohi category of ALL, US, add naming_geohi.csv
-  - added naming convention for additional files
-  - added agg_level variable
-  - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files.
-  - Addition of a column identifying the type of variable on QWI
-  - Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf
-  - Addition of variable schema description for J2J
-  - Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
-  - Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision
-  - Added a concatenation of geography files as label_geography.csv.
-  - Added a column geo_level to all label_geography_* files
-  - Changed fipsnum to force readin of FIPS as character, include geo_level, US.
-  - Added additional legal values for firmage and firmsize, as used by J2J
-  - Added Federal government to files  (for National QWI)
-  - Clarified description of filenaming components
-  - Sundry small additional changes, building out the schema
-  - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
+=== Version 4.1.1 from 4.1.0
+- 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
+- 2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
+- 2017-03-06: Updated TIGER references to 2016 in shapefile description
+- 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
+- 2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
+- 2017-03-06: Added a new file label_geography_metro.csv
+- 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
+- 2017-03-06: Added additional aggregation levels, changed some labels
 
 
 <<<
 *******************
-This revision: Fri Oct  7 17:18:23 EDT 2016
+This revision: Mon Mar  6 19:50:38 EST 2017
 *******************
 

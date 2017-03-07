@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.9" />
-<title>LEHD Public Use Data Schema V4.1.0</title>
+<title>LEHD Public Use Data Schema V4.1.1</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(3);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use Data Schema V4.1.0</h1>
+<h1>LEHD Public Use Data Schema V4.1.1</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@census.gov">lars.vilhuber@census.gov</a>&gt;</code></span><br />
-<span id="revdate">07 October 2016</span>
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">06 March 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,7 +37,10 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft">lars.vilhuber@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -2676,8 +2679,8 @@ cellspacing="0" cellpadding="4">
 <tbody>
 <tr>
 <td align="center" valign="top"><p class="table">B</p></td>
-<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (complete)</p></td>
-<td align="left" valign="top"><p class="table">Identifies 5-digit CBSA code provided by the Census Bureau’s Geography Division</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan (complete)</p></td>
+<td align="left" valign="top"><p class="table">Identifies 5-digit CBSA code for metropolitan areas provided by the Census Bureau’s Geography Division</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://www.census.gov/population/metro/">http://www.census.gov/population/metro/</a></p></td>
 </tr>
 <tr>
@@ -2690,7 +2693,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">M</p></td>
 <td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (state part)</p></td>
 <td align="left" valign="top"><p class="table">Identifies 7-digit code constructed from the 2-digit state FIPS code and the 5-digit CBSA code provided by the Census Bureau’s Geography Division</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table"><a href="http://www.census.gov/population/metro/">http://www.census.gov/population/metro/</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">N</p></td>
@@ -2841,8 +2844,8 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table"><a href="label_geography_us.csv">label_geography_us.csv</a></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">CBSA</p></td>
-<td align="center" valign="top"><p class="table"><a href="label_geography_cbsa.csv">label_geography_cbsa.csv</a></p></td>
+<td align="center" valign="top"><p class="table">METRO</p></td>
+<td align="center" valign="top"><p class="table"><a href="label_geography_metro.csv">label_geography_metro.csv</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table"><strong>States</strong></p></td>
@@ -3271,9 +3274,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">N</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">513</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">NAICS Subsector</p></td>
+<td align="right" valign="top"><p class="table">258</p></td>
+<td align="left" valign="top"><p class="table">Sex</p></td>
+<td align="left" valign="top"><p class="table">NAICS Sector</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
@@ -3293,37 +3296,37 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">3329</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">NAICS Sector * CBSA-state part</p></td>
+<td align="right" valign="top"><p class="table">1029</p></td>
+<td align="left" valign="top"><p class="table">Race</p></td>
+<td align="left" valign="top"><p class="table">State</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">B</p></td>
+<td align="left" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">12289</p></td>
+<td align="right" valign="top"><p class="table">1033</p></td>
+<td align="left" valign="top"><p class="table">Ethnicity</p></td>
+<td align="left" valign="top"><p class="table">State</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">Origin [Firm Age]</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
+<td align="left" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
-<td align="right" valign="top"><p class="table">12353</p></td>
+<td align="right" valign="top"><p class="table">1037</p></td>
+<td align="left" valign="top"><p class="table">Race * Ethnicity</p></td>
+<td align="left" valign="top"><p class="table">State</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">Destination [Firm Age]</p></td>
-<td align="left" valign="top"><p class="table">Origin [Firm Age]</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">N</p></td>
+<td align="left" valign="top"><p class="table">S</p></td>
 </tr>
 <tr>
 <td align="right" valign="top"><p class="table">&#8230;</p></td>
@@ -3429,160 +3432,60 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-2016-09-26: Initial release
-</p>
-</li>
-<li>
-<p>
-2016-10-06: Fixed a rendering issue with an empty column.
-</p>
-</li>
-<li>
-<p>
-2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
-</p>
-</li>
-<li>
-<p>
-2016-10-06: Changed description of agg_level
+2017-03-06: Initial release
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1_from_4_0_5">8.2. Version 4.1 from 4.0.5</h3>
+<h3 id="_version_4_1_1_from_4_1_0">8.2. Version 4.1.1 from 4.1.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
+2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
 </p>
 </li>
 <li>
 <p>
-Changed structure of state-level geography labels (flat directory structure)
+2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
 </p>
 </li>
 <li>
 <p>
-Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
+2017-03-06: Updated TIGER references to 2016 in shapefile description
 </p>
 </li>
 <li>
 <p>
-added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv
+2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
 </p>
 </li>
 <li>
 <p>
-2016-08-10: Added description,definition of SHP files
+2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
 </p>
 </li>
 <li>
 <p>
-2016-08-11: Modified Indicator Names for J2J variable metadata.
+2017-03-06: Added a new file label_geography_metro.csv
 </p>
 </li>
 <li>
 <p>
-2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
-</p>
-</li>
-</ul></div>
-<div class="sect3">
-<h4 id="_in_more_detail">8.2.1. In more detail</h4>
-<div class="ulist"><ul>
-<li>
-<p>
-added geohi category of ALL, US, add naming_geohi.csv
+2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
 </p>
 </li>
 <li>
 <p>
-added naming convention for additional files
-</p>
-</li>
-<li>
-<p>
-added agg_level variable
-</p>
-</li>
-<li>
-<p>
-Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability and rate variable schema files.
-</p>
-</li>
-<li>
-<p>
-Addition of a column identifying the type of variable on QWI
-</p>
-</li>
-<li>
-<p>
-Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf
-</p>
-</li>
-<li>
-<p>
-Addition of variable schema description for J2J
-</p>
-</li>
-<li>
-<p>
-Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
-</p>
-</li>
-<li>
-<p>
-Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision
-</p>
-</li>
-<li>
-<p>
-Added a concatenation of geography files as label_geography.csv.
-</p>
-</li>
-<li>
-<p>
-Added a column geo_level to all label_geography_* files
-</p>
-</li>
-<li>
-<p>
-Changed fipsnum to force readin of FIPS as character, include geo_level, US.
-</p>
-</li>
-<li>
-<p>
-Added additional legal values for firmage and firmsize, as used by J2J
-</p>
-</li>
-<li>
-<p>
-Added Federal government to files  (for National QWI)
-</p>
-</li>
-<li>
-<p>
-Clarified description of filenaming components
-</p>
-</li>
-<li>
-<p>
-Sundry small additional changes, building out the schema
-</p>
-</li>
-<li>
-<p>
-Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released.
+2017-03-06: Added additional aggregation levels, changed some labels
 </p>
 </li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Fri Oct  7 17:18:23 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Mon Mar  6 19:50:38 EST 2017</p></div>
 </div></div>
-</div>
 </div>
 </div>
 </div>
@@ -3591,7 +3494,7 @@ Changing of naming convention for to-be-released files based on federal governme
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2016-10-07 17:18:23 EDT
+ 2017-03-06 19:50:38 EST
 </div>
 </div>
 </body>

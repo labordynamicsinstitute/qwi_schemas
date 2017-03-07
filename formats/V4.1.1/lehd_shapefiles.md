@@ -1,13 +1,17 @@
 = LEHD Public Use Shapefile Data
-Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
-26 September 2016
+Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
+06 March 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
 > **Important**
 >
-> This specification is draft. Feedback is welcome. Please write us at
-> [Patrick.Hayward@census.gov](mailto:Patrick.Hayward@census.gov?subject=LEHD_Shapefiles).
+> This document is not an official Census Bureau publication. It is
+> compiled from publicly accessible information by Lars Vilhuber ([Labor
+> Dynamics Institute, Cornell
+> University](http://www.ilr.cornell.edu/ldi/)). Feedback is welcome.
+> Please write us at
+> [lars.vilhuber@cornell.edu](mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles).
 
 Scope
 =====
@@ -22,15 +26,15 @@ at <http://lehd.ces.census.gov/data/> as well as through the [LED
 Extraction Tool](http://ledextract.ces.census.gov/).
 
 Shapefiles are used to provide mapping functionality in [QWI
-Explorer](http://qwiexplorer.ces.census.gov/) and Job-to-Job Explorer
-(coming soon). They are created by transforming input shapefiles sourced
-from
+Explorer](http://qwiexplorer.ces.census.gov/) and [Job-to-Job Explorer
+(Beta)](https://j2jexplorer.ces.census.gov/). They are created by
+transforming input shapefiles sourced from
 [TIGER/Line](https://www.census.gov/geo/maps-data/data/tiger-line.html).
 New TIGER/Line shapefiles are typically released by the Census Bureau’s
 Geography Division in August of each year, which are then processed by
 the LEHD program as new tabulation areas for the
-QWI[<http://lehd.ces.census.gov/data/#qwi>] and
-J2J[<http://lehd.ces.census.gov/data/#j2j>] data products. The LEHD
+QWI\[<http://lehd.ces.census.gov/data/#qwi>\] and
+J2J\[<http://lehd.ces.census.gov/data/#j2j>\] data products. The LEHD
 shapefiles will be made available in the data schema in coordination
 with the public release of QWI and J2J data products, usually in
 November or December of each year.
@@ -38,19 +42,19 @@ November or December of each year.
 Sources
 =======
 
-Files are derived from  [TIGER/Line 2015
+Files are derived from  [TIGER/Line 2016
 shapefiles](https://www.census.gov/geo/maps-data/data/tiger-line.html):
 
--   [tl\_2015\_us\_state](http://www2.census.gov/geo/tiger/TIGER2015/STATE/)
+-   [tl\_2016\_us\_state](http://www2.census.gov/geo/tiger/TIGER2016/STATE/)
 
--   [tl\_2015\_us\_county](http://www2.census.gov/geo/tiger/TIGER2015/COUNTY/)
+-   [tl\_2016\_us\_county](http://www2.census.gov/geo/tiger/TIGER2016/COUNTY/)
 
--   [tl\_2015\_us\_cbsa](http://www2.census.gov/geo/tiger/TIGER2015/CBSA/)
+-   [tl\_2016\_us\_cbsa](http://www2.census.gov/geo/tiger/TIGER2016/CBSA/)
 
--   [tl\_2015\_(ST)\_place](http://www2.census.gov/geo/tiger/TIGER2015/PLACE/)
+-   [tl\_2016\_(ST)\_place](http://www2.census.gov/geo/tiger/TIGER2016/PLACE/)
     (for creation of WIA/WIB shapefile)
 
--   [tl\_2015\_(ST)\_cousub](http://www2.census.gov/geo/tiger/TIGER2015/COUSUB/)
+-   [tl\_2016\_(ST)\_cousub](http://www2.census.gov/geo/tiger/TIGER2016/COUSUB/)
     (for creation of WIA/WIB shapefile)
 
 Transformations
@@ -71,8 +75,8 @@ The following major transformations are applied to the input files:
     unnecessary complexity from the features.
 
 -   Features from Guam, American Samoa, and the Northern Mariana Islands
-    have been removed because they are not used in current LEHD
-    tabulations.
+    have been removed because they are not used in current
+    LEHD tabulations.
 
 -   Each shapefile’s attribute table has been updated to conform to the
     standard LEHD output format, defined in [Format](#format) section
@@ -90,41 +94,43 @@ All files follow the following naming convention:
 
     [type]]_[geocat].zip
 
-where [type] = lehd\_shp and [geocat](naming_geocat.csv) contains
+where \[type\] = lehd\_shp and [geocat](naming_geocat.csv) contains
 
 <table>
+<colgroup>
 <col width="20%" />
 <col width="80%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">type</th>
-<th align="left">Description</th>
+<th>type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>gb</p></td>
-<td align="left"><p>Metropolitan/Micropolitan (complete)</p></td>
+<td><p>gb</p></td>
+<td><p>Metropolitan (complete)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>gc</p></td>
-<td align="left"><p>Counties</p></td>
+<td><p>gc</p></td>
+<td><p>Counties</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>gm</p></td>
-<td align="left"><p>Metropolitan/Micropolitan</p></td>
+<td><p>gm</p></td>
+<td><p>Metropolitan/Micropolitan (state parts)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>gn</p></td>
-<td align="left"><p>National (50 States + DC)</p></td>
+<td><p>gn</p></td>
+<td><p>National (50 States + DC)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>gs</p></td>
-<td align="left"><p>States</p></td>
+<td><p>gs</p></td>
+<td><p>States</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>gw</p></td>
-<td align="left"><p>Workforce Investment Areas</p></td>
+<td><p>gw</p></td>
+<td><p>Workforce Investment Areas</p></td>
 </tr>
 </tbody>
 </table>
@@ -142,54 +148,56 @@ components (dbf, prj, shx) files are not documented here, we refer users
 to <http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml> .
 
 <table>
+<colgroup>
 <col width="14%" />
 <col width="14%" />
 <col width="35%" />
 <col width="35%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">column</th>
-<th align="left">label</th>
-<th align="left">description</th>
-<th align="left">type</th>
+<th>column</th>
+<th>label</th>
+<th>description</th>
+<th>type</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>STUSPS</p></td>
-<td align="left"><p>State USPS code</p></td>
-<td align="left"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
-<td align="left"><p>string</p></td>
+<td><p>STUSPS</p></td>
+<td><p>State USPS code</p></td>
+<td><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html" class="uri">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
+<td><p>string</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>GEOGRAPHY</p></td>
-<td align="left"><p>Nationally unique identifier</p></td>
-<td align="left"><p>Derived from Nationally Unique Federal Information Processing Series (FIPS) Code as per <a href="https://www.census.gov/geo/reference/ansi.html">https://www.census.gov/geo/reference/ansi.html</a> (see notes)</p></td>
-<td align="left"><p>string</p></td>
+<td><p>GEOGRAPHY</p></td>
+<td><p>Nationally unique identifier</p></td>
+<td><p>Derived from Nationally Unique Federal Information Processing Series (FIPS) Code as per <a href="https://www.census.gov/geo/reference/ansi.html" class="uri">https://www.census.gov/geo/reference/ansi.html</a> (see notes)</p></td>
+<td><p>string</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>NAME</p></td>
-<td align="left"><p>Feature Name</p></td>
-<td align="left"><p>Full Census Name of Geography Feature</p></td>
-<td align="left"><p>string</p></td>
+<td><p>NAME</p></td>
+<td><p>Feature Name</p></td>
+<td><p>Full Census Name of Geography Feature</p></td>
+<td><p>string</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>LABEL</p></td>
-<td align="left"><p>Feature Label</p></td>
-<td align="left"><p>Shorter Census Name of Geography Feature for Thematic Mapping</p></td>
-<td align="left"><p>string</p></td>
+<td><p>LABEL</p></td>
+<td><p>Feature Label</p></td>
+<td><p>Shorter Census Name of Geography Feature for Thematic Mapping</p></td>
+<td><p>string</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>INTPTLAT</p></td>
-<td align="left"><p>Internal Point Latitude</p></td>
-<td align="left"><p>Internal Point Latitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
-<td align="left"><p>double</p></td>
+<td><p>INTPTLAT</p></td>
+<td><p>Internal Point Latitude</p></td>
+<td><p>Internal Point Latitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/" class="uri">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td><p>double</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>INTPTLON</p></td>
-<td align="left"><p>Internal Point Longitude</p></td>
-<td align="left"><p>Internal Point Longitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
-<td align="left"><p>double</p></td>
+<td><p>INTPTLON</p></td>
+<td><p>Internal Point Longitude</p></td>
+<td><p>Internal Point Longitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/" class="uri">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td><p>double</p></td>
 </tr>
 </tbody>
 </table>
@@ -208,13 +216,15 @@ FIPS State Postal Code as per
 
 ( [label\_geography.csv](label_geography.csv) ) The valid codes
 correspond to those listed on
-[label\_geography.csv](label_geography.csv).
+[label\_geography.csv](label_geography.csv) and
+[label\_geography\_cbsa.csv](label_geography_cbsa.csv).
 
 ### NAME
 
 This is a string that corresponds in general to the *label* field on
-[label\_geography.csv](label_geography.csv). Minor deviations for ease
-of exposition are possible.
+[label\_geography.csv](label_geography.csv) and
+[label\_geography\_cbsa.csv](label_geography_cbsa.csv). Minor deviations
+for ease of exposition are possible.
 
 Common files
 ------------
@@ -242,17 +252,17 @@ QWI Geographies
 -   All features are split into state-specific CBSA features by
     intersecting each feature with the state shapefile features.
 
--   The STUSPS field is added during the intersect with the state
-    shapefile.
+-   The STUSPS field is added during the intersect with the
+    state shapefile.
 
 -   STFIPS (i.e. FIPS State Code as per
     <https://www.census.gov/geo/reference/ansi_statetables.html>) is
     prepended to the CBSA code
     (<https://www.census.gov/population/metro/data/def.html>) to create
-    the GEOGRAPHY field to distinguish state-parts of the same CBSA
-    (i.e. make them nationally unique).
+    the GEOGRAPHY field to distinguish state-parts of the same
+    CBSA (i.e. make them nationally unique).
 
--   The text "([STUSPS] part)" is appended to the NAME field only for
+-   The text "(\[STUSPS\] part)" is appended to the NAME field only for
     those CBSA features that are split by state lines.
 
 ### Workforce Investment Board Areas
@@ -266,13 +276,14 @@ LED state partners.
 Job-to-Job Flow Geographies
 ---------------------------
 
-### CBSA - National
+### Metropolitan (complete)
 
 ( [lehd\_shp\_gb.zip](lehd_shp_gb.zip) )
 
--   The state remainder areas are added to the shapefile as new
-    features. They are assigned unique codes ([STUSPS]+999) and names
-    (“Not in metro/micro area, [STUSPS]”).
+-   Micropolitan areas are removed and state remainder areas are added
+    as new features. State remainders are assigned unique
+    codes (\[STUSPS\]+999) and names ("Not in metropolitan
+    area, \[STUSPS\]").
 
 Versioning
 ==========
@@ -292,4 +303,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Mon Sep 26 20:36:10 EDT 2016
+This revision: Mon Mar 6 19:50:27 EST 2017
