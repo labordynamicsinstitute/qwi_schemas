@@ -14,3 +14,5 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
 - 2017-03-06: Added additional aggregation levels, changed some labels
 - 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-07: Updated 2016 geography in shapefiles
+- 2017-03-07: Corrected naming of files inside shapefile ZIP files
