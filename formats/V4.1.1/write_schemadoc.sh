@@ -104,7 +104,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.1.0, for files released as of R2017Q1.
 
 Basic Schema
 ------------

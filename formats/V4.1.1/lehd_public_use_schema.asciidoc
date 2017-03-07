@@ -38,7 +38,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.1.0, for files released as of R2017Q1.
 
 Basic Schema
 ------------
@@ -590,6 +590,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Mon Mar  6 20:57:26 EST 2017
+This revision: Mon Mar  6 21:10:54 EST 2017
 *******************
 
