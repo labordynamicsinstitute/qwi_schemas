@@ -30,7 +30,7 @@ This version reimplements some features from V4.0. Many files compliant with
 LEHD or QWI Schema v4.0 will also be compliant with this schema, but
 compatibility is not guaranteed.
 ***** 4. Supersedes *****
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.0.5, for files released as of R2016Q4.
 ***** 5. Basic Schema *****
 Each data file is structured as a CSV file. The first columns contain
 [identifiers], subsequent columns contain [indicators], followed by status
@@ -865,6 +865,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2016-10-06: Changed description of agg_level
     * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
       actually on the CSV file
+    * 2017-03-06: Corrected bad reference to release RXXXX, which should have
+      been R2016Q4
 **** 8.2. Version 4.1 from 4.0.5 ****
     * 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
     * Changed structure of state-level geography labels (flat directory
@@ -900,6 +902,6 @@ For a description of how schema files are versioned, see main_directory.
     * Sundry small additional changes, building out the schema
     * Changing of naming convention for to-be-released files based on federal
       government from fg → of. At this time, no such files have been released.
-This revision: Mon Mar 6 20:13:34 EST 2017
+This revision: Mon Mar 6 21:09:44 EST 2017
 ===============================================================================
-Last updated 2017-03-06 20:13:34 EST
+Last updated 2017-03-06 21:09:44 EST

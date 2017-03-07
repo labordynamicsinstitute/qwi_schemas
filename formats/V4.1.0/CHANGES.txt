@@ -7,6 +7,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
 - 2016-10-06: Changed description of agg_level
 - 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
 
 === Version 4.1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
