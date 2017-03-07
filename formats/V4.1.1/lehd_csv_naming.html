@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.9" />
-<title>LEHD Public Use CSV Naming Schema V4.1.0 - CSV Naming Convention</title>
+<title>LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema V4.1.0 - CSV Naming Convention</h1>
+<h1>LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
-<span id="revdate">26 September 2016</span>
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">07 March 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,7 +37,10 @@ asciidoc.install(2);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -56,7 +59,7 @@ These data are available as Comma-Separated Value (CSV) files through the LEHD w
 <div class="sect1">
 <h2 id="_schema_for_data_file_contents">2. Schema for Data File Contents</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>The contents (schema) for LEHD data files are described in  <a href="lehd_public_use_schema..html">lehd_public_use_schema..html</a>.
+<div class="paragraph"><p>The contents (schema) for LEHD data files are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.
 The contents (schema) for shapefiles are described in <a href="lehd_shapefiles.html">lehd_shapefiles.html</a>.</p></div>
 </div>
 </div>
@@ -343,7 +346,7 @@ cellspacing="0" cellpadding="4">
 <tbody>
 <tr>
 <td align="center" valign="top"><p class="table">gb</p></td>
-<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (complete)</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan (complete)</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gc</p></td>
@@ -351,7 +354,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gm</p></td>
-<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (state parts)</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">gn</p></td>
@@ -521,136 +524,67 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-2016-09-26: Initial release
+2017-03-06: Initial release
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1_from_4_0_5">7.2. Version 4.1 from 4.0.5</h3>
+<h3 id="_version_4_1_1_from_4_1_0">7.2. Version 4.1.1 from 4.1.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
+2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
 </p>
 </li>
 <li>
 <p>
-Changed structure of state-level geography labels (flat directory structure) e5dbe97
+2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
 </p>
 </li>
 <li>
 <p>
-Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
+2017-03-06: Updated TIGER references to 2016 in shapefile description
 </p>
 </li>
 <li>
 <p>
-added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv 1eb399f,27a2674
+2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
 </p>
 </li>
 <li>
 <p>
-2016-08-10: Added description,definition of SHP files
+2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
 </p>
 </li>
 <li>
 <p>
-2016-08-11: Modified Indicator Names for J2J variable metadata.
+2017-03-06: Added a new file label_geography_metro.csv
 </p>
 </li>
 <li>
 <p>
-2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
-</p>
-</li>
-</ul></div>
-<div class="sect3">
-<h4 id="_in_more_detail">7.2.1. In more detail</h4>
-<div class="ulist"><ul>
-<li>
-<p>
-added geohi category of ALL, US, add naming_geohi.csv 89617e3
+2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
 </p>
 </li>
 <li>
 <p>
-added naming convention for additional filesb
+2017-03-06: Added additional aggregation levels, changed some labels
 </p>
 </li>
 <li>
 <p>
-added agg_level variable 89617e3, 2149623
+2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
 </p>
 </li>
 <li>
 <p>
-Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability and rate variable schema files. 89617e3
+2017-03-07: Updated 2016 geography in shapefiles
 </p>
 </li>
 <li>
 <p>
-Addition of a column identifying the type of variable on QWI 89617e3
-</p>
-</li>
-<li>
-<p>
-Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf 89617e3
-</p>
-</li>
-<li>
-<p>
-Addition of variable schema description for J2J 1a57250
-</p>
-</li>
-<li>
-<p>
-Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files) d9f8387 f7cc524
-</p>
-</li>
-<li>
-<p>
-Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision 8136f0c
-</p>
-</li>
-<li>
-<p>
-Added a concatenation of geography files as label_geography.csv. 8136f0c, 39ecfc9
-</p>
-</li>
-<li>
-<p>
-Added a column geo_level to all label_geography_* files a32bb4c
-</p>
-</li>
-<li>
-<p>
-Changed fipsnum to force readin of FIPS as character, include geo_level, US.  a32bb4c
-</p>
-</li>
-<li>
-<p>
-Added additional legal values for firmage and firmsize, as used by J2J a32bb4c
-</p>
-</li>
-<li>
-<p>
-Added Federal government to files  (for National QWI) 942dd0a, 1654288
-</p>
-</li>
-<li>
-<p>
-Clarified description of filenaming components 8888529, 8d580f6
-</p>
-</li>
-<li>
-<p>
-Sundry small additional changes, building out the schema 28d7c6f
-</p>
-</li>
-<li>
-<p>
-Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released. 3a0975e
+2017-03-07: Corrected naming of files inside shapefile ZIP files
 </p>
 </li>
 </ul></div>
@@ -668,9 +602,8 @@ Changing of naming convention for to-be-released files based on federal governme
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Sep 26 20:35:41 EDT 2016</p></div>
+<div class="paragraph"><p>This revision: Tue Mar  7 13:49:12 EST 2017</p></div>
 </div></div>
-</div>
 </div>
 </div>
 </div>
@@ -679,7 +612,7 @@ Changing of naming convention for to-be-released files based on federal governme
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2016-09-26 20:35:41 EDT
+ 2017-03-07 13:49:12 EST
 </div>
 </div>
 </body>
