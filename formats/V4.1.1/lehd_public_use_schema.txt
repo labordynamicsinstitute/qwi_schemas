@@ -357,12 +357,10 @@ Indicator Variable Alternate Name Status Flag  Indicator Name           Units
                                                (Continuous Employment)
          AQHire        aq_doma2      sAQHire   Job-to-Job Flows (Brief  Count
                                                Nonemployment)
-           J2J       ee+aq_doma2        sJ2J   Job-to-Job Flows         Count
         EEFullQ            fee       sEEFullQ  Stable Job-to-Job Flows  Count
                                                (Continuous Employment)
      AQFullQHire      faq_doma2   sAQFullQHire Stable Job-to-Job Flows  Count
                                                (Brief Nonemployment)
-       J2JFullQ    fee+faq_doma2    sJ2JFullQ  Stable Job-to-Job Flows  Count
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -872,6 +870,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-03-06: Changed references where appropriate from
       label_geography_cbsa to label_geography_metro
     * 2017-03-06: Added additional aggregation levels, changed some labels
-This revision: Mon Mar 6 19:50:38 EST 2017
+    * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
+      actually on the CSV file
+This revision: Mon Mar 6 20:57:26 EST 2017
 ===============================================================================
-Last updated 2017-03-06 19:50:38 EST
+Last updated 2017-03-06 20:57:26 EST
