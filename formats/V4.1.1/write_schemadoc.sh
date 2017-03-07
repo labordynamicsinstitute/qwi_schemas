@@ -451,7 +451,7 @@ done
 
 	# construct the composite file from separate files
 	head -1 label_geography_us.csv > label_geography.csv
-	for arg in $(ls label_geography_*.csv | grep -v cbsa)
+	for arg in $(ls label_geography_*.csv | grep -vE "cbsa|metro")
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done
@@ -516,7 +516,7 @@ echo "
 [format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
 |===================================================
 Scope,Format file" >> $asciifile
-	for arg in label_geography_us.csv label_geography_cbsa.csv
+	for arg in label_geography_us.csv label_geography_metro.csv
 	do
 	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
 	echo "$state,link:${arg}[]" >> $asciifile

@@ -11,3 +11,4 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
 - 2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
 - 2017-03-06: Added a new file label_geography_metro.csv
+- 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
