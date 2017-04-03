@@ -20,8 +20,11 @@ You can browse the following schemas:
   * [V4.1d-draft](formats/V4.1d-draft/lehd_public_use_schema.html): An updated draft version that adds SHP files
   * [V4.1-rc1](formats/V4.1-rc1/lehd_public_use_schema.html): A release candidate for V4.1 final
   * [V4.1-rc2](formats/V4.1-rc2/lehd_public_use_schema.html): A release candidate for V4.1 final
-* [V4.1.0](formats/V4.1.0/lehd_public_use_schema.html): The released V4.1.0 version.
-* [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version. 
+* V4.1 released versions
+  * [V4.1.0](formats/V4.1.0/lehd_public_use_schema.html): The released V4.1.0 version.
+  * [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version.
+* V4.2 draft versions
+  * [V4.2a-draft](formats/V4.2a-draft/lehd_public_use_schema.html): The draft V4.2a-draft version. 
 
 
 If you are not already there, you might find that browsing [http://labordynamicsinstitute.github.io/qwi_schemas/](http://labordynamicsinstitute.github.io/qwi_schemas/) is easier.
