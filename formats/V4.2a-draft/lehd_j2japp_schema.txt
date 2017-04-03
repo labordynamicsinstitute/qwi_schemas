@@ -137,40 +137,123 @@ verbose description of the indicator. The 'Base' indicates the denominator used
 to compute the statistic, and may be 1. 'Units' identify the type of variable:
 counts, rates, monetary amounts.
 ( variables_j2japp.csv )
-Indicator Variable Alternate Name Status Flag Indicator Name         Units Base
-         MHire        all_doma2      sMHire   Hires                  Count 1
-          MSep        all_doms2       sMSep   Separations            Count 1
-      MJobStart       first_dome  sMJobStart  Main Job Starts        Count 1
-        MJobEnd       last_domb     sMJobEnd  Main Job Ends          Count 1
-         EEHire        ee_doma2      sEEHire  Job-to-Job Hires       Count 1
-                                              (Continuous
-                                              Employment)
-         EESep         ee_doms2      sEESep   Job-to-Job Separations Count 1
-                                              (Continuous
-                                              Employment)
-         AQHire        aq_doma2      sAQHire  Job-to-Job Hires       Count 1
-                                              (Brief Nonemployment)
-         AQSep         aq_doms2      sAQSep   Job-to-Job Separations Count 1
-                                              (Brief Nonemployment)
-        J2JHire       j2j_doma2     sJ2JHire  Job-to-Job Hires       Count 1
-         J2JSep       j2j_doms2      sJ2JSep  Job-to-Job Separations Count 1
-         NEHire        ne_doma2      sNEHire  Hires from             Count 1
-                                              Nonemployment
-         ENSep         en_doms2      sENSep   Separations to         Count 1
-                                              Nonemployment
-      NEPersist       ne2_doma2   sNEPersist  Hires from Persistent  Count 1
-                                              Nonemployment
-      ENPersist       en2_doms2   sENPersist  Separations to         Count 1
-                                              Persistent
-                                              Nonemployment
-        NEFullQ       ne2p_doma2    sNEFullQ  Hires from Full-       Count 1
-                                              Quarter Nonemployment
-        ENFullQ       en2p_doms2    sENFullQ  Separations to Full-   Count 1
-                                              Quarter Nonemployment
-         MainB            domB       sMainB   Employment (Beginning  Count 1
-                                              of Quarter)
-         MainE            domE       sMainE   Employment (End of     Count 1
-                                              Quarter)
+Indicator   Alternate Name  Status Flag  Indicator Name Description                                Units Concept           Base
+ Variable
+   MHire        all_doma2       sMHire   Hires          Hires into a worker’s main job           Count Hire                1
+    MSep        all_doms2        sMSep   Separations    Separations from a worker’s main job     Count Separation          1
+MJobStart      first_dome    sMJobStart  Main Job       New main jobs due to hires and instances   Count Employment          1
+                                         Starts         when a previously existing secondary job
+                                                        becomes the main source of earnings
+  MJobEnd       last_domb      sMJobEnd  Main Job Ends  End of main jobs due to separations and    Count Employment          1
+                                                        instances when another job becomes the
+                                                        main source of earnings
+   EEHire        ee_doma2      sEEHire   Job-to-Job     Hires following a separation with no       Count Hire                1
+                                         Hires          observed nonemployment spell
+                                         (Continuous
+                                         Employment)
+   EESep         ee_doms2       sEESep   Job-to-Job     Separations followed by a hire with no     Count Separation          1
+                                         Separations    observed nonemployment spell
+                                         (Continuous
+                                         Employment)
+   AQHire        aq_doma2      sAQHire   Job-to-Job     Hires following a separation with a short  Count Hire                1
+                                         Hires (Brief   nonemployment spell
+                                         Nonemployment)
+   AQSep         aq_doms2       sAQSep   Job-to-Job     Separations followed by a hire with a      Count Separation          1
+                                         Separations    short nonemployment spell
+                                         (Brief
+                                         Nonemployment)
+  J2JHire       j2j_doma2      sJ2JHire  Job-to-Job     Hires following a separation (short or no  Count Hire                1
+                                         Hires          observed nonemployment spell)
+   J2JSep       j2j_doms2      sJ2JSep   Job-to-Job     Separations followed by a hire (short or   Count Separation          1
+                                         Separations    no observed nonemployment spell)
+   NEHire        ne_doma2      sNEHire   Hires from     Hires following any spell of nonemployment Count Hire                1
+                                         Nonemployment
+   ENSep         en_doms2       sENSep   Separations to Separations into any spell of              Count Separation          1
+                                         Nonemployment  nonemployment
+NEPersist       ne2_doma2    sNEPersist  Hires from     Hires following a spell of persistent      Count Hire                1
+                                         Persistent     nonemployment
+                                         Nonemployment
+ENPersist       en2_doms2    sENPersist  Separations to Separations into a spell of persistent     Count Separation          1
+                                         Persistent     nonemployment
+                                         Nonemployment
+  NEFullQ      ne2p_doma2      sNEFullQ  Hires from     Hires following a spell of full-quarter    Count Hire                1
+                                         Full-Quarter   nonemployment (does not include
+                                         Nonemployment  intermittently employed)
+  ENFullQ      en2p_doms2      sENFullQ  Separations to Separations into a spell of full-quarter   Count Separation          1
+                                         Full-Quarter   nonemployment (does not include
+                                         Nonemployment  intermittently employed)
+   MainB            domB        sMainB   Employment     Main jobs held on the first day of the     Count Employment          1
+                                         (Beginning of  quarter
+                                         Quarter)
+   MainE            domE        sMainE   Employment     Main jobs held on the last day of the      Count Employment          1
+                                         (End of        quarter
+                                         Quarter)
+   MHireR   all_doma2_rate     sMHireR   Hires          Rate of hires into a worker’s main job   Rate  Hire       (MainB+MainE)/
+                                                                                                                          2
+   MSepR    all_doms2_rate      sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation (MainB+MainE)/
+                                                        job                                                               2
+MJobStartR   all_dest_rate  sMJobStartR  Main Job       Rate of new main jobs due to hires and     Rate  Employment (MainB+MainE)/
+                                         Starts         instances when a previously existing                              2
+                                                        secondary job becomes the main source of
+                                                        earnings
+ MJobEndR   all_orgin_rate    sMJobEndR  Main Job Ends  Rate of the end of main jobs due to        Rate  Employment (MainB+MainE)/
+                                                        separations and instances when another job                        2
+                                                        becomes the main source of earnings
+  EEHireR        eea_rate      sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                         Hires          no observed nonemployment spell                                   2
+                                         (Continuous
+                                         Employment)
+   EESepR        ees_rate      sEESepR   Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    with no observed nonemployment spell                              2
+                                         (Continuous
+                                         Employment)
+  AQHireR    aq_doma2_rate     sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                         Hires (Brief   a short nonemployment spell                                       2
+                                         Nonemployment)
+   AQSepR    aq_doms2_rate     sAQSepR   Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    with a short nonemployment spell                                  2
+                                         (Brief
+                                         Nonemployment)
+ J2JHireR  eeall_doma2_rate   sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire       (MainB+MainE)/
+                                         Hires          (short or no observed nonemployment spell)                        2
+  J2JSepR  eeall_doms2_rate    sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    (short or no observed nonemployment spell)                        2
+  NEHireR    ne_doma2_rate     sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire       (MainB+MainE)/
+                                         Nonemployment  nonemployment                                                     2
+   ENSepR    en_doms2_rate     sENSepR   Separations to Rate of separations into any spell of      Rate  Separation (MainB+MainE)/
+                                         Nonemployment  nonemployment                                                     2
+NEPersistR  ne2_doma2_rate  sNEPersistR  Hires from     Rate of hires following a spell of         Rate  Hire       (MainB+MainE)/
+                                         Persistent     persistent nonemployment                                          2
+                                         Nonemployment
+ENPersistR  en2_doms2_rate  sENPersistR  Separations to Rate of separations into a spell of        Rate  Separation (MainB+MainE)/
+                                         Persistent     persistent nonemployment                                          2
+                                         Nonemployment
+ NEFullQR  ne2p_doma2_rate    sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire       (MainB+MainE)/
+                                         Full-Quarter   quarter nonemployment (does not include                           2
+                                         Nonemployment  intermittently employed)
+ ENFullQR  en2p_doms2_rate    sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation (MainB+MainE)/
+                                         Full-Quarter   quarter nonemployment (does not include                           2
+                                         Nonemployment  intermittently employed)
+      EE             ee           sEE    Job-to-Job     Job flows with no observed nonemployment   Count Flow                1
+                                         Flows          spell
+                                         (Continuous
+                                         Employment)
+   AQHire        aq_doma2      sAQHire   Job-to-Job     Job flows with a short nonemployment spell Count Flow                1
+                                         Flows (Brief
+                                         Nonemployment)
+     J2J      ee+aq_doma2         sJ2J   Job-to-Job     Job flows with a short or no observed      Count Flow                1
+                                         Flows          nonemployment spell
+     EES            fee        sEEFullQ  Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with no observed
+                                         (Continuous    nonemployment spell
+                                         Employment)
+  AQHireS       faq_doma2   sAQFullQHire Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with a short
+                                         (Brief         nonemployment spell
+                                         Nonemployment)
+    J2JS     fee+faq_doma2       sJ2JS   Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with a short or no
+                                                        observed nonemployment spell
 6. Categorical Variables
 Categorical variable descriptions are displayed above each table, with the
 variable name shown in parentheses. Unless otherwise stated, every possible
@@ -535,6 +618,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Mon Apr 3 11:13:29 EDT 2017
+This revision: Mon Apr 3 11:43:03 EDT 2017
 ===============================================================================
-Last updated 2017-04-03 11:13:29 EDT
+Last updated 2017-04-03 11:43:03 EDT
