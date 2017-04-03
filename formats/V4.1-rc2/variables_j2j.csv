@@ -1,0 +1,19 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Units
+MHire,all_doma2,sMHire,Hires,Count
+MSep,all_doms2,sMSep,Separations ,Count
+MJobStart,all_dest,sMJobStart,Main Job Starts,Count
+MJobEnd,all_orig,sMJobEnd,Main Job Ends,Count
+EEHire,ee_doma2,sEEHire,Job-to-Job Hires (Continuous Employment),Count
+EESep,ee_doms2,sEESep,Job-to-Job Separations (Continuous Employment),Count
+AQHire,aq_doma2,sAQHire,Job-to-Job Hires (Brief Nonemployment),Count
+AQSep,aq_doms2,sAQSep,Job-to-Job Separations (Brief Nonemployment),Count
+J2JHire,eeall_doma2,sJ2JHire,Job-to-Job Hires,Count
+J2JSep,eeall_doms2,sJ2JSep,Job-to-Job Separations,Count
+NEHire,ne_doma2,sNEHire,Hires from Nonemployment,Count
+ENSep,en_doms2,sENSep,Separations to Nonemployment,Count
+NEPersist,ne2_doma2,sNEPersist,Hires from Persistent Nonemployment,Count
+ENPersist,en2_doms2,sENPersist,Separations to Persistent Nonemployment,Count
+NEFullQ,ne2p_doma2,sNEFullQ,Hires from Full-Quarter Nonemployment,Count
+ENFullQ,en2p_doms2,sENFullQ,Separations to Full-Quarter Nonemployment,Count
+MainB,domB,sMainB,Employment (Beginning of Quarter),Count
+MainE,domE,sMainE,Employment (End of Quarter),Count
