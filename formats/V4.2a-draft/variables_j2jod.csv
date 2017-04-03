@@ -1,5 +1,5 @@
-Indicator Variable,Alternate Name,Status Flag,Indicator Name,Units
-EE,ee,sEE,Job-to-Job Flows (Continuous Employment),Count
-AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Count
-EEFullQ,fee,sEEFullQ,Stable Job-to-Job Flows (Continuous Employment),Count
-AQFullQHire,faq_doma2,sAQFullQHire,Stable Job-to-Job Flows (Brief Nonemployment),Count
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Units,Base
+EE,ee_doma2,sEE,Job-to-Job Flows (Continuous Employment),Count,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Count,1
+EES,fee_doma2,sEES,Stable Job-to-Job Flows (Continuous Employment),Count,1
+AQHireS,faq_doma2,sAQHireS,Stable Job-to-Job Flows (Brief Nonemployment),Count,1

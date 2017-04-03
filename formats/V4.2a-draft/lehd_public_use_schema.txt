@@ -1,8 +1,8 @@
 
-****** LEHD Public Use Data Schema V4.1.1 ******
+****** LEHD Public Use Data Schema V4.2a-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 March 2017
+03 April 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -142,7 +142,9 @@ CSV files, suitable for machine processing in a wide variety of statistical
 applications. When given, the 'Alternate name' may appear in related
 documentation and articles. The 'Status Flag' is used to indicate publication
 or data quality status (see Status_Flags). The 'Indicator Name' is a more
-verbose description of the indicator.
+verbose description of the indicator. The 'Base' indicates the denominator used
+to compute the statistic, and may be 1. 'Units' identify the type of variable:
+counts, rates, monetary amounts.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
 Indicator Variable Alternate name  Status Flag  Indicator Name          Units
@@ -213,8 +215,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name          Units
                                                 Employment)
         Payroll             W1       sPayroll   Total Quarterly Payroll Dollars
 *** 5.3.2. National QWI and state-level QWI rates (QWIPUR) ***
-Rates are computed from published data, and are provided as a convenience. The
-column Base indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 ( variables_qwir.csv )
   Indicator  Alternate name  Status Flag  Indicator Name  Units Base
    Variable
@@ -275,39 +276,43 @@ HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
                                           Rate)
 *** 5.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
-Indicator Variable Alternate Name Status Flag Indicator Name              Units
-         MHire        all_doma2      sMHire   Hires                       Count
-          MSep        all_doms2       sMSep   Separations                 Count
-      MJobStart        all_dest   sMJobStart  Main Job Starts             Count
-        MJobEnd        all_orig     sMJobEnd  Main Job Ends               Count
-         EEHire        ee_doma2      sEEHire  Job-to-Job Hires            Count
-                                              (Continuous Employment)
-         EESep         ee_doms2      sEESep   Job-to-Job Separations      Count
-                                              (Continuous Employment)
-         AQHire        aq_doma2      sAQHire  Job-to-Job Hires (Brief     Count
-                                              Nonemployment)
-         AQSep         aq_doms2      sAQSep   Job-to-Job Separations      Count
+Indicator Variable Alternate Name Status Flag Indicator Name         Units Base
+         MHire        all_doma2      sMHire   Hires                  Count 1
+          MSep        all_doms2       sMSep   Separations            Count 1
+      MJobStart       first_dome  sMJobStart  Main Job Starts        Count 1
+        MJobEnd       last_domb     sMJobEnd  Main Job Ends          Count 1
+         EEHire        ee_doma2      sEEHire  Job-to-Job Hires       Count 1
+                                              (Continuous
+                                              Employment)
+         EESep         ee_doms2      sEESep   Job-to-Job Separations Count 1
+                                              (Continuous
+                                              Employment)
+         AQHire        aq_doma2      sAQHire  Job-to-Job Hires       Count 1
                                               (Brief Nonemployment)
-        J2JHire      eeall_doma2    sJ2JHire  Job-to-Job Hires            Count
-         J2JSep      eeall_doms2     sJ2JSep  Job-to-Job Separations      Count
-         NEHire        ne_doma2      sNEHire  Hires from Nonemployment    Count
-         ENSep         en_doms2      sENSep   Separations to              Count
+         AQSep         aq_doms2      sAQSep   Job-to-Job Separations Count 1
+                                              (Brief Nonemployment)
+        J2JHire       j2j_doma2     sJ2JHire  Job-to-Job Hires       Count 1
+         J2JSep       j2j_doms2      sJ2JSep  Job-to-Job Separations Count 1
+         NEHire        ne_doma2      sNEHire  Hires from             Count 1
                                               Nonemployment
-      NEPersist       ne2_doma2   sNEPersist  Hires from Persistent       Count
+         ENSep         en_doms2      sENSep   Separations to         Count 1
                                               Nonemployment
-      ENPersist       en2_doms2   sENPersist  Separations to Persistent   Count
+      NEPersist       ne2_doma2   sNEPersist  Hires from Persistent  Count 1
                                               Nonemployment
-        NEFullQ       ne2p_doma2    sNEFullQ  Hires from Full-Quarter     Count
+      ENPersist       en2_doms2   sENPersist  Separations to         Count 1
+                                              Persistent
                                               Nonemployment
-        ENFullQ       en2p_doms2    sENFullQ  Separations to Full-Quarter Count
-                                              Nonemployment
-         MainB            domB       sMainB   Employment (Beginning of    Count
+        NEFullQ       ne2p_doma2    sNEFullQ  Hires from Full-       Count 1
+                                              Quarter Nonemployment
+        ENFullQ       en2p_doms2    sENFullQ  Separations to Full-   Count 1
+                                              Quarter Nonemployment
+         MainB            domB       sMainB   Employment (Beginning  Count 1
+                                              of Quarter)
+         MainE            domE       sMainE   Employment (End of     Count 1
                                               Quarter)
-         MainE            domE       sMainE   Employment (End of Quarter) Count
 *** 5.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
-Rates are computed from published data, and are provided as a convenience. The
-column Base indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 Indicator   Alternate Name    Status Flag  Indicator Name Units Base
  Variable
    MHireR   all_doma2_rate       sMHireR   Hires          Rate  (MainB+MainE)/2
@@ -352,15 +357,18 @@ ENPersistR  en2_doms2_rate    sENPersistR  Separations to Rate  (MainB+MainE)/2
                                            Nonemployment
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
-Indicator Variable Alternate Name Status Flag  Indicator Name           Units
-            EE              ee          sEE    Job-to-Job Flows         Count
-                                               (Continuous Employment)
-         AQHire        aq_doma2      sAQHire   Job-to-Job Flows (Brief  Count
-                                               Nonemployment)
-        EEFullQ            fee       sEEFullQ  Stable Job-to-Job Flows  Count
-                                               (Continuous Employment)
-     AQFullQHire      faq_doma2   sAQFullQHire Stable Job-to-Job Flows  Count
-                                               (Brief Nonemployment)
+Indicator Variable Alternate Name Status Flag Indicator Name        Units Base
+            EE         ee_doma2         sEE   Job-to-Job Flows      Count 1
+                                              (Continuous
+                                              Employment)
+         AQHire        aq_doma2      sAQHire  Job-to-Job Flows      Count 1
+                                              (Brief Nonemployment)
+           EES        fee_doma2        sEES   Stable Job-to-Job     Count 1
+                                              Flows (Continuous
+                                              Employment)
+        AQHireS       faq_doma2     sAQHireS  Stable Job-to-Job     Count 1
+                                              Flows (Brief
+                                              Nonemployment)
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -413,74 +421,76 @@ Indicators section. In the tables below, only a sample of variability measures
 are printed, but the complete list is available in the linked CSV schema files.
 *** 5.4.2. National QWI and state-level QWI ***
 ( variables_qwiv.csv )
-Variability measure Alternate name Variable name                          Units
-         st_Emp            st_B    Standard error of Beginning-of-Quarter Count
-                                   Employment
-       st_EmpEnd           st_E    Standard error of End-of-Quarter       Count
-                                   Employment
-         st_EmpS           st_F    Standard error of Full-Quarter         Count
-                                   Employment (Stable)
-            …
-         vt_Emp            vt_B    Total variation of Beginning-of-       Count
+Variability measure Alternate name Variable name                     Units Base
+         st_Emp            st_B    Standard error of Beginning-of-   Count 1
                                    Quarter Employment
-       vt_EmpEnd           vt_E    Total variation of End-of-Quarter      Count
+       st_EmpEnd           st_E    Standard error of End-of-Quarter  Count 1
                                    Employment
-         vt_EmpS           vt_F    Total variation of Full-Quarter        Count
+         st_EmpS           st_F    Standard error of Full-Quarter    Count 1
                                    Employment (Stable)
             …
-         vb_Emp            vb_B    Between-implicate variability for      Count
+         vt_Emp            vt_B    Total variation of Beginning-of-  Count 1
+                                   Quarter Employment
+       vt_EmpEnd           vt_E    Total variation of End-of-Quarter Count 1
+                                   Employment
+         vt_EmpS           vt_F    Total variation of Full-Quarter   Count 1
+                                   Employment (Stable)
+            …
+         vb_Emp            vb_B    Between-implicate variability for Count 1
                                    Beginning-of-Quarter Employment
-       vb_EmpEnd           vb_E    Between-implicate variability for End- Count
-                                   of-Quarter Employment
-         vb_EmpS           vb_F    Between-implicate variability for      Count
+       vb_EmpEnd           vb_E    Between-implicate variability for Count 1
+                                   End-of-Quarter Employment
+         vb_EmpS           vb_F    Between-implicate variability for Count 1
                                    Full-Quarter Employment (Stable)
             …
             …
-         df_Emp            df_B    Degrees of freedom for VT of           Count
+         df_Emp            df_B    Degrees of freedom for VT of      Count 1
                                    Beginning-of-Quarter Employment
-       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-   Count
-                                   Quarter Employment
-         df_EmpS           df_F    Degrees of freedom for VT of Full-     Count
-                                   Quarter Employment (Stable)
+       df_EmpEnd           df_E    Degrees of freedom for VT of End- Count 1
+                                   of-Quarter Employment
+         df_EmpS           df_F    Degrees of freedom for VT of      Count 1
+                                   Full-Quarter Employment (Stable)
             …
-         mr_Emp            mr_B    Missingness ratio for Beginning-of-    Count
+         mr_Emp            mr_B    Missingness ratio for Beginning-  Count 1
+                                   of-Quarter Employment
+       mr_EmpEnd           mr_E    Missingness ratio for End-of-     Count 1
                                    Quarter Employment
-       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter   Count
-                                   Employment
-         mr_EmpS           mr_F    Missingness ratio for Full-Quarter     Count
-                                   Employment (Stable)
+         mr_EmpS           mr_F    Missingness ratio for Full-       Count 1
+                                   Quarter Employment (Stable)
 *** 5.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
-Variability measure Alternate name Variable name                          Units
-        st_HirAR          st_AR    Standard error of Hiring Rate (All     Rate
-                                   Accessions)
-        st_HirNR          st_HR    Standard error of New Hiring Rate      Rate
-        st_HirRR          st_RR    Standard error of Recall Rate          Rate
+Variability measure Alternate name Variable name                     Units Base
+        st_HirAR          st_AR    Standard error of Hiring Rate     Rate  1
+                                   (All Accessions)
+        st_HirNR          st_HR    Standard error of New Hiring Rate Rate  1
+        st_HirRR          st_RR    Standard error of Recall Rate     Rate  1
             …
-        vt_HirAR          vt_AR    Total variation of Hiring Rate (All    Rate
-                                   Accessions)
-        vt_HirNR          vt_HR    Total variation of New Hiring Rate     Rate
-        vt_HirRR          vt_RR    Total variation of Recall Rate         Rate
+        vt_HirAR          vt_AR    Total variation of Hiring Rate    Rate  1
+                                   (All Accessions)
+        vt_HirNR          vt_HR    Total variation of New Hiring     Rate  1
+                                   Rate
+        vt_HirRR          vt_RR    Total variation of Recall Rate    Rate  1
             …
-        vb_HirAR          vb_AR    Between-implicate variability for      Rate
+        vb_HirAR          vb_AR    Between-implicate variability for Rate  1
                                    Hiring Rate (All Accessions)
-        vb_HirNR          vb_HR    Between-implicate variability for New  Rate
-                                   Hiring Rate
-        vb_HirRR          vb_RR    Between-implicate variability for      Rate
+        vb_HirNR          vb_HR    Between-implicate variability for Rate  1
+                                   New Hiring Rate
+        vb_HirRR          vb_RR    Between-implicate variability for Rate  1
                                    Recall Rate
             …
             …
-        df_HirAR          df_AR    Degrees of freedom for VT of Hiring    Rate
-                                   Rate (All Accessions)
-        df_HirNR          df_HR    Degrees of freedom for VT of New       Rate
+        df_HirAR          df_AR    Degrees of freedom for VT of      Rate  1
+                                   Hiring Rate (All Accessions)
+        df_HirNR          df_HR    Degrees of freedom for VT of New  Rate  1
                                    Hiring Rate
-        df_HirRR          df_RR    Degrees of freedom for VT of Recall    Rate
-                                   Rate
+        df_HirRR          df_RR    Degrees of freedom for VT of      Rate  1
+                                   Recall Rate
             …
-        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate (All Rate
-                                   Accessions)
-        mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate  Rate
-        mr_HirRR          mr_RR    Missingness ratio for Recall Rate      Rate
+        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate Rate  1
+                                   (All Accessions)
+        mr_HirNR          mr_HR    Missingness ratio for New Hiring  Rate  1
+                                   Rate
+        mr_HirRR          mr_RR    Missingness ratio for Recall Rate Rate  1
 *** 5.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 5.4.5. Job-to-job flow rates (J2JR) ***
@@ -874,6 +884,6 @@ For a description of how schema files are versioned, see main_directory.
       actually on the CSV file
     * 2017-03-07: Updated 2016 geography in shapefiles
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Tue Mar 7 08:58:06 EST 2017
+This revision: Mon Apr 3 10:59:13 EDT 2017
 ===============================================================================
-Last updated 2017-03-07 08:58:06 EST
+Last updated 2017-04-03 10:59:13 EDT

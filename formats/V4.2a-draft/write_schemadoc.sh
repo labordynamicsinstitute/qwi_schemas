@@ -178,7 +178,7 @@ echo "
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
+list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. ''Units'' identify the type of variable: counts, rates, monetary amounts.
 
 ==== National QWI and state-level QWI (QWIPU) ====
 
@@ -190,7 +190,7 @@ include::variables_qwi.csv[]
 <<<
 
 ==== National QWI and state-level QWI rates (QWIPUR) ====
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
 ( link:variables_qwir.csv[variables_qwir.csv] )
@@ -204,7 +204,7 @@ include::variables_qwir.csv[]
 
 ==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
 |===================================================
 include::variables_j2j.csv[]
 |===================================================
@@ -213,7 +213,7 @@ include::variables_j2j.csv[]
 ==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
 
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
@@ -226,7 +226,7 @@ include::variables_j2jr.csv[]
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
 ( link:variables_j2jod.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
 |===================================================
 include::variables_j2jod.csv[]
 |===================================================
@@ -241,15 +241,15 @@ for arg in   $(ls variables_*v.csv)
 do
 	tmpfile=tmp_$arg
 	head -4 $arg  > $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vt_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vb_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vw_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "df_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "mr_" $arg | head -3 >> $tmpfile
 done
 
@@ -318,7 +318,7 @@ of variability measures are printed, but the complete list is available in the l
 ==== National QWI and state-level QWI ====
 
 ( link:variables_qwiv.csv[variables_qwiv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5,<2\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwiv.csv[]
 |===================================================
@@ -327,7 +327,7 @@ include::tmp_variables_qwiv.csv[]
 ==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5,<2\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwirv.csv[]
 |===================================================
