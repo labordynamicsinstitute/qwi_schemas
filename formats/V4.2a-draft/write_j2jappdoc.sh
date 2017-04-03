@@ -172,9 +172,9 @@ The following tables and associated mapping files
 list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. ''Units'' identify the type of variable: counts, rates, monetary amounts.
 
 ( link:variables_j2japp.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
-include::variables_j2j.csv[]
+include::variables_j2japp.csv[]
 |===================================================
 <<<
 

@@ -147,73 +147,237 @@ to compute the statistic, and may be 1. 'Units' identify the type of variable:
 counts, rates, monetary amounts.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
-Indicator Variable Alternate name  Status Flag  Indicator Name          Units
-           Emp              B           sEmp    Beginning-of-Quarter    Count
-                                                Employment
-         EmpEnd             E         sEmpEnd   End-of-Quarter          Count
-                                                Employment
-          EmpS              F           sEmpS   Full-Quarter Employment Count
-                                                (Stable)
-         EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment Count
-                                                in the Previous Quarter
-       EmpTotal             M        sEmpTotal  Employment - Reference  Count
-                                                Quarter
-          HirA              A           sHirA   Hires (All Accessions)  Count
-          HirN              H           sHirN   New Hires               Count
-          HirR              R           sHirR   Recall Hires            Count
-           Sep              S           sSep    Separations (All)       Count
-        HirAEnd             CA       sHirAEnd   End-of-Quarter Hires    Count
-       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring   Rate
-                                                Rate
-         SepBeg             CS        sSepBeg   Beginning-of-Quarter    Count
-                                                Separations
-        SepBegR            CSR       sSepBegR   Beginning-of-Quarter    Rate
-                                                Separation Rate
-         HirAS              FA         sHirAS   Hires (All Hires into   Count
-                                                Full-Quarter
-                                                Employment)
-         HirNS              FH         sHirNS   New Hires (New Hires    Count
-                                                into Full-Quarter
-                                                Employment)
-          SepS              FS          sSepS   Separations (Flows out  Count
-                                                of Full-Quarter
-                                                Employment)
-         SepSnx           FSnx        sSepSnx   Separations in the Next Count
-                                                Quarter (Flows out of
-                                                Full-Quarter
-                                                Employment)
-       TurnOvrS             FT       sTurnOvrS  Turnover (Stable)       Rate
-        FrmJbGn             JC       sFrmJbGn   Firm Job Gains (Job     Count
-                                                Creation)
-        FrmJbLs             JD       sFrmJbLs   Firm Job Loss (Job      Count
-                                                Destruction)
-         FrmJbC             JF        sFrmJbC   Firm Job Change (Net    Count
-                                                Change)
-     HirAEndRepl            EI    sHirAEndRepl  Replacement Hires       Count
-    HirAEndReplr           EIR    sHirAEndReplr Replacement Hiring Rate Rate
-       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable) Count
-       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable)  Count
-        FrmJbCS            FJF       sFrmJbCS   Firm Job Change         Count
-                                                (Stable; Net Change)
-         EarnS             ZW3         sEarnS   Average Monthly         Dollars
-                                                Earnings (Full-Quarter
-                                                Employment)
-        EarnBeg            ZW1       sEarnBeg   Average Monthly         Dollars
-                                                Earnings (Beginning-of-
-                                                Quarter Employment)
-      EarnHirAS           ZWFA      sEarnHirAS  Average Monthly         Dollars
-                                                Earnings (All Hires
-                                                into Full-Quarter
-                                                Employment)
-      EarnHirNS           ZWFH      sEarnHirNS  Average Monthly         Dollars
-                                                Earnings (New Hires
-                                                into Full-Quarter
-                                                Employment)
-       EarnSepS           ZWFS       sEarnSepS  Average Monthly         Dollars
-                                                Earnings (Flows out of
-                                                Full-Quarter
-                                                Employment)
-        Payroll             W1       sPayroll   Total Quarterly Payroll Dollars
+  Indicator  Alternate  Status Flag  Indicator    Description   Units   Concept       Base
+   Variable    Name                  Name
+      Emp          B         sEmp    Beginning-   Estimate of   Count   Employment      1
+                                     of-Quarter   the total
+                                     Employment   number of
+                                                  jobs on the
+                                                  first day of
+                                                  the reference
+                                                  quarter
+    EmpEnd         E       sEmpEnd   End-of-      Estimate of   Count   Employment      1
+                                     Quarter      the number of
+                                     Employment   jobs on the
+                                                  last day of
+                                                  the quarter
+      EmpS         F         sEmpS   Full-Quarter Estimate of   Count   Employment      1
+                                     Employment   stable jobs -
+                                     (Stable)     the number of
+                                                  jobs that are
+                                                  held on both
+                                                  the first and
+                                                  last day of
+                                                  the quarter
+                                                  with the same
+                                                  employer
+    EmpSpv       Fpv       sEmpSpv   Full-Quarter Estimate of   Count   Employment      1
+                                     Employment   stable jobs
+                                     in the       in the
+                                     Previous     quarter
+                                     Quarter      before the
+                                                  reference
+                                                  quarter
+   EmpTotal        M      sEmpTotal  Employment - Estimated     Count   Employment      1
+                                     Reference    count of
+                                     Quarter      people
+                                                  employed in a
+                                                  firm at any
+                                                  time during
+                                                  the quarter
+      HirA         A         sHirA   Hires (All   Estimated     Count   Hire            1
+                                     Accessions)  number of
+                                                  workers who
+                                                  started a new
+                                                  job in the
+                                                  specified
+                                                  quarter
+      HirN         H         sHirN   New Hires    Estimated     Count   Hire            1
+                                                  number of
+                                                  workers who
+                                                  started a new
+                                                  job excluding
+                                                  recall hires
+      HirR         R         sHirR   Recall Hires Estimated     Count   Hire            1
+                                                  number of
+                                                  workers who
+                                                  returned to
+                                                  the same
+                                                  employer
+                                                  where they
+                                                  had worked
+                                                  within the
+                                                  previous year
+      Sep          S         sSep    Separations  Estimated     Count   Separation      1
+                                     (All)        number of
+                                                  workers whose
+                                                  job with a
+                                                  given
+                                                  employer
+                                                  ended in the
+                                                  specified
+                                                  quarter
+   HirAEnd        CA      sHirAEnd   End-of-      Estimated     Count   Hire            1
+                                     Quarter      number of
+                                     Hires        workers who
+                                                  started a new
+                                                  job in the
+                                                  specified
+                                                  quarter,
+                                                  which
+                                                  continued
+                                                  into next
+                                                  quarter
+   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a    Rate    Hire        (Emp +
+                                     Quarter      percent of                       EmpEnd)/
+                                     Hiring Rate  average                             2
+                                                  employment
+    SepBeg        CS       sSepBeg   Beginning-   Estimated     Count   Separation      1
+                                     of-Quarter   number of
+                                     Separations  workers whose
+                                                  job in the
+                                                  previous
+                                                  quarter
+                                                  continued and
+                                                  ended in the
+                                                  given quarter
+   SepBegR       CSR      sSepBegR   Beginning-   Separations   Rate    Separation  (Emp +
+                                     of-Quarter   as a percent                     EmpEnd)/
+                                     Separation   of average                          2
+                                     Rate         employment
+     HirAS        FA        sHirAS   Hires (All   Estimated     Count   Hire            1
+                                     Hires into   number of
+                                     Full-Quarter workers that
+                                     Employment)  started a job
+                                                  that lasted
+                                                  at least one
+                                                  full quarter
+                                                  with a given
+                                                  employer
+     HirNS        FH        sHirNS   New Hires    Estimated     Count   Hire            1
+                                     (New Hires   number of
+                                     into Full-   workers who
+                                     Quarter      started a job
+                                     Employment)  that they had
+                                                  not held
+                                                  within the
+                                                  past year and
+                                                  the job
+                                                  turned into a
+                                                  job that
+                                                  lasted at
+                                                  least a full
+                                                  quarter with
+                                                  a given
+                                                  employer
+      SepS        FS         sSepS   Separations  Estimated     Count   Separation      1
+                                     (Flows out   number of
+                                     of Full-     workers who
+                                     Quarter      had a job for
+                                     Employment)  at least a
+                                                  full quarter
+                                                  and then the
+                                                  job ended
+    SepSnx      FSnx       sSepSnx   Separations  Estimated     Count   Separation      1
+                                     in the Next  number of
+                                     Quarter      workers in
+                                     (Flows out   the next
+                                     of Full-     quarter who
+                                     Quarter      had a job for
+                                     Employment)  at least a
+                                                  full quarter
+                                                  and then the
+                                                  job ended
+   TurnOvrS       FT      sTurnOvrS  Turnover     The rate at   Rate    Turnover    2*EmpS
+                                     (Stable)     which stable
+                                                  jobs begin
+                                                  and end
+   FrmJbGn        JC      sFrmJbGn   Firm Job     Estimated     Count   Hire            1
+                                     Gains (Job   number of
+                                     Creation)    jobs gained
+                                                  at firms
+                                                  throughout
+                                                  the quarter
+   FrmJbLs        JD      sFrmJbLs   Firm Job     Estimated     Count   Separation      1
+                                     Loss (Job    number of
+                                     Destruction) jobs lost at
+                                                  firms
+                                                  throughout
+                                                  the quarter
+    FrmJbC        JF       sFrmJbC   Firm Job     Difference    Count   Employment      1
+                                     Change (Net  between firm
+                                     Change)      job gain and
+                                                  firm job loss
+HirAEndRepl       EI   sHirAEndRepl  Replacement  Hires into    Count   Hire            1
+                                     Hires        continuous
+                                                  quarter
+                                                  employment in
+                                                  excess of job
+                                                  creation
+HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire        (Emp +
+                                     Hiring Rate  hires as a                       EmpEnd)/
+                                                  percent of                          2
+                                                  the average
+                                                  of beginning-
+                                                  and end-of-
+                                                  quarter
+                                                  employment
+   FrmJbGnS      FJC      sFrmJbGnS  Firm Job     Estimated     Count   Hire            1
+                                     Gains        number of
+                                     (Stable)     full-quarter
+                                                  jobs gained
+                                                  at firms
+   FrmJbLsS      FJD      sFrmJbLsS  Firm Job     Estimated     Count   Separation      1
+                                     Loss         number of
+                                     (Stable)     full-quarter
+                                                  jobs lost at
+                                                  firms
+   FrmJbCS       FJF      sFrmJbCS   Firm Job     Net growth in Count   Employment      1
+                                     Change       jobs that
+                                     (Stable; Net last a full
+                                     Change)      quarter
+     EarnS       ZW3        sEarnS   Average      Average       Dollars Earnings      EmpS
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Full-       employees
+                                     Quarter      with stable
+                                     Employment)  jobs
+   EarnBeg       ZW1      sEarnBeg   Average      Average       Dollars Earnings      Emp
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Beginning-  employees who
+                                     of-Quarter   worked on the
+                                     Employment)  first day of
+                                                  the reference
+                                                  quarter
+  EarnHirAS     ZWFA     sEarnHirAS  Average      Average       Dollars Earnings     HirAS
+                                     Monthly      monthly
+                                     Earnings     earnings for
+                                     (All Hires   workers who
+                                     into Full-   started a job
+                                     Quarter      that turned
+                                     Employment)  into a job
+                                                  lasting a
+                                                  full quarter
+  EarnHirNS     ZWFH     sEarnHirNS  Average      Average       Dollars Earnings     HirNS
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (New Hires   newly stable
+                                     into Full-   employees
+                                     Quarter
+                                     Employment)
+   EarnSepS     ZWFS      sEarnSepS  Average      Average       Dollars Earnings    SepSnx
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Flows out   separations
+                                     of Full-     from full-
+                                     Quarter      quarter
+                                     Employment)  status at an
+                                                  establishment
+   Payroll        W1      sPayroll   Total        Total         Dollars Earnings        1
+                                     Quarterly    quarterly
+                                     Payroll      payroll for
+                                                  all jobs
 *** 5.3.2. National QWI and state-level QWI rates (QWIPUR) ***
 Rates are computed from published data, and are provided as a convenience.
 ( variables_qwir.csv )
@@ -276,99 +440,143 @@ HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
                                           Rate)
 *** 5.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
-Indicator Variable Alternate Name Status Flag Indicator Name         Units Base
-         MHire        all_doma2      sMHire   Hires                  Count 1
-          MSep        all_doms2       sMSep   Separations            Count 1
-      MJobStart       first_dome  sMJobStart  Main Job Starts        Count 1
-        MJobEnd       last_domb     sMJobEnd  Main Job Ends          Count 1
-         EEHire        ee_doma2      sEEHire  Job-to-Job Hires       Count 1
-                                              (Continuous
-                                              Employment)
-         EESep         ee_doms2      sEESep   Job-to-Job Separations Count 1
-                                              (Continuous
-                                              Employment)
-         AQHire        aq_doma2      sAQHire  Job-to-Job Hires       Count 1
-                                              (Brief Nonemployment)
-         AQSep         aq_doms2      sAQSep   Job-to-Job Separations Count 1
-                                              (Brief Nonemployment)
-        J2JHire       j2j_doma2     sJ2JHire  Job-to-Job Hires       Count 1
-         J2JSep       j2j_doms2      sJ2JSep  Job-to-Job Separations Count 1
-         NEHire        ne_doma2      sNEHire  Hires from             Count 1
-                                              Nonemployment
-         ENSep         en_doms2      sENSep   Separations to         Count 1
-                                              Nonemployment
-      NEPersist       ne2_doma2   sNEPersist  Hires from Persistent  Count 1
-                                              Nonemployment
-      ENPersist       en2_doms2   sENPersist  Separations to         Count 1
-                                              Persistent
-                                              Nonemployment
-        NEFullQ       ne2p_doma2    sNEFullQ  Hires from Full-       Count 1
-                                              Quarter Nonemployment
-        ENFullQ       en2p_doms2    sENFullQ  Separations to Full-   Count 1
-                                              Quarter Nonemployment
-         MainB            domB       sMainB   Employment (Beginning  Count 1
-                                              of Quarter)
-         MainE            domE       sMainE   Employment (End of     Count 1
-                                              Quarter)
+Indicator Alternate     Status  Indicator Name Description                        Units Concept    Base
+Variable     Name        Flag
+   MHire  all_doma2     sMHire  Hires          Hires into a worker’s main job   Count Hire         1
+   MSep   all_doms2     sMSep   Separations    Separations from a worker’s main Count Separation   1
+                                               job
+MJobStart first_dome sMJobStart Main Job       New main jobs due to hires and     Count Employment   1
+                                Starts         instances when a previously
+                                               existing secondary job becomes the
+                                               main source of earnings
+ MJobEnd  last_domb   sMJobEnd  Main Job Ends  End of main jobs due to            Count Employment   1
+                                               separations and instances when
+                                               another job becomes the main
+                                               source of earnings
+  EEHire   ee_doma2    sEEHire  Job-to-Job     Hires following a separation with  Count Hire         1
+                                Hires          no observed nonemployment spell
+                                (Continuous
+                                Employment)
+   EESep   ee_doms2     sEESep  Job-to-Job     Separations followed by a hire     Count Separation   1
+                                Separations    with no observed nonemployment
+                                (Continuous    spell
+                                Employment)
+  AQHire   aq_doma2    sAQHire  Job-to-Job     Hires following a separation with  Count Hire         1
+                                Hires (Brief   a short nonemployment spell
+                                Nonemployment)
+   AQSep   aq_doms2     sAQSep  Job-to-Job     Separations followed by a hire     Count Separation   1
+                                Separations    with a short nonemployment spell
+                                (Brief
+                                Nonemployment)
+ J2JHire  j2j_doma2   sJ2JHire  Job-to-Job     Hires following a separation       Count Hire         1
+                                Hires          (short or no observed
+                                               nonemployment spell)
+  J2JSep  j2j_doms2    sJ2JSep  Job-to-Job     Separations followed by a hire     Count Separation   1
+                                Separations    (short or no observed
+                                               nonemployment spell)
+  NEHire   ne_doma2    sNEHire  Hires from     Hires following any spell of       Count Hire         1
+                                Nonemployment  nonemployment
+   ENSep   en_doms2     sENSep  Separations to Separations into any spell of      Count Separation   1
+                                Nonemployment  nonemployment
+NEPersist ne2_doma2  sNEPersist Hires from     Hires following a spell of         Count Hire         1
+                                Persistent     persistent nonemployment
+                                Nonemployment
+ENPersist en2_doms2  sENPersist Separations to Separations into a spell of        Count Separation   1
+                                Persistent     persistent nonemployment
+                                Nonemployment
+ NEFullQ  ne2p_doma2  sNEFullQ  Hires from     Hires following a spell of full-   Count Hire         1
+                                Full-Quarter   quarter nonemployment (does not
+                                Nonemployment  include intermittently employed)
+ ENFullQ  en2p_doms2  sENFullQ  Separations to Separations into a spell of full-  Count Separation   1
+                                Full-Quarter   quarter nonemployment (does not
+                                Nonemployment  include intermittently employed)
+   MainB      domB      sMainB  Employment     Main jobs held on the first day of Count Employment   1
+                                (Beginning of  the quarter
+                                Quarter)
+   MainE      domE      sMainE  Employment     Main jobs held on the last day of  Count Employment   1
+                                (End of        the quarter
+                                Quarter)
 *** 5.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience.
-Indicator   Alternate Name    Status Flag  Indicator Name Units Base
+Indicator   Alternate Name  Status Flag Indicator Name Description                                Units Concept           Base
  Variable
-   MHireR   all_doma2_rate       sMHireR   Hires          Rate  (MainB+MainE)/2
-   MSepR    all_doms2_rate        sMSepR   Separations    Rate  (MainB+MainE)/2
-MJobStartR   all_dest_rate  sMJobStartRate Main Job       Rate  (MainB+MainE)/2
-                                           Starts
- MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends  Rate  (MainB+MainE)/2
-  EEHireR        eea_rate     sEEHireRate  Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-                                           (Continuous
-                                           Employment)
-   EESepR        ees_rate        sEESepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Continuous
-                                           Employment)
-  AQHireR    aq_doma2_rate      sAQHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires (Brief
-                                           Nonemployment)
-   AQSepR    aq_doms2_rate       sAQSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Brief
-                                           Nonemployment)
- J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-  NEHireR    ne_doma2_rate      sNEHireR   Hires from     Rate  (MainB+MainE)/2
-                                           Nonemployment
-   ENSepR    en_doms2_rate       sENSepR   Separations to Rate  (MainB+MainE)/2
-                                           Nonemployment
-NEPersistR  ne2_doma2_rate    sNEPersistR  Hires from     Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
-ENPersistR  en2_doms2_rate    sENPersistR  Separations to Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
- NEFullQR  ne2p_doma2_rate     sNEFullQR   Hires from     Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
- ENFullQR  en2p_doms2_rate     sENFullQR   Separations to Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
+   MHireR   all_doma2_rate     sMHireR  Hires          Rate of hires into a worker’s main job   Rate  Hire       (MainB+MainE)/
+                                                                                                                         2
+   MSepR    all_doms2_rate     sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation (MainB+MainE)/
+                                                       job                                                               2
+MJobStartR   all_dest_rate  sMJobStartR Main Job       Rate of new main jobs due to hires and     Rate  Employment (MainB+MainE)/
+                                        Starts         instances when a previously existing                              2
+                                                       secondary job becomes the main source of
+                                                       earnings
+ MJobEndR   all_orgin_rate   sMJobEndR  Main Job Ends  Rate of the end of main jobs due to        Rate  Employment (MainB+MainE)/
+                                                       separations and instances when another job                        2
+                                                       becomes the main source of earnings
+  EEHireR        eea_rate     sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                        Hires          no observed nonemployment spell                                   2
+                                        (Continuous
+                                        Employment)
+   EESepR        ees_rate      sEESepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                        Separations    with no observed nonemployment spell                              2
+                                        (Continuous
+                                        Employment)
+  AQHireR    aq_doma2_rate    sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                        Hires (Brief   a short nonemployment spell                                       2
+                                        Nonemployment)
+   AQSepR    aq_doms2_rate     sAQSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                        Separations    with a short nonemployment spell                                  2
+                                        (Brief
+                                        Nonemployment)
+ J2JHireR  eeall_doma2_rate  sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire       (MainB+MainE)/
+                                        Hires          (short or no observed nonemployment spell)                        2
+  J2JSepR  eeall_doms2_rate   sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                        Separations    (short or no observed nonemployment spell)                        2
+  NEHireR    ne_doma2_rate    sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire       (MainB+MainE)/
+                                        Nonemployment  nonemployment                                                     2
+   ENSepR    en_doms2_rate     sENSepR  Separations to Rate of separations into any spell of      Rate  Separation (MainB+MainE)/
+                                        Nonemployment  nonemployment                                                     2
+NEPersistR  ne2_doma2_rate  sNEPersistR Hires from     Rate of hires following a spell of         Rate  Hire       (MainB+MainE)/
+                                        Persistent     persistent nonemployment                                          2
+                                        Nonemployment
+ENPersistR  en2_doms2_rate  sENPersistR Separations to Rate of separations into a spell of        Rate  Separation (MainB+MainE)/
+                                        Persistent     persistent nonemployment                                          2
+                                        Nonemployment
+ NEFullQR  ne2p_doma2_rate   sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire       (MainB+MainE)/
+                                        Full-Quarter   quarter nonemployment (does not include                           2
+                                        Nonemployment  intermittently employed)
+ ENFullQR  en2p_doms2_rate   sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation (MainB+MainE)/
+                                        Full-Quarter   quarter nonemployment (does not include                           2
+                                        Nonemployment  intermittently employed)
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
-Indicator Variable Alternate Name Status Flag Indicator Name        Units Base
-            EE         ee_doma2         sEE   Job-to-Job Flows      Count 1
-                                              (Continuous
-                                              Employment)
-         AQHire        aq_doma2      sAQHire  Job-to-Job Flows      Count 1
-                                              (Brief Nonemployment)
-           EES        fee_doma2        sEES   Stable Job-to-Job     Count 1
-                                              Flows (Continuous
-                                              Employment)
-        AQHireS       faq_doma2     sAQHireS  Stable Job-to-Job     Count 1
-                                              Flows (Brief
-                                              Nonemployment)
+Indicator Alternate Status Flag Indicator Name Description   Units Concept Base
+Variable    Name
+     EE        ee         sEE   Job-to-Job     Job flows     Count Flow      1
+                                Flows          with no
+                                (Continuous    observed
+                                Employment)    nonemployment
+                                               spell
+  AQHire  aq_doma2     sAQHire  Job-to-Job     Job flows     Count Flow      1
+                                Flows (Brief   with a short
+                                Nonemployment) nonemployment
+                                               spell
+    EES       fee        sEES   Stable Job-to- Job flows     Count Flow      1
+                                Job Flows      from stable
+                                (Continuous    employment
+                                Employment)    into stable
+                                               employment
+                                               with no
+                                               observed
+                                               nonemployment
+                                               spell
+ AQHireS  faq_doma2   sAQHireS  Stable Job-to- Job flows     Count Flow      1
+                                Job Flows      from stable
+                                (Brief         employment
+                                Nonemployment) into stable
+                                               employment
+                                               with a short
+                                               nonemployment
+                                               spell
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -884,6 +1092,6 @@ For a description of how schema files are versioned, see main_directory.
       actually on the CSV file
     * 2017-03-07: Updated 2016 geography in shapefiles
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Mon Apr 3 10:59:13 EDT 2017
+This revision: Mon Apr 3 11:42:34 EDT 2017
 ===============================================================================
-Last updated 2017-04-03 10:59:13 EDT
+Last updated 2017-04-03 11:42:34 EDT

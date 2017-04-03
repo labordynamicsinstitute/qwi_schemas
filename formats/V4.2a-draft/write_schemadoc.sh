@@ -183,7 +183,7 @@ list the indicators available on each file.  The ''Indicator Variable'' is the s
 ==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwi.csv[variables_qwi.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^2\",options=\"header\"]
 |===================================================
 include::variables_qwi.csv[]
 |===================================================
@@ -204,7 +204,7 @@ include::variables_qwir.csv[]
 
 ==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2j.csv[]
 |===================================================
@@ -216,7 +216,7 @@ include::variables_j2j.csv[]
 Rates are computed from published data, and are provided as a convenience.
 
 
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
@@ -226,7 +226,7 @@ include::variables_j2jr.csv[]
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
 ( link:variables_j2jod.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2jod.csv[]
 |===================================================
