@@ -38,8 +38,9 @@ numversion=${cwd##*/}
 sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definitions.txt | tail -n +2 > tmp.csv
 
 # create ascii doc version
-asciifile=lehd_j2japp_schema.asciidoc
-echo "= LEHD Public Use Data Schema for J2J app $numversion" > $asciifile
+asciifile=lehd_j2jexplorer_schema.asciidoc
+appname="J2J Explorer (beta)"
+echo "= LEHD Public Use Data Schema for $appname $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
@@ -85,7 +86,7 @@ esac
 echo "
 Purpose
 -------
-The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal Employer-Household Dynamics Program are accessible through the J2Japp. This document provides information on the schema used to format files downloaded through that app.
+The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal Employer-Household Dynamics Program are accessible through the https://j2jexplorer.ces.census.gov/[$appname]. This document provides information on the schema used to format files downloaded through that application.
 
 Additional information
 ----------------------
@@ -93,7 +94,7 @@ The complete LEHD schema is documented in link:lehd_public_use_schema{ext-relati
 
 Extends
 -------
-This is the first version for the J2J App.
+This is the first version of the schema for the $appname application.
 
 Supersedes
 ----------
@@ -122,7 +123,7 @@ Column name
 [ ... ]
 |===================================================
 
-Note: The J2J app provides a COMPLETE THIS. The complete LEHD schema is documented in link:lehd_public_use_schema{ext-relative}[].
+Note: The $appname provides the full set of J2J indicators in addition to two composite Origin-Destination indicators. Files downloadable through other means may be structured differently, please consult the complete LEHD schema in link:lehd_public_use_schema{ext-relative}[].
 
 <<<
 
@@ -169,7 +170,17 @@ echo "
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. ''Units'' identify the type of variable: counts, rates, monetary amounts.
+list the indicators available on each file.
+The ''Indicator Variable'' is the short name of the variable on the
+CSV files, suitable for machine processing in a wide variety of statistical applications.
+When given, the ''Alternate name'' may appear in related documentation and articles.
+The ''Status Flag'' is used to indicate publication or data quality status
+(see <<statusflags,Status Flags>>).
+The ''Indicator Name'' is a more verbose name for the indicator.
+The ''Description'' provides a complete description of the indicator.
+''Units'' identify the type of variable: counts, rates, monetary amounts.
+''Concept'' classifies each indicator in a descriptive category: employment, hire, separation, earnings, or flow.
+The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. 
 
 ( link:variables_j2japp.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
