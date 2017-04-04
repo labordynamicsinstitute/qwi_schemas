@@ -121,7 +121,9 @@ some other identifier.
 " >> $asciifile
 
 # transform the convention file to prevent typographical interpretation by asciidoc
-cat naming_convention.csv | sed 's+_+\\_+g' | sed 's+\\_\[id\]+_[id]+' | sed 's+\\_\[sa\]+_[sa]+'> tmp_naming_convention.csv
+cat naming_convention.csv | sed 's+_+\\_+g' | sed 's+\\_\[id\]+_[id]+' |
+ sed 's+\\_\[sa\]+_[sa]+' | sed 's+\\_\[geocat\]\.zip+_[geocat].zip+' |
+ sed 's+\\_\[fas\]\.+_[fas].+' | sed 's+\\_\[geography\]\\_+_[geography]_+' > tmp_naming_convention.csv
 echo "
 [width=\"90%\",format=\"csv\",delim=\",\",cols=\"^1,<3,<5\",options=\"header\"]
 |===================================================
@@ -135,12 +137,29 @@ Files downloaded through the  LED Extraction Tool at http://ledextract.ces.censu
 ------------------------------------
 where +[id]+ is the Request ID (a unique string of characters) generated every time ``Submit Request'' is clicked. The ID references each query submission made to the database.
 
-=== Other files
-Files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
+
+=== [[versionqwi]]Metadata for QWI data files (version.txt)
+Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
 --------------------------------
-[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]
+$(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
 --------------------------------
-where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
+where each component is described in more detail below.
+
+=== [[versionj2j]]Metadata for J2J data files (version.txt)
+Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
+--------------------------------
+$(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
+--------------------------------
+where each component is described in more detail below.
+
+=== [[version_j2jod]]Metadata for J2JOD files
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
+These files follow the following naming convention:
+--------------------------------
+$(awk -F, ' NR == 7 { print $1 }' naming_convention.csv  )
+--------------------------------
+where each component is described in more detail below.
+
 
 " >> $asciifile
 

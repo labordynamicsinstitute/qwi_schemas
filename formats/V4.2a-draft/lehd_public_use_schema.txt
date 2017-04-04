@@ -499,54 +499,54 @@ ENPersist en2_doms2  sENPersist Separations to Separations into a spell of      
 *** 5.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience.
-Indicator   Alternate Name  Status Flag Indicator Name Description                                Units Concept           Base
+Indicator  Alternate Name  Status Flag Indicator Name Description                                Units Concept           Base
  Variable
-   MHireR   all_doma2_rate     sMHireR  Hires          Rate of hires into a worker’s main job   Rate  Hire       (MainB+MainE)/
-                                                                                                                         2
-   MSepR    all_doms2_rate     sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation (MainB+MainE)/
-                                                       job                                                               2
-MJobStartR   all_dest_rate  sMJobStartR Main Job       Rate of new main jobs due to hires and     Rate  Employment (MainB+MainE)/
-                                        Starts         instances when a previously existing                              2
-                                                       secondary job becomes the main source of
-                                                       earnings
- MJobEndR   all_orgin_rate   sMJobEndR  Main Job Ends  Rate of the end of main jobs due to        Rate  Employment (MainB+MainE)/
-                                                       separations and instances when another job                        2
-                                                       becomes the main source of earnings
-  EEHireR        eea_rate     sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
-                                        Hires          no observed nonemployment spell                                   2
-                                        (Continuous
-                                        Employment)
-   EESepR        ees_rate      sEESepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
-                                        Separations    with no observed nonemployment spell                              2
-                                        (Continuous
-                                        Employment)
-  AQHireR    aq_doma2_rate    sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
-                                        Hires (Brief   a short nonemployment spell                                       2
-                                        Nonemployment)
-   AQSepR    aq_doms2_rate     sAQSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
-                                        Separations    with a short nonemployment spell                                  2
-                                        (Brief
-                                        Nonemployment)
- J2JHireR  eeall_doma2_rate  sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire       (MainB+MainE)/
-                                        Hires          (short or no observed nonemployment spell)                        2
-  J2JSepR  eeall_doms2_rate   sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
-                                        Separations    (short or no observed nonemployment spell)                        2
-  NEHireR    ne_doma2_rate    sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire       (MainB+MainE)/
-                                        Nonemployment  nonemployment                                                     2
-   ENSepR    en_doms2_rate     sENSepR  Separations to Rate of separations into any spell of      Rate  Separation (MainB+MainE)/
-                                        Nonemployment  nonemployment                                                     2
-NEPersistR  ne2_doma2_rate  sNEPersistR Hires from     Rate of hires following a spell of         Rate  Hire       (MainB+MainE)/
-                                        Persistent     persistent nonemployment                                          2
-                                        Nonemployment
-ENPersistR  en2_doms2_rate  sENPersistR Separations to Rate of separations into a spell of        Rate  Separation (MainB+MainE)/
-                                        Persistent     persistent nonemployment                                          2
-                                        Nonemployment
- NEFullQR  ne2p_doma2_rate   sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire       (MainB+MainE)/
-                                        Full-Quarter   quarter nonemployment (does not include                           2
-                                        Nonemployment  intermittently employed)
- ENFullQR  en2p_doms2_rate   sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation (MainB+MainE)/
-                                        Full-Quarter   quarter nonemployment (does not include                           2
-                                        Nonemployment  intermittently employed)
+   MHireR  all_doma2_rate     sMHireR  Hires          Rate of hires into a worker’s main job   Rate  Hire       (MainB+MainE)/
+                                                                                                                        2
+   MSepR   all_doms2_rate     sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation (MainB+MainE)/
+                                                      job                                                               2
+MJobStartR first_dome_rate sMJobStartR Main Job       Rate of new main jobs due to hires and     Rate  Employment (MainB+MainE)/
+                                       Starts         instances when a previously existing                              2
+                                                      secondary job becomes the main source of
+                                                      earnings
+ MJobEndR  last_domb_rate   sMJobEndR  Main Job Ends  Rate of the end of main jobs due to        Rate  Employment (MainB+MainE)/
+                                                      separations and instances when another job                        2
+                                                      becomes the main source of earnings
+  EEHireR       eea_rate     sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                       Hires          no observed nonemployment spell                                   2
+                                       (Continuous
+                                       Employment)
+   EESepR       ees_rate      sEESepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                       Separations    with no observed nonemployment spell                              2
+                                       (Continuous
+                                       Employment)
+  AQHireR   aq_doma2_rate    sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                       Hires (Brief   a short nonemployment spell                                       2
+                                       Nonemployment)
+   AQSepR   aq_doms2_rate     sAQSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                       Separations    with a short nonemployment spell                                  2
+                                       (Brief
+                                       Nonemployment)
+ J2JHireR  j2j_doma2_rate   sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire       (MainB+MainE)/
+                                       Hires          (short or no observed nonemployment spell)                        2
+  J2JSepR  j2j_doms2_rate    sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                       Separations    (short or no observed nonemployment spell)                        2
+  NEHireR   ne_doma2_rate    sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire       (MainB+MainE)/
+                                       Nonemployment  nonemployment                                                     2
+   ENSepR   en_doms2_rate     sENSepR  Separations to Rate of separations into any spell of      Rate  Separation (MainB+MainE)/
+                                       Nonemployment  nonemployment                                                     2
+NEPersistR ne2_doma2_rate  sNEPersistR Hires from     Rate of hires following a spell of         Rate  Hire       (MainB+MainE)/
+                                       Persistent     persistent nonemployment                                          2
+                                       Nonemployment
+ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a spell of        Rate  Separation (MainB+MainE)/
+                                       Persistent     persistent nonemployment                                          2
+                                       Nonemployment
+ NEFullQR  ne2p_doma2_rate  sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire       (MainB+MainE)/
+                                       Full-Quarter   quarter nonemployment (does not include                           2
+                                       Nonemployment  intermittently employed)
+ ENFullQR  en2p_doms2_rate  sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation (MainB+MainE)/
+                                       Full-Quarter   quarter nonemployment (does not include                           2
+                                       Nonemployment  intermittently employed)
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Alternate Status Flag Indicator Name Description   Units Concept Base
@@ -886,7 +886,7 @@ industry label
    3112  Grain and Oilseed Milling
    3113  Sugar and Confectionery Product Manufacturing
     …
-**** 6.14. Geography ****
+6.14. Geography
 6.14.1.  Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each
 file label_geograpy_SCOPE.csv may contain one or more types of records as
@@ -915,7 +915,7 @@ geo_level label         description                                             
       W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
           Investment    State Partners
           Areas
-*** 6.14.2. National and state-level values ***
+6.14.2. National and state-level values
 ( label_fipsnum.csv )
 The file label_fipsnum.csv contains values and labels for all entities of
 geo_level N or S, and is a summary of separately available files.
@@ -936,7 +936,7 @@ geography label                     geo_level
      50   Vermont                         S
      51   Virginia                        S
      53   Washington                      S
-*** 6.14.3. Detailed state and substate level values ***
+6.14.3. Detailed state and substate level values
 Note: cross-state CBSA, in records of type geo_level = M, are present on files
 of type label_geography_XX.csv. A particular cross-state CBSA will appear on
 multiple files.
@@ -1069,29 +1069,64 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-8.  Changes
+8. Metadata
+( variables_version.csv )
+8.1. Metadata for QWI and J2J files (version.txt)
+Each data release is accompanied by one or more files with metadata on
+geographic and temporal coverage, in a compact notation. These files follow the
+following naming convention:
+version_[demo]_[fas].txt
+version_[type].txt
+where each component is described in more detail in lehd_csv_naming.html.
+The contents contains the following elements:
+Component Source            Description
+  product [type]            Type as described in lehd_csv_naming.html
+ demo_fas [demo]_[fas]      (optional - concatenated with product) used for QWI
+                            to distinguish separate tabulations from the legal
+                            [demo]_[fas] combinations as described in
+                            lehd_csv_naming.html
+      geo [stusps] or Metro Covered [geography] (uppercase state postal code or
+                            the word MSA)
+     fips [geography]       Numeric (FIPS) geography code
+    start yyyy:q            Start year and quarter
+      end yyyy:q            End year and quarter
+   schema Vx.y.z            Version of the schema
+  release RyyyyQq           Release quarter (identifies when the data was
+                            created)
+ internal various           Internal identifier used for provenance tracking
+For instance, the metadata for the R2016Q3 release of Missouri QWI Sex by Age
+tabulations for No firm size or age detail (obtained from here) has the
+following content:
+QWISA_F MO 29 1995:1-2015:4 V4.0.5 R2016Q3 qwipu_mo_20160804_1631
+Similarly, the metadata for the R2016Q3 release of Missouri J2J tabulations
+(obtained from here) has the following content:
+J2J  MO 29  2000:2-2015:3  V4.1.0 R2016Q3 j2jpu_mo_20161028_1522
+8.2. Additional metadata for J2JOD files (avail.csv)
+(variables_avail.csv)
+Because the origin-destination (J2JOD) data link two regions, we provide an
+auxiliary file with the time range that cells containing data for each
+geographic pairing may appear in a data release.
+    variable   type    label
+   geo_level   Char(1) Geographic level of destination region
+   geography   Char(8) Geography code of destination region
+geo_level_orig Char(1) Geographic level of origin region
+geography_orig Char(8) Geography code of origin region
+   start_year  Num     First year regional pair may be observed
+start_quarter  Num     First quarter regional pair may be observed
+    end_year   Num     Last year regional pair may be observed
+  end_quarter  Num     Last quarter regional pair may be observed
+The reference region will always be either the origin or the destination.
+National tabulations contain records where both origin and destination are
+geo_level=N; state tabulations contain records where geo_level in (N,S); metro
+tabulations contain records where geo_level in (N,S,B). Data may be suppressed
+for certain combinations of regions and quarters because the estimates do not
+meet Census Bureau publication standards.
+9.  Changes
 For a description of how schema files are versioned, see main_directory.
-**** 8.1. This version (revisions) ****
-    * 2017-03-06: Initial release
-**** 8.2. Version 4.1.1 from 4.1.0 ****
-    * 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan
-      (complete)", gm to "Metropolitan/Micropolitan (state parts)"
-    * 2017-03-06: Updated reference in shapefile description to Job-to-Job
-      Explorer to point to the recently released Beta webap, updated title to
-      refer to the same name as the naming_geo_cat.csv uses
-    * 2017-03-06: Updated TIGER references to 2016 in shapefile description
-    * 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan
-      (complete)"
-    * 2017-03-06: Added referenced in the same file to where to find the CBSA
-      code underlying the state-part definitions
-    * 2017-03-06: Added a new file label_geography_metro.csv
-    * 2017-03-06: Changed references where appropriate from
-      label_geography_cbsa to label_geography_metro
-    * 2017-03-06: Added additional aggregation levels, changed some labels
-    * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
-      actually on the CSV file
-    * 2017-03-07: Updated 2016 geography in shapefiles
-    * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Mon Apr 3 11:51:06 EDT 2017
+**** 9.1. This version (revisions) ****
+    * 2017-04-04: Initial release
+**** 9.2. Version 4.2a-draft from 4.1.1 ****
+    * See github
+This revision: Mon Apr 3 22:13:27 EDT 2017
 ===============================================================================
-Last updated 2017-04-03 11:51:06 EDT
+Last updated 2017-04-03 22:13:27 EDT
