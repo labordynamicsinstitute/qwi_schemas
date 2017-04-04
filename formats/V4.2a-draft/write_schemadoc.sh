@@ -39,6 +39,14 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
+# this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
+versionvintage=R2016Q3
+versionstate=mo
+versiondemo=sa
+versionfas=f
+versionurl=https://lehd.ces.census.gov/pub/$versionstate/$versionvintage/DVD-${versiondemo}_${versionfas}/
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate/
+
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
@@ -458,7 +466,7 @@ done
 	cat tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
 	rm tmp3.csv
 
-  echo "=== $name ===
+  echo "=== [[geography]]$name ===
 
   " >> $asciifile
 
@@ -486,7 +494,7 @@ done
 
 echo "
 
-==== National and state-level values ====
+==== [[geostate]]National and state-level values ====
 ( link:$nsfile[] )
 
 The file link:$nsfile[$nsfile] contains values and labels
@@ -497,7 +505,7 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
-==== Detailed state and substate level values
+==== [[geosubstate]]Detailed state and substate level values
 
 Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
 
@@ -596,6 +604,58 @@ Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status 
 |===================================================
 include::$arg[]
 |===================================================
+">> $asciifile
+
+
+arg=variables_version.csv
+sed 's/naming convention/link:lehd_csv_naming{ext-relative}[]/' $arg |
+  sed 's/stusps/<<stusps>>/' |
+  sed 's/geography/<<geography>>/' > tmp_$arg
+echo "
+<<<
+
+== [[metadata]]Metadata
+( link:${arg}[] )
+
+=== [[metadataqwij2j]]Metadata for QWI and J2J files (version.txt)
+
+Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
+--------------------------------
+$(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
+$(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
+--------------------------------
+where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
+
+The contents contains the following elements:
+[width=\"90%\",format=\"csv\",cols=\">1,3*<5\",options=\"header\"]
+|===================================================
+include::tmp_$arg[]
+|===================================================
+
+For instance, the metadata for the $versionvintage release of
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) QWI
+$(grep "$versiondemo," naming_demo.csv | awk  -F, ' { print $2 } ' )
+for $(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')
+(obtained from $versionurl/version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
+--------------------------------
+$(curl $versionurl/version_${versiondemo}_${versionfas}.txt)
+--------------------------------
+Similarly, the metadata for the $versionvintage release of
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
+tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
+--------------------------------
+$(curl $versionj2jurl/version_j2j.txt)
+--------------------------------
+
+=== [[metadataj2jod]]Additional metadata for J2JOD files (avail.csv)
+(link:variables_avail.csv[])
+
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
+[width=\"80%\",format=\"csv\",cols=\"^1,<4,<4\",options=\"header\"]
+|===================================================
+include::variables_avail.csv[]
+|===================================================
+The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <<geolevel,geo_level>>=N; state tabulations contain records where <<geolevel,geo_level>> in (N,S); metro tabulations contain records where <<geolevel,geo_level>> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.
 
 <<<
 

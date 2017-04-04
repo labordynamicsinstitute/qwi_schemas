@@ -2898,7 +2898,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geography">6.14. Geography</h3>
+<h3 id="_a_id_geography_a_geography">6.14. <a id="geography"></a>Geography</h3>
 <div class="sect3">
 <h4 id="geo_level">6.14.1. <a id="geolevel"></a> Geographic levels</h4>
 <div class="paragraph"><p>Geography labels for data files are provided in separate files, by scope. Each file <em>label_geograpy_SCOPE.csv</em> may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv">label_geography.csv</a>.
@@ -2964,7 +2964,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_national_and_state_level_values">6.14.2. National and state-level values</h4>
+<h4 id="_a_id_geostate_a_national_and_state_level_values">6.14.2. <a id="geostate"></a>National and state-level values</h4>
 <div class="paragraph"><p>( <a href="label_fipsnum.csv">label_fipsnum.csv</a> )</p></div>
 <div class="paragraph"><p>The file <a href="label_fipsnum.csv">label_fipsnum.csv</a> contains values and labels
 for all entities of <a href="#geolevel">geo_level</a> <em>N</em> or <em>S</em>, and is a summary of separately available files.</p></div>
@@ -3069,7 +3069,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_detailed_state_and_substate_level_values">6.14.3. Detailed state and substate level values</h4>
+<h4 id="_a_id_geosubstate_a_detailed_state_and_substate_level_values">6.14.3. <a id="geosubstate"></a>Detailed state and substate level values</h4>
 <div class="paragraph"><p>Note: cross-state CBSA, in records of type <a href="#geolevel">geo_level</a> = M, are present on files of type <em>label_geography_XX.csv</em>. A particular cross-state CBSA will appear on multiple files.</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -3670,82 +3670,196 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_changes_a_changes">8. <a id="changes"></a> Changes</h2>
+<h2 id="_a_id_metadata_a_metadata">8. <a id="metadata"></a>Metadata</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="variables_version.csv">variables_version.csv</a> )</p></div>
+<div class="sect2">
+<h3 id="_a_id_metadataqwij2j_a_metadata_for_qwi_and_j2j_files_version_txt">8.1. <a id="metadataqwij2j"></a>Metadata for QWI and J2J files (version.txt)</h3>
+<div class="paragraph"><p>Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>version_[demo]_[fas].txt
+version_[type].txt</code></pre>
+</div></div>
+<div class="paragraph"><p>where each component is described in more detail in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>.</p></div>
+<div class="paragraph"><p>The contents contains the following elements:</p></div>
+<div class="tableblock">
+<table rules="all"
+width="90%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="6%" />
+<col width="31%" />
+<col width="31%" />
+<col width="31%" />
+<thead>
+<tr>
+<th align="right" valign="top">Component</th>
+<th align="left" valign="top">Source</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right" valign="top"><p class="table">product</p></td>
+<td align="left" valign="top"><p class="table">[type]</p></td>
+<td align="left" valign="top"><p class="table">Type as described in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a></p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">demo_fas</p></td>
+<td align="left" valign="top"><p class="table">[demo]_[fas]</p></td>
+<td align="left" valign="top"><p class="table">(optional - concatenated with product) used for QWI to distinguish separate tabulations from the legal [demo]_[fas] combinations as described in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a></p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">geo</p></td>
+<td align="left" valign="top"><p class="table"><a href="#stusps">[stusps]</a> or Metro</p></td>
+<td align="left" valign="top"><p class="table">Covered <a href="#geography">[geography]</a> (uppercase state postal code or the word MSA)</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">fips</p></td>
+<td align="left" valign="top"><p class="table"><a href="#geography">[geography]</a></p></td>
+<td align="left" valign="top"><p class="table">Numeric (FIPS) geography code</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">start</p></td>
+<td align="left" valign="top"><p class="table">yyyy:q</p></td>
+<td align="left" valign="top"><p class="table">Start year and quarter</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">end</p></td>
+<td align="left" valign="top"><p class="table">yyyy:q</p></td>
+<td align="left" valign="top"><p class="table">End year and quarter</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">schema</p></td>
+<td align="left" valign="top"><p class="table">Vx.y.z</p></td>
+<td align="left" valign="top"><p class="table">Version of the schema</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">release</p></td>
+<td align="left" valign="top"><p class="table">RyyyyQq</p></td>
+<td align="left" valign="top"><p class="table">Release quarter (identifies when the data was created)</p></td>
+</tr>
+<tr>
+<td align="right" valign="top"><p class="table">internal</p></td>
+<td align="left" valign="top"><p class="table">various</p></td>
+<td align="left" valign="top"><p class="table">Internal identifier used for provenance tracking</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>For instance, the metadata for the R2016Q3 release of
+Missouri QWI
+Sex by Age tabulations
+for No firm size or age detail
+(obtained from <a href="https://lehd.ces.census.gov/pub/mo/R2016Q3/DVD-sa_f//version_sa_f.txt">here</a>) has  the following content:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>QWISA_F MO 29 1995:1-2015:4 V4.0.5 R2016Q3 qwipu_mo_20160804_1631</code></pre>
+</div></div>
+<div class="paragraph"><p>Similarly, the metadata for the R2016Q3 release of
+Missouri J2J
+tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/R2016Q3/j2j/mo//version_j2j.txt">here</a>) has  the following content:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>J2J  MO 29  2000:2-2015:3  V4.1.0 R2016Q3 j2jpu_mo_20161028_1522</code></pre>
+</div></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_metadataj2jod_a_additional_metadata_for_j2jod_files_avail_csv">8.2. <a id="metadataj2jod"></a>Additional metadata for J2JOD files (avail.csv)</h3>
+<div class="paragraph"><p>(<a href="variables_avail.csv">variables_avail.csv</a>)</p></div>
+<div class="paragraph"><p>Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="80%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="44%" />
+<col width="44%" />
+<thead>
+<tr>
+<th align="center" valign="top">variable</th>
+<th align="left" valign="top">type</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">geo_level</p></td>
+<td align="left" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Geographic level of destination region</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">geography</p></td>
+<td align="left" valign="top"><p class="table">Char(8)</p></td>
+<td align="left" valign="top"><p class="table">Geography code of destination region</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">geo_level_orig</p></td>
+<td align="left" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Geographic level of origin region</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">geography_orig</p></td>
+<td align="left" valign="top"><p class="table">Char(8)</p></td>
+<td align="left" valign="top"><p class="table">Geography code of origin region</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">start_year</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">First year regional pair may be observed</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">start_quarter</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">First quarter regional pair may be observed</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">end_year</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Last year regional pair may be observed</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">end_quarter</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Last quarter regional pair may be observed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <a href="#geolevel">geo_level</a>=N; state tabulations contain records where <a href="#geolevel">geo_level</a> in (N,S); metro tabulations contain records where <a href="#geolevel">geo_level</a> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">9. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>For a description of how schema files are versioned, see <a href="../VERSIONING.html">main directory</a>.</p></div>
 <div class="sect2">
-<h3 id="_this_version_revisions">8.1. This version (revisions)</h3>
+<h3 id="_this_version_revisions">9.1. This version (revisions)</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-2017-03-06: Initial release
+2017-04-04: Initial release
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1_1_from_4_1_0">8.2. Version 4.1.1 from 4.1.0</h3>
+<h3 id="_version_4_2a_draft_from_4_1_1">9.2. Version 4.2a-draft from 4.1.1</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Updated TIGER references to 2016 in shapefile description
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added a new file label_geography_metro.csv
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added additional aggregation levels, changed some labels
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
-</p>
-</li>
-<li>
-<p>
-2017-03-07: Updated 2016 geography in shapefiles
-</p>
-</li>
-<li>
-<p>
-2017-03-07: Corrected naming of files inside shapefile ZIP files
+See github
 </p>
 </li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Apr  3 17:24:15 EDT 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Apr  3 22:13:27 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -3755,7 +3869,7 @@ cellspacing="0" cellpadding="4">
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-04-03 17:24:15 EDT
+ 2017-04-03 22:13:27 EDT
 </div>
 </div>
 </body>

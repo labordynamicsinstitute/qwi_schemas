@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.9" />
-<title>LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention</title>
+<title>LEHD Public Use CSV Naming Schema V4.2a-draft - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -17,10 +17,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention</h1>
+<h1>LEHD Public Use CSV Naming Schema V4.2a-draft - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">07 March 2017</span>
+<span id="revdate">03 April 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -112,9 +112,24 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Common convention for currently provided files.</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">[type]\_[geocat]</p></td>
+<td align="center" valign="top"><p class="table">lehd_shp_[geocat].zip</p></td>
 <td align="left" valign="top"><p class="table">shapefiles</p></td>
 <td align="left" valign="top"><p class="table">ZIP files containing data for shapefiles</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">version_[demo]_[fas].txt</p></td>
+<td align="left" valign="top"><p class="table">metadata</p></td>
+<td align="left" valign="top"><p class="table">Machine-readable text files with metadata on geographic and temporal coverage for QWI</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">version\_[type].txt</p></td>
+<td align="left" valign="top"><p class="table">metadata</p></td>
+<td align="left" valign="top"><p class="table">Machine-readable text files with metadata on geographic and temporal coverage for J2J</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">j2jod_[geography]_avail.csv</p></td>
+<td align="left" valign="top"><p class="table">metadata</p></td>
+<td align="left" valign="top"><p class="table">Complex metadata (used only in J2JOD) - see below</p></td>
 </tr>
 </tbody>
 </table>
@@ -129,13 +144,32 @@ cellspacing="0" cellpadding="4">
 <div class="paragraph"><p>where <code>[id]</code> is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.</p></div>
 </div>
 <div class="sect2">
-<h3 id="_other_files">5.2. Other files</h3>
-<div class="paragraph"><p>Files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
+<h3 id="_a_id_versionqwi_a_metadata_for_qwi_data_files_version_txt">5.2. <a id="versionqwi"></a>Metadata for QWI data files (version.txt)</h3>
+<div class="paragraph"><p>Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]</code></pre>
+<pre><code>version_[demo]_[fas].txt</code></pre>
 </div></div>
-<div class="paragraph"><p>where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.</p></div>
+<div class="paragraph"><p>where each component is described in more detail below.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_versionj2j_a_metadata_for_j2j_data_files_version_txt">5.3. <a id="versionj2j"></a>Metadata for J2J data files (version.txt)</h3>
+<div class="paragraph"><p>Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>version_[type].txt</code></pre>
+</div></div>
+<div class="paragraph"><p>where each component is described in more detail below.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_version_j2jod_a_metadata_for_j2jod_files">5.4. <a id="version_j2jod"></a>Metadata for J2JOD files</h3>
+<div class="paragraph"><p>Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
+These files follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>j2jod_[geography]_avail.csv</code></pre>
+</div></div>
+<div class="paragraph"><p>where each component is described in more detail below.</p></div>
 </div>
 </div>
 </div>
@@ -287,6 +321,10 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">se</p></td>
 <td align="left" valign="top"><p class="table">Sex by Education tabulations</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">sarhe</p></td>
+<td align="left" valign="top"><p class="table">Collection of sa-rh-se tabulations</p></td>
 </tr>
 </tbody>
 </table>
@@ -524,67 +562,17 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-2017-03-06: Initial release
+2017-04-04: Initial release
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_1_1_from_4_1_0">7.2. Version 4.1.1 from 4.1.0</h3>
+<h3 id="_version_4_2a_draft_from_4_1_1">7.2. Version 4.2a-draft from 4.1.1</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Updated TIGER references to 2016 in shapefile description
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added a new file label_geography_metro.csv
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Added additional aggregation levels, changed some labels
-</p>
-</li>
-<li>
-<p>
-2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
-</p>
-</li>
-<li>
-<p>
-2017-03-07: Updated 2016 geography in shapefiles
-</p>
-</li>
-<li>
-<p>
-2017-03-07: Corrected naming of files inside shapefile ZIP files
+See github
 </p>
 </li>
 </ul></div>
@@ -602,7 +590,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Mar  7 13:49:12 EST 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Apr  3 22:13:44 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -612,7 +600,7 @@ cellspacing="0" cellpadding="4">
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-03-07 13:49:12 EST
+ 2017-04-03 22:13:44 EDT
 </div>
 </div>
 </body>
