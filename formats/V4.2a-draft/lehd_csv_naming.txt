@@ -3,7 +3,7 @@
 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-03 April 2017
+04 April 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -29,7 +29,7 @@ This version reimplements some features from V4.0. Many files compliant with
 LEHD or QWI Schema v4.0 will also be compliant with this schema, but
 compatibility is not guaranteed.
 ***** 4. Supersedes *****
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.1.0, for files released as of R2016Q4
 ***** 5. Basic Schema *****
 All files are preceded by a file type definition, followed by additional
 information on the aggregation level of the file, or some other identifier.
@@ -66,12 +66,12 @@ to the database.
 Metadata accompanies the data files, identifying provenance, geographic and
 temporal coverage. These files follow the following naming convention:
 version_[demo]_[fas].txt
-where each component is described in more detail below.
+where each name component is described in more detail below.
 5.3. Metadata for J2J data files (version.txt)
 Metadata accompanies the data files, identifying provenance, geographic and
 temporal coverage. These files follow the following naming convention:
 version_[type].txt
-where each component is described in more detail below.
+where each name component is described in more detail below.
 5.4. Metadata for J2JOD files
 Because the origin-destination (J2JOD) data link two regions, we provide an
 auxiliary file with the time range for which cells containing data for each
@@ -79,8 +79,8 @@ geographic pairing may appear in a data release. The reference region will
 always be either the origin or the destination. These files follow the
 following naming convention:
 j2jod_[geography]_avail.csv
-where each component is described in more detail below.
-***** 6. Description of Filename Components *****
+where each name component is described in more detail below.
+6. Description of Filename Components
 **** 6.1. Types ****
 ( naming_type.csv )
    type  Description              Explanation              url
@@ -209,6 +209,6 @@ For a description of how schema files are versioned, see main_directory.
     * See github
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Mon Apr 3 22:13:44 EDT 2017
+This revision: Tue Apr 4 15:13:45 EDT 2017
 ===============================================================================
-Last updated 2017-04-03 22:13:44 EDT
+Last updated 2017-04-04 15:13:45 EDT

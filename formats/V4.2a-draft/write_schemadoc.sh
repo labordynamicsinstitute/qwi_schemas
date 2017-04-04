@@ -609,7 +609,7 @@ include::$arg[]
 
 arg=variables_version.csv
 sed 's/naming convention/link:lehd_csv_naming{ext-relative}[]/' $arg |
-  sed 's/stusps/<<stusps>>/' |
+  sed 's/stusps/<<_stusps>>/' |
   sed 's/geography/<<geography>>/' > tmp_$arg
 echo "
 <<<

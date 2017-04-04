@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.2a-draft - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-03 April 2017
+04 April 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -39,7 +39,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.1.0, for files released as of R2016Q4
 
 
 Basic Schema
@@ -73,14 +73,14 @@ Metadata accompanies the data files, identifying provenance, geographic and temp
 --------------------------------
 version_[demo]_[fas].txt
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 === [[versionj2j]]Metadata for J2J data files (version.txt)
 Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
 --------------------------------
 version_[type].txt
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 === [[version_j2jod]]Metadata for J2JOD files
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
@@ -88,12 +88,12 @@ These files follow the following naming convention:
 --------------------------------
 j2jod_[geography]_avail.csv
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 
 
 
-== Description of Filename Components
+== [[components]]Description of Filename Components
 
 === Types
 
@@ -211,6 +211,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Apr  3 22:13:44 EDT 2017
+This revision: Tue Apr  4 15:13:45 EDT 2017
 *******************
 
