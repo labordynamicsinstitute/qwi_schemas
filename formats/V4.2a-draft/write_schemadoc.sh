@@ -627,7 +627,7 @@ $(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
 where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
 
 The contents contains the following elements:
-[width=\"90%\",format=\"csv\",cols=\">1,3*<5\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\">1,2*<5\",options=\"header\"]
 |===================================================
 include::tmp_$arg[]
 |===================================================
@@ -646,6 +646,7 @@ tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the follow
 --------------------------------
 $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
+Some J2J metadata may contain multiple lines, as necessary.
 
 === [[metadataj2jod]]Additional metadata for J2JOD files (avail.csv)
 (link:variables_avail.csv[])

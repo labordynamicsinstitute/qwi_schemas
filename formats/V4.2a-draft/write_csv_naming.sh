@@ -104,7 +104,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.0.5, for files released as of RXXXX.
+This version supersedes V4.1.0, for files released as of R2016Q4
 
 
 Basic Schema
@@ -143,14 +143,14 @@ Metadata accompanies the data files, identifying provenance, geographic and temp
 --------------------------------
 $(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 === [[versionj2j]]Metadata for J2J data files (version.txt)
 Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
 --------------------------------
 $(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 === [[version_j2jod]]Metadata for J2JOD files
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
@@ -158,7 +158,7 @@ These files follow the following naming convention:
 --------------------------------
 $(awk -F, ' NR == 7 { print $1 }' naming_convention.csv  )
 --------------------------------
-where each component is described in more detail below.
+where each name component is described in more detail <<components,below>>.
 
 
 " >> $asciifile
@@ -166,7 +166,7 @@ where each component is described in more detail below.
 
 #########################3 Types
 echo "
-== Description of Filename Components
+== [[components]]Description of Filename Components
 
 === Types
 
