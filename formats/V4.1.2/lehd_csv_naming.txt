@@ -1,0 +1,207 @@
+
+****** LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention ******
+Lars Vilhuber
+<lars.vilhuber@cornell.edu>
+07 March 2017
+Table of Contents
+JavaScript must be enabled in your browser to display the table of contents.
+( Printable_version )
+            Important
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
+***** 1. Purpose *****
+The public-use data from the Longitudinal Employer-Household Dynamics Program,
+including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
+are available for download with the following data schema. These data are
+available as Comma-Separated Value (CSV) files through the LEHD website’s Data
+page at http://lehd.ces.census.gov/data/ and through LED Extraction Tool at
+http://ledextract.ces.census.gov/.
+This document describes the file naming schema for LEHD-provided CSV files.
+***** 2. Schema for Data File Contents *****
+The contents (schema) for LEHD data files are described in
+lehd_public_use_schema.html. The contents (schema) for shapefiles are described
+in lehd_shapefiles.html.
+***** 3. Extends *****
+This version reimplements some features from V4.0. Many files compliant with
+LEHD or QWI Schema v4.0 will also be compliant with this schema, but
+compatibility is not guaranteed.
+***** 4. Supersedes *****
+This version supersedes V4.0.5, for files released as of RXXXX.
+***** 5. Basic Schema *****
+All files are preceded by a file type definition, followed by additional
+information on the aggregation level of the file, or some other identifier.
+[TYPE]_[DETAILS].[EXT]
+( naming_convention.csv )
+               type      Used By                 Description
+         [type]_[id]     qwix                    CSV files queried from the
+                                                 LED Extraction Tool at http:
+                                                 //
+                                                 ledextract.ces.census.gov/.
+ [type]_[geohi]_[demo]_  qwi qwir qwiv qwivr j2j Common convention for
+[fas]_[geocat]_[indcat]_ j2jr j2jod              currently provided files.
+    [ownercat]_[sa]
+      [type]\_[geocat]   shapefiles              ZIP files containing data
+                                                 for shapefiles
+**** 5.1. QWIPU from the LED Extraction Tool ****
+Files downloaded through the LED Extraction Tool at http://
+ledextract.ces.census.gov/ follow the following naming convention:
+[type]_[id].[EXT]
+where [id] is the Request ID (a unique string of characters) generated every
+time Submit Request'' is clicked. The ID references each query submission made
+to the database.
+**** 5.2. Other files ****
+Files downloaded from the LEHD website at http://lehd.ces.census.gov/data
+follow the following naming convention:
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]
+where each component is described in more detail below. Schema files detailing
+legal values for each component can be downloaded from this website.
+***** 6. Description of Filename Components *****
+**** 6.1. Types ****
+( naming_type.csv )
+   type  Description              Explanation              url
+   j2j   Job-to-Job Flows Counts  Counts of hires and      tbd
+         (J2J)                    separations, to and from
+                                  employment and non-
+                                  employment, summed
+                                  across all
+                                  establishments
+  j2jod  Job-to-Job Flows Origin- Origin and destination   tbd
+         Destination              flows and earnings,
+                                  tabulated by the
+                                  destination
+                                  establishment
+   j2jr  Job-to-Job Flows Rates   Hiring and separation    http://
+                                  rates, to and from       lehd.ces.census.gov/
+                                  employment and           data/j2j_beta.html
+                                  nonemployment, summed
+                                  across all
+                                  establishments
+  lodes  LEHD Origin-Destination  LEHD Origin-Destination  http://
+         Employment Statistics    Employment Statistics    lehd.ces.census.gov/
+         (LODES)                  (LODES) used by          data/#lodes
+                                  OnTheMap. Version 7 and
+                                  higher of LODES was
+                                  enumerated by 2010
+                                  census blocks. Version 6
+                                  and lower of LODES were
+                                  enumerated with 2000
+                                  census blocks.
+   qwi   Quarterly Workforce      The Quarterly Workforce  http://
+         Indicators Public Use    Indicators (QWI) are a   lehd.ces.census.gov/
+         Counts (QWIPU)           set of economic          data/#qwi
+                                  indicators including
+                                  employment, job
+                                  creation, earnings, and
+                                  other measures of
+                                  employment flows. The
+                                  QWI are reported using
+                                  detailed firm
+                                  characteristics
+                                  (geography, industry,
+                                  age, size) and worker
+                                  demographics information
+                                  (sex, age, education,
+                                  race, ethnicity).
+   qwir  Quarterly Workforce      Rates for flow variables tbd
+         Indicators Public Use    in the Quarterly
+         Rates                    Workforce Indicators
+                                  (QWI)
+  qwirv  Quarterly Workforce      Variability measures for tbd
+         Indicators Variability   rates in the Quarterly
+         Measures for Rates       Workforce Indicators
+                                  (QWI)
+   qwiv  Quarterly Workforce      Variability measures for tbd
+         Indicators Variability   Quarterly Workforce
+         Measures                 Indicators (QWI)
+lehd_shp LEHD Shapefiles          Shapefiles are used to   lehd_shapefiles.html
+                                  provide mapping
+                                  functionality in QWI
+                                  Explorer and Job-to-Job
+                                  Explorer
+**** 6.2. geohi ****
+( naming_geohi.csv )
+This component is based on the alphabetic FIPS state code equivalent to the
+numeric FIPS code in label_fipsnum.csv, based on FIPS_PUB_5-2. It is expanded
+to encompass additional codes denoting national coverage, or a collection of
+states.
+type Description
+all  Collection of all available states
+ us  National data (50 states + DC)
+ st  Any legal 2-character state postal code (see naming_geohi.csv )
+**** 6.3. demo ****
+( naming_demo.csv )
+type Description
+  d  No demographic detail
+ rh  Race by Ethnicity tabulations
+ sa  Sex by Age tabulations
+ se  Sex by Education tabulations
+**** 6.4. fas ****
+( naming_fas.csv )
+type Description
+  f  No firm size or age detail
+ fa  Tabulations by firm age
+ fs  Tabulations by firm size
+**** 6.5. geocat ****
+( naming_geocat.csv )
+type Description
+ gb  Metropolitan (complete)
+ gc  Counties
+ gm  Metropolitan/Micropolitan (state parts)
+ gn  National (50 States + DC)
+ gs  States
+ gw  Workforce Investment Areas
+**** 6.6. indcat ****
+( naming_indcat.csv )
+type Description
+  n  all industries
+ ns  NAICS sectors
+ n3  NAICS subsectors
+ n4  NAICS industry groups
+**** 6.7. owncat ****
+( naming_owncat.csv )
+type Description
+ of  Federal government (QWI Code A01)
+ op  All Private (QWI Code A05)
+oslp State, local, and private ownership categories (QWI Code A00)
+**** 6.8. sa ****
+( naming_sa.csv )
+type Description
+  s  Seasonally adjusted
+  u  Not seasonally adjusted
+**** 6.9. ext ****
+( naming_ext.csv )
+type Description
+csv  Comma-Separated file
+pdf  PDF file (printable)
+xls  Excel file (only select output)
+xlsx Excel file (not available for larger files)
+7.  Changes
+For a description of how schema files are versioned, see main_directory.
+**** 7.1. This version (revisions) ****
+    * 2017-03-06: Initial release
+**** 7.2. Version 4.1.1 from 4.1.0 ****
+    * 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan
+      (complete)", gm to "Metropolitan/Micropolitan (state parts)"
+    * 2017-03-06: Updated reference in shapefile description to Job-to-Job
+      Explorer to point to the recently released Beta webap, updated title to
+      refer to the same name as the naming_geo_cat.csv uses
+    * 2017-03-06: Updated TIGER references to 2016 in shapefile description
+    * 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan
+      (complete)"
+    * 2017-03-06: Added referenced in the same file to where to find the CBSA
+      code underlying the state-part definitions
+    * 2017-03-06: Added a new file label_geography_metro.csv
+    * 2017-03-06: Changed references where appropriate from
+      label_geography_cbsa to label_geography_metro
+    * 2017-03-06: Added additional aggregation levels, changed some labels
+    * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
+      actually on the CSV file
+    * 2017-03-07: Updated 2016 geography in shapefiles
+    * 2017-03-07: Corrected naming of files inside shapefile ZIP files
+[Important] Important
+            Some of the data products noted above do not exist yet.
+This revision: Tue Mar 7 13:49:12 EST 2017
+===============================================================================
+Last updated 2017-03-07 13:49:12 EST
