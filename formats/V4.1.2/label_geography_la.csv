@@ -1,5 +1,5 @@
 geography,label,geo_level
-22,Louisiana,S
+22,"Louisiana",S
 22001,"Acadia, LA",C
 22003,"Allen, LA",C
 22005,"Ascension, LA",C
@@ -54,6 +54,7 @@ geography,label,geo_level
 22103,"St. Tammany, LA",C
 22105,"Tangipahoa, LA",C
 22107,"Tensas, LA",C
+2210780,"Alexandria, LA",M
 22109,"Terrebonne, LA",C
 22111,"Union, LA",C
 22113,"Vermilion, LA",C
@@ -64,11 +65,25 @@ geography,label,geo_level
 22123,"West Carroll, LA",C
 22125,"West Feliciana, LA",C
 22127,"Winn, LA",C
-2210780,"Alexandria, LA",M
 2212820,"Bastrop, LA",M
 2212940,"Baton Rouge, LA",M
 2214220,"Bogalusa, LA",M
 2219760,"DeRidder, LA",M
+22220005,"East Baton Rouge Parish WIA",W
+22220015,"Jefferson Parish WIA",W
+22220025,"Orleans Parish WIA",W
+22220030,"Ouachita Parish WIA",W
+22220035,"Rapides Parish WIA",W
+22220040,"City of Shreveport WIA",W
+22220045,"First Planning District Consortium WIA",W
+22220050,"Second Planning District Consortium WIA",W
+22220070,"Sixth Planning District Consortium WIA",W
+22220075,"Seventh Planning District Consortium WIA",W
+22220085,"Lafourche Parish WIA",W
+22220090,"St. Charles Parish Consortium WIA",W
+22220105,"Calcasieu Parish Consortium WIA",W
+22220125,"Franklin Parish Consortium WIA",W
+22220130,"Fourth Planning District Consortium WIA",W
 2222860,"Fort Polk South, LA",M
 2225220,"Hammond, LA",M
 2226380,"Houma-Thibodaux, LA",M
@@ -83,18 +98,4 @@ geography,label,geo_level
 2236660,"Opelousas, LA",M
 2240820,"Ruston, LA",M
 2243340,"Shreveport-Bossier City, LA",M
-22220005,East Baton Rouge Parish WIA,W
-22220015,Jefferson Parish WIA,W
-22220025,Orleans Parish WIA,W
-22220030,Ouachita Parish WIA,W
-22220035,Rapides Parish WIA,W
-22220040,City of Shreveport WIA,W
-22220045,First Planning District Consortium WIA,W
-22220050,Second Planning District Consortium WIA,W
-22220070,Sixth Planning District Consortium WIA,W
-22220075,Seventh Planning District Consortium WIA,W
-22220085,Lafourche Parish WIA,W
-22220090,St. Charles Parish Consortium WIA,W
-22220105,Calcasieu Parish Consortium WIA,W
-22220125,Franklin Parish Consortium WIA,W
-22220130,Fourth Planning District Consortium WIA,W
+2299999,"Nonmetropolitan, nonmicropolitan",M
