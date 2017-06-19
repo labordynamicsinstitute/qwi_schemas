@@ -3399,16 +3399,13 @@ geography,label,geo_level
 0945860,"Torrington, CT",M
 0949340,"Worcester, MA-CT (CT part)",M
 0999999,"Nonmetropolitan, nonmicropolitan",M
-01010001,"Workforce Development Region 1",W
-01010002,"Workforce Development Region 2",W
-01010003,"Workforce Development Region 3",W
-01010004,"Workforce Development Region 4",W
-01010005,"Workforce Development Region 5",W
-01010006,"Workforce Development Region 6",W
-01010007,"Workforce Development Region 7",W
-01010008,"Workforce Development Region 8",W
-01010009,"Workforce Development Region 9",W
-01010010,"Workforce Development Region 10",W
+01010001,"North Alabama Works",W
+01010002,"East Alabama Works",W
+01010003,"West Alabama Works",W
+01010004,"Central Six Alabama Works",W
+01010005,"Central Alabama Works",W
+01010006,"Southeast Alabama Works",W
+01010007,"Southwest Alabama Works",W
 1020100,"Dover, DE",M
 1037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (DE part)",M
 1041540,"Salisbury, MD-DE (DE part)",M
@@ -4536,24 +4533,21 @@ geography,label,geo_level
 20200003,"03 Local Area III - Kansas City Area WIB",W
 20200004,"04 Local Area IV - South Central WIB",W
 20200005,"05 Local Area V - Southeast WIB",W
-22220010,"1st Planning District Consortium Parish WIA",W
-22220011,"Jefferson WIA",W
-22220012,"Orleans WIA",W
-22220020,"2nd Planning District Consortium WIA",W
-22220021,"East Baton Rouge WIA",W
-22220031,"Terrebonne Consortium WIA",W
-22220032,"St. Charles Consortium WIA",W
-22220040,"4th Planning District Consortium WIA",W
-22220041,"Lafayette WIA",W
-22220050,"5th Planning District Consortium WIA",W
-22220051,"Calcasieu Consortium WIA",W
-22220060,"6th Planning District Consortium WIA",W
-22220061,"Rapides WIA",W
-22220070,"7th Planning District Consortium WIA",W
-22220071,"City of Shreveport WIA",W
-22220081,"Ouachita WIA",W
-22220082,"Union WIA",W
-22220083,"Franklin Parish Consortium WIA",W
+22220005,"East Baton Rouge Parish WIA",W
+22220015,"Jefferson Parish WIA",W
+22220025,"Orleans Parish WIA",W
+22220030,"Ouachita Parish WIA",W
+22220035,"Rapides Parish WIA",W
+22220040,"City of Shreveport WIA",W
+22220045,"First Planning District Consortium WIA",W
+22220050,"Second Planning District Consortium WIA",W
+22220070,"Sixth Planning District Consortium WIA",W
+22220075,"Seventh Planning District Consortium WIA",W
+22220085,"Lafourche Parish WIA",W
+22220090,"St. Charles Parish Consortium WIA",W
+22220105,"Calcasieu Parish Consortium WIA",W
+22220125,"Franklin Parish Consortium WIA",W
+22220130,"Fourth Planning District Consortium WIA",W
 23000001,"01 Aroostook/Washington WIA",W
 23000002,"02 Central/Western WIA",W
 23000003,"03 Six County Coastal WIA",W

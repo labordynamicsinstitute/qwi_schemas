@@ -1,8 +1,8 @@
 
-****** LEHD Public Use Data Schema V4.1.1 ******
+****** LEHD Public Use Data Schema V4.1.2 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 March 2017
+19 June 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -854,8 +854,11 @@ flag label
 8.  Changes
 For a description of how schema files are versioned, see main_directory.
 **** 8.1. This version (revisions) ****
-    * 2017-03-06: Initial release
-**** 8.2. Version 4.1.1 from 4.1.0 ****
+    * 2017-06-19: Initial release
+**** 8.2. Version 4.1.2 from 4.1.1 ****
+    * 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB
+      definitions
+**** 8.3. Version 4.1.1 from 4.1.0 ****
     * 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan
       (complete)", gm to "Metropolitan/Micropolitan (state parts)"
     * 2017-03-06: Updated reference in shapefile description to Job-to-Job
@@ -874,6 +877,6 @@ For a description of how schema files are versioned, see main_directory.
       actually on the CSV file
     * 2017-03-07: Updated 2016 geography in shapefiles
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Tue Mar 7 08:58:06 EST 2017
+This revision: Mon Jun 19 12:48:41 EDT 2017
 ===============================================================================
-Last updated 2017-03-07 08:58:06 EST
+Last updated 2017-06-19 12:48:41 EDT
