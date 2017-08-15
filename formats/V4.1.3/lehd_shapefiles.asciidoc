@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
-Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-07 March 2017
+Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
+15 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
@@ -10,11 +10,9 @@ Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. 
+This specification is draft. Feedback is welcome. 	
 Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles[lars.vilhuber@cornell.edu].
+link:mailto:Patrick.Hayward@census.gov?subject=LEHD_Shapefiles[Patrick.Hayward@census.gov].
 ==============================================
 
 
@@ -157,6 +155,6 @@ Changes
 
 <<<
 *******************
-This revision: Tue Mar  7 08:58:20 EST 2017
+This revision: Tue Aug 15 18:24:02 EDT 2017
 *******************
 
