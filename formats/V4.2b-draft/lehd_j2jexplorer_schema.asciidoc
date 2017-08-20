@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft
-Lars Vilhuber <lars.vilhuber@census.gov>
-15 August 2017
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+20 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_j2jexplorer_schema.pdf[Printable version] )
@@ -10,7 +10,10 @@ Lars Vilhuber <lars.vilhuber@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -61,18 +64,6 @@ Note: The J2J Explorer (beta) provides the full set of J2J indicators in additio
 Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
 Identifiers without the year and quarter component can be considered a series identifier.
 
-==== Mapping for Identifiers
-( link:lehd_mapping_identifiers.csv[] )
-
-Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
-to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
-
-[width="80%",format="csv",cols="<3,6*^1",options="header"]
-|===================================================
-include::lehd_mapping_identifiers.csv[]
-|===================================================
-<<<
-
 ==== Identifiers for j2j
 ( link:lehd_identifiers_j2j.csv[] )
 
@@ -93,16 +84,6 @@ include::lehd_identifiers_j2jod.csv[]
 <<<
 
 
-==== Identifiers for qwi
-( link:lehd_identifiers_qwi.csv[] )
-
-[width="100%",format="csv",cols="2*^1,<3",options="header"]
-|===================================================
-include::lehd_identifiers_qwi.csv[]
-|===================================================
-<<<
-
-
 
 <<<
 === [[indicators]]Indicators
@@ -117,7 +98,7 @@ The ''Indicator Name'' is a more verbose name for the indicator.
 The ''Description'' provides a complete description of the indicator.
 ''Units'' identify the type of variable: counts, rates, monetary amounts.
 ''Concept'' classifies each indicator in a descriptive category: employment, hire, separation, earnings, or flow.
-The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. 
+The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ( link:variables_j2japp.csv[] )
 [width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,^1",options="header"]
@@ -415,6 +396,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Tue Aug 15 18:26:39 EDT 2017
+This revision: Sun Aug 20 15:38:31 EDT 2017
 *******************
 

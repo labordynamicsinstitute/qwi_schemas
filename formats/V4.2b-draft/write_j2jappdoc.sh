@@ -133,24 +133,24 @@ Identifiers without the year and quarter component can be considered a series id
 " >> $asciifile
 
 ############################## Identifiers
-for arg in  lehd_mapping_identifiers.csv
-do
-  name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
-  echo "==== $name
-( link:${arg}[] )
+#for arg in  lehd_mapping_identifiers.csv
+#do
+#  name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
+#  echo "==== $name
+#( link:${arg}[] )
 
-Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
-to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
+#Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
+#to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical #Variables>>.
 
-[width=\"80%\",format=\"csv\",cols=\"<3,6*^1\",options=\"header\"]
-|===================================================
-include::$arg[]
-|===================================================
-<<<
-" >> $asciifile
-done
+#[width=\"80%\",format=\"csv\",cols=\"<3,6*^1\",options=\"header\"]
+#|===================================================
+#include::$arg[]
+#|===================================================
+#<<<
+#" >> $asciifile
+#done
 
-for arg in   $(ls lehd_identifiers_*csv)
+for arg in   $(ls lehd_identifiers_j2j*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/ident/Ident/')"
   echo "==== $name
@@ -180,7 +180,7 @@ The ''Indicator Name'' is a more verbose name for the indicator.
 The ''Description'' provides a complete description of the indicator.
 ''Units'' identify the type of variable: counts, rates, monetary amounts.
 ''Concept'' classifies each indicator in a descriptive category: employment, hire, separation, earnings, or flow.
-The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. 
+The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ( link:variables_j2japp.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]

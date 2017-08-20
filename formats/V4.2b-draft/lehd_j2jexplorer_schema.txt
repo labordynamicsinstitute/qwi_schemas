@@ -1,14 +1,16 @@
 
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft ******
 Lars Vilhuber
-<lars.vilhuber@census.gov>
-15 August 2017
+<lars.vilhuber@cornell.edu>
+20 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at lars.vilhuber@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 ***** 1. Purpose *****
 The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal
 Employer-Household Dynamics Program are accessible through the J2J_Explorer_
@@ -49,18 +51,7 @@ LEHD schema in lehd_public_use_schema.html.
 Records, unless otherwise noted, are parts of time-series data. Unique record
 identifiers are noted below, by file type. Identifiers without the year and
 quarter component can be considered a series identifier.
-*** 5.2.1. Mapping for Identifiers ***
-( lehd_mapping_identifiers.csv )
-Each of the released files has a set of variables uniquely identifying records
-(Identifiers). The table below relates the set of identifier specifications to
-the released files. The actual CSV files containing the identifiers for each
-set are listed after this table. Each identifier can take on a specified list
-of values, documented in the section on Categorical_Variables.
-identifiers            QWI NQWI J2J J2JR J2JOD LODES
-lehd_identifiers_qwi    1    1
-lehd_identifiers_j2j             1    1
-lehd_identifiers_j2jod                      1
-*** 5.2.2. Identifiers for j2j ***
+*** 5.2.1. Identifiers for j2j ***
 ( lehd_identifiers_j2j.csv )
   Variable    Type  label
 periodicity Char(1) Periodicity of report
@@ -80,7 +71,7 @@ periodicity Char(1) Periodicity of report
      year      Num  Time: Year
    quarter     Num  Time: Quarter
  agg_level     Num  Aggregation Level Indicator
-*** 5.2.3. Identifiers for j2jod ***
+*** 5.2.2. Identifiers for j2jod ***
 ( lehd_identifiers_j2jod.csv )
     Variable     Type  label
   periodicity  Char(1) Periodicity of report
@@ -108,25 +99,6 @@ industry_orig  Char(5) Group: Industry code of origin job
 ownercode_orig Char(3) Group: Ownership group code of origin job
  firmage_orig  Char(1) Group: Firm Age group of origin job
 firmsize_orig  Char(1) Group: Firm Size group of origin job
-*** 5.2.4. Identifiers for qwi ***
-( lehd_identifiers_qwi.csv )
-  Variable    Type  label
-periodicity Char(1) Periodicity of report
- seasonadj  Char(1) Seasonal Adjustment Indicator
- geo_level  Char(1) Group: Geographic level of aggregation
- geography  Char(8) Group: Geography code
- ind_level  Char(1) Group: Industry level of aggregation
-  industry  Char(5) Group: Industry code
- ownercode  Char(3) Group: Ownership group code
-      sex   Char(1) Group: Gender code
-   agegrp   Char(3) Group: Age group code (WIA)
-     race   Char(2) Group: race
- ethnicity  Char(2) Group: ethnicity
- education  Char(2) Group: education
-   firmage  Char(1) Group: Firm Age group
-  firmsize  Char(1) Group: Firm Size group
-     year      Num  Time: Year
-   quarter     Num  Time: Quarter
 5.3. Indicators
 The following tables and associated mapping files list the indicators available
 on each file. The 'Indicator Variable' is the short name of the variable on the
@@ -592,7 +564,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
         …
       129             Firm Size                   1   1    1     0   N
       257             NAICS Sector                1   1    1     0   N
-      258 Sex         NAICS Sector                0   0    0     0   N
+      258 Sex         NAICS Sector                1   1    1     0   N
         …
      1029 Race        State                       1   1    1     0   S
      1033 Ethnicity   State                       1   1    1     0   S
@@ -621,6 +593,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Tue Aug 15 18:26:39 EDT 2017
+This revision: Sun Aug 20 15:38:31 EDT 2017
 ===============================================================================
-Last updated 2017-08-15 18:26:39 EDT
+Last updated 2017-08-20 15:38:31 EDT
