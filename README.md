@@ -23,8 +23,9 @@ You can browse the following schemas:
 * V4.1 released versions
   * [V4.1.0](formats/V4.1.0/lehd_public_use_schema.html): The released V4.1.0 version.
   * [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version.
+  * [V4.1.2](formats/V4.1.2/lehd_public_use_schema.html): The released V4.1.2 version.
 * V4.2 draft versions
-  * [V4.2a-draft](formats/V4.2a-draft/lehd_public_use_schema.html): The draft V4.2a-draft version. 
+  * [V4.2a-draft](formats/V4.2a-draft/lehd_public_use_schema.html): The draft V4.2a-draft version.
 
 
 If you are not already there, you might find that browsing [http://labordynamicsinstitute.github.io/qwi_schemas/](http://labordynamicsinstitute.github.io/qwi_schemas/) is easier.
