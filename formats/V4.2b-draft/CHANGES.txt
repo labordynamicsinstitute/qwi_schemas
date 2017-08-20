@@ -2,7 +2,10 @@
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-04-04: Initial release
+- 2017-08-xx: Initial release
+
+=== Version 4.2b-draft from V4.2a-draft
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
 
 === Version 4.2a-draft from 4.1.1
-- See github
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1[Github]

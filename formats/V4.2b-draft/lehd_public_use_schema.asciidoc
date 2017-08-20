@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.2b-draft
-Lars Vilhuber <lars.vilhuber@census.gov>
-15 August 2017
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+20 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -10,7 +10,10 @@ Lars Vilhuber <lars.vilhuber@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
 	
 
@@ -18,8 +21,8 @@ Purpose
 -------
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+These data are available  through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -39,7 +42,7 @@ This version supersedes V4.1.0, for files released as of R2017Q1.
 
 Basic Schema
 ------------
-Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>. In some cases, visually formatted Excel (XLSX) files are also available,  containing the same information together with header lines  on each sheet.
 
 === Generic structure
 
@@ -585,27 +588,19 @@ The contents contains the following elements:
 include::tmp_variables_version.csv[]
 |===================================================
 
-For instance, the metadata for the R2016Q3 release of
+For instance, the metadata for the R2017Q1 release of
 Missouri QWI
 Sex by Age tabulations
 for No firm size or age detail
-(obtained from https://lehd.ces.census.gov/pub/mo/R2016Q3/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
+(obtained from https://lehd.ces.census.gov/pub/mo/R2017Q1/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
 --------------------------------
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL /pub/mo/R2016Q3/DVD-sa_f//version_sa_f.txt was not found on this server.</p>
-<hr>
-<address>Apache Server at lehd.ces.census.gov Port 80</address>
-</body></html>
+QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
 --------------------------------
-Similarly, the metadata for the R2016Q3 release of
+Similarly, the metadata for the R2017Q1 release of
 Missouri J2J
-tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2016Q3/j2j/mo//version_j2j.txt[here]) has  the following content:
+tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q1/j2j/mo//version_j2j.txt[here]) has  the following content:
 --------------------------------
-J2J  MO 29  2000:2-2015:3  V4.1.0 R2016Q3 j2jpu_mo_20161028_1522
+J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
 
@@ -626,14 +621,17 @@ The reference region will always be either the origin or the destination. Nation
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-04-04: Initial release
+- 2017-08-xx: Initial release
+
+=== Version 4.2b-draft from V4.2a-draft
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
 
 === Version 4.2a-draft from 4.1.1
-- See github
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1[Github]
 
 
 <<<
 *******************
-This revision: Tue Aug 15 18:37:23 EDT 2017
+This revision: Sun Aug 20 15:44:36 EDT 2017
 *******************
 
