@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.1.2
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-19 June 2017
+21 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -575,6 +575,8 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2017-06-19: Initial release
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
+
 
 === Version 4.1.2 from 4.1.1
 - 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB definitions
@@ -595,6 +597,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Mon Jun 19 12:48:41 EDT 2017
+This revision: Mon Aug 21 13:15:11 EDT 2017
 *******************
 
