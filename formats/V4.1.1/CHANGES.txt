@@ -3,6 +3,8 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2017-03-06: Initial release
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
+
 
 === Version 4.1.1 from 4.1.0
 - 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
