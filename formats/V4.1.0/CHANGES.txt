@@ -9,6 +9,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
 - 2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
 - 2017-03-07: Corrected naming of files inside shapefile ZIP files
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
 
 === Version 4.1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are

@@ -1,9 +1,9 @@
 Indicator Variable,Alternate Name,Status Flag,Indicator Name,Units,Base
 MHireR,all_doma2_rate,sMHireR,Hires,Rate,(MainB+MainE)/2
 MSepR,all_doms2_rate,sMSepR,Separations ,Rate,(MainB+MainE)/2
-MJobStartR,all_dest_rate,sMJobStartRate,Main Job Starts,Rate,(MainB+MainE)/2
-MJobEndR,all_orgin_rate,sMJobEndRate,Main Job Ends,Rate,(MainB+MainE)/2
-EEHireR,eea_rate,sEEHireRate,Job-to-Job Hires (Continuous Employment),Rate,(MainB+MainE)/2
+MJobStartR,all_dest_rate,sMJobStartR,Main Job Starts,Rate,(MainB+MainE)/2
+MJobEndR,all_orgin_rate,sMJobEndR,Main Job Ends,Rate,(MainB+MainE)/2
+EEHireR,eea_rate,sEEHireR,Job-to-Job Hires (Continuous Employment),Rate,(MainB+MainE)/2
 EESepR,ees_rate,sEESepR,Job-to-Job Separations (Continuous Employment),Rate,(MainB+MainE)/2
 AQHireR,aq_doma2_rate,sAQHireR,Job-to-Job Hires (Brief Nonemployment),Rate,(MainB+MainE)/2
 AQSepR,aq_doms2_rate,sAQSepR,Job-to-Job Separations (Brief Nonemployment),Rate,(MainB+MainE)/2
