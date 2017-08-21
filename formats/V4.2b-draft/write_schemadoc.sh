@@ -194,7 +194,7 @@ list the indicators available on each file.  The descriptor files themselves are
 - The ''Indicator Name'' is a non-abbreviated version of the ''Indicator Variable''.
 - The ''Description'' provides more verbose description of the variable.
 - ''Units'' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
-- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been developed yet.
+- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see link:label_concept.csv[label_concept.csv] for a draft version.
 - The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ==== National QWI and state-level QWI (QWIPU) ====

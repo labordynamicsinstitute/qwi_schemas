@@ -151,7 +151,8 @@ on each file. The descriptor files themselves are structured as follows:
     * 'Units' identify the type of variable according to a very simplified
       taxonomoy (not formalized yet): counts, rates, monetary amounts.
     * 'Concept' classifies the variables into higher-level concepts. The
-      taxonomy for these concepts has not been developed yet.
+      taxonomy for these concepts has not been finalized yet, see
+      label_concept.csv for a draft version.
     * The 'Base' indicates the denominator used to compute the statistic, and
       may be 1.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
@@ -910,7 +911,17 @@ agegrp label
   A06  45-54
   A07  55-64
   A08  65-99
-**** 6.2. education ****
+**** 6.2. concept ****
+( label_concept.csv )
+  Concept  Definition
+    Hire   Measure derived from the the first quarter that a job is the main
+           source of income (usually a hire)
+Separation Measure derived from the last quarter that a job is the main source
+           of income (usually a separation)
+Employment Measure counting the stock of all jobs at a point in time
+ Earnings  Measure of average earnings associated with a base employment or job
+           transition measure
+**** 6.3. education ****
 ( label_education.csv )
 education label
      E0   All Education Categories
@@ -919,13 +930,13 @@ education label
      E3   Some college or Associate degree
      E4   Bachelor’s degree or advanced degree
      E5   Educational attainment not available (workers aged 24 or younger)
-**** 6.3. ethnicity ****
+**** 6.4. ethnicity ****
 ( label_ethnicity.csv )
 ethnicity label
      A0   All Ethnicities
      A1   Not Hispanic or Latino
      A2   Hispanic or Latino
-**** 6.4. firmage ****
+**** 6.5. firmage ****
 ( label_firmage.csv )
 firmage label
     0   All Firm Ages
@@ -935,7 +946,7 @@ firmage label
     4   6-10 Years
     5   11+ Years
     N   Firm Age Not Available For Public-Sector Firms
-**** 6.5. firmsize ****
+**** 6.6. firmsize ****
 ( label_firmsize.csv )
 firmsize label
      0   All Firm Sizes
@@ -945,25 +956,25 @@ firmsize label
      4   250-499 Employees
      5   500+ Employees
      N   Firm Size Not Available For Public-Sector Firms
-**** 6.6. ownercode ****
+**** 6.7. ownercode ****
 ( label_ownercode.csv )
 ownercode label
     A00   All (1-5)
     A01   Federal government
     A05   All Private (5)
-**** 6.7. periodicity ****
+**** 6.8. periodicity ****
 ( label_periodicity.csv )
 periodicity label
        A    Annual data
        Q    Quarterly data
-**** 6.8. quarter ****
+**** 6.9. quarter ****
 ( label_quarter.csv )
 quarter label
     1   1st Quarter of the Year (January-March)
     2   2nd Quarter of the Year (April-June)
     3   3rd Quarter of the Year (July-September)
     4   4th Quarter of the Year (October-December)
-**** 6.9. race ****
+**** 6.10. race ****
 ( label_race.csv )
 race label
  A0  All Races
@@ -974,18 +985,18 @@ race label
  A5  Native Hawaiian or Other Pacific Islander Alone
  A6  Some Other Race Alone (Not Used)
  A7  Two or More Race Groups
-**** 6.10. seasonadj ****
+**** 6.11. seasonadj ****
 ( label_seasonadj.csv )
 seasonadj label
       S   Seasonally adjusted
       U   Not seasonally adjusted
-**** 6.11. sex ****
+**** 6.12. sex ****
 ( label_sex.csv )
 sex label
  0  All Sexes
  1  Male
  2  Female
-**** 6.12. stusps ****
+**** 6.13. stusps ****
 ( label_stusps.csv )
 geography stusps
      01   AL
@@ -1041,15 +1052,15 @@ geography stusps
      56   WY
      72   PR
      78   VI
-**** 6.13. Industry ****
-*** 6.13.1. Industry levels ***
+**** 6.14. Industry ****
+*** 6.14.1. Industry levels ***
 ( label_ind_level.csv )
 ind_level label
       A   All Industries
       S   NAICS Sectors
       3   NAICS Subsectors
       4   NAICS Industry Groups
-*** 6.13.2. Industry ***
+*** 6.14.2. Industry ***
 ( label_industry.csv )
 Only a small subset of available values shown. The 2012 NAICS (North American
 Industry Classification System) is used for all years. QWI releases prior to
@@ -1074,8 +1085,8 @@ industry label
    3112  Grain and Oilseed Milling
    3113  Sugar and Confectionery Product Manufacturing
     …
-6.14. Geography
-6.14.1.  Geographic levels
+6.15. Geography
+6.15.1.  Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each
 file label_geograpy_SCOPE.csv may contain one or more types of records as
 flagged by geo_level. For convenience, a composite file containing all geocodes
@@ -1103,7 +1114,7 @@ geo_level label         description                                             
       W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
           Investment    State Partners
           Areas
-6.14.2. National and state-level values
+6.15.2. National and state-level values
 ( label_fipsnum.csv )
 The file label_fipsnum.csv contains values and labels for all entities of
 geo_level N or S, and is a summary of separately available files.
@@ -1124,7 +1135,7 @@ geography label                     geo_level
      50   Vermont                         S
      51   Virginia                        S
      53   Washington                      S
-6.14.3. Detailed state and substate level values
+6.15.3. Detailed state and substate level values
 Note: cross-state CBSA, in records of type geo_level = M, are present on files
 of type label_geography_XX.csv. A particular cross-state CBSA will appear on
 multiple files.
@@ -1183,7 +1194,7 @@ States
    WI    label_geography_wi.csv
    WV    label_geography_wv.csv
    WY    label_geography_wy.csv
-**** 6.15. Aggregation level ****
+**** 6.16. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
 dimensions, including demographic characteristics, geography, industry, and
@@ -1318,6 +1329,6 @@ For a description of how schema files are versioned, see main_directory.
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Mon Aug 21 13:50:31 EDT 2017
+This revision: Mon Aug 21 16:14:41 EDT 2017
 ===============================================================================
-Last updated 2017-08-21 13:50:31 EDT
+Last updated 2017-08-21 16:14:41 EDT
