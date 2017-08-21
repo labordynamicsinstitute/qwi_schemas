@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.1.3 - CSV Naming Convention
-Lars Vilhuber <ces.qwi.feedback@census.gov>
-15 August 2017
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+21 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -11,9 +11,12 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-	
+
 
 Purpose
 -------
@@ -178,11 +181,12 @@ include::naming_ext.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-08-15: Initial release
+- 2017-08-21: Initial release
 
 === Version 4.1.3 from 4.1.2
 - 2017-08-15: Updated LEHD shape files for Texas WIB definitions
 - 2017-08-15: Update the source links of metro definitions from http://www.census.gov/population/metro/ (broken) to https://www.census.gov/programs-surveys/metro-micro.html
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
 
 === Version 4.1.2 from 4.1.1
 - 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB definitions
@@ -208,6 +212,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Aug 15 18:23:54 EDT 2017
+This revision: Mon Aug 21 13:16:40 EDT 2017
 *******************
 

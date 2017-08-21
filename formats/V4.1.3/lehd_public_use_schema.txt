@@ -1,14 +1,16 @@
 
 ****** LEHD Public Use Data Schema V4.1.3 ******
 Lars Vilhuber
-<lars.vilhuber@census.gov>
-15 August 2017
+<lars.vilhuber@cornell.edu>
+21 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at lars.vilhuber@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -306,48 +308,45 @@ Indicator Variable Alternate Name Status Flag Indicator Name              Units
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
-Indicator   Alternate Name    Status Flag  Indicator Name Units Base
+Indicator   Alternate Name  Status Flag Indicator Name    Units Base
  Variable
-   MHireR   all_doma2_rate       sMHireR   Hires          Rate  (MainB+MainE)/2
-   MSepR    all_doms2_rate        sMSepR   Separations    Rate  (MainB+MainE)/2
-MJobStartR   all_dest_rate  sMJobStartRate Main Job       Rate  (MainB+MainE)/2
-                                           Starts
- MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends  Rate  (MainB+MainE)/2
-  EEHireR        eea_rate     sEEHireRate  Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-                                           (Continuous
-                                           Employment)
-   EESepR        ees_rate        sEESepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Continuous
-                                           Employment)
-  AQHireR    aq_doma2_rate      sAQHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires (Brief
-                                           Nonemployment)
-   AQSepR    aq_doms2_rate       sAQSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Brief
-                                           Nonemployment)
- J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-  NEHireR    ne_doma2_rate      sNEHireR   Hires from     Rate  (MainB+MainE)/2
-                                           Nonemployment
-   ENSepR    en_doms2_rate       sENSepR   Separations to Rate  (MainB+MainE)/2
-                                           Nonemployment
-NEPersistR  ne2_doma2_rate    sNEPersistR  Hires from     Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
-ENPersistR  en2_doms2_rate    sENPersistR  Separations to Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
- NEFullQR  ne2p_doma2_rate     sNEFullQR   Hires from     Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
- ENFullQR  en2p_doms2_rate     sENFullQR   Separations to Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
+   MHireR   all_doma2_rate     sMHireR  Hires             Rate  (MainB+MainE)/2
+   MSepR    all_doms2_rate     sMSepR   Separations       Rate  (MainB+MainE)/2
+MJobStartR   all_dest_rate  sMJobStartR Main Job Starts   Rate  (MainB+MainE)/2
+ MJobEndR   all_orgin_rate   sMJobEndR  Main Job Ends     Rate  (MainB+MainE)/2
+  EEHireR        eea_rate     sEEHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+                                        (Continuous
+                                        Employment)
+   EESepR        ees_rate      sEESepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+                                        (Continuous
+                                        Employment)
+  AQHireR    aq_doma2_rate    sAQHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+                                        (Brief
+                                        Nonemployment)
+   AQSepR    aq_doms2_rate     sAQSepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+                                        (Brief
+                                        Nonemployment)
+ J2JHireR  eeall_doma2_rate  sJ2JHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+  J2JSepR  eeall_doms2_rate   sJ2JSepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+  NEHireR    ne_doma2_rate    sNEHireR  Hires from        Rate  (MainB+MainE)/2
+                                        Nonemployment
+   ENSepR    en_doms2_rate     sENSepR  Separations to    Rate  (MainB+MainE)/2
+                                        Nonemployment
+NEPersistR  ne2_doma2_rate  sNEPersistR Hires from        Rate  (MainB+MainE)/2
+                                        Persistent
+                                        Nonemployment
+ENPersistR  en2_doms2_rate  sENPersistR Separations to    Rate  (MainB+MainE)/2
+                                        Persistent
+                                        Nonemployment
+ NEFullQR  ne2p_doma2_rate   sNEFullQR  Hires from Full-  Rate  (MainB+MainE)/2
+                                        Quarter
+                                        Nonemployment
+ ENFullQR  en2p_doms2_rate   sENFullQR  Separations to    Rate  (MainB+MainE)/2
+                                        Full-Quarter
+                                        Nonemployment
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate Name Status Flag  Indicator Name           Units
@@ -854,12 +853,14 @@ flag label
 8.  Changes
 For a description of how schema files are versioned, see main_directory.
 **** 8.1. This version (revisions) ****
-    * 2017-08-15: Initial release
+    * 2017-08-21: Initial release
 **** 8.2. Version 4.1.3 from 4.1.2 ****
     * 2017-08-15: Updated LEHD shape files for Texas WIB definitions
     * 2017-08-15: Update the source links of metro definitions from http://
       www.census.gov/population/metro/ (broken) to https://www.census.gov/
       programs-surveys/metro-micro.html
+    * 2017-08-21: Corrected naming of three of the status flags that have
+      "Rate" at the end. That should be just "R".
 **** 8.3. Version 4.1.2 from 4.1.1 ****
     * 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB
       definitions
@@ -882,6 +883,6 @@ For a description of how schema files are versioned, see main_directory.
       actually on the CSV file
     * 2017-03-07: Updated 2016 geography in shapefiles
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Tue Aug 15 18:23:57 EDT 2017
+This revision: Mon Aug 21 13:16:43 EDT 2017
 ===============================================================================
-Last updated 2017-08-15 18:23:57 EDT
+Last updated 2017-08-21 13:16:43 EDT
