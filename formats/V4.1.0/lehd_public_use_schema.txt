@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1.0 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 March 2017
+21 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -308,48 +308,45 @@ Indicator Variable Alternate Name Status Flag Indicator Name              Units
 ( variables_j2jr.csv )
 Rates are computed from published data, and are provided as a convenience. The
 column Base indicates the denominator used to compute the rate.
-Indicator   Alternate Name    Status Flag  Indicator Name Units Base
+Indicator   Alternate Name  Status Flag Indicator Name    Units Base
  Variable
-   MHireR   all_doma2_rate       sMHireR   Hires          Rate  (MainB+MainE)/2
-   MSepR    all_doms2_rate        sMSepR   Separations    Rate  (MainB+MainE)/2
-MJobStartR   all_dest_rate  sMJobStartRate Main Job       Rate  (MainB+MainE)/2
-                                           Starts
- MJobEndR   all_orgin_rate   sMJobEndRate  Main Job Ends  Rate  (MainB+MainE)/2
-  EEHireR        eea_rate     sEEHireRate  Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-                                           (Continuous
-                                           Employment)
-   EESepR        ees_rate        sEESepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Continuous
-                                           Employment)
-  AQHireR    aq_doma2_rate      sAQHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires (Brief
-                                           Nonemployment)
-   AQSepR    aq_doms2_rate       sAQSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-                                           (Brief
-                                           Nonemployment)
- J2JHireR  eeall_doma2_rate    sJ2JHireR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Hires
-  J2JSepR  eeall_doms2_rate     sJ2JSepR   Job-to-Job     Rate  (MainB+MainE)/2
-                                           Separations
-  NEHireR    ne_doma2_rate      sNEHireR   Hires from     Rate  (MainB+MainE)/2
-                                           Nonemployment
-   ENSepR    en_doms2_rate       sENSepR   Separations to Rate  (MainB+MainE)/2
-                                           Nonemployment
-NEPersistR  ne2_doma2_rate    sNEPersistR  Hires from     Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
-ENPersistR  en2_doms2_rate    sENPersistR  Separations to Rate  (MainB+MainE)/2
-                                           Persistent
-                                           Nonemployment
- NEFullQR  ne2p_doma2_rate     sNEFullQR   Hires from     Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
- ENFullQR  en2p_doms2_rate     sENFullQR   Separations to Rate  (MainB+MainE)/2
-                                           Full-Quarter
-                                           Nonemployment
+   MHireR   all_doma2_rate     sMHireR  Hires             Rate  (MainB+MainE)/2
+   MSepR    all_doms2_rate     sMSepR   Separations       Rate  (MainB+MainE)/2
+MJobStartR   all_dest_rate  sMJobStartR Main Job Starts   Rate  (MainB+MainE)/2
+ MJobEndR   all_orgin_rate   sMJobEndR  Main Job Ends     Rate  (MainB+MainE)/2
+  EEHireR        eea_rate     sEEHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+                                        (Continuous
+                                        Employment)
+   EESepR        ees_rate      sEESepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+                                        (Continuous
+                                        Employment)
+  AQHireR    aq_doma2_rate    sAQHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+                                        (Brief
+                                        Nonemployment)
+   AQSepR    aq_doms2_rate     sAQSepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+                                        (Brief
+                                        Nonemployment)
+ J2JHireR  eeall_doma2_rate  sJ2JHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
+  J2JSepR  eeall_doms2_rate   sJ2JSepR  Job-to-Job        Rate  (MainB+MainE)/2
+                                        Separations
+  NEHireR    ne_doma2_rate    sNEHireR  Hires from        Rate  (MainB+MainE)/2
+                                        Nonemployment
+   ENSepR    en_doms2_rate     sENSepR  Separations to    Rate  (MainB+MainE)/2
+                                        Nonemployment
+NEPersistR  ne2_doma2_rate  sNEPersistR Hires from        Rate  (MainB+MainE)/2
+                                        Persistent
+                                        Nonemployment
+ENPersistR  en2_doms2_rate  sENPersistR Separations to    Rate  (MainB+MainE)/2
+                                        Persistent
+                                        Nonemployment
+ NEFullQR  ne2p_doma2_rate   sNEFullQR  Hires from Full-  Rate  (MainB+MainE)/2
+                                        Quarter
+                                        Nonemployment
+ ENFullQR  en2p_doms2_rate   sENFullQR  Separations to    Rate  (MainB+MainE)/2
+                                        Full-Quarter
+                                        Nonemployment
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
 Indicator Variable Alternate Name Status Flag  Indicator Name           Units
@@ -868,6 +865,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-03-06: Corrected bad reference to release RXXXX, which should have
       been R2016Q4
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
+    * 2017-08-21: Corrected naming of three of the status flags that have
+      "Rate" at the end. That should be just "R".
 **** 8.2. Version 4.1 from 4.0.5 ****
     * 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
     * Changed structure of state-level geography labels (flat directory
@@ -903,6 +902,6 @@ For a description of how schema files are versioned, see main_directory.
     * Sundry small additional changes, building out the schema
     * Changing of naming convention for to-be-released files based on federal
       government from fg → of. At this time, no such files have been released.
-This revision: Tue Mar 7 09:00:42 EST 2017
+This revision: Mon Aug 21 13:11:17 EDT 2017
 ===============================================================================
-Last updated 2017-03-07 09:00:42 EST
+Last updated 2017-08-21 13:11:17 EDT
