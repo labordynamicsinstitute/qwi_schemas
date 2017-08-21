@@ -186,7 +186,16 @@ echo "
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator. The ''Base'' indicates the denominator used to compute the statistic, and may be '1'. ''Units'' identify the type of variable: counts, rates, monetary amounts.
+list the indicators available on each file.  The descriptor files themselves are structured as follows:
+
+- The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications.
+- When given, the ''Alternate name'' may appear in related documentation and articles.
+- The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>).
+- The ''Indicator Name'' is a non-abbreviated version of the ''Indicator Variable''.
+- The ''Description'' provides more verbose description of the variable.
+- ''Units'' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
+- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been developed yet.
+- The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ==== National QWI and state-level QWI (QWIPU) ====
 
@@ -202,7 +211,7 @@ Rates are computed from published data, and are provided as a convenience.
 
 
 ( link:variables_qwir.csv[variables_qwir.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,<2\",options=\"header\"]
 |===================================================
 include::variables_qwir.csv[]
 |===================================================

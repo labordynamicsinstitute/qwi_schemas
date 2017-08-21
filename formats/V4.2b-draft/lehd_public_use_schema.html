@@ -20,7 +20,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema V4.2b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">20 August 2017</span>
+<span id="revdate">21 August 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -565,7 +565,49 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_a_id_indicators_a_indicators">5.3. <a id="indicators"></a>Indicators</h3>
 <div class="paragraph"><p>The following tables and associated mapping files
-list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator. The <em>'Base</em>' indicates the denominator used to compute the statistic, and may be <em>1</em>. <em>'Units</em>' identify the type of variable: counts, rates, monetary amounts.</p></div>
+list the indicators available on each file.  The descriptor files themselves are structured as follows:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications.
+</p>
+</li>
+<li>
+<p>
+When given, the <em>'Alternate name</em>' may appear in related documentation and articles.
+</p>
+</li>
+<li>
+<p>
+The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>).
+</p>
+</li>
+<li>
+<p>
+The <em>'Indicator Name</em>' is a non-abbreviated version of the <em>'Indicator Variable</em>'.
+</p>
+</li>
+<li>
+<p>
+The <em>'Description</em>' provides more verbose description of the variable.
+</p>
+</li>
+<li>
+<p>
+<em>'Units</em>' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
+</p>
+</li>
+<li>
+<p>
+<em>'Concept</em>' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been developed yet.
+</p>
+</li>
+<li>
+<p>
+The <em>'Base</em>' indicates the denominator used to compute the statistic, and may be <em>1</em>.
+</p>
+</li>
+</ul></div>
 <div class="sect3">
 <h4 id="_national_qwi_and_state_level_qwi_qwipu">5.3.1. National QWI and state-level QWI (QWIPU)</h4>
 <div class="paragraph"><p>( <a href="variables_qwi.csv">variables_qwi.csv</a> )</p></div>
@@ -929,19 +971,23 @@ cellspacing="0" cellpadding="4">
 width="95%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="13%" />
-<col width="13%" />
-<col width="13%" />
-<col width="33%" />
-<col width="13%" />
-<col width="13%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="22%" />
+<col width="22%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
 <thead>
 <tr>
 <th align="center" valign="top">Indicator Variable</th>
 <th align="center" valign="top">Alternate name</th>
 <th align="center" valign="top">Status Flag</th>
 <th align="left" valign="top">Indicator Name</th>
+<th align="left" valign="top">Description</th>
 <th align="left" valign="top">Units</th>
+<th align="left" valign="top">Concept</th>
 <th align="left" valign="top">Base</th>
 </tr>
 </thead>
@@ -951,7 +997,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">AR</p></td>
 <td align="center" valign="top"><p class="table">sHirAR</p></td>
 <td align="left" valign="top"><p class="table">Hiring Rate (All Accessions)</p></td>
+<td align="left" valign="top"><p class="table">All accessions as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -959,7 +1007,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">HR</p></td>
 <td align="center" valign="top"><p class="table">sHirNR</p></td>
 <td align="left" valign="top"><p class="table">New Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">New hires as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -967,7 +1017,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">RR</p></td>
 <td align="center" valign="top"><p class="table">sHirRR</p></td>
 <td align="left" valign="top"><p class="table">Recall Rate</p></td>
+<td align="left" valign="top"><p class="table">Recall hires as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -975,7 +1027,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">SR</p></td>
 <td align="center" valign="top"><p class="table">sSepR</p></td>
 <td align="left" valign="top"><p class="table">Separation Rate (All Separations)</p></td>
+<td align="left" valign="top"><p class="table">All separations as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -983,7 +1037,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">CAR</p></td>
 <td align="center" valign="top"><p class="table">sHirAEndR</p></td>
 <td align="left" valign="top"><p class="table">End-of-Quarter Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">Hires as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -991,7 +1047,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">CSR</p></td>
 <td align="center" valign="top"><p class="table">sSepBegR</p></td>
 <td align="left" valign="top"><p class="table">Beginning-of-Quarter Separation Rate</p></td>
+<td align="left" valign="top"><p class="table">Separations as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -999,7 +1057,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FAR</p></td>
 <td align="center" valign="top"><p class="table">sHirAsR</p></td>
 <td align="left" valign="top"><p class="table">Hiring Rate (Flows into Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Flows into stable employment as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1007,7 +1067,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FHR</p></td>
 <td align="center" valign="top"><p class="table">sHirNsR</p></td>
 <td align="left" valign="top"><p class="table">New Hiring Rate (New Hires to Full-Quarter Status)</p></td>
+<td align="left" valign="top"><p class="table">New hires into stable employment as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1015,7 +1077,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FSR</p></td>
 <td align="center" valign="top"><p class="table">sSepSR</p></td>
 <td align="left" valign="top"><p class="table">Separation Rate (Flows out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Flows out of stable employment as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1023,7 +1087,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FSnxR</p></td>
 <td align="center" valign="top"><p class="table">sSepSnxR</p></td>
 <td align="left" valign="top"><p class="table">Separation Rate in the Next Quarter (Flow out of Full-Quarter Employment)</p></td>
+<td align="left" valign="top"><p class="table">Flow rate out of stable employment in the next quarter</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1031,7 +1097,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FTR</p></td>
 <td align="center" valign="top"><p class="table">sTurnOvrSR</p></td>
 <td align="left" valign="top"><p class="table">Turnover Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">The rate at which stable jobs begin and end</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Turnover</p></td>
 <td align="left" valign="top"><p class="table">2*EmpS</p></td>
 </tr>
 <tr>
@@ -1039,7 +1107,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">JCR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbGnR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Gain Rate (Job Creation Rate)</p></td>
+<td align="left" valign="top"><p class="table">Estimated number of jobs gained at firms throughout the quarter as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -1047,7 +1117,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">JDR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbLsR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Loss Rate (Job Destruction Rate)</p></td>
+<td align="left" valign="top"><p class="table">Estimated number of jobs lost at firms throughout the quarter  as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -1055,7 +1127,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">JFR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbCR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Change Rate (Net Change Rate)</p></td>
+<td align="left" valign="top"><p class="table">Difference between firm job gain and firm job loss  as a percent of average employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Flow</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -1063,7 +1137,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">EIR</p></td>
 <td align="center" valign="top"><p class="table">sHirAEndReplR</p></td>
 <td align="left" valign="top"><p class="table">Replacement Hiring Rate</p></td>
+<td align="left" valign="top"><p class="table">Replacement hires as a percent of  average  employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(Emp + EmpEnd)/2</p></td>
 </tr>
 <tr>
@@ -1071,7 +1147,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FJCR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbGnSR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Gain Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Estimated number of full-quarter jobs gained at firms as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1079,7 +1157,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FJDR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbLsSR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Loss Rate (Stable)</p></td>
+<td align="left" valign="top"><p class="table">Estimated number of full-quarter jobs lost at firms as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 <tr>
@@ -1087,7 +1167,9 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">FJFR</p></td>
 <td align="center" valign="top"><p class="table">sFrmJbCSR</p></td>
 <td align="left" valign="top"><p class="table">Firm Job Change Rate (Stable; Net Change Rate)</p></td>
+<td align="left" valign="top"><p class="table">Net growth in jobs that last a full quarter as a percent of average stable employment</p></td>
 <td align="left" valign="top"><p class="table">Rate</p></td>
+<td align="left" valign="top"><p class="table">Flow</p></td>
 <td align="left" valign="top"><p class="table">(EmpSpv + EmpS)/2</p></td>
 </tr>
 </tbody>
@@ -4039,7 +4121,7 @@ See <a href="https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?c
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Sun Aug 20 15:44:36 EDT 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Aug 21 13:50:31 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -4049,7 +4131,7 @@ See <a href="https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?c
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-08-20 15:44:36 EDT
+ 2017-08-21 13:50:31 EDT
 </div>
 </div>
 </body>

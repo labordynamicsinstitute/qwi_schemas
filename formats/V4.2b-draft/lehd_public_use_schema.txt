@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-20 August 2017
+21 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -137,14 +137,23 @@ periodicity Char(1) Periodicity of report
    quarter     Num  Time: Quarter
 5.3. Indicators
 The following tables and associated mapping files list the indicators available
-on each file. The 'Indicator Variable' is the short name of the variable on the
-CSV files, suitable for machine processing in a wide variety of statistical
-applications. When given, the 'Alternate name' may appear in related
-documentation and articles. The 'Status Flag' is used to indicate publication
-or data quality status (see Status_Flags). The 'Indicator Name' is a more
-verbose description of the indicator. The 'Base' indicates the denominator used
-to compute the statistic, and may be 1. 'Units' identify the type of variable:
-counts, rates, monetary amounts.
+on each file. The descriptor files themselves are structured as follows:
+    * The 'Indicator Variable' is the short name of the variable on the CSV
+      files, suitable for machine processing in a wide variety of statistical
+      applications.
+    * When given, the 'Alternate name' may appear in related documentation and
+      articles.
+    * The 'Status Flag' is used to indicate publication or data quality status
+      (see Status_Flags).
+    * The 'Indicator Name' is a non-abbreviated version of the 'Indicator
+      Variable'.
+    * The 'Description' provides more verbose description of the variable.
+    * 'Units' identify the type of variable according to a very simplified
+      taxonomoy (not formalized yet): counts, rates, monetary amounts.
+    * 'Concept' classifies the variables into higher-level concepts. The
+      taxonomy for these concepts has not been developed yet.
+    * The 'Base' indicates the denominator used to compute the statistic, and
+      may be 1.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
   Indicator  Alternate  Status Flag  Indicator    Description   Units   Concept       Base
@@ -381,63 +390,137 @@ HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire    
 *** 5.3.2. National QWI and state-level QWI rates (QWIPUR) ***
 Rates are computed from published data, and are provided as a convenience.
 ( variables_qwir.csv )
-  Indicator  Alternate name  Status Flag  Indicator Name  Units Base
-   Variable
-     HirAR            AR         sHirAR   Hiring Rate     Rate  (Emp + EmpEnd)/
-                                          (All                  2
-                                          Accessions)
-     HirNR            HR         sHirNR   New Hiring Rate Rate  (Emp + EmpEnd)/
-                                                                2
-     HirRR            RR         sHirRR   Recall Rate     Rate  (Emp + EmpEnd)/
-                                                                2
-      SepR            SR          sSepR   Separation Rate Rate  (Emp + EmpEnd)/
-                                          (All                  2
-                                          Separations)
-   HirAEndR          CAR       sHirAEndR  End-of-Quarter  Rate  (Emp + EmpEnd)/
-                                          Hiring Rate           2
-   SepBegR           CSR       sSepBegR   Beginning-of-   Rate  (Emp + EmpEnd)/
-                                          Quarter               2
-                                          Separation Rate
-    HirAsR           FAR        sHirAsR   Hiring Rate     Rate  (EmpSpv +
-                                          (Flows into           EmpS)/2
-                                          Full-Quarter
-                                          Employment)
-    HirNsR           FHR        sHirNsR   New Hiring Rate Rate  (EmpSpv +
-                                          (New Hires to         EmpS)/2
-                                          Full-Quarter
-                                          Status)
-     SepSR           FSR         sSepSR   Separation Rate Rate  (EmpSpv +
-                                          (Flows out of         EmpS)/2
-                                          Full-Quarter
-                                          Employment)
-   SepSnxR         FSnxR       sSepSnxR   Separation Rate Rate  (EmpSpv +
-                                          in the Next           EmpS)/2
-                                          Quarter (Flow
-                                          out of Full-
-                                          Quarter
-                                          Employment)
-  TurnOvrSR          FTR      sTurnOvrSR  Turnover Rate   Rate  2*EmpS
-                                          (Stable)
-   FrmJbGnR          JCR       sFrmJbGnR  Firm Job Gain   Rate  (Emp + EmpEnd)/
-                                          Rate (Job             2
-                                          Creation Rate)
-   FrmJbLsR          JDR       sFrmJbLsR  Firm Job Loss   Rate  (Emp + EmpEnd)/
-                                          Rate (Job             2
-                                          Destruction
-                                          Rate)
-   FrmJbCR           JFR       sFrmJbCR   Firm Job Change Rate  (Emp + EmpEnd)/
-                                          Rate (Net             2
-                                          Change Rate)
-HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
-                                          Hiring Rate           2
-  FrmJbGnSR         FJCR      sFrmJbGnSR  Firm Job Gain   Rate  (EmpSpv +
-                                          Rate (Stable)         EmpS)/2
-  FrmJbLsSR         FJDR      sFrmJbLsSR  Firm Job Loss   Rate  (EmpSpv +
-                                          Rate (Stable)         EmpS)/2
-   FrmJbCSR         FJFR       sFrmJbCSR  Firm Job Change Rate  (EmpSpv +
-                                          Rate (Stable;         EmpS)/2
-                                          Net Change
-                                          Rate)
+  Indicator  Alternate  Status Flag  Indicator    Description Units Concept    Base
+   Variable    name                  Name
+     HirAR        AR        sHirAR   Hiring Rate  All         Rate  Hire       (Emp +
+                                     (All         accessions                   EmpEnd)/
+                                     Accessions)  as a                         2
+                                                  percent of
+                                                  average
+                                                  employment
+     HirNR        HR        sHirNR   New Hiring   New hires   Rate  Hire       (Emp +
+                                     Rate         as a                         EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+     HirRR        RR        sHirRR   Recall Rate  Recall      Rate  Hire       (Emp +
+                                                  hires as a                   EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+      SepR        SR         sSepR   Separation   All         Rate  Separation (Emp +
+                                     Rate (All    separations                  EmpEnd)/
+                                     Separations) as a                         2
+                                                  percent of
+                                                  average
+                                                  employment
+   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a  Rate  Hire       (Emp +
+                                     Quarter      percent of                   EmpEnd)/
+                                     Hiring Rate  average                      2
+                                                  employment
+   SepBegR       CSR      sSepBegR   Beginning-   Separations Rate  Separation (Emp +
+                                     of-Quarter   as a                         EmpEnd)/
+                                     Separation   percent of                   2
+                                     Rate         average
+                                                  employment
+    HirAsR       FAR       sHirAsR   Hiring Rate  Flows into  Rate  Hire       (EmpSpv
+                                     (Flows into  stable                       + EmpS)/
+                                     Full-Quarter employment                   2
+                                     Employment)  as a
+                                                  percent of
+                                                  average
+                                                  stable
+                                                  employment
+    HirNsR       FHR       sHirNsR   New Hiring   New hires   Rate  Hire       (EmpSpv
+                                     Rate (New    into stable                  + EmpS)/
+                                     Hires to     employment                   2
+                                     Full-Quarter as a
+                                     Status)      percent of
+                                                  average
+                                                  stable
+                                                  employment
+     SepSR       FSR        sSepSR   Separation   Flows out   Rate  Separation (EmpSpv
+                                     Rate (Flows  of stable                    + EmpS)/
+                                     out of Full- employment                   2
+                                     Quarter      as a
+                                     Employment)  percent of
+                                                  average
+                                                  stable
+                                                  employment
+   SepSnxR      FSnxR     sSepSnxR   Separation   Flow rate   Rate  Separation (EmpSpv
+                                     Rate in the  out of                       + EmpS)/
+                                     Next Quarter stable                       2
+                                     (Flow out of employment
+                                     Full-Quarter in the next
+                                     Employment)  quarter
+  TurnOvrSR      FTR     sTurnOvrSR  Turnover     The rate at Rate  Turnover   2*EmpS
+                                     Rate         which
+                                     (Stable)     stable jobs
+                                                  begin and
+                                                  end
+   FrmJbGnR      JCR      sFrmJbGnR  Firm Job     Estimated   Rate  Hire       (Emp +
+                                     Gain Rate    number of                    EmpEnd)/
+                                     (Job         jobs gained                  2
+                                     Creation     at firms
+                                     Rate)        throughout
+                                                  the quarter
+                                                  as a
+                                                  percent of
+                                                  average
+                                                  employment
+   FrmJbLsR      JDR      sFrmJbLsR  Firm Job     Estimated   Rate  Separation (Emp +
+                                     Loss Rate    number of                    EmpEnd)/
+                                     (Job         jobs lost                    2
+                                     Destruction  at firms
+                                     Rate)        throughout
+                                                  the quarter
+                                                  as a
+                                                  percent of
+                                                  average
+                                                  employment
+   FrmJbCR       JFR      sFrmJbCR   Firm Job     Difference  Rate  Flow       (Emp +
+                                     Change Rate  between                      EmpEnd)/
+                                     (Net Change  firm job                     2
+                                     Rate)        gain and
+                                                  firm job
+                                                  loss as a
+                                                  percent of
+                                                  average
+                                                  employment
+HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (Emp +
+                                     Hiring Rate  hires as a                   EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+  FrmJbGnSR     FJCR     sFrmJbGnSR  Firm Job     Estimated   Rate  Hire       (EmpSpv
+                                     Gain Rate    number of                    + EmpS)/
+                                     (Stable)     full-                        2
+                                                  quarter
+                                                  jobs gained
+                                                  at firms as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
+  FrmJbLsSR     FJDR     sFrmJbLsSR  Firm Job     Estimated   Rate  Separation (EmpSpv
+                                     Loss Rate    number of                    + EmpS)/
+                                     (Stable)     full-                        2
+                                                  quarter
+                                                  jobs lost
+                                                  at firms as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
+   FrmJbCSR     FJFR      sFrmJbCSR  Firm Job     Net growth  Rate  Flow       (EmpSpv
+                                     Change Rate  in jobs                      + EmpS)/
+                                     (Stable; Net that last a                  2
+                                     Change Rate) full
+                                                  quarter as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
 *** 5.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
       Indicator      Alternate Name       Status Flag   Indicator Name Description                        Units   Concept        Base
@@ -1235,6 +1318,6 @@ For a description of how schema files are versioned, see main_directory.
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Sun Aug 20 15:44:36 EDT 2017
+This revision: Mon Aug 21 13:50:31 EDT 2017
 ===============================================================================
-Last updated 2017-08-20 15:44:36 EDT
+Last updated 2017-08-21 13:50:31 EDT
