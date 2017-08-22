@@ -70,7 +70,7 @@ link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@corne
 ==============================================
 	" >> $asciifile
 	;;
-	draft)
+	draft|lehd)
 	echo "
 [IMPORTANT]
 .Important
@@ -79,7 +79,7 @@ This specification is draft. Feedback is welcome. Please write us at link:mailto
 ==============================================
 	" >> $asciifile
 	;;
-	official|lehd)
+	official)
 	echo "
 [IMPORTANT]
 .Important

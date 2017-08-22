@@ -62,7 +62,7 @@ link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@corne
 ==============================================
 	" >> $asciifile
 	;;
-	draft)
+	draft|lehd)
 	echo "
 [IMPORTANT]
 .Important
@@ -71,7 +71,7 @@ This specification is draft. Feedback is welcome. Please write us at link:mailto
 ==============================================
 	" >> $asciifile
 	;;
-	official|lehd)
+	official)
 	echo "
 [IMPORTANT]
 .Important
@@ -87,8 +87,8 @@ Purpose
 -------
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+These data are available  through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -108,7 +108,7 @@ This version supersedes V4.1.0, for files released as of R2017Q1.
 
 Basic Schema
 ------------
-Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>. In some cases, visually formatted Excel (XLSX) files are also available,  containing the same information together with header lines  on each sheet.
 
 === Generic structure
 
