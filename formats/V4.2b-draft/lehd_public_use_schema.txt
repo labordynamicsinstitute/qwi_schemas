@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-21 August 2017
+01 September 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -1324,11 +1324,14 @@ meet Census Bureau publication standards.
 9.  Changes
 For a description of how schema files are versioned, see main_directory.
 **** 9.1. This version (revisions) ****
-    * 2017-08-xx: Initial release
+    * 2017-08-21: Initial release
+    * 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This
+      does not affect the structure or contents of any released data files, but
+      it affects the unreleased J2J app updates downstream.
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Mon Aug 21 16:14:41 EDT 2017
+This revision: Fri Sep 1 09:37:50 EDT 2017
 ===============================================================================
-Last updated 2017-08-21 16:14:41 EDT
+Last updated 2017-09-01 09:37:50 EDT

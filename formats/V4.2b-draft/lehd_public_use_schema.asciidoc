@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.2b-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-21 August 2017
+01 September 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -638,7 +638,8 @@ The reference region will always be either the origin or the destination. Nation
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-08-xx: Initial release
+- 2017-08-21: Initial release
+- 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
@@ -649,6 +650,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Mon Aug 21 16:14:41 EDT 2017
+This revision: Fri Sep  1 09:37:50 EDT 2017
 *******************
 

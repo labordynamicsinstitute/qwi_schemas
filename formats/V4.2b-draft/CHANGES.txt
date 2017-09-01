@@ -2,7 +2,8 @@
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-08-xx: Initial release
+- 2017-08-21: Initial release
+- 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
