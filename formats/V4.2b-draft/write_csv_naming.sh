@@ -57,7 +57,7 @@ echo "
 This document is not an official Census Bureau publication. It is compiled from publicly accessible information
 by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+link:mailto:${author}?subject=LEHD_Schema_v4[${author}].
 ==============================================
 " >> $asciifile
   ;;
