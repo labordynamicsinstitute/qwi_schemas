@@ -19,8 +19,8 @@ asciidoc.install(3);
 <div id="header">
 <h1>LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">20 August 2017</span>
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@census.gov">lars.vilhuber@census.gov</a>&gt;</code></span><br />
+<span id="revdate">01 September 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,10 +37,7 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
-Feedback is welcome. Please write us at
-<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft">lars.vilhuber@census.gov</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -457,7 +454,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Main Job Starts</p></td>
 <td align="left" valign="top"><p class="table">New main jobs due to hires and instances when a previously existing secondary job becomes the main source of earnings</p></td>
 <td align="left" valign="top"><p class="table">Count</p></td>
-<td align="left" valign="top"><p class="table">Employment</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
 <td align="center" valign="top"><p class="table">1</p></td>
 </tr>
 <tr>
@@ -467,7 +464,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Main Job Ends</p></td>
 <td align="left" valign="top"><p class="table">End of main jobs due to separations and instances when another job becomes the main source of earnings</p></td>
 <td align="left" valign="top"><p class="table">Count</p></td>
-<td align="left" valign="top"><p class="table">Employment</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
 <td align="center" valign="top"><p class="table">1</p></td>
 </tr>
 <tr>
@@ -609,6 +606,136 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Count</p></td>
 <td align="left" valign="top"><p class="table">Employment</p></td>
 <td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EESepS</p></td>
+<td align="center" valign="top"><p class="table">fee_doms2</p></td>
+<td align="center" valign="top"><p class="table">sEESepS</p></td>
+<td align="left" valign="top"><p class="table">Stable Job-to-Job Separations (Continuous Employment)</p></td>
+<td align="left" valign="top"><p class="table">Separations from stable employment followed by a hire to stable employment with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EEHireS</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2</p></td>
+<td align="center" valign="top"><p class="table">sEEHireS</p></td>
+<td align="left" valign="top"><p class="table">Stable Job-to-Job Hires (Continuous Employment)</p></td>
+<td align="left" valign="top"><p class="table">Hires to stable employment following a separation from stable employment with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AQSepS</p></td>
+<td align="center" valign="top"><p class="table">faq_doms2</p></td>
+<td align="center" valign="top"><p class="table">sAQSepS</p></td>
+<td align="left" valign="top"><p class="table">Stable Job-to-Job Separations (Brief Nonemployment)</p></td>
+<td align="left" valign="top"><p class="table">Separations from stable employment followed by a hire to stable employment with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AQHireS</p></td>
+<td align="center" valign="top"><p class="table">faq_doma2</p></td>
+<td align="center" valign="top"><p class="table">sAQHireS</p></td>
+<td align="left" valign="top"><p class="table">Stable Job-to-Job Hires (Brief Nonemployment)</p></td>
+<td align="left" valign="top"><p class="table">Hires to stable employment following a separation from stable employment with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NEPersistS</p></td>
+<td align="center" valign="top"><p class="table">fne2_doma2</p></td>
+<td align="center" valign="top"><p class="table">sNEPersistS</p></td>
+<td align="left" valign="top"><p class="table">Stable Hires from Persistent Nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Hires to stable employment following a spell of persistent nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Hire</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ENPersistS</p></td>
+<td align="center" valign="top"><p class="table">fen2_doms2</p></td>
+<td align="center" valign="top"><p class="table">sENPersistS</p></td>
+<td align="left" valign="top"><p class="table">Stable Separations to Persistent Nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Separations from stable employment into a spell of persistent nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Separation</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">JobStayS</p></td>
+<td align="center" valign="top"><p class="table">f4dombe</p></td>
+<td align="center" valign="top"><p class="table">sJobStayS</p></td>
+<td align="left" valign="top"><p class="table">Stable Job Stayer</p></td>
+<td align="left" valign="top"><p class="table">Stable main jobs that did not change during the reference quarter</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Employment</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MainBS</p></td>
+<td align="center" valign="top"><p class="table">fdomb</p></td>
+<td align="center" valign="top"><p class="table">sMainBS</p></td>
+<td align="left" valign="top"><p class="table">Stable Employment (Beginning of Quarter)</p></td>
+<td align="left" valign="top"><p class="table">Stable main jobs held on the first day of the quarter</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Employment</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MainES</p></td>
+<td align="center" valign="top"><p class="table">fdome</p></td>
+<td align="center" valign="top"><p class="table">sMainES</p></td>
+<td align="left" valign="top"><p class="table">Stable Employment (End of Quarter)</p></td>
+<td align="left" valign="top"><p class="table">Stable main jobs held on the last day of the quarter</p></td>
+<td align="left" valign="top"><p class="table">Count</p></td>
+<td align="left" valign="top"><p class="table">Employment</p></td>
+<td align="center" valign="top"><p class="table">1</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NEHireSEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">fne2_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sNEHireSEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Stable Hires from Persistent Nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following hires to stable employment from a spell of persistent nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">NEPersistS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ENSepSEarn_Orig</p></td>
+<td align="center" valign="top"><p class="table">fen2_doms2_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">sENSepSEarn_Orig</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Stable Separations to Persistent Nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to separations from stable employment into a spell of persistent nonemployment</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">ENPersistS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">JobStaySEarn_Orig</p></td>
+<td align="center" valign="top"><p class="table">f4dombe_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">sJobStaySEarn_Orig</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Stable Job Stayer</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings in the previous quarter when workers stayed in a stable job</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">JobStayS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">JobStaySEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">f4dombe_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sJobStaySEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Stable Job Stayer</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings in the quarter when workers stayed in a stable job</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">JobStayS</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">MHireR</p></td>
@@ -830,6 +957,66 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Flow</p></td>
 <td align="center" valign="top"><p class="table">1</p></td>
 </tr>
+<tr>
+<td align="center" valign="top"><p class="table">EESEarn_Orig</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sEESEarn_Orig</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Continuous Employment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">EES</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EESEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">sEESEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Continuous Employment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">EES</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AQHireSEarn_Orig</p></td>
+<td align="center" valign="top"><p class="table">faq_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sAQHireSEarn_Orig</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Brief Employment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">AQHireS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AQHireSEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">faq_doma2_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">sAQHireSEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Brief Employment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">AQHireS</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">J2JSEarn_Orig</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2_kfqearn+faq_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sJ2JSEarn_Orig</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short or no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">EESEarn_orig*EES)+(AQHireSEarn_orig*AQHireS/(EES+AQHireS)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">J2JSEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2_jfqearn+faq_doma2_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">sJ2JSEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short or no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">EESEarn_dest*EES) + (AQHireSEarn_dest*AQHireS/(EES+AQHireS)</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -900,7 +1087,44 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_education">6.2. education</h3>
+<h3 id="_concept">6.2. concept</h3>
+<div class="paragraph"><p>( <a href="label_concept.csv">label_concept.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">Concept</th>
+<th align="left" valign="top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">Hire</p></td>
+<td align="left" valign="top"><p class="table">Measure derived from the the first quarter that a job is the main source of income (usually a hire)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Separation</p></td>
+<td align="left" valign="top"><p class="table">Measure derived from the last quarter that a job is the main source of income (usually a separation)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Employment</p></td>
+<td align="left" valign="top"><p class="table">Measure counting the stock of all jobs at a point in time</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Earnings</p></td>
+<td align="left" valign="top"><p class="table">Measure of average earnings associated with a base employment or job transition measure</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_education">6.3. education</h3>
 <div class="paragraph"><p>( <a href="label_education.csv">label_education.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -945,7 +1169,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ethnicity">6.3. ethnicity</h3>
+<h3 id="_ethnicity">6.4. ethnicity</h3>
 <div class="paragraph"><p>( <a href="label_ethnicity.csv">label_ethnicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -978,7 +1202,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmage">6.4. firmage</h3>
+<h3 id="_firmage">6.5. firmage</h3>
 <div class="paragraph"><p>( <a href="label_firmage.csv">label_firmage.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1027,7 +1251,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_firmsize">6.5. firmsize</h3>
+<h3 id="_firmsize">6.6. firmsize</h3>
 <div class="paragraph"><p>( <a href="label_firmsize.csv">label_firmsize.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1076,7 +1300,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ownercode">6.6. ownercode</h3>
+<h3 id="_ownercode">6.7. ownercode</h3>
 <div class="paragraph"><p>( <a href="label_ownercode.csv">label_ownercode.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1109,7 +1333,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_periodicity">6.7. periodicity</h3>
+<h3 id="_periodicity">6.8. periodicity</h3>
 <div class="paragraph"><p>( <a href="label_periodicity.csv">label_periodicity.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1138,7 +1362,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quarter">6.8. quarter</h3>
+<h3 id="_quarter">6.9. quarter</h3>
 <div class="paragraph"><p>( <a href="label_quarter.csv">label_quarter.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1175,7 +1399,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_race">6.9. race</h3>
+<h3 id="_race">6.10. race</h3>
 <div class="paragraph"><p>( <a href="label_race.csv">label_race.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1228,7 +1452,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_seasonadj">6.10. seasonadj</h3>
+<h3 id="_seasonadj">6.11. seasonadj</h3>
 <div class="paragraph"><p>( <a href="label_seasonadj.csv">label_seasonadj.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1257,7 +1481,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_sex">6.11. sex</h3>
+<h3 id="_sex">6.12. sex</h3>
 <div class="paragraph"><p>( <a href="label_sex.csv">label_sex.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1290,7 +1514,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_stusps">6.12. stusps</h3>
+<h3 id="_stusps">6.13. stusps</h3>
 <div class="paragraph"><p>( <a href="label_stusps.csv">label_stusps.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1524,9 +1748,9 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_industry">6.13. Industry</h3>
+<h3 id="_industry">6.14. Industry</h3>
 <div class="sect3">
-<h4 id="ind_level">6.13.1. Industry levels</h4>
+<h4 id="ind_level">6.14.1. Industry levels</h4>
 <div class="paragraph"><p>( <a href="label_ind_level.csv">label_ind_level.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -1563,7 +1787,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_industry_2">6.13.2. Industry</h4>
+<h4 id="_industry_2">6.14.2. Industry</h4>
 <div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
 <div class="paragraph"><p>Only a small subset of available values shown.
 The 2012 NAICS (North American Industry Classification System) is used for all years.
@@ -1658,9 +1882,9 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geography">6.14. Geography</h3>
+<h3 id="_geography">6.15. Geography</h3>
 <div class="sect3">
-<h4 id="geo_level">6.14.1. <a id="geolevel"></a> Geographic levels</h4>
+<h4 id="geo_level">6.15.1. <a id="geolevel"></a> Geographic levels</h4>
 <div class="paragraph"><p>Geography labels for data files are provided in separate files, by scope. Each file <em>label_geograpy_SCOPE.csv</em> may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv">label_geography.csv</a>.
 The 2015 vintage of   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">Census TIGER/Line geography</a> is used for all tabulations as of the R2015Q4 release.</p></div>
 <div class="paragraph"><p>Shapefiles are described in a <a href="lehd_shapefiles.html">separate document</a>.</p></div>
@@ -1724,7 +1948,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_national_and_state_level_values">6.14.2. National and state-level values</h4>
+<h4 id="_national_and_state_level_values">6.15.2. National and state-level values</h4>
 <div class="paragraph"><p>( <a href="label_fipsnum.csv">label_fipsnum.csv</a> )</p></div>
 <div class="paragraph"><p>The file <a href="label_fipsnum.csv">label_fipsnum.csv</a> contains values and labels
 for all entities of <a href="#geolevel">geo_level</a> <em>N</em> or <em>S</em>, and is a summary of separately available files.</p></div>
@@ -1829,7 +2053,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect3">
-<h4 id="_detailed_state_and_substate_level_values">6.14.3. Detailed state and substate level values</h4>
+<h4 id="_detailed_state_and_substate_level_values">6.15.3. Detailed state and substate level values</h4>
 <div class="paragraph"><p>Note: cross-state CBSA, in records of type <a href="#geolevel">geo_level</a> = M, are present on files of type <em>label_geography_XX.csv</em>. A particular cross-state CBSA will appear on multiple files.</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -2068,7 +2292,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aggregation_level">6.15. Aggregation level</h3>
+<h3 id="_aggregation_level">6.16. Aggregation level</h3>
 <div class="paragraph"><p>( <a href="label_agg_level.csv">label_agg_level.csv</a> )</p></div>
 <div class="paragraph"><p>Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.</p></div>
 <div class="paragraph"><p><strong>agg_level</strong> is currently  reported only for  J2J data products.</p></div>
@@ -2430,7 +2654,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Sun Aug 20 15:38:31 EDT 2017</p></div>
+<div class="paragraph"><p>This revision: Fri Sep  1 09:43:57 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -2439,7 +2663,7 @@ cellspacing="0" cellpadding="4">
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-08-20 15:38:31 EDT
+ 2017-09-01 09:43:57 EDT
 </div>
 </div>
 </body>

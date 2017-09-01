@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-20 August 2017
+Lars Vilhuber <lars.vilhuber@census.gov>
+01 September 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_j2jexplorer_schema.pdf[Printable version] )
@@ -10,10 +10,7 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
 ==============================================
 	
 
@@ -120,6 +117,14 @@ Categorical variable descriptions are displayed above each table, with the varia
 [width="60%",format="csv",cols="^1,<4",options="header"]
 |===================================================
 include::label_agegrp.csv[]
+|===================================================
+
+=== concept
+( link:label_concept.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_concept.csv[]
 |===================================================
 
 === education
@@ -396,6 +401,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Sun Aug 20 15:38:31 EDT 2017
+This revision: Fri Sep  1 09:43:57 EDT 2017
 *******************
 
