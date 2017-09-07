@@ -511,7 +511,7 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
-==== [[_stusps]]State postal codes
+==== [[stusps]]State postal codes
 
 Some parts of the schema use (lower or upper-case) state postal codes.
 
@@ -552,7 +552,7 @@ Scope,Types,Format file" >> $asciifile
 	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
 	echo "$state,B,link:${arg}[]" >> $asciifile
 	done
-  echo "*States*," >> $asciifile
+  echo "*States*,," >> $asciifile
   for arg in  $(ls label_geography_??.csv|grep -v geography_us)
   do
   	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
@@ -632,7 +632,7 @@ include::$arg[]
 
 arg=variables_version.csv
 sed 's/naming convention/link:lehd_csv_naming{ext-relative}[]/' $arg |
-  sed 's/stusps/<<_stusps>>/' |
+  sed 's/stusps/<<stusps>>/' |
   sed 's/geography/<<geography>>/' > tmp_$arg
 echo "
 <<<

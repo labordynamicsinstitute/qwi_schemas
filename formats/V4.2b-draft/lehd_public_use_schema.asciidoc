@@ -458,7 +458,7 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
-==== [[_stusps]]State postal codes
+==== [[stusps]]State postal codes
 
 Some parts of the schema use (lower or upper-case) state postal codes.
 
@@ -483,7 +483,7 @@ Files of type 'label_geography_[ST].csv' will contain identifiers and labels for
 Scope,Types,Format file
 US,N,link:label_geography_us.csv[]
 METRO,B,link:label_geography_metro.csv[]
-*States*,
+*States*,,
 AK,S C W M,link:label_geography_ak.csv[]
 AL,S C W M,link:label_geography_al.csv[]
 AR,S C W M,link:label_geography_ar.csv[]
@@ -610,7 +610,8 @@ include::tmp_variables_version.csv[]
 |===================================================
 
 For instance, the metadata for the R2017Q1 release of
-Missouri QWI
+"Missouri"
+"Kokomo QWI
 Sex by Age tabulations
 for No firm size or age detail
 (obtained from https://lehd.ces.census.gov/pub/mo/R2017Q1/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
@@ -618,7 +619,8 @@ for No firm size or age detail
 QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
 --------------------------------
 Similarly, the metadata for the R2017Q1 release of
-Missouri J2J
+"Missouri"
+"Kokomo J2J
 tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q1/j2j/mo//version_j2j.txt[here]) has  the following content:
 --------------------------------
 J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
@@ -646,7 +648,8 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
 - 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
 - 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
-- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv 
+- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv
+- 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
@@ -657,6 +660,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Sep  7 13:07:28 EDT 2017
+This revision: Thu Sep  7 14:01:32 EDT 2017
 *******************
 

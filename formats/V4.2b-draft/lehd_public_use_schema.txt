@@ -1083,6 +1083,7 @@ geography label                     geo_level
 Some parts of the schema use (lower or upper-case) state postal codes.
 ( label_stusps.csv )
 geography stusps
+     00   US
      01   AL
      02   AK
      04   AZ
@@ -1281,27 +1282,27 @@ version_[demo]_[fas].txt
 version_[type].txt
 where each component is described in more detail in lehd_csv_naming.html.
 The contents contains the following elements:
-Component Source             Description
-product   [type]             Type as described in lehd_csv_naming.html
-demo_fas  [demo]_[fas]       (optional - concatenated with product) used for
-                             QWI to distinguish separate tabulations from the
-                             legal [demo]_[fas] combinations as described in
-                             lehd_csv_naming.html
-geo       [_stusps] or METRO Covered [geography] (uppercase state postal code
-                             or the word METRO)
-geonum    [geography]        Numeric geography code
-start     yyyy:q             Start year and quarter
-end       yyyy:q             End year and quarter
-schema    Vx.y.z             Version of the schema
-release   RyyyyQq            Release quarter (identifies when the data was
-                             created)
-internal  various            Internal identifier used for provenance tracking
-For instance, the metadata for the R2017Q1 release of Missouri QWI Sex by Age
-tabulations for No firm size or age detail (obtained from here) has the
-following content:
+Component Source            Description
+product   [type]            Type as described in lehd_csv_naming.html
+demo_fas  [demo]_[fas]      (optional - concatenated with product) used for QWI
+                            to distinguish separate tabulations from the legal
+                            [demo]_[fas] combinations as described in
+                            lehd_csv_naming.html
+geo       [stusps] or METRO Covered [geography] (uppercase state postal code
+                            including entire nation or the word METRO)
+geonum    [geography]       Numeric geography code
+start     yyyy:q            Start year and quarter
+end       yyyy:q            End year and quarter
+schema    Vx.y.z            Version of the schema
+release   RyyyyQq           Release quarter (identifies when the data was
+                            created)
+internal  various           Internal identifier used for provenance tracking
+For instance, the metadata for the R2017Q1 release of "Missouri" "Kokomo QWI
+Sex by Age tabulations for No firm size or age detail (obtained from here) has
+the following content:
 QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
-Similarly, the metadata for the R2017Q1 release of Missouri J2J tabulations
-(obtained from here) has the following content:
+Similarly, the metadata for the R2017Q1 release of "Missouri" "Kokomo J2J
+tabulations (obtained from here) has the following content:
 J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
 Some J2J metadata may contain multiple lines, as necessary.
 8.2. Additional metadata for J2JOD files (avail.csv)
@@ -1337,10 +1338,12 @@ For a description of how schema files are versioned, see main_directory.
       belongs.
     * 2017-09-07: Clarified language and usage of metropolitan area codes in
       label_geography_metro.csv
+    * 2017-09-07: Expanded definition of [geohi] to include CBSA codes for
+      metropolitan areas
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Thu Sep 7 13:07:28 EDT 2017
+This revision: Thu Sep 7 14:01:32 EDT 2017
 ===============================================================================
-Last updated 2017-09-07 13:07:28 EDT
+Last updated 2017-09-07 14:01:32 EDT
