@@ -217,7 +217,7 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-09-07: Moved stusps to the geography section, where it rightfully
       belongs.
     * 2017-09-07: Clarified language and usage of metropolitan area codes in
-      label_geography_metro.csv
+      label_geography_metro.csv, removed unused label_geography_cbsa.csv
     * 2017-09-07: Expanded definition of [geohi] to include CBSA codes for
       metropolitan areas
 **** 7.2. Version 4.2b-draft from V4.2a-draft ****
@@ -226,6 +226,6 @@ For a description of how schema files are versioned, see main_directory.
     * See Github
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Thu Sep 7 13:30:35 EDT 2017
+This revision: Thu Sep 7 15:26:40 EDT 2017
 ===============================================================================
-Last updated 2017-09-07 13:30:35 EDT
+Last updated 2017-09-07 15:26:40 EDT

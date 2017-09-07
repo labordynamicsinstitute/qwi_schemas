@@ -1,14 +1,16 @@
 
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft ******
 Lars Vilhuber
-<lars.vilhuber@census.gov>
-01 September 2017
+<lars.vilhuber@cornell.edu>
+07 September 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at lars.vilhuber@census.gov.
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
 ***** 1. Purpose *****
 The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal
 Employer-Household Dynamics Program are accessible through the J2J_Explorer_
@@ -420,6 +422,7 @@ sex label
 **** 6.13. stusps ****
 ( label_stusps.csv )
 geography stusps
+     00   US
      01   AL
      02   AK
      04   AZ
@@ -515,25 +518,25 @@ is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
 geography is used for all tabulations as of the R2015Q4 release.
 Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census http://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   population/metro/
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   http://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             population/metro/
+geo_level label         description                                                                  sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census   http://
+          (complete)    Bureau’s Geography Division. Balance of state including micropolitan areas www.census.gov/
+                        are identified by custom codes as [ST]999                                    population/metro/
+      C   Counties      Identifies 5-digit FIPS/ANSI code for counties                               https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/codes/
+                                                                                                     cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and the http://
+          Micropolitan  5-digit CBSA code provided by the Census Bureau’s Geography Division       www.census.gov/
+          (state part)                                                                               population/metro/
       N   National (50  Custom code using 00 to denote national scope
           States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
+      S   States        Identifies 2-digit FIPS/ANSI codes                                           https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/
+                                                                                                     ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED State
+          Investment    Partners
           Areas
 *** 6.15.2. National and state-level values ***
 ( label_fipsnum.csv )
@@ -689,6 +692,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Fri Sep 1 09:43:57 EDT 2017
+This revision: Thu Sep 7 15:27:25 EDT 2017
 ===============================================================================
-Last updated 2017-09-01 09:43:57 EDT
+Last updated 2017-09-07 15:27:25 EDT
