@@ -1280,20 +1280,20 @@ version_[type].txt
 where each component is described in more detail in lehd_csv_naming.html.
 The contents contains the following elements:
 Component Source             Description
-  product [type]             Type as described in lehd_csv_naming.html
- demo_fas [demo]_[fas]       (optional - concatenated with product) used for
+product   [type]             Type as described in lehd_csv_naming.html
+demo_fas  [demo]_[fas]       (optional - concatenated with product) used for
                              QWI to distinguish separate tabulations from the
                              legal [demo]_[fas] combinations as described in
                              lehd_csv_naming.html
-      geo [_stusps] or Metro Covered [geography] (uppercase state postal code
+geo       [_stusps] or METRO Covered [geography] (uppercase state postal code
                              or the word METRO)
-   geonum [geography]        Numeric geography code
-    start yyyy:q             Start year and quarter
-      end yyyy:q             End year and quarter
-   schema Vx.y.z             Version of the schema
-  release RyyyyQq            Release quarter (identifies when the data was
+geonum    [geography]        Numeric geography code
+start     yyyy:q             Start year and quarter
+end       yyyy:q             End year and quarter
+schema    Vx.y.z             Version of the schema
+release   RyyyyQq            Release quarter (identifies when the data was
                              created)
- internal various            Internal identifier used for provenance tracking
+internal  various            Internal identifier used for provenance tracking
 For instance, the metadata for the R2017Q1 release of Missouri QWI Sex by Age
 tabulations for No firm size or age detail (obtained from here) has the
 following content:
@@ -1307,15 +1307,15 @@ Some J2J metadata may contain multiple lines, as necessary.
 Because the origin-destination (J2JOD) data link two regions, we provide an
 auxiliary file with the time range that cells containing data for each
 geographic pairing may appear in a data release.
-    variable   type    label
-   geo_level   Char(1) Geographic level of destination region
-   geography   Char(8) Geography code of destination region
+variable       type    label
+geo_level      Char(1) Geographic level of destination region
+geography      Char(8) Geography code of destination region
 geo_level_orig Char(1) Geographic level of origin region
 geography_orig Char(8) Geography code of origin region
-   start_year  Num     First year regional pair may be observed
+start_year     Num     First year regional pair may be observed
 start_quarter  Num     First quarter regional pair may be observed
-    end_year   Num     Last year regional pair may be observed
-  end_quarter  Num     Last quarter regional pair may be observed
+end_year       Num     Last year regional pair may be observed
+end_quarter    Num     Last quarter regional pair may be observed
 The reference region will always be either the origin or the destination.
 National tabulations contain records where both origin and destination are
 geo_level=N; state tabulations contain records where geo_level in (N,S); metro
@@ -1331,10 +1331,12 @@ For a description of how schema files are versioned, see main_directory.
       it affects the unreleased J2J app updates downstream.
     * 2017-09-07: clarifying the version.txt description - removed the mention
       of fips replacing by geonum
+    * 2017-09-07: Moved stusps to the geography section, where it rightfully
+      belongs.
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Thu Sep 7 12:35:50 EDT 2017
+This revision: Thu Sep 7 12:40:56 EDT 2017
 ===============================================================================
-Last updated 2017-09-07 12:35:50 EDT
+Last updated 2017-09-07 12:40:56 EDT
