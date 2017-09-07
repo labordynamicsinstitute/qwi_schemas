@@ -1038,25 +1038,25 @@ is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
 geography is used for all tabulations as of the R2015Q4 release.
 Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census http://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   population/metro/
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   http://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             population/metro/
+geo_level label         description                                                                  sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census   http://
+          (complete)    Bureau’s Geography Division. Balance of state including micropolitan areas www.census.gov/
+                        are identified by custom codes as [ST]999                                    population/metro/
+      C   Counties      Identifies 5-digit FIPS/ANSI code for counties                               https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/codes/
+                                                                                                     cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and the http://
+          Micropolitan  5-digit CBSA code provided by the Census Bureau’s Geography Division       www.census.gov/
+          (state part)                                                                               population/metro/
       N   National (50  Custom code using 00 to denote national scope
           States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
+      S   States        Identifies 2-digit FIPS/ANSI codes                                           https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/
+                                                                                                     ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED State
+          Investment    Partners
           Areas
 6.14.2. National and state-level values
 ( label_fipsnum.csv )
@@ -1137,64 +1137,66 @@ geography stusps
      72   PR
      78   VI
 6.14.4. Detailed state and substate level values
-Note: state-specific parts of cross-state CBSA, in records of type geo_level =
-M, are present on files of type label_geography_XX.csv. The various state-
-specific parts of cross-state CBSA will appear on multiple files.
-Scope            Format file
-   US    label_geography_us.csv
-METRO  label_geography_metro.csv
+Files of type label_geography_[ST].csv will contain identifiers and labels for
+geographic areas entirely comprised within a given state [ST]. State-specific
+parts of cross-state CBSA, in records of type geo_level = M, are present on
+files of type label_geography_[ST].csv. The file label_geography_metro.csv
+contains labels for records of type geo_level = B, for metropolitan areas only.
+Scope   Types            Format file
+   US      N     label_geography_us.csv
+METRO      B   label_geography_metro.csv
 States
-   AK    label_geography_ak.csv
-   AL    label_geography_al.csv
-   AR    label_geography_ar.csv
-   AZ    label_geography_az.csv
-   CA    label_geography_ca.csv
-   CO    label_geography_co.csv
-   CT    label_geography_ct.csv
-   DC    label_geography_dc.csv
-   DE    label_geography_de.csv
-   FL    label_geography_fl.csv
-   GA    label_geography_ga.csv
-   HI    label_geography_hi.csv
-   IA    label_geography_ia.csv
-   ID    label_geography_id.csv
-   IL    label_geography_il.csv
-   IN    label_geography_in.csv
-   KS    label_geography_ks.csv
-   KY    label_geography_ky.csv
-   LA    label_geography_la.csv
-   MA    label_geography_ma.csv
-   MD    label_geography_md.csv
-   ME    label_geography_me.csv
-   MI    label_geography_mi.csv
-   MN    label_geography_mn.csv
-   MO    label_geography_mo.csv
-   MS    label_geography_ms.csv
-   MT    label_geography_mt.csv
-   NC    label_geography_nc.csv
-   ND    label_geography_nd.csv
-   NE    label_geography_ne.csv
-   NH    label_geography_nh.csv
-   NJ    label_geography_nj.csv
-   NM    label_geography_nm.csv
-   NV    label_geography_nv.csv
-   NY    label_geography_ny.csv
-   OH    label_geography_oh.csv
-   OK    label_geography_ok.csv
-   OR    label_geography_or.csv
-   PA    label_geography_pa.csv
-   RI    label_geography_ri.csv
-   SC    label_geography_sc.csv
-   SD    label_geography_sd.csv
-   TN    label_geography_tn.csv
-   TX    label_geography_tx.csv
-   UT    label_geography_ut.csv
-   VA    label_geography_va.csv
-   VT    label_geography_vt.csv
-   WA    label_geography_wa.csv
-   WI    label_geography_wi.csv
-   WV    label_geography_wv.csv
-   WY    label_geography_wy.csv
+   AK  S C W M   label_geography_ak.csv
+   AL  S C W M   label_geography_al.csv
+   AR  S C W M   label_geography_ar.csv
+   AZ  S C W M   label_geography_az.csv
+   CA  S C W M   label_geography_ca.csv
+   CO  S C W M   label_geography_co.csv
+   CT  S C W M   label_geography_ct.csv
+   DC  S C W M   label_geography_dc.csv
+   DE  S C W M   label_geography_de.csv
+   FL  S C W M   label_geography_fl.csv
+   GA  S C W M   label_geography_ga.csv
+   HI  S C W M   label_geography_hi.csv
+   IA  S C W M   label_geography_ia.csv
+   ID  S C W M   label_geography_id.csv
+   IL  S C W M   label_geography_il.csv
+   IN  S C W M   label_geography_in.csv
+   KS  S C W M   label_geography_ks.csv
+   KY  S C W M   label_geography_ky.csv
+   LA  S C W M   label_geography_la.csv
+   MA  S C W M   label_geography_ma.csv
+   MD  S C W M   label_geography_md.csv
+   ME  S C W M   label_geography_me.csv
+   MI  S C W M   label_geography_mi.csv
+   MN  S C W M   label_geography_mn.csv
+   MO  S C W M   label_geography_mo.csv
+   MS  S C W M   label_geography_ms.csv
+   MT  S C W M   label_geography_mt.csv
+   NC  S C W M   label_geography_nc.csv
+   ND  S C W M   label_geography_nd.csv
+   NE  S C W M   label_geography_ne.csv
+   NH  S C W M   label_geography_nh.csv
+   NJ  S C W M   label_geography_nj.csv
+   NM  S C W M   label_geography_nm.csv
+   NV  S C W M   label_geography_nv.csv
+   NY  S C W M   label_geography_ny.csv
+   OH  S C W M   label_geography_oh.csv
+   OK  S C W M   label_geography_ok.csv
+   OR  S C W M   label_geography_or.csv
+   PA  S C W M   label_geography_pa.csv
+   RI  S C W M   label_geography_ri.csv
+   SC  S C W M   label_geography_sc.csv
+   SD  S C W M   label_geography_sd.csv
+   TN  S C W M   label_geography_tn.csv
+   TX  S C W M   label_geography_tx.csv
+   UT  S C W M   label_geography_ut.csv
+   VA  S C W M   label_geography_va.csv
+   VT  S C W M   label_geography_vt.csv
+   WA  S C W M   label_geography_wa.csv
+   WI  S C W M   label_geography_wi.csv
+   WV  S C W M   label_geography_wv.csv
+   WY  S C W M   label_geography_wy.csv
 **** 6.15. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
@@ -1333,10 +1335,12 @@ For a description of how schema files are versioned, see main_directory.
       of fips replacing by geonum
     * 2017-09-07: Moved stusps to the geography section, where it rightfully
       belongs.
+    * 2017-09-07: Clarified language and usage of metropolitan area codes in
+      label_geography_metro.csv
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Thu Sep 7 12:40:56 EDT 2017
+This revision: Thu Sep 7 13:07:28 EDT 2017
 ===============================================================================
-Last updated 2017-09-07 12:40:56 EDT
+Last updated 2017-09-07 13:07:28 EDT

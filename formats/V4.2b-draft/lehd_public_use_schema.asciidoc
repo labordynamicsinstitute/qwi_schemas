@@ -472,69 +472,69 @@ include::label_stusps.csv[]
 
 ==== [[geosubstate]]Detailed state and substate level values
 
-Note: state-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. The various state-specific parts of cross-state CBSA will appear on multiple files.
+Files of type 'label_geography_[ST].csv' will contain identifiers and labels for geographic areas entirely comprised within a given state '[ST]'. State-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_[ST].csv'. The file link:label_geography_metro.csv[] contains labels for records of type <<geolevel,geo_level>> = B, for metropolitan areas only.
 
 
 
 
 
-[format="csv",width="50%",cols="^1,^3",options="header"]
+[format="csv",width="50%",cols="^1,^2,^3",options="header"]
 |===================================================
-Scope,Format file
-US,link:label_geography_us.csv[]
-METRO,link:label_geography_metro.csv[]
+Scope,Types,Format file
+US,N,link:label_geography_us.csv[]
+METRO,B,link:label_geography_metro.csv[]
 *States*,
-AK,link:label_geography_ak.csv[]
-AL,link:label_geography_al.csv[]
-AR,link:label_geography_ar.csv[]
-AZ,link:label_geography_az.csv[]
-CA,link:label_geography_ca.csv[]
-CO,link:label_geography_co.csv[]
-CT,link:label_geography_ct.csv[]
-DC,link:label_geography_dc.csv[]
-DE,link:label_geography_de.csv[]
-FL,link:label_geography_fl.csv[]
-GA,link:label_geography_ga.csv[]
-HI,link:label_geography_hi.csv[]
-IA,link:label_geography_ia.csv[]
-ID,link:label_geography_id.csv[]
-IL,link:label_geography_il.csv[]
-IN,link:label_geography_in.csv[]
-KS,link:label_geography_ks.csv[]
-KY,link:label_geography_ky.csv[]
-LA,link:label_geography_la.csv[]
-MA,link:label_geography_ma.csv[]
-MD,link:label_geography_md.csv[]
-ME,link:label_geography_me.csv[]
-MI,link:label_geography_mi.csv[]
-MN,link:label_geography_mn.csv[]
-MO,link:label_geography_mo.csv[]
-MS,link:label_geography_ms.csv[]
-MT,link:label_geography_mt.csv[]
-NC,link:label_geography_nc.csv[]
-ND,link:label_geography_nd.csv[]
-NE,link:label_geography_ne.csv[]
-NH,link:label_geography_nh.csv[]
-NJ,link:label_geography_nj.csv[]
-NM,link:label_geography_nm.csv[]
-NV,link:label_geography_nv.csv[]
-NY,link:label_geography_ny.csv[]
-OH,link:label_geography_oh.csv[]
-OK,link:label_geography_ok.csv[]
-OR,link:label_geography_or.csv[]
-PA,link:label_geography_pa.csv[]
-RI,link:label_geography_ri.csv[]
-SC,link:label_geography_sc.csv[]
-SD,link:label_geography_sd.csv[]
-TN,link:label_geography_tn.csv[]
-TX,link:label_geography_tx.csv[]
-UT,link:label_geography_ut.csv[]
-VA,link:label_geography_va.csv[]
-VT,link:label_geography_vt.csv[]
-WA,link:label_geography_wa.csv[]
-WI,link:label_geography_wi.csv[]
-WV,link:label_geography_wv.csv[]
-WY,link:label_geography_wy.csv[]
+AK,S C W M,link:label_geography_ak.csv[]
+AL,S C W M,link:label_geography_al.csv[]
+AR,S C W M,link:label_geography_ar.csv[]
+AZ,S C W M,link:label_geography_az.csv[]
+CA,S C W M,link:label_geography_ca.csv[]
+CO,S C W M,link:label_geography_co.csv[]
+CT,S C W M,link:label_geography_ct.csv[]
+DC,S C W M,link:label_geography_dc.csv[]
+DE,S C W M,link:label_geography_de.csv[]
+FL,S C W M,link:label_geography_fl.csv[]
+GA,S C W M,link:label_geography_ga.csv[]
+HI,S C W M,link:label_geography_hi.csv[]
+IA,S C W M,link:label_geography_ia.csv[]
+ID,S C W M,link:label_geography_id.csv[]
+IL,S C W M,link:label_geography_il.csv[]
+IN,S C W M,link:label_geography_in.csv[]
+KS,S C W M,link:label_geography_ks.csv[]
+KY,S C W M,link:label_geography_ky.csv[]
+LA,S C W M,link:label_geography_la.csv[]
+MA,S C W M,link:label_geography_ma.csv[]
+MD,S C W M,link:label_geography_md.csv[]
+ME,S C W M,link:label_geography_me.csv[]
+MI,S C W M,link:label_geography_mi.csv[]
+MN,S C W M,link:label_geography_mn.csv[]
+MO,S C W M,link:label_geography_mo.csv[]
+MS,S C W M,link:label_geography_ms.csv[]
+MT,S C W M,link:label_geography_mt.csv[]
+NC,S C W M,link:label_geography_nc.csv[]
+ND,S C W M,link:label_geography_nd.csv[]
+NE,S C W M,link:label_geography_ne.csv[]
+NH,S C W M,link:label_geography_nh.csv[]
+NJ,S C W M,link:label_geography_nj.csv[]
+NM,S C W M,link:label_geography_nm.csv[]
+NV,S C W M,link:label_geography_nv.csv[]
+NY,S C W M,link:label_geography_ny.csv[]
+OH,S C W M,link:label_geography_oh.csv[]
+OK,S C W M,link:label_geography_ok.csv[]
+OR,S C W M,link:label_geography_or.csv[]
+PA,S C W M,link:label_geography_pa.csv[]
+RI,S C W M,link:label_geography_ri.csv[]
+SC,S C W M,link:label_geography_sc.csv[]
+SD,S C W M,link:label_geography_sd.csv[]
+TN,S C W M,link:label_geography_tn.csv[]
+TX,S C W M,link:label_geography_tx.csv[]
+UT,S C W M,link:label_geography_ut.csv[]
+VA,S C W M,link:label_geography_va.csv[]
+VT,S C W M,link:label_geography_vt.csv[]
+WA,S C W M,link:label_geography_wa.csv[]
+WI,S C W M,link:label_geography_wi.csv[]
+WV,S C W M,link:label_geography_wv.csv[]
+WY,S C W M,link:label_geography_wy.csv[]
 |===================================================
 
 <<<
@@ -646,6 +646,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
 - 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
 - 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
+- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv 
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
@@ -656,6 +657,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Sep  7 12:40:56 EDT 2017
+This revision: Thu Sep  7 13:07:28 EDT 2017
 *******************
 

@@ -525,7 +525,7 @@ include::label_stusps.csv[]
 
 ==== [[geosubstate]]Detailed state and substate level values
 
-Note: state-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. The various state-specific parts of cross-state CBSA will appear on multiple files.
+Files of type 'label_geography_[ST].csv' will contain identifiers and labels for geographic areas entirely comprised within a given state '[ST]'. State-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_[ST].csv'. The file link:label_geography_metro.csv[] contains labels for records of type <<geolevel,geo_level>> = B, for metropolitan areas only.
 
 
 
@@ -539,19 +539,24 @@ Note: state-specific parts of cross-state CBSA, in records of type <<geolevel,ge
 #==============================================
 
 echo "
-[format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
+[format=\"csv\",width=\"50%\",cols=\"^1,^2,^3\",options=\"header\"]
 |===================================================
-Scope,Format file" >> $asciifile
-	for arg in label_geography_us.csv label_geography_metro.csv
+Scope,Types,Format file" >> $asciifile
+	for arg in label_geography_us.csv
 	do
 	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
-	echo "$state,link:${arg}[]" >> $asciifile
+	echo "$state,N,link:${arg}[]" >> $asciifile
+	done
+	for arg in label_geography_metro.csv
+	do
+	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+	echo "$state,B,link:${arg}[]" >> $asciifile
 	done
   echo "*States*," >> $asciifile
   for arg in  $(ls label_geography_??.csv|grep -v geography_us)
   do
   	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
-	echo "$state,link:${arg}[]" >> $asciifile
+	echo "$state,S C W M,link:${arg}[]" >> $asciifile
   done
 echo "|===================================================" >> $asciifile
 
