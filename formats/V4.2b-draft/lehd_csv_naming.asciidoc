@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.2b-draft - CSV Naming Convention
-Lars Vilhuber <ces.qwi.feedback@census.gov>
-15 August 2017
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+07 September 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -11,9 +11,12 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-	
+
 
 Purpose
 -------
@@ -104,14 +107,19 @@ include::naming_type.csv[]
 === geohi
 ( link:naming_geohi.csv[] )
 
-This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2]. It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+The geohi component is based on one of two possible code sets:
+
+- the lower-case alphabetic FIPS or postal state code based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2] (see also link:label_stusps.csv[] for upper-case variants).
+- the numeric CBSA code corresponding to the metropolitan areas (see link:label_geography_metro.csv[])
+- It is expanded to encompass additional codes denoting national coverage, or a collection of states.
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
 |===================================================
 type,Description
-all,Collection of all available states
-us,National data (50 states + DC)
-st,Any legal 2-character state postal code (see link:naming_geohi.csv[] )
+all,"Collection of all available states"
+us,"National data (50 states + DC)"
+st,Any legal 2-character lower-case state postal code
+NNNNN,Any valid CBSA-derived code listed in link:label_geography_metro.csv[]
 |===================================================
 
 === demo
@@ -195,10 +203,18 @@ include::naming_ext.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-04-04: Initial release
+- 2017-08-21: Initial release
+- 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
+- 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
+- 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
+- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv
+- 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
+
+=== Version 4.2b-draft from V4.2a-draft
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
 
 === Version 4.2a-draft from 4.1.1
-- See github
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1[Github]
 
 [IMPORTANT]
 .Important
@@ -208,6 +224,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Aug 15 18:26:01 EDT 2017
+This revision: Thu Sep  7 13:30:35 EDT 2017
 *******************
 

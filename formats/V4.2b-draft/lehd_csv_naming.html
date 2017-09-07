@@ -19,8 +19,8 @@ asciidoc.install(2);
 <div id="header">
 <h1>LEHD Public Use CSV Naming Schema V4.2b-draft - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
-<span id="revdate">15 August 2017</span>
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">07 September 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -37,7 +37,10 @@ asciidoc.install(2);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -255,7 +258,24 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_geohi">6.2. geohi</h3>
 <div class="paragraph"><p>( <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></div>
-<div class="paragraph"><p>This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in <a href="label_fipsnum.csv">label_fipsnum.csv</a>, based on <a href="https://catalog.data.gov/dataset/fips-state-codes">FIPS PUB 5-2</a>. It is expanded to encompass additional codes denoting national coverage, or a collection of states.</p></div>
+<div class="paragraph"><p>The geohi component is based on one of two possible code sets:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+the lower-case alphabetic FIPS or postal state code based on <a href="https://catalog.data.gov/dataset/fips-state-codes">FIPS PUB 5-2</a> (see also <a href="label_stusps.csv">label_stusps.csv</a> for upper-case variants).
+</p>
+</li>
+<li>
+<p>
+the numeric CBSA code corresponding to the metropolitan areas (see <a href="label_geography_metro.csv">label_geography_metro.csv</a>)
+</p>
+</li>
+<li>
+<p>
+It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+</p>
+</li>
+</ul></div>
 <div class="tableblock">
 <table rules="all"
 width="60%"
@@ -280,7 +300,11 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">st</p></td>
-<td align="left" valign="top"><p class="table">Any legal 2-character state postal code (see <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></td>
+<td align="left" valign="top"><p class="table">Any legal 2-character lower-case state postal code</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NNNNN</p></td>
+<td align="left" valign="top"><p class="table">Any valid CBSA-derived code listed in <a href="label_geography_metro.csv">label_geography_metro.csv</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -559,17 +583,52 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-2017-04-04: Initial release
+2017-08-21: Initial release
+</p>
+</li>
+<li>
+<p>
+2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
+</p>
+</li>
+<li>
+<p>
+2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
+</p>
+</li>
+<li>
+<p>
+2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
+</p>
+</li>
+<li>
+<p>
+2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv
+</p>
+</li>
+<li>
+<p>
+2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_2a_draft_from_4_1_1">7.2. Version 4.2a-draft from 4.1.1</h3>
+<h3 id="_version_4_2b_draft_from_v4_2a_draft">7.2. Version 4.2b-draft from V4.2a-draft</h3>
 <div class="ulist"><ul>
 <li>
 <p>
-See github
+See <a href="https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1">Github</a>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_2a_draft_from_4_1_1">7.3. Version 4.2a-draft from 4.1.1</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+See <a href="https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1">Github</a>
 </p>
 </li>
 </ul></div>
@@ -587,7 +646,7 @@ See github
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Aug 15 18:26:01 EDT 2017</p></div>
+<div class="paragraph"><p>This revision: Thu Sep  7 13:30:35 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -597,7 +656,7 @@ See github
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-08-15 18:26:01 EDT
+ 2017-09-07 13:30:35 EDT
 </div>
 </div>
 </body>

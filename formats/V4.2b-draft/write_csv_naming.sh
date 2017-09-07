@@ -185,14 +185,19 @@ name=geohi
   echo "=== $name
 ( link:${arg}[] )
 
-This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2]. It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+The $name component is based on one of two possible code sets:
+
+- the lower-case alphabetic FIPS or postal state code based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2] (see also link:label_stusps.csv[] for upper-case variants).
+- the numeric CBSA code corresponding to the metropolitan areas (see link:label_geography_metro.csv[])
+- It is expanded to encompass additional codes denoting national coverage, or a collection of states.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
 type,Description
 $(egrep "^all" $arg)
 $(egrep "^us" $arg)
-st,Any legal 2-character state postal code (see link:${arg}[] )
+st,Any legal 2-character lower-case state postal code
+NNNNN,Any valid CBSA-derived code listed in link:label_geography_metro.csv[]
 |===================================================
 " >> $asciifile
 
