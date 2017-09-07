@@ -397,14 +397,6 @@ include::label_seasonadj.csv[]
 include::label_sex.csv[]
 |===================================================
 
-=== stusps
-( link:label_stusps.csv[] )
-
-[width="60%",format="csv",cols="^1,<4",options="header"]
-|===================================================
-include::label_stusps.csv[]
-|===================================================
-
 <<<
 === Industry ===
 
@@ -466,9 +458,21 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
+==== [[_stusps]]State postal codes
+
+Some parts of the schema use (lower or upper-case) state postal codes.
+
+( link:label_stusps.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_stusps.csv[]
+|===================================================
+
+
 ==== [[geosubstate]]Detailed state and substate level values
 
-Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
+Note: state-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. The various state-specific parts of cross-state CBSA will appear on multiple files.
 
 
 
@@ -600,7 +604,7 @@ version_[type].txt
 where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
 
 The contents contains the following elements:
-[width="90%",format="csv",cols=">1,2*<5",options="header"]
+[width="90%",format="csv",cols=">2,<2,<5",options="header"]
 |===================================================
 include::tmp_variables_version.csv[]
 |===================================================
@@ -625,7 +629,7 @@ Some J2J metadata may contain multiple lines, as necessary.
 (link:variables_avail.csv[])
 
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
-[width="80%",format="csv",cols="^1,<4,<4",options="header"]
+[width="80%",format="csv",cols="^3,<2,<4",options="header"]
 |===================================================
 include::variables_avail.csv[]
 |===================================================
@@ -640,6 +644,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 === This version (revisions)
 - 2017-08-21: Initial release
 - 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
+- 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
@@ -650,6 +655,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Sep  7 09:33:56 EDT 2017
+This revision: Thu Sep  7 12:35:50 EDT 2017
 *******************
 

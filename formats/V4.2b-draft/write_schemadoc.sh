@@ -389,7 +389,7 @@ Categorical variable descriptions are displayed above each table, with the varia
 " >> $asciifile
 
 # we do industry and geo last
-for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips")
+for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps")
 do
   name=$(echo ${arg%*.csv}| sed 's/label_//')
   echo "=== $name
@@ -511,9 +511,21 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
+==== [[_stusps]]State postal codes
+
+Some parts of the schema use (lower or upper-case) state postal codes.
+
+( link:label_stusps.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::label_stusps.csv[]
+|===================================================
+
+
 ==== [[geosubstate]]Detailed state and substate level values
 
-Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
+Note: state-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. The various state-specific parts of cross-state CBSA will appear on multiple files.
 
 
 
@@ -633,7 +645,7 @@ $(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
 where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
 
 The contents contains the following elements:
-[width=\"90%\",format=\"csv\",cols=\">1,2*<5\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"<1,<2,<5\",options=\"header\"]
 |===================================================
 include::tmp_$arg[]
 |===================================================
@@ -658,7 +670,7 @@ Some J2J metadata may contain multiple lines, as necessary.
 (link:variables_avail.csv[])
 
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
-[width=\"80%\",format=\"csv\",cols=\"^1,<4,<4\",options=\"header\"]
+[width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
 |===================================================
 include::variables_avail.csv[]
 |===================================================
