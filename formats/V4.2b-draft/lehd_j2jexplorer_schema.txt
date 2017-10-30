@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 September 2017
+30 October 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -286,37 +287,37 @@ JobStaySEarn_Dest                f4dombe_kfqearn      sJobStaySEarn_Dest Average
          J2JS                     fee+faq_doma2                sJ2JS     Stable Job-to- Job flows from stable employment into      Count   Flow                         1
                                                                          Job Flows      stable employment with a short or no
                                                                                         observed nonemployment spell
-   EESEarn_Orig                fee_doma2_kfqearn         sEESEarn_Orig   Average        Average quarterly earnings following job   Dollars Earnings                    EES
-                                                                         Earnings       flows with no observed nonemployment spell
-                                                                         following Job-
-                                                                         to-Job Flows
-                                                                         (Continuous
-                                                                         Employment)
-   EESEarn_Dest                fee_doma2_jfqearn         sEESEarn_Dest   Average        Average quarterly earnings prior to job    Dollars Earnings                    EES
+   EESEarn_Orig                fee_doma2_jfqearn         sEESEarn_Orig   Average        Average quarterly earnings prior to job    Dollars Earnings                    EES
                                                                          Earnings prior flows with no observed nonemployment spell
                                                                          to Job-to-Job
                                                                          Flows
                                                                          (Continuous
                                                                          Employment)
-AQHireSEarn_Orig               faq_doma2_kfqearn      sAQHireSEarn_Orig  Average        Average quarterly earnings following job   Dollars Earnings                 AQHireS
+   EESEarn_Dest                fee_doma2_kfqearn         sEESEarn_Dest   Average        Average quarterly earnings following job   Dollars Earnings                    EES
+                                                                         Earnings       flows with no observed nonemployment spell
+                                                                         following Job-
+                                                                         to-Job Flows
+                                                                         (Continuous
+                                                                         Employment)
+AQHireSEarn_Orig               faq_doma2_jfqearn      sAQHireSEarn_Orig  Average        Average quarterly earnings prior to job    Dollars Earnings                 AQHireS
+                                                                         Earnings prior flows with a short nonemployment spell
+                                                                         to Job-to-Job
+                                                                         Flows (Brief
+                                                                         Nonemployment)
+AQHireSEarn_Dest               faq_doma2_kfqearn      sAQHireSEarn_Dest  Average        Average quarterly earnings following job   Dollars Earnings                 AQHireS
                                                                          Earnings       flows with a short nonemployment spell
                                                                          following Job-
                                                                          to-Job Flows
                                                                          (Brief
-                                                                         Employment)
-AQHireSEarn_Dest               faq_doma2_jfqearn      sAQHireSEarn_Dest  Average        Average quarterly earnings prior to job    Dollars Earnings                 AQHireS
-                                                                         Earnings prior flows with a short nonemployment spell
-                                                                         to Job-to-Job
-                                                                         Flows (Brief
-                                                                         Employment)
-   J2JSEarn_Orig  fee_doma2_kfqearn+faq_doma2_kfqearn    sJ2JSEarn_Orig  Average        Average quarterly earnings following job   Dollars Earnings       EESEarn_orig*EES)+
-                                                                         Earnings       flows with a short or no observed                             (AQHireSEarn_orig*AQHireS/
-                                                                         following Job- nonemployment spell                                                 (EES+AQHireS)
-                                                                         to-Job Flows
-   J2JSEarn_Dest  fee_doma2_jfqearn+faq_doma2_jfqearn    sJ2JSEarn_Dest  Average        Average quarterly earnings prior to job    Dollars Earnings      EESEarn_dest*EES) +
-                                                                         Earnings prior flows with a short or no observed                             (AQHireSEarn_dest*AQHireS/
+                                                                         Nonemployment)
+   J2JSEarn_Orig  fee_doma2_kfqearn+faq_doma2_kfqearn    sJ2JSEarn_Orig  Average        Average quarterly earnings prior to job    Dollars Earnings       EESEarn_orig*EES)+
+                                                                         Earnings prior flows with a short or no observed                             (AQHireSEarn_orig*AQHireS/
                                                                          to Job-to-Job  nonemployment spell                                                 (EES+AQHireS)
                                                                          Flows
+   J2JSEarn_Dest  fee_doma2_jfqearn+faq_doma2_jfqearn    sJ2JSEarn_Dest  Average        Average quarterly earnings following job   Dollars Earnings      EESEarn_dest*EES) +
+                                                                         Earnings       flows with a short or no observed                             (AQHireSEarn_dest*AQHireS/
+                                                                         following Job- nonemployment spell                                                 (EES+AQHireS)
+                                                                         to-Job Flows
 6. Categorical Variables
 Categorical variable descriptions are displayed above each table, with the
 variable name shown in parentheses. Unless otherwise stated, every possible
@@ -692,6 +693,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Thu Sep 7 15:27:25 EDT 2017
+This revision: Mon Oct 30 16:19:04 EDT 2017
 ===============================================================================
-Last updated 2017-09-07 15:27:25 EDT
+Last updated 2017-10-30 16:19:04 EDT

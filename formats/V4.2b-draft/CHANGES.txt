@@ -8,6 +8,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
 - 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv, removed unused label_geography_cbsa.csv
 - 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
+- 2017-10-30: Description on J2JOD earnings measures reversed, fixed. Only affects the J2J app metadata.
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]

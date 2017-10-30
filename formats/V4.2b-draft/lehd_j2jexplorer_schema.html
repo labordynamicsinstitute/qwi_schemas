@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 8.6.9" />
+<meta name="generator" content="AsciiDoc" />
 <title>LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
@@ -20,7 +21,7 @@ asciidoc.install(3);
 <h1>LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">07 September 2017</span>
+<span id="revdate">30 October 2017</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -962,18 +963,8 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">EESEarn_Orig</p></td>
-<td align="center" valign="top"><p class="table">fee_doma2_kfqearn</p></td>
-<td align="center" valign="top"><p class="table">sEESEarn_Orig</p></td>
-<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Continuous Employment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with no observed nonemployment spell</p></td>
-<td align="left" valign="top"><p class="table">Dollars</p></td>
-<td align="left" valign="top"><p class="table">Earnings</p></td>
-<td align="center" valign="top"><p class="table">EES</p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p class="table">EESEarn_Dest</p></td>
 <td align="center" valign="top"><p class="table">fee_doma2_jfqearn</p></td>
-<td align="center" valign="top"><p class="table">sEESEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">sEESEarn_Orig</p></td>
 <td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Continuous Employment)</p></td>
 <td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with no observed nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
@@ -981,21 +972,31 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">EES</p></td>
 </tr>
 <tr>
+<td align="center" valign="top"><p class="table">EESEarn_Dest</p></td>
+<td align="center" valign="top"><p class="table">fee_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">sEESEarn_Dest</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Continuous Employment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Dollars</p></td>
+<td align="left" valign="top"><p class="table">Earnings</p></td>
+<td align="center" valign="top"><p class="table">EES</p></td>
+</tr>
+<tr>
 <td align="center" valign="top"><p class="table">AQHireSEarn_Orig</p></td>
-<td align="center" valign="top"><p class="table">faq_doma2_kfqearn</p></td>
+<td align="center" valign="top"><p class="table">faq_doma2_jfqearn</p></td>
 <td align="center" valign="top"><p class="table">sAQHireSEarn_Orig</p></td>
-<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Brief Employment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Brief Nonemployment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">AQHireS</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">AQHireSEarn_Dest</p></td>
-<td align="center" valign="top"><p class="table">faq_doma2_jfqearn</p></td>
+<td align="center" valign="top"><p class="table">faq_doma2_kfqearn</p></td>
 <td align="center" valign="top"><p class="table">sAQHireSEarn_Dest</p></td>
-<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Brief Employment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Brief Nonemployment)</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">AQHireS</p></td>
@@ -1004,8 +1005,8 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">J2JSEarn_Orig</p></td>
 <td align="center" valign="top"><p class="table">fee_doma2_kfqearn+faq_doma2_kfqearn</p></td>
 <td align="center" valign="top"><p class="table">sJ2JSEarn_Orig</p></td>
-<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short or no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short or no observed nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">EESEarn_orig*EES)+(AQHireSEarn_orig*AQHireS/(EES+AQHireS)</p></td>
@@ -1014,8 +1015,8 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">J2JSEarn_Dest</p></td>
 <td align="center" valign="top"><p class="table">fee_doma2_jfqearn+faq_doma2_jfqearn</p></td>
 <td align="center" valign="top"><p class="table">sJ2JSEarn_Dest</p></td>
-<td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short or no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short or no observed nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">EESEarn_dest*EES) + (AQHireSEarn_dest*AQHireS/(EES+AQHireS)</p></td>
@@ -2661,7 +2662,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Thu Sep  7 15:27:25 EDT 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Oct 30 16:19:04 EDT 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -2670,7 +2671,7 @@ cellspacing="0" cellpadding="4">
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-09-07 15:27:25 EDT
+ 2017-10-30 16:19:04 EDT
 </div>
 </div>
 </body>
