@@ -240,9 +240,9 @@ include::$arg[]
 arg=label_industry.csv
 	# construct the sample industry file
 	head -8 $arg > tmp2.csv
-	echo "...," >> tmp2.csv
+	echo "...,," >> tmp2.csv
 	grep -A 4 -B 4 "31-33" $arg | tail -8  >> tmp2.csv
-	echo "...," >> tmp2.csv
+	echo "...,," >> tmp2.csv
 
 echo "
 ==== Industry
@@ -253,7 +253,7 @@ The 2012 NAICS (North American Industry Classification System) is used for all y
 QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
 For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
-[width=\"90%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
 include::tmp2.csv[]
 |===================================================

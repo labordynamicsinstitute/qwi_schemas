@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft
+= LEHD Public Use Data Schema for J2J Explorer (beta) V4.2-rc1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-30 October 2017
+15 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_j2jexplorer_schema.pdf[Printable version] )
@@ -122,14 +122,6 @@ Categorical variable descriptions are displayed above each table, with the varia
 include::label_agegrp.csv[]
 |===================================================
 
-=== concept
-( link:label_concept.csv[] )
-
-[width="60%",format="csv",cols="^1,<4",options="header"]
-|===================================================
-include::label_concept.csv[]
-|===================================================
-
 === education
 ( link:label_education.csv[] )
 
@@ -240,7 +232,7 @@ The 2012 NAICS (North American Industry Classification System) is used for all y
 QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
 For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
 
-[width="90%",format="csv",cols="^1,<4",options="header"]
+[width="90%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
 include::tmp2.csv[]
 |===================================================
@@ -404,6 +396,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Oct 30 16:19:04 EDT 2017
+This revision: Fri Dec 15 18:24:34 EST 2017
 *******************
 
