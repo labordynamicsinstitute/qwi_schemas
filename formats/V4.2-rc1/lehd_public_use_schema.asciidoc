@@ -1,0 +1,605 @@
+= LEHD Public Use Data Schema V4.1.3
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+21 August 2017
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+:ext-relative: {outfilesuffix}
+( link:lehd_public_use_schema.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+	
+
+Purpose
+-------
+The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
+This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
+a set of allowable values is defined. Definitions are provided as CSV files,
+with header variable definitions.  Changes relative to the original v4.0 version are listed <<changes,at the end>>.
+
+File naming
+-----------
+The naming conventions of the data files is documented in link:lehd_csv_naming{ext-relative}[].
+
+Extends
+-------
+This version reimplements some features from  V4.0. Many files compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema, but compatibility is not guaranteed.
+
+Supersedes
+----------
+This version supersedes V4.1.0, for files released as of R2017Q1.
+
+Basic Schema
+------------
+Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+
+=== Generic structure
+
+[width="30%",format="csv",cols="<2",options="header"]
+|===================================================
+Column name
+[ Identifier1 ]
+[ Identifier2 ]
+[ Identifier3 ]
+[ ... ]
+[ Indicator 1 ]
+[ Indicator 2 ]
+[ Indicator 3 ]
+[ ... ]
+[ Status Flag 1 ]
+[ Status Flag 2 ]
+[ Status Flag 3 ]
+[ ... ]
+|===================================================
+
+Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section.
+While all indicators are included in the CSV files, only the requested indicators
+will be included in data outputs from the LED Extraction Tool.
+
+<<<
+
+=== [[identifiers]]Identifiers
+Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
+Identifiers without the year and quarter component can be considered a series identifier.
+
+==== Mapping for Identifiers
+( link:lehd_mapping_identifiers.csv[] )
+
+Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
+to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
+
+[width="80%",format="csv",cols="<3,6*^1",options="header"]
+|===================================================
+include::lehd_mapping_identifiers.csv[]
+|===================================================
+<<<
+
+==== Identifiers for j2j
+( link:lehd_identifiers_j2j.csv[] )
+
+[width="100%",format="csv",cols="2*^1,<3",options="header"]
+|===================================================
+include::lehd_identifiers_j2j.csv[]
+|===================================================
+<<<
+
+
+==== Identifiers for j2jod
+( link:lehd_identifiers_j2jod.csv[] )
+
+[width="100%",format="csv",cols="2*^1,<3",options="header"]
+|===================================================
+include::lehd_identifiers_j2jod.csv[]
+|===================================================
+<<<
+
+
+==== Identifiers for qwi
+( link:lehd_identifiers_qwi.csv[] )
+
+[width="100%",format="csv",cols="2*^1,<3",options="header"]
+|===================================================
+include::lehd_identifiers_qwi.csv[]
+|===================================================
+<<<
+
+
+
+<<<
+=== [[indicators]]Indicators
+The following tables and associated mapping files
+list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
+
+==== National QWI and state-level QWI (QWIPU) ====
+
+( link:variables_qwi.csv[variables_qwi.csv] )
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+|===================================================
+include::variables_qwi.csv[]
+|===================================================
+<<<
+
+==== National QWI and state-level QWI rates (QWIPUR) ====
+Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+
+
+( link:variables_qwir.csv[variables_qwir.csv] )
+[width="95%",format="csv",cols="3*^2,<5,<2,<2",options="header"]
+|===================================================
+include::variables_qwir.csv[]
+|===================================================
+
+
+<<<
+
+==== Job-to-job flow counts (J2J)
+( link:variables_j2j.csv[] )
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+|===================================================
+include::variables_j2j.csv[]
+|===================================================
+<<<
+
+==== Job-to-job flow rates (J2JR)
+( link:variables_j2jr.csv[] )
+
+Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+
+
+[width="95%",format="csv",cols="3*^2,<5,<2,<2",options="header"]
+|===================================================
+include::variables_j2jr.csv[]
+|===================================================
+
+
+<<<
+
+==== Job-to-job flow Origin-Destination (J2JOD)
+( link:variables_j2jod.csv[] )
+[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+|===================================================
+include::variables_j2jod.csv[]
+|===================================================
+<<<
+
+<<<
+
+
+<<<
+=== [[vmeasures]]Variability measures
+The following tables and associated mapping files
+list the variability measures available on each file.  The ''Variability Measure'' is the short name of the variable on the CSV files,
+suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate Name'' may appear in related documentation and articles.
+The ''Variable Name'' is a more verbose description of the variability measure.
+
+Six variability measures are published:
+
+* Total variability, prefixed by vt_
+* Standard error, prefixed by st_, and computed as the square root of Total Variability
+* Between-implicate variability, prefixed by vb_
+* Average within-implicate variability, prefixed by vw_
+* Degrees of freedom, prefixed by df_
+* Missingness ratio, prefixed by mr_
+
+A missing variability measure indicates a structural zero in the corresponding indicator. This is currently not associated with a flag.
+
+//Not all indicators have associated variability measures. For more details, see the following document TBD.
+
+==== Generic structure
+
+[width="30%",format="csv",cols="<2",options="header"]
+|===================================================
+Column name
+[ Identifier1 ]
+[ Identifier2 ]
+[ Identifier3 ]
+[ ... ]
+[ Standard error for Indicator 1 ]
+[ Standard error for Indicator 2 ]
+[ Standard error for Indicator 3 ]
+[ ... ]
+[ Total variation for Indicator 1 ]
+[ Total variation for Indicator 2 ]
+[ Total variation for Indicator 3 ]
+[ ... ]
+[ Between-implicate variability for Indicator 1 ]
+[ Between-implicate variability for Indicator 2 ]
+[ Between-implicate variability for Indicator 3 ]
+[ ... ]
+[ Average within-implicate variability for Indicator 1 ]
+[ Average within-implicate variability for Indicator 2 ]
+[ Average within-implicate variability for Indicator 3 ]
+[ ... ]
+[ Degrees of freedom for Indicator 1 ]
+[ Degrees of freedom for Indicator 2 ]
+[ Degrees of freedom for Indicator 3 ]
+[ ... ]
+[ Missingness ratio for Indicator 1 ]
+[ Missingness ratio for Indicator 2 ]
+[ Missingness ratio for Indicator 3 ]
+[ ... ]
+|===================================================
+
+
+Note: A full list of indicators for each type of file are shown  in the <<indicators,Indicators>> section. In the tables below, only a sample
+of variability measures are printed, but the complete list is available in the linked CSV schema files.
+
+<<<
+
+==== National QWI and state-level QWI ====
+
+( link:variables_qwiv.csv[variables_qwiv.csv] )
+[width="95%",format="csv",cols="2*^2,<5,<5",options="header"]
+|===================================================
+include::tmp_variables_qwiv.csv[]
+|===================================================
+
+<<<
+==== National QWI and state-level QWI rates ====
+
+( link:variables_qwirv.csv[variables_qwirv.csv] )
+[width="95%",format="csv",cols="2*^2,<5,<5",options="header"]
+|===================================================
+include::tmp_variables_qwirv.csv[]
+|===================================================
+
+
+<<<
+
+==== Job-to-job flow counts (J2J)
+Soon.
+//( link:variables_j2j.csv[] )
+//[width="95%",format="csv",cols="3*^2,<5",options="header"]
+//|===================================================
+//include::tmp_variables_j2jv.csv[]
+//|===================================================
+//<<<
+//
+
+==== Job-to-job flow rates (J2JR)
+Soon.
+//( link:variables_j2jr.csv[] )
+//[width="95%",format="csv",cols="3*^2,<5",options="header"]
+//|===================================================
+//include::tmp_variables_j2jrv.csv[]
+//|===================================================
+//<<<
+
+==== Job-to-job flow Origin-Destination (J2JOD)
+Soon.
+//( link:variables_j2jod.csv[] )
+//[width="95%",format="csv",cols="^3,^2,^3,<5",options="header"]
+//|===================================================
+//include::tmp_variables_j2jodv.csv[]
+//|===================================================
+
+<<<
+
+
+
+== [[catvars]]Categorical Variables
+Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.
+
+
+=== agegrp
+( link:label_agegrp.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_agegrp.csv[]
+|===================================================
+
+=== education
+( link:label_education.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_education.csv[]
+|===================================================
+
+=== ethnicity
+( link:label_ethnicity.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ethnicity.csv[]
+|===================================================
+
+=== firmage
+( link:label_firmage.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_firmage.csv[]
+|===================================================
+
+=== firmsize
+( link:label_firmsize.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_firmsize.csv[]
+|===================================================
+
+=== ownercode
+( link:label_ownercode.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ownercode.csv[]
+|===================================================
+
+=== periodicity
+( link:label_periodicity.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_periodicity.csv[]
+|===================================================
+
+=== quarter
+( link:label_quarter.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_quarter.csv[]
+|===================================================
+
+=== race
+( link:label_race.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_race.csv[]
+|===================================================
+
+=== seasonadj
+( link:label_seasonadj.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_seasonadj.csv[]
+|===================================================
+
+=== sex
+( link:label_sex.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_sex.csv[]
+|===================================================
+
+=== stusps
+( link:label_stusps.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_stusps.csv[]
+|===================================================
+
+<<<
+=== Industry ===
+
+ 
+[[ind_level]]
+==== Industry levels
+( link:label_ind_level.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ind_level.csv[]
+|===================================================
+
+
+==== Industry
+( link:label_industry.csv[] )
+
+Only a small subset of available values shown.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
+For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
+
+[width="90%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::tmp2.csv[]
+|===================================================
+<<<
+
+=== Geography ===
+
+  
+[[geo_level]]
+==== [[geolevel]] Geographic levels
+Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
+The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2015Q4 release.
+
+
+
+Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
+
+
+( link:label_geo_level.csv[] )
+
+[width="80%",format="csv",cols="^1,<3,<8,<8",options="header"]
+|===================================================
+include::label_geo_level.csv[]
+|===================================================
+
+
+
+==== National and state-level values ====
+( link:label_fipsnum.csv[] )
+
+The file link:label_fipsnum.csv[label_fipsnum.csv] contains values and labels
+for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separately available files.
+
+[width="40%",format="csv",cols="^1,<3,^1",options="header"]
+|===================================================
+include::tmp.csv[]
+|===================================================
+
+==== Detailed state and substate level values
+
+Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
+
+
+
+
+
+[format="csv",width="50%",cols="^1,^3",options="header"]
+|===================================================
+Scope,Format file
+US,link:label_geography_us.csv[]
+METRO,link:label_geography_metro.csv[]
+*States*,
+AK,link:label_geography_ak.csv[]
+AL,link:label_geography_al.csv[]
+AR,link:label_geography_ar.csv[]
+AZ,link:label_geography_az.csv[]
+CA,link:label_geography_ca.csv[]
+CO,link:label_geography_co.csv[]
+CT,link:label_geography_ct.csv[]
+DC,link:label_geography_dc.csv[]
+DE,link:label_geography_de.csv[]
+FL,link:label_geography_fl.csv[]
+GA,link:label_geography_ga.csv[]
+HI,link:label_geography_hi.csv[]
+IA,link:label_geography_ia.csv[]
+ID,link:label_geography_id.csv[]
+IL,link:label_geography_il.csv[]
+IN,link:label_geography_in.csv[]
+KS,link:label_geography_ks.csv[]
+KY,link:label_geography_ky.csv[]
+LA,link:label_geography_la.csv[]
+MA,link:label_geography_ma.csv[]
+MD,link:label_geography_md.csv[]
+ME,link:label_geography_me.csv[]
+MI,link:label_geography_mi.csv[]
+MN,link:label_geography_mn.csv[]
+MO,link:label_geography_mo.csv[]
+MS,link:label_geography_ms.csv[]
+MT,link:label_geography_mt.csv[]
+NC,link:label_geography_nc.csv[]
+ND,link:label_geography_nd.csv[]
+NE,link:label_geography_ne.csv[]
+NH,link:label_geography_nh.csv[]
+NJ,link:label_geography_nj.csv[]
+NM,link:label_geography_nm.csv[]
+NV,link:label_geography_nv.csv[]
+NY,link:label_geography_ny.csv[]
+OH,link:label_geography_oh.csv[]
+OK,link:label_geography_ok.csv[]
+OR,link:label_geography_or.csv[]
+PA,link:label_geography_pa.csv[]
+RI,link:label_geography_ri.csv[]
+SC,link:label_geography_sc.csv[]
+SD,link:label_geography_sd.csv[]
+TN,link:label_geography_tn.csv[]
+TX,link:label_geography_tx.csv[]
+UT,link:label_geography_ut.csv[]
+VA,link:label_geography_va.csv[]
+VT,link:label_geography_vt.csv[]
+WA,link:label_geography_wa.csv[]
+WI,link:label_geography_wi.csv[]
+WV,link:label_geography_wv.csv[]
+WY,link:label_geography_wy.csv[]
+|===================================================
+
+<<<
+=== Aggregation level
+( link:label_agg_level.csv[] )
+
+Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
+
+*agg_level* is currently  reported only for  J2J data products.
+
+
+The following variables are included in the link:label_agg_level.csv[label_agg_level.csv]   file:
+
+[width="60%",format="csv",cols="<2,<5",options="header"]
+|===================================================
+include::variables_agg_level.csv[]
+|===================================================
+
+
+The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
+
+- <<geolevel,geo_level>> - geographic level of table
+- <<ind_level,ind_level>> - industry level of table
+- by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
+
+A shortened representation of the file is provided below, the complete file is available in the link above.
+
+
+[width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
+|===================================================
+include::tmp_label_agg_level.csv[]
+|===================================================
+
+
+<<<
+== [[statusflags]]Status flags
+( link:label_flags.csv[] )
+
+Each status flag in the tables above contains one of the following valid values.
+The values and their interpretation are listed in the table below.
+
+[IMPORTANT]
+.Important
+==============================================
+Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status flags with values 10 or above only appear in online applications, not in CSV files.
+==============================================
+
+
+[width="80%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_flags.csv[]
+|===================================================
+
+<<<
+
+
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2017-08-21: Initial release
+
+=== Version 4.1.3 from 4.1.2
+- 2017-08-15: Updated LEHD shape files for Texas WIB definitions
+- 2017-08-15: Update the source links of metro definitions from http://www.census.gov/population/metro/ (broken) to https://www.census.gov/programs-surveys/metro-micro.html
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
+
+=== Version 4.1.2 from 4.1.1
+- 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB definitions
+
+=== Version 4.1.1 from 4.1.0
+- 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
+- 2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
+- 2017-03-06: Updated TIGER references to 2016 in shapefile description
+- 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
+- 2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
+- 2017-03-06: Added a new file label_geography_metro.csv
+- 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
+- 2017-03-06: Added additional aggregation levels, changed some labels
+- 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-07: Updated 2016 geography in shapefiles
+- 2017-03-07: Corrected naming of files inside shapefile ZIP files
+
+
+<<<
+*******************
+This revision: Mon Aug 21 13:16:43 EDT 2017
+*******************
+

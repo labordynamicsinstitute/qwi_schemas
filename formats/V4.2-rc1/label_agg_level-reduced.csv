@@ -1,0 +1,11 @@
+agg_level,worker_char,firm_char,firm_orig_char,j2j,j2jr,j2jod,qwi,geo_level,ind_level,by_ownercode,by_sex,by_agegrp,by_race,by_ethnicity,by_education,by_firmage,by_firmsize
+1,,,,0,1,0,0,N,A,0,0,0,0,0,0,0,0
+2,Ethnicity,,,0,1,0,0,N,A,0,0,0,0,1,0,0,0
+3,Race,,,0,1,0,0,N,A,0,0,0,1,0,0,0,0
+4,Race * Ethnicity,,,0,1,0,0,N,A,0,0,0,1,1,0,0,0
+5,Education,,,0,1,0,0,N,A,0,0,0,0,0,1,0,0
+6,Age,,,0,1,0,0,N,A,0,0,1,0,0,0,0,0
+7,Sex,,,0,1,0,0,N,A,0,1,0,0,0,0,0,0
+8,Sex * Education,,,0,1,0,0,N,A,0,1,0,0,0,1,0,0
+9,Sex * Age,,,0,1,0,0,N,A,0,1,1,0,0,0,0,0
+10,,Firm Size,,0,1,0,0,N,A,0,0,0,0,0,0,0,1
