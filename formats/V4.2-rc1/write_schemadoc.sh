@@ -25,10 +25,7 @@ case $version in
 	cornell)
 	author=lars.vilhuber@cornell.edu
 	;;
-	draft)
-	author=lars.vilhuber@census.gov
-	;;
-	official|lehd)
+	official|lehd|draft)
 	author=ces.qwi.feedback@census.gov
 	;;
 esac
@@ -39,6 +36,14 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
+# this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
+versionvintage=R2017Q3
+versionstate=mo
+versiondemo=sa
+versionfas=f
+versionurl=https://lehd.ces.census.gov/pub/$versionstate/$versionvintage/DVD-${versiondemo}_${versionfas}/
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate/
+
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
@@ -178,23 +183,32 @@ echo "
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
+list the indicators available on each file.  The descriptor files themselves are structured as follows:
+
+- The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications.
+- When given, the ''Alternate name'' may appear in related documentation and articles.
+- The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>).
+- The ''Indicator Name'' is a non-abbreviated version of the ''Indicator Variable''.
+- The ''Description'' provides more verbose description of the variable.
+- ''Units'' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
+- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see link:label_concept.csv[label_concept.csv] for a draft version.
+- The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwi.csv[variables_qwi.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^2\",options=\"header\"]
 |===================================================
 include::variables_qwi.csv[]
 |===================================================
 <<<
 
 ==== National QWI and state-level QWI rates (QWIPUR) ====
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
 ( link:variables_qwir.csv[variables_qwir.csv] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,<2\",options=\"header\"]
 |===================================================
 include::variables_qwir.csv[]
 |===================================================
@@ -204,7 +218,7 @@ include::variables_qwir.csv[]
 
 ==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2j.csv[]
 |===================================================
@@ -213,10 +227,10 @@ include::variables_j2j.csv[]
 ==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
 
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
@@ -226,7 +240,7 @@ include::variables_j2jr.csv[]
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
 ( link:variables_j2jod.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<2\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2jod.csv[]
 |===================================================
@@ -241,15 +255,15 @@ for arg in   $(ls variables_*v.csv)
 do
 	tmpfile=tmp_$arg
 	head -4 $arg  > $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vt_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vb_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "vw_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "df_" $arg | head -3 >> $tmpfile
-	echo "...,,," >> $tmpfile
+	echo "...,,,," >> $tmpfile
 	grep "mr_" $arg | head -3 >> $tmpfile
 done
 
