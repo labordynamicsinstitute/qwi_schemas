@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.2b-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-07 September 2017
+18 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -610,18 +610,16 @@ include::tmp_variables_version.csv[]
 |===================================================
 
 For instance, the metadata for the R2017Q1 release of
-"Missouri"
-"Kokomo QWI
+Missouri QWI
 Sex by Age tabulations
 for No firm size or age detail
-(obtained from https://lehd.ces.census.gov/pub/mo/R2017Q1/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
+(obtained from https://lehd.ces.census.gov/pub/mo/R2017Q1/DVD-sa_f/version_sa_f.txt[here]) has  the following content:
 --------------------------------
 QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
 --------------------------------
 Similarly, the metadata for the R2017Q1 release of
-"Missouri"
-"Kokomo J2J
-tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q1/j2j/mo//version_j2j.txt[here]) has  the following content:
+Missouri  J2J
+tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q1/j2j/mo/version_j2j.txt[here]) has  the following content:
 --------------------------------
 J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
 --------------------------------
@@ -650,6 +648,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
 - 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv, removed unused label_geography_cbsa.csv
 - 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
+- 2017-10-30: Description on J2JOD earnings measures reversed, fixed. Only affects the J2J app metadata.
 
 === Version 4.2b-draft from V4.2a-draft
 - See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
@@ -660,6 +659,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Sep  7 15:26:44 EDT 2017
+This revision: Mon Dec 18 15:29:01 EST 2017
 *******************
 

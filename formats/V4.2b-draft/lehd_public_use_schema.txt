@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-07 September 2017
+18 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -737,7 +738,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
    EESEarn_Orig  fee_doma2_jfqearn    sEESEarn_Orig  Average        Average       Dollars Earnings    EES
                                                      Earnings prior quarterly
                                                      to Job-to-Job  earnings
-                                                     Flows          following job
+                                                     Flows          prior to job
                                                      (Continuous    flows with no
                                                      Employment)    observed
                                                                     nonemployment
@@ -745,7 +746,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
    EESEarn_Dest  fee_doma2_kfqearn    sEESEarn_Dest  Average        Average       Dollars Earnings    EES
                                                      Earnings       quarterly
                                                      following Job- earnings
-                                                     to-Job Flows   prior to job
+                                                     to-Job Flows   following job
                                                      (Continuous    flows with no
                                                      Employment)    observed
                                                                     nonemployment
@@ -753,7 +754,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
 AQHireSEarn_Orig faq_doma2_jfqearn sAQHireSEarn_Orig Average        Average       Dollars Earnings AQHireS
                                                      Earnings prior quarterly
                                                      to Job-to-Job  earnings
-                                                     Flows (Brief   following job
+                                                     Flows (Brief   prior to job
                                                      Nonemployment) flows with a
                                                                     short
                                                                     nonemployment
@@ -761,7 +762,7 @@ AQHireSEarn_Orig faq_doma2_jfqearn sAQHireSEarn_Orig Average        Average     
 AQHireSEarn_Dest faq_doma2_kfqearn sAQHireSEarn_Dest Average        Average       Dollars Earnings AQHireS
                                                      Earnings       quarterly
                                                      following Job- earnings
-                                                     to-Job Flows   prior to job
+                                                     to-Job Flows   following job
                                                      (Brief         flows with a
                                                      Nonemployment) short
                                                                     nonemployment
@@ -1297,12 +1298,12 @@ schema    Vx.y.z            Version of the schema
 release   RyyyyQq           Release quarter (identifies when the data was
                             created)
 internal  various           Internal identifier used for provenance tracking
-For instance, the metadata for the R2017Q1 release of "Missouri" "Kokomo QWI
-Sex by Age tabulations for No firm size or age detail (obtained from here) has
-the following content:
+For instance, the metadata for the R2017Q1 release of Missouri QWI Sex by Age
+tabulations for No firm size or age detail (obtained from here) has the
+following content:
 QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
-Similarly, the metadata for the R2017Q1 release of "Missouri" "Kokomo J2J
-tabulations (obtained from here) has the following content:
+Similarly, the metadata for the R2017Q1 release of Missouri J2J tabulations
+(obtained from here) has the following content:
 J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
 Some J2J metadata may contain multiple lines, as necessary.
 8.2. Additional metadata for J2JOD files (avail.csv)
@@ -1340,10 +1341,12 @@ For a description of how schema files are versioned, see main_directory.
       label_geography_metro.csv, removed unused label_geography_cbsa.csv
     * 2017-09-07: Expanded definition of [geohi] to include CBSA codes for
       metropolitan areas
+    * 2017-10-30: Description on J2JOD earnings measures reversed, fixed. Only
+      affects the J2J app metadata.
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Thu Sep 7 15:26:44 EDT 2017
+This revision: Mon Dec 18 15:29:01 EST 2017
 ===============================================================================
-Last updated 2017-09-07 15:26:44 EDT
+Last updated 2017-12-18 15:29:01 EST

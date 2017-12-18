@@ -656,16 +656,16 @@ include::tmp_$arg[]
 |===================================================
 
 For instance, the metadata for the $versionvintage release of
-$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) QWI
+$(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') QWI
 $(grep "$versiondemo," naming_demo.csv | awk  -F, ' { print $2 } ' )
-for $(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')
-(obtained from $versionurl/version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
+for "$(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')"
+(obtained from ${versionurl}version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionurl/version_${versiondemo}_${versionfas}.txt)
 --------------------------------
 Similarly, the metadata for the $versionvintage release of
-$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
-tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
+$(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g')  J2J
+tabulations (obtained from ${versionj2jurl}version_j2j.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
