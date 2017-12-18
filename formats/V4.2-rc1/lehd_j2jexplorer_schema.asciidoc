@@ -122,6 +122,14 @@ Categorical variable descriptions are displayed above each table, with the varia
 include::label_agegrp.csv[]
 |===================================================
 
+=== concept_draft
+( link:label_concept_draft.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_concept_draft.csv[]
+|===================================================
+
 === education
 ( link:label_education.csv[] )
 
@@ -244,7 +252,8 @@ include::tmp2.csv[]
 [[geo_level]]
 ==== [[geolevel]] Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
-The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2015Q4 release.
+The 2017 vintage of  https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2018Q1 release.
+
 
 
 
@@ -396,6 +405,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Dec 18 12:43:44 EST 2017
+This revision: Mon Dec 18 16:04:58 EST 2017
 *******************
 

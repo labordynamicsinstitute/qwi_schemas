@@ -335,7 +335,17 @@ agegrp label
   A06  45-54
   A07  55-64
   A08  65-99
-**** 6.2. education ****
+**** 6.2. concept_draft ****
+( label_concept_draft.csv )
+  Concept  Definition
+    Hire   Measure derived from the the first quarter that a job is the main
+           source of income (usually a hire)
+Separation Measure derived from the last quarter that a job is the main source
+           of income (usually a separation)
+Employment Measure counting the stock of all jobs at a point in time
+ Earnings  Measure of average earnings associated with a base employment or job
+           transition measure
+**** 6.3. education ****
 ( label_education.csv )
 education label
      E0   All Education Categories
@@ -344,13 +354,13 @@ education label
      E3   Some college or Associate degree
      E4   Bachelor’s degree or advanced degree
      E5   Educational attainment not available (workers aged 24 or younger)
-**** 6.3. ethnicity ****
+**** 6.4. ethnicity ****
 ( label_ethnicity.csv )
 ethnicity label
      A0   All Ethnicities
      A1   Not Hispanic or Latino
      A2   Hispanic or Latino
-**** 6.4. firmage ****
+**** 6.5. firmage ****
 ( label_firmage.csv )
 firmage label
     0   All Firm Ages
@@ -360,7 +370,7 @@ firmage label
     4   6-10 Years
     5   11+ Years
     N   Firm Age Not Available For Public-Sector Firms
-**** 6.5. firmsize ****
+**** 6.6. firmsize ****
 ( label_firmsize.csv )
 firmsize label
      0   All Firm Sizes
@@ -370,25 +380,25 @@ firmsize label
      4   250-499 Employees
      5   500+ Employees
      N   Firm Size Not Available For Public-Sector Firms
-**** 6.6. ownercode ****
+**** 6.7. ownercode ****
 ( label_ownercode.csv )
 ownercode label
-    A00   All (1-5)
+    A00   State and local government plus private ownership
     A01   Federal government
-    A05   All Private (5)
-**** 6.7. periodicity ****
+    A05   All Private
+**** 6.8. periodicity ****
 ( label_periodicity.csv )
 periodicity label
        A    Annual data
        Q    Quarterly data
-**** 6.8. quarter ****
+**** 6.9. quarter ****
 ( label_quarter.csv )
 quarter label
     1   1st Quarter of the Year (January-March)
     2   2nd Quarter of the Year (April-June)
     3   3rd Quarter of the Year (July-September)
     4   4th Quarter of the Year (October-December)
-**** 6.9. race ****
+**** 6.10. race ****
 ( label_race.csv )
 race label
  A0  All Races
@@ -399,18 +409,18 @@ race label
  A5  Native Hawaiian or Other Pacific Islander Alone
  A6  Some Other Race Alone (Not Used)
  A7  Two or More Race Groups
-**** 6.10. seasonadj ****
+**** 6.11. seasonadj ****
 ( label_seasonadj.csv )
 seasonadj label
       S   Seasonally adjusted
       U   Not seasonally adjusted
-**** 6.11. sex ****
+**** 6.12. sex ****
 ( label_sex.csv )
 sex label
  0  All Sexes
  1  Male
  2  Female
-**** 6.12. stusps ****
+**** 6.13. stusps ****
 ( label_stusps.csv )
 geography stusps
      00   US
@@ -467,15 +477,15 @@ geography stusps
      56   WY
      72   PR
      78   VI
-**** 6.13. Industry ****
-*** 6.13.1. Industry levels ***
+**** 6.14. Industry ****
+*** 6.14.1. Industry levels ***
 ( label_ind_level.csv )
 ind_level label
       A   All Industries
       S   NAICS Sectors
       3   NAICS Subsectors
       4   NAICS Industry Groups
-*** 6.13.2. Industry ***
+*** 6.14.2. Industry ***
 ( label_industry.csv )
 Only a small subset of available values shown. The 2017 NAICS (North American
 Industry Classification System) is used for all years. QWI releases prior to
@@ -500,38 +510,36 @@ industry label                                         ind_level
    3112  Grain and Oilseed Milling                           4
    3113  Sugar and Confectionery Product Manufacturing       4
     …
-**** 6.14. Geography ****
-6.14.1.  Geographic levels
+**** 6.15. Geography ****
+6.15.1.  Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each
 file label_geograpy_SCOPE.csv may contain one or more types of records as
 flagged by geo_level. For convenience, a composite file containing all geocodes
-is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
-geography is used for all tabulations as of the R2015Q4 release.
+is available as label_geography.csv. The 2017 vintage of Census_TIGER/Line
+geography is used for all tabulations as of the R2018Q1 release.
 Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census https://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   programs-surveys/
-                                                                                                   metro-micro.html
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   https://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             programs-surveys/
-                                                                                                   metro-micro.html
+geo_level label         description                                                                  sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census   http://
+          (complete)    Bureau’s Geography Division. Balance of state including micropolitan areas www.census.gov/
+                        are identified by custom codes as [ST]999                                    population/metro/
+      C   Counties      Identifies 5-digit FIPS/ANSI code for counties                               https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/codes/
+                                                                                                     cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and the http://
+          Micropolitan  5-digit CBSA code provided by the Census Bureau’s Geography Division       www.census.gov/
+          (state part)                                                                               population/metro/
       N   National (50  Custom code using 00 to denote national scope
           States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
+      S   States        Identifies 2-digit FIPS/ANSI codes                                           https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/
+                                                                                                     ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED State
+          Investment    Partners
           Areas
-*** 6.14.2. National and state-level values ***
+*** 6.15.2. National and state-level values ***
 ( label_fipsnum.csv )
 The file label_fipsnum.csv contains values and labels for all entities of
 geo_level N or S, and is a summary of separately available files.
@@ -552,7 +560,7 @@ geography label                     geo_level
      50   Vermont                         S
      51   Virginia                        S
      53   Washington                      S
-*** 6.14.3. Detailed state and substate level values ***
+*** 6.15.3. Detailed state and substate level values ***
 Note: cross-state CBSA, in records of type geo_level = M, are present on files
 of type label_geography_XX.csv. A particular cross-state CBSA will appear on
 multiple files.
@@ -611,7 +619,7 @@ States
    WI    label_geography_wi.csv
    WV    label_geography_wv.csv
    WY    label_geography_wy.csv
-**** 6.15. Aggregation level ****
+**** 6.16. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
 dimensions, including demographic characteristics, geography, industry, and
@@ -656,7 +664,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
         …
       129             Firm Size                   1   1    1     0   N
       257             NAICS Sector                1   1    1     0   N
-      258 Sex         NAICS Sector                0   0    0     0   N
+      258 Sex         NAICS Sector                1   1    1     0   N
         …
      1029 Race        State                       1   1    1     0   S
      1033 Ethnicity   State                       1   1    1     0   S
@@ -685,6 +693,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Mon Dec 18 12:43:44 EST 2017
+This revision: Mon Dec 18 16:04:58 EST 2017
 ===============================================================================
-Last updated 2017-12-18 12:43:44 EST
+Last updated 2017-12-18 16:04:58 EST

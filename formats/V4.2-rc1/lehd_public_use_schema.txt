@@ -738,7 +738,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
    EESEarn_Orig  fee_doma2_jfqearn    sEESEarn_Orig  Average        Average       Dollars Earnings    EES
                                                      Earnings prior quarterly
                                                      to Job-to-Job  earnings
-                                                     Flows          following job
+                                                     Flows          prior to job
                                                      (Continuous    flows with no
                                                      Employment)    observed
                                                                     nonemployment
@@ -746,7 +746,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
    EESEarn_Dest  fee_doma2_kfqearn    sEESEarn_Dest  Average        Average       Dollars Earnings    EES
                                                      Earnings       quarterly
                                                      following Job- earnings
-                                                     to-Job Flows   prior to job
+                                                     to-Job Flows   following job
                                                      (Continuous    flows with no
                                                      Employment)    observed
                                                                     nonemployment
@@ -754,7 +754,7 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
 AQHireSEarn_Orig faq_doma2_jfqearn sAQHireSEarn_Orig Average        Average       Dollars Earnings AQHireS
                                                      Earnings prior quarterly
                                                      to Job-to-Job  earnings
-                                                     Flows (Brief   following job
+                                                     Flows (Brief   prior to job
                                                      Nonemployment) flows with a
                                                                     short
                                                                     nonemployment
@@ -762,7 +762,7 @@ AQHireSEarn_Orig faq_doma2_jfqearn sAQHireSEarn_Orig Average        Average     
 AQHireSEarn_Dest faq_doma2_kfqearn sAQHireSEarn_Dest Average        Average       Dollars Earnings AQHireS
                                                      Earnings       quarterly
                                                      following Job- earnings
-                                                     to-Job Flows   prior to job
+                                                     to-Job Flows   following job
                                                      (Brief         flows with a
                                                      Nonemployment) short
                                                                     nonemployment
@@ -950,9 +950,9 @@ firmsize label
 **** 6.6. ownercode ****
 ( label_ownercode.csv )
 ownercode label
-    A00   All (1-5)
+    A00   State and local government plus private ownership
     A01   Federal government
-    A05   All Private (5)
+    A05   All Private
 **** 6.7. periodicity ****
 ( label_periodicity.csv )
 periodicity label
@@ -1025,8 +1025,8 @@ industry label                                         ind_level
 Geography labels for data files are provided in separate files, by scope. Each
 file label_geograpy_SCOPE.csv may contain one or more types of records as
 flagged by geo_level. For convenience, a composite file containing all geocodes
-is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
-geography is used for all tabulations as of the R2015Q4 release.
+is available as label_geography.csv. The 2017 vintage of Census_TIGER/Line
+geography is used for all tabulations as of the R2018Q1 release.
 Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
 geo_level label         description                                                                  sourceurl
@@ -1330,6 +1330,7 @@ For a description of how schema files are versioned, see main_directory.
           o Base
     * Added a (draft) taxonomy of concepts used in the LEHD data world
       (label_concept_draft.csv)
-This revision: Mon Dec 18 15:05:25 EST 2017
+    * Fixed the labeling of ownership code A00 to correctly reflect scope
+This revision: Mon Dec 18 16:04:40 EST 2017
 ===============================================================================
-Last updated 2017-12-18 15:05:25 EST
+Last updated 2017-12-18 16:04:40 EST

@@ -1791,7 +1791,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">fee_doma2_jfqearn</p></td>
 <td align="center" valign="top"><p class="table">sEESEarn_Orig</p></td>
 <td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Continuous Employment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with no observed nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">EES</p></td>
@@ -1801,7 +1801,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">fee_doma2_kfqearn</p></td>
 <td align="center" valign="top"><p class="table">sEESEarn_Dest</p></td>
 <td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Continuous Employment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with no observed nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with no observed nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">EES</p></td>
@@ -1811,7 +1811,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">faq_doma2_jfqearn</p></td>
 <td align="center" valign="top"><p class="table">sAQHireSEarn_Orig</p></td>
 <td align="left" valign="top"><p class="table">Average Earnings prior to Job-to-Job Flows (Brief Nonemployment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">AQHireS</p></td>
@@ -1821,7 +1821,7 @@ cellspacing="0" cellpadding="4">
 <td align="center" valign="top"><p class="table">faq_doma2_kfqearn</p></td>
 <td align="center" valign="top"><p class="table">sAQHireSEarn_Dest</p></td>
 <td align="left" valign="top"><p class="table">Average Earnings following Job-to-Job Flows (Brief Nonemployment)</p></td>
-<td align="left" valign="top"><p class="table">Average quarterly earnings prior to job flows with a short nonemployment spell</p></td>
+<td align="left" valign="top"><p class="table">Average quarterly earnings following job flows with a short nonemployment spell</p></td>
 <td align="left" valign="top"><p class="table">Dollars</p></td>
 <td align="left" valign="top"><p class="table">Earnings</p></td>
 <td align="center" valign="top"><p class="table">AQHireS</p></td>
@@ -2587,7 +2587,7 @@ cellspacing="0" cellpadding="4">
 <tbody>
 <tr>
 <td align="center" valign="top"><p class="table">A00</p></td>
-<td align="left" valign="top"><p class="table">All (1-5)</p></td>
+<td align="left" valign="top"><p class="table">State and local government plus private ownership</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">A01</p></td>
@@ -2595,7 +2595,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">A05</p></td>
-<td align="left" valign="top"><p class="table">All Private (5)</p></td>
+<td align="left" valign="top"><p class="table">All Private</p></td>
 </tr>
 </tbody>
 </table>
@@ -2941,7 +2941,7 @@ cellspacing="0" cellpadding="4">
 <div class="sect3">
 <h4 id="geo_level">6.13.1. <a id="geolevel"></a> Geographic levels</h4>
 <div class="paragraph"><p>Geography labels for data files are provided in separate files, by scope. Each file <em>label_geograpy_SCOPE.csv</em> may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv">label_geography.csv</a>.
-The 2015 vintage of   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">Census TIGER/Line geography</a> is used for all tabulations as of the R2015Q4 release.</p></div>
+The 2017 vintage of  <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">Census TIGER/Line geography</a> is used for all tabulations as of the R2018Q1 release.</p></div>
 <div class="paragraph"><p>Shapefiles are described in a <a href="lehd_shapefiles.html">separate document</a>.</p></div>
 <div class="paragraph"><p>( <a href="label_geo_level.csv">label_geo_level.csv</a> )</p></div>
 <div class="tableblock">
@@ -4226,11 +4226,16 @@ Base
 Added a (draft) taxonomy of concepts used in the LEHD data world (<a href="label_concept_draft.csv">label_concept_draft.csv</a>)
 </p>
 </li>
+<li>
+<p>
+Fixed the labeling of ownership code A00 to correctly reflect scope
+</p>
+</li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Dec 18 15:05:25 EST 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Dec 18 16:04:40 EST 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -4240,7 +4245,7 @@ Added a (draft) taxonomy of concepts used in the LEHD data world (<a href="label
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-12-18 15:05:25 EST
+ 2017-12-18 16:04:40 EST
 </div>
 </div>
 </body>
