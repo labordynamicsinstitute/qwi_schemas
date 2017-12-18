@@ -3,7 +3,7 @@ EE,ee_doma2,sEE,Job-to-Job Flows (Continuous Employment),Rate of hires following
 AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Rate of hires following a separation with a short nonemployment spell,Count,Hire,1
 EES,fee_doma2,sEES,Stable Job-to-Job Flows (Continuous Employment),Hires to stable employment following a separation from stable employment with no observed nonemployment spell,Count,Hire,1
 AQHireS,faq_doma2,sAQHireS,Stable Job-to-Job Flows (Brief Nonemployment),Hires to stable employment following a separation from stable employment with a short nonemployment spell,Count,Hire,1
-EESEarn_Orig,fee_doma2_jfqearn,sEESEarn_Orig,Average Earnings prior to Job-to-Job Flows (Continuous Employment),Average quarterly earnings following job flows with no observed nonemployment spell,Dollars,Earnings,EES
-EESEarn_Dest,fee_doma2_kfqearn,sEESEarn_Dest,Average Earnings following Job-to-Job Flows (Continuous Employment),Average quarterly earnings prior to job flows with no observed nonemployment spell,Dollars,Earnings,EES
-AQHireSEarn_Orig,faq_doma2_jfqearn,sAQHireSEarn_Orig,Average Earnings prior to Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings following job flows with a short nonemployment spell,Dollars,Earnings,AQHireS
-AQHireSEarn_Dest,faq_doma2_kfqearn,sAQHireSEarn_Dest,Average Earnings following Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings prior to job flows with a short nonemployment spell,Dollars,Earnings,AQHireS
+EESEarn_Orig,fee_doma2_jfqearn,sEESEarn_Orig,Average Earnings prior to Job-to-Job Flows (Continuous Employment),Average quarterly earnings prior to job flows with no observed nonemployment spell,Dollars,Earnings,EES
+EESEarn_Dest,fee_doma2_kfqearn,sEESEarn_Dest,Average Earnings following Job-to-Job Flows (Continuous Employment),Average quarterly earnings following job flows with no observed nonemployment spell,Dollars,Earnings,EES
+AQHireSEarn_Orig,faq_doma2_jfqearn,sAQHireSEarn_Orig,Average Earnings prior to Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings prior to job flows with a short nonemployment spell,Dollars,Earnings,AQHireS
+AQHireSEarn_Dest,faq_doma2_kfqearn,sAQHireSEarn_Dest,Average Earnings following Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings following job flows with a short nonemployment spell,Dollars,Earnings,AQHireS
