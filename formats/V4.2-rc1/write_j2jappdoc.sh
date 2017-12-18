@@ -249,9 +249,9 @@ echo "
 ( link:${arg}[] )
 
 Only a small subset of available values shown.
-The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
-For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
+The 2017 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2018Q1 used the 2012 NAICS classification (see link:../V4.1.3[Schema v4.1.3]).
+For a full listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
