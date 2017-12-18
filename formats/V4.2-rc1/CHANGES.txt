@@ -13,3 +13,4 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 * Concept,
 * Base
 - Added a (draft) taxonomy of concepts used in the LEHD data world (link:label_concept_draft.csv[label_concept_draft.csv])
+- Fixed the labeling of ownership code A00 to correctly reflect scope
