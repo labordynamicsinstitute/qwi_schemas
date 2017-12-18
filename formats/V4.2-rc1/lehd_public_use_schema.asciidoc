@@ -589,8 +589,8 @@ include::label_flags.csv[]
 
 Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
 --------------------------------
-
-
+version_[demo]_[fas].txt
+version_[type].txt
 --------------------------------
 where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
 
@@ -651,6 +651,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Mon Dec 18 16:04:40 EST 2017
+This revision: Mon Dec 18 16:34:00 EST 2017
 *******************
 

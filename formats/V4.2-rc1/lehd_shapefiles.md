@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-21 August 2017
+18 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
@@ -75,8 +75,8 @@ The following major transformations are applied to the input files:
     unnecessary complexity from the features.
 
 -   Features from Guam, American Samoa, and the Northern Mariana Islands
-    have been removed because they are not used in current
-    LEHD tabulations.
+    have been removed because they are not used in current LEHD
+    tabulations.
 
 -   Each shapefile’s attribute table has been updated to conform to the
     standard LEHD output format, defined in [Format](#format) section
@@ -217,14 +217,14 @@ FIPS State Postal Code as per
 ( [label\_geography.csv](label_geography.csv) ) The valid codes
 correspond to those listed on
 [label\_geography.csv](label_geography.csv) and
-[label\_geography\_cbsa.csv](label_geography_cbsa.csv).
+[label\_geography\_metro.csv](label_geography_metro.csv).
 
 ### NAME
 
 This is a string that corresponds in general to the *label* field on
 [label\_geography.csv](label_geography.csv) and
-[label\_geography\_cbsa.csv](label_geography_cbsa.csv). Minor deviations
-for ease of exposition are possible.
+[label\_geography\_metro.csv](label_geography_metro.csv). Minor
+deviations for ease of exposition are possible.
 
 Common files
 ------------
@@ -252,15 +252,15 @@ QWI Geographies
 -   All features are split into state-specific CBSA features by
     intersecting each feature with the state shapefile features.
 
--   The STUSPS field is added during the intersect with the
-    state shapefile.
+-   The STUSPS field is added during the intersect with the state
+    shapefile.
 
 -   STFIPS (i.e. FIPS State Code as per
     <https://www.census.gov/geo/reference/ansi_statetables.html>) is
     prepended to the CBSA code
     (<https://www.census.gov/population/metro/data/def.html>) to create
-    the GEOGRAPHY field to distinguish state-parts of the same
-    CBSA (i.e. make them nationally unique).
+    the GEOGRAPHY field to distinguish state-parts of the same CBSA
+    (i.e. make them nationally unique).
 
 -   The text "(\[STUSPS\] part)" is appended to the NAME field only for
     those CBSA features that are split by state lines.
@@ -281,9 +281,8 @@ Job-to-Job Flow Geographies
 ( [lehd\_shp\_gb.zip](lehd_shp_gb.zip) )
 
 -   Micropolitan areas are removed and state remainder areas are added
-    as new features. State remainders are assigned unique
-    codes (\[STUSPS\]+999) and names ("Not in metropolitan
-    area, \[STUSPS\]").
+    as new features. State remainders are assigned unique codes
+    (\[STUSPS\]+999) and names ("Not in metropolitan area, \[STUSPS\]").
 
 Versioning
 ==========
@@ -303,4 +302,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Mon Aug 21 13:16:51 EDT 2017
+This revision: Mon Dec 18 16:34:11 EST 2017

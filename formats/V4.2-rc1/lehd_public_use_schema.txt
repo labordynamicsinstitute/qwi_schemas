@@ -1269,6 +1269,8 @@ flag label
 Each data release is accompanied by one or more files with metadata on
 geographic and temporal coverage, in a compact notation. These files follow the
 following naming convention:
+version_[demo]_[fas].txt
+version_[type].txt
 where each component is described in more detail in lehd_csv_naming.html.
 The contents contains the following elements:
 Component Source            Description
@@ -1331,6 +1333,6 @@ For a description of how schema files are versioned, see main_directory.
     * Added a (draft) taxonomy of concepts used in the LEHD data world
       (label_concept_draft.csv)
     * Fixed the labeling of ownership code A00 to correctly reflect scope
-This revision: Mon Dec 18 16:04:40 EST 2017
+This revision: Mon Dec 18 16:34:00 EST 2017
 ===============================================================================
-Last updated 2017-12-18 16:04:40 EST
+Last updated 2017-12-18 16:34:00 EST
