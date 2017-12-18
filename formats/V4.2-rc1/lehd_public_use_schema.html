@@ -600,7 +600,7 @@ The <em>'Description</em>' provides more verbose description of the variable.
 </li>
 <li>
 <p>
-<em>'Concept</em>' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see <a href="label_concept.csv">label_concept.csv</a> for a draft version.
+<em>'Concept</em>' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see <a href="label_concept_draft.csv">label_concept_draft.csv</a> for a draft version.
 </p>
 </li>
 <li>
@@ -2965,20 +2965,20 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">B</p></td>
 <td align="left" valign="top"><p class="table">Metropolitan (complete)</p></td>
-<td align="left" valign="top"><p class="table">Identifies 5-digit CBSA code for metropolitan areas provided by the Census Bureau’s Geography Division</p></td>
-<td align="left" valign="top"><p class="table"><a href="https://www.census.gov/programs-surveys/metro-micro.html">https://www.census.gov/programs-surveys/metro-micro.html</a></p></td>
+<td align="left" valign="top"><p class="table">Identifies 5-digit CBSA code for metropolitan areas provided by the Census Bureau’s Geography Division. Balance of state including micropolitan areas are identified by custom codes as [ST]999</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://www.census.gov/population/metro/">http://www.census.gov/population/metro/</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">C</p></td>
 <td align="left" valign="top"><p class="table">Counties</p></td>
-<td align="left" valign="top"><p class="table">Identifies 5-digit FIPS code</p></td>
+<td align="left" valign="top"><p class="table">Identifies 5-digit FIPS/ANSI code for counties</p></td>
 <td align="left" valign="top"><p class="table"><a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">M</p></td>
 <td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (state part)</p></td>
 <td align="left" valign="top"><p class="table">Identifies 7-digit code constructed from the 2-digit state FIPS code and the 5-digit CBSA code provided by the Census Bureau’s Geography Division</p></td>
-<td align="left" valign="top"><p class="table"><a href="https://www.census.gov/programs-surveys/metro-micro.html">https://www.census.gov/programs-surveys/metro-micro.html</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="http://www.census.gov/population/metro/">http://www.census.gov/population/metro/</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">N</p></td>
@@ -2989,7 +2989,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="center" valign="top"><p class="table">S</p></td>
 <td align="left" valign="top"><p class="table">States</p></td>
-<td align="left" valign="top"><p class="table">Identifies 2-digit FIPS code (also called "ANSI" codes)</p></td>
+<td align="left" valign="top"><p class="table">Identifies 2-digit FIPS/ANSI codes</p></td>
 <td align="left" valign="top"><p class="table"><a href="https://www.census.gov/geo/reference/ansi_statetables.html">https://www.census.gov/geo/reference/ansi_statetables.html</a></p></td>
 </tr>
 <tr>
@@ -3857,9 +3857,9 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Sex</p></td>
 <td align="left" valign="top"><p class="table">NAICS Sector</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
-<td align="left" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">1</p></td>
 <td align="left" valign="top"><p class="table">0</p></td>
 <td align="left" valign="top"><p class="table">N</p></td>
 </tr>
@@ -4186,7 +4186,12 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-Added J2Japp description of metadata for convenience
+Updated industry classification from NAICS 2012 to NAICS 2017
+</p>
+</li>
+<li>
+<p>
+Added J2J Explorer-specific description of metadata for convenience (<a href="lehd_j2jexplorer_schema.html">lehd_j2jexplorer_schema.html</a>)
 </p>
 </li>
 <li>
@@ -4196,9 +4201,9 @@ Added a column "ind_level" to label_industry.csv similar to the geo_level
 </li>
 <li>
 <p>
-Added additional columns to the variable metadata schema:
+Added additional columns to the variable metadata schema for greater clarity
 </p>
-</li>
+<div class="ulist"><ul>
 <li>
 <p>
 Description,
@@ -4215,10 +4220,17 @@ Base
 </p>
 </li>
 </ul></div>
+</li>
+<li>
+<p>
+Added a (draft) taxonomy of concepts used in the LEHD data world (<a href="label_concept_draft.csv">label_concept_draft.csv</a>)
+</p>
+</li>
+</ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Dec 18 12:39:45 EST 2017</p></div>
+<div class="paragraph"><p>This revision: Mon Dec 18 15:05:25 EST 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -4228,7 +4240,7 @@ Base
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-12-18 12:39:45 EST
+ 2017-12-18 15:05:25 EST
 </div>
 </div>
 </body>

@@ -153,7 +153,7 @@ on each file. The descriptor files themselves are structured as follows:
       taxonomoy (not formalized yet): counts, rates, monetary amounts.
     * 'Concept' classifies the variables into higher-level concepts. The
       taxonomy for these concepts has not been finalized yet, see
-      label_concept.csv for a draft version.
+      label_concept_draft.csv for a draft version.
     * The 'Base' indicates the denominator used to compute the statistic, and
       may be 1.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
@@ -1029,27 +1029,25 @@ is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
 geography is used for all tabulations as of the R2015Q4 release.
 Shapefiles are described in a separate_document.
 ( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census https://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   programs-surveys/
-                                                                                                   metro-micro.html
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   https://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             programs-surveys/
-                                                                                                   metro-micro.html
+geo_level label         description                                                                  sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census   http://
+          (complete)    Bureau’s Geography Division. Balance of state including micropolitan areas www.census.gov/
+                        are identified by custom codes as [ST]999                                    population/metro/
+      C   Counties      Identifies 5-digit FIPS/ANSI code for counties                               https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/codes/
+                                                                                                     cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and the http://
+          Micropolitan  5-digit CBSA code provided by the Census Bureau’s Geography Division       www.census.gov/
+          (state part)                                                                               population/metro/
       N   National (50  Custom code using 00 to denote national scope
           States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
+      S   States        Identifies 2-digit FIPS/ANSI codes                                           https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/
+                                                                                                     ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED State
+          Investment    Partners
           Areas
 6.13.2. National and state-level values
 ( label_fipsnum.csv )
@@ -1236,7 +1234,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
         …
       129             Firm Size                   1   1    1     0   N
       257             NAICS Sector                1   1    1     0   N
-      258 Sex         NAICS Sector                0   0    0     0   N
+      258 Sex         NAICS Sector                1   1    1     0   N
         …
      1029 Race        State                       1   1    1     0   S
      1033 Ethnicity   State                       1   1    1     0   S
@@ -1321,12 +1319,17 @@ For a description of how schema files are versioned, see main_directory.
 **** 9.1. This version (revisions) ****
     * 2017-12-15: Initial release
 **** 9.2. Version 4.2.0 from 4.1.3 ****
-    * Added J2Japp description of metadata for convenience
+    * Updated industry classification from NAICS 2012 to NAICS 2017
+    * Added J2J Explorer-specific description of metadata for convenience
+      (lehd_j2jexplorer_schema.html)
     * Added a column "ind_level" to label_industry.csv similar to the geo_level
-    * Added additional columns to the variable metadata schema:
-    * Description,
-    * Concept,
-    * Base
-This revision: Mon Dec 18 12:39:45 EST 2017
+    * Added additional columns to the variable metadata schema for greater
+      clarity
+          o Description,
+          o Concept,
+          o Base
+    * Added a (draft) taxonomy of concepts used in the LEHD data world
+      (label_concept_draft.csv)
+This revision: Mon Dec 18 15:05:25 EST 2017
 ===============================================================================
-Last updated 2017-12-18 12:39:45 EST
+Last updated 2017-12-18 15:05:25 EST
