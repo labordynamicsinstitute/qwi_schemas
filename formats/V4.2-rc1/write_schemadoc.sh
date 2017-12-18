@@ -191,7 +191,7 @@ list the indicators available on each file.  The descriptor files themselves are
 - The ''Indicator Name'' is a non-abbreviated version of the ''Indicator Variable''.
 - The ''Description'' provides more verbose description of the variable.
 - ''Units'' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
-- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see link:label_concept.csv[label_concept.csv] for a draft version.
+- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see link:label_concept_draft.csv[label_concept_draft.csv] for a draft version.
 - The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ==== National QWI and state-level QWI (QWIPU) ====
@@ -389,7 +389,7 @@ Categorical variable descriptions are displayed above each table, with the varia
 " >> $asciifile
 
 # we do industry and geo last
-for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps")
+for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps|concept_draft")
 do
   name=$(echo ${arg%*.csv}| sed 's/label_//')
   echo "=== $name
@@ -502,7 +502,7 @@ done
 
 echo "
 
-==== National and state-level values ====
+==== [[geostate]]National and state-level values ====
 ( link:$nsfile[] )
 
 The file link:$nsfile[$nsfile] contains values and labels
