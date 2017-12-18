@@ -4,19 +4,19 @@
 - [x] --> V4.2-rc1: lehd_j2jexplorer_schema.html
 - [x] --> V4.2-rc1: lehd_j2jexplorer_schema.pdf
 - [x] --> V4.2-rc1: lehd_j2jexplorer_schema.txt
-- [ ] --> V4.2-rc1: variables_j2japp.csv
-- [ ] V4.1.3/write_all.sh V4.2-rc1/write_all.sh differ
-- [ ] V4.1.3/write_csv_naming.sh V4.2-rc1/write_csv_naming.sh differ
+- [x] --> V4.2-rc1: variables_j2japp.csv
+- [x] V4.1.3/write_all.sh V4.2-rc1/write_all.sh differ
+- [x] V4.1.3/write_csv_naming.sh V4.2-rc1/write_csv_naming.sh differ
 - [x] --> V4.2-rc1: write_j2jappdoc.sh
 - [x] V4.1.3/write_schemadoc.sh V4.2-rc1/write_schemadoc.sh differ
 - [ ] V4.1.3/write_shape[ ].sh V4.2-rc1/write_shape[ ].sh differ
 vilhuber@zotique2:/mnt/local/slow_home/vilhuber/Workspace-non-encrypted/git/Census/qwi_schemas/formats> diff -rq V4.2b-draft V4.2-rc1 | grep -v label_geography
-- [ ] V4.2b-draft/CHANGES.txt V4.2-rc1/CHANGES.txt differ
-- [ ] V4.2b-draft/label_agg_level.csv V4.2-rc1/label_agg_level.csv differ
-- [ ] --> V4.2b-draft: label_concept.csv
-- [ ] V4.2b-draft/label_geo_level.csv V4.2-rc1/label_geo_level.csv differ
-- [ ] V4.2b-draft/label_industry.csv V4.2-rc1/label_industry.csv differ
-- [ ] V4.2b-draft/label_stusps.csv V4.2-rc1/label_stusps.csv differ
+- [x] V4.2b-draft/CHANGES.txt V4.2-rc1/CHANGES.txt differ
+- [x] V4.2b-draft/label_agg_level.csv V4.2-rc1/label_agg_level.csv differ
+- [x] --> V4.2b-draft: label_concept.csv
+- [x] V4.2b-draft/label_geo_level.csv V4.2-rc1/label_geo_level.csv differ
+- [x] V4.2b-draft/label_industry.csv V4.2-rc1/label_industry.csv differ
+- [x] V4.2b-draft/label_stusps.csv V4.2-rc1/label_stusps.csv differ
 - [ ] V4.2b-draft/lehd_shp_gb.zip V4.2-rc1/lehd_shp_gb.zip differ
 - [ ] V4.2b-draft/lehd_shp_gc.zip V4.2-rc1/lehd_shp_gc.zip differ
 - [ ] V4.2b-draft/lehd_shp_gm.zip V4.2-rc1/lehd_shp_gm.zip differ
