@@ -486,9 +486,8 @@ do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
-Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[]. 
-The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2015Q4 release.
-
+Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
+The 2017 vintage of  https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2018Q1 release.
 
 
 Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
@@ -661,16 +660,16 @@ include::tmp_$arg[]
 |===================================================
 
 For instance, the metadata for the $versionvintage release of
-$(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') QWI
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) QWI
 $(grep "$versiondemo," naming_demo.csv | awk  -F, ' { print $2 } ' )
-for "$(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')"
-(obtained from ${versionurl}version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
+for $(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')
+(obtained from $versionurl/version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionurl/version_${versiondemo}_${versionfas}.txt)
 --------------------------------
 Similarly, the metadata for the $versionvintage release of
-$(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g')  J2J
-tabulations (obtained from ${versionj2jurl}version_j2j.txt[here]) has  the following content:
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
+tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
