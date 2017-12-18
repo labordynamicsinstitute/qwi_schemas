@@ -332,7 +332,7 @@ of variability measures are printed, but the complete list is available in the l
 ==== National QWI and state-level QWI ====
 
 ( link:variables_qwiv.csv[variables_qwiv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5,<2\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwiv.csv[]
 |===================================================
@@ -341,7 +341,7 @@ include::tmp_variables_qwiv.csv[]
 ==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
-[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"2*^2,<5,<5,<2\",options=\"header\"]
 |===================================================
 include::tmp_variables_qwirv.csv[]
 |===================================================
@@ -389,7 +389,7 @@ Categorical variable descriptions are displayed above each table, with the varia
 " >> $asciifile
 
 # we do industry and geo last
-for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips")
+for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps")
 do
   name=$(echo ${arg%*.csv}| sed 's/label_//')
   echo "=== $name
@@ -474,7 +474,7 @@ done
 	tail -n +2 label_geography_metro.csv >> label_geography.csv
 	rm tmp3.csv
 
-  echo "=== $name ===
+  echo "=== [[geography]]$name ===
 
   " >> $asciifile
 
@@ -513,9 +513,21 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
-==== Detailed state and substate level values
+==== [[stusps]]State postal codes
 
-Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
+Some parts of the schema use (lower or upper-case) state postal codes.
+
+( link:label_stusps.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::label_stusps.csv[]
+|===================================================
+
+
+==== [[geosubstate]]Detailed state and substate level values
+
+Files of type 'label_geography_[ST].csv' will contain identifiers and labels for geographic areas entirely comprised within a given state '[ST]'. State-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_[ST].csv'. The file link:label_geography_metro.csv[] contains labels for records of type <<geolevel,geo_level>> = B, for metropolitan areas only.
 
 
 
@@ -529,19 +541,24 @@ Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are prese
 #==============================================
 
 echo "
-[format=\"csv\",width=\"50%\",cols=\"^1,^3\",options=\"header\"]
+[format=\"csv\",width=\"50%\",cols=\"^1,^2,^3\",options=\"header\"]
 |===================================================
-Scope,Format file" >> $asciifile
-	for arg in label_geography_us.csv label_geography_metro.csv
+Scope,Types,Format file" >> $asciifile
+	for arg in label_geography_us.csv
 	do
 	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
-	echo "$state,link:${arg}[]" >> $asciifile
+	echo "$state,N,link:${arg}[]" >> $asciifile
 	done
-  echo "*States*," >> $asciifile
+	for arg in label_geography_metro.csv
+	do
+	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+	echo "$state,B,link:${arg}[]" >> $asciifile
+	done
+  echo "*States*,," >> $asciifile
   for arg in  $(ls label_geography_??.csv|grep -v geography_us)
   do
   	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
-	echo "$state,link:${arg}[]" >> $asciifile
+	echo "$state,S C W M,link:${arg}[]" >> $asciifile
   done
 echo "|===================================================" >> $asciifile
 
@@ -604,7 +621,7 @@ The values and their interpretation are listed in the table below.
 [IMPORTANT]
 .Important
 ==============================================
-Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status flags with values 10 or above only appear in online applications, not in CSV files.
+Note: Currently, the J2J tables only contain status flags '-1', '1', '5'. Status flags with values 10 or above only appear in online applications, not in CSV files.
 ==============================================
 
 
@@ -612,6 +629,59 @@ Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status 
 |===================================================
 include::$arg[]
 |===================================================
+">> $asciifile
+
+
+arg=variables_version.csv
+sed 's/naming convention/link:lehd_csv_naming{ext-relative}[]/' $arg |
+  sed 's/stusps/<<stusps>>/' |
+  sed 's/geography/<<geography>>/' > tmp_$arg
+echo "
+<<<
+
+== [[metadata]]Metadata
+( link:${arg}[] )
+
+=== [[metadataqwij2j]]Metadata for QWI and J2J files (version.txt)
+
+Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
+--------------------------------
+$(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
+$(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
+--------------------------------
+where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
+
+The contents contains the following elements:
+[width=\"90%\",format=\"csv\",cols=\"<1,<2,<5\",options=\"header\"]
+|===================================================
+include::tmp_$arg[]
+|===================================================
+
+For instance, the metadata for the $versionvintage release of
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) QWI
+$(grep "$versiondemo," naming_demo.csv | awk  -F, ' { print $2 } ' )
+for $(grep "$versionfas," naming_fas.csv | awk  -F, ' { print $2 } ')
+(obtained from $versionurl/version_${versiondemo}_${versionfas}.txt[here]) has  the following content:
+--------------------------------
+$(curl $versionurl/version_${versiondemo}_${versionfas}.txt)
+--------------------------------
+Similarly, the metadata for the $versionvintage release of
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
+tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
+--------------------------------
+$(curl $versionj2jurl/version_j2j.txt)
+--------------------------------
+Some J2J metadata may contain multiple lines, as necessary.
+
+=== [[metadataj2jod]]Additional metadata for J2JOD files (avail.csv)
+(link:variables_avail.csv[])
+
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
+[width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
+|===================================================
+include::variables_avail.csv[]
+|===================================================
+The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <<geolevel,geo_level>>=N; state tabulations contain records where <<geolevel,geo_level>> in (N,S); metro tabulations contain records where <<geolevel,geo_level>> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.
 
 <<<
 
