@@ -22,7 +22,7 @@ type,Description
 us,"National data (50 states + DC)"
 all,"Collection of all available states"
 EOF
-tail -n +2 $inputa | awk -F, ' BEGIN { OFS=","}  { state =  tolower($2); gsub(/"/,"",state); print state,$3 }  ' >> $output
+tail -n +2 $inputa | grep -vE "Puerto Rico|Virgin Islands" | awk -F, ' BEGIN { OFS=","}  { state =  tolower($2); gsub(/"/,"",state); print state,$3 }  ' >> $output
 tail -n +2 $inputb | awk -F',"|^"|"$|",' ' BEGIN { OFS=","}  { print $1,"\"" $2 "\"" }' >> $output
 
 # compare
