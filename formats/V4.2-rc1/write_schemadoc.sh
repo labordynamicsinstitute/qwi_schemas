@@ -472,6 +472,9 @@ done
 	cat tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
 	# now add the metro file
 	tail -n +2 label_geography_metro.csv >> label_geography.csv
+	# convert to UTF-8
+	iconv -t UTF-8 -f ISO-8859-15 label_geography.csv  > tmp3.csv
+	mv tmp3.csv label_geography.csv
 	rm tmp3.csv
 
   echo "=== [[geography]]$name ===
@@ -483,7 +486,7 @@ do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
-Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
+Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[]. 
 The 2015 vintage of   https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2015Q4 release.
 
 
