@@ -1,6 +1,6 @@
-= LEHD Public Use Data Schema V4.1.3
+= LEHD Public Use Data Schema V4.2-rc1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-21 August 2017
+18 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -21,8 +21,8 @@ Purpose
 -------
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
-These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+These data are available  through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -42,7 +42,7 @@ This version supersedes V4.1.0, for files released as of R2017Q1.
 
 Basic Schema
 ------------
-Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>. In some cases, visually formatted Excel (XLSX) files are also available,  containing the same information together with header lines  on each sheet.
 
 === Generic structure
 
@@ -119,23 +119,32 @@ include::lehd_identifiers_qwi.csv[]
 <<<
 === [[indicators]]Indicators
 The following tables and associated mapping files
-list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
+list the indicators available on each file.  The descriptor files themselves are structured as follows:
+
+- The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications.
+- When given, the ''Alternate name'' may appear in related documentation and articles.
+- The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>).
+- The ''Indicator Name'' is a non-abbreviated version of the ''Indicator Variable''.
+- The ''Description'' provides more verbose description of the variable.
+- ''Units'' identify the type of variable according to a very simplified taxonomoy (not formalized yet): counts, rates, monetary amounts.
+- ''Concept'' classifies the variables into higher-level concepts. The taxonomy for these concepts has not been finalized yet, see link:label_concept.csv[label_concept.csv] for a draft version.
+- The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
 ==== National QWI and state-level QWI (QWIPU) ====
 
 ( link:variables_qwi.csv[variables_qwi.csv] )
-[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,^2",options="header"]
 |===================================================
 include::variables_qwi.csv[]
 |===================================================
 <<<
 
 ==== National QWI and state-level QWI rates (QWIPUR) ====
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
 ( link:variables_qwir.csv[variables_qwir.csv] )
-[width="95%",format="csv",cols="3*^2,<5,<2,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,<2",options="header"]
 |===================================================
 include::variables_qwir.csv[]
 |===================================================
@@ -145,7 +154,7 @@ include::variables_qwir.csv[]
 
 ==== Job-to-job flow counts (J2J)
 ( link:variables_j2j.csv[] )
-[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,^1",options="header"]
 |===================================================
 include::variables_j2j.csv[]
 |===================================================
@@ -154,10 +163,10 @@ include::variables_j2j.csv[]
 ==== Job-to-job flow rates (J2JR)
 ( link:variables_j2jr.csv[] )
 
-Rates are computed from published data, and are provided as a convenience. The column *Base* indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 
 
-[width="95%",format="csv",cols="3*^2,<5,<2,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,^1",options="header"]
 |===================================================
 include::variables_j2jr.csv[]
 |===================================================
@@ -167,7 +176,7 @@ include::variables_j2jr.csv[]
 
 ==== Job-to-job flow Origin-Destination (J2JOD)
 ( link:variables_j2jod.csv[] )
-[width="95%",format="csv",cols="3*^2,<5,<2",options="header"]
+[width="95%",format="csv",cols="3*^2,<5,<5,<2,<2,^1",options="header"]
 |===================================================
 include::variables_j2jod.csv[]
 |===================================================
@@ -240,7 +249,7 @@ of variability measures are printed, but the complete list is available in the l
 ==== National QWI and state-level QWI ====
 
 ( link:variables_qwiv.csv[variables_qwiv.csv] )
-[width="95%",format="csv",cols="2*^2,<5,<5",options="header"]
+[width="95%",format="csv",cols="2*^2,<5,<5,<2",options="header"]
 |===================================================
 include::tmp_variables_qwiv.csv[]
 |===================================================
@@ -249,7 +258,7 @@ include::tmp_variables_qwiv.csv[]
 ==== National QWI and state-level QWI rates ====
 
 ( link:variables_qwirv.csv[variables_qwirv.csv] )
-[width="95%",format="csv",cols="2*^2,<5,<5",options="header"]
+[width="95%",format="csv",cols="2*^2,<5,<5,<2",options="header"]
 |===================================================
 include::tmp_variables_qwirv.csv[]
 |===================================================
@@ -380,14 +389,6 @@ include::label_seasonadj.csv[]
 include::label_sex.csv[]
 |===================================================
 
-=== stusps
-( link:label_stusps.csv[] )
-
-[width="60%",format="csv",cols="^1,<4",options="header"]
-|===================================================
-include::label_stusps.csv[]
-|===================================================
-
 <<<
 === Industry ===
 
@@ -406,17 +407,17 @@ include::label_ind_level.csv[]
 ( link:label_industry.csv[] )
 
 Only a small subset of available values shown.
-The 2012 NAICS (North American Industry Classification System) is used for all years.
-QWI releases prior to R2015Q3 used the 2007 NAICS classification (see link:../V4.0.1[Schema v4.0.1]).
-For a full listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012.
+The 2017 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2018Q1 used the 2012 NAICS classification (see link:../V4.1.3[Schema v4.1.3]).
+For a full listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
 
-[width="90%",format="csv",cols="^1,<4",options="header"]
+[width="90%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
 include::tmp2.csv[]
 |===================================================
 <<<
 
-=== Geography ===
+=== [[geography]]Geography ===
 
   
 [[geo_level]]
@@ -438,7 +439,7 @@ include::label_geo_level.csv[]
 
 
 
-==== National and state-level values ====
+==== [[geostate]]National and state-level values ====
 ( link:label_fipsnum.csv[] )
 
 The file link:label_fipsnum.csv[label_fipsnum.csv] contains values and labels
@@ -449,71 +450,83 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
-==== Detailed state and substate level values
+==== [[stusps]]State postal codes
 
-Note: cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_XX.csv'. A particular cross-state CBSA will appear on multiple files.
+Some parts of the schema use (lower or upper-case) state postal codes.
 
+( link:label_stusps.csv[] )
 
-
-
-
-[format="csv",width="50%",cols="^1,^3",options="header"]
+[width="60%",format="csv",cols="^1,<4",options="header"]
 |===================================================
-Scope,Format file
-US,link:label_geography_us.csv[]
-METRO,link:label_geography_metro.csv[]
-*States*,
-AK,link:label_geography_ak.csv[]
-AL,link:label_geography_al.csv[]
-AR,link:label_geography_ar.csv[]
-AZ,link:label_geography_az.csv[]
-CA,link:label_geography_ca.csv[]
-CO,link:label_geography_co.csv[]
-CT,link:label_geography_ct.csv[]
-DC,link:label_geography_dc.csv[]
-DE,link:label_geography_de.csv[]
-FL,link:label_geography_fl.csv[]
-GA,link:label_geography_ga.csv[]
-HI,link:label_geography_hi.csv[]
-IA,link:label_geography_ia.csv[]
-ID,link:label_geography_id.csv[]
-IL,link:label_geography_il.csv[]
-IN,link:label_geography_in.csv[]
-KS,link:label_geography_ks.csv[]
-KY,link:label_geography_ky.csv[]
-LA,link:label_geography_la.csv[]
-MA,link:label_geography_ma.csv[]
-MD,link:label_geography_md.csv[]
-ME,link:label_geography_me.csv[]
-MI,link:label_geography_mi.csv[]
-MN,link:label_geography_mn.csv[]
-MO,link:label_geography_mo.csv[]
-MS,link:label_geography_ms.csv[]
-MT,link:label_geography_mt.csv[]
-NC,link:label_geography_nc.csv[]
-ND,link:label_geography_nd.csv[]
-NE,link:label_geography_ne.csv[]
-NH,link:label_geography_nh.csv[]
-NJ,link:label_geography_nj.csv[]
-NM,link:label_geography_nm.csv[]
-NV,link:label_geography_nv.csv[]
-NY,link:label_geography_ny.csv[]
-OH,link:label_geography_oh.csv[]
-OK,link:label_geography_ok.csv[]
-OR,link:label_geography_or.csv[]
-PA,link:label_geography_pa.csv[]
-RI,link:label_geography_ri.csv[]
-SC,link:label_geography_sc.csv[]
-SD,link:label_geography_sd.csv[]
-TN,link:label_geography_tn.csv[]
-TX,link:label_geography_tx.csv[]
-UT,link:label_geography_ut.csv[]
-VA,link:label_geography_va.csv[]
-VT,link:label_geography_vt.csv[]
-WA,link:label_geography_wa.csv[]
-WI,link:label_geography_wi.csv[]
-WV,link:label_geography_wv.csv[]
-WY,link:label_geography_wy.csv[]
+include::label_stusps.csv[]
+|===================================================
+
+
+==== [[geosubstate]]Detailed state and substate level values
+
+Files of type 'label_geography_[ST].csv' will contain identifiers and labels for geographic areas entirely comprised within a given state '[ST]'. State-specific parts of cross-state CBSA, in records of type <<geolevel,geo_level>> = M, are present on files of type 'label_geography_[ST].csv'. The file link:label_geography_metro.csv[] contains labels for records of type <<geolevel,geo_level>> = B, for metropolitan areas only.
+
+
+
+
+
+[format="csv",width="50%",cols="^1,^2,^3",options="header"]
+|===================================================
+Scope,Types,Format file
+US,N,link:label_geography_us.csv[]
+METRO,B,link:label_geography_metro.csv[]
+*States*,,
+AK,S C W M,link:label_geography_ak.csv[]
+AL,S C W M,link:label_geography_al.csv[]
+AR,S C W M,link:label_geography_ar.csv[]
+AZ,S C W M,link:label_geography_az.csv[]
+CA,S C W M,link:label_geography_ca.csv[]
+CO,S C W M,link:label_geography_co.csv[]
+CT,S C W M,link:label_geography_ct.csv[]
+DC,S C W M,link:label_geography_dc.csv[]
+DE,S C W M,link:label_geography_de.csv[]
+FL,S C W M,link:label_geography_fl.csv[]
+GA,S C W M,link:label_geography_ga.csv[]
+HI,S C W M,link:label_geography_hi.csv[]
+IA,S C W M,link:label_geography_ia.csv[]
+ID,S C W M,link:label_geography_id.csv[]
+IL,S C W M,link:label_geography_il.csv[]
+IN,S C W M,link:label_geography_in.csv[]
+KS,S C W M,link:label_geography_ks.csv[]
+KY,S C W M,link:label_geography_ky.csv[]
+LA,S C W M,link:label_geography_la.csv[]
+MA,S C W M,link:label_geography_ma.csv[]
+MD,S C W M,link:label_geography_md.csv[]
+ME,S C W M,link:label_geography_me.csv[]
+MI,S C W M,link:label_geography_mi.csv[]
+MN,S C W M,link:label_geography_mn.csv[]
+MO,S C W M,link:label_geography_mo.csv[]
+MS,S C W M,link:label_geography_ms.csv[]
+MT,S C W M,link:label_geography_mt.csv[]
+NC,S C W M,link:label_geography_nc.csv[]
+ND,S C W M,link:label_geography_nd.csv[]
+NE,S C W M,link:label_geography_ne.csv[]
+NH,S C W M,link:label_geography_nh.csv[]
+NJ,S C W M,link:label_geography_nj.csv[]
+NM,S C W M,link:label_geography_nm.csv[]
+NV,S C W M,link:label_geography_nv.csv[]
+NY,S C W M,link:label_geography_ny.csv[]
+OH,S C W M,link:label_geography_oh.csv[]
+OK,S C W M,link:label_geography_ok.csv[]
+OR,S C W M,link:label_geography_or.csv[]
+PA,S C W M,link:label_geography_pa.csv[]
+RI,S C W M,link:label_geography_ri.csv[]
+SC,S C W M,link:label_geography_sc.csv[]
+SD,S C W M,link:label_geography_sd.csv[]
+TN,S C W M,link:label_geography_tn.csv[]
+TX,S C W M,link:label_geography_tx.csv[]
+UT,S C W M,link:label_geography_ut.csv[]
+VA,S C W M,link:label_geography_va.csv[]
+VT,S C W M,link:label_geography_vt.csv[]
+WA,S C W M,link:label_geography_wa.csv[]
+WI,S C W M,link:label_geography_wi.csv[]
+WV,S C W M,link:label_geography_wv.csv[]
+WY,S C W M,link:label_geography_wy.csv[]
 |===================================================
 
 <<<
@@ -558,7 +571,7 @@ The values and their interpretation are listed in the table below.
 [IMPORTANT]
 .Important
 ==============================================
-Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status flags with values 10 or above only appear in online applications, not in CSV files.
+Note: Currently, the J2J tables only contain status flags '-1', '1', '5'. Status flags with values 10 or above only appear in online applications, not in CSV files.
 ==============================================
 
 
@@ -567,6 +580,55 @@ Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status 
 include::label_flags.csv[]
 |===================================================
 
+
+<<<
+
+== [[metadata]]Metadata
+( link:variables_version.csv[] )
+
+=== [[metadataqwij2j]]Metadata for QWI and J2J files (version.txt)
+
+Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
+--------------------------------
+
+
+--------------------------------
+where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
+
+The contents contains the following elements:
+[width="90%",format="csv",cols="<1,<2,<5",options="header"]
+|===================================================
+include::tmp_variables_version.csv[]
+|===================================================
+
+For instance, the metadata for the R2017Q3 release of
+"Missouri"
+"Kokomo QWI
+Sex by Age tabulations
+for No firm size or age detail
+(obtained from https://lehd.ces.census.gov/pub/mo/R2017Q3/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
+--------------------------------
+QWISA_F MO 29 1995:1-2016:4 V4.1.2 R2017Q3 qwipu_mo_20170928_1714
+--------------------------------
+Similarly, the metadata for the R2017Q3 release of
+"Missouri"
+"Kokomo J2J
+tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q3/j2j/mo//version_j2j.txt[here]) has  the following content:
+--------------------------------
+J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
+--------------------------------
+Some J2J metadata may contain multiple lines, as necessary.
+
+=== [[metadataj2jod]]Additional metadata for J2JOD files (avail.csv)
+(link:variables_avail.csv[])
+
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
+[width="80%",format="csv",cols="<2,<2,<4",options="header"]
+|===================================================
+include::variables_avail.csv[]
+|===================================================
+The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <<geolevel,geo_level>>=N; state tabulations contain records where <<geolevel,geo_level>> in (N,S); metro tabulations contain records where <<geolevel,geo_level>> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.
+
 <<<
 
 
@@ -574,32 +636,20 @@ include::label_flags.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-08-21: Initial release
+- 2017-12-15: Initial release
 
-=== Version 4.1.3 from 4.1.2
-- 2017-08-15: Updated LEHD shape files for Texas WIB definitions
-- 2017-08-15: Update the source links of metro definitions from http://www.census.gov/population/metro/ (broken) to https://www.census.gov/programs-surveys/metro-micro.html
-- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
-
-=== Version 4.1.2 from 4.1.1
-- 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB definitions
-
-=== Version 4.1.1 from 4.1.0
-- 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
-- 2017-03-06: Updated reference in shapefile description to Job-to-Job Explorer to point to the recently released Beta webap, updated title to refer to the same name as the naming_geo_cat.csv uses
-- 2017-03-06: Updated TIGER references to 2016 in shapefile description
-- 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan (complete)"
-- 2017-03-06: Added referenced in the same file to where to find the CBSA code underlying the state-part definitions
-- 2017-03-06: Added a new file label_geography_metro.csv
-- 2017-03-06: Changed references where appropriate from label_geography_cbsa to label_geography_metro
-- 2017-03-06: Added additional aggregation levels, changed some labels
-- 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
-- 2017-03-07: Updated 2016 geography in shapefiles
-- 2017-03-07: Corrected naming of files inside shapefile ZIP files
+=== Version 4.2.0 from 4.1.3
+- Added J2Japp description of metadata for convenience
+- Added a column "ind_level" to label_industry.csv similar to the geo_level
+- Added additional columns to the variable metadata schema:
+  - Description,
+  - Concept,
+  - Base
+  
 
 
 <<<
 *******************
-This revision: Mon Aug 21 13:16:43 EDT 2017
+This revision: Mon Dec 18 12:39:45 EST 2017
 *******************
 

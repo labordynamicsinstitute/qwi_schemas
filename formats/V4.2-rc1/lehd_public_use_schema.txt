@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-****** LEHD Public Use Data Schema V4.1.3 ******
+****** LEHD Public Use Data Schema V4.2-rc1 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-21 August 2017
+18 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -15,9 +16,8 @@ JavaScript must be enabled in your browser to display the table of contents.
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
 are available for download with the following data schema. These data are
-available as Comma-Separated Value (CSV) files through the LEHD website’s Data
-page at http://lehd.ces.census.gov/data/ and through LED Extraction Tool at
-http://ledextract.ces.census.gov/.
+available through the LEHD website’s Data page at http://lehd.ces.census.gov/
+data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
 This document describes the data schema for LEHD files. LEHD-provided SHP files
 are separately described in lehd_shapefiles.html. For each variable, a set of
 allowable values is defined. Definitions are provided as CSV files, with header
@@ -34,7 +34,8 @@ This version supersedes V4.1.0, for files released as of R2017Q1.
 ***** 5. Basic Schema *****
 Each data file is structured as a CSV file. The first columns contain
 [identifiers], subsequent columns contain [indicators], followed by status
-flags.
+flags. In some cases, visually formatted Excel (XLSX) files are also available,
+containing the same information together with header lines on each sheet.
 **** 5.1. Generic structure ****
 Column name
 [ Identifier1 ]
@@ -137,227 +138,635 @@ periodicity Char(1) Periodicity of report
    quarter     Num  Time: Quarter
 5.3. Indicators
 The following tables and associated mapping files list the indicators available
-on each file. The 'Indicator Variable' is the short name of the variable on the
-CSV files, suitable for machine processing in a wide variety of statistical
-applications. When given, the 'Alternate name' may appear in related
-documentation and articles. The 'Status Flag' is used to indicate publication
-or data quality status (see Status_Flags). The 'Indicator Name' is a more
-verbose description of the indicator.
+on each file. The descriptor files themselves are structured as follows:
+    * The 'Indicator Variable' is the short name of the variable on the CSV
+      files, suitable for machine processing in a wide variety of statistical
+      applications.
+    * When given, the 'Alternate name' may appear in related documentation and
+      articles.
+    * The 'Status Flag' is used to indicate publication or data quality status
+      (see Status_Flags).
+    * The 'Indicator Name' is a non-abbreviated version of the 'Indicator
+      Variable'.
+    * The 'Description' provides more verbose description of the variable.
+    * 'Units' identify the type of variable according to a very simplified
+      taxonomoy (not formalized yet): counts, rates, monetary amounts.
+    * 'Concept' classifies the variables into higher-level concepts. The
+      taxonomy for these concepts has not been finalized yet, see
+      label_concept.csv for a draft version.
+    * The 'Base' indicates the denominator used to compute the statistic, and
+      may be 1.
 *** 5.3.1. National QWI and state-level QWI (QWIPU) ***
 ( variables_qwi.csv )
-Indicator Variable Alternate name  Status Flag  Indicator Name          Units
-           Emp              B           sEmp    Beginning-of-Quarter    Count
-                                                Employment
-         EmpEnd             E         sEmpEnd   End-of-Quarter          Count
-                                                Employment
-          EmpS              F           sEmpS   Full-Quarter Employment Count
-                                                (Stable)
-         EmpSpv            Fpv        sEmpSpv   Full-Quarter Employment Count
-                                                in the Previous Quarter
-       EmpTotal             M        sEmpTotal  Employment - Reference  Count
-                                                Quarter
-          HirA              A           sHirA   Hires (All Accessions)  Count
-          HirN              H           sHirN   New Hires               Count
-          HirR              R           sHirR   Recall Hires            Count
-           Sep              S           sSep    Separations (All)       Count
-        HirAEnd             CA       sHirAEnd   End-of-Quarter Hires    Count
-       HirAEndR            CAR       sHirAEndR  End-of-Quarter Hiring   Rate
-                                                Rate
-         SepBeg             CS        sSepBeg   Beginning-of-Quarter    Count
-                                                Separations
-        SepBegR            CSR       sSepBegR   Beginning-of-Quarter    Rate
-                                                Separation Rate
-         HirAS              FA         sHirAS   Hires (All Hires into   Count
-                                                Full-Quarter
-                                                Employment)
-         HirNS              FH         sHirNS   New Hires (New Hires    Count
-                                                into Full-Quarter
-                                                Employment)
-          SepS              FS          sSepS   Separations (Flows out  Count
-                                                of Full-Quarter
-                                                Employment)
-         SepSnx           FSnx        sSepSnx   Separations in the Next Count
-                                                Quarter (Flows out of
-                                                Full-Quarter
-                                                Employment)
-       TurnOvrS             FT       sTurnOvrS  Turnover (Stable)       Rate
-        FrmJbGn             JC       sFrmJbGn   Firm Job Gains (Job     Count
-                                                Creation)
-        FrmJbLs             JD       sFrmJbLs   Firm Job Loss (Job      Count
-                                                Destruction)
-         FrmJbC             JF        sFrmJbC   Firm Job Change (Net    Count
-                                                Change)
-     HirAEndRepl            EI    sHirAEndRepl  Replacement Hires       Count
-    HirAEndReplr           EIR    sHirAEndReplr Replacement Hiring Rate Rate
-       FrmJbGnS            FJC       sFrmJbGnS  Firm Job Gains (Stable) Count
-       FrmJbLsS            FJD       sFrmJbLsS  Firm Job Loss (Stable)  Count
-        FrmJbCS            FJF       sFrmJbCS   Firm Job Change         Count
-                                                (Stable; Net Change)
-         EarnS             ZW3         sEarnS   Average Monthly         Dollars
-                                                Earnings (Full-Quarter
-                                                Employment)
-        EarnBeg            ZW1       sEarnBeg   Average Monthly         Dollars
-                                                Earnings (Beginning-of-
-                                                Quarter Employment)
-      EarnHirAS           ZWFA      sEarnHirAS  Average Monthly         Dollars
-                                                Earnings (All Hires
-                                                into Full-Quarter
-                                                Employment)
-      EarnHirNS           ZWFH      sEarnHirNS  Average Monthly         Dollars
-                                                Earnings (New Hires
-                                                into Full-Quarter
-                                                Employment)
-       EarnSepS           ZWFS       sEarnSepS  Average Monthly         Dollars
-                                                Earnings (Flows out of
-                                                Full-Quarter
-                                                Employment)
-        Payroll             W1       sPayroll   Total Quarterly Payroll Dollars
+  Indicator  Alternate  Status Flag  Indicator    Description   Units   Concept       Base
+   Variable    Name                  Name
+      Emp          B         sEmp    Beginning-   Estimate of   Count   Employment      1
+                                     of-Quarter   the total
+                                     Employment   number of
+                                                  jobs on the
+                                                  first day of
+                                                  the reference
+                                                  quarter
+    EmpEnd         E       sEmpEnd   End-of-      Estimate of   Count   Employment      1
+                                     Quarter      the number of
+                                     Employment   jobs on the
+                                                  last day of
+                                                  the quarter
+      EmpS         F         sEmpS   Full-Quarter Estimate of   Count   Employment      1
+                                     Employment   stable jobs -
+                                     (Stable)     the number of
+                                                  jobs that are
+                                                  held on both
+                                                  the first and
+                                                  last day of
+                                                  the quarter
+                                                  with the same
+                                                  employer
+    EmpSpv       Fpv       sEmpSpv   Full-Quarter Estimate of   Count   Employment      1
+                                     Employment   stable jobs
+                                     in the       in the
+                                     Previous     quarter
+                                     Quarter      before the
+                                                  reference
+                                                  quarter
+   EmpTotal        M      sEmpTotal  Employment - Estimated     Count   Employment      1
+                                     Reference    count of
+                                     Quarter      people
+                                                  employed in a
+                                                  firm at any
+                                                  time during
+                                                  the quarter
+      HirA         A         sHirA   Hires (All   Estimated     Count   Hire            1
+                                     Accessions)  number of
+                                                  workers who
+                                                  started a new
+                                                  job in the
+                                                  specified
+                                                  quarter
+      HirN         H         sHirN   New Hires    Estimated     Count   Hire            1
+                                                  number of
+                                                  workers who
+                                                  started a new
+                                                  job excluding
+                                                  recall hires
+      HirR         R         sHirR   Recall Hires Estimated     Count   Hire            1
+                                                  number of
+                                                  workers who
+                                                  returned to
+                                                  the same
+                                                  employer
+                                                  where they
+                                                  had worked
+                                                  within the
+                                                  previous year
+      Sep          S         sSep    Separations  Estimated     Count   Separation      1
+                                     (All)        number of
+                                                  workers whose
+                                                  job with a
+                                                  given
+                                                  employer
+                                                  ended in the
+                                                  specified
+                                                  quarter
+   HirAEnd        CA      sHirAEnd   End-of-      Estimated     Count   Hire            1
+                                     Quarter      number of
+                                     Hires        workers who
+                                                  started a new
+                                                  job in the
+                                                  specified
+                                                  quarter,
+                                                  which
+                                                  continued
+                                                  into next
+                                                  quarter
+   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a    Rate    Hire        (Emp +
+                                     Quarter      percent of                       EmpEnd)/
+                                     Hiring Rate  average                             2
+                                                  employment
+    SepBeg        CS       sSepBeg   Beginning-   Estimated     Count   Separation      1
+                                     of-Quarter   number of
+                                     Separations  workers whose
+                                                  job in the
+                                                  previous
+                                                  quarter
+                                                  continued and
+                                                  ended in the
+                                                  given quarter
+   SepBegR       CSR      sSepBegR   Beginning-   Separations   Rate    Separation  (Emp +
+                                     of-Quarter   as a percent                     EmpEnd)/
+                                     Separation   of average                          2
+                                     Rate         employment
+     HirAS        FA        sHirAS   Hires (All   Estimated     Count   Hire            1
+                                     Hires into   number of
+                                     Full-Quarter workers that
+                                     Employment)  started a job
+                                                  that lasted
+                                                  at least one
+                                                  full quarter
+                                                  with a given
+                                                  employer
+     HirNS        FH        sHirNS   New Hires    Estimated     Count   Hire            1
+                                     (New Hires   number of
+                                     into Full-   workers who
+                                     Quarter      started a job
+                                     Employment)  that they had
+                                                  not held
+                                                  within the
+                                                  past year and
+                                                  the job
+                                                  turned into a
+                                                  job that
+                                                  lasted at
+                                                  least a full
+                                                  quarter with
+                                                  a given
+                                                  employer
+      SepS        FS         sSepS   Separations  Estimated     Count   Separation      1
+                                     (Flows out   number of
+                                     of Full-     workers who
+                                     Quarter      had a job for
+                                     Employment)  at least a
+                                                  full quarter
+                                                  and then the
+                                                  job ended
+    SepSnx      FSnx       sSepSnx   Separations  Estimated     Count   Separation      1
+                                     in the Next  number of
+                                     Quarter      workers in
+                                     (Flows out   the next
+                                     of Full-     quarter who
+                                     Quarter      had a job for
+                                     Employment)  at least a
+                                                  full quarter
+                                                  and then the
+                                                  job ended
+   TurnOvrS       FT      sTurnOvrS  Turnover     The rate at   Rate    Turnover    2*EmpS
+                                     (Stable)     which stable
+                                                  jobs begin
+                                                  and end
+   FrmJbGn        JC      sFrmJbGn   Firm Job     Estimated     Count   Hire            1
+                                     Gains (Job   number of
+                                     Creation)    jobs gained
+                                                  at firms
+                                                  throughout
+                                                  the quarter
+   FrmJbLs        JD      sFrmJbLs   Firm Job     Estimated     Count   Separation      1
+                                     Loss (Job    number of
+                                     Destruction) jobs lost at
+                                                  firms
+                                                  throughout
+                                                  the quarter
+    FrmJbC        JF       sFrmJbC   Firm Job     Difference    Count   Employment      1
+                                     Change (Net  between firm
+                                     Change)      job gain and
+                                                  firm job loss
+HirAEndRepl       EI   sHirAEndRepl  Replacement  Hires into    Count   Hire            1
+                                     Hires        continuous
+                                                  quarter
+                                                  employment in
+                                                  excess of job
+                                                  creation
+HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire        (Emp +
+                                     Hiring Rate  hires as a                       EmpEnd)/
+                                                  percent of                          2
+                                                  the average
+                                                  of beginning-
+                                                  and end-of-
+                                                  quarter
+                                                  employment
+   FrmJbGnS      FJC      sFrmJbGnS  Firm Job     Estimated     Count   Hire            1
+                                     Gains        number of
+                                     (Stable)     full-quarter
+                                                  jobs gained
+                                                  at firms
+   FrmJbLsS      FJD      sFrmJbLsS  Firm Job     Estimated     Count   Separation      1
+                                     Loss         number of
+                                     (Stable)     full-quarter
+                                                  jobs lost at
+                                                  firms
+   FrmJbCS       FJF      sFrmJbCS   Firm Job     Net growth in Count   Employment      1
+                                     Change       jobs that
+                                     (Stable; Net last a full
+                                     Change)      quarter
+     EarnS       ZW3        sEarnS   Average      Average       Dollars Earnings      EmpS
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Full-       employees
+                                     Quarter      with stable
+                                     Employment)  jobs
+   EarnBeg       ZW1      sEarnBeg   Average      Average       Dollars Earnings      Emp
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Beginning-  employees who
+                                     of-Quarter   worked on the
+                                     Employment)  first day of
+                                                  the reference
+                                                  quarter
+  EarnHirAS     ZWFA     sEarnHirAS  Average      Average       Dollars Earnings     HirAS
+                                     Monthly      monthly
+                                     Earnings     earnings for
+                                     (All Hires   workers who
+                                     into Full-   started a job
+                                     Quarter      that turned
+                                     Employment)  into a job
+                                                  lasting a
+                                                  full quarter
+  EarnHirNS     ZWFH     sEarnHirNS  Average      Average       Dollars Earnings     HirNS
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (New Hires   newly stable
+                                     into Full-   employees
+                                     Quarter
+                                     Employment)
+   EarnSepS     ZWFS      sEarnSepS  Average      Average       Dollars Earnings    SepSnx
+                                     Monthly      monthly
+                                     Earnings     earnings of
+                                     (Flows out   separations
+                                     of Full-     from full-
+                                     Quarter      quarter
+                                     Employment)  status at an
+                                                  establishment
+   Payroll        W1      sPayroll   Total        Total         Dollars Earnings        1
+                                     Quarterly    quarterly
+                                     Payroll      payroll for
+                                                  all jobs
 *** 5.3.2. National QWI and state-level QWI rates (QWIPUR) ***
-Rates are computed from published data, and are provided as a convenience. The
-column Base indicates the denominator used to compute the rate.
+Rates are computed from published data, and are provided as a convenience.
 ( variables_qwir.csv )
-  Indicator  Alternate name  Status Flag  Indicator Name  Units Base
-   Variable
-     HirAR            AR         sHirAR   Hiring Rate     Rate  (Emp + EmpEnd)/
-                                          (All                  2
-                                          Accessions)
-     HirNR            HR         sHirNR   New Hiring Rate Rate  (Emp + EmpEnd)/
-                                                                2
-     HirRR            RR         sHirRR   Recall Rate     Rate  (Emp + EmpEnd)/
-                                                                2
-      SepR            SR          sSepR   Separation Rate Rate  (Emp + EmpEnd)/
-                                          (All                  2
-                                          Separations)
-   HirAEndR          CAR       sHirAEndR  End-of-Quarter  Rate  (Emp + EmpEnd)/
-                                          Hiring Rate           2
-   SepBegR           CSR       sSepBegR   Beginning-of-   Rate  (Emp + EmpEnd)/
-                                          Quarter               2
-                                          Separation Rate
-    HirAsR           FAR        sHirAsR   Hiring Rate     Rate  (EmpSpv +
-                                          (Flows into           EmpS)/2
-                                          Full-Quarter
-                                          Employment)
-    HirNsR           FHR        sHirNsR   New Hiring Rate Rate  (EmpSpv +
-                                          (New Hires to         EmpS)/2
-                                          Full-Quarter
-                                          Status)
-     SepSR           FSR         sSepSR   Separation Rate Rate  (EmpSpv +
-                                          (Flows out of         EmpS)/2
-                                          Full-Quarter
-                                          Employment)
-   SepSnxR         FSnxR       sSepSnxR   Separation Rate Rate  (EmpSpv +
-                                          in the Next           EmpS)/2
-                                          Quarter (Flow
-                                          out of Full-
-                                          Quarter
-                                          Employment)
-  TurnOvrSR          FTR      sTurnOvrSR  Turnover Rate   Rate  2*EmpS
-                                          (Stable)
-   FrmJbGnR          JCR       sFrmJbGnR  Firm Job Gain   Rate  (Emp + EmpEnd)/
-                                          Rate (Job             2
-                                          Creation Rate)
-   FrmJbLsR          JDR       sFrmJbLsR  Firm Job Loss   Rate  (Emp + EmpEnd)/
-                                          Rate (Job             2
-                                          Destruction
-                                          Rate)
-   FrmJbCR           JFR       sFrmJbCR   Firm Job Change Rate  (Emp + EmpEnd)/
-                                          Rate (Net             2
-                                          Change Rate)
-HirAEndReplR         EIR    sHirAEndReplR Replacement     Rate  (Emp + EmpEnd)/
-                                          Hiring Rate           2
-  FrmJbGnSR         FJCR      sFrmJbGnSR  Firm Job Gain   Rate  (EmpSpv +
-                                          Rate (Stable)         EmpS)/2
-  FrmJbLsSR         FJDR      sFrmJbLsSR  Firm Job Loss   Rate  (EmpSpv +
-                                          Rate (Stable)         EmpS)/2
-   FrmJbCSR         FJFR       sFrmJbCSR  Firm Job Change Rate  (EmpSpv +
-                                          Rate (Stable;         EmpS)/2
-                                          Net Change
-                                          Rate)
+  Indicator  Alternate  Status Flag  Indicator    Description Units Concept    Base
+   Variable    name                  Name
+     HirAR        AR        sHirAR   Hiring Rate  All         Rate  Hire       (Emp +
+                                     (All         accessions                   EmpEnd)/
+                                     Accessions)  as a                         2
+                                                  percent of
+                                                  average
+                                                  employment
+     HirNR        HR        sHirNR   New Hiring   New hires   Rate  Hire       (Emp +
+                                     Rate         as a                         EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+     HirRR        RR        sHirRR   Recall Rate  Recall      Rate  Hire       (Emp +
+                                                  hires as a                   EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+      SepR        SR         sSepR   Separation   All         Rate  Separation (Emp +
+                                     Rate (All    separations                  EmpEnd)/
+                                     Separations) as a                         2
+                                                  percent of
+                                                  average
+                                                  employment
+   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a  Rate  Hire       (Emp +
+                                     Quarter      percent of                   EmpEnd)/
+                                     Hiring Rate  average                      2
+                                                  employment
+   SepBegR       CSR      sSepBegR   Beginning-   Separations Rate  Separation (Emp +
+                                     of-Quarter   as a                         EmpEnd)/
+                                     Separation   percent of                   2
+                                     Rate         average
+                                                  employment
+    HirAsR       FAR       sHirAsR   Hiring Rate  Flows into  Rate  Hire       (EmpSpv
+                                     (Flows into  stable                       + EmpS)/
+                                     Full-Quarter employment                   2
+                                     Employment)  as a
+                                                  percent of
+                                                  average
+                                                  stable
+                                                  employment
+    HirNsR       FHR       sHirNsR   New Hiring   New hires   Rate  Hire       (EmpSpv
+                                     Rate (New    into stable                  + EmpS)/
+                                     Hires to     employment                   2
+                                     Full-Quarter as a
+                                     Status)      percent of
+                                                  average
+                                                  stable
+                                                  employment
+     SepSR       FSR        sSepSR   Separation   Flows out   Rate  Separation (EmpSpv
+                                     Rate (Flows  of stable                    + EmpS)/
+                                     out of Full- employment                   2
+                                     Quarter      as a
+                                     Employment)  percent of
+                                                  average
+                                                  stable
+                                                  employment
+   SepSnxR      FSnxR     sSepSnxR   Separation   Flow rate   Rate  Separation (EmpSpv
+                                     Rate in the  out of                       + EmpS)/
+                                     Next Quarter stable                       2
+                                     (Flow out of employment
+                                     Full-Quarter in the next
+                                     Employment)  quarter
+  TurnOvrSR      FTR     sTurnOvrSR  Turnover     The rate at Rate  Turnover   2*EmpS
+                                     Rate         which
+                                     (Stable)     stable jobs
+                                                  begin and
+                                                  end
+   FrmJbGnR      JCR      sFrmJbGnR  Firm Job     Estimated   Rate  Hire       (Emp +
+                                     Gain Rate    number of                    EmpEnd)/
+                                     (Job         jobs gained                  2
+                                     Creation     at firms
+                                     Rate)        throughout
+                                                  the quarter
+                                                  as a
+                                                  percent of
+                                                  average
+                                                  employment
+   FrmJbLsR      JDR      sFrmJbLsR  Firm Job     Estimated   Rate  Separation (Emp +
+                                     Loss Rate    number of                    EmpEnd)/
+                                     (Job         jobs lost                    2
+                                     Destruction  at firms
+                                     Rate)        throughout
+                                                  the quarter
+                                                  as a
+                                                  percent of
+                                                  average
+                                                  employment
+   FrmJbCR       JFR      sFrmJbCR   Firm Job     Difference  Rate  Flow       (Emp +
+                                     Change Rate  between                      EmpEnd)/
+                                     (Net Change  firm job                     2
+                                     Rate)        gain and
+                                                  firm job
+                                                  loss as a
+                                                  percent of
+                                                  average
+                                                  employment
+HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (Emp +
+                                     Hiring Rate  hires as a                   EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+  FrmJbGnSR     FJCR     sFrmJbGnSR  Firm Job     Estimated   Rate  Hire       (EmpSpv
+                                     Gain Rate    number of                    + EmpS)/
+                                     (Stable)     full-                        2
+                                                  quarter
+                                                  jobs gained
+                                                  at firms as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
+  FrmJbLsSR     FJDR     sFrmJbLsSR  Firm Job     Estimated   Rate  Separation (EmpSpv
+                                     Loss Rate    number of                    + EmpS)/
+                                     (Stable)     full-                        2
+                                                  quarter
+                                                  jobs lost
+                                                  at firms as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
+   FrmJbCSR     FJFR      sFrmJbCSR  Firm Job     Net growth  Rate  Flow       (EmpSpv
+                                     Change Rate  in jobs                      + EmpS)/
+                                     (Stable; Net that last a                  2
+                                     Change Rate) full
+                                                  quarter as
+                                                  a percent
+                                                  of average
+                                                  stable
+                                                  employment
 *** 5.3.3. Job-to-job flow counts (J2J) ***
 ( variables_j2j.csv )
-Indicator Variable Alternate Name Status Flag Indicator Name              Units
-         MHire        all_doma2      sMHire   Hires                       Count
-          MSep        all_doms2       sMSep   Separations                 Count
-      MJobStart        all_dest   sMJobStart  Main Job Starts             Count
-        MJobEnd        all_orig     sMJobEnd  Main Job Ends               Count
-         EEHire        ee_doma2      sEEHire  Job-to-Job Hires            Count
-                                              (Continuous Employment)
-         EESep         ee_doms2      sEESep   Job-to-Job Separations      Count
-                                              (Continuous Employment)
-         AQHire        aq_doma2      sAQHire  Job-to-Job Hires (Brief     Count
-                                              Nonemployment)
-         AQSep         aq_doms2      sAQSep   Job-to-Job Separations      Count
-                                              (Brief Nonemployment)
-        J2JHire      eeall_doma2    sJ2JHire  Job-to-Job Hires            Count
-         J2JSep      eeall_doms2     sJ2JSep  Job-to-Job Separations      Count
-         NEHire        ne_doma2      sNEHire  Hires from Nonemployment    Count
-         ENSep         en_doms2      sENSep   Separations to              Count
-                                              Nonemployment
-      NEPersist       ne2_doma2   sNEPersist  Hires from Persistent       Count
-                                              Nonemployment
-      ENPersist       en2_doms2   sENPersist  Separations to Persistent   Count
-                                              Nonemployment
-        NEFullQ       ne2p_doma2    sNEFullQ  Hires from Full-Quarter     Count
-                                              Nonemployment
-        ENFullQ       en2p_doms2    sENFullQ  Separations to Full-Quarter Count
-                                              Nonemployment
-         MainB            domB       sMainB   Employment (Beginning of    Count
-                                              Quarter)
-         MainE            domE       sMainE   Employment (End of Quarter) Count
+      Indicator      Alternate Name       Status Flag   Indicator Name Description                        Units   Concept        Base
+      Variable
+         MHire          all_doma2             sMHire    Hires          Hires into a worker’s main job   Count   Hire             1
+         MSep           all_doms2             sMSep     Separations    Separations from a worker’s main Count   Separation       1
+                                                                       job
+      MJobStart         first_dome         sMJobStart   Main Job       New main jobs due to hires and     Count   Hire             1
+                                                        Starts         instances when a previously
+                                                                       existing secondary job becomes the
+                                                                       main source of earnings
+       MJobEnd          last_domb           sMJobEnd    Main Job Ends  End of main jobs due to            Count   Separation       1
+                                                                       separations and instances when
+                                                                       another job becomes the main
+                                                                       source of earnings
+        EEHire           ee_doma2            sEEHire    Job-to-Job     Hires following a separation with  Count   Hire             1
+                                                        Hires          no observed nonemployment spell
+                                                        (Continuous
+                                                        Employment)
+         EESep           ee_doms2             sEESep    Job-to-Job     Separations followed by a hire     Count   Separation       1
+                                                        Separations    with no observed nonemployment
+                                                        (Continuous    spell
+                                                        Employment)
+        AQHire           aq_doma2            sAQHire    Job-to-Job     Hires following a separation with  Count   Hire             1
+                                                        Hires (Brief   a short nonemployment spell
+                                                        Nonemployment)
+         AQSep           aq_doms2             sAQSep    Job-to-Job     Separations followed by a hire     Count   Separation       1
+                                                        Separations    with a short nonemployment spell
+                                                        (Brief
+                                                        Nonemployment)
+       J2JHire          j2j_doma2           sJ2JHire    Job-to-Job     Hires following a separation       Count   Hire             1
+                                                        Hires          (short or no observed
+                                                                       nonemployment spell)
+        J2JSep          j2j_doms2            sJ2JSep    Job-to-Job     Separations followed by a hire     Count   Separation       1
+                                                        Separations    (short or no observed
+                                                                       nonemployment spell)
+        NEHire           ne_doma2            sNEHire    Hires from     Hires following any spell of       Count   Hire             1
+                                                        Nonemployment  nonemployment
+         ENSep           en_doms2             sENSep    Separations to Separations into any spell of      Count   Separation       1
+                                                        Nonemployment  nonemployment
+      NEPersist         ne2_doma2          sNEPersist   Hires from     Hires following a spell of         Count   Hire             1
+                                                        Persistent     persistent nonemployment
+                                                        Nonemployment
+      ENPersist         en2_doms2          sENPersist   Separations to Separations into a spell of        Count   Separation       1
+                                                        Persistent     persistent nonemployment
+                                                        Nonemployment
+       NEFullQ          ne2p_doma2          sNEFullQ    Hires from     Hires following a spell of full-   Count   Hire             1
+                                                        Full-Quarter   quarter nonemployment (does not
+                                                        Nonemployment  include intermittently employed)
+       ENFullQ          en2p_doms2          sENFullQ    Separations to Separations into a spell of full-  Count   Separation       1
+                                                        Full-Quarter   quarter nonemployment (does not
+                                                        Nonemployment  include intermittently employed)
+         MainB              domB              sMainB    Employment     Main jobs held on the first day of Count   Employment       1
+                                                        (Beginning of  the quarter
+                                                        Quarter)
+         MainE              domE              sMainE    Employment     Main jobs held on the last day of  Count   Employment       1
+                                                        (End of        the quarter
+                                                        Quarter)
+        EESepS          fee_doms2            sEESepS    Stable Job-to- Separations from stable employment Count   Separation       1
+                                                        Job            followed by a hire to stable
+                                                        Separations    employment with no observed
+                                                        (Continuous    nonemployment spell
+                                                        Employment)
+       EEHireS          fee_doma2           sEEHireS    Stable Job-to- Hires to stable employment         Count   Hire             1
+                                                        Job Hires      following a separation from stable
+                                                        (Continuous    employment with no observed
+                                                        Employment)    nonemployment spell
+        AQSepS          faq_doms2            sAQSepS    Stable Job-to- Separations from stable employment Count   Separation       1
+                                                        Job            followed by a hire to stable
+                                                        Separations    employment with a short
+                                                        (Brief         nonemployment spell
+                                                        Nonemployment)
+       AQHireS          faq_doma2           sAQHireS    Stable Job-to- Hires to stable employment         Count   Hire             1
+                                                        Job Hires      following a separation from stable
+                                                        (Brief         employment with a short
+                                                        Nonemployment) nonemployment spell
+     NEPersistS         fne2_doma2        sNEPersistS   Stable Hires   Hires to stable employment         Count   Hire             1
+                                                        from           following a spell of persistent
+                                                        Persistent     nonemployment
+                                                        Nonemployment
+     ENPersistS         fen2_doms2        sENPersistS   Stable         Separations from stable employment Count   Separation       1
+                                                        Separations to into a spell of persistent
+                                                        Persistent     nonemployment
+                                                        Nonemployment
+      JobStayS            f4dombe          sJobStayS    Stable Job     Stable main jobs that did not      Count   Employment       1
+                                                        Stayer         change during the reference
+                                                                       quarter
+        MainBS             fdomb             sMainBS    Stable         Stable main jobs held on the first Count   Employment       1
+                                                        Employment     day of the quarter
+                                                        (Beginning of
+                                                        Quarter)
+        MainES             fdome             sMainES    Stable         Stable main jobs held on the last  Count   Employment       1
+                                                        Employment     day of the quarter
+                                                        (End of
+                                                        Quarter)
+NEHireSEarn_Dest  fne2_doma2_kfqearn sNEHireSEarn_Dest  Average        Average quarterly earnings         Dollars Earnings   NEPersistS
+                                                        Earnings       following hires to stable
+                                                        following      employment from a spell of
+                                                        Stable Hires   persistent nonemployment
+                                                        from
+                                                        Persistent
+                                                        Nonemployment
+ ENSepSEarn_Orig  fen2_doms2_jfqearn  sENSepSEarn_Orig  Average        Average quarterly earnings prior   Dollars Earnings   ENPersistS
+                                                        Earnings prior to separations from stable
+                                                        to Stable      employment into a spell of
+                                                        Separations to persistent nonemployment
+                                                        Persistent
+                                                        Nonemployment
+JobStaySEarn_Orig   f4dombe_jfqearn  sJobStaySEarn_Orig Average        Average quarterly earnings in the  Dollars Earnings    JobStayS
+                                                        Earnings prior previous quarter when workers
+                                                        to Stable Job  stayed in a stable job
+                                                        Stayer
+JobStaySEarn_Dest   f4dombe_kfqearn  sJobStaySEarn_Dest Average        Average quarterly earnings in the  Dollars Earnings    JobStayS
+                                                        Earnings       quarter when workers stayed in a
+                                                        following      stable job
+                                                        Stable Job
+                                                        Stayer
 *** 5.3.4. Job-to-job flow rates (J2JR) ***
 ( variables_j2jr.csv )
-Rates are computed from published data, and are provided as a convenience. The
-column Base indicates the denominator used to compute the rate.
-Indicator   Alternate Name  Status Flag Indicator Name    Units Base
+Rates are computed from published data, and are provided as a convenience.
+Indicator  Alternate Name  Status Flag Indicator Name Description                                Units Concept           Base
  Variable
-   MHireR   all_doma2_rate     sMHireR  Hires             Rate  (MainB+MainE)/2
-   MSepR    all_doms2_rate     sMSepR   Separations       Rate  (MainB+MainE)/2
-MJobStartR   all_dest_rate  sMJobStartR Main Job Starts   Rate  (MainB+MainE)/2
- MJobEndR   all_orgin_rate   sMJobEndR  Main Job Ends     Rate  (MainB+MainE)/2
-  EEHireR        eea_rate     sEEHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
-                                        (Continuous
-                                        Employment)
-   EESepR        ees_rate      sEESepR  Job-to-Job        Rate  (MainB+MainE)/2
-                                        Separations
-                                        (Continuous
-                                        Employment)
-  AQHireR    aq_doma2_rate    sAQHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
-                                        (Brief
-                                        Nonemployment)
-   AQSepR    aq_doms2_rate     sAQSepR  Job-to-Job        Rate  (MainB+MainE)/2
-                                        Separations
-                                        (Brief
-                                        Nonemployment)
- J2JHireR  eeall_doma2_rate  sJ2JHireR  Job-to-Job Hires  Rate  (MainB+MainE)/2
-  J2JSepR  eeall_doms2_rate   sJ2JSepR  Job-to-Job        Rate  (MainB+MainE)/2
-                                        Separations
-  NEHireR    ne_doma2_rate    sNEHireR  Hires from        Rate  (MainB+MainE)/2
-                                        Nonemployment
-   ENSepR    en_doms2_rate     sENSepR  Separations to    Rate  (MainB+MainE)/2
-                                        Nonemployment
-NEPersistR  ne2_doma2_rate  sNEPersistR Hires from        Rate  (MainB+MainE)/2
-                                        Persistent
-                                        Nonemployment
-ENPersistR  en2_doms2_rate  sENPersistR Separations to    Rate  (MainB+MainE)/2
-                                        Persistent
-                                        Nonemployment
- NEFullQR  ne2p_doma2_rate   sNEFullQR  Hires from Full-  Rate  (MainB+MainE)/2
-                                        Quarter
-                                        Nonemployment
- ENFullQR  en2p_doms2_rate   sENFullQR  Separations to    Rate  (MainB+MainE)/2
-                                        Full-Quarter
-                                        Nonemployment
+   MHireR  all_doma2_rate     sMHireR  Hires          Rate of hires into a worker’s main job   Rate  Hire             (
+                                                                                                                  (MainB+MainE)/
+                                                                                                                        2)
+   MSepR   all_doms2_rate     sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation       (
+                                                      job                                                         (MainB+MainE)/
+                                                                                                                        2)
+MJobStartR first_dome_rate sMJobStartR Main Job       Rate of new main jobs due to hires and     Rate  Hire             (
+                                       Starts         instances when a previously existing                        (MainB+MainE)/
+                                                      secondary job becomes the main source of                          2)
+                                                      earnings
+ MJobEndR  last_domb_rate   sMJobEndR  Main Job Ends  Rate of end of main jobs due to            Rate  Separation       (
+                                                      separations and instances when another job                  (MainB+MainE)/
+                                                      becomes the main source of earnings                               2)
+  EEHireR   ee_doma2_rate    sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire             (
+                                       Hires          no observed nonemployment spell                             (MainB+MainE)/
+                                       (Continuous                                                                      2)
+                                       Employment)
+   EESepR   ee_doms2_rate     sEESepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation       (
+                                       Separations    with no observed nonemployment spell                        (MainB+MainE)/
+                                       (Continuous                                                                      2)
+                                       Employment)
+  AQHireR   aq_doma2_rate    sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire             (
+                                       Hires (Brief   a short nonemployment spell                                 (MainB+MainE)/
+                                       Nonemployment)                                                                   2)
+   AQSepR   aq_doms2_rate     sAQSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation       (
+                                       Separations    with a short nonemployment spell                            (MainB+MainE)/
+                                       (Brief                                                                           2)
+                                       Nonemployment)
+ J2JHireR  j2j_doma2_rate   sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire             (
+                                       Hires          (short or no observed nonemployment spell)                  (MainB+MainE)/
+                                                                                                                        2)
+  J2JSepR  j2j_doms2_rate    sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation       (
+                                       Separations    (short or no observed nonemployment spell)                  (MainB+MainE)/
+                                                                                                                        2)
+  NEHireR   ne_doma2_rate    sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire             (
+                                       Nonemployment  nonemployment                                               (MainB+MainE)/
+                                                                                                                        2)
+   ENSepR   en_doms2_rate     sENSepR  Separations to Rate of separations into any spell of      Rate  Separation       (
+                                       Nonemployment  nonemployment                                               (MainB+MainE)/
+                                                                                                                        2)
+NEPersistR ne2_doma2_rate  sNEPersistR Hires from     Rate of hires following a spell of         Rate  Hire             (
+                                       Persistent     persistent nonemployment                                    (MainB+MainE)/
+                                       Nonemployment                                                                    2)
+ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a spell of        Rate  Separation       (
+                                       Persistent     persistent nonemployment                                    (MainB+MainE)/
+                                       Nonemployment                                                                    2)
+ NEFullQR  ne2p_doma2_rate  sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire             (
+                                       Full-Quarter   quarter nonemployment (does not include                     (MainB+MainE)/
+                                       Nonemployment  intermittently employed)                                          2)
+ ENFullQR  en2p_doms2_rate  sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation       (
+                                       Full-Quarter   quarter nonemployment (does not include                     (MainB+MainE)/
+                                       Nonemployment  intermittently employed)                                          2)
 *** 5.3.5. Job-to-job flow Origin-Destination (J2JOD) ***
 ( variables_j2jod.csv )
-Indicator Variable Alternate Name Status Flag  Indicator Name           Units
-            EE              ee          sEE    Job-to-Job Flows         Count
-                                               (Continuous Employment)
-         AQHire        aq_doma2      sAQHire   Job-to-Job Flows (Brief  Count
-                                               Nonemployment)
-        EEFullQ            fee       sEEFullQ  Stable Job-to-Job Flows  Count
-                                               (Continuous Employment)
-     AQFullQHire      faq_doma2   sAQFullQHire Stable Job-to-Job Flows  Count
-                                               (Brief Nonemployment)
+     Indicator     Alternate Name      Status Flag   Indicator Name Description   Units   Concept    Base
+      Variable
+          EE           ee_doma2              sEE     Job-to-Job     Rate of hires Count   Hire         1
+                                                     Flows          following a
+                                                     (Continuous    separation
+                                                     Employment)    with no
+                                                                    observed
+                                                                    nonemployment
+                                                                    spell
+       AQHire          aq_doma2           sAQHire    Job-to-Job     Rate of hires Count   Hire         1
+                                                     Flows (Brief   following a
+                                                     Nonemployment) separation
+                                                                    with a short
+                                                                    nonemployment
+                                                                    spell
+         EES           fee_doma2            sEES     Stable Job-to- Hires to      Count   Hire         1
+                                                     Job Flows      stable
+                                                     (Continuous    employment
+                                                     Employment)    following a
+                                                                    separation
+                                                                    from stable
+                                                                    employment
+                                                                    with no
+                                                                    observed
+                                                                    nonemployment
+                                                                    spell
+      AQHireS          faq_doma2         sAQHireS    Stable Job-to- Hires to      Count   Hire         1
+                                                     Job Flows      stable
+                                                     (Brief         employment
+                                                     Nonemployment) following a
+                                                                    separation
+                                                                    from stable
+                                                                    employment
+                                                                    with a short
+                                                                    nonemployment
+                                                                    spell
+   EESEarn_Orig  fee_doma2_jfqearn    sEESEarn_Orig  Average        Average       Dollars Earnings    EES
+                                                     Earnings prior quarterly
+                                                     to Job-to-Job  earnings
+                                                     Flows          following job
+                                                     (Continuous    flows with no
+                                                     Employment)    observed
+                                                                    nonemployment
+                                                                    spell
+   EESEarn_Dest  fee_doma2_kfqearn    sEESEarn_Dest  Average        Average       Dollars Earnings    EES
+                                                     Earnings       quarterly
+                                                     following Job- earnings
+                                                     to-Job Flows   prior to job
+                                                     (Continuous    flows with no
+                                                     Employment)    observed
+                                                                    nonemployment
+                                                                    spell
+AQHireSEarn_Orig faq_doma2_jfqearn sAQHireSEarn_Orig Average        Average       Dollars Earnings AQHireS
+                                                     Earnings prior quarterly
+                                                     to Job-to-Job  earnings
+                                                     Flows (Brief   following job
+                                                     Nonemployment) flows with a
+                                                                    short
+                                                                    nonemployment
+                                                                    spell
+AQHireSEarn_Dest faq_doma2_kfqearn sAQHireSEarn_Dest Average        Average       Dollars Earnings AQHireS
+                                                     Earnings       quarterly
+                                                     following Job- earnings
+                                                     to-Job Flows   prior to job
+                                                     (Brief         flows with a
+                                                     Nonemployment) short
+                                                                    nonemployment
+                                                                    spell
 5.4. Variability measures
 The following tables and associated mapping files list the variability measures
 available on each file. The 'Variability Measure' is the short name of the
@@ -410,74 +819,76 @@ Indicators section. In the tables below, only a sample of variability measures
 are printed, but the complete list is available in the linked CSV schema files.
 *** 5.4.2. National QWI and state-level QWI ***
 ( variables_qwiv.csv )
-Variability measure Alternate name Variable name                          Units
-         st_Emp            st_B    Standard error of Beginning-of-Quarter Count
-                                   Employment
-       st_EmpEnd           st_E    Standard error of End-of-Quarter       Count
-                                   Employment
-         st_EmpS           st_F    Standard error of Full-Quarter         Count
-                                   Employment (Stable)
-            …
-         vt_Emp            vt_B    Total variation of Beginning-of-       Count
+Variability measure Alternate name Variable name                     Units Base
+         st_Emp            st_B    Standard error of Beginning-of-   Count 1
                                    Quarter Employment
-       vt_EmpEnd           vt_E    Total variation of End-of-Quarter      Count
+       st_EmpEnd           st_E    Standard error of End-of-Quarter  Count 1
                                    Employment
-         vt_EmpS           vt_F    Total variation of Full-Quarter        Count
+         st_EmpS           st_F    Standard error of Full-Quarter    Count 1
                                    Employment (Stable)
             …
-         vb_Emp            vb_B    Between-implicate variability for      Count
+         vt_Emp            vt_B    Total variation of Beginning-of-  Count 1
+                                   Quarter Employment
+       vt_EmpEnd           vt_E    Total variation of End-of-Quarter Count 1
+                                   Employment
+         vt_EmpS           vt_F    Total variation of Full-Quarter   Count 1
+                                   Employment (Stable)
+            …
+         vb_Emp            vb_B    Between-implicate variability for Count 1
                                    Beginning-of-Quarter Employment
-       vb_EmpEnd           vb_E    Between-implicate variability for End- Count
-                                   of-Quarter Employment
-         vb_EmpS           vb_F    Between-implicate variability for      Count
+       vb_EmpEnd           vb_E    Between-implicate variability for Count 1
+                                   End-of-Quarter Employment
+         vb_EmpS           vb_F    Between-implicate variability for Count 1
                                    Full-Quarter Employment (Stable)
             …
             …
-         df_Emp            df_B    Degrees of freedom for VT of           Count
+         df_Emp            df_B    Degrees of freedom for VT of      Count 1
                                    Beginning-of-Quarter Employment
-       df_EmpEnd           df_E    Degrees of freedom for VT of End-of-   Count
-                                   Quarter Employment
-         df_EmpS           df_F    Degrees of freedom for VT of Full-     Count
-                                   Quarter Employment (Stable)
+       df_EmpEnd           df_E    Degrees of freedom for VT of End- Count 1
+                                   of-Quarter Employment
+         df_EmpS           df_F    Degrees of freedom for VT of      Count 1
+                                   Full-Quarter Employment (Stable)
             …
-         mr_Emp            mr_B    Missingness ratio for Beginning-of-    Count
+         mr_Emp            mr_B    Missingness ratio for Beginning-  Count 1
+                                   of-Quarter Employment
+       mr_EmpEnd           mr_E    Missingness ratio for End-of-     Count 1
                                    Quarter Employment
-       mr_EmpEnd           mr_E    Missingness ratio for End-of-Quarter   Count
-                                   Employment
-         mr_EmpS           mr_F    Missingness ratio for Full-Quarter     Count
-                                   Employment (Stable)
+         mr_EmpS           mr_F    Missingness ratio for Full-       Count 1
+                                   Quarter Employment (Stable)
 *** 5.4.3. National QWI and state-level QWI rates ***
 ( variables_qwirv.csv )
-Variability measure Alternate name Variable name                          Units
-        st_HirAR          st_AR    Standard error of Hiring Rate (All     Rate
-                                   Accessions)
-        st_HirNR          st_HR    Standard error of New Hiring Rate      Rate
-        st_HirRR          st_RR    Standard error of Recall Rate          Rate
+Variability measure Alternate name Variable name                     Units Base
+        st_HirAR          st_AR    Standard error of Hiring Rate     Rate  1
+                                   (All Accessions)
+        st_HirNR          st_HR    Standard error of New Hiring Rate Rate  1
+        st_HirRR          st_RR    Standard error of Recall Rate     Rate  1
             …
-        vt_HirAR          vt_AR    Total variation of Hiring Rate (All    Rate
-                                   Accessions)
-        vt_HirNR          vt_HR    Total variation of New Hiring Rate     Rate
-        vt_HirRR          vt_RR    Total variation of Recall Rate         Rate
+        vt_HirAR          vt_AR    Total variation of Hiring Rate    Rate  1
+                                   (All Accessions)
+        vt_HirNR          vt_HR    Total variation of New Hiring     Rate  1
+                                   Rate
+        vt_HirRR          vt_RR    Total variation of Recall Rate    Rate  1
             …
-        vb_HirAR          vb_AR    Between-implicate variability for      Rate
+        vb_HirAR          vb_AR    Between-implicate variability for Rate  1
                                    Hiring Rate (All Accessions)
-        vb_HirNR          vb_HR    Between-implicate variability for New  Rate
-                                   Hiring Rate
-        vb_HirRR          vb_RR    Between-implicate variability for      Rate
+        vb_HirNR          vb_HR    Between-implicate variability for Rate  1
+                                   New Hiring Rate
+        vb_HirRR          vb_RR    Between-implicate variability for Rate  1
                                    Recall Rate
             …
             …
-        df_HirAR          df_AR    Degrees of freedom for VT of Hiring    Rate
-                                   Rate (All Accessions)
-        df_HirNR          df_HR    Degrees of freedom for VT of New       Rate
+        df_HirAR          df_AR    Degrees of freedom for VT of      Rate  1
+                                   Hiring Rate (All Accessions)
+        df_HirNR          df_HR    Degrees of freedom for VT of New  Rate  1
                                    Hiring Rate
-        df_HirRR          df_RR    Degrees of freedom for VT of Recall    Rate
-                                   Rate
+        df_HirRR          df_RR    Degrees of freedom for VT of      Rate  1
+                                   Recall Rate
             …
-        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate (All Rate
-                                   Accessions)
-        mr_HirNR          mr_HR    Missingness ratio for New Hiring Rate  Rate
-        mr_HirRR          mr_RR    Missingness ratio for Recall Rate      Rate
+        mr_HirAR          mr_AR    Missingness ratio for Hiring Rate Rate  1
+                                   (All Accessions)
+        mr_HirNR          mr_HR    Missingness ratio for New Hiring  Rate  1
+                                   Rate
+        mr_HirRR          mr_RR    Missingness ratio for Recall Rate Rate  1
 *** 5.4.4. Job-to-job flow counts (J2J) ***
 Soon.
 *** 5.4.5. Job-to-job flow rates (J2JR) ***
@@ -576,9 +987,96 @@ sex label
  0  All Sexes
  1  Male
  2  Female
-**** 6.12. stusps ****
+**** 6.12. Industry ****
+*** 6.12.1. Industry levels ***
+( label_ind_level.csv )
+ind_level label
+      A   All Industries
+      S   NAICS Sectors
+      3   NAICS Subsectors
+      4   NAICS Industry Groups
+*** 6.12.2. Industry ***
+( label_industry.csv )
+Only a small subset of available values shown. The 2017 NAICS (North American
+Industry Classification System) is used for all years. QWI releases prior to
+R2018Q1 used the 2012 NAICS classification (see Schema_v4.1.3). For a full
+listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
+naics/naicsrch?chart=2017.
+industry label                                         ind_level
+    00   All NAICS Sectors                                   A
+   000   All NAICS Subsectors                                A
+   0000  All NAICS Industry Groups                           A
+    11   Agriculture, Forestry, Fishing and Hunting          2
+   111   Crop Production                                     3
+   1111  Oilseed and Grain Farming                           4
+   1112  Vegetable and Melon Farming                         4
+    …
+   2382  Building Equipment Contractors                      4
+   2383  Building Finishing Contractors                      4
+   2389  Other Specialty Trade Contractors                   4
+  31-33  Manufacturing                                       2
+   311   Food Manufacturing                                  3
+   3111  Animal Food Manufacturing                           4
+   3112  Grain and Oilseed Milling                           4
+   3113  Sugar and Confectionery Product Manufacturing       4
+    …
+6.13. Geography
+6.13.1.  Geographic levels
+Geography labels for data files are provided in separate files, by scope. Each
+file label_geograpy_SCOPE.csv may contain one or more types of records as
+flagged by geo_level. For convenience, a composite file containing all geocodes
+is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
+geography is used for all tabulations as of the R2015Q4 release.
+Shapefiles are described in a separate_document.
+( label_geo_level.csv )
+geo_level label         description                                                                sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census https://
+          (complete)    Bureau’s Geography Division                                              www.census.gov/
+                                                                                                   programs-surveys/
+                                                                                                   metro-micro.html
+      C   Counties      Identifies 5-digit FIPS code                                               https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/codes/
+                                                                                                   cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   https://
+          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
+          (state part)                                                                             programs-surveys/
+                                                                                                   metro-micro.html
+      N   National (50  Custom code using 00 to denote national scope
+          States + DC)
+      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/
+                                                                                                   ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
+          Investment    State Partners
+          Areas
+6.13.2. National and state-level values
+( label_fipsnum.csv )
+The file label_fipsnum.csv contains values and labels for all entities of
+geo_level N or S, and is a summary of separately available files.
+geography label                     geo_level
+     00   National (50 States + DC)       N
+     01   Alabama                         S
+     02   Alaska                          S
+     04   Arizona                         S
+     05   Arkansas                        S
+     06   California                      S
+     08   Colorado                        S
+     …
+     45   South Carolina                  S
+     46   South Dakota                    S
+     47   Tennessee                       S
+     48   Texas                           S
+     49   Utah                            S
+     50   Vermont                         S
+     51   Virginia                        S
+     53   Washington                      S
+6.13.3. State postal codes
+Some parts of the schema use (lower or upper-case) state postal codes.
 ( label_stusps.csv )
 geography stusps
+     00   US
      01   AL
      02   AK
      04   AZ
@@ -632,151 +1130,68 @@ geography stusps
      56   WY
      72   PR
      78   VI
-**** 6.13. Industry ****
-*** 6.13.1. Industry levels ***
-( label_ind_level.csv )
-ind_level label
-      A   All Industries
-      S   NAICS Sectors
-      3   NAICS Subsectors
-      4   NAICS Industry Groups
-*** 6.13.2. Industry ***
-( label_industry.csv )
-Only a small subset of available values shown. The 2012 NAICS (North American
-Industry Classification System) is used for all years. QWI releases prior to
-R2015Q3 used the 2007 NAICS classification (see Schema_v4.0.1). For a full
-listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
-naics/naicsrch?chart=2012.
-industry label
-    00   All NAICS Sectors
-   000   All NAICS Subsectors
-   0000  All NAICS Industry Groups
-    11   Agriculture, Forestry, Fishing and Hunting
-   111   Crop Production
-   1111  Oilseed and Grain Farming
-   1112  Vegetable and Melon Farming
-    …
-   2382  Building Equipment Contractors
-   2383  Building Finishing Contractors
-   2389  Other Specialty Trade Contractors
-  31-33  Manufacturing
-   311   Food Manufacturing
-   3111  Animal Food Manufacturing
-   3112  Grain and Oilseed Milling
-   3113  Sugar and Confectionery Product Manufacturing
-    …
-**** 6.14. Geography ****
-6.14.1.  Geographic levels
-Geography labels for data files are provided in separate files, by scope. Each
-file label_geograpy_SCOPE.csv may contain one or more types of records as
-flagged by geo_level. For convenience, a composite file containing all geocodes
-is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
-geography is used for all tabulations as of the R2015Q4 release.
-Shapefiles are described in a separate_document.
-( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census https://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   programs-surveys/
-                                                                                                   metro-micro.html
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   https://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             programs-surveys/
-                                                                                                   metro-micro.html
-      N   National (50  Custom code using 00 to denote national scope
-          States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
-          Areas
-*** 6.14.2. National and state-level values ***
-( label_fipsnum.csv )
-The file label_fipsnum.csv contains values and labels for all entities of
-geo_level N or S, and is a summary of separately available files.
-geography label                     geo_level
-     00   National (50 States + DC)       N
-     01   Alabama                         S
-     02   Alaska                          S
-     04   Arizona                         S
-     05   Arkansas                        S
-     06   California                      S
-     08   Colorado                        S
-     …
-     45   South Carolina                  S
-     46   South Dakota                    S
-     47   Tennessee                       S
-     48   Texas                           S
-     49   Utah                            S
-     50   Vermont                         S
-     51   Virginia                        S
-     53   Washington                      S
-*** 6.14.3. Detailed state and substate level values ***
-Note: cross-state CBSA, in records of type geo_level = M, are present on files
-of type label_geography_XX.csv. A particular cross-state CBSA will appear on
-multiple files.
-Scope            Format file
-   US    label_geography_us.csv
-METRO  label_geography_metro.csv
+6.13.4. Detailed state and substate level values
+Files of type label_geography_[ST].csv will contain identifiers and labels for
+geographic areas entirely comprised within a given state [ST]. State-specific
+parts of cross-state CBSA, in records of type geo_level = M, are present on
+files of type label_geography_[ST].csv. The file label_geography_metro.csv
+contains labels for records of type geo_level = B, for metropolitan areas only.
+Scope   Types            Format file
+   US      N     label_geography_us.csv
+METRO      B   label_geography_metro.csv
 States
-   AK    label_geography_ak.csv
-   AL    label_geography_al.csv
-   AR    label_geography_ar.csv
-   AZ    label_geography_az.csv
-   CA    label_geography_ca.csv
-   CO    label_geography_co.csv
-   CT    label_geography_ct.csv
-   DC    label_geography_dc.csv
-   DE    label_geography_de.csv
-   FL    label_geography_fl.csv
-   GA    label_geography_ga.csv
-   HI    label_geography_hi.csv
-   IA    label_geography_ia.csv
-   ID    label_geography_id.csv
-   IL    label_geography_il.csv
-   IN    label_geography_in.csv
-   KS    label_geography_ks.csv
-   KY    label_geography_ky.csv
-   LA    label_geography_la.csv
-   MA    label_geography_ma.csv
-   MD    label_geography_md.csv
-   ME    label_geography_me.csv
-   MI    label_geography_mi.csv
-   MN    label_geography_mn.csv
-   MO    label_geography_mo.csv
-   MS    label_geography_ms.csv
-   MT    label_geography_mt.csv
-   NC    label_geography_nc.csv
-   ND    label_geography_nd.csv
-   NE    label_geography_ne.csv
-   NH    label_geography_nh.csv
-   NJ    label_geography_nj.csv
-   NM    label_geography_nm.csv
-   NV    label_geography_nv.csv
-   NY    label_geography_ny.csv
-   OH    label_geography_oh.csv
-   OK    label_geography_ok.csv
-   OR    label_geography_or.csv
-   PA    label_geography_pa.csv
-   RI    label_geography_ri.csv
-   SC    label_geography_sc.csv
-   SD    label_geography_sd.csv
-   TN    label_geography_tn.csv
-   TX    label_geography_tx.csv
-   UT    label_geography_ut.csv
-   VA    label_geography_va.csv
-   VT    label_geography_vt.csv
-   WA    label_geography_wa.csv
-   WI    label_geography_wi.csv
-   WV    label_geography_wv.csv
-   WY    label_geography_wy.csv
-**** 6.15. Aggregation level ****
+   AK  S C W M   label_geography_ak.csv
+   AL  S C W M   label_geography_al.csv
+   AR  S C W M   label_geography_ar.csv
+   AZ  S C W M   label_geography_az.csv
+   CA  S C W M   label_geography_ca.csv
+   CO  S C W M   label_geography_co.csv
+   CT  S C W M   label_geography_ct.csv
+   DC  S C W M   label_geography_dc.csv
+   DE  S C W M   label_geography_de.csv
+   FL  S C W M   label_geography_fl.csv
+   GA  S C W M   label_geography_ga.csv
+   HI  S C W M   label_geography_hi.csv
+   IA  S C W M   label_geography_ia.csv
+   ID  S C W M   label_geography_id.csv
+   IL  S C W M   label_geography_il.csv
+   IN  S C W M   label_geography_in.csv
+   KS  S C W M   label_geography_ks.csv
+   KY  S C W M   label_geography_ky.csv
+   LA  S C W M   label_geography_la.csv
+   MA  S C W M   label_geography_ma.csv
+   MD  S C W M   label_geography_md.csv
+   ME  S C W M   label_geography_me.csv
+   MI  S C W M   label_geography_mi.csv
+   MN  S C W M   label_geography_mn.csv
+   MO  S C W M   label_geography_mo.csv
+   MS  S C W M   label_geography_ms.csv
+   MT  S C W M   label_geography_mt.csv
+   NC  S C W M   label_geography_nc.csv
+   ND  S C W M   label_geography_nd.csv
+   NE  S C W M   label_geography_ne.csv
+   NH  S C W M   label_geography_nh.csv
+   NJ  S C W M   label_geography_nj.csv
+   NM  S C W M   label_geography_nm.csv
+   NV  S C W M   label_geography_nv.csv
+   NY  S C W M   label_geography_ny.csv
+   OH  S C W M   label_geography_oh.csv
+   OK  S C W M   label_geography_ok.csv
+   OR  S C W M   label_geography_or.csv
+   PA  S C W M   label_geography_pa.csv
+   RI  S C W M   label_geography_ri.csv
+   SC  S C W M   label_geography_sc.csv
+   SD  S C W M   label_geography_sd.csv
+   TN  S C W M   label_geography_tn.csv
+   TX  S C W M   label_geography_tx.csv
+   UT  S C W M   label_geography_ut.csv
+   VA  S C W M   label_geography_va.csv
+   VT  S C W M   label_geography_vt.csv
+   WA  S C W M   label_geography_wa.csv
+   WI  S C W M   label_geography_wi.csv
+   WV  S C W M   label_geography_wv.csv
+   WY  S C W M   label_geography_wy.csv
+**** 6.14. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
 dimensions, including demographic characteristics, geography, industry, and
@@ -833,7 +1248,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
 Each status flag in the tables above contains one of the following valid
 values. The values and their interpretation are listed in the table below.
             Important
-[Important] Note: Currently, the J2J tables only contain status flags -1 and 1.
+[Important] Note: Currently, the J2J tables only contain status flags -1, 1, 5.
             Status flags with values 10 or above only appear in online
             applications, not in CSV files.
 flag label
@@ -850,39 +1265,68 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-8.  Changes
+8. Metadata
+( variables_version.csv )
+8.1. Metadata for QWI and J2J files (version.txt)
+Each data release is accompanied by one or more files with metadata on
+geographic and temporal coverage, in a compact notation. These files follow the
+following naming convention:
+where each component is described in more detail in lehd_csv_naming.html.
+The contents contains the following elements:
+Component Source            Description
+product   [type]            Type as described in lehd_csv_naming.html
+demo_fas  [demo]_[fas]      (optional - concatenated with product) used for QWI
+                            to distinguish separate tabulations from the legal
+                            [demo]_[fas] combinations as described in
+                            lehd_csv_naming.html
+geo       [stusps] or METRO Covered [geography] (uppercase state postal code
+                            including entire nation or the word METRO)
+geonum    [geography]       Numeric geography code
+start     yyyy:q            Start year and quarter
+end       yyyy:q            End year and quarter
+schema    Vx.y.z            Version of the schema
+release   RyyyyQq           Release quarter (identifies when the data was
+                            created)
+internal  various           Internal identifier used for provenance tracking
+For instance, the metadata for the R2017Q3 release of "Missouri" "Kokomo QWI
+Sex by Age tabulations for No firm size or age detail (obtained from here) has
+the following content:
+QWISA_F MO 29 1995:1-2016:4 V4.1.2 R2017Q3 qwipu_mo_20170928_1714
+Similarly, the metadata for the R2017Q3 release of "Missouri" "Kokomo J2J
+tabulations (obtained from here) has the following content:
+J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
+Some J2J metadata may contain multiple lines, as necessary.
+8.2. Additional metadata for J2JOD files (avail.csv)
+(variables_avail.csv)
+Because the origin-destination (J2JOD) data link two regions, we provide an
+auxiliary file with the time range that cells containing data for each
+geographic pairing may appear in a data release.
+variable       type    label
+geo_level      Char(1) Geographic level of destination region
+geography      Char(8) Geography code of destination region
+geo_level_orig Char(1) Geographic level of origin region
+geography_orig Char(8) Geography code of origin region
+start_year     Num     First year regional pair may be observed
+start_quarter  Num     First quarter regional pair may be observed
+end_year       Num     Last year regional pair may be observed
+end_quarter    Num     Last quarter regional pair may be observed
+The reference region will always be either the origin or the destination.
+National tabulations contain records where both origin and destination are
+geo_level=N; state tabulations contain records where geo_level in (N,S); metro
+tabulations contain records where geo_level in (N,S,B). Data may be suppressed
+for certain combinations of regions and quarters because the estimates do not
+meet Census Bureau publication standards.
+9.  Changes
 For a description of how schema files are versioned, see main_directory.
-**** 8.1. This version (revisions) ****
-    * 2017-08-21: Initial release
-**** 8.2. Version 4.1.3 from 4.1.2 ****
-    * 2017-08-15: Updated LEHD shape files for Texas WIB definitions
-    * 2017-08-15: Update the source links of metro definitions from http://
-      www.census.gov/population/metro/ (broken) to https://www.census.gov/
-      programs-surveys/metro-micro.html
-    * 2017-08-21: Corrected naming of three of the status flags that have
-      "Rate" at the end. That should be just "R".
-**** 8.3. Version 4.1.2 from 4.1.1 ****
-    * 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB
-      definitions
-**** 8.4. Version 4.1.1 from 4.1.0 ****
-    * 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan
-      (complete)", gm to "Metropolitan/Micropolitan (state parts)"
-    * 2017-03-06: Updated reference in shapefile description to Job-to-Job
-      Explorer to point to the recently released Beta webap, updated title to
-      refer to the same name as the naming_geo_cat.csv uses
-    * 2017-03-06: Updated TIGER references to 2016 in shapefile description
-    * 2017-03-06: Modifed label_geo_level.csv, B value to read "Metropolitan
-      (complete)"
-    * 2017-03-06: Added referenced in the same file to where to find the CBSA
-      code underlying the state-part definitions
-    * 2017-03-06: Added a new file label_geography_metro.csv
-    * 2017-03-06: Changed references where appropriate from
-      label_geography_cbsa to label_geography_metro
-    * 2017-03-06: Added additional aggregation levels, changed some labels
-    * 2017-03-06: Removed two variables from variables_j2jod.csv that were not
-      actually on the CSV file
-    * 2017-03-07: Updated 2016 geography in shapefiles
-    * 2017-03-07: Corrected naming of files inside shapefile ZIP files
-This revision: Mon Aug 21 13:16:43 EDT 2017
+**** 9.1. This version (revisions) ****
+    * 2017-12-15: Initial release
+**** 9.2. Version 4.2.0 from 4.1.3 ****
+    * Added J2Japp description of metadata for convenience
+    * Added a column "ind_level" to label_industry.csv similar to the geo_level
+    * Added additional columns to the variable metadata schema:
+    * Description,
+    * Concept,
+    * Base
+This revision: Mon Dec 18 12:39:45 EST 2017
 ===============================================================================
-Last updated 2017-08-21 13:16:43 EDT
+Last updated 2017-12-18 12:39:45 EST
