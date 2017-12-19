@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-18 December 2017
+19 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_j2jexplorer_schema.pdf[Printable version] )
@@ -404,6 +404,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Mon Dec 18 15:47:16 EST 2017
+This revision: Tue Dec 19 16:04:08 EST 2017
 *******************
 

@@ -3,7 +3,7 @@
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-18 December 2017
+19 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -701,36 +701,28 @@ ENPersistR en2_doms2_rate  sENPersistR Separations to Rate of separations into a
 ( variables_j2jod.csv )
      Indicator     Alternate Name      Status Flag   Indicator Name Description   Units   Concept    Base
       Variable
-          EE           ee_doma2              sEE     Job-to-Job     Rate of hires Count   Hire         1
-                                                     Flows          following a
-                                                     (Continuous    separation
-                                                     Employment)    with no
-                                                                    observed
-                                                                    nonemployment
+          EE           ee_doma2              sEE     Job-to-Job     Job flows     Count   Hire         1
+                                                     Flows          with no
+                                                     (Continuous    observed
+                                                     Employment)    nonemployment
                                                                     spell
-       AQHire          aq_doma2           sAQHire    Job-to-Job     Rate of hires Count   Hire         1
-                                                     Flows (Brief   following a
-                                                     Nonemployment) separation
-                                                                    with a short
-                                                                    nonemployment
+       AQHire          aq_doma2           sAQHire    Job-to-Job     Job flows     Count   Hire         1
+                                                     Flows (Brief   with a short
+                                                     Nonemployment) nonemployment
                                                                     spell
-         EES           fee_doma2            sEES     Stable Job-to- Hires to      Count   Hire         1
-                                                     Job Flows      stable
+         EES           fee_doma2            sEES     Stable Job-to- Job flows     Count   Hire         1
+                                                     Job Flows      from stable
                                                      (Continuous    employment
-                                                     Employment)    following a
-                                                                    separation
-                                                                    from stable
+                                                     Employment)    into stable
                                                                     employment
                                                                     with no
                                                                     observed
                                                                     nonemployment
                                                                     spell
-      AQHireS          faq_doma2         sAQHireS    Stable Job-to- Hires to      Count   Hire         1
-                                                     Job Flows      stable
+      AQHireS          faq_doma2         sAQHireS    Stable Job-to- Job flows     Count   Hire         1
+                                                     Job Flows      from stable
                                                      (Brief         employment
-                                                     Nonemployment) following a
-                                                                    separation
-                                                                    from stable
+                                                     Nonemployment) into stable
                                                                     employment
                                                                     with a short
                                                                     nonemployment
@@ -1349,6 +1341,6 @@ For a description of how schema files are versioned, see main_directory.
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Mon Dec 18 15:33:10 EST 2017
+This revision: Tue Dec 19 16:02:40 EST 2017
 ===============================================================================
-Last updated 2017-12-18 15:33:10 EST
+Last updated 2017-12-19 16:02:40 EST

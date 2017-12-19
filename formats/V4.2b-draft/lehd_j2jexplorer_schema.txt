@@ -3,7 +3,7 @@
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-18 December 2017
+19 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -693,6 +693,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Mon Dec 18 15:47:16 EST 2017
+This revision: Tue Dec 19 16:04:08 EST 2017
 ===============================================================================
-Last updated 2017-12-18 15:47:16 EST
+Last updated 2017-12-19 16:04:08 EST
