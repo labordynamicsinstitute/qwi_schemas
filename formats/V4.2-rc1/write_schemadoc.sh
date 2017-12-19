@@ -614,7 +614,7 @@ include::$nsfileshort[]
 arg=label_flags.csv
 echo "
 <<<
-== [[statusflags]]Status flags
+== [[statusflags]]Status Flags
 ( link:${arg}[] )
 
 Each status flag in the tables above contains one of the following valid values.
@@ -644,7 +644,7 @@ echo "
 == [[metadata]]Metadata
 ( link:${arg}[] )
 
-=== [[metadataqwij2j]]Metadata for QWI and J2J files (version.txt)
+=== [[metadataqwij2j]]Version Metadata for QWI and J2J Files (version.txt)
 
 Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
 --------------------------------
@@ -675,7 +675,7 @@ $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
 
-=== [[metadataj2jod]]Additional metadata for J2JOD files (avail.csv)
+=== [[metadataj2jod]]Additional Metadata for J2JOD Files (avail.csv)
 (link:variables_avail.csv[])
 
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
@@ -685,6 +685,25 @@ include::variables_avail.csv[]
 |===================================================
 The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <<geolevel,geo_level>>=N; state tabulations contain records where <<geolevel,geo_level>> in (N,S); metro tabulations contain records where <<geolevel,geo_level>> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.
 
+" >> $asciifile
+arg=variables_lags.csv
+lagqwi=lags_qwi.csv
+lagj2j=lags_j2j.csv
+
+echo "
+=== [[metadatalags]]Metadata on Indicator Availability
+(link:${arg}[])
+
+Each <<indicators,Indicator>> potentially requires leads and/or lags of data to be computed, and thus may not be available for certain time periods. Only two QWI will be available for all quarters of the time span described by +start+ and +end+ in the <<metadataqwij2j,version.txt>> files:  +EmpTotal+ and +Payroll+. For each indicator, the following files contain the quarters of data required to be available relative to the general span described in their respective <<metadataqwij2j,version.txt>> files:
+
+* link:${lagqwi}[]
+* link:${lagj2j}[]
+
+The files are structured as follows:
+[width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
+|===================================================
+include::$arg[]
+|===================================================
 <<<
 
 " >> $asciifile

@@ -1233,7 +1233,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
      1037 Race *      State                       1   1    1     0   S
           Ethnicity
         …
-7. Status flags
+7. Status Flags
 ( label_flags.csv )
 Each status flag in the tables above contains one of the following valid
 values. The values and their interpretation are listed in the table below.
@@ -1257,7 +1257,7 @@ flag label
  12  Aggregate of cells - some of which have significantly distorted data
 8. Metadata
 ( variables_version.csv )
-8.1. Metadata for QWI and J2J files (version.txt)
+8.1. Version Metadata for QWI and J2J Files (version.txt)
 Each data release is accompanied by one or more files with metadata on
 geographic and temporal coverage, in a compact notation. These files follow the
 following naming convention:
@@ -1288,7 +1288,7 @@ Similarly, the metadata for the R2017Q3 release of "Missouri" "Kokomo J2J
 tabulations (obtained from here) has the following content:
 J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
 Some J2J metadata may contain multiple lines, as necessary.
-8.2. Additional metadata for J2JOD files (avail.csv)
+8.2. Additional Metadata for J2JOD Files (avail.csv)
 (variables_avail.csv)
 Because the origin-destination (J2JOD) data link two regions, we provide an
 auxiliary file with the time range that cells containing data for each
@@ -1308,6 +1308,23 @@ geo_level=N; state tabulations contain records where geo_level in (N,S); metro
 tabulations contain records where geo_level in (N,S,B). Data may be suppressed
 for certain combinations of regions and quarters because the estimates do not
 meet Census Bureau publication standards.
+8.3. Metadata on Indicator Availability
+(variables_lags.csv)
+Each Indicator potentially requires leads and/or lags of data to be computed,
+and thus may not be available for certain time periods. Only two QWI will be
+available for all quarters of the time span described by start and end in the
+version.txt files: EmpTotal and Payroll. For each indicator, the following
+files contain the quarters of data required to be available relative to the
+general span described in their respective version.txt files:
+    * lags_qwi.csv
+    * lags_j2j.csv
+The files are structured as follows:
+variable                     type label
+Indicator Variable           Num  Name of the Indicator
+Quarters_Required_Prior      Num  Number of quarters of data required to
+                                  compute indicator relative to start quarter
+Quarters_Required_Subsequent Num  Number of quarters of data required to
+                                  compute indicator relative to end quarter
 9.  Changes
 For a description of how schema files are versioned, see main_directory.
 **** 9.1. This version (revisions) ****
@@ -1316,7 +1333,7 @@ For a description of how schema files are versioned, see main_directory.
     * Updated industry classification from NAICS 2012 to NAICS 2017
     * Added J2J Explorer-specific description of metadata for convenience
       (lehd_j2jexplorer_schema.html)
-    * Added a column "ind_level" to label_industry.csv similar to the geo_level
+    * Added a column ind_level to label_industry.csv similar to the geo_level
     * Added additional columns to the variable metadata schema for greater
       clarity
           o Description,
@@ -1325,6 +1342,9 @@ For a description of how schema files are versioned, see main_directory.
     * Added a (draft) taxonomy of concepts used in the LEHD data world
       (label_concept_draft.csv)
     * Fixed the labeling of ownership code A00 to correctly reflect scope
-This revision: Tue Dec 19 14:59:32 EST 2017
+    * Added files describing the number of quarters of data availability
+      required relative to start and end quarters (lags_qwi.csv and
+      lags_j2j.csv), and its metadata (variables_lags.csv)
+This revision: Tue Dec 19 15:45:48 EST 2017
 ===============================================================================
-Last updated 2017-12-19 14:59:32 EST
+Last updated 2017-12-19 15:45:48 EST

@@ -3926,7 +3926,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_statusflags_a_status_flags">7. <a id="statusflags"></a>Status flags</h2>
+<h2 id="_a_id_statusflags_a_status_flags">7. <a id="statusflags"></a>Status Flags</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="label_flags.csv">label_flags.csv</a> )</p></div>
 <div class="paragraph"><p>Each status flag in the tables above contains one of the following valid values.
@@ -4007,7 +4007,7 @@ cellspacing="0" cellpadding="4">
 <div class="sectionbody">
 <div class="paragraph"><p>( <a href="variables_version.csv">variables_version.csv</a> )</p></div>
 <div class="sect2">
-<h3 id="_a_id_metadataqwij2j_a_metadata_for_qwi_and_j2j_files_version_txt">8.1. <a id="metadataqwij2j"></a>Metadata for QWI and J2J files (version.txt)</h3>
+<h3 id="_a_id_metadataqwij2j_a_version_metadata_for_qwi_and_j2j_files_version_txt">8.1. <a id="metadataqwij2j"></a>Version Metadata for QWI and J2J Files (version.txt)</h3>
 <div class="paragraph"><p>Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:</p></div>
 <div class="listingblock">
 <div class="content">
@@ -4101,7 +4101,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/R2017Q3
 <div class="paragraph"><p>Some J2J metadata may contain multiple lines, as necessary.</p></div>
 </div>
 <div class="sect2">
-<h3 id="_a_id_metadataj2jod_a_additional_metadata_for_j2jod_files_avail_csv">8.2. <a id="metadataj2jod"></a>Additional metadata for J2JOD files (avail.csv)</h3>
+<h3 id="_a_id_metadataj2jod_a_additional_metadata_for_j2jod_files_avail_csv">8.2. <a id="metadataj2jod"></a>Additional Metadata for J2JOD Files (avail.csv)</h3>
 <div class="paragraph"><p>(<a href="variables_avail.csv">variables_avail.csv</a>)</p></div>
 <div class="paragraph"><p>Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.</p></div>
 <div class="tableblock">
@@ -4164,6 +4164,58 @@ cellspacing="0" cellpadding="4">
 </table>
 </div>
 <div class="paragraph"><p>The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <a href="#geolevel">geo_level</a>=N; state tabulations contain records where <a href="#geolevel">geo_level</a> in (N,S); metro tabulations contain records where <a href="#geolevel">geo_level</a> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_metadatalags_a_metadata_on_indicator_availability">8.3. <a id="metadatalags"></a>Metadata on Indicator Availability</h3>
+<div class="paragraph"><p>(<a href="variables_lags.csv">variables_lags.csv</a>)</p></div>
+<div class="paragraph"><p>Each <a href="#indicators">Indicator</a> potentially requires leads and/or lags of data to be computed, and thus may not be available for certain time periods. Only two QWI will be available for all quarters of the time span described by <code>start</code> and <code>end</code> in the <a href="#metadataqwij2j">version.txt</a> files:  <code>EmpTotal</code> and <code>Payroll</code>. For each indicator, the following files contain the quarters of data required to be available relative to the general span described in their respective <a href="#metadataqwij2j">version.txt</a> files:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="lags_qwi.csv">lags_qwi.csv</a>
+</p>
+</li>
+<li>
+<p>
+<a href="lags_j2j.csv">lags_j2j.csv</a>
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>The files are structured as follows:</p></div>
+<div class="tableblock">
+<table rules="all"
+width="80%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="25%" />
+<col width="50%" />
+<thead>
+<tr>
+<th align="left" valign="top">variable</th>
+<th align="left" valign="top">type</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">Indicator Variable</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Name of the Indicator</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Quarters_Required_Prior</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Number of quarters of data required to compute indicator relative to start quarter</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">Quarters_Required_Subsequent</p></td>
+<td align="left" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Number of quarters of data required to compute indicator relative to end quarter</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -4197,7 +4249,7 @@ Added J2J Explorer-specific description of metadata for convenience (<a href="le
 </li>
 <li>
 <p>
-Added a column "ind_level" to label_industry.csv similar to the geo_level
+Added a column <code>ind_level</code> to label_industry.csv similar to the <code>geo_level</code>
 </p>
 </li>
 <li>
@@ -4229,14 +4281,19 @@ Added a (draft) taxonomy of concepts used in the LEHD data world (<a href="label
 </li>
 <li>
 <p>
-Fixed the labeling of ownership code A00 to correctly reflect scope
+Fixed the labeling of ownership code <code>A00</code> to correctly reflect scope
+</p>
+</li>
+<li>
+<p>
+Added files describing the number of quarters of data availability required relative to start and end quarters (<a href="lags_qwi.csv">lags_qwi.csv</a> and <a href="lags_j2j.csv">lags_j2j.csv</a>), and its metadata (<a href="variables_lags.csv">variables_lags.csv</a>)
 </p>
 </li>
 </ul></div>
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Tue Dec 19 14:59:32 EST 2017</p></div>
+<div class="paragraph"><p>This revision: Tue Dec 19 15:45:48 EST 2017</p></div>
 </div></div>
 </div>
 </div>
@@ -4246,7 +4303,7 @@ Fixed the labeling of ownership code A00 to correctly reflect scope
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-12-19 14:59:32 EST
+ 2017-12-19 15:45:48 EST
 </div>
 </div>
 </body>
