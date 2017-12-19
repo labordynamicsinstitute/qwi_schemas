@@ -694,7 +694,9 @@ echo "
 === [[metadatalags]]Metadata on Indicator Availability
 (link:${arg}[])
 
-Each <<indicators,Indicator>> potentially requires leads and/or lags of data to be computed, and thus may not be available for certain time periods. Only two QWI will be available for all quarters of the time span described by +start+ and +end+ in the <<metadataqwij2j,version.txt>> files:  +EmpTotal+ and +Payroll+. For each indicator, the following files contain the quarters of data required to be available relative to the general span described in their respective <<metadataqwij2j,version.txt>> files:
+Each <<indicators,Indicator>> potentially requires leads and/or lags of data to be computed, and thus may not be available for certain time periods. Only two QWI will be available for all quarters of the time span described by +start+ and +end+ in the <<metadataqwij2j,version.txt>> files:  +EmpTotal+ and +Payroll+.  The date range for QWI, QWIR, J2J, and J2JR can be found in <<metadataqwij2j,version.txt>>; the date range for J2JOD can be found in <<metadataj2jod,avail.csv>>.
+
+For each indicator, the following files contain the quarters of data required to be available relative to the overall date range described in the metadata for the release:
 
 * link:${lagqwi}[]
 * link:${lagj2j}[]
