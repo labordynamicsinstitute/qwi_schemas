@@ -182,13 +182,6 @@ on each file. The descriptor files themselves are structured as follows:
                                                   the quarter
                                                   with the same
                                                   employer
-    EmpSpv       Fpv       sEmpSpv   Full-Quarter Estimate of   Count   Employment      1
-                                     Employment   stable jobs
-                                     in the       in the
-                                     Previous     quarter
-                                     Quarter      before the
-                                                  reference
-                                                  quarter
    EmpTotal        M      sEmpTotal  Employment - Estimated     Count   Employment      1
                                      Reference    count of
                                      Quarter      people
@@ -196,6 +189,13 @@ on each file. The descriptor files themselves are structured as follows:
                                                   firm at any
                                                   time during
                                                   the quarter
+    EmpSpv       Fpv       sEmpSpv   Full-Quarter Estimate of   Count   Employment      1
+                                     Employment   stable jobs
+                                     in the       in the
+                                     Previous     quarter
+                                     Quarter      before the
+                                                  reference
+                                                  quarter
       HirA         A         sHirA   Hires (All   Estimated     Count   Hire            1
                                      Accessions)  number of
                                                   workers who
@@ -239,10 +239,6 @@ on each file. The descriptor files themselves are structured as follows:
                                                   continued
                                                   into next
                                                   quarter
-   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a    Rate    Hire        (Emp +
-                                     Quarter      percent of                       EmpEnd)/
-                                     Hiring Rate  average                             2
-                                                  employment
     SepBeg        CS       sSepBeg   Beginning-   Estimated     Count   Separation      1
                                      of-Quarter   number of
                                      Separations  workers whose
@@ -252,10 +248,28 @@ on each file. The descriptor files themselves are structured as follows:
                                                   continued and
                                                   ended in the
                                                   given quarter
+HirAEndRepl       EI   sHirAEndRepl  Replacement  Hires into    Count   Hire            1
+                                     Hires        continuous
+                                                  quarter
+                                                  employment in
+                                                  excess of job
+                                                  creation
+   HirAEndR      CAR      sHirAEndR  End-of-      Hires as a    Rate    Hire        (Emp +
+                                     Quarter      percent of                       EmpEnd)/
+                                     Hiring Rate  average                             2
+                                                  employment
    SepBegR       CSR      sSepBegR   Beginning-   Separations   Rate    Separation  (Emp +
                                      of-Quarter   as a percent                     EmpEnd)/
                                      Separation   of average                          2
                                      Rate         employment
+HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement   Rate    Hire        (Emp +
+                                     Hiring Rate  hires as a                       EmpEnd)/
+                                                  percent of                          2
+                                                  the average
+                                                  of beginning-
+                                                  and end-of-
+                                                  quarter
+                                                  employment
      HirAS        FA        sHirAS   Hires (All   Estimated     Count   Hire            1
                                      Hires into   number of
                                      Full-Quarter workers that
@@ -303,47 +317,33 @@ on each file. The descriptor files themselves are structured as follows:
                                      (Stable)     which stable
                                                   jobs begin
                                                   and end
-   FrmJbGn        JC      sFrmJbGn   Firm Job     Estimated     Count   Hire            1
+   FrmJbGn        JC      sFrmJbGn   Firm Job     Estimated     Count   Job Flows       1
                                      Gains (Job   number of
                                      Creation)    jobs gained
                                                   at firms
                                                   throughout
                                                   the quarter
-   FrmJbLs        JD      sFrmJbLs   Firm Job     Estimated     Count   Separation      1
+   FrmJbLs        JD      sFrmJbLs   Firm Job     Estimated     Count   Job Flows       1
                                      Loss (Job    number of
                                      Destruction) jobs lost at
                                                   firms
                                                   throughout
                                                   the quarter
-    FrmJbC        JF       sFrmJbC   Firm Job     Difference    Count   Employment      1
+    FrmJbC        JF       sFrmJbC   Firm Job     Difference    Count   Job Flows       1
                                      Change (Net  between firm
                                      Change)      job gain and
                                                   firm job loss
-HirAEndRepl       EI   sHirAEndRepl  Replacement  Hires into    Count   Hire            1
-                                     Hires        continuous
-                                                  quarter
-                                                  employment in
-                                                  excess of job
-                                                  creation
-HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire        (Emp +
-                                     Hiring Rate  hires as a                       EmpEnd)/
-                                                  percent of                          2
-                                                  the average
-                                                  of beginning-
-                                                  and end-of-
-                                                  quarter
-                                                  employment
-   FrmJbGnS      FJC      sFrmJbGnS  Firm Job     Estimated     Count   Hire            1
+   FrmJbGnS      FJC      sFrmJbGnS  Firm Job     Estimated     Count   Job Flows       1
                                      Gains        number of
                                      (Stable)     full-quarter
                                                   jobs gained
                                                   at firms
-   FrmJbLsS      FJD      sFrmJbLsS  Firm Job     Estimated     Count   Separation      1
+   FrmJbLsS      FJD      sFrmJbLsS  Firm Job     Estimated     Count   Job Flows       1
                                      Loss         number of
                                      (Stable)     full-quarter
                                                   jobs lost at
                                                   firms
-   FrmJbCS       FJF      sFrmJbCS   Firm Job     Net growth in Count   Employment      1
+   FrmJbCS       FJF      sFrmJbCS   Firm Job     Net growth in Count   Job Flows       1
                                      Change       jobs that
                                      (Stable; Net last a full
                                      Change)      quarter
@@ -353,7 +353,7 @@ HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire    
                                      (Full-       employees
                                      Quarter      with stable
                                      Employment)  jobs
-   EarnBeg       ZW1      sEarnBeg   Average      Average       Dollars Earnings      Emp
+   EarnBeg      ZW2B      sEarnBeg   Average      Average       Dollars Earnings      Emp
                                      Monthly      monthly
                                      Earnings     earnings of
                                      (Beginning-  employees who
@@ -393,7 +393,7 @@ HirAEndReplr     EIR   sHirAEndReplr Replacement  Replacement   Rate    Hire    
 Rates are computed from published data, and are provided as a convenience.
 ( variables_qwir.csv )
   Indicator  Alternate  Status Flag  Indicator    Description Units Concept    Base
-   Variable    name                  Name
+   Variable    Name                  Name
      HirAR        AR        sHirAR   Hiring Rate  All         Rate  Hire       (Emp +
                                      (All         accessions                   EmpEnd)/
                                      Accessions)  as a                         2
@@ -425,7 +425,12 @@ Rates are computed from published data, and are provided as a convenience.
                                      Separation   percent of                   2
                                      Rate         average
                                                   employment
-    HirAsR       FAR       sHirAsR   Hiring Rate  Flows into  Rate  Hire       (EmpSpv
+HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (Emp +
+                                     Hiring Rate  hires as a                   EmpEnd)/
+                                                  percent of                   2
+                                                  average
+                                                  employment
+    HirASR       FAR       sHirASR   Hiring Rate  Flows into  Rate  Hire       (EmpSpv
                                      (Flows into  stable                       + EmpS)/
                                      Full-Quarter employment                   2
                                      Employment)  as a
@@ -433,7 +438,7 @@ Rates are computed from published data, and are provided as a convenience.
                                                   average
                                                   stable
                                                   employment
-    HirNsR       FHR       sHirNsR   New Hiring   New hires   Rate  Hire       (EmpSpv
+    HirNSR       FHR       sHirNSR   New Hiring   New hires   Rate  Hire       (EmpSpv
                                      Rate (New    into stable                  + EmpS)/
                                      Hires to     employment                   2
                                      Full-Quarter as a
@@ -460,7 +465,7 @@ Rates are computed from published data, and are provided as a convenience.
                                      (Stable)     stable jobs
                                                   begin and
                                                   end
-   FrmJbGnR      JCR      sFrmJbGnR  Firm Job     Estimated   Rate  Hire       (Emp +
+   FrmJbGnR      JCR      sFrmJbGnR  Firm Job     Estimated   Rate  Job Flows  (Emp +
                                      Gain Rate    number of                    EmpEnd)/
                                      (Job         jobs gained                  2
                                      Creation     at firms
@@ -470,7 +475,7 @@ Rates are computed from published data, and are provided as a convenience.
                                                   percent of
                                                   average
                                                   employment
-   FrmJbLsR      JDR      sFrmJbLsR  Firm Job     Estimated   Rate  Separation (Emp +
+   FrmJbLsR      JDR      sFrmJbLsR  Firm Job     Estimated   Rate  Job Flows  (Emp +
                                      Loss Rate    number of                    EmpEnd)/
                                      (Job         jobs lost                    2
                                      Destruction  at firms
@@ -480,7 +485,7 @@ Rates are computed from published data, and are provided as a convenience.
                                                   percent of
                                                   average
                                                   employment
-   FrmJbCR       JFR      sFrmJbCR   Firm Job     Difference  Rate  Flow       (Emp +
+   FrmJbCR       JFR      sFrmJbCR   Firm Job     Difference  Rate  Job Flows  (Emp +
                                      Change Rate  between                      EmpEnd)/
                                      (Net Change  firm job                     2
                                      Rate)        gain and
@@ -489,12 +494,7 @@ Rates are computed from published data, and are provided as a convenience.
                                                   percent of
                                                   average
                                                   employment
-HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (Emp +
-                                     Hiring Rate  hires as a                   EmpEnd)/
-                                                  percent of                   2
-                                                  average
-                                                  employment
-  FrmJbGnSR     FJCR     sFrmJbGnSR  Firm Job     Estimated   Rate  Hire       (EmpSpv
+  FrmJbGnSR     FJCR     sFrmJbGnSR  Firm Job     Estimated   Rate  Job Flows  (EmpSpv
                                      Gain Rate    number of                    + EmpS)/
                                      (Stable)     full-                        2
                                                   quarter
@@ -504,7 +504,7 @@ HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (
                                                   of average
                                                   stable
                                                   employment
-  FrmJbLsSR     FJDR     sFrmJbLsSR  Firm Job     Estimated   Rate  Separation (EmpSpv
+  FrmJbLsSR     FJDR     sFrmJbLsSR  Firm Job     Estimated   Rate  Job Flows  (EmpSpv
                                      Loss Rate    number of                    + EmpS)/
                                      (Stable)     full-                        2
                                                   quarter
@@ -514,7 +514,7 @@ HirAEndReplR     EIR   sHirAEndReplR Replacement  Replacement Rate  Hire       (
                                                   of average
                                                   stable
                                                   employment
-   FrmJbCSR     FJFR      sFrmJbCSR  Firm Job     Net growth  Rate  Flow       (EmpSpv
+   FrmJbCSR     FJFR      sFrmJbCSR  Firm Job     Net growth  Rate  Job Flows  (EmpSpv
                                      Change Rate  in jobs                      + EmpS)/
                                      (Stable; Net that last a                  2
                                      Change Rate) full
@@ -1348,6 +1348,6 @@ For a description of how schema files are versioned, see main_directory.
     * Added files describing the number of quarters of data availability
       required relative to start and end quarters (lags_qwi.csv and
       lags_j2j.csv), and its metadata (variables_lags.csv)
-This revision: Wed Dec 20 10:40:16 EST 2017
+This revision: Wed Dec 20 17:57:19 EST 2017
 ===============================================================================
-Last updated 2017-12-20 10:40:16 EST
+Last updated 2017-12-20 17:57:19 EST
