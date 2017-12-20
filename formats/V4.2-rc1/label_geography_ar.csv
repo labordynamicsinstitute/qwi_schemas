@@ -1,15 +1,5 @@
 geography,label,geo_level
 05,"Arkansas",S
-05000001,"01 Central WIB",W
-05000002,"02 Eastern WIB",W
-05000003,"03 Little Rock WIB",W
-05000004,"04 North Central WIB",W
-05000005,"05 Northeast WIB",W
-05000006,"06 Northwest WIB",W
-05000007,"07 Southeast WIB",W
-05000008,"08 Southwest WIB",W
-05000009,"09 West Central WIB",W
-05000010,"10 Western WIB",W
 05001,"Arkansas, AR",C
 05003,"Ashley, AR",C
 05005,"Baxter, AR",C
@@ -68,7 +58,6 @@ geography,label,geo_level
 05111,"Poinsett, AR",C
 05113,"Polk, AR",C
 05115,"Pope, AR",C
-0511660,"Arkadelphia, AR",M
 05117,"Prairie, AR",C
 05119,"Pulaski, AR",C
 05121,"Randolph, AR",C
@@ -76,18 +65,19 @@ geography,label,geo_level
 05125,"Saline, AR",C
 05127,"Scott, AR",C
 05129,"Searcy, AR",C
-0512900,"Batesville, AR",M
 05131,"Sebastian, AR",C
 05133,"Sevier, AR",C
 05135,"Sharp, AR",C
 05137,"Stone, AR",C
 05139,"Union, AR",C
 05141,"Van Buren, AR",C
-0514180,"Blytheville, AR",M
 05143,"Washington, AR",C
 05145,"White, AR",C
 05147,"Woodruff, AR",C
 05149,"Yell, AR",C
+0511660,"Arkadelphia, AR",M
+0512900,"Batesville, AR",M
+0514180,"Blytheville, AR",M
 0515780,"Camden, AR",M
 0520980,"El Dorado, AR",M
 0522220,"Fayetteville-Springdale-Rogers, AR-MO (AR part)",M
@@ -109,3 +99,13 @@ geography,label,geo_level
 0542620,"Searcy, AR",M
 0545500,"Texarkana, TX-AR (AR part)",M
 0599999,"Nonmetropolitan, nonmicropolitan",M
+05000001,"01 Central WIB",W
+05000002,"02 Eastern WIB",W
+05000003,"03 Little Rock WIB",W
+05000004,"04 North Central WIB",W
+05000005,"05 Northeast WIB",W
+05000006,"06 Northwest WIB",W
+05000007,"07 Southeast WIB",W
+05000008,"08 Southwest WIB",W
+05000009,"09 West Central WIB",W
+05000010,"10 Western WIB",W
