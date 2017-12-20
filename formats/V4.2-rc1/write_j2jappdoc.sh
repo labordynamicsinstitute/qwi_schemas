@@ -40,6 +40,10 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_j2jexplorer_schema.asciidoc
 appname="J2J Explorer (beta)"
+versionvintage=R2017Q3
+versionstate=mo
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate/
+
 echo "= LEHD Public Use Data Schema for $appname $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
@@ -416,7 +420,7 @@ The values and their interpretation are listed in the table below.
 [IMPORTANT]
 .Important
 ==============================================
-Note: Currently, the J2J tables only contain status flags '-1'  and '1.' Status flags with values 10 or above only appear in online applications, not in CSV files.
+Note: Currently, the J2J tables only contain status flags '-1', '1', '5'. Status flags with values 10 or above only appear in online applications, not in CSV files.
 ==============================================
 
 
@@ -426,7 +430,73 @@ include::$arg[]
 |===================================================
 
 <<<
+" >> $asciifile
+arg=variables_version.csv
+sed 's/naming convention/link:lehd_csv_naming{ext-relative}[]/' $arg |
+  sed 's/stusps/<<stusps>>/' |
+  sed 's/geography/<<geography>>/' > tmp_$arg
+echo "
+<<<
 
+== [[metadata]]Metadata
+( link:${arg}[] )
+
+=== [[metadataqwij2j]]Version Metadata for J2J Files (version.txt)
+
+Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
+--------------------------------
+$(awk -F, ' NR == 6 { print $1 }' naming_convention.csv  )
+--------------------------------
+where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
+
+The contents contains the following elements:
+[width=\"90%\",format=\"csv\",cols=\"<1,<2,<5\",options=\"header\"]
+|===================================================
+include::tmp_$arg[]
+|===================================================
+
+For instance, the metadata for the $versionvintage release of
+$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
+tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
+--------------------------------
+$(curl $versionj2jurl/version_j2j.txt)
+--------------------------------
+Some J2J metadata may contain multiple lines, as necessary.
+
+=== [[metadataj2jod]]Additional Metadata for J2JOD Files (avail.csv)
+(link:variables_avail.csv[])
+
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range that cells containing data for each geographic pairing may appear in a data release.
+[width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
+|===================================================
+include::variables_avail.csv[]
+|===================================================
+The reference region will always be either the origin or the destination. National tabulations contain records where both origin and destination are <<geolevel,geo_level>>=N; state tabulations contain records where <<geolevel,geo_level>> in (N,S); metro tabulations contain records where <<geolevel,geo_level>> in (N,S,B). Data may be suppressed for certain combinations of regions and quarters because the estimates do not meet Census Bureau publication standards.
+" >> $asciifile
+
+
+arg=variables_lags.csv
+lagqwi=lags_qwi.csv
+lagj2j=lags_j2j.csv
+lagj2japp=lags_j2japp.csv
+
+echo "
+=== [[metadatalags]]Metadata on Indicator Availability
+(link:${arg}[])
+
+Each <<indicators,Indicator>> potentially requires leads and/or lags of data to be computed, and thus may not be available for certain time periods.  The date range for J2J and J2JR can be found in <<metadataqwij2j,version.txt>>; the date range for J2JOD can be found in <<metadataj2jod,avail.csv>>.
+
+For each indicator, the following files contain the quarters of data required to be available relative to the overall date range described in the metadata for the release:
+
+* link:${lagj2j}[]
+* link:${lagj2japp}[]
+
+The files are structured as follows:
+[width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
+|===================================================
+include::$arg[]
+|===================================================
+<<<
 " >> $asciifile
 
 

@@ -3,7 +3,7 @@
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2-rc1 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-18 December 2017
+20 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -113,211 +113,42 @@ rates, monetary amounts. 'Concept' classifies each indicator in a descriptive
 category: employment, hire, separation, earnings, or flow. The 'Base' indicates
 the denominator used to compute the statistic, and may be 1.
 ( variables_j2japp.csv )
-      Indicator                  Alternate Name            Status Flag   Indicator Name Description                                Units   Concept                    Base
-      Variable
-         MHire                       all_doma2                 sMHire    Hires          Hires into a worker’s main job           Count   Hire                         1
-         MSep                        all_doms2                 sMSep     Separations    Separations from a worker’s main job     Count   Separation                   1
-      MJobStart                     first_dome              sMJobStart   Main Job       New main jobs due to hires and instances   Count   Hire                         1
-                                                                         Starts         when a previously existing secondary job
-                                                                                        becomes the main source of earnings
-       MJobEnd                       last_domb               sMJobEnd    Main Job Ends  End of main jobs due to separations and    Count   Separation                   1
-                                                                                        instances when another job becomes the
-                                                                                        main source of earnings
-        EEHire                        ee_doma2                sEEHire    Job-to-Job     Hires following a separation with no       Count   Hire                         1
-                                                                         Hires          observed nonemployment spell
-                                                                         (Continuous
-                                                                         Employment)
-         EESep                        ee_doms2                 sEESep    Job-to-Job     Separations followed by a hire with no     Count   Separation                   1
-                                                                         Separations    observed nonemployment spell
-                                                                         (Continuous
-                                                                         Employment)
-        AQHire                        aq_doma2                sAQHire    Job-to-Job     Hires following a separation with a short  Count   Hire                         1
-                                                                         Hires (Brief   nonemployment spell
-                                                                         Nonemployment)
-         AQSep                        aq_doms2                 sAQSep    Job-to-Job     Separations followed by a hire with a      Count   Separation                   1
-                                                                         Separations    short nonemployment spell
-                                                                         (Brief
-                                                                         Nonemployment)
-       J2JHire                       j2j_doma2               sJ2JHire    Job-to-Job     Hires following a separation (short or no  Count   Hire                         1
-                                                                         Hires          observed nonemployment spell)
-        J2JSep                       j2j_doms2                sJ2JSep    Job-to-Job     Separations followed by a hire (short or   Count   Separation                   1
-                                                                         Separations    no observed nonemployment spell)
-        NEHire                        ne_doma2                sNEHire    Hires from     Hires following any spell of nonemployment Count   Hire                         1
-                                                                         Nonemployment
-         ENSep                        en_doms2                 sENSep    Separations to Separations into any spell of              Count   Separation                   1
-                                                                         Nonemployment  nonemployment
-      NEPersist                      ne2_doma2              sNEPersist   Hires from     Hires following a spell of persistent      Count   Hire                         1
-                                                                         Persistent     nonemployment
-                                                                         Nonemployment
-      ENPersist                      en2_doms2              sENPersist   Separations to Separations into a spell of persistent     Count   Separation                   1
-                                                                         Persistent     nonemployment
-                                                                         Nonemployment
-       NEFullQ                      ne2p_doma2               sNEFullQ    Hires from     Hires following a spell of full-quarter    Count   Hire                         1
-                                                                         Full-Quarter   nonemployment (does not include
-                                                                         Nonemployment  intermittently employed)
-       ENFullQ                      en2p_doms2               sENFullQ    Separations to Separations into a spell of full-quarter   Count   Separation                   1
-                                                                         Full-Quarter   nonemployment (does not include
-                                                                         Nonemployment  intermittently employed)
-         MainB                           domB                  sMainB    Employment     Main jobs held on the first day of the     Count   Employment                   1
-                                                                         (Beginning of  quarter
-                                                                         Quarter)
-         MainE                           domE                  sMainE    Employment     Main jobs held on the last day of the      Count   Employment                   1
-                                                                         (End of        quarter
-                                                                         Quarter)
-        EESepS                       fee_doms2                sEESepS    Stable Job-to- Separations from stable employment         Count   Separation                   1
-                                                                         Job            followed by a hire to stable employment
-                                                                         Separations    with no observed nonemployment spell
-                                                                         (Continuous
-                                                                         Employment)
-       EEHireS                       fee_doma2               sEEHireS    Stable Job-to- Hires to stable employment following a     Count   Hire                         1
-                                                                         Job Hires      separation from stable employment with no
-                                                                         (Continuous    observed nonemployment spell
-                                                                         Employment)
-        AQSepS                       faq_doms2                sAQSepS    Stable Job-to- Separations from stable employment         Count   Separation                   1
-                                                                         Job            followed by a hire to stable employment
-                                                                         Separations    with a short nonemployment spell
-                                                                         (Brief
-                                                                         Nonemployment)
-       AQHireS                       faq_doma2               sAQHireS    Stable Job-to- Hires to stable employment following a     Count   Hire                         1
-                                                                         Job Hires      separation from stable employment with a
-                                                                         (Brief         short nonemployment spell
-                                                                         Nonemployment)
-     NEPersistS                     fne2_doma2             sNEPersistS   Stable Hires   Hires to stable employment following a     Count   Hire                         1
-                                                                         from           spell of persistent nonemployment
-                                                                         Persistent
-                                                                         Nonemployment
-     ENPersistS                     fen2_doms2             sENPersistS   Stable         Separations from stable employment into a  Count   Separation                   1
-                                                                         Separations to spell of persistent nonemployment
-                                                                         Persistent
-                                                                         Nonemployment
-      JobStayS                         f4dombe              sJobStayS    Stable Job     Stable main jobs that did not change       Count   Employment                   1
-                                                                         Stayer         during the reference quarter
-        MainBS                          fdomb                 sMainBS    Stable         Stable main jobs held on the first day of  Count   Employment                   1
-                                                                         Employment     the quarter
-                                                                         (Beginning of
-                                                                         Quarter)
-        MainES                          fdome                 sMainES    Stable         Stable main jobs held on the last day of   Count   Employment                   1
-                                                                         Employment     the quarter
-                                                                         (End of
-                                                                         Quarter)
-NEHireSEarn_Dest              fne2_doma2_kfqearn      sNEHireSEarn_Dest  Average        Average quarterly earnings following hires Dollars Earnings               NEPersistS
-                                                                         Earnings       to stable employment from a spell of
-                                                                         following      persistent nonemployment
-                                                                         Stable Hires
-                                                                         from
-                                                                         Persistent
-                                                                         Nonemployment
- ENSepSEarn_Orig              fen2_doms2_jfqearn       sENSepSEarn_Orig  Average        Average quarterly earnings prior to        Dollars Earnings               ENPersistS
-                                                                         Earnings prior separations from stable employment into a
-                                                                         to Stable      spell of persistent nonemployment
-                                                                         Separations to
-                                                                         Persistent
-                                                                         Nonemployment
-JobStaySEarn_Orig                f4dombe_jfqearn      sJobStaySEarn_Orig Average        Average quarterly earnings in the previous Dollars Earnings                JobStayS
-                                                                         Earnings prior quarter when workers stayed in a stable
-                                                                         to Stable Job  job
-                                                                         Stayer
-JobStaySEarn_Dest                f4dombe_kfqearn      sJobStaySEarn_Dest Average        Average quarterly earnings in the quarter  Dollars Earnings                JobStayS
-                                                                         Earnings       when workers stayed in a stable job
-                                                                         following
-                                                                         Stable Job
-                                                                         Stayer
-        MHireR                   all_doma2_rate               sMHireR    Hires          Rate of hires into a worker’s main job   Rate    Hire               (MainB+MainE)/2
-         MSepR                   all_doms2_rate                sMSepR    Separations    Rate of separations from a worker’s main Rate    Separation         (MainB+MainE)/2
-                                                                                        job
-     MJobStartR                   all_dest_rate            sMJobStartR   Main Job       Rate of new main jobs due to hires and     Rate    Employment         (MainB+MainE)/2
-                                                                         Starts         instances when a previously existing
-                                                                                        secondary job becomes the main source of
-                                                                                        earnings
-      MJobEndR                   all_orgin_rate             sMJobEndR    Main Job Ends  Rate of the end of main jobs due to        Rate    Employment         (MainB+MainE)/2
-                                                                                        separations and instances when another job
-                                                                                        becomes the main source of earnings
-       EEHireR                        eea_rate               sEEHireR    Job-to-Job     Rate of hires following a separation with  Rate    Hire               (MainB+MainE)/2
-                                                                         Hires          no observed nonemployment spell
-                                                                         (Continuous
-                                                                         Employment)
-        EESepR                        ees_rate                sEESepR    Job-to-Job     Rate of separations followed by a hire     Rate    Separation         (MainB+MainE)/2
-                                                                         Separations    with no observed nonemployment spell
-                                                                         (Continuous
-                                                                         Employment)
-       AQHireR                    aq_doma2_rate              sAQHireR    Job-to-Job     Rate of hires following a separation with  Rate    Hire               (MainB+MainE)/2
-                                                                         Hires (Brief   a short nonemployment spell
-                                                                         Nonemployment)
-        AQSepR                    aq_doms2_rate               sAQSepR    Job-to-Job     Rate of separations followed by a hire     Rate    Separation         (MainB+MainE)/2
-                                                                         Separations    with a short nonemployment spell
-                                                                         (Brief
-                                                                         Nonemployment)
-      J2JHireR                  eeall_doma2_rate            sJ2JHireR    Job-to-Job     Rate of hires following a separation       Rate    Hire               (MainB+MainE)/2
-                                                                         Hires          (short or no observed nonemployment spell)
-       J2JSepR                  eeall_doms2_rate             sJ2JSepR    Job-to-Job     Rate of separations followed by a hire     Rate    Separation         (MainB+MainE)/2
-                                                                         Separations    (short or no observed nonemployment spell)
-       NEHireR                    ne_doma2_rate              sNEHireR    Hires from     Rate of hires following any spell of       Rate    Hire               (MainB+MainE)/2
-                                                                         Nonemployment  nonemployment
-        ENSepR                    en_doms2_rate               sENSepR    Separations to Rate of separations into any spell of      Rate    Separation         (MainB+MainE)/2
-                                                                         Nonemployment  nonemployment
-     NEPersistR                  ne2_doma2_rate            sNEPersistR   Hires from     Rate of hires following a spell of         Rate    Hire               (MainB+MainE)/2
-                                                                         Persistent     persistent nonemployment
-                                                                         Nonemployment
-     ENPersistR                  en2_doms2_rate            sENPersistR   Separations to Rate of separations into a spell of        Rate    Separation         (MainB+MainE)/2
-                                                                         Persistent     persistent nonemployment
-                                                                         Nonemployment
-      NEFullQR                   ne2p_doma2_rate            sNEFullQR    Hires from     Rate of hires following a spell of full-   Rate    Hire               (MainB+MainE)/2
-                                                                         Full-Quarter   quarter nonemployment (does not include
-                                                                         Nonemployment  intermittently employed)
-      ENFullQR                   en2p_doms2_rate            sENFullQR    Separations to Rate of separations into a spell of full-  Rate    Separation         (MainB+MainE)/2
-                                                                         Full-Quarter   quarter nonemployment (does not include
-                                                                         Nonemployment  intermittently employed)
-           EE                             ee                     sEE     Job-to-Job     Job flows with no observed nonemployment   Count   Flow                         1
-                                                                         Flows          spell
-                                                                         (Continuous
-                                                                         Employment)
-        AQHire                        aq_doma2                sAQHire    Job-to-Job     Job flows with a short nonemployment spell Count   Flow                         1
-                                                                         Flows (Brief
-                                                                         Nonemployment)
-          J2J                       ee+aq_doma2                 sJ2J     Job-to-Job     Job flows with a short or no observed      Count   Flow                         1
-                                                                         Flows          nonemployment spell
-          EES                             fee                sEEFullQ    Stable Job-to- Job flows from stable employment into      Count   Flow                         1
-                                                                         Job Flows      stable employment with no observed
-                                                                         (Continuous    nonemployment spell
-                                                                         Employment)
-       AQHireS                       faq_doma2            sAQFullQHire   Stable Job-to- Job flows from stable employment into      Count   Flow                         1
-                                                                         Job Flows      stable employment with a short
-                                                                         (Brief         nonemployment spell
-                                                                         Nonemployment)
-         J2JS                     fee+faq_doma2                sJ2JS     Stable Job-to- Job flows from stable employment into      Count   Flow                         1
-                                                                         Job Flows      stable employment with a short or no
-                                                                                        observed nonemployment spell
-   EESEarn_Orig                fee_doma2_jfqearn         sEESEarn_Orig   Average        Average quarterly earnings prior to job    Dollars Earnings                    EES
-                                                                         Earnings prior flows with no observed nonemployment spell
-                                                                         to Job-to-Job
-                                                                         Flows
-                                                                         (Continuous
-                                                                         Employment)
-   EESEarn_Dest                fee_doma2_kfqearn         sEESEarn_Dest   Average        Average quarterly earnings following job   Dollars Earnings                    EES
-                                                                         Earnings       flows with no observed nonemployment spell
-                                                                         following Job-
-                                                                         to-Job Flows
-                                                                         (Continuous
-                                                                         Employment)
-AQHireSEarn_Orig               faq_doma2_jfqearn      sAQHireSEarn_Orig  Average        Average quarterly earnings prior to job    Dollars Earnings                 AQHireS
-                                                                         Earnings prior flows with a short nonemployment spell
-                                                                         to Job-to-Job
-                                                                         Flows (Brief
-                                                                         Nonemployment)
-AQHireSEarn_Dest               faq_doma2_kfqearn      sAQHireSEarn_Dest  Average        Average quarterly earnings following job   Dollars Earnings                 AQHireS
-                                                                         Earnings       flows with a short nonemployment spell
-                                                                         following Job-
-                                                                         to-Job Flows
-                                                                         (Brief
-                                                                         Nonemployment)
-   J2JSEarn_Orig  fee_doma2_kfqearn+faq_doma2_kfqearn    sJ2JSEarn_Orig  Average        Average quarterly earnings prior to job    Dollars Earnings       EESEarn_orig*EES)+
-                                                                         Earnings prior flows with a short or no observed                             (AQHireSEarn_orig*AQHireS/
-                                                                         to Job-to-Job  nonemployment spell                                                 (EES+AQHireS)
-                                                                         Flows
-   J2JSEarn_Dest  fee_doma2_jfqearn+faq_doma2_jfqearn    sJ2JSEarn_Dest  Average        Average quarterly earnings following job   Dollars Earnings      EESEarn_dest*EES) +
-                                                                         Earnings       flows with a short or no observed                             (AQHireSEarn_dest*AQHireS/
-                                                                         following Job- nonemployment spell                                                 (EES+AQHireS)
-                                                                         to-Job Flows
+   Indicator     Alternate Name    Status Flag  Indicator Description   Units   Concept  Base
+   Variable                                     Name
+       J2J          j2j_doma2           sJ2J    Job-to-   Job flows     Count   Hire       1
+                                                Job Flows with a short
+                                                          or no
+                                                          observed
+                                                          nonemployment
+                                                          spell
+      J2JS          fj2j_doma2         sJ2JS    Stable    Job flows     Count   Hire       1
+                                                Job-to-   from stable
+                                                Job Flows employment
+                                                          into stable
+                                                          employment
+                                                          with a short
+                                                          or no
+                                                          observed
+                                                          nonemployment
+                                                          spell
+J2JSEarn_Orig fj2j_doma2_jfqearn sJ2JSEarn_Orig Average   Average       Dollars Earnings J2JS
+                                                Earnings  quarterly
+                                                prior to  earnings
+                                                Job-to-   prior to job
+                                                Job Flows flows with a
+                                                          short or no
+                                                          observed
+                                                          nonemployment
+                                                          spell
+J2JSEarn_Dest fj2j_doma2_kfqearn sJ2JSEarn_Dest Average   Average       Dollars Earnings J2JS
+                                                Earnings  quarterly
+                                                following earnings
+                                                Job-to-   following job
+                                                Job Flows flows with a
+                                                          short or no
+                                                          observed
+                                                          nonemployment
+                                                          spell
 6. Categorical Variables
 Categorical variable descriptions are displayed above each table, with the
 variable name shown in parentheses. Unless otherwise stated, every possible
@@ -676,7 +507,7 @@ agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
 Each status flag in the tables above contains one of the following valid
 values. The values and their interpretation are listed in the table below.
             Important
-[Important] Note: Currently, the J2J tables only contain status flags -1 and 1.
+[Important] Note: Currently, the J2J tables only contain status flags -1, 1, 5.
             Status flags with values 10 or above only appear in online
             applications, not in CSV files.
 flag label
@@ -693,6 +524,72 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-This revision: Mon Dec 18 16:34:15 EST 2017
+8. Metadata
+( variables_version.csv )
+8.1. Version Metadata for J2J Files (version.txt)
+Each data release is accompanied by one or more files with metadata on
+geographic and temporal coverage, in a compact notation. These files follow the
+following naming convention:
+version_[type].txt
+where each component is described in more detail in lehd_csv_naming.html.
+The contents contains the following elements:
+Component Source            Description
+product   [type]            Type as described in lehd_csv_naming.html
+demo_fas  [demo]_[fas]      (optional - concatenated with product) used for QWI
+                            to distinguish separate tabulations from the legal
+                            [demo]_[fas] combinations as described in
+                            lehd_csv_naming.html
+geo       [stusps] or METRO Covered [geography] (uppercase state postal code
+                            including entire nation or the word METRO)
+geonum    [geography]       Numeric geography code
+start     yyyy:q            Start year and quarter
+end       yyyy:q            End year and quarter
+schema    Vx.y.z            Version of the schema
+release   RyyyyQq           Release quarter (identifies when the data was
+                            created)
+internal  various           Internal identifier used for provenance tracking
+For instance, the metadata for the R2017Q3 release of "Missouri" "Kokomo J2J
+tabulations (obtained from here) has the following content:
+J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
+Some J2J metadata may contain multiple lines, as necessary.
+8.2. Additional Metadata for J2JOD Files (avail.csv)
+(variables_avail.csv)
+Because the origin-destination (J2JOD) data link two regions, we provide an
+auxiliary file with the time range that cells containing data for each
+geographic pairing may appear in a data release.
+variable       type    label
+geo_level      Char(1) Geographic level of destination region
+geography      Char(8) Geography code of destination region
+geo_level_orig Char(1) Geographic level of origin region
+geography_orig Char(8) Geography code of origin region
+start_year     Num     First year regional pair may be observed
+start_quarter  Num     First quarter regional pair may be observed
+end_year       Num     Last year regional pair may be observed
+end_quarter    Num     Last quarter regional pair may be observed
+The reference region will always be either the origin or the destination.
+National tabulations contain records where both origin and destination are
+geo_level=N; state tabulations contain records where geo_level in (N,S); metro
+tabulations contain records where geo_level in (N,S,B). Data may be suppressed
+for certain combinations of regions and quarters because the estimates do not
+meet Census Bureau publication standards.
+8.3. Metadata on Indicator Availability
+(variables_lags.csv)
+Each Indicator potentially requires leads and/or lags of data to be computed,
+and thus may not be available for certain time periods. The date range for J2J
+and J2JR can be found in version.txt; the date range for J2JOD can be found in
+avail.csv.
+For each indicator, the following files contain the quarters of data required
+to be available relative to the overall date range described in the metadata
+for the release:
+    * lags_j2j.csv
+    * lags_j2japp.csv
+The files are structured as follows:
+variable                     type label
+Indicator Variable           Num  Name of the Indicator
+Quarters_Required_Prior      Num  Number of quarters of data required to
+                                  compute indicator relative to start quarter
+Quarters_Required_Subsequent Num  Number of quarters of data required to
+                                  compute indicator relative to end quarter
+This revision: Wed Dec 20 18:10:38 EST 2017
 ===============================================================================
-Last updated 2017-12-18 16:34:15 EST
+Last updated 2017-12-20 18:10:38 EST

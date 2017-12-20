@@ -691,6 +691,7 @@ The reference region will always be either the origin or the destination. Nation
 arg=variables_lags.csv
 lagqwi=lags_qwi.csv
 lagj2j=lags_j2j.csv
+lagj2japp=lags_j2japp.csv
 
 echo "
 === [[metadatalags]]Metadata on Indicator Availability
@@ -702,6 +703,7 @@ For each indicator, the following files contain the quarters of data required to
 
 * link:${lagqwi}[]
 * link:${lagj2j}[]
+* link:${lagj2japp}[]
 
 The files are structured as follows:
 [width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
