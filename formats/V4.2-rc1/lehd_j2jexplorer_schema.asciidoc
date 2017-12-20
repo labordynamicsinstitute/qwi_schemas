@@ -455,12 +455,11 @@ The files are structured as follows:
 |===================================================
 include::variables_lags.csv[]
 |===================================================
-<<<
 
 
 
 <<<
 *******************
-This revision: Wed Dec 20 18:10:38 EST 2017
+This revision: Wed Dec 20 18:14:59 EST 2017
 *******************
 

@@ -590,6 +590,6 @@ Quarters_Required_Prior      Num  Number of quarters of data required to
                                   compute indicator relative to start quarter
 Quarters_Required_Subsequent Num  Number of quarters of data required to
                                   compute indicator relative to end quarter
-This revision: Wed Dec 20 18:10:38 EST 2017
+This revision: Wed Dec 20 18:14:59 EST 2017
 ===============================================================================
-Last updated 2017-12-20 18:10:38 EST
+Last updated 2017-12-20 18:14:59 EST
