@@ -469,7 +469,9 @@ done
 	do
 	  tail -n +2 $arg >> tmp3.csv
 	done
-	cat tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	# split sorting
+	grep -vE ",W$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",W$" tmp3.csv | sort     -k 1 -t , >> label_geography.csv
 	# now add the metro file
 	tail -n +2 label_geography_metro.csv >> label_geography.csv
 	# convert to UTF-8

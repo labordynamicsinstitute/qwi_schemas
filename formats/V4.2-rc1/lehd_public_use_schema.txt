@@ -3,7 +3,7 @@
 ****** LEHD Public Use Data Schema V4.2-rc1 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-19 December 2017
+20 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -1348,6 +1348,6 @@ For a description of how schema files are versioned, see main_directory.
     * Added files describing the number of quarters of data availability
       required relative to start and end quarters (lags_qwi.csv and
       lags_j2j.csv), and its metadata (variables_lags.csv)
-This revision: Tue Dec 19 16:28:29 EST 2017
+This revision: Wed Dec 20 10:40:16 EST 2017
 ===============================================================================
-Last updated 2017-12-19 16:28:29 EST
+Last updated 2017-12-20 10:40:16 EST

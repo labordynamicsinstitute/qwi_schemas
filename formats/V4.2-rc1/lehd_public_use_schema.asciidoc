@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.2-rc1
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-19 December 2017
+20 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -669,6 +669,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Tue Dec 19 16:28:29 EST 2017
+This revision: Wed Dec 20 10:40:16 EST 2017
 *******************
 
