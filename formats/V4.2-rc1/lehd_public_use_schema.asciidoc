@@ -601,8 +601,7 @@ include::tmp_variables_version.csv[]
 |===================================================
 
 For instance, the metadata for the R2017Q3 release of
-"Missouri"
-"Kokomo QWI
+Missouri QWI
 Sex by Age tabulations
 for No firm size or age detail
 (obtained from https://lehd.ces.census.gov/pub/mo/R2017Q3/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
@@ -610,8 +609,7 @@ for No firm size or age detail
 QWISA_F MO 29 1995:1-2016:4 V4.1.2 R2017Q3 qwipu_mo_20170928_1714
 --------------------------------
 Similarly, the metadata for the R2017Q3 release of
-"Missouri"
-"Kokomo J2J
+Missouri J2J
 tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q3/j2j/mo//version_j2j.txt[here]) has  the following content:
 --------------------------------
 J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
@@ -639,6 +637,7 @@ For each indicator, the following files contain the quarters of data required to
 
 * link:lags_qwi.csv[]
 * link:lags_j2j.csv[]
+* link:lags_j2japp.csv[]
 
 The files are structured as follows:
 [width="80%",format="csv",cols="<2,<2,<4",options="header"]
@@ -669,6 +668,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Wed Dec 20 17:57:19 EST 2017
+This revision: Wed Dec 20 18:18:46 EST 2017
 *******************
 
