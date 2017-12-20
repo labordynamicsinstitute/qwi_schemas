@@ -17,6 +17,7 @@ geography,label,geo_level
 3328300,"Keene, NH",M
 3329060,"Laconia, NH",M
 3331700,"Manchester-Nashua, NH",M
+3399999,"Nonmetropolitan, nonmicropolitan",M
 33330014,"Berlin One-Stop Service Area",W
 33330034,"Claremont One-Stop Service Area",W
 33330054,"Concord One-Stop Service Area",W
@@ -30,4 +31,3 @@ geography,label,geo_level
 33330434,"Nashua One-Stop Service Area",W
 33330534,"Portsmouth One-Stop Service Area",W
 33330574,"Salem One-Stop Service Area",W
-3399999,"Nonmetropolitan, nonmicropolitan",M

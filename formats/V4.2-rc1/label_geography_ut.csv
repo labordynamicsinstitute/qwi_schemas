@@ -39,6 +39,7 @@ geography,label,geo_level
 4941620,"Salt Lake City, UT",M
 4944920,"Summit Park, UT",M
 4946860,"Vernal, UT",M
+4999999,"Nonmetropolitan, nonmicropolitan",M
 49490001,"01 Bear River WIB",W
 49490002,"02 Wasatch Front North WIB",W
 49490003,"03 Wasatch Front South WIB",W
@@ -47,4 +48,3 @@ geography,label,geo_level
 49490006,"06 Southeast WIB",W
 49490007,"07 Southwest WIB",W
 49490008,"08 Central WIB",W
-4999999,"Nonmetropolitan, nonmicropolitan",M

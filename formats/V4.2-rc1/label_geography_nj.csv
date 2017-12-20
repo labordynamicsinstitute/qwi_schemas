@@ -23,6 +23,12 @@ geography,label,geo_level
 34041,"Warren, NJ",C
 3410900,"Allentown-Bethlehem-Easton, PA-NJ (NJ part)",M
 3412100,"Atlantic City-Hammonton, NJ",M
+3435620,"New York-Newark-Jersey City, NY-NJ-PA (NJ part)",M
+3436140,"Ocean City, NJ",M
+3437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (NJ part)",M
+3445940,"Trenton, NJ",M
+3447220,"Vineland-Bridgeton, NJ",M
+3499999,"Nonmetropolitan, nonmicropolitan",M
 34340001,"01 Atlantic-Cape May WIB",W
 34340002,"02 Bergen WIB",W
 34340003,"03 Burlington WIB",W
@@ -40,9 +46,3 @@ geography,label,geo_level
 34340015,"15 Ocean WIB",W
 34340016,"16 Passaic WIB",W
 34340017,"17 Union WIB",W
-3435620,"New York-Newark-Jersey City, NY-NJ-PA (NJ part)",M
-3436140,"Ocean City, NJ",M
-3437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (NJ part)",M
-3445940,"Trenton, NJ",M
-3447220,"Vineland-Bridgeton, NJ",M
-3499999,"Nonmetropolitan, nonmicropolitan",M

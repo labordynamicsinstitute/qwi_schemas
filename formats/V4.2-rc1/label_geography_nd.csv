@@ -1,13 +1,5 @@
 geography,label,geo_level
 38,"North Dakota",S
-38000001,"01 Williston WIB",W
-38000002,"02 Minot WIB",W
-38000003,"03 Devils Lake WIB",W
-38000004,"04 Grand Forks WIB",W
-38000005,"05 Fargo WIB",W
-38000006,"06 Jamestown WIB",W
-38000007,"07 Bismarck WIB",W
-38000008,"08 Dickinson WIB",W
 38001,"Adams, ND",C
 38003,"Barnes, ND",C
 38005,"Benson, ND",C
@@ -70,3 +62,11 @@ geography,label,geo_level
 3847420,"Wahpeton, ND-MN (ND part)",M
 3848780,"Williston, ND",M
 3899999,"Nonmetropolitan, nonmicropolitan",M
+38000001,"01 Williston WIB",W
+38000002,"02 Minot WIB",W
+38000003,"03 Devils Lake WIB",W
+38000004,"04 Grand Forks WIB",W
+38000005,"05 Fargo WIB",W
+38000006,"06 Jamestown WIB",W
+38000007,"07 Bismarck WIB",W
+38000008,"08 Dickinson WIB",W

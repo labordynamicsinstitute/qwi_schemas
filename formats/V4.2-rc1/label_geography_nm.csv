@@ -46,10 +46,6 @@ geography,label,geo_level
 3529740,"Las Cruces, NM",M
 3529780,"Las Vegas, NM",M
 3531060,"Los Alamos, NM",M
-35350005,"05 Central Area WIB",W
-35350010,"10 Southwest Area WIB",W
-35350015,"15 Northern Area WIB",W
-35350020,"20 Eastern Area WIB",W
 3538780,"Portales, NM",M
 3540740,"Roswell, NM",M
 3540760,"Ruidoso, NM",M
@@ -57,3 +53,7 @@ geography,label,geo_level
 3543500,"Silver City, NM",M
 3545340,"Taos, NM",M
 3599999,"Nonmetropolitan, nonmicropolitan",M
+35350005,"05 Central Area WIB",W
+35350010,"10 Southwest Area WIB",W
+35350015,"15 Northern Area WIB",W
+35350020,"20 Eastern Area WIB",W

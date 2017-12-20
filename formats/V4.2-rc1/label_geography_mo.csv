@@ -74,14 +74,12 @@ geography,label,geo_level
 29143,"New Madrid, MO",C
 29145,"Newton, MO",C
 29147,"Nodaway, MO",C
-2914700,"Branson, MO",M
 29149,"Oregon, MO",C
 29151,"Osage, MO",C
 29153,"Ozark, MO",C
 29155,"Pemiscot, MO",C
 29157,"Perry, MO",C
 29159,"Pettis, MO",C
-2916020,"Cape Girardeau, MO-IL (MO part)",M
 29161,"Phelps, MO",C
 29163,"Pike, MO",C
 29165,"Platte, MO",C
@@ -91,7 +89,6 @@ geography,label,geo_level
 29173,"Ralls, MO",C
 29175,"Randolph, MO",C
 29177,"Ray, MO",C
-2917860,"Columbia, MO",M
 29179,"Reynolds, MO",C
 29181,"Ripley, MO",C
 29183,"St. Charles, MO",C
@@ -113,34 +110,24 @@ geography,label,geo_level
 29217,"Vernon, MO",C
 29219,"Warren, MO",C
 29221,"Washington, MO",C
-2922100,"Farmington, MO",M
-2922220,"Fayetteville-Springdale-Rogers, AR-MO (MO part)",M
 29223,"Wayne, MO",C
 29225,"Webster, MO",C
 29227,"Worth, MO",C
+29229,"Wright, MO",C
+29510,"St. Louis, MO",C
+2914700,"Branson, MO",M
+2916020,"Cape Girardeau, MO-IL (MO part)",M
+2917860,"Columbia, MO",M
+2922100,"Farmington, MO",M
+2922220,"Fayetteville-Springdale-Rogers, AR-MO (MO part)",M
 2922780,"Fort Leonard Wood, MO",M
 2922800,"Fort Madison-Keokuk, IA-IL-MO (MO part)",M
-29229,"Wright, MO",C
 2925300,"Hannibal, MO",M
 2927620,"Jefferson City, MO",M
 2927900,"Joplin, MO",M
 2928140,"Kansas City, MO-KS (MO part)",M
 2928380,"Kennett, MO",M
 2928860,"Kirksville, MO",M
-29290001,"001 Northwest Region WIB",W
-29290002,"002 Northeast Region WIB",W
-29290003,"003 Kansas City Vicinity Region WIB",W
-29290004,"004 West Central Region WIB",W
-29290006,"006 St. Louis City Region WIB",W
-29290007,"007 Southwest Region WIB",W
-29290008,"008 Ozark Region WIB",W
-29290010,"010 South Central Region WIB",W
-29290011,"011 Southeast Region WIB",W
-29290012,"012 East Jackson County Region WIB",W
-29290013,"013 St. Louis County Region WIB",W
-29290014,"014 St. Charles County Region WIB",W
-29290015,"015 Jefferson/Franklin County Consortium WIB",W
-29290016,"5/9 Central Region WIB",W
 2930060,"Lebanon, MO",M
 2932180,"Marshall, MO",M
 2932340,"Maryville, MO",M
@@ -156,5 +143,18 @@ geography,label,geo_level
 2944180,"Springfield, MO",M
 2947660,"Warrensburg, MO",M
 2948460,"West Plains, MO",M
-29510,"St. Louis, MO",C
 2999999,"Nonmetropolitan, nonmicropolitan",M
+29290001,"001 Northwest Region WIB",W
+29290002,"002 Northeast Region WIB",W
+29290003,"003 Kansas City Vicinity Region WIB",W
+29290004,"004 West Central Region WIB",W
+29290006,"006 St. Louis City Region WIB",W
+29290007,"007 Southwest Region WIB",W
+29290008,"008 Ozark Region WIB",W
+29290010,"010 South Central Region WIB",W
+29290011,"011 Southeast Region WIB",W
+29290012,"012 East Jackson County Region WIB",W
+29290013,"013 St. Louis County Region WIB",W
+29290014,"014 St. Charles County Region WIB",W
+29290015,"015 Jefferson/Franklin County Consortium WIB",W
+29290016,"5/9 Central Region WIB",W

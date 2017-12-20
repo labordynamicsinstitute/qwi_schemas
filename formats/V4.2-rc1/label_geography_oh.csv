@@ -1,11 +1,5 @@
 geography,label,geo_level
 39,"Ohio",S
-39000001,"Southwest Ohio",W
-39000002,"Northeast Ohio",W
-39000003,"Central Ohio",W
-39000004,"West Ohio",W
-39000005,"Southeast Ohio",W
-39000006,"Northwest Ohio",W
 39001,"Adams, OH",C
 39003,"Allen, OH",C
 39005,"Ashland, OH",C
@@ -58,7 +52,6 @@ geography,label,geo_level
 39099,"Mahoning, OH",C
 39101,"Marion, OH",C
 39103,"Medina, OH",C
-3910420,"Akron, OH",M
 39105,"Meigs, OH",C
 39107,"Mercer, OH",C
 39109,"Miami, OH",C
@@ -66,10 +59,7 @@ geography,label,geo_level
 39113,"Montgomery, OH",C
 39115,"Morgan, OH",C
 39117,"Morrow, OH",C
-3911740,"Ashland, OH",M
-3911780,"Ashtabula, OH",M
 39119,"Muskingum, OH",C
-3911900,"Athens, OH",M
 39121,"Noble, OH",C
 39123,"Ottawa, OH",C
 39125,"Paulding, OH",C
@@ -77,7 +67,6 @@ geography,label,geo_level
 39129,"Pickaway, OH",C
 39131,"Pike, OH",C
 39133,"Portage, OH",C
-3913340,"Bellefontaine, OH",M
 39135,"Preble, OH",C
 39137,"Putnam, OH",C
 39139,"Richland, OH",C
@@ -88,24 +77,29 @@ geography,label,geo_level
 39149,"Shelby, OH",C
 39151,"Stark, OH",C
 39153,"Summit, OH",C
-3915340,"Bucyrus, OH",M
 39155,"Trumbull, OH",C
 39157,"Tuscarawas, OH",C
-3915740,"Cambridge, OH",M
 39159,"Union, OH",C
-3915940,"Canton-Massillon, OH",M
 39161,"Van Wert, OH",C
 39163,"Vinton, OH",C
-3916380,"Celina, OH",M
 39165,"Warren, OH",C
 39167,"Washington, OH",C
 39169,"Wayne, OH",C
-3917060,"Chillicothe, OH",M
 39171,"Williams, OH",C
-3917140,"Cincinnati, OH-KY-IN (OH part)",M
 39173,"Wood, OH",C
-3917460,"Cleveland-Elyria, OH",M
 39175,"Wyandot, OH",C
+3910420,"Akron, OH",M
+3911740,"Ashland, OH",M
+3911780,"Ashtabula, OH",M
+3911900,"Athens, OH",M
+3913340,"Bellefontaine, OH",M
+3915340,"Bucyrus, OH",M
+3915740,"Cambridge, OH",M
+3915940,"Canton-Massillon, OH",M
+3916380,"Celina, OH",M
+3917060,"Chillicothe, OH",M
+3917140,"Cincinnati, OH-KY-IN (OH part)",M
+3917460,"Cleveland-Elyria, OH",M
 3918140,"Columbus, OH",M
 3918740,"Coshocton, OH",M
 3919380,"Dayton, OH",M
@@ -142,3 +136,9 @@ geography,label,geo_level
 3949660,"Youngstown-Warren-Boardman, OH-PA (OH part)",M
 3949780,"Zanesville, OH",M
 3999999,"Nonmetropolitan, nonmicropolitan",M
+39000001,"Southwest Ohio",W
+39000002,"Northeast Ohio",W
+39000003,"Central Ohio",W
+39000004,"West Ohio",W
+39000005,"Southeast Ohio",W
+39000006,"Northwest Ohio",W

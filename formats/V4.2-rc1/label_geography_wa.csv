@@ -1,17 +1,5 @@
 geography,label,geo_level
 53,"Washington",S
-53000001,"01 Olympic WIB",W
-53000002,"02 Pacific Mountain WIB",W
-53000003,"03 Northwest Washington WIB",W
-53000004,"04 Snohomish County WIB",W
-53000005,"05 Seattle/King County WIB",W
-53000006,"06 Tacoma/Pierce County WIB",W
-53000007,"07 Southwest Washington WIB",W
-53000008,"08 North Central WIB",W
-53000009,"09 Central Washington WIB",W
-53000010,"10 Eastern Washington WIB",W
-53000011,"11 Benton-Franklin WIB",W
-53000012,"12 Spokane WIB",W
 53001,"Adams, WA",C
 53003,"Asotin, WA",C
 53005,"Benton, WA",C
@@ -74,3 +62,15 @@ geography,label,geo_level
 5348300,"Wenatchee, WA",M
 5349420,"Yakima, WA",M
 5399999,"Nonmetropolitan, nonmicropolitan",M
+53000001,"01 Olympic WIB",W
+53000002,"02 Pacific Mountain WIB",W
+53000003,"03 Northwest Washington WIB",W
+53000004,"04 Snohomish County WIB",W
+53000005,"05 Seattle/King County WIB",W
+53000006,"06 Tacoma/Pierce County WIB",W
+53000007,"07 Southwest Washington WIB",W
+53000008,"08 North Central WIB",W
+53000009,"09 Central Washington WIB",W
+53000010,"10 Eastern Washington WIB",W
+53000011,"11 Benton-Franklin WIB",W
+53000012,"12 Spokane WIB",W

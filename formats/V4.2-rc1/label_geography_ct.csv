@@ -8,11 +8,6 @@ geography,label,geo_level
 09011,"New London, CT",C
 09013,"Tolland, CT",C
 09015,"Windham, CT",C
-09090001,"Eastern WIA",W
-09090002,"North Central WIA",W
-09090003,"Northwest WIA",W
-09090004,"South Central WIA",W
-09090005,"Southwest WIA",W
 0914860,"Bridgeport-Stamford-Norwalk, CT",M
 0925540,"Hartford-West Hartford-East Hartford, CT",M
 0935300,"New Haven-Milford, CT",M
@@ -20,3 +15,8 @@ geography,label,geo_level
 0945860,"Torrington, CT",M
 0949340,"Worcester, MA-CT (CT part)",M
 0999999,"Nonmetropolitan, nonmicropolitan",M
+09090001,"Eastern WIA",W
+09090002,"North Central WIA",W
+09090003,"Northwest WIA",W
+09090004,"South Central WIA",W
+09090005,"Southwest WIA",W

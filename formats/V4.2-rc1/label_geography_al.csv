@@ -5,13 +5,6 @@ geography,label,geo_level
 01005,"Barbour, AL",C
 01007,"Bibb, AL",C
 01009,"Blount, AL",C
-01010001,"North Alabama Works",W
-01010002,"East Alabama Works",W
-01010003,"West Alabama Works",W
-01010004,"Central Six Alabama Works",W
-01010005,"Central Alabama Works",W
-01010006,"Southeast Alabama Works",W
-01010007,"Southwest Alabama Works",W
 01011,"Bullock, AL",C
 01013,"Butler, AL",C
 01015,"Calhoun, AL",C
@@ -61,24 +54,24 @@ geography,label,geo_level
 01103,"Morgan, AL",C
 01105,"Perry, AL",C
 01107,"Pickens, AL",C
-0110700,"Albertville, AL",M
-0110760,"Alexander City, AL",M
 01109,"Pike, AL",C
 01111,"Randolph, AL",C
 01113,"Russell, AL",C
 01115,"St. Clair, AL",C
-0111500,"Anniston-Oxford-Jacksonville, AL",M
 01117,"Shelby, AL",C
 01119,"Sumter, AL",C
 01121,"Talladega, AL",C
-0112120,"Atmore, AL",M
-0112220,"Auburn-Opelika, AL",M
 01123,"Tallapoosa, AL",C
 01125,"Tuscaloosa, AL",C
 01127,"Walker, AL",C
 01129,"Washington, AL",C
 01131,"Wilcox, AL",C
 01133,"Winston, AL",C
+0110700,"Albertville, AL",M
+0110760,"Alexander City, AL",M
+0111500,"Anniston-Oxford-Jacksonville, AL",M
+0112120,"Atmore, AL",M
+0112220,"Auburn-Opelika, AL",M
 0113820,"Birmingham-Hoover, AL",M
 0117980,"Columbus, GA-AL (AL part)",M
 0118980,"Cullman, AL",M
@@ -101,3 +94,10 @@ geography,label,geo_level
 0146220,"Tuscaloosa, AL",M
 0146740,"Valley, AL",M
 0199999,"Nonmetropolitan, nonmicropolitan",M
+01010001,"North Alabama Works",W
+01010002,"East Alabama Works",W
+01010003,"West Alabama Works",W
+01010004,"Central Six Alabama Works",W
+01010005,"Central Alabama Works",W
+01010006,"Southeast Alabama Works",W
+01010007,"Southwest Alabama Works",W

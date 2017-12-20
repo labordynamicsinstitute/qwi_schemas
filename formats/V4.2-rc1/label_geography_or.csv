@@ -54,6 +54,9 @@ geography,label,geo_level
 4138900,"Portland-Vancouver-Hillsboro, OR-WA (OR part)",M
 4139260,"Prineville, OR",M
 4140700,"Roseburg, OR",M
+4141420,"Salem, OR",M
+4145520,"The Dalles, OR",M
+4199999,"Nonmetropolitan, nonmicropolitan",M
 41410001,"Northwest Oregon WIA",W
 41410002,"Portland Metro WIA",W
 41410003,"Clackamas WIA",W
@@ -63,6 +66,3 @@ geography,label,geo_level
 41410007,"Rogue Valley WIA",W
 41410008,"Central Oregon/East Cascades WIA",W
 41410009,"Eastern Oregon WIA",W
-4141420,"Salem, OR",M
-4145520,"The Dalles, OR",M
-4199999,"Nonmetropolitan, nonmicropolitan",M

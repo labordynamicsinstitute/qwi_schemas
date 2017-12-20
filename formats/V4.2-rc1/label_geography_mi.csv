@@ -1,30 +1,5 @@
 geography,label,geo_level
 26,"Michigan",S
-26000002,"Region 7B Emp & Trng Consortium",W
-26000003,"Calhoun Intermediate School District",W
-26000004,"Saginaw-Midland-Bay Michigan Works!",W
-26000005,"Berrien-Cass-Van Buren Michigan Works!",W
-26000006,"Six County Employment Alliance",W
-26000007,"Detroit Workforce Development Department",W
-26000009,"Eastern U P Employment & Training Consortium",W
-26000010,"Career Alliance, Inc.",W
-26000011,"Central Area Michigan Works!",W
-26000013,"Thumb Area Employment & Training Consortium",W
-26000014,"Kalamazoo-St. Joseph Michigan Works!",W
-26000016,"Michigan Works! West Central",W
-26000017,"Capital Area Michigan Works!",W
-26000019,"Macomb/St. Clair Workforce Development Board, Inc.",W
-26000020,"Muskegon-Oceana Consortium",W
-26000021,"Northeast Michigan Consortium",W
-26000022,"Northwest Michigan Council of Governments",W
-26000023,"Oakland County Employment and Training Division",W
-26000026,"Western Upper Peninsula Michigan Works!",W
-26000029,"Livingston County Michigan Works!",W
-26000030,"Washtenaw County Employment Training and Community",W
-26000031,"Southeast Michigan Community Alliance",W
-26000032,"Ottawa County Michigan Works!",W
-26000033,"Kent & Allegan Michigan Works!",W
-26000034,"South Central Michigan Works!",W
 26001,"Alcona, MI",C
 26003,"Alger, MI",C
 26005,"Allegan, MI",C
@@ -77,15 +52,11 @@ geography,label,geo_level
 26099,"Macomb, MI",C
 26101,"Manistee, MI",C
 26103,"Marquette, MI",C
-2610300,"Adrian, MI",M
 26105,"Mason, MI",C
 26107,"Mecosta, MI",C
 26109,"Menominee, MI",C
-2610940,"Alma, MI",M
-2610980,"Alpena, MI",M
 26111,"Midland, MI",C
 26113,"Missaukee, MI",C
-2611460,"Ann Arbor, MI",M
 26115,"Monroe, MI",C
 26117,"Montcalm, MI",C
 26119,"Montmorency, MI",C
@@ -94,12 +65,9 @@ geography,label,geo_level
 26125,"Oakland, MI",C
 26127,"Oceana, MI",C
 26129,"Ogemaw, MI",C
-2612980,"Battle Creek, MI",M
-2613020,"Bay City, MI",M
 26131,"Ontonagon, MI",C
 26133,"Osceola, MI",C
 26135,"Oscoda, MI",C
-2613660,"Big Rapids, MI",M
 26137,"Otsego, MI",C
 26139,"Ottawa, MI",C
 26141,"Presque Isle, MI",C
@@ -110,12 +78,19 @@ geography,label,geo_level
 26151,"Sanilac, MI",C
 26153,"Schoolcraft, MI",C
 26155,"Shiawassee, MI",C
-2615620,"Cadillac, MI",M
 26157,"Tuscola, MI",C
 26159,"Van Buren, MI",C
 26161,"Washtenaw, MI",C
 26163,"Wayne, MI",C
 26165,"Wexford, MI",C
+2610300,"Adrian, MI",M
+2610940,"Alma, MI",M
+2610980,"Alpena, MI",M
+2611460,"Ann Arbor, MI",M
+2612980,"Battle Creek, MI",M
+2613020,"Bay City, MI",M
+2613660,"Big Rapids, MI",M
+2615620,"Cadillac, MI",M
 2617740,"Coldwater, MI",M
 2619820,"Detroit-Warren-Dearborn, MI",M
 2621540,"Escanaba, MI",M
@@ -144,3 +119,28 @@ geography,label,geo_level
 2644780,"Sturgis, MI",M
 2645900,"Traverse City, MI",M
 2699999,"Nonmetropolitan, nonmicropolitan",M
+26000002,"Region 7B Emp & Trng Consortium",W
+26000003,"Calhoun Intermediate School District",W
+26000004,"Saginaw-Midland-Bay Michigan Works!",W
+26000005,"Berrien-Cass-Van Buren Michigan Works!",W
+26000006,"Six County Employment Alliance",W
+26000007,"Detroit Workforce Development Department",W
+26000009,"Eastern U P Employment & Training Consortium",W
+26000010,"Career Alliance, Inc.",W
+26000011,"Central Area Michigan Works!",W
+26000013,"Thumb Area Employment & Training Consortium",W
+26000014,"Kalamazoo-St. Joseph Michigan Works!",W
+26000016,"Michigan Works! West Central",W
+26000017,"Capital Area Michigan Works!",W
+26000019,"Macomb/St. Clair Workforce Development Board, Inc.",W
+26000020,"Muskegon-Oceana Consortium",W
+26000021,"Northeast Michigan Consortium",W
+26000022,"Northwest Michigan Council of Governments",W
+26000023,"Oakland County Employment and Training Division",W
+26000026,"Western Upper Peninsula Michigan Works!",W
+26000029,"Livingston County Michigan Works!",W
+26000030,"Washtenaw County Employment Training and Community",W
+26000031,"Southeast Michigan Community Alliance",W
+26000032,"Ottawa County Michigan Works!",W
+26000033,"Kent & Allegan Michigan Works!",W
+26000034,"South Central Michigan Works!",W

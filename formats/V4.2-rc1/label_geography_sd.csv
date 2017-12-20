@@ -50,7 +50,6 @@ geography,label,geo_level
 46097,"Miner, SD",C
 46099,"Minnehaha, SD",C
 46101,"Moody, SD",C
-4610100,"Aberdeen, SD",M
 46102,"Oglala Lakota, SD",C
 46103,"Pennington, SD",C
 46105,"Perkins, SD",C
@@ -67,20 +66,21 @@ geography,label,geo_level
 46129,"Walworth, SD",C
 46135,"Yankton, SD",C
 46137,"Ziebach, SD",C
+4610100,"Aberdeen, SD",M
 4615100,"Brookings, SD",M
 4626700,"Huron, SD",M
 4633580,"Mitchell, SD",M
 4638180,"Pierre, SD",M
 4639660,"Rapid City, SD",M
-46396600,"Rapid City MSA WIB",W
 4643580,"Sioux City, IA-NE-SD (SD part)",M
 4643620,"Sioux Falls, SD",M
-46436200,"Sioux Falls MSA WIB",W
 4643940,"Spearfish, SD",M
-46460001,"Central Area WIB",W
-46460002,"East Area WIB",W
-46460003,"West Area WIB",W
 4646820,"Vermillion, SD",M
 4647980,"Watertown, SD",M
 4649460,"Yankton, SD",M
 4699999,"Nonmetropolitan, nonmicropolitan",M
+46396600,"Rapid City MSA WIB",W
+46436200,"Sioux Falls MSA WIB",W
+46460001,"Central Area WIB",W
+46460002,"East Area WIB",W
+46460003,"West Area WIB",W

@@ -1,29 +1,5 @@
 geography,label,geo_level
 12,"Florida",S
-12000001,"CareerSource Escarosa",W
-12000002,"CareerSource Okaloosa Walton",W
-12000003,"CareerSource Chipola",W
-12000004,"CareerSource Gulf Coast",W
-12000005,"CareerSource Capital Region",W
-12000006,"CareerSource North Florida",W
-12000007,"CareerSource Florida Crown",W
-12000008,"CareerSource Northeast Florida",W
-12000009,"CareerSource North Central Florida",W
-12000010,"CareerSource Citrus Levy Marion",W
-12000011,"CareerSource Flagler Volusia",W
-12000012,"CareerSource Central Florida",W
-12000013,"CareerSource Brevard",W
-12000014,"CareerSource Pinellas",W
-12000015,"CareerSource Tampa Bay",W
-12000016,"CareerSource Pasco Hernando",W
-12000017,"CareerSource Polk",W
-12000018,"CareerSource Suncoast",W
-12000019,"CareerSource Heartland",W
-12000020,"CareerSource Research Coast",W
-12000021,"CareerSource Palm Beach County",W
-12000022,"CareerSource Broward",W
-12000023,"CareerSource South Florida",W
-12000024,"CareerSource Southwest Florida",W
 12001,"Alachua, FL",C
 12003,"Baker, FL",C
 12005,"Bay, FL",C
@@ -82,7 +58,6 @@ geography,label,geo_level
 12111,"St. Lucie, FL",C
 12113,"Santa Rosa, FL",C
 12115,"Sarasota, FL",C
-1211580,"Arcadia, FL",M
 12117,"Seminole, FL",C
 12119,"Sumter, FL",C
 12121,"Suwannee, FL",C
@@ -92,6 +67,7 @@ geography,label,geo_level
 12129,"Wakulla, FL",C
 12131,"Walton, FL",C
 12133,"Washington, FL",C
+1211580,"Arcadia, FL",M
 1215980,"Cape Coral-Fort Myers, FL",M
 1217500,"Clewiston, FL",M
 1218880,"Crestview-Fort Walton Beach-Destin, FL",M
@@ -121,3 +97,27 @@ geography,label,geo_level
 1245540,"The Villages, FL",M
 1248100,"Wauchula, FL",M
 1299999,"Nonmetropolitan, nonmicropolitan",M
+12000001,"CareerSource Escarosa",W
+12000002,"CareerSource Okaloosa Walton",W
+12000003,"CareerSource Chipola",W
+12000004,"CareerSource Gulf Coast",W
+12000005,"CareerSource Capital Region",W
+12000006,"CareerSource North Florida",W
+12000007,"CareerSource Florida Crown",W
+12000008,"CareerSource Northeast Florida",W
+12000009,"CareerSource North Central Florida",W
+12000010,"CareerSource Citrus Levy Marion",W
+12000011,"CareerSource Flagler Volusia",W
+12000012,"CareerSource Central Florida",W
+12000013,"CareerSource Brevard",W
+12000014,"CareerSource Pinellas",W
+12000015,"CareerSource Tampa Bay",W
+12000016,"CareerSource Pasco Hernando",W
+12000017,"CareerSource Polk",W
+12000018,"CareerSource Suncoast",W
+12000019,"CareerSource Heartland",W
+12000020,"CareerSource Research Coast",W
+12000021,"CareerSource Palm Beach County",W
+12000022,"CareerSource Broward",W
+12000023,"CareerSource South Florida",W
+12000024,"CareerSource Southwest Florida",W

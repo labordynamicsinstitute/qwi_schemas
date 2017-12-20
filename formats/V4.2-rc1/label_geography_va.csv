@@ -1,20 +1,5 @@
 geography,label,geo_level
 51,"Virginia",S
-51000441,"Southwestern Virginia LWIA I",W
-51000442,"New River/Mt. Rogers LWIA II",W
-51000443,"Western Virginia LWIA III",W
-51000444,"Shenandoah Valley LWIA IV",W
-51000446,"Piedmont Workforce Network LWIA VI",W
-51000447,"Region 2000/Central VA LWIA VII",W
-51000448,"South Central LWIA VIII",W
-51000449,"Capital Region Workforce Partnership LWIA IX",W
-51000451,"Northern Virginia LWIA XI",W
-51000452,"Alexandria/Arlington LWIA XII",W
-51000453,"Bay Consortium LWIA XIII",W
-51000454,"Greater Peninsula LWIA XIV",W
-51000455,"Crater Area LWIA XV",W
-51000456,"Hampton Roads LWIA XVI",W
-51000457,"West Piedmont LWIA XVII",W
 51001,"Accomack, VA",C
 51003,"Albemarle, VA",C
 51005,"Alleghany, VA",C
@@ -81,11 +66,8 @@ geography,label,geo_level
 51133,"Northumberland, VA",C
 51135,"Nottoway, VA",C
 51137,"Orange, VA",C
-5113720,"Big Stone Gap, VA",M
 51139,"Page, VA",C
-5113980,"Blacksburg-Christiansburg-Radford, VA",M
 51141,"Patrick, VA",C
-5114140,"Bluefield, WV-VA (VA part)",M
 51143,"Pittsylvania, VA",C
 51145,"Powhatan, VA",C
 51147,"Prince Edward, VA",C
@@ -98,7 +80,6 @@ geography,label,geo_level
 51163,"Rockbridge, VA",C
 51165,"Rockingham, VA",C
 51167,"Russell, VA",C
-5116820,"Charlottesville, VA",M
 51169,"Scott, VA",C
 51171,"Shenandoah, VA",C
 51173,"Smyth, VA",C
@@ -110,21 +91,10 @@ geography,label,geo_level
 51185,"Tazewell, VA",C
 51187,"Warren, VA",C
 51191,"Washington, VA",C
-5119260,"Danville, VA",M
 51193,"Westmoreland, VA",C
 51195,"Wise, VA",C
 51197,"Wythe, VA",C
 51199,"York, VA",C
-5125500,"Harrisonburg, VA",M
-5128700,"Kingsport-Bristol-Bristol, TN-VA (VA part)",M
-5131340,"Lynchburg, VA",M
-5132300,"Martinsville, VA",M
-5140060,"Richmond, VA",M
-5140220,"Roanoke, VA",M
-5144420,"Staunton-Waynesboro, VA",M
-5147260,"Virginia Beach-Norfolk-Newport News, VA-NC (VA part)",M
-5147900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (VA part)",M
-5149020,"Winchester, VA-WV (VA part)",M
 51510,"Alexandria, VA",C
 51520,"Bristol, VA",C
 51530,"Buena Vista, VA",C
@@ -163,4 +133,34 @@ geography,label,geo_level
 51820,"Waynesboro, VA",C
 51830,"Williamsburg, VA",C
 51840,"Winchester, VA",C
+5113720,"Big Stone Gap, VA",M
+5113980,"Blacksburg-Christiansburg-Radford, VA",M
+5114140,"Bluefield, WV-VA (VA part)",M
+5116820,"Charlottesville, VA",M
+5119260,"Danville, VA",M
+5125500,"Harrisonburg, VA",M
+5128700,"Kingsport-Bristol-Bristol, TN-VA (VA part)",M
+5131340,"Lynchburg, VA",M
+5132300,"Martinsville, VA",M
+5140060,"Richmond, VA",M
+5140220,"Roanoke, VA",M
+5144420,"Staunton-Waynesboro, VA",M
+5147260,"Virginia Beach-Norfolk-Newport News, VA-NC (VA part)",M
+5147900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (VA part)",M
+5149020,"Winchester, VA-WV (VA part)",M
 5199999,"Nonmetropolitan, nonmicropolitan",M
+51000441,"Southwestern Virginia LWIA I",W
+51000442,"New River/Mt. Rogers LWIA II",W
+51000443,"Western Virginia LWIA III",W
+51000444,"Shenandoah Valley LWIA IV",W
+51000446,"Piedmont Workforce Network LWIA VI",W
+51000447,"Region 2000/Central VA LWIA VII",W
+51000448,"South Central LWIA VIII",W
+51000449,"Capital Region Workforce Partnership LWIA IX",W
+51000451,"Northern Virginia LWIA XI",W
+51000452,"Alexandria/Arlington LWIA XII",W
+51000453,"Bay Consortium LWIA XIII",W
+51000454,"Greater Peninsula LWIA XIV",W
+51000455,"Crater Area LWIA XV",W
+51000456,"Hampton Roads LWIA XVI",W
+51000457,"West Piedmont LWIA XVII",W

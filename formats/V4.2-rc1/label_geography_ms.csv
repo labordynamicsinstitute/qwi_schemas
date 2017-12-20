@@ -75,7 +75,6 @@ geography,label,geo_level
 28145,"Union, MS",C
 28147,"Walthall, MS",C
 28149,"Warren, MS",C
-2815020,"Brookhaven, MS",M
 28151,"Washington, MS",C
 28153,"Wayne, MS",C
 28155,"Webster, MS",C
@@ -83,6 +82,7 @@ geography,label,geo_level
 28159,"Winston, MS",C
 28161,"Yalobusha, MS",C
 28163,"Yazoo, MS",C
+2815020,"Brookhaven, MS",M
 2817260,"Clarksdale, MS",M
 2817380,"Cleveland, MS",M
 2818060,"Columbus, MS",M
@@ -94,10 +94,6 @@ geography,label,geo_level
 2825620,"Hattiesburg, MS",M
 2826940,"Indianola, MS",M
 2827140,"Jackson, MS",M
-28280001,"01 Delta WIB",W
-28280002,"02 The Mississippi Partnership WIB",W
-28280003,"03 Southcentral Mississippi Works WIB",W
-28280004,"04 Twin Districts WIB",W
 2829860,"Laurel, MS",M
 2832620,"McComb, MS",M
 2832820,"Memphis, TN-MS-AR (MS part)",M
@@ -110,3 +106,7 @@ geography,label,geo_level
 2846980,"Vicksburg, MS",M
 2848500,"West Point, MS",M
 2899999,"Nonmetropolitan, nonmicropolitan",M
+28280001,"01 Delta WIB",W
+28280002,"02 The Mississippi Partnership WIB",W
+28280003,"03 Southcentral Mississippi Works WIB",W
+28280004,"04 Twin Districts WIB",W

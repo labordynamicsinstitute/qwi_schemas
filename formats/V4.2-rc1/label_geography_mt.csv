@@ -50,8 +50,6 @@ geography,label,geo_level
 30095,"Stillwater, MT",C
 30097,"Sweet Grass, MT",C
 30099,"Teton, MT",C
-30100001,"01 CEP WIB",W
-30100002,"02 Balance of State WIB",W
 30101,"Toole, MT",C
 30103,"Treasure, MT",C
 30105,"Valley, MT",C
@@ -66,3 +64,5 @@ geography,label,geo_level
 3028060,"Kalispell, MT",M
 3033540,"Missoula, MT",M
 3099999,"Nonmetropolitan, nonmicropolitan",M
+30100001,"01 CEP WIB",W
+30100002,"02 Balance of State WIB",W

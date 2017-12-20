@@ -63,7 +63,6 @@ geography,label,geo_level
 21121,"Knox, KY",C
 21123,"Larue, KY",C
 21125,"Laurel, KY",C
-2112680,"Bardstown, KY",M
 21127,"Lawrence, KY",C
 21129,"Lee, KY",C
 21131,"Leslie, KY",C
@@ -74,25 +73,20 @@ geography,label,geo_level
 21141,"Logan, KY",C
 21143,"Lyon, KY",C
 21145,"McCracken, KY",C
-2114540,"Bowling Green, KY",M
 21147,"McCreary, KY",C
 21149,"McLean, KY",C
 21151,"Madison, KY",C
 21153,"Magoffin, KY",C
 21155,"Marion, KY",C
 21157,"Marshall, KY",C
-2115820,"Campbellsville, KY",M
 21159,"Martin, KY",C
 21161,"Mason, KY",C
 21163,"Meade, KY",C
-2116420,"Central City, KY",M
 21165,"Menifee, KY",C
 21167,"Mercer, KY",C
 21169,"Metcalfe, KY",C
 21171,"Monroe, KY",C
-2117140,"Cincinnati, OH-KY-IN (KY part)",M
 21173,"Montgomery, KY",C
-2117300,"Clarksville, TN-KY (KY part)",M
 21175,"Morgan, KY",C
 21177,"Muhlenberg, KY",C
 21179,"Nelson, KY",C
@@ -102,7 +96,6 @@ geography,label,geo_level
 21187,"Owen, KY",C
 21189,"Owsley, KY",C
 21191,"Pendleton, KY",C
-2119220,"Danville, KY",M
 21193,"Perry, KY",C
 21195,"Pike, KY",C
 21197,"Powell, KY",C
@@ -112,6 +105,28 @@ geography,label,geo_level
 21205,"Rowan, KY",C
 21207,"Russell, KY",C
 21209,"Scott, KY",C
+21211,"Shelby, KY",C
+21213,"Simpson, KY",C
+21215,"Spencer, KY",C
+21217,"Taylor, KY",C
+21219,"Todd, KY",C
+21221,"Trigg, KY",C
+21223,"Trimble, KY",C
+21225,"Union, KY",C
+21227,"Warren, KY",C
+21229,"Washington, KY",C
+21231,"Wayne, KY",C
+21233,"Webster, KY",C
+21235,"Whitley, KY",C
+21237,"Wolfe, KY",C
+21239,"Woodford, KY",C
+2112680,"Bardstown, KY",M
+2114540,"Bowling Green, KY",M
+2115820,"Campbellsville, KY",M
+2116420,"Central City, KY",M
+2117140,"Cincinnati, OH-KY-IN (KY part)",M
+2117300,"Clarksville, TN-KY (KY part)",M
+2119220,"Danville, KY",M
 2121000A,"A Purchase/Pennyrile WIB",W
 2121000B,"B Lincoln Trail WIB",W
 2121000C,"C Greater Louisville WIB",W
@@ -123,23 +138,8 @@ geography,label,geo_level
 2121000J,"J Green River WIB",W
 2121000K,"K Barren River WIB",W
 2121060,"Elizabethtown-Fort Knox, KY",M
-21211,"Shelby, KY",C
-21213,"Simpson, KY",C
-21215,"Spencer, KY",C
-21217,"Taylor, KY",C
 2121780,"Evansville, IN-KY (KY part)",M
-21219,"Todd, KY",C
-21221,"Trigg, KY",C
-21223,"Trimble, KY",C
-21225,"Union, KY",C
-21227,"Warren, KY",C
-21229,"Washington, KY",C
-21231,"Wayne, KY",C
 2123180,"Frankfort, KY",M
-21233,"Webster, KY",C
-21235,"Whitley, KY",C
-21237,"Wolfe, KY",C
-21239,"Woodford, KY",C
 2123980,"Glasgow, KY",M
 2126580,"Huntington-Ashland, WV-KY-OH (KY part)",M
 2130460,"Lexington-Fayette, KY",M

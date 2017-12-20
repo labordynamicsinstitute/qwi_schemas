@@ -58,9 +58,7 @@ geography,label,geo_level
 20111,"Lyon, KS",C
 20113,"McPherson, KS",C
 20115,"Marion, KS",C
-2011680,"Arkansas City-Winfield, KS",M
 20117,"Marshall, KS",C
-2011860,"Atchison, KS",M
 20119,"Meade, KS",C
 20121,"Miami, KS",C
 20123,"Mitchell, KS",C
@@ -91,7 +89,6 @@ geography,label,geo_level
 20173,"Sedgwick, KS",C
 20175,"Seward, KS",C
 20177,"Shawnee, KS",C
-2017700,"Coffeyville, KS",M
 20179,"Sheridan, KS",C
 20181,"Sherman, KS",C
 20183,"Smith, KS",C
@@ -103,17 +100,15 @@ geography,label,geo_level
 20195,"Trego, KS",C
 20197,"Wabaunsee, KS",C
 20199,"Wallace, KS",C
-2019980,"Dodge City, KS",M
-20200001,"01 Local Area I - Western WIB",W
-20200002,"02 Local Area II - Northeast WIB",W
-20200003,"03 Local Area III - Kansas City Area WIB",W
-20200004,"04 Local Area IV - South Central WIB",W
-20200005,"05 Local Area V - Southeast WIB",W
 20201,"Washington, KS",C
 20203,"Wichita, KS",C
 20205,"Wilson, KS",C
 20207,"Woodson, KS",C
 20209,"Wyandotte, KS",C
+2011680,"Arkansas City-Winfield, KS",M
+2011860,"Atchison, KS",M
+2017700,"Coffeyville, KS",M
+2019980,"Dodge City, KS",M
 2021380,"Emporia, KS",M
 2023780,"Garden City, KS",M
 2024460,"Great Bend, KS",M
@@ -133,3 +128,8 @@ geography,label,geo_level
 2045820,"Topeka, KS",M
 2048620,"Wichita, KS",M
 2099999,"Nonmetropolitan, nonmicropolitan",M
+20200001,"01 Local Area I - Western WIB",W
+20200002,"02 Local Area II - Northeast WIB",W
+20200003,"03 Local Area III - Kansas City Area WIB",W
+20200004,"04 Local Area IV - South Central WIB",W
+20200005,"05 Local Area V - Southeast WIB",W

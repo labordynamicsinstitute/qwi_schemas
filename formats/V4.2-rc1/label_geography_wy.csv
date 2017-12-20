@@ -1,6 +1,5 @@
 geography,label,geo_level
 56,"Wyoming",S
-56000001,"01 Wyoming WIB",W
 56001,"Albany, WY",C
 56003,"Big Horn, WY",C
 56005,"Campbell, WY",C
@@ -34,3 +33,4 @@ geography,label,geo_level
 5640540,"Rock Springs, WY",M
 5643260,"Sheridan, WY",M
 5699999,"Nonmetropolitan, nonmicropolitan",M
+56000001,"01 Wyoming WIB",W

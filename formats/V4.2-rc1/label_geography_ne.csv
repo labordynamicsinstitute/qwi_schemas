@@ -1,14 +1,5 @@
 geography,label,geo_level
 31,"Nebraska",S
-31000820,"Omaha Consortium",W
-31000821,"Lincoln MSA",W
-31000822,"Grand Island MSA",W
-31000823,"Central Economic Region",W
-31000824,"Mid Plains Economic Region",W
-31000825,"Northeast Economic Region",W
-31000826,"Panhandle Economic Region",W
-31000827,"Sandhills Economic Region",W
-31000828,"Southeast Economic Region",W
 31001,"Adams, NE",C
 31003,"Antelope, NE",C
 31005,"Arthur, NE",C
@@ -75,7 +66,6 @@ geography,label,geo_level
 31127,"Nemaha, NE",C
 31129,"Nuckolls, NE",C
 31131,"Otoe, NE",C
-3113100,"Beatrice, NE",M
 31133,"Pawnee, NE",C
 31135,"Perkins, NE",C
 31137,"Phelps, NE",C
@@ -101,9 +91,10 @@ geography,label,geo_level
 31177,"Washington, NE",C
 31179,"Wayne, NE",C
 31181,"Webster, NE",C
-3118100,"Columbus, NE",M
 31183,"Wheeler, NE",C
 31185,"York, NE",C
+3113100,"Beatrice, NE",M
+3118100,"Columbus, NE",M
 3123340,"Fremont, NE",M
 3124260,"Grand Island, NE",M
 3125580,"Hastings, NE",M
@@ -116,3 +107,12 @@ geography,label,geo_level
 3142420,"Scottsbluff, NE",M
 3143580,"Sioux City, IA-NE-SD (NE part)",M
 3199999,"Nonmetropolitan, nonmicropolitan",M
+31000820,"Omaha Consortium",W
+31000821,"Lincoln MSA",W
+31000822,"Grand Island MSA",W
+31000823,"Central Economic Region",W
+31000824,"Mid Plains Economic Region",W
+31000825,"Northeast Economic Region",W
+31000826,"Panhandle Economic Region",W
+31000827,"Sandhills Economic Region",W
+31000828,"Southeast Economic Region",W

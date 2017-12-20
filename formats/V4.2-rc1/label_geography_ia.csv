@@ -56,7 +56,6 @@ geography,label,geo_level
 19107,"Keokuk, IA",C
 19109,"Kossuth, IA",C
 19111,"Lee, IA",C
-1911180,"Ames, IA",M
 19113,"Linn, IA",C
 19115,"Louisa, IA",C
 19117,"Lucas, IA",C
@@ -73,27 +72,22 @@ geography,label,geo_level
 19139,"Muscatine, IA",C
 19141,"OBrien, IA",C
 19143,"Osceola, IA",C
-1914340,"Boone, IA",M
 19145,"Page, IA",C
 19147,"Palo Alto, IA",C
 19149,"Plymouth, IA",C
 19151,"Pocahontas, IA",C
 19153,"Polk, IA",C
-1915460,"Burlington, IA-IL (IA part)",M
 19155,"Pottawattamie, IA",C
 19157,"Poweshiek, IA",C
 19159,"Ringgold, IA",C
 19161,"Sac, IA",C
-1916140,"Carroll, IA",M
 19163,"Scott, IA",C
-1916300,"Cedar Rapids, IA",M
 19165,"Shelby, IA",C
 19167,"Sioux, IA",C
 19169,"Story, IA",C
 19171,"Tama, IA",C
 19173,"Taylor, IA",C
 19175,"Union, IA",C
-1917540,"Clinton, IA",M
 19177,"Van Buren, IA",C
 19179,"Wapello, IA",C
 19181,"Warren, IA",C
@@ -101,26 +95,17 @@ geography,label,geo_level
 19185,"Wayne, IA",C
 19187,"Webster, IA",C
 19189,"Winnebago, IA",C
-19190001,"01 Region 1 - Dubuque WIB",W
-19190002,"02 Region 2 - Mason City WIB",W
-19190003,"03 Region 3 & 4 - Spencer WIB",W
-19190005,"05 Region 5 - Fort Dodge WIB",W
-19190006,"06 Region 6 - Marshalltown WIB",W
-19190007,"07 Region 7 - Waterloo WIB",W
-19190008,"08 Region 8 - Carroll WIB",W
-19190009,"09 Region 9 - Davenport WIB",W
-19190010,"10 Region 10 - Cedar Rapids WIB",W
-19190011,"11 Region 11 - Des Moines WIB",W
-19190012,"12 Region 12 - Sioux City WIB",W
-19190013,"13 Region 13 - Council Bluffs WIB",W
-19190014,"14 Region 14 - Creston WIB",W
-19190015,"15 Region 15 - Ottumwa WIB",W
-19190016,"16 Region 16 - Burlington WIB",W
 19191,"Winneshiek, IA",C
 19193,"Woodbury, IA",C
-1919340,"Davenport-Moline-Rock Island, IA-IL (IA part)",M
 19195,"Worth, IA",C
 19197,"Wright, IA",C
+1911180,"Ames, IA",M
+1914340,"Boone, IA",M
+1915460,"Burlington, IA-IL (IA part)",M
+1916140,"Carroll, IA",M
+1916300,"Cedar Rapids, IA",M
+1917540,"Clinton, IA",M
+1919340,"Davenport-Moline-Rock Island, IA-IL (IA part)",M
 1919780,"Des Moines-West Des Moines, IA",M
 1920220,"Dubuque, IA",M
 1921840,"Fairfield, IA",M
@@ -141,3 +126,18 @@ geography,label,geo_level
 1944740,"Storm Lake, IA",M
 1947940,"Waterloo-Cedar Falls, IA",M
 1999999,"Nonmetropolitan, nonmicropolitan",M
+19190001,"01 Region 1 - Dubuque WIB",W
+19190002,"02 Region 2 - Mason City WIB",W
+19190003,"03 Region 3 & 4 - Spencer WIB",W
+19190005,"05 Region 5 - Fort Dodge WIB",W
+19190006,"06 Region 6 - Marshalltown WIB",W
+19190007,"07 Region 7 - Waterloo WIB",W
+19190008,"08 Region 8 - Carroll WIB",W
+19190009,"09 Region 9 - Davenport WIB",W
+19190010,"10 Region 10 - Cedar Rapids WIB",W
+19190011,"11 Region 11 - Des Moines WIB",W
+19190012,"12 Region 12 - Sioux City WIB",W
+19190013,"13 Region 13 - Council Bluffs WIB",W
+19190014,"14 Region 14 - Creston WIB",W
+19190015,"15 Region 15 - Ottumwa WIB",W
+19190016,"16 Region 16 - Burlington WIB",W

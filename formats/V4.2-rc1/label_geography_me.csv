@@ -1,9 +1,5 @@
 geography,label,geo_level
 23,"Maine",S
-23000001,"01 Aroostook/Washington WIA",W
-23000002,"02 Central/Western WIA",W
-23000003,"03 Six County Coastal WIA",W
-23000004,"04 Tri County Investment Board WIA",W
 23001,"Androscoggin, ME",C
 23003,"Aroostook, ME",C
 23005,"Cumberland, ME",C
@@ -25,3 +21,7 @@ geography,label,geo_level
 2330340,"Lewiston-Auburn, ME",M
 2338860,"Portland-South Portland, ME",M
 2399999,"Nonmetropolitan, nonmicropolitan",M
+23000001,"01 Aroostook/Washington WIA",W
+23000002,"02 Central/Western WIA",W
+23000003,"03 Six County Coastal WIA",W
+23000004,"04 Tri County Investment Board WIA",W

@@ -1,6 +1,5 @@
 geography,label,geo_level
 02,"Alaska",S
-02000001,"01 Alaska WIB",W
 02013,"Aleutians East, AK",C
 02016,"Aleutians West, AK",C
 02020,"Anchorage, AK",C
@@ -12,7 +11,6 @@ geography,label,geo_level
 02100,"Haines, AK",C
 02105,"Hoonah-Angoon, AK",C
 02110,"Juneau, AK",C
-0211260,"Anchorage, AK",M
 02122,"Kenai Peninsula, AK",C
 02130,"Ketchikan Gateway, AK",C
 02150,"Kodiak Island, AK",C
@@ -24,14 +22,16 @@ geography,label,geo_level
 02188,"Northwest Arctic, AK",C
 02195,"Petersburg, AK",C
 02198,"Prince of Wales-Hyder, AK",C
-0221820,"Fairbanks, AK",M
 02220,"Sitka, AK",C
 02230,"Skagway, AK",C
 02240,"Southeast Fairbanks, AK",C
 02261,"Valdez-Cordova, AK",C
 02275,"Wrangell, AK",C
-0227940,"Juneau, AK",M
 02282,"Yakutat, AK",C
-0228540,"Ketchikan, AK",M
 02290,"Yukon-Koyukuk, AK",C
+0211260,"Anchorage, AK",M
+0221820,"Fairbanks, AK",M
+0227940,"Juneau, AK",M
+0228540,"Ketchikan, AK",M
 0299999,"Nonmetropolitan, nonmicropolitan",M
+02000001,"01 Alaska WIB",W

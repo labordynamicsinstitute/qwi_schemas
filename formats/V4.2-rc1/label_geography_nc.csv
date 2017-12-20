@@ -1,29 +1,5 @@
 geography,label,geo_level
 37,"North Carolina",S
-37000001,"01 NE Workforce Investment Consortium WDB",W
-37000005,"05 Cape Fear SDA Job Training Consortium WDB",W
-37000007,"07 Capital Area Workforce Development WDB",W
-37000009,"09 Durham Service Delivery Area WDB",W
-37000011,"11 Centralina Workforce Development Consortium WDB",W
-37000013,"13 Charlotte/Mecklenburg WDB",W
-37000015,"15 Cumberland County Local Area WDB",W
-37000017,"17 Davidson County Local Area WDB",W
-37000019,"19 Gaston County Local Area WDB",W
-37000021,"21 Greensboro/High Point/Guilford Consortium WDB",W
-37000023,"23 Kerr-Tar Council of Governments WDB",W
-37000025,"25 Lumber River Council of Governments WDB",W
-37000027,"27 Mid-Carolina Local Area Council of Govts WDB",W
-37000029,"29 Mountain Area Service Delivery Area WDB",W
-37000031,"31 Eastern Carolina Job Training Consortium WDB",W
-37000033,"33 Northwest Piedmont Job Training Consortium WDB",W
-37000035,"35 Region C Job Training Consortium WDB",W
-37000037,"37 High Country Council of Governments WDB",W
-37000039,"39 Pee Dee Region Workforce Consortium WDB",W
-37000041,"41 Region L Job Training Consortium WDB",W
-37000043,"43 Region Q Workforce Investment Consortium WDB",W
-37000045,"45 Regional Partnership Local Area WDB",W
-37000047,"47 Southwestern Planning Commission WDB",W
-37000049,"49 Western Piedmont Job Training Consortium WDB",W
 37001,"Alamance, NC",C
 37003,"Alexander, NC",C
 37005,"Alleghany, NC",C
@@ -77,14 +53,12 @@ geography,label,geo_level
 37101,"Johnston, NC",C
 37103,"Jones, NC",C
 37105,"Lee, NC",C
-3710620,"Albemarle, NC",M
 37107,"Lenoir, NC",C
 37109,"Lincoln, NC",C
 37111,"McDowell, NC",C
 37113,"Macon, NC",C
 37115,"Madison, NC",C
 37117,"Martin, NC",C
-3711700,"Asheville, NC",M
 37119,"Mecklenburg, NC",C
 37121,"Mitchell, NC",C
 37123,"Montgomery, NC",C
@@ -98,22 +72,18 @@ geography,label,geo_level
 37139,"Pasquotank, NC",C
 37141,"Pender, NC",C
 37143,"Perquimans, NC",C
-3714380,"Boone, NC",M
 37145,"Person, NC",C
 37147,"Pitt, NC",C
-3714820,"Brevard, NC",M
 37149,"Polk, NC",C
 37151,"Randolph, NC",C
 37153,"Richmond, NC",C
 37155,"Robeson, NC",C
-3715500,"Burlington, NC",M
 37157,"Rockingham, NC",C
 37159,"Rowan, NC",C
 37161,"Rutherford, NC",C
 37163,"Sampson, NC",C
 37165,"Scotland, NC",C
 37167,"Stanly, NC",C
-3716740,"Charlotte-Concord-Gastonia, NC-SC (NC part)",M
 37169,"Stokes, NC",C
 37171,"Surry, NC",C
 37173,"Swain, NC",C
@@ -125,12 +95,18 @@ geography,label,geo_level
 37185,"Warren, NC",C
 37187,"Washington, NC",C
 37189,"Watauga, NC",C
-3719000,"Cullowhee, NC",M
 37191,"Wayne, NC",C
 37193,"Wilkes, NC",C
 37195,"Wilson, NC",C
 37197,"Yadkin, NC",C
 37199,"Yancey, NC",C
+3710620,"Albemarle, NC",M
+3711700,"Asheville, NC",M
+3714380,"Boone, NC",M
+3714820,"Brevard, NC",M
+3715500,"Burlington, NC",M
+3716740,"Charlotte-Concord-Gastonia, NC-SC (NC part)",M
+3719000,"Cullowhee, NC",M
 3720380,"Dunn, NC",M
 3720500,"Durham-Chapel Hill, NC",M
 3721020,"Elizabeth City, NC",M
@@ -166,3 +142,27 @@ geography,label,geo_level
 3748980,"Wilson, NC",M
 3749180,"Winston-Salem, NC",M
 3799999,"Nonmetropolitan, nonmicropolitan",M
+37000001,"01 NE Workforce Investment Consortium WDB",W
+37000005,"05 Cape Fear SDA Job Training Consortium WDB",W
+37000007,"07 Capital Area Workforce Development WDB",W
+37000009,"09 Durham Service Delivery Area WDB",W
+37000011,"11 Centralina Workforce Development Consortium WDB",W
+37000013,"13 Charlotte/Mecklenburg WDB",W
+37000015,"15 Cumberland County Local Area WDB",W
+37000017,"17 Davidson County Local Area WDB",W
+37000019,"19 Gaston County Local Area WDB",W
+37000021,"21 Greensboro/High Point/Guilford Consortium WDB",W
+37000023,"23 Kerr-Tar Council of Governments WDB",W
+37000025,"25 Lumber River Council of Governments WDB",W
+37000027,"27 Mid-Carolina Local Area Council of Govts WDB",W
+37000029,"29 Mountain Area Service Delivery Area WDB",W
+37000031,"31 Eastern Carolina Job Training Consortium WDB",W
+37000033,"33 Northwest Piedmont Job Training Consortium WDB",W
+37000035,"35 Region C Job Training Consortium WDB",W
+37000037,"37 High Country Council of Governments WDB",W
+37000039,"39 Pee Dee Region Workforce Consortium WDB",W
+37000041,"41 Region L Job Training Consortium WDB",W
+37000043,"43 Region Q Workforce Investment Consortium WDB",W
+37000045,"45 Regional Partnership Local Area WDB",W
+37000047,"47 Southwestern Planning Commission WDB",W
+37000049,"49 Western Piedmont Job Training Consortium WDB",W

@@ -1,21 +1,5 @@
 geography,label,geo_level
 25,"Massachusetts",S
-25000001,"Berkshire County WIA",W
-25000002,"Franklin/Hampshire WIA",W
-25000003,"Hampden County WIA",W
-25000004,"North Central WIA",W
-25000005,"Central MA WIA",W
-25000006,"Greater Lowell WIA",W
-25000007,"Lower Merrimack Valley WIA",W
-25000008,"North Shore WIA",W
-25000009,"Metro North WIA",W
-25000010,"Boston WIA",W
-25000011,"Metro South/West WIA",W
-25000012,"South Shore WIA",W
-25000013,"Brockton WIA",W
-25000014,"Bristol County WIA",W
-25000015,"Greater New Bedford WIA",W
-25000016,"Cape & Islands WIA",W
 25001,"Barnstable, MA",C
 25003,"Berkshire, MA",C
 25005,"Bristol, MA",C
@@ -39,3 +23,19 @@ geography,label,geo_level
 2547240,"Vineyard Haven, MA",M
 2549340,"Worcester, MA-CT (MA part)",M
 2599999,"Nonmetropolitan, nonmicropolitan",M
+25000001,"Berkshire County WIA",W
+25000002,"Franklin/Hampshire WIA",W
+25000003,"Hampden County WIA",W
+25000004,"North Central WIA",W
+25000005,"Central MA WIA",W
+25000006,"Greater Lowell WIA",W
+25000007,"Lower Merrimack Valley WIA",W
+25000008,"North Shore WIA",W
+25000009,"Metro North WIA",W
+25000010,"Boston WIA",W
+25000011,"Metro South/West WIA",W
+25000012,"South Shore WIA",W
+25000013,"Brockton WIA",W
+25000014,"Bristol County WIA",W
+25000015,"Greater New Bedford WIA",W
+25000016,"Cape & Islands WIA",W

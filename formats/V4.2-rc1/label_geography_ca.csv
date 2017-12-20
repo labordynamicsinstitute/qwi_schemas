@@ -1,54 +1,5 @@
 geography,label,geo_level
 06,"California",S
-06000001,"01 Alameda County WIB",W
-06000003,"03 Oakland City WIB",W
-06000004,"04 Mother Lode Consortium WIB",W
-06000005,"05 Golden Sierra Consortium WIB",W
-06000007,"07 NCC (North Central Counties Consortium) WIB",W
-06000008,"08 Contra Costa County WIB",W
-06000009,"09 Richmond City WIB",W
-06000011,"11 Fresno County WIB",W
-06000012,"12 Humboldt County WIB",W
-06000013,"13 Imperial County WIB",W
-06000014,"14 Kern, Inyo, Mono Consortium WIB",W
-06000015,"15 Kings County WIB",W
-06000016,"16 NoRTEC WIB",W
-06000017,"17 Los Angeles County WIB",W
-06000019,"19 Foothill Consortium WIB",W
-06000020,"20 Verdugo Consortium WIB",W
-06000026,"26 Pacific Gateway",W
-06000027,"27 Los Angeles City WIB",W
-06000028,"28 Madera County WIB",W
-06000029,"29 Marin County WIB",W
-06000030,"30 Mendocino County WIB",W
-06000031,"31 Merced County WIB",W
-06000032,"32 Monterey County WIB",W
-06000033,"33 Napa County WIB",W
-06000034,"34 Orange County WIB",W
-06000035,"35 Riverside County WIB",W
-06000037,"37 Sacramento County WIB",W
-06000038,"38 San Benito County WIB",W
-06000040,"40 San Bernardino County WIB",W
-06000041,"41 San Bernardino City WIB",W
-06000042,"42 San Diego County WIB",W
-06000045,"45 San Francisco City/County WIB",W
-06000046,"46 San Joaquin County WIB",W
-06000048,"48 San Luis Obispo County WIB",W
-06000049,"49 San Mateo County WIB",W
-06000050,"50 Santa Barbara County WIB",W
-06000051,"51 San Jose - Silicon Valley WIB",W
-06000052,"52 NOVA (North Valley Consortium) WIB",W
-06000053,"53 Santa Cruz County WIB",W
-06000055,"55 Solano County WIB",W
-06000056,"56 Sonoma County WIB",W
-06000057,"57 Stanislaus County WIB",W
-06000058,"58 Tulare County WIB",W
-06000059,"59 Ventura County WIB",W
-06000060,"60 Yolo County WIB",W
-06000061,"61 South Bay Consortium WIB",W
-06000062,"62 SELACO (Southeast Los Angeles County) WIB",W
-06000072,"72 Anaheim City WIB",W
-06000073,"73 Santa Ana City WIB",W
 06001,"Alameda, CA",C
 06003,"Alpine, CA",C
 06005,"Amador, CA",C
@@ -142,3 +93,52 @@ geography,label,geo_level
 0647300,"Visalia-Porterville, CA",M
 0649700,"Yuba City, CA",M
 0699999,"Nonmetropolitan, nonmicropolitan",M
+06000001,"01 Alameda County WIB",W
+06000003,"03 Oakland City WIB",W
+06000004,"04 Mother Lode Consortium WIB",W
+06000005,"05 Golden Sierra Consortium WIB",W
+06000007,"07 NCC (North Central Counties Consortium) WIB",W
+06000008,"08 Contra Costa County WIB",W
+06000009,"09 Richmond City WIB",W
+06000011,"11 Fresno County WIB",W
+06000012,"12 Humboldt County WIB",W
+06000013,"13 Imperial County WIB",W
+06000014,"14 Kern, Inyo, Mono Consortium WIB",W
+06000015,"15 Kings County WIB",W
+06000016,"16 NoRTEC WIB",W
+06000017,"17 Los Angeles County WIB",W
+06000019,"19 Foothill Consortium WIB",W
+06000020,"20 Verdugo Consortium WIB",W
+06000026,"26 Pacific Gateway",W
+06000027,"27 Los Angeles City WIB",W
+06000028,"28 Madera County WIB",W
+06000029,"29 Marin County WIB",W
+06000030,"30 Mendocino County WIB",W
+06000031,"31 Merced County WIB",W
+06000032,"32 Monterey County WIB",W
+06000033,"33 Napa County WIB",W
+06000034,"34 Orange County WIB",W
+06000035,"35 Riverside County WIB",W
+06000037,"37 Sacramento County WIB",W
+06000038,"38 San Benito County WIB",W
+06000040,"40 San Bernardino County WIB",W
+06000041,"41 San Bernardino City WIB",W
+06000042,"42 San Diego County WIB",W
+06000045,"45 San Francisco City/County WIB",W
+06000046,"46 San Joaquin County WIB",W
+06000048,"48 San Luis Obispo County WIB",W
+06000049,"49 San Mateo County WIB",W
+06000050,"50 Santa Barbara County WIB",W
+06000051,"51 San Jose - Silicon Valley WIB",W
+06000052,"52 NOVA (North Valley Consortium) WIB",W
+06000053,"53 Santa Cruz County WIB",W
+06000055,"55 Solano County WIB",W
+06000056,"56 Sonoma County WIB",W
+06000057,"57 Stanislaus County WIB",W
+06000058,"58 Tulare County WIB",W
+06000059,"59 Ventura County WIB",W
+06000060,"60 Yolo County WIB",W
+06000061,"61 South Bay Consortium WIB",W
+06000062,"62 SELACO (Southeast Los Angeles County) WIB",W
+06000072,"72 Anaheim City WIB",W
+06000073,"73 Santa Ana City WIB",W

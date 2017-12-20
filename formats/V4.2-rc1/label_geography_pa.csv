@@ -1,5 +1,28 @@
 geography,label,geo_level
 42,"Pennsylvania",S
+420CE175,"175 Central PA WIA",W
+420LV070,"070 Lehigh Valley WIA",W
+420NC125,"125 North Central WIA",W
+420NE055,"055 Lackawanna County WIA",W
+420NE075,"075 Luzerne-Schuylkill Counties WIA",W
+420NE135,"135 Pocono Counties WIA",W
+420NT130,"130 Northern Tier WIA",W
+420NW145,"145 West Central Job Partnership WIA",W
+420NW170,"170 Northwest WIA",W
+420SA100,"100 Southern Alleghenies WIA",W
+420SC180,"180 South Central WIA",W
+420SE015,"015 Berks County WIA",W
+420SE020,"020 Bucks County WIA",W
+420SE030,"030 Chester County WIA",W
+420SE035,"035 Delaware County WIA",W
+420SE060,"060 Lancaster County WIA",W
+420SE080,"080 Montgomery County WIA",W
+420SE090,"090 Philadelphia County WIA",W
+420SW005,"005 Allegheny County WIA",W
+420SW045,"045 Westmoreland/Fayette WIA",W
+420SW095,"095 City of Pittsburgh WIA",W
+420SW110,"110 Tri-County WIA",W
+420SW165,"165 Southwest Corner WIA",W
 42001,"Adams, PA",C
 42003,"Allegheny, PA",C
 42005,"Armstrong, PA",C
@@ -50,36 +73,11 @@ geography,label,geo_level
 42095,"Northampton, PA",C
 42097,"Northumberland, PA",C
 42099,"Perry, PA",C
-420CE175,"175 Central PA WIA",W
-420LV070,"070 Lehigh Valley WIA",W
-420NC125,"125 North Central WIA",W
-420NE055,"055 Lackawanna County WIA",W
-420NE075,"075 Luzerne-Schuylkill Counties WIA",W
-420NE135,"135 Pocono Counties WIA",W
-420NT130,"130 Northern Tier WIA",W
-420NW145,"145 West Central Job Partnership WIA",W
-420NW170,"170 Northwest WIA",W
-420SA100,"100 Southern Alleghenies WIA",W
-420SC180,"180 South Central WIA",W
-420SE015,"015 Berks County WIA",W
-420SE020,"020 Bucks County WIA",W
-420SE030,"030 Chester County WIA",W
-420SE035,"035 Delaware County WIA",W
-420SE060,"060 Lancaster County WIA",W
-420SE080,"080 Montgomery County WIA",W
-420SE090,"090 Philadelphia County WIA",W
-420SW005,"005 Allegheny County WIA",W
-420SW045,"045 Westmoreland/Fayette WIA",W
-420SW095,"095 City of Pittsburgh WIA",W
-420SW110,"110 Tri-County WIA",W
-420SW165,"165 Southwest Corner WIA",W
 42101,"Philadelphia, PA",C
 42103,"Pike, PA",C
 42105,"Potter, PA",C
 42107,"Schuylkill, PA",C
 42109,"Snyder, PA",C
-4210900,"Allentown-Bethlehem-Easton, PA-NJ (PA part)",M
-4211020,"Altoona, PA",M
 42111,"Somerset, PA",C
 42113,"Sullivan, PA",C
 42115,"Susquehanna, PA",C
@@ -92,6 +90,8 @@ geography,label,geo_level
 42129,"Westmoreland, PA",C
 42131,"Wyoming, PA",C
 42133,"York, PA",C
+4210900,"Allentown-Bethlehem-Easton, PA-NJ (PA part)",M
+4211020,"Altoona, PA",M
 4214100,"Bloomsburg-Berwick, PA",M
 4214620,"Bradford, PA",M
 4216540,"Chambersburg-Waynesboro, PA",M

@@ -57,23 +57,19 @@ geography,label,geo_level
 18109,"Morgan, IN",C
 18111,"Newton, IN",C
 18113,"Noble, IN",C
-1811420,"Angola, IN",M
 18115,"Ohio, IN",C
 18117,"Orange, IN",C
 18119,"Owen, IN",C
 18121,"Parke, IN",C
-1812140,"Auburn, IN",M
 18123,"Perry, IN",C
 18125,"Pike, IN",C
 18127,"Porter, IN",C
 18129,"Posey, IN",C
 18131,"Pulaski, IN",C
-1813260,"Bedford, IN",M
 18133,"Putnam, IN",C
 18135,"Randolph, IN",C
 18137,"Ripley, IN",C
 18139,"Rush, IN",C
-1814020,"Bloomington, IN",M
 18141,"St. Joseph, IN",C
 18143,"Scott, IN",C
 18145,"Shelby, IN",C
@@ -89,28 +85,21 @@ geography,label,geo_level
 18165,"Vermillion, IN",C
 18167,"Vigo, IN",C
 18169,"Wabash, IN",C
-1816980,"Chicago-Naperville-Elgin, IL-IN-WI (IN part)",M
 18171,"Warren, IN",C
-1817140,"Cincinnati, OH-KY-IN (IN part)",M
 18173,"Warrick, IN",C
 18175,"Washington, IN",C
 18177,"Wayne, IN",C
 18179,"Wells, IN",C
-18180001,"Economic Growth Region 1",W
-18180002,"Economic Growth Region 2",W
-18180003,"Economic Growth Region 3",W
-18180004,"Economic Growth Region 4",W
-18180005,"Economic Growth Region 5",W
-18180006,"Economic Growth Region 6",W
-18180007,"Economic Growth Region 7",W
-18180008,"Economic Growth Region 8",W
-18180009,"Economic Growth Region 9",W
-18180010,"Economic Growth Region 10",W
-18180011,"Economic Growth Region 11",W
-1818020,"Columbus, IN",M
 18181,"White, IN",C
-1818220,"Connersville, IN",M
 18183,"Whitley, IN",C
+1811420,"Angola, IN",M
+1812140,"Auburn, IN",M
+1813260,"Bedford, IN",M
+1814020,"Bloomington, IN",M
+1816980,"Chicago-Naperville-Elgin, IL-IN-WI (IN part)",M
+1817140,"Cincinnati, OH-KY-IN (IN part)",M
+1818020,"Columbus, IN",M
+1818220,"Connersville, IN",M
 1818820,"Crawfordsville, IN",M
 1819540,"Decatur, IN",M
 1821140,"Elkhart-Goshen, IN",M
@@ -143,3 +132,14 @@ geography,label,geo_level
 1847700,"Warsaw, IN",M
 1847780,"Washington, IN",M
 1899999,"Nonmetropolitan, nonmicropolitan",M
+18180001,"Economic Growth Region 1",W
+18180002,"Economic Growth Region 2",W
+18180003,"Economic Growth Region 3",W
+18180004,"Economic Growth Region 4",W
+18180005,"Economic Growth Region 5",W
+18180006,"Economic Growth Region 6",W
+18180007,"Economic Growth Region 7",W
+18180008,"Economic Growth Region 8",W
+18180009,"Economic Growth Region 9",W
+18180010,"Economic Growth Region 10",W
+18180011,"Economic Growth Region 11",W
