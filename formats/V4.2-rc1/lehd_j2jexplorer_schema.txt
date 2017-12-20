@@ -341,7 +341,7 @@ industry label                                         ind_level
    3112  Grain and Oilseed Milling                           4
    3113  Sugar and Confectionery Product Manufacturing       4
     …
-**** 6.15. Geography ****
+6.15. Geography
 6.15.1.  Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each
 file label_geograpy_SCOPE.csv may contain one or more types of records as
@@ -391,7 +391,65 @@ geography label                     geo_level
      50   Vermont                         S
      51   Virginia                        S
      53   Washington                      S
-*** 6.15.3. Detailed state and substate level values ***
+6.15.3. State postal codes
+Some parts of the schema use (lower or upper-case) state postal codes.
+( label_stusps.csv )
+geography stusps
+     00   US
+     01   AL
+     02   AK
+     04   AZ
+     05   AR
+     06   CA
+     08   CO
+     09   CT
+     10   DE
+     11   DC
+     12   FL
+     13   GA
+     15   HI
+     16   ID
+     17   IL
+     18   IN
+     19   IA
+     20   KS
+     21   KY
+     22   LA
+     23   ME
+     24   MD
+     25   MA
+     26   MI
+     27   MN
+     28   MS
+     29   MO
+     30   MT
+     31   NE
+     32   NV
+     33   NH
+     34   NJ
+     35   NM
+     36   NY
+     37   NC
+     38   ND
+     39   OH
+     40   OK
+     41   OR
+     42   PA
+     44   RI
+     45   SC
+     46   SD
+     47   TN
+     48   TX
+     49   UT
+     50   VT
+     51   VA
+     53   WA
+     54   WV
+     55   WI
+     56   WY
+     72   PR
+     78   VI
+*** 6.15.4. Detailed state and substate level values ***
 Note: cross-state CBSA, in records of type geo_level = M, are present on files
 of type label_geography_XX.csv. A particular cross-state CBSA will appear on
 multiple files.
@@ -548,8 +606,8 @@ schema    Vx.y.z            Version of the schema
 release   RyyyyQq           Release quarter (identifies when the data was
                             created)
 internal  various           Internal identifier used for provenance tracking
-For instance, the metadata for the R2017Q3 release of "Missouri" "Kokomo J2J
-tabulations (obtained from here) has the following content:
+For instance, the metadata for the R2017Q3 release of Missouri J2J tabulations
+(obtained from here) has the following content:
 J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
 Some J2J metadata may contain multiple lines, as necessary.
 8.2. Additional Metadata for J2JOD Files (avail.csv)
@@ -590,6 +648,6 @@ Quarters_Required_Prior      Num  Number of quarters of data required to
                                   compute indicator relative to start quarter
 Quarters_Required_Subsequent Num  Number of quarters of data required to
                                   compute indicator relative to end quarter
-This revision: Wed Dec 20 18:14:59 EST 2017
+This revision: Wed Dec 20 18:21:56 EST 2017
 ===============================================================================
-Last updated 2017-12-20 18:14:59 EST
+Last updated 2017-12-20 18:21:56 EST
