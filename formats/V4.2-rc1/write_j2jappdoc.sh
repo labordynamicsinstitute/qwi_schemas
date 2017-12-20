@@ -289,7 +289,7 @@ done
 	cat tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
 	rm tmp3.csv
 
-  echo "=== $name ===
+	echo "=== [[geography]]$name ===
 
   " >> $asciifile
 
@@ -327,6 +327,17 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 [width=\"40%\",format=\"csv\",cols=\"^1,<3,^1\",options=\"header\"]
 |===================================================
 include::tmp.csv[]
+|===================================================
+
+==== [[stusps]]State postal codes
+
+Some parts of the schema use (lower or upper-case) state postal codes.
+
+( link:label_stusps.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::label_stusps.csv[]
 |===================================================
 
 ==== Detailed state and substate level values
@@ -456,7 +467,7 @@ include::tmp_$arg[]
 |===================================================
 
 For instance, the metadata for the $versionvintage release of
-$(grep "$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' ) J2J
+$(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') J2J
 tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionj2jurl/version_j2j.txt)
