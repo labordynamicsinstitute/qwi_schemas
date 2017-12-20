@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-18 December 2017
+20 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
@@ -42,19 +42,19 @@ November or December of each year.
 Sources
 =======
 
-Files are derived from  [TIGER/Line 2016
+Files are derived from  [TIGER/Line 2017
 shapefiles](https://www.census.gov/geo/maps-data/data/tiger-line.html):
 
--   [tl\_2016\_us\_state](http://www2.census.gov/geo/tiger/TIGER2016/STATE/)
+-   [tl\_2017\_us\_state](http://www2.census.gov/geo/tiger/TIGER2017/STATE/)
 
--   [tl\_2016\_us\_county](http://www2.census.gov/geo/tiger/TIGER2016/COUNTY/)
+-   [tl\_2017\_us\_county](http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/)
 
--   [tl\_2016\_us\_cbsa](http://www2.census.gov/geo/tiger/TIGER2016/CBSA/)
+-   [tl\_2017\_us\_cbsa](http://www2.census.gov/geo/tiger/TIGER2017/CBSA/)
 
--   [tl\_2016\_(ST)\_place](http://www2.census.gov/geo/tiger/TIGER2016/PLACE/)
+-   [tl\_2017\_(ST)\_place](http://www2.census.gov/geo/tiger/TIGER2017/PLACE/)
     (for creation of WIA/WIB shapefile)
 
--   [tl\_2016\_(ST)\_cousub](http://www2.census.gov/geo/tiger/TIGER2016/COUSUB/)
+-   [tl\_2017\_(ST)\_cousub](http://www2.census.gov/geo/tiger/TIGER2017/COUSUB/)
     (for creation of WIA/WIB shapefile)
 
 Transformations
@@ -302,4 +302,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Mon Dec 18 16:34:11 EST 2017
+This revision: Wed Dec 20 10:43:10 EST 2017

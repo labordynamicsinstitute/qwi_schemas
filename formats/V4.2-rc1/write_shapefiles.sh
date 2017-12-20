@@ -136,13 +136,13 @@ New TIGER/Line shapefiles are typically released by the Census Bureau's Geograph
 
 Sources
 -------
-Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2016 shapefiles]:
+Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2017 shapefiles]:
 
-* http://www2.census.gov/geo/tiger/TIGER2016/STATE/[tl_2016_us_state]
-* http://www2.census.gov/geo/tiger/TIGER2016/COUNTY/[tl_2016_us_county]
-* http://www2.census.gov/geo/tiger/TIGER2016/CBSA/[tl_2016_us_cbsa]
-* http://www2.census.gov/geo/tiger/TIGER2016/PLACE/[tl_2016_(ST)_place]  (for creation of WIA/WIB shapefile)
-* http://www2.census.gov/geo/tiger/TIGER2016/COUSUB/[tl_2016_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* http://www2.census.gov/geo/tiger/TIGER2017/STATE/[tl_2017_us_state]
+* http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/[tl_2017_us_county]
+* http://www2.census.gov/geo/tiger/TIGER2017/CBSA/[tl_2017_us_cbsa]
+* http://www2.census.gov/geo/tiger/TIGER2017/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
+* http://www2.census.gov/geo/tiger/TIGER2017/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
