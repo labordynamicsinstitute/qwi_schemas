@@ -1,4 +1,5 @@
 geography,label,geo_level
+
 00,"National (50 States + DC)",N
 01,"Alabama",S
 02,"Alaska",S
@@ -70,7 +71,7 @@ geography,label,geo_level
 47LWIA10,"10 Local Workforce Investment Area",W
 47LWIA11,"11 Local Workforce Investment Area",W
 47LWIA12,"12 Local Workforce Investment Area",W
-47LWIA13,"13 Local Workforce Investment Area",W
+47LWIA13,"13 Local Workforce Investment Area",W
 47,"Tennessee",S
 48,"Texas",S
 49,"Utah",S
@@ -102,7 +103,7 @@ geography,label,geo_level
 420SW045,"045 Westmoreland/Fayette WIA",W
 420SW095,"095 City of Pittsburgh WIA",W
 420SW110,"110 Tri-County WIA",W
-420SW165,"165 Southwest Corner WIA",W
+420SW165,"165 Southwest Corner WIA",W
 01001,"Autauga, AL",C
 01003,"Baldwin, AL",C
 01005,"Barbour, AL",C
@@ -295,7 +296,7 @@ geography,label,geo_level
 5454WIA4,"04 Workforce Investment Area Region 4",W
 5454WIA5,"05 Workforce Investment Area Region 5",W
 5454WIA6,"06 Workforce Investment Area Region 6",W
-5454WIA7,"07 Workforce Investment Area Region 7",W
+5454WIA7,"07 Workforce Investment Area Region 7",W
 06001,"Alameda, CA",C
 06003,"Alpine, CA",C
 06005,"Amador, CA",C
@@ -969,7 +970,7 @@ geography,label,geo_level
 19135,"Monroe, IA",C
 19137,"Montgomery, IA",C
 19139,"Muscatine, IA",C
-19141,"OBrien, IA",C
+19141,"O'Brien, IA",C
 19143,"Osceola, IA",C
 19145,"Page, IA",C
 19147,"Palo Alto, IA",C
@@ -1318,9 +1319,9 @@ geography,label,geo_level
 24027,"Howard, MD",C
 24029,"Kent, MD",C
 24031,"Montgomery, MD",C
-24033,"Prince Georges, MD",C
-24035,"Queen Annes, MD",C
-24037,"St. Marys, MD",C
+24033,"Prince George's, MD",C
+24035,"Queen Anne's, MD",C
+24037,"St. Mary's, MD",C
 24039,"Somerset, MD",C
 24041,"Talbot, MD",C
 24043,"Washington, MD",C
@@ -3270,7 +3271,7 @@ geography,label,geo_level
 080800TR,"Jefferson/Tri-County WIB",W
 080800UA,"Upper Arkansas WIB",W
 080800WE,"Western WIB",W
-080800WL,"Weld WIB",W
+080800WL,"Weld WIB",W
 0110700,"Albertville, AL",M
 0110760,"Alexander City, AL",M
 0111500,"Anniston-Oxford-Jacksonville, AL",M
@@ -3399,13 +3400,6 @@ geography,label,geo_level
 0945860,"Torrington, CT",M
 0949340,"Worcester, MA-CT (CT part)",M
 0999999,"Nonmetropolitan, nonmicropolitan",M
-01010001,"North Alabama Works",W
-01010002,"East Alabama Works",W
-01010003,"West Alabama Works",W
-01010004,"Central Six Alabama Works",W
-01010005,"Central Alabama Works",W
-01010006,"Southeast Alabama Works",W
-01010007,"Southwest Alabama Works",W
 1020100,"Dover, DE",M
 1037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (DE part)",M
 1041540,"Salisbury, MD-DE (DE part)",M
@@ -3490,7 +3484,7 @@ geography,label,geo_level
 1613940,"Blackfoot, ID",M
 1614260,"Boise City, ID",M
 1615420,"Burley, ID",M
-1617660,"Coeur dAlene, ID",M
+1617660,"Coeur d'Alene, ID",M
 1625200,"Hailey, ID",M
 1626820,"Idaho Falls, ID",M
 1627220,"Jackson, WY-ID (ID part)",M
@@ -3605,7 +3599,6 @@ geography,label,geo_level
 1944740,"Storm Lake, IA",M
 1947940,"Waterloo-Cedar Falls, IA",M
 1999999,"Nonmetropolitan, nonmicropolitan",M
-02000001,"01 Alaska WIB",W
 2011680,"Arkansas City-Winfield, KS",M
 2011860,"Atchison, KS",M
 2017700,"Coffeyville, KS",M
@@ -3645,7 +3638,7 @@ geography,label,geo_level
 2121000H,"H Cumberlands WIB",W
 2121000I,"I Bluegrass WIB",W
 2121000J,"J Green River WIB",W
-2121000K,"K Barren River WIB",W
+2121000K,"K Barren River WIB",W
 2121060,"Elizabethtown-Fort Knox, KY",M
 2121780,"Evansville, IN-KY (KY part)",M
 2123180,"Frankfort, KY",M
@@ -4020,19 +4013,6 @@ geography,label,geo_level
 3949660,"Youngstown-Warren-Boardman, OH-PA (OH part)",M
 3949780,"Zanesville, OH",M
 3999999,"Nonmetropolitan, nonmicropolitan",M
-04004005,"Cochise County LWIB",W
-04004010,"Gila/Pinal LWIB",W
-04004015,"Graham County LWIB",W
-04004020,"Greenlee County LWIB",W
-04004025,"City of Phoenix LWIB",W
-04004030,"Pima County LWIB",W
-04004035,"Maricopa County LWIB",W
-04004040,"Santa Cruz County LWIB",W
-04004045,"Yuma County LWIB",W
-04004060,"Apache/Navajo LWIB",W
-04004065,"Coconino County LWIB",W
-04004070,"Mohave/LaPaz LWIB",W
-04004080,"Yavapai County LWIB",W
 4010220,"Ada, OK",M
 4011060,"Altus, OK",M
 4011620,"Ardmore, OK",M
@@ -4257,16 +4237,6 @@ geography,label,geo_level
 4944920,"Summit Park, UT",M
 4946860,"Vernal, UT",M
 4999999,"Nonmetropolitan, nonmicropolitan",M
-05000001,"01 Central WIB",W
-05000002,"02 Eastern WIB",W
-05000003,"03 Little Rock WIB",W
-05000004,"04 North Central WIB",W
-05000005,"05 Northeast WIB",W
-05000006,"06 Northwest WIB",W
-05000007,"07 Southeast WIB",W
-05000008,"08 Southwest WIB",W
-05000009,"09 West Central WIB",W
-05000010,"10 Western WIB",W
 5012740,"Barre, VT",M
 5013540,"Bennington, VT",M
 5013620,"Berlin, NH-VT (VT part)",M
@@ -4370,6 +4340,70 @@ geography,label,geo_level
 5640540,"Rock Springs, WY",M
 5643260,"Sheridan, WY",M
 5699999,"Nonmetropolitan, nonmicropolitan",M
+16160010,"01 North WIB",W
+16160020,"02 North Central WIB",W
+16160030,"03 Southwest WIB",W
+16160040,"04 South Central WIB",W
+16160050,"05 Southeast WIB",W
+16160060,"06 Northeast WIB",W
+19190001,"01 Region 1 - Dubuque WIB",W
+19190002,"02 Region 2 - Mason City WIB",W
+19190003,"03 Region 3 & 4 - Spencer WIB",W
+19190005,"05 Region 5 - Fort Dodge WIB",W
+19190006,"06 Region 6 - Marshalltown WIB",W
+19190007,"07 Region 7 - Waterloo WIB",W
+19190008,"08 Region 8 - Carroll WIB",W
+19190009,"09 Region 9 - Davenport WIB",W
+19190010,"10 Region 10 - Cedar Rapids WIB",W
+19190011,"11 Region 11 - Des Moines WIB",W
+19190012,"12 Region 12 - Sioux City WIB",W
+19190013,"13 Region 13 - Council Bluffs WIB",W
+19190014,"14 Region 14 - Creston WIB",W
+19190015,"15 Region 15 - Ottumwa WIB",W
+19190016,"16 Region 16 - Burlington WIB",W
+24001001,"01 Anne Arundel WIA",W
+24001002,"02 Baltimore County WIA",W
+24001003,"03 Baltimore City WIA",W
+24001004,"04 Frederick WIA",W
+24001005,"05 Lower Shore WIA",W
+24001006,"06 MID-Maryland WIA",W
+24001007,"07 Montgomery WIA",W
+24001008,"08 Prince Georges WIA",W
+24001009,"09 Southern Maryland WIA",W
+24001010,"10 Susquehanna WIA",W
+24001011,"11 Upper Shore WIA",W
+24001012,"12 Western Maryland WIA",W
+01010001,"North Alabama Works",W
+01010002,"East Alabama Works",W
+01010003,"West Alabama Works",W
+01010004,"Central Six Alabama Works",W
+01010005,"Central Alabama Works",W
+01010006,"Southeast Alabama Works",W
+01010007,"Southwest Alabama Works",W
+02000001,"01 Alaska WIB",W
+04004005,"Cochise County LWIB",W
+04004010,"Gila/Pinal LWIB",W
+04004015,"Graham County LWIB",W
+04004020,"Greenlee County LWIB",W
+04004025,"City of Phoenix LWIB",W
+04004030,"Pima County LWIB",W
+04004035,"Maricopa County LWIB",W
+04004040,"Santa Cruz County LWIB",W
+04004045,"Yuma County LWIB",W
+04004060,"Apache/Navajo LWIB",W
+04004065,"Coconino County LWIB",W
+04004070,"Mohave/LaPaz LWIB",W
+04004080,"Yavapai County LWIB",W
+05000001,"01 Central WIB",W
+05000002,"02 Eastern WIB",W
+05000003,"03 Little Rock WIB",W
+05000004,"04 North Central WIB",W
+05000005,"05 Northeast WIB",W
+05000006,"06 Northwest WIB",W
+05000007,"07 Southeast WIB",W
+05000008,"08 Southwest WIB",W
+05000009,"09 West Central WIB",W
+05000010,"10 Western WIB",W
 06000001,"01 Alameda County WIB",W
 06000003,"03 Oakland City WIB",W
 06000004,"04 Mother Lode Consortium WIB",W
@@ -4474,12 +4508,6 @@ geography,label,geo_level
 15150003,"03 Honolulu WIB",W
 15150007,"07 Kauai WIB",W
 15150009,"09 Maui WIB",W
-16160010,"01 North WIB",W
-16160020,"02 North Central WIB",W
-16160030,"03 Southwest WIB",W
-16160040,"04 South Central WIB",W
-16160050,"05 Southeast WIB",W
-16160060,"06 Northeast WIB",W
 17000001,"Lake County WIB",W
 17000002,"McHenry County WIB",W
 17000003,"Northern IL Workforce Alliance",W
@@ -4513,21 +4541,6 @@ geography,label,geo_level
 18180009,"Economic Growth Region 9",W
 18180010,"Economic Growth Region 10",W
 18180011,"Economic Growth Region 11",W
-19190001,"01 Region 1 - Dubuque WIB",W
-19190002,"02 Region 2 - Mason City WIB",W
-19190003,"03 Region 3 & 4 - Spencer WIB",W
-19190005,"05 Region 5 - Fort Dodge WIB",W
-19190006,"06 Region 6 - Marshalltown WIB",W
-19190007,"07 Region 7 - Waterloo WIB",W
-19190008,"08 Region 8 - Carroll WIB",W
-19190009,"09 Region 9 - Davenport WIB",W
-19190010,"10 Region 10 - Cedar Rapids WIB",W
-19190011,"11 Region 11 - Des Moines WIB",W
-19190012,"12 Region 12 - Sioux City WIB",W
-19190013,"13 Region 13 - Council Bluffs WIB",W
-19190014,"14 Region 14 - Creston WIB",W
-19190015,"15 Region 15 - Ottumwa WIB",W
-19190016,"16 Region 16 - Burlington WIB",W
 20200001,"01 Local Area I - Western WIB",W
 20200002,"02 Local Area II - Northeast WIB",W
 20200003,"03 Local Area III - Kansas City Area WIB",W
@@ -4552,18 +4565,6 @@ geography,label,geo_level
 23000002,"02 Central/Western WIA",W
 23000003,"03 Six County Coastal WIA",W
 23000004,"04 Tri County Investment Board WIA",W
-24001001,"01 Anne Arundel WIA",W
-24001002,"02 Baltimore County WIA",W
-24001003,"03 Baltimore City WIA",W
-24001004,"04 Frederick WIA",W
-24001005,"05 Lower Shore WIA",W
-24001006,"06 MID-Maryland WIA",W
-24001007,"07 Montgomery WIA",W
-24001008,"08 Prince Georges WIA",W
-24001009,"09 Southern Maryland WIA",W
-24001010,"10 Susquehanna WIA",W
-24001011,"11 Upper Shore WIA",W
-24001012,"12 Western Maryland WIA",W
 25000001,"Berkshire County WIA",W
 25000002,"Franklin/Hampshire WIA",W
 25000003,"Hampden County WIA",W
@@ -5119,7 +5120,7 @@ geography,label,geo_level
 31860,"Mankato-North Mankato, MN",B
 31900,"Mansfield, OH",B
 31999,"Not in metropolitan area, NE",B
-32420,"MayagÃŒez, PR",B
+32420,"Mayagüez, PR",B
 32580,"McAllen-Edinburg-Mission, TX",B
 32780,"Medford, OR",B
 32820,"Memphis, TN-MS-AR",B
@@ -5219,7 +5220,7 @@ geography,label,geo_level
 41700,"San Antonio-New Braunfels, TX",B
 41740,"San Diego-Carlsbad, CA",B
 41860,"San Francisco-Oakland-Hayward, CA",B
-41900,"San GermÃ¡n, PR",B
+41900,"San Germán, PR",B
 41940,"San Jose-Sunnyvale-Santa Clara, CA",B
 41980,"San Juan-Carolina-Caguas, PR",B
 41999,"Not in metropolitan area, OR",B

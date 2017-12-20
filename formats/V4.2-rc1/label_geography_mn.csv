@@ -1,21 +1,5 @@
 geography,label,geo_level
 27,"Minnesota",S
-27SDA010,"01 Northwest Minnesota WSA",W
-27SDA020,"02 Rural Minnesota CEP WSA",W
-27SDA030,"03 Northeast Minnesota WSA",W
-27SDA040,"04 City of Duluth WSA",W
-27SDA050,"05 Central Minnesota WSA",W
-27SDA060,"06 Southwest Minnesota WSA",W
-27SDA070,"07 South Central Minnesota WSA",W
-27SDA080,"08 Southeast Minnesota WSA",W
-27SDA090,"09 Hennepin/Carver WSA",W
-27SDA100,"10 City of Minneapolis WSA",W
-27SDA120,"12 Anoka County WSA",W
-27SDA140,"14 Dakota/Scott County WSA",W
-27SDA150,"15 Ramsey County WSA",W
-27SDA160,"16 Washington County WSA",W
-27SDA170,"17 Stearns/Benton WSA",W
-27SDA180,"18 Winona County WSA",W
 27001,"Aitkin, MN",C
 27003,"Anoka, MN",C
 27005,"Becker, MN",C
@@ -130,3 +114,20 @@ geography,label,geo_level
 2749100,"Winona, MN",M
 2749380,"Worthington, MN",M
 2799999,"Nonmetropolitan, nonmicropolitan",M
+27SDA010,"01 Northwest Minnesota WSA",W
+27SDA020,"02 Rural Minnesota CEP WSA",W
+27SDA030,"03 Northeast Minnesota WSA",W
+27SDA040,"04 City of Duluth WSA",W
+27SDA050,"05 Central Minnesota WSA",W
+27SDA060,"06 Southwest Minnesota WSA",W
+27SDA070,"07 South Central Minnesota WSA",W
+27SDA080,"08 Southeast Minnesota WSA",W
+27SDA090,"09 Hennepin/Carver WSA",W
+27SDA100,"10 City of Minneapolis WSA",W
+27SDA120,"12 Anoka County WSA",W
+27SDA140,"14 Dakota/Scott County WSA",W
+27SDA150,"15 Ramsey County WSA",W
+27SDA160,"16 Washington County WSA",W
+27SDA170,"17 Stearns/Benton WSA",W
+27SDA180,"18 Winona County WSA",W
+

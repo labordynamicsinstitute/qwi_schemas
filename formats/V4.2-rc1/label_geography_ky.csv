@@ -127,16 +127,6 @@ geography,label,geo_level
 2117140,"Cincinnati, OH-KY-IN (KY part)",M
 2117300,"Clarksville, TN-KY (KY part)",M
 2119220,"Danville, KY",M
-2121000A,"A Purchase/Pennyrile WIB",W
-2121000B,"B Lincoln Trail WIB",W
-2121000C,"C Greater Louisville WIB",W
-2121000E,"E Northern Kentucky WIB",W
-2121000F,"F Tenco WIB",W
-2121000G,"G Ekcep WIB",W
-2121000H,"H Cumberlands WIB",W
-2121000I,"I Bluegrass WIB",W
-2121000J,"J Green River WIB",W
-2121000K,"K Barren River WIB",W
 2121060,"Elizabethtown-Fort Knox, KY",M
 2121780,"Evansville, IN-KY (KY part)",M
 2123180,"Frankfort, KY",M
@@ -157,3 +147,13 @@ geography,label,geo_level
 2143700,"Somerset, KY",M
 2146460,"Union City, TN-KY (KY part)",M
 2199999,"Nonmetropolitan, nonmicropolitan",M
+2121000A,"A Purchase/Pennyrile WIB",W
+2121000B,"B Lincoln Trail WIB",W
+2121000C,"C Greater Louisville WIB",W
+2121000E,"E Northern Kentucky WIB",W
+2121000F,"F Tenco WIB",W
+2121000G,"G Ekcep WIB",W
+2121000H,"H Cumberlands WIB",W
+2121000I,"I Bluegrass WIB",W
+2121000J,"J Green River WIB",W
+2121000K,"K Barren River WIB",W

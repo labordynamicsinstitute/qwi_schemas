@@ -1,12 +1,5 @@
 geography,label,geo_level
 54,"West Virginia",S
-5454WIA1,"01 Workforce Investment Area Region 1",W
-5454WIA2,"02 Workforce Investment Area Region 2",W
-5454WIA3,"03 Workforce Investment Area Region 3",W
-5454WIA4,"04 Workforce Investment Area Region 4",W
-5454WIA5,"05 Workforce Investment Area Region 5",W
-5454WIA6,"06 Workforce Investment Area Region 6",W
-5454WIA7,"07 Workforce Investment Area Region 7",W
 54001,"Barbour, WV",C
 54003,"Berkeley, WV",C
 54005,"Boone, WV",C
@@ -80,3 +73,10 @@ geography,label,geo_level
 5448540,"Wheeling, WV-OH (WV part)",M
 5449020,"Winchester, VA-WV (WV part)",M
 5499999,"Nonmetropolitan, nonmicropolitan",M
+5454WIA1,"01 Workforce Investment Area Region 1",W
+5454WIA2,"02 Workforce Investment Area Region 2",W
+5454WIA3,"03 Workforce Investment Area Region 3",W
+5454WIA4,"04 Workforce Investment Area Region 4",W
+5454WIA5,"05 Workforce Investment Area Region 5",W
+5454WIA6,"06 Workforce Investment Area Region 6",W
+5454WIA7,"07 Workforce Investment Area Region 7",W

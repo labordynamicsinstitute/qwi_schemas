@@ -1,17 +1,4 @@
 geography,label,geo_level
-47LWIA01,"01 Local Workforce Investment Area",W
-47LWIA02,"02 Local Workforce Investment Area",W
-47LWIA03,"03 Local Workforce Investment Area",W
-47LWIA04,"04 Local Workforce Investment Area",W
-47LWIA05,"05 Local Workforce Investment Area",W
-47LWIA06,"06 Local Workforce Investment Area",W
-47LWIA07,"07 Local Workforce Investment Area",W
-47LWIA08,"08 Local Workforce Investment Area",W
-47LWIA09,"09 Local Workforce Investment Area",W
-47LWIA10,"10 Local Workforce Investment Area",W
-47LWIA11,"11 Local Workforce Investment Area",W
-47LWIA12,"12 Local Workforce Investment Area",W
-47LWIA13,"13 Local Workforce Investment Area",W
 47,"Tennessee",S
 47001,"Anderson, TN",C
 47003,"Bedford, TN",C
@@ -136,3 +123,16 @@ geography,label,geo_level
 4746100,"Tullahoma-Manchester, TN",M
 4746460,"Union City, TN-KY (TN part)",M
 4799999,"Nonmetropolitan, nonmicropolitan",M
+47LWIA01,"01 Local Workforce Investment Area",W
+47LWIA02,"02 Local Workforce Investment Area",W
+47LWIA03,"03 Local Workforce Investment Area",W
+47LWIA04,"04 Local Workforce Investment Area",W
+47LWIA05,"05 Local Workforce Investment Area",W
+47LWIA06,"06 Local Workforce Investment Area",W
+47LWIA07,"07 Local Workforce Investment Area",W
+47LWIA08,"08 Local Workforce Investment Area",W
+47LWIA09,"09 Local Workforce Investment Area",W
+47LWIA10,"10 Local Workforce Investment Area",W
+47LWIA11,"11 Local Workforce Investment Area",W
+47LWIA12,"12 Local Workforce Investment Area",W
+47LWIA13,"13 Local Workforce Investment Area",W

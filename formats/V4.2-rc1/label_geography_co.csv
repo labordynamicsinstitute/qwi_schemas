@@ -64,25 +64,6 @@ geography,label,geo_level
 08121,"Washington, CO",C
 08123,"Weld, CO",C
 08125,"Yuma, CO",C
-080800AD,"Adams WIB",W
-080800AR,"Arapahoe/Douglas WIB",W
-080800BO,"Boulder WIB",W
-080800BR,"Broomfield WIB",W
-080800DE,"Denver WIB",W
-080800EA,"Eastern WIB",W
-080800ET,"El Paso/Teller WIB",W
-080800LR,"Larimer WIB",W
-080800ME,"Mesa WIB",W
-080800NW,"Northwest WIB",W
-080800PB,"Pueblo WIB",W
-080800RR,"Rural Resort WIB",W
-080800SC,"South Central WIB",W
-080800SE,"Southeast WIB",W
-080800SW,"Southwest WIB",W
-080800TR,"Jefferson/Tri-County WIB",W
-080800UA,"Upper Arkansas WIB",W
-080800WE,"Western WIB",W
-080800WL,"Weld WIB",W
 0814500,"Boulder, CO",M
 0814720,"Breckenridge, CO",M
 0815860,"Cañon City, CO",M
@@ -101,3 +82,22 @@ geography,label,geo_level
 0844460,"Steamboat Springs, CO",M
 0844540,"Sterling, CO",M
 0899999,"Nonmetropolitan, nonmicropolitan",M
+080800AD,"Adams WIB",W
+080800AR,"Arapahoe/Douglas WIB",W
+080800BO,"Boulder WIB",W
+080800BR,"Broomfield WIB",W
+080800DE,"Denver WIB",W
+080800EA,"Eastern WIB",W
+080800ET,"El Paso/Teller WIB",W
+080800LR,"Larimer WIB",W
+080800ME,"Mesa WIB",W
+080800NW,"Northwest WIB",W
+080800PB,"Pueblo WIB",W
+080800RR,"Rural Resort WIB",W
+080800SC,"South Central WIB",W
+080800SE,"Southeast WIB",W
+080800SW,"Southwest WIB",W
+080800TR,"Jefferson/Tri-County WIB",W
+080800UA,"Upper Arkansas WIB",W
+080800WE,"Western WIB",W
+080800WL,"Weld WIB",W
