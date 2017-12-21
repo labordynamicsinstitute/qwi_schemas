@@ -186,13 +186,42 @@ The ''Description'' provides a complete description of the indicator.
 ''Concept'' classifies each indicator in a descriptive category: employment, hire, separation, earnings, or flow.
 The ''Base'' indicates the denominator used to compute the statistic, and may be '1'.
 
+==== Job-to-job flow counts (J2J)
+( link:variables_j2j.csv[] )
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
+|===================================================
+include::variables_j2j.csv[]
+|===================================================
+<<<
+
+==== Job-to-job flow rates (J2JR)
+( link:variables_j2jr.csv[] )
+
+Rates are computed from published data, and are provided as a convenience.
+
+
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
+|===================================================
+include::variables_j2jr.csv[]
+|===================================================
+
+
+<<<
+
+==== Job-to-job flow Origin-Destination (J2JOD)
+( link:variables_j2jod.csv[] )
+[width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
+|===================================================
+include::variables_j2jod.csv[]
+|===================================================
+<<<
+
+==== Job-to-job flow computed by the app (J2JAPP)
 ( link:variables_j2japp.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"3*^2,<5,<5,<2,<2,^1\",options=\"header\"]
 |===================================================
 include::variables_j2japp.csv[]
 |===================================================
-<<<
-
 <<<
 " >> $asciifile
 
