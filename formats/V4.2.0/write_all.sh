@@ -16,4 +16,4 @@ fi
 ./write_csv_naming.sh $1
 ./write_schemadoc.sh $1
 ./write_shapefiles.sh $1
-./write_j2jappdoc.sh $1
+#./write_j2jappdoc.sh $1
