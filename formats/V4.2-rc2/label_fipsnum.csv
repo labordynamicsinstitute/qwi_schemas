@@ -1,0 +1,53 @@
+geography,label,geo_level
+"00","National (50 States + DC)",N
+"01","Alabama",S
+"02","Alaska",S
+"04","Arizona",S
+"05","Arkansas",S
+"06","California",S
+"08","Colorado",S
+"09","Connecticut",S
+"10","Delaware",S
+"11","District of Columbia",S
+"12","Florida",S
+"13","Georgia",S
+"15","Hawaii",S
+"16","Idaho",S
+"17","Illinois",S
+"18","Indiana",S
+"19","Iowa",S
+"20","Kansas",S
+"21","Kentucky",S
+"22","Louisiana",S
+"23","Maine",S
+"24","Maryland",S
+"25","Massachusetts",S
+"26","Michigan",S
+"27","Minnesota",S
+"28","Mississippi",S
+"29","Missouri",S
+"30","Montana",S
+"31","Nebraska",S
+"32","Nevada",S
+"33","New Hampshire",S
+"34","New Jersey",S
+"35","New Mexico",S
+"36","New York",S
+"37","North Carolina",S
+"38","North Dakota",S
+"39","Ohio",S
+"40","Oklahoma",S
+"41","Oregon",S
+"42","Pennsylvania",S
+"44","Rhode Island",S
+"45","South Carolina",S
+"46","South Dakota",S
+"47","Tennessee",S
+"48","Texas",S
+"49","Utah",S
+"50","Vermont",S
+"51","Virginia",S
+"53","Washington",S
+"54","West Virginia",S
+"55","Wisconsin",S
+56,"Wyoming",S

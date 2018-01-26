@@ -1,0 +1,4 @@
+variable,type,label
+Indicator Variable,Num,Name of the Indicator
+Quarters_Required_Prior,Num,Number of quarters of data required to compute indicator relative to start quarter
+Quarters_Required_Subsequent,Num,Number of quarters of data required to compute indicator relative to end quarter

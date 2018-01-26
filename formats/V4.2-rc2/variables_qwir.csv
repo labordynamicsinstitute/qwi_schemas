@@ -1,0 +1,19 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
+HirAR,AR,sHirAR,Hiring Rate (All Accessions),All accessions as a percent of average employment,Rate,Hire,(Emp + EmpEnd)/2
+HirNR,HR,sHirNR,New Hiring Rate,New hires as a percent of average employment,Rate,Hire,(Emp + EmpEnd)/2
+HirRR,RR,sHirRR,Recall Rate,Recall hires as a percent of average employment,Rate,Hire,(Emp + EmpEnd)/2
+SepR,SR,sSepR,Separation Rate (All Separations),All separations as a percent of average employment,Rate,Separation,(Emp + EmpEnd)/2
+HirAEndR,CAR,sHirAEndR,End-of-Quarter Hiring Rate,Hires as a percent of average employment,Rate,Hire,(Emp + EmpEnd)/2
+SepBegR,CSR,sSepBegR,Beginning-of-Quarter Separation Rate,Separations as a percent of average employment,Rate,Separation,(Emp + EmpEnd)/2
+HirAEndReplR,EIR,sHirAEndReplR,Replacement Hiring Rate,Replacement hires as a percent of  average  employment,Rate,Hire,(Emp + EmpEnd)/2
+HirASR,FAR,sHirASR,Hiring Rate (Flows into Full-Quarter Employment),Flows into stable employment as a percent of average stable employment,Rate,Hire,(EmpSpv + EmpS)/2
+HirNSR,FHR,sHirNSR,New Hiring Rate (New Hires to Full-Quarter Status),New hires into stable employment as a percent of average stable employment,Rate,Hire,(EmpSpv + EmpS)/2
+SepSR,FSR,sSepSR,Separation Rate (Flows out of Full-Quarter Employment),Flows out of stable employment as a percent of average stable employment,Rate,Separation,(EmpSpv + EmpS)/2
+SepSnxR,FSnxR,sSepSnxR,Separation Rate in the Next Quarter (Flow out of Full-Quarter Employment),Flow rate out of stable employment in the next quarter,Rate,Separation,(EmpSpv + EmpS)/2
+TurnOvrSR,FTR,sTurnOvrSR,Turnover Rate (Stable),The rate at which stable jobs begin and end,Rate,Turnover,2*EmpS
+FrmJbGnR,JCR,sFrmJbGnR,Firm Job Gain Rate (Job Creation Rate),Estimated number of jobs gained at firms throughout the quarter as a percent of average employment,Rate,Job Flows,(Emp + EmpEnd)/2
+FrmJbLsR,JDR,sFrmJbLsR,Firm Job Loss Rate (Job Destruction Rate),Estimated number of jobs lost at firms throughout the quarter  as a percent of average employment,Rate,Job Flows,(Emp + EmpEnd)/2
+FrmJbCR,JFR,sFrmJbCR,Firm Job Change Rate (Net Change Rate),Difference between firm job gain and firm job loss  as a percent of average employment,Rate,Job Flows,(Emp + EmpEnd)/2
+FrmJbGnSR,FJCR,sFrmJbGnSR,Firm Job Gain Rate (Stable),Estimated number of full-quarter jobs gained at firms as a percent of average stable employment,Rate,Job Flows,(EmpSpv + EmpS)/2
+FrmJbLsSR,FJDR,sFrmJbLsSR,Firm Job Loss Rate (Stable),Estimated number of full-quarter jobs lost at firms as a percent of average stable employment,Rate,Job Flows,(EmpSpv + EmpS)/2
+FrmJbCSR,FJFR,sFrmJbCSR,Firm Job Change Rate (Stable; Net Change Rate),Net growth in jobs that last a full quarter as a percent of average stable employment,Rate,Job Flows,(EmpSpv + EmpS)/2

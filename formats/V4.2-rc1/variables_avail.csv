@@ -1,0 +1,9 @@
+variable,type,label
+geo_level,Char(1),Geographic level of destination region
+geography,Char(8),Geography code of destination region
+geo_level_orig,Char(1),Geographic level of origin region
+geography_orig,Char(8),Geography code of origin region
+start_year,Num,First year regional pair may be observed
+start_quarter,Num,First quarter regional pair may be observed
+end_year,Num,Last year regional pair may be observed
+end_quarter,Num,Last quarter regional pair may be observed
