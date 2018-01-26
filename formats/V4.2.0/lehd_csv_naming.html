@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc" />
-<title>LEHD Public Use CSV Naming Schema V4.2-rc1 - CSV Naming Convention</title>
+<title>LEHD Public Use CSV Naming Schema V4.2.0 - CSV Naming Convention</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -18,10 +18,10 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use CSV Naming Schema V4.2-rc1 - CSV Naming Convention</h1>
+<h1>LEHD Public Use CSV Naming Schema V4.2.0 - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">18 December 2017</span>
+<span id="revdate">26 January 2018</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -599,12 +599,7 @@ Updated industry classification from NAICS 2012 to NAICS 2017
 </li>
 <li>
 <p>
-Added J2J Explorer-specific description of metadata for convenience (<a href="lehd_j2jexplorer_schema.html">lehd_j2jexplorer_schema.html</a>)
-</p>
-</li>
-<li>
-<p>
-Added a column "ind_level" to label_industry.csv similar to the geo_level
+Added a column <code>ind_level</code> to label_industry.csv similar to the <code>geo_level</code>
 </p>
 </li>
 <li>
@@ -636,7 +631,12 @@ Added a (draft) taxonomy of concepts used in the LEHD data world (<a href="label
 </li>
 <li>
 <p>
-Fixed the labeling of ownership code A00 to correctly reflect scope
+Fixed the labeling of ownership code <code>A00</code> to correctly reflect scope
+</p>
+</li>
+<li>
+<p>
+Added files describing the number of quarters of data availability required relative to start and end quarters (<a href="lags_qwi.csv">lags_qwi.csv</a> and <a href="lags_j2j.csv">lags_j2j.csv</a>), and its metadata (<a href="variables_lags.csv">variables_lags.csv</a>)
 </p>
 </li>
 </ul></div>
@@ -654,7 +654,7 @@ Fixed the labeling of ownership code A00 to correctly reflect scope
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Mon Dec 18 16:33:56 EST 2017</p></div>
+<div class="paragraph"><p>This revision: Fri Jan 26 11:04:59 EST 2018</p></div>
 </div></div>
 </div>
 </div>
@@ -664,7 +664,7 @@ Fixed the labeling of ownership code A00 to correctly reflect scope
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-12-18 16:33:56 EST
+ 2018-01-26 11:04:59 EST
 </div>
 </div>
 </body>
