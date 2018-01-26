@@ -703,7 +703,6 @@ For each indicator, the following files contain the quarters of data required to
 
 * link:${lagqwi}[]
 * link:${lagj2j}[]
-* link:${lagj2japp}[]
 
 The files are structured as follows:
 [width=\"80%\",format=\"csv\",cols=\"<2,<2,<4\",options=\"header\"]
