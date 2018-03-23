@@ -467,7 +467,8 @@ done
 	head -1 label_geography_us.csv > label_geography.csv
 	for arg in $(ls label_geography_*.csv | grep -vE "cbsa|metro")
 	do
-	  tail -n +2 $arg >> tmp3.csv
+		# we clean up line endings at the same time
+	  tail -n +2 $arg | unix2dos | dos2unix >> tmp3.csv
 	done
 	# split sorting
 	grep -vE ",W$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
