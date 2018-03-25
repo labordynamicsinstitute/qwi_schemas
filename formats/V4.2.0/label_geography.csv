@@ -1,5 +1,4 @@
 geography,label,geo_level
-
 00,"National (50 States + DC)",N
 01,"Alabama",S
 02,"Alaska",S
@@ -25,22 +24,6 @@ geography,label,geo_level
 25,"Massachusetts",S
 26,"Michigan",S
 27,"Minnesota",S
-27SDA010,"01 Northwest Minnesota WSA",W
-27SDA020,"02 Rural Minnesota CEP WSA",W
-27SDA030,"03 Northeast Minnesota WSA",W
-27SDA040,"04 City of Duluth WSA",W
-27SDA050,"05 Central Minnesota WSA",W
-27SDA060,"06 Southwest Minnesota WSA",W
-27SDA070,"07 South Central Minnesota WSA",W
-27SDA080,"08 Southeast Minnesota WSA",W
-27SDA090,"09 Hennepin/Carver WSA",W
-27SDA100,"10 City of Minneapolis WSA",W
-27SDA120,"12 Anoka County WSA",W
-27SDA140,"14 Dakota/Scott County WSA",W
-27SDA150,"15 Ramsey County WSA",W
-27SDA160,"16 Washington County WSA",W
-27SDA170,"17 Stearns/Benton WSA",W
-27SDA180,"18 Winona County WSA",W
 28,"Mississippi",S
 29,"Missouri",S
 30,"Montana",S
@@ -59,19 +42,6 @@ geography,label,geo_level
 44,"Rhode Island",S
 45,"South Carolina",S
 46,"South Dakota",S
-47LWIA01,"01 Local Workforce Investment Area",W
-47LWIA02,"02 Local Workforce Investment Area",W
-47LWIA03,"03 Local Workforce Investment Area",W
-47LWIA04,"04 Local Workforce Investment Area",W
-47LWIA05,"05 Local Workforce Investment Area",W
-47LWIA06,"06 Local Workforce Investment Area",W
-47LWIA07,"07 Local Workforce Investment Area",W
-47LWIA08,"08 Local Workforce Investment Area",W
-47LWIA09,"09 Local Workforce Investment Area",W
-47LWIA10,"10 Local Workforce Investment Area",W
-47LWIA11,"11 Local Workforce Investment Area",W
-47LWIA12,"12 Local Workforce Investment Area",W
-47LWIA13,"13 Local Workforce Investment Area",W
 47,"Tennessee",S
 48,"Texas",S
 49,"Utah",S
@@ -81,29 +51,6 @@ geography,label,geo_level
 54,"West Virginia",S
 55,"Wisconsin",S
 56,"Wyoming",S
-420CE175,"175 Central PA WIA",W
-420LV070,"070 Lehigh Valley WIA",W
-420NC125,"125 North Central WIA",W
-420NE055,"055 Lackawanna County WIA",W
-420NE075,"075 Luzerne-Schuylkill Counties WIA",W
-420NE135,"135 Pocono Counties WIA",W
-420NT130,"130 Northern Tier WIA",W
-420NW145,"145 West Central Job Partnership WIA",W
-420NW170,"170 Northwest WIA",W
-420SA100,"100 Southern Alleghenies WIA",W
-420SC180,"180 South Central WIA",W
-420SE015,"015 Berks County WIA",W
-420SE020,"020 Bucks County WIA",W
-420SE030,"030 Chester County WIA",W
-420SE035,"035 Delaware County WIA",W
-420SE060,"060 Lancaster County WIA",W
-420SE080,"080 Montgomery County WIA",W
-420SE090,"090 Philadelphia County WIA",W
-420SW005,"005 Allegheny County WIA",W
-420SW045,"045 Westmoreland/Fayette WIA",W
-420SW095,"095 City of Pittsburgh WIA",W
-420SW110,"110 Tri-County WIA",W
-420SW165,"165 Southwest Corner WIA",W
 01001,"Autauga, AL",C
 01003,"Baldwin, AL",C
 01005,"Barbour, AL",C
@@ -290,13 +237,6 @@ geography,label,geo_level
 05145,"White, AR",C
 05147,"Woodruff, AR",C
 05149,"Yell, AR",C
-5454WIA1,"01 Workforce Investment Area Region 1",W
-5454WIA2,"02 Workforce Investment Area Region 2",W
-5454WIA3,"03 Workforce Investment Area Region 3",W
-5454WIA4,"04 Workforce Investment Area Region 4",W
-5454WIA5,"05 Workforce Investment Area Region 5",W
-5454WIA6,"06 Workforce Investment Area Region 6",W
-5454WIA7,"07 Workforce Investment Area Region 7",W
 06001,"Alameda, CA",C
 06003,"Alpine, CA",C
 06005,"Amador, CA",C
@@ -1913,7 +1853,7 @@ geography,label,geo_level
 35007,"Colfax, NM",C
 35009,"Curry, NM",C
 35011,"De Baca, NM",C
-35013,"DoÃ±a Ana, NM",C
+35013,"Doña Ana, NM",C
 35015,"Eddy, NM",C
 35017,"Grant, NM",C
 35019,"Guadalupe, NM",C
@@ -3253,25 +3193,6 @@ geography,label,geo_level
 56041,"Uinta, WY",C
 56043,"Washakie, WY",C
 56045,"Weston, WY",C
-080800AD,"Adams WIB",W
-080800AR,"Arapahoe/Douglas WIB",W
-080800BO,"Boulder WIB",W
-080800BR,"Broomfield WIB",W
-080800DE,"Denver WIB",W
-080800EA,"Eastern WIB",W
-080800ET,"El Paso/Teller WIB",W
-080800LR,"Larimer WIB",W
-080800ME,"Mesa WIB",W
-080800NW,"Northwest WIB",W
-080800PB,"Pueblo WIB",W
-080800RR,"Rural Resort WIB",W
-080800SC,"South Central WIB",W
-080800SE,"Southeast WIB",W
-080800SW,"Southwest WIB",W
-080800TR,"Jefferson/Tri-County WIB",W
-080800UA,"Upper Arkansas WIB",W
-080800WE,"Western WIB",W
-080800WL,"Weld WIB",W
 0110700,"Albertville, AL",M
 0110760,"Alexander City, AL",M
 0111500,"Anniston-Oxford-Jacksonville, AL",M
@@ -3377,7 +3298,7 @@ geography,label,geo_level
 0699999,"Nonmetropolitan, nonmicropolitan",M
 0814500,"Boulder, CO",M
 0814720,"Breckenridge, CO",M
-0815860,"CaÃ±on City, CO",M
+0815860,"Cañon City, CO",M
 0817820,"Colorado Springs, CO",M
 0818780,"Craig, CO",M
 0819740,"Denver-Aurora-Lakewood, CO",M
@@ -3629,16 +3550,6 @@ geography,label,geo_level
 2117140,"Cincinnati, OH-KY-IN (KY part)",M
 2117300,"Clarksville, TN-KY (KY part)",M
 2119220,"Danville, KY",M
-2121000A,"A Purchase/Pennyrile WIB",W
-2121000B,"B Lincoln Trail WIB",W
-2121000C,"C Greater Louisville WIB",W
-2121000E,"E Northern Kentucky WIB",W
-2121000F,"F Tenco WIB",W
-2121000G,"G Ekcep WIB",W
-2121000H,"H Cumberlands WIB",W
-2121000I,"I Bluegrass WIB",W
-2121000J,"J Green River WIB",W
-2121000K,"K Barren River WIB",W
 2121060,"Elizabethtown-Fort Knox, KY",M
 2121780,"Evansville, IN-KY (KY part)",M
 2123180,"Frankfort, KY",M
@@ -3872,7 +3783,7 @@ geography,label,geo_level
 3516100,"Carlsbad-Artesia, NM",M
 3517580,"Clovis, NM",M
 3519700,"Deming, NM",M
-3521580,"EspaÃ±ola, NM",M
+3521580,"Española, NM",M
 3522140,"Farmington, NM",M
 3523700,"Gallup, NM",M
 3524380,"Grants, NM",M
@@ -4340,39 +4251,6 @@ geography,label,geo_level
 5640540,"Rock Springs, WY",M
 5643260,"Sheridan, WY",M
 5699999,"Nonmetropolitan, nonmicropolitan",M
-16160010,"01 North WIB",W
-16160020,"02 North Central WIB",W
-16160030,"03 Southwest WIB",W
-16160040,"04 South Central WIB",W
-16160050,"05 Southeast WIB",W
-16160060,"06 Northeast WIB",W
-19190001,"01 Region 1 - Dubuque WIB",W
-19190002,"02 Region 2 - Mason City WIB",W
-19190003,"03 Region 3 & 4 - Spencer WIB",W
-19190005,"05 Region 5 - Fort Dodge WIB",W
-19190006,"06 Region 6 - Marshalltown WIB",W
-19190007,"07 Region 7 - Waterloo WIB",W
-19190008,"08 Region 8 - Carroll WIB",W
-19190009,"09 Region 9 - Davenport WIB",W
-19190010,"10 Region 10 - Cedar Rapids WIB",W
-19190011,"11 Region 11 - Des Moines WIB",W
-19190012,"12 Region 12 - Sioux City WIB",W
-19190013,"13 Region 13 - Council Bluffs WIB",W
-19190014,"14 Region 14 - Creston WIB",W
-19190015,"15 Region 15 - Ottumwa WIB",W
-19190016,"16 Region 16 - Burlington WIB",W
-24001001,"01 Anne Arundel WIA",W
-24001002,"02 Baltimore County WIA",W
-24001003,"03 Baltimore City WIA",W
-24001004,"04 Frederick WIA",W
-24001005,"05 Lower Shore WIA",W
-24001006,"06 MID-Maryland WIA",W
-24001007,"07 Montgomery WIA",W
-24001008,"08 Prince Georges WIA",W
-24001009,"09 Southern Maryland WIA",W
-24001010,"10 Susquehanna WIA",W
-24001011,"11 Upper Shore WIA",W
-24001012,"12 Western Maryland WIA",W
 01010001,"North Alabama Works",W
 01010002,"East Alabama Works",W
 01010003,"West Alabama Works",W
@@ -4453,6 +4331,25 @@ geography,label,geo_level
 06000062,"62 SELACO (Southeast Los Angeles County) WIB",W
 06000072,"72 Anaheim City WIB",W
 06000073,"73 Santa Ana City WIB",W
+080800AD,"Adams WIB",W
+080800AR,"Arapahoe/Douglas WIB",W
+080800BO,"Boulder WIB",W
+080800BR,"Broomfield WIB",W
+080800DE,"Denver WIB",W
+080800EA,"Eastern WIB",W
+080800ET,"El Paso/Teller WIB",W
+080800LR,"Larimer WIB",W
+080800ME,"Mesa WIB",W
+080800NW,"Northwest WIB",W
+080800PB,"Pueblo WIB",W
+080800RR,"Rural Resort WIB",W
+080800SC,"South Central WIB",W
+080800SE,"Southeast WIB",W
+080800SW,"Southwest WIB",W
+080800TR,"Jefferson/Tri-County WIB",W
+080800UA,"Upper Arkansas WIB",W
+080800WE,"Western WIB",W
+080800WL,"Weld WIB",W
 09090001,"Eastern WIA",W
 09090002,"North Central WIA",W
 09090003,"Northwest WIA",W
@@ -4508,6 +4405,12 @@ geography,label,geo_level
 15150003,"03 Honolulu WIB",W
 15150007,"07 Kauai WIB",W
 15150009,"09 Maui WIB",W
+16160010,"01 North WIB",W
+16160020,"02 North Central WIB",W
+16160030,"03 Southwest WIB",W
+16160040,"04 South Central WIB",W
+16160050,"05 Southeast WIB",W
+16160060,"06 Northeast WIB",W
 17000001,"Lake County WIB",W
 17000002,"McHenry County WIB",W
 17000003,"Northern IL Workforce Alliance",W
@@ -4541,11 +4444,36 @@ geography,label,geo_level
 18180009,"Economic Growth Region 9",W
 18180010,"Economic Growth Region 10",W
 18180011,"Economic Growth Region 11",W
+19190001,"01 Region 1 - Dubuque WIB",W
+19190002,"02 Region 2 - Mason City WIB",W
+19190003,"03 Region 3 & 4 - Spencer WIB",W
+19190005,"05 Region 5 - Fort Dodge WIB",W
+19190006,"06 Region 6 - Marshalltown WIB",W
+19190007,"07 Region 7 - Waterloo WIB",W
+19190008,"08 Region 8 - Carroll WIB",W
+19190009,"09 Region 9 - Davenport WIB",W
+19190010,"10 Region 10 - Cedar Rapids WIB",W
+19190011,"11 Region 11 - Des Moines WIB",W
+19190012,"12 Region 12 - Sioux City WIB",W
+19190013,"13 Region 13 - Council Bluffs WIB",W
+19190014,"14 Region 14 - Creston WIB",W
+19190015,"15 Region 15 - Ottumwa WIB",W
+19190016,"16 Region 16 - Burlington WIB",W
 20200001,"01 Local Area I - Western WIB",W
 20200002,"02 Local Area II - Northeast WIB",W
 20200003,"03 Local Area III - Kansas City Area WIB",W
 20200004,"04 Local Area IV - South Central WIB",W
 20200005,"05 Local Area V - Southeast WIB",W
+2121000A,"A Purchase/Pennyrile WIB",W
+2121000B,"B Lincoln Trail WIB",W
+2121000C,"C Greater Louisville WIB",W
+2121000E,"E Northern Kentucky WIB",W
+2121000F,"F Tenco WIB",W
+2121000G,"G Ekcep WIB",W
+2121000H,"H Cumberlands WIB",W
+2121000I,"I Bluegrass WIB",W
+2121000J,"J Green River WIB",W
+2121000K,"K Barren River WIB",W
 22220005,"East Baton Rouge Parish WIA",W
 22220015,"Jefferson Parish WIA",W
 22220025,"Orleans Parish WIA",W
@@ -4565,6 +4493,18 @@ geography,label,geo_level
 23000002,"02 Central/Western WIA",W
 23000003,"03 Six County Coastal WIA",W
 23000004,"04 Tri County Investment Board WIA",W
+24001001,"01 Anne Arundel WIA",W
+24001002,"02 Baltimore County WIA",W
+24001003,"03 Baltimore City WIA",W
+24001004,"04 Frederick WIA",W
+24001005,"05 Lower Shore WIA",W
+24001006,"06 MID-Maryland WIA",W
+24001007,"07 Montgomery WIA",W
+24001008,"08 Prince Georges WIA",W
+24001009,"09 Southern Maryland WIA",W
+24001010,"10 Susquehanna WIA",W
+24001011,"11 Upper Shore WIA",W
+24001012,"12 Western Maryland WIA",W
 25000001,"Berkshire County WIA",W
 25000002,"Franklin/Hampshire WIA",W
 25000003,"Hampden County WIA",W
@@ -4606,6 +4546,22 @@ geography,label,geo_level
 26000032,"Ottawa County Michigan Works!",W
 26000033,"Kent & Allegan Michigan Works!",W
 26000034,"South Central Michigan Works!",W
+27SDA010,"01 Northwest Minnesota WSA",W
+27SDA020,"02 Rural Minnesota CEP WSA",W
+27SDA030,"03 Northeast Minnesota WSA",W
+27SDA040,"04 City of Duluth WSA",W
+27SDA050,"05 Central Minnesota WSA",W
+27SDA060,"06 Southwest Minnesota WSA",W
+27SDA070,"07 South Central Minnesota WSA",W
+27SDA080,"08 Southeast Minnesota WSA",W
+27SDA090,"09 Hennepin/Carver WSA",W
+27SDA100,"10 City of Minneapolis WSA",W
+27SDA120,"12 Anoka County WSA",W
+27SDA140,"14 Dakota/Scott County WSA",W
+27SDA150,"15 Ramsey County WSA",W
+27SDA160,"16 Washington County WSA",W
+27SDA170,"17 Stearns/Benton WSA",W
+27SDA180,"18 Winona County WSA",W
 28280001,"01 Delta WIB",W
 28280002,"02 The Mississippi Partnership WIB",W
 28280003,"03 Southcentral Mississippi Works WIB",W
@@ -4763,6 +4719,29 @@ geography,label,geo_level
 41410007,"Rogue Valley WIA",W
 41410008,"Central Oregon/East Cascades WIA",W
 41410009,"Eastern Oregon WIA",W
+420CE175,"175 Central PA WIA",W
+420LV070,"070 Lehigh Valley WIA",W
+420NC125,"125 North Central WIA",W
+420NE055,"055 Lackawanna County WIA",W
+420NE075,"075 Luzerne-Schuylkill Counties WIA",W
+420NE135,"135 Pocono Counties WIA",W
+420NT130,"130 Northern Tier WIA",W
+420NW145,"145 West Central Job Partnership WIA",W
+420NW170,"170 Northwest WIA",W
+420SA100,"100 Southern Alleghenies WIA",W
+420SC180,"180 South Central WIA",W
+420SE015,"015 Berks County WIA",W
+420SE020,"020 Bucks County WIA",W
+420SE030,"030 Chester County WIA",W
+420SE035,"035 Delaware County WIA",W
+420SE060,"060 Lancaster County WIA",W
+420SE080,"080 Montgomery County WIA",W
+420SE090,"090 Philadelphia County WIA",W
+420SW005,"005 Allegheny County WIA",W
+420SW045,"045 Westmoreland/Fayette WIA",W
+420SW095,"095 City of Pittsburgh WIA",W
+420SW110,"110 Tri-County WIA",W
+420SW165,"165 Southwest Corner WIA",W
 44440001,"Workforce Solutions of Providence/Cranston",W
 44440002,"Workforce Partnership of Greater Rhode Island",W
 45000010,"10 Pendleton District W",W
@@ -4782,6 +4761,19 @@ geography,label,geo_level
 46460001,"Central Area WIB",W
 46460002,"East Area WIB",W
 46460003,"West Area WIB",W
+47LWIA01,"01 Local Workforce Investment Area",W
+47LWIA02,"02 Local Workforce Investment Area",W
+47LWIA03,"03 Local Workforce Investment Area",W
+47LWIA04,"04 Local Workforce Investment Area",W
+47LWIA05,"05 Local Workforce Investment Area",W
+47LWIA06,"06 Local Workforce Investment Area",W
+47LWIA07,"07 Local Workforce Investment Area",W
+47LWIA08,"08 Local Workforce Investment Area",W
+47LWIA09,"09 Local Workforce Investment Area",W
+47LWIA10,"10 Local Workforce Investment Area",W
+47LWIA11,"11 Local Workforce Investment Area",W
+47LWIA12,"12 Local Workforce Investment Area",W
+47LWIA13,"13 Local Workforce Investment Area",W
 48000001,"01 Panhandle WDA",W
 48000002,"02 South Plains WDA",W
 48000003,"03 North Texas WDA",W
@@ -4858,6 +4850,13 @@ geography,label,geo_level
 53000010,"10 Eastern Washington WIB",W
 53000011,"11 Benton-Franklin WIB",W
 53000012,"12 Spokane WIB",W
+5454WIA1,"01 Workforce Investment Area Region 1",W
+5454WIA2,"02 Workforce Investment Area Region 2",W
+5454WIA3,"03 Workforce Investment Area Region 3",W
+5454WIA4,"04 Workforce Investment Area Region 4",W
+5454WIA5,"05 Workforce Investment Area Region 5",W
+5454WIA6,"06 Workforce Investment Area Region 6",W
+5454WIA7,"07 Workforce Investment Area Region 7",W
 55550015,"015 Milwaukee WDA",W
 55550030,"030 Southeast WDA",W
 55550040,"040 Northwest WDA",W
@@ -5120,7 +5119,7 @@ geography,label,geo_level
 31860,"Mankato-North Mankato, MN",B
 31900,"Mansfield, OH",B
 31999,"Not in metropolitan area, NE",B
-32420,"MayagÃ¼ez, PR",B
+32420,"Mayagüez, PR",B
 32580,"McAllen-Edinburg-Mission, TX",B
 32780,"Medford, OR",B
 32820,"Memphis, TN-MS-AR",B
@@ -5220,7 +5219,7 @@ geography,label,geo_level
 41700,"San Antonio-New Braunfels, TX",B
 41740,"San Diego-Carlsbad, CA",B
 41860,"San Francisco-Oakland-Hayward, CA",B
-41900,"San GermÃ¡n, PR",B
+41900,"San Germán, PR",B
 41940,"San Jose-Sunnyvale-Santa Clara, CA",B
 41980,"San Juan-Carolina-Caguas, PR",B
 41999,"Not in metropolitan area, OR",B

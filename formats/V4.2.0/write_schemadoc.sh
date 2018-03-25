@@ -464,17 +464,22 @@ done
 	head -50 $nsfile | tail -8  >> tmp.csv
 
 	# construct the composite file from separate files
+	# we clean up line endings at the same time
+	[[ -f tmp3.csv ]] && rm tmp3.csv
 	head -1 label_geography_us.csv > label_geography.csv
-	for arg in $(ls label_geography_*.csv | grep -vE "cbsa|metro")
+	for arg in $(ls label_geography_*.csv | grep -vE "cbsa")
 	do
-		# we clean up line endings at the same time
 	  tail -n +2 $arg | unix2dos | dos2unix >> tmp3.csv
 	done
-	# split sorting
-	grep -vE ",W$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
-	grep -E ",W$" tmp3.csv | sort     -k 1 -t , >> label_geography.csv
-	# now add the metro file
-	tail -n +2 label_geography_metro.csv >> label_geography.csv
+	# split sorting: N, S, C, M, W, B
+	grep -E ",N$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",S$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",C$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",M$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",W$" tmp3.csv | sort    -k 1 -t , >> label_geography.csv
+	grep -E ",B$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+  # we check that we have the same numbers
+	
 	# convert to UTF-8
 	iconv -t UTF-8 -f ISO-8859-15 label_geography.csv  > tmp3.csv
 	mv tmp3.csv label_geography.csv
