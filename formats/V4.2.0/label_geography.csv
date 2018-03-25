@@ -1853,7 +1853,7 @@ geography,label,geo_level
 35007,"Colfax, NM",C
 35009,"Curry, NM",C
 35011,"De Baca, NM",C
-35013,"Doña Ana, NM",C
+35013,"DoÃ±a Ana, NM",C
 35015,"Eddy, NM",C
 35017,"Grant, NM",C
 35019,"Guadalupe, NM",C
@@ -3298,7 +3298,7 @@ geography,label,geo_level
 0699999,"Nonmetropolitan, nonmicropolitan",M
 0814500,"Boulder, CO",M
 0814720,"Breckenridge, CO",M
-0815860,"Cañon City, CO",M
+0815860,"CaÃ±on City, CO",M
 0817820,"Colorado Springs, CO",M
 0818780,"Craig, CO",M
 0819740,"Denver-Aurora-Lakewood, CO",M
@@ -3783,7 +3783,7 @@ geography,label,geo_level
 3516100,"Carlsbad-Artesia, NM",M
 3517580,"Clovis, NM",M
 3519700,"Deming, NM",M
-3521580,"Española, NM",M
+3521580,"EspaÃ±ola, NM",M
 3522140,"Farmington, NM",M
 3523700,"Gallup, NM",M
 3524380,"Grants, NM",M
@@ -5119,7 +5119,7 @@ geography,label,geo_level
 31860,"Mankato-North Mankato, MN",B
 31900,"Mansfield, OH",B
 31999,"Not in metropolitan area, NE",B
-32420,"Mayagüez, PR",B
+32420,"MayagÃ¼ez, PR",B
 32580,"McAllen-Edinburg-Mission, TX",B
 32780,"Medford, OR",B
 32820,"Memphis, TN-MS-AR",B
@@ -5219,7 +5219,7 @@ geography,label,geo_level
 41700,"San Antonio-New Braunfels, TX",B
 41740,"San Diego-Carlsbad, CA",B
 41860,"San Francisco-Oakland-Hayward, CA",B
-41900,"San Germán, PR",B
+41900,"San GermÃ¡n, PR",B
 41940,"San Jose-Sunnyvale-Santa Clara, CA",B
 41980,"San Juan-Carolina-Caguas, PR",B
 41999,"Not in metropolitan area, OR",B
