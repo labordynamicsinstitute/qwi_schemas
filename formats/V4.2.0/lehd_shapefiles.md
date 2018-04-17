@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-26 January 2018
+17 April 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
@@ -302,4 +302,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Fri Jan 26 11:05:13 EST 2018
+This revision: Tue Apr 17 17:55:07 EDT 2018

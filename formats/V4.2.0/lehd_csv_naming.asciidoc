@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.2.0 - CSV Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-26 January 2018
+17 April 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -204,6 +204,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2017-12-15: Initial release
+- 2018-03-23: Fix EOL issues
 
 === Version 4.2.0 from 4.1.3
 - Updated industry classification from NAICS 2012 to NAICS 2017
@@ -224,6 +225,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Fri Jan 26 11:04:59 EST 2018
+This revision: Tue Apr 17 17:54:57 EDT 2018
 *******************
 
