@@ -479,10 +479,10 @@ done
 	grep -E ",W$" tmp3.csv | sort    -k 1 -t , >> label_geography.csv
 	grep -E ",B$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
   # we check that we have the same numbers
-	
+
 	# convert to UTF-8
-	iconv -t UTF-8 -f ISO-8859-15 label_geography.csv  > tmp3.csv
-	mv tmp3.csv label_geography.csv
+	#iconv -t UTF-8 -f ISO-8859-15 label_geography.csv  > tmp3.csv
+	#mv tmp3.csv label_geography.csv
 	rm tmp3.csv
 
   echo "=== [[geography]]$name ===
