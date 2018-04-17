@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.2.0
 Lars Vilhuber <lars.vilhuber@cornell.edu>
-26 January 2018
+25 March 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -606,13 +606,13 @@ Sex by Age tabulations
 for No firm size or age detail
 (obtained from https://lehd.ces.census.gov/pub/mo/R2017Q3/DVD-sa_f//version_sa_f.txt[here]) has  the following content:
 --------------------------------
-QWISA_F MO 29 1995:1-2016:4 V4.1.2 R2017Q3 qwipu_mo_20170928_1714
+
 --------------------------------
 Similarly, the metadata for the R2017Q3 release of
 Missouri J2J
 tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2017Q3/j2j/mo//version_j2j.txt[here]) has  the following content:
 --------------------------------
-J2J MO 29 2000:2-2016:3 V4.2b-draft R2017Q3 j2jpu_mo_20171023_1412
+
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
 
@@ -651,6 +651,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2017-12-15: Initial release
+- 2018-03-23: Fix EOL issues
 
 === Version 4.2.0 from 4.1.3
 - Updated industry classification from NAICS 2012 to NAICS 2017
@@ -666,6 +667,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Fri Jan 26 11:05:03 EST 2018
+This revision: Sun Mar 25 09:08:48 EDT 2018
 *******************
 
