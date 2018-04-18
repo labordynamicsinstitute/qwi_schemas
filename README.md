@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597959.svg)](https://doi.org/10.5281/zenodo.597959)
+
 # QWI Experimental Schemas
 Experimental QWIPU Schema files, that may or may not later be incorporated into public-use [QWI](http://lehd.ces.census.gov/data) file and content specifications.
 
