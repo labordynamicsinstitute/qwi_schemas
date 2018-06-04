@@ -4,6 +4,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 === This version (revisions)
 - 2017-12-15: Initial release
 - 2018-03-23: Fix EOL issues
+- 2018-06-04: Additional EOL issues
 
 === Version 4.2.0 from 4.1.3
 - Updated industry classification from NAICS 2012 to NAICS 2017
