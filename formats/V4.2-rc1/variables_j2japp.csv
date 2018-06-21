@@ -1,5 +1,0 @@
-Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
-J2J,j2j_doma2,sJ2J,Job-to-Job Flows,Job flows with a short or no observed nonemployment spell,Count,Hire,1
-J2JS,fj2j_doma2,sJ2JS,Stable Job-to-Job Flows,Job flows from stable employment into stable employment with a short or no observed nonemployment spell,Count,Hire,1
-J2JSEarn_Orig,fj2j_doma2_jfqearn,sJ2JSEarn_Orig,Average Earnings prior to Job-to-Job Flows ,Average quarterly earnings prior to job flows with a short or no observed nonemployment spell,Dollars,Earnings,J2JS
-J2JSEarn_Dest,fj2j_doma2_kfqearn,sJ2JSEarn_Dest,Average Earnings following Job-to-Job Flows,Average quarterly earnings following job flows with a short or no observed nonemployment spell,Dollars,Earnings,J2JS
