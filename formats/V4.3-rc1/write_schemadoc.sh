@@ -39,8 +39,8 @@ asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
 versionvintage=R2018Q1
 versionstate=de
-versionurl=https://lehd.ces.census.gov/data/qwi/$versionstate/$versionvintage/
-versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate/
+versionurl=https://lehd.ces.census.gov/data/qwi/$versionstate/$versionvintage
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate
 
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
