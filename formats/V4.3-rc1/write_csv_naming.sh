@@ -36,7 +36,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 
 # create ascii doc version
 asciifile=lehd_csv_naming.asciidoc
-echo "= LEHD Public Use CSV Naming Schema $numversion - CSV Naming Convention"> $asciifile
+echo "= LEHD Public Use  Schema $numversion - File and Directory Naming Convention"> $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"

@@ -1,4 +1,4 @@
-= LEHD Public Use CSV Naming Schema V4.3-rc1 - CSV Naming Convention
+= LEHD Public Use  Schema V4.3-rc1 - File and Directory Naming Convention
 Lars Vilhuber <lars.vilhuber@cornell.edu>
 25 June 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
@@ -235,6 +235,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Jun 25 15:02:52 EDT 2018
+This revision: Mon Jun 25 15:14:36 EDT 2018
 *******************
 
