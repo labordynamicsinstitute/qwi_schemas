@@ -21,7 +21,7 @@ asciidoc.install(2);
 <h1>LEHD Public Use CSV Naming Schema V4.3-rc1 - CSV Naming Convention</h1>
 <span id="author">Lars Vilhuber</span><br />
 <span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">21 June 2018</span>
+<span id="revdate">25 June 2018</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -54,7 +54,7 @@ Feedback is welcome. Please write us at
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
-<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files.</p></div>
+<div class="paragraph"><p>This document describes the file and directory naming schema for LEHD-provided CSV files.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -77,13 +77,13 @@ The contents (schema) for shapefiles are described in <a href="lehd_shapefiles.h
 </div>
 </div>
 <div class="sect1">
-<h2 id="_basic_schema">5. Basic Schema</h2>
+<h2 id="_basic_filename_schema">5. Basic Filename Schema</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
 some other identifier.</p></div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre><code>[TYPE]_[DETAILS].[EXT]</code></pre>
+<pre><code> [TYPE]_[DETAILS].[EXT]</code></pre>
 </div></div>
 <div class="paragraph"><p>( <a href="naming_convention.csv">naming_convention.csv</a> )</p></div>
 <div class="tableblock">
@@ -133,16 +133,16 @@ cellspacing="0" cellpadding="4">
 <div class="sect2">
 <h3 id="_qwipu_from_the_led_extraction_tool">5.1. QWIPU from the LED Extraction Tool</h3>
 <div class="paragraph"><p>Files downloaded through the  LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a> follow the following naming convention:</p></div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre><code>[type]_[id].[EXT]</code></pre>
+<pre><code> [type]_[id].[EXT]</code></pre>
 </div></div>
 <div class="paragraph"><p>where <code>[id]</code> is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.</p></div>
 </div>
 <div class="sect2">
 <h3 id="_a_id_versionqwi_a_metadata_for_qwi_and_j2j_data_files_version_txt">5.2. <a id="versionqwi"></a>Metadata for QWI and J2J data files (version.txt)</h3>
 <div class="paragraph"><p>Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:</p></div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
 <pre><code>version_[type].txt</code></pre>
 </div></div>
@@ -152,7 +152,7 @@ cellspacing="0" cellpadding="4">
 <h3 id="_a_id_version_j2jod_a_metadata_for_j2jod_files">5.3. <a id="version_j2jod"></a>Metadata for J2JOD files</h3>
 <div class="paragraph"><p>Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
 These files follow the following naming convention:</p></div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
 <pre><code>j2jod_[geography]_avail.csv</code></pre>
 </div></div>
@@ -161,23 +161,45 @@ These files follow the following naming convention:</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_components_a_description_of_filename_components">6. <a id="components"></a>Description of Filename Components</h2>
+<h2 id="_a_id_paths_a_directory_paths">6. <a id="paths"></a>Directory Paths</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Downloadable data files are organized on the download server (at the time of this writing: <a href="https://lehd.ces.census.gov/data/">https://lehd.ces.census.gov/data/</a>) in directories organized as follows:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code> SERVER/data/[PRODUCT]/[RELEASE]/[GEOHI][ /[TYPE] ]/{files}</code></pre>
+</div></div>
+<div class="paragraph"><p>where [<a href="#products">PRODUCT</a>], [<a href="#release">RELEASE</a>], [<a href="#geohi">GEOHI</a>], and [<a href="#types">TYPE</a>] are each described below. [<a href="#types">TYPE</a>] is optional.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_components_a_description_of_naming_components">7. <a id="components"></a>Description of Naming Components</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_types">6.1. Types</h3>
+<h3 id="_a_id_release_a_release">7.1. <a id="release"></a>Release</h3>
+<div class="paragraph"><p>A <strong>release</strong> is defined by the calendar year quarter when data production occurs. It is thus generically constructed as</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code> R[YEAR]Q[QUARTER]</code></pre>
+</div></div>
+<div class="paragraph"><p>where <code>[YEAR]</code> is the 4-digit year and <code>[QUARTER]</code> the single-digit calendar year quarter (1-4).</p></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_types_a_types_and_a_id_products_a_products">7.2. <a id="types"></a>Types and <a id="products"></a>Products</h3>
 <div class="paragraph"><p>( <a href="naming_type.csv">naming_type.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
 width="90%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<col width="8%" />
-<col width="25%" />
-<col width="41%" />
-<col width="25%" />
+<col width="7%" />
+<col width="7%" />
+<col width="23%" />
+<col width="38%" />
+<col width="23%" />
 <thead>
 <tr>
 <th align="center" valign="top">type</th>
+<th align="left" valign="top">product</th>
 <th align="left" valign="top">Description</th>
 <th align="left" valign="top">Explanation</th>
 <th align="left" valign="top">url</th>
@@ -186,66 +208,75 @@ cellspacing="0" cellpadding="4">
 <tbody>
 <tr>
 <td align="center" valign="top"><p class="table">j2j</p></td>
+<td align="left" valign="top"><p class="table">j2j</p></td>
 <td align="left" valign="top"><p class="table">Job-to-Job Flows Counts (J2J)</p></td>
 <td align="left" valign="top"><p class="table">Counts of hires and separations, to and from employment and non-employment, summed across all establishments</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#j2j">http://lehd.ces.census.gov/data/#j2j</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">j2jod</p></td>
+<td align="left" valign="top"><p class="table">j2j</p></td>
 <td align="left" valign="top"><p class="table">Job-to-Job Flows Origin-Destination</p></td>
 <td align="left" valign="top"><p class="table">Origin and destination flows and earnings, tabulated by the destination establishment</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#j2j">http://lehd.ces.census.gov/data/#j2j</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">j2jr</p></td>
+<td align="left" valign="top"><p class="table">j2j</p></td>
 <td align="left" valign="top"><p class="table">Job-to-Job Flows Rates</p></td>
 <td align="left" valign="top"><p class="table">Hiring and separation rates, to and from employment and nonemployment, summed across all establishments</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#j2j">http://lehd.ces.census.gov/data/#j2j</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">lodes</p></td>
+<td align="left" valign="top"><p class="table">lodes</p></td>
 <td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES)</p></td>
 <td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#lodes">http://lehd.ces.census.gov/data/#lodes</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">qwi</p></td>
+<td align="left" valign="top"><p class="table">qwi</p></td>
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Counts (QWIPU)</p></td>
 <td align="left" valign="top"><p class="table">The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).</p></td>
 <td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">qwir</p></td>
+<td align="left" valign="top"><p class="table">qwi</p></td>
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Rates</p></td>
 <td align="left" valign="top"><p class="table">Rates for flow variables in the Quarterly Workforce Indicators (QWI)</p></td>
 <td align="left" valign="top"><p class="table">tbd</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">qwirv</p></td>
+<td align="left" valign="top"><p class="table">qwi</p></td>
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures for Rates</p></td>
 <td align="left" valign="top"><p class="table">Variability measures for rates in the Quarterly Workforce Indicators (QWI)</p></td>
 <td align="left" valign="top"><p class="table">tbd</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">qwiv</p></td>
+<td align="left" valign="top"><p class="table">qwi</p></td>
 <td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures</p></td>
 <td align="left" valign="top"><p class="table">Variability measures for Quarterly Workforce Indicators (QWI)</p></td>
 <td align="left" valign="top"><p class="table">tbd</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p class="table">lehd_shp</p></td>
+<td align="left" valign="top"><p class="table">all</p></td>
 <td align="left" valign="top"><p class="table">LEHD Shapefiles</p></td>
 <td align="left" valign="top"><p class="table">Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer</p></td>
-<td align="left" valign="top"><p class="table">lehd_shapefiles.html</p></td>
+<td align="left" valign="top"><p class="table"><a href="lehd_shapefiles.html">lehd_shapefiles.html</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geohi">6.2. geohi</h3>
+<h3 id="_a_id_geohi_a_geohi">7.3. <a id="geohi"></a>geohi</h3>
 <div class="paragraph"><p>( <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></div>
-<div class="paragraph"><p>The geohi component is based on one of two possible code sets:</p></div>
+<div class="paragraph"><p>The geohi component in <strong>filenames</strong> is based on one of two possible code sets:</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -263,6 +294,7 @@ It is expanded to encompass additional codes denoting national coverage, or a co
 </p>
 </li>
 </ul></div>
+<div class="paragraph"><p>For <strong>directories</strong>, files at the CBSA level are collected under a single <strong>metro</strong> directory.</p></div>
 <div class="tableblock">
 <table rules="all"
 width="60%"
@@ -286,11 +318,15 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">National data (50 states + DC)</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">st</p></td>
+<td align="center" valign="top"><p class="table">metro</p></td>
+<td align="left" valign="top"><p class="table">Indicates collection of CBSA-level files (<strong>directory names only</strong>)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table"><code>[st]</code></p></td>
 <td align="left" valign="top"><p class="table">Any legal 2-character lower-case state postal code</p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p class="table">NNNNN</p></td>
+<td align="center" valign="top"><p class="table"><code>[NNNNN]</code></p></td>
 <td align="left" valign="top"><p class="table">Any valid CBSA-derived code listed in <a href="label_geography_metro.csv">label_geography_metro.csv</a></p></td>
 </tr>
 </tbody>
@@ -298,7 +334,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_demo">6.3. demo</h3>
+<h3 id="_demo">7.4. demo</h3>
 <div class="paragraph"><p>( <a href="naming_demo.csv">naming_demo.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -340,7 +376,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_fas">6.4. fas</h3>
+<h3 id="_fas">7.5. fas</h3>
 <div class="paragraph"><p>( <a href="naming_fas.csv">naming_fas.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -374,7 +410,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_geocat">6.5. geocat</h3>
+<h3 id="_geocat">7.6. geocat</h3>
 <div class="paragraph"><p>( <a href="naming_geocat.csv">naming_geocat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -420,7 +456,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_indcat">6.6. indcat</h3>
+<h3 id="_indcat">7.7. indcat</h3>
 <div class="paragraph"><p>( <a href="naming_indcat.csv">naming_indcat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -458,7 +494,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_owncat">6.7. owncat</h3>
+<h3 id="_owncat">7.8. owncat</h3>
 <div class="paragraph"><p>( <a href="naming_owncat.csv">naming_owncat.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -492,7 +528,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_sa">6.8. sa</h3>
+<h3 id="_sa">7.9. sa</h3>
 <div class="paragraph"><p>( <a href="naming_sa.csv">naming_sa.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -522,7 +558,7 @@ cellspacing="0" cellpadding="4">
 <div style="page-break-after:always"></div>
 </div>
 <div class="sect2">
-<h3 id="_ext">6.9. ext</h3>
+<h3 id="_ext">7.10. ext</h3>
 <div class="paragraph"><p>( <a href="naming_ext.csv">naming_ext.csv</a> )</p></div>
 <div class="tableblock">
 <table rules="all"
@@ -562,11 +598,11 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_a_id_changes_a_changes">7. <a id="changes"></a> Changes</h2>
+<h2 id="_a_id_changes_a_changes">8. <a id="changes"></a> Changes</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>For a description of how schema files are versioned, see <a href="../VERSIONING.html">main directory</a>.</p></div>
 <div class="sect2">
-<h3 id="_this_version_revisions">7.1. This version (revisions)</h3>
+<h3 id="_this_version_revisions">8.1. This version (revisions)</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -576,7 +612,7 @@ cellspacing="0" cellpadding="4">
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_3_0_from_4_2_0">7.2. Version 4.3.0 from 4.2.0</h3>
+<h3 id="_version_4_3_0_from_4_2_0">8.2. Version 4.3.0 from 4.2.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -585,7 +621,7 @@ Changed the format of the version.txt file. This does not affect data files, but
 </li>
 <li>
 <p>
-Changed the description of the download locations of the QWI files.
+Changed the description of the download locations of the QWI files, as part of the "naming" schema.
 </p>
 </li>
 </ul></div>
@@ -603,7 +639,7 @@ Changed the description of the download locations of the QWI files.
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Thu Jun 21 17:25:15 EDT 2018</p></div>
+<div class="paragraph"><p>This revision: Mon Jun 25 15:02:52 EDT 2018</p></div>
 </div></div>
 </div>
 </div>
@@ -613,7 +649,7 @@ Changed the description of the download locations of the QWI files.
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2018-06-21 17:25:15 EDT
+ 2018-06-25 15:02:52 EDT
 </div>
 </div>
 </body>

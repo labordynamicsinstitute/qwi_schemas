@@ -90,7 +90,7 @@ and Job-to-Job Flows (J2J), are available for download with the following data s
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
 http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
 
-This document describes the file naming schema for LEHD-provided CSV files.
+This document describes the file and directory naming schema for LEHD-provided CSV files.
 
 Schema for Data File Contents
 -----------------------------
@@ -107,15 +107,15 @@ Supersedes
 This version supersedes V4.2, for files released as of R2018Q3
 
 
-Basic Schema
-------------
+Basic Filename Schema
+---------------------
 
 All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
 some other identifier.
 
--------------------
-[TYPE]_[DETAILS].[EXT]
--------------------
+....................................
+ [TYPE]_[DETAILS].[EXT]
+....................................
 
 ( link:naming_convention.csv[] )
 " >> $asciifile
@@ -132,17 +132,17 @@ include::tmp_naming_convention.csv[]
 
 === QWIPU from the LED Extraction Tool
 Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
-------------------------------------
-[type]_[id].[EXT]
-------------------------------------
+....................................
+ [type]_[id].[EXT]
+....................................
 where +[id]+ is the Request ID (a unique string of characters) generated every time ``Submit Request'' is clicked. The ID references each query submission made to the database.
 
 
 === [[versionqwi]]Metadata for QWI and J2J data files (version.txt)
 Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
---------------------------------
+....................................
 $(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
---------------------------------
+....................................
 where each name component is described in more detail <<components,below>>.
 
 
@@ -150,24 +150,44 @@ where each name component is described in more detail <<components,below>>.
 === [[version_j2jod]]Metadata for J2JOD files
 Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
 These files follow the following naming convention:
---------------------------------
+....................................
 $(awk -F, ' NR ==  6 { print $1 }' naming_convention.csv  )
---------------------------------
+....................................
 where each name component is described in more detail <<components,below>>.
 
 
 " >> $asciifile
 
 
-#########################3 Types
+######################### Types
 echo "
-== [[components]]Description of Filename Components
+== [[paths]]Directory Paths
+Downloadable data files are organized on the download server (at the time of this writing: https://lehd.ces.census.gov/data/) in directories organized as follows:
 
-=== Types
+....................................
+ SERVER/data/[PRODUCT]/[RELEASE]/[GEOHI][ /[TYPE] ]/{files}
+....................................
+
+where [<<products,PRODUCT>>], [<<release,RELEASE>>], [<<geohi,GEOHI>>], and [<<types,TYPE>>] are each described below. [<<types,TYPE>>] is optional.
+
+
+== [[components]]Description of Naming Components
+
+=== [[release]]Release
+
+A *release* is defined by the calendar year quarter when data production occurs. It is thus generically constructed as
+
+....................................
+ R[YEAR]Q[QUARTER]
+....................................
+
+where +[YEAR]+ is the 4-digit year and +[QUARTER]+ the single-digit calendar year quarter (1-4).
+
+=== [[types]]Types and [[products]]Products
 
 ( link:naming_type.csv[] )
 
-[width=\"90%\",format=\"csv\",delim=\";\",cols=\"^1,<3,<5,<3\",options=\"header\"]
+[width=\"90%\",format=\"csv\",delim=\";\",cols=\"^1,<1,<3,<5,<3\",options=\"header\"]
 |===================================================
 include::naming_type.csv[]
 |===================================================
@@ -177,22 +197,25 @@ include::naming_type.csv[]
 # start with fips postal
 name=geohi
   arg=naming_$name.csv
-  echo "=== $name
+  echo "=== [[$name]]$name
 ( link:${arg}[] )
 
-The $name component is based on one of two possible code sets:
+The $name component in *filenames* is based on one of two possible code sets:
 
 - the lower-case alphabetic FIPS or postal state code based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2] (see also link:label_stusps.csv[] for upper-case variants).
 - the numeric CBSA code corresponding to the metropolitan areas (see link:label_geography_metro.csv[])
 - It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+
+For *directories*, files at the CBSA level are collected under a single *metro* directory.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
 type,Description
 $(egrep "^all" $arg)
 $(egrep "^us" $arg)
-st,Any legal 2-character lower-case state postal code
-NNNNN,Any valid CBSA-derived code listed in link:label_geography_metro.csv[]
+metro,Indicates collection of CBSA-level files (*directory names only*)
++[st]+,Any legal 2-character lower-case state postal code
++[NNNNN]+,Any valid CBSA-derived code listed in link:label_geography_metro.csv[]
 |===================================================
 " >> $asciifile
 
