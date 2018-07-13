@@ -37,7 +37,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
-versionvintage=R2018Q1
+versionvintage=R2018Q3
 versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/$versionstate/$versionvintage
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate
@@ -672,9 +672,9 @@ $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed '
 # During the RC phase, this won't work, since it is not published yet
 #$(curl $versionurl/version_qwi.txt)
 echo "
-QWI_F DE 10 1998:3-2017:3 V4.3.0 R2018Q2 qwipu_de_20180701_1003
-QWI_FA DE 10 1998:3-2017:2 V4.1.3 R2018Q2 qwipu_de_20180701_1003
-QWI_FS DE 10 1998:3-2017:2 V4.1.3 R2018Q2 qwipu_de_20180701_1003
+QWI_F DE 10 1998:3-2017:4 V4.3.0 R2018Q3 qwipu_de_20180701_1003
+QWI_FA DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003
+QWI_FS DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003
 --------------------------------
 Similarly, the metadata for the $versionvintage release of
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') J2J
