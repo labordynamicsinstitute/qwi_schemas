@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-****** LEHD Public Use Schema V4.3-rc1 - File and Directory Naming Convention
+****** LEHD Public Use Schema V4.3.0 - File and Directory Naming Convention
 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
-25 June 2018
+13 July 2018
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -233,6 +233,6 @@ For a description of how schema files are versioned, see main_directory.
       part of the "naming" schema.
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Mon Jun 25 15:14:36 EDT 2018
+This revision: Fri Jul 13 09:46:27 EDT 2018
 ===============================================================================
-Last updated 2018-06-25 15:14:36 EDT
+Last updated 2018-07-13 09:46:27 EDT

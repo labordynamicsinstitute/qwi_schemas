@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-****** LEHD Public Use Data Schema V4.3-rc1 ******
+****** LEHD Public Use Data Schema V4.3.0 ******
 Lars Vilhuber
 <lars.vilhuber@cornell.edu>
 13 July 2018
@@ -1346,6 +1346,6 @@ For a description of how schema files are versioned, see main_directory.
       the minor version.
     * Changed the description of the download locations of the QWI files, as
       part of the "naming" schema.
-This revision: Fri Jul 13 09:44:52 EDT 2018
+This revision: Fri Jul 13 09:46:31 EDT 2018
 ===============================================================================
-Last updated 2018-07-13 09:44:52 EDT
+Last updated 2018-07-13 09:46:31 EDT
