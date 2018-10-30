@@ -1,6 +1,6 @@
-= LEHD Public Use  Schema V4.3.0 - File and Directory Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-13 July 2018
+= LEHD Public Use  Schema V4.3.1 - File and Directory Naming Convention
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+30 October 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -11,12 +11,9 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -221,7 +218,11 @@ include::naming_ext.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2018-06-25: Initial release
+- 2018-10-30: Initial release
+
+=== Version 4.3.1 from 4.3.0
+- 2018-10-30: Due to a change of the geographic boundaries for a WIB   in Iowa, the shape files need to be updated.
+- Adjust the "supersedes" definition to correctly reference the prior version.
 
 === Version 4.3.0 from 4.2.0
 - Changed the format of the version.txt file. This does not affect data files, but it does affect the metadata, and thus requires an increase in the minor version.
@@ -235,6 +236,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Fri Jul 13 09:46:27 EDT 2018
+This revision: Tue Oct 30 13:44:03 EDT 2018
 *******************
 

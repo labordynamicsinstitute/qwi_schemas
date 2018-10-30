@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc" />
-<title>LEHD Public Use Data Schema V4.3.0</title>
+<title>LEHD Public Use Data Schema V4.3.1</title>
 <link rel="stylesheet" href="./asciidoc.css" type="text/css" />
 
 
@@ -18,10 +18,10 @@ asciidoc.install(3);
 </head>
 <body class="article">
 <div id="header">
-<h1>LEHD Public Use Data Schema V4.3.0</h1>
+<h1>LEHD Public Use Data Schema V4.3.1</h1>
 <span id="author">Lars Vilhuber</span><br />
-<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
-<span id="revdate">13 July 2018</span>
+<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="revdate">30 October 2018</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -38,10 +38,7 @@ asciidoc.install(3);
 </td>
 <td class="content">
 <div class="title">Important</div>
-<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
-Feedback is welcome. Please write us at
-<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
 </td>
 </tr></table>
 </div>
@@ -74,7 +71,7 @@ with header variable definitions.  Changes relative to the original v4.0 version
 <div class="sect1">
 <h2 id="_supersedes">4. Supersedes</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>This version supersedes V4.1.0, for files released as of R2017Q1.</p></div>
+<div class="paragraph"><p>This version supersedes V4.2.0, for files released as of R2018Q3.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -4081,27 +4078,19 @@ cellspacing="0" cellpadding="4">
 </div>
 <div class="paragraph"><p>For instance, the metadata for the R2018Q3 QWI release of
 Delaware
-(obtained from <a href="https://lehd.ces.census.gov/data/qwi/de/R2018Q3/version_qwi.txt">here</a>) has  the following content:</p></div>
+(obtained from <a href="https://lehd.ces.census.gov/data/qwi/R2018Q3/de/version_qwi.txt">here</a>) has  the following content:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>QWI_F DE 10 1998:3-2017:4 V4.3.0 R2018Q3 qwipu_de_20180701_1003
-QWI_FA DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003
-QWI_FS DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003</code></pre>
+<pre><code>QWI_F DE 10 1998:3-2017:4 V4.3.0 R2018Q3 qwipu_de_20180813_1413
+QWI_FA DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180813_1413
+QWI_FS DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180813_1413</code></pre>
 </div></div>
-<div class="paragraph"><p>Similarly, the metadata for the R2018Q3 release of
+<div class="paragraph"><p>Similarly, the metadata for the R2018Q2 release of
 Delaware J2J
-tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/R2018Q3/j2j/de/version_j2j.txt">here</a>) has  the following content:</p></div>
+tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/R2018Q2/j2j/de/version_j2j.txt">here</a>) has  the following content:</p></div>
 <div class="listingblock">
 <div class="content">
-<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
-&lt;html&gt;&lt;head&gt;
-&lt;title&gt;404 Not Found&lt;/title&gt;
-&lt;/head&gt;&lt;body&gt;
-&lt;h1&gt;Not Found&lt;/h1&gt;
-&lt;p&gt;The requested URL /data/j2j/R2018Q3/j2j/de/version_j2j.txt was not found on this server.&lt;/p&gt;
-&lt;hr&gt;
-&lt;address&gt;Apache Server at lehd.ces.census.gov Port 80&lt;/address&gt;
-&lt;/body&gt;&lt;/html&gt;</code></pre>
+<pre><code>J2J DE 10 2000:2-2017:2 V4.2.0 R2018Q2 j2jpu_de_20180817_1654</code></pre>
 </div></div>
 <div class="paragraph"><p>Some J2J metadata may contain multiple lines, as necessary.</p></div>
 </div>
@@ -4235,13 +4224,28 @@ cellspacing="0" cellpadding="4">
 <div class="ulist"><ul>
 <li>
 <p>
-2018-06-25: Initial release
+2018-10-30: Initial release
 </p>
 </li>
 </ul></div>
 </div>
 <div class="sect2">
-<h3 id="_version_4_3_0_from_4_2_0">9.2. Version 4.3.0 from 4.2.0</h3>
+<h3 id="_version_4_3_1_from_4_3_0">9.2. Version 4.3.1 from 4.3.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2018-10-30: Due to a change of the geographic boundaries for a WIB   in Iowa, the shape files need to be updated.
+</p>
+</li>
+<li>
+<p>
+Adjust the "supersedes" definition to correctly reference the prior version.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_3_0_from_4_2_0">9.3. Version 4.3.0 from 4.2.0</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -4257,7 +4261,7 @@ Changed the description of the download locations of the QWI files, as part of t
 <div style="page-break-after:always"></div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>This revision: Fri Jul 13 09:46:31 EDT 2018</p></div>
+<div class="paragraph"><p>This revision: Tue Oct 30 13:50:26 EDT 2018</p></div>
 </div></div>
 </div>
 </div>
@@ -4267,7 +4271,7 @@ Changed the description of the download locations of the QWI files, as part of t
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2018-07-13 09:46:31 EDT
+ 2018-10-30 13:50:26 EDT
 </div>
 </div>
 </body>

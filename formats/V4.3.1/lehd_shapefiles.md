@@ -1,17 +1,13 @@
 = LEHD Public Use Shapefile Data
-Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
-13 July 2018
+Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
+30 October 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 ( [Printable version](lehd_shapefiles.pdf) )
 
 > **Important**
 >
-> This document is not an official Census Bureau publication. It is
-> compiled from publicly accessible information by Lars Vilhuber ([Labor
-> Dynamics Institute, Cornell
-> University](http://www.ilr.cornell.edu/ldi/)). Feedback is welcome.
-> Please write us at
-> [lars.vilhuber@cornell.edu](mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles).
+> This specification is draft. Feedback is welcome. Please write us at
+> [Patrick.Hayward@census.gov](mailto:Patrick.Hayward@census.gov?subject=LEHD_Shapefiles).
 
 Scope
 =====
@@ -302,4 +298,4 @@ V2.0.0](http://semver.org/spec/v2.0.0.html), which states that
 Changes
 =======
 
-This revision: Fri Jul 13 09:46:41 EDT 2018
+This revision: Tue Oct 30 13:44:18 EDT 2018
