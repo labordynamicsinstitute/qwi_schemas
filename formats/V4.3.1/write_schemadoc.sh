@@ -38,9 +38,11 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
 versionvintage=R2018Q3
+# versionj2jvintage=$versionvintage
+versionj2jvintage=R2018Q2
 versionstate=de
-versionurl=https://lehd.ces.census.gov/data/qwi/$versionstate/$versionvintage
-versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionvintage/j2j/$versionstate
+versionurl=https://lehd.ces.census.gov/data/qwi/$versionvintage/$versionstate
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionj2jvintage/j2j/$versionstate
 
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
@@ -107,7 +109,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.1.0, for files released as of R2017Q1.
+This version supersedes V4.2.0, for files released as of R2018Q3.
 
 Basic Schema
 ------------
@@ -670,13 +672,10 @@ $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed '
 --------------------------------
 " >> $asciifile
 # During the RC phase, this won't work, since it is not published yet
-#$(curl $versionurl/version_qwi.txt)
 echo "
-QWI_F DE 10 1998:3-2017:4 V4.3.0 R2018Q3 qwipu_de_20180701_1003
-QWI_FA DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003
-QWI_FS DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180701_1003
+$(curl $versionurl/version_qwi.txt)
 --------------------------------
-Similarly, the metadata for the $versionvintage release of
+Similarly, the metadata for the $versionj2jvintage release of
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') J2J
 tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
 --------------------------------
