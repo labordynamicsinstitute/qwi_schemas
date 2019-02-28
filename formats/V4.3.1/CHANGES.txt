@@ -3,6 +3,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2018-10-30: Initial release
+- 2019-02-28: Switch to different rendering engine, only stylistic changes
 
 === Version 4.3.1 from 4.3.0
 - 2018-10-30: Due to a change of the geographic boundaries for a WIB   in Iowa, the shape files need to be updated.

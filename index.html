@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>QWI schemas by labordynamicsinstitute</title>
+    <title>LEHD schemas by labordynamicsinstitute</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-          <h1>QWI schemas</h1>
-          <p>Experimenal QWIPU Schema files</p>
+          <h1>LEHD schemas</h1>
+          <p>Unofficial LEHD Schema files</p>
 
           <p class="view"><a href="https://github.com/labordynamicsinstitute/qwi_schemas">View the Project on GitHub <small>labordynamicsinstitute/qwi_schemas</small></a></p>
 
