@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.3.1
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-30 October 2018
+28 February 2019
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -610,7 +610,13 @@ Similarly, the metadata for the R2018Q2 release of
 Delaware J2J
 tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2018Q2/j2j/de/version_j2j.txt[here]) has  the following content:
 --------------------------------
-J2J DE 10 2000:2-2017:2 V4.2.0 R2018Q2 j2jpu_de_20180817_1654
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://lehd.ces.census.gov/data/j2j/R2018Q2/de/j2j/version_j2j.txt">here</a>.</p>
+</body></html>
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
 
@@ -661,6 +667,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Tue Oct 30 13:50:26 EDT 2018
+This revision: Thu Feb 28 19:15:07 UTC 2019
 *******************
 

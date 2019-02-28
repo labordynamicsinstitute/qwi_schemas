@@ -1,7 +1,6 @@
 = LEHD Public Use  Schema V4.3.1 - File and Directory Naming Convention
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-30 October 2018
-// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+28 February 2019
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -236,6 +235,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Oct 30 13:44:03 EDT 2018
+This revision: Thu Feb 28 19:15:04 UTC 2019
 *******************
 

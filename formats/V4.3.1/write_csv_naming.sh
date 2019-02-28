@@ -39,7 +39,6 @@ asciifile=lehd_csv_naming.asciidoc
 echo "= LEHD Public Use  Schema $numversion - File and Directory Naming Convention"> $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 :ext-relative: {outfilesuffix}
 
 ( link:$(basename $asciifile .asciidoc).pdf[Printable version] )
@@ -253,11 +252,11 @@ This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.html $asciifile
+asciidoctor -b html5 -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.html $asciifile
 echo "$(basename $asciifile .asciidoc).html created"
-a2x -f pdf -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.pdf $asciifile
+asciidoctor-pdf -a pdf-page-size=letter -a icons -a toc -a numbered -a linkcss -a outfilesuffix=.pdf $asciifile
 echo "$(basename $asciifile .asciidoc).pdf created"
-html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
-echo "$(basename $asciifile .asciidoc).txt created"
+#html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
+#echo "$(basename $asciifile .asciidoc).txt created"
 echo "Deleting tmp files"
 rm tmp*
