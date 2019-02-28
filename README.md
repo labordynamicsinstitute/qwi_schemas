@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.com/labordynamicsinstitute/qwi_schemas.svg?branch=master)](https://travis-ci.com/labordynamicsinstitute/qwi_schemas)
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597959.svg)](https://doi.org/10.5281/zenodo.597959)
 
-# QWI Experimental Schemas
-Experimental QWIPU Schema files, that may or may not later be incorporated into public-use [QWI](http://lehd.ces.census.gov/data) file and content specifications.
+## LEHD Experimental Schemas
+Experimental LEHD Schema files, that may or may not later be incorporated into public-use [LEHD](http://lehd.ces.census.gov/data) file and content specifications. Currently covers QWI, J2J, and shapefiles.
 
 These are NOT official publication standards of any agency. However, they may turn out to be useful.
 

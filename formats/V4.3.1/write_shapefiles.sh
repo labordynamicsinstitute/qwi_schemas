@@ -42,7 +42,6 @@ asciifile=${basefile}.asciidoc
 echo "= LEHD Public Use Shapefile Data" > $asciifile
 echo "Heath Hayward, Matthew Graham, Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
 
@@ -82,7 +81,7 @@ link:mailto:${author}?subject=LEHD_Shapefiles[${author}].
 # Extract ASCIIDOC payload from this script
 function untar_payload()
 {
-	match=$(grep --text --line-number '^PAYLOAD:$' $0 | cut -d ':' -f 1)
+	match=$(grep -n '^PAYLOAD:$' $0 | cut -d ':' -f 1)
 	payload_start=$((match + 1))
 	tail -n +$payload_start $0
 }
@@ -97,20 +96,20 @@ This revision: $(date)
 *******************
 " >> $asciifile
 echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfilesuffix=.html $asciifile
+asciidoctor -b html5 -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfilesuffix=.html $asciifile
 [[ -f ${basefile}.html  ]] && echo "${basefile}.html created"
-a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
+asciidoctor-pdf -a pdf-page-size=letter  -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
 [[ -f ${basefile}.pdf  ]] && echo "${basefile}.pdf created"
-a2x -f docbook -a icons -a toc -a numbered -a outfilesuffix=.md  $asciifile
-[[ -f ${basefile}.xml  ]] || echo "Error: ${basefile}.xml not created"
+#a2x -f docbook -a icons -a toc -a numbered -a outfilesuffix=.md  $asciifile
+#[[ -f ${basefile}.xml  ]] || echo "Error: ${basefile}.xml not created"
 # workaround for missing title
-head -4 $asciifile > ${basefile}.md
-pandoc -t markdown_strict -f docbook ${basefile}.xml >> ${basefile}.md
-[[ -f ${basefile}.md  ]] && echo "${basefile}.md created"
+#head -4 $asciifile > ${basefile}.md
+#pandoc -t markdown_strict -f docbook ${basefile}.xml >> ${basefile}.md
+#[[ -f ${basefile}.md  ]] && echo "${basefile}.md created"
 echo "Removing tmp files and $asciifile"
 #rm tmp*
 #rm $asciifile
-rm ${basefile}.xml
+#rm ${basefile}.xml
 exit 0
 #
 # ==================== end of script
