@@ -20,7 +20,7 @@ after_success:
   - \rm -rf .git
   - git init
   - git config user.name "${GH_USER_NAME}"
-  - git config user.email "{GH_USER_EMAIL}"
+  - git config user.email "${GH_USER_EMAIL}"
   - git add . 
   - git status
   - git commit -m "Deploy to GitHub Pages"
