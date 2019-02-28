@@ -1,5 +1,5 @@
 = LEHD Public Use Shapefile Data
-Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
+Heath Hayward, Matthew Graham, Lars Vilhuber <lars.vilhuber@cornell.edu>
 28 February 2019
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
@@ -9,9 +9,11 @@ Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. 	
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. 
 Please write us at
-link:mailto:Patrick.Hayward@census.gov?subject=LEHD_Shapefiles[Patrick.Hayward@census.gov].
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles[lars.vilhuber@cornell.edu].
 ==============================================
 
 
@@ -154,6 +156,6 @@ Changes
 
 <<<
 *******************
-This revision: Thu Feb 28 19:15:16 UTC 2019
+This revision: Thu Feb 28 21:17:14 UTC 2019
 *******************
 

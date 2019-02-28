@@ -1,5 +1,5 @@
-= LEHD Public Use  Schema V4.3.1 - File and Directory Naming Convention
-Lars Vilhuber <ces.qwi.feedback@census.gov>
+= LEHD Public Use  Schema documents - File and Directory Naming Convention
+Lars Vilhuber <lars.vilhuber@cornell.edu>
 28 February 2019
 :ext-relative: {outfilesuffix}
 
@@ -10,9 +10,12 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
-	
+
 
 Purpose
 -------
@@ -218,6 +221,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2018-10-30: Initial release
+- 2019-02-28: Switch to different rendering engine, only stylistic changes
 
 === Version 4.3.1 from 4.3.0
 - 2018-10-30: Due to a change of the geographic boundaries for a WIB   in Iowa, the shape files need to be updated.
@@ -235,6 +239,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Thu Feb 28 19:15:04 UTC 2019
+This revision: Thu Feb 28 21:17:02 UTC 2019
 *******************
 
