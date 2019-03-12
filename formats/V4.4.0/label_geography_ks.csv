@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 20,"Kansas",S
 20001,"Allen, KS",C
 20003,"Anderson, KS",C
@@ -127,7 +127,7 @@ geography,label,geo_level
 2041460,"Salina, KS",M
 2045820,"Topeka, KS",M
 2048620,"Wichita, KS",M
-2099999,"Nonmetropolitan, nonmicropolitan",M
+2099999,"Nonmetropolitan, nonmicropolitan, KS",M
 20200001,"01 Local Area I - Western WIB",W
 20200002,"02 Local Area II - Northeast WIB",W
 20200003,"03 Local Area III - Kansas City Area WIB",W

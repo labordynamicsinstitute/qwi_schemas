@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 27,"Minnesota",S
 27001,"Aitkin, MN",C
 27003,"Anoka, MN",C
@@ -113,7 +113,7 @@ geography,label,geo_level
 2748820,"Willmar, MN",M
 2749100,"Winona, MN",M
 2749380,"Worthington, MN",M
-2799999,"Nonmetropolitan, nonmicropolitan",M
+2799999,"Nonmetropolitan, nonmicropolitan, MN",M
 27SDA010,"01 Northwest Minnesota WSA",W
 27SDA020,"02 Rural Minnesota CEP WSA",W
 27SDA030,"03 Northeast Minnesota WSA",W

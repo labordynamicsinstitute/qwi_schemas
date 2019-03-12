@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 33,"New Hampshire",S
 33001,"Belknap, NH",C
 33003,"Carroll, NH",C
@@ -17,7 +17,7 @@ geography,label,geo_level
 3328300,"Keene, NH",M
 3329060,"Laconia, NH",M
 3331700,"Manchester-Nashua, NH",M
-3399999,"Nonmetropolitan, nonmicropolitan",M
+3399999,"Nonmetropolitan, nonmicropolitan, NH",M
 33330014,"Berlin One-Stop Service Area",W
 33330034,"Claremont One-Stop Service Area",W
 33330054,"Concord One-Stop Service Area",W

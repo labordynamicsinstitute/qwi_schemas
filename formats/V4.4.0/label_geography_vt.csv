@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 50,"Vermont",S
 50001,"Addison, VT",C
 50003,"Bennington, VT",C
@@ -20,7 +20,7 @@ geography,label,geo_level
 5015540,"Burlington-South Burlington, VT",M
 5017200,"Claremont-Lebanon, NH-VT (VT part)",M
 5040860,"Rutland, VT",M
-5099999,"Nonmetropolitan, nonmicropolitan",M
+5099999,"Nonmetropolitan, nonmicropolitan, VT",M
 50000001,"01 Addison County Business Education WIB",W
 50000002,"02 Bennington County School and Workforce WIB",W
 50000003,"03 Bradford Area WIB",W

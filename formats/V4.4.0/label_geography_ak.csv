@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 02,"Alaska",S
 02013,"Aleutians East, AK",C
 02016,"Aleutians West, AK",C
@@ -33,5 +33,5 @@ geography,label,geo_level
 0221820,"Fairbanks, AK",M
 0227940,"Juneau, AK",M
 0228540,"Ketchikan, AK",M
-0299999,"Nonmetropolitan, nonmicropolitan",M
+0299999,"Nonmetropolitan, nonmicropolitan, AK",M
 02000001,"01 Alaska WIB",W

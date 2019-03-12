@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 42,"Pennsylvania",S
 42001,"Adams, PA",C
 42003,"Allegheny, PA",C
@@ -104,7 +104,7 @@ geography,label,geo_level
 4248700,"Williamsport, PA",M
 4249620,"York-Hanover, PA",M
 4249660,"Youngstown-Warren-Boardman, OH-PA (PA part)",M
-4299999,"Nonmetropolitan, nonmicropolitan",M
+4299999,"Nonmetropolitan, nonmicropolitan, PA",M
 420CE175,"175 Central PA WIA",W
 420LV070,"070 Lehigh Valley WIA",W
 420NC125,"125 North Central WIA",W

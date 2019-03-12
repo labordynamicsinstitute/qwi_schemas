@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 49,"Utah",S
 49001,"Beaver, UT",C
 49003,"Box Elder, UT",C
@@ -39,7 +39,7 @@ geography,label,geo_level
 4941620,"Salt Lake City, UT",M
 4944920,"Summit Park, UT",M
 4946860,"Vernal, UT",M
-4999999,"Nonmetropolitan, nonmicropolitan",M
+4999999,"Nonmetropolitan, nonmicropolitan, UT",M
 49490001,"01 Bear River WIB",W
 49490002,"02 Wasatch Front North WIB",W
 49490003,"03 Wasatch Front South WIB",W

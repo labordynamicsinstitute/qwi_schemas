@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 53,"Washington",S
 53001,"Adams, WA",C
 53003,"Asotin, WA",C
@@ -61,7 +61,7 @@ geography,label,geo_level
 5347460,"Walla Walla, WA",M
 5348300,"Wenatchee, WA",M
 5349420,"Yakima, WA",M
-5399999,"Nonmetropolitan, nonmicropolitan",M
+5399999,"Nonmetropolitan, nonmicropolitan, WA",M
 53000001,"01 Olympic WIB",W
 53000002,"02 Pacific Mountain WIB",W
 53000003,"03 Northwest Washington WIB",W

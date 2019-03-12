@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 32,"Nevada",S
 32001,"Churchill, NV",C
 32003,"Clark, NV",C
@@ -26,6 +26,6 @@ geography,label,geo_level
 3237220,"Pahrump, NV",M
 3239900,"Reno, NV",M
 3249080,"Winnemucca, NV",M
-3299999,"Nonmetropolitan, nonmicropolitan",M
+3299999,"Nonmetropolitan, nonmicropolitan, NV",M
 32150001,"01 Southern Nevada WFB",W
 32150002,"02 NevadaWorks WFB",W

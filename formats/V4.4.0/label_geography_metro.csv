@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 01999,"Not in metropolitan area, AL",B
 02999,"Not in metropolitan area, AK",B
 04999,"Not in metropolitan area, AZ",B
@@ -15,6 +15,7 @@ geography,label,geo_level
 10740,"Albuquerque, NM",B
 10780,"Alexandria, LA",B
 10900,"Allentown-Bethlehem-Easton, PA-NJ",B
+10999,"Not in metropolitan area, DE",B
 11020,"Altoona, PA",B
 11100,"Amarillo, TX",B
 11180,"Ames, IA",B
@@ -24,6 +25,7 @@ geography,label,geo_level
 11540,"Appleton, WI",B
 11640,"Arecibo, PR",B
 11700,"Asheville, NC",B
+11999,"Not in metropolitan area, DC",B
 12020,"Athens-Clarke County, GA",B
 12060,"Atlanta-Sandy Springs-Roswell, GA",B
 12100,"Atlantic City-Hammonton, NJ",B
@@ -277,6 +279,7 @@ geography,label,geo_level
 34900,"Napa, CA",B
 34940,"Naples-Immokalee-Marco Island, FL",B
 34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",B
+34999,"Not in metropolitan area, NJ",B
 35100,"New Bern, NC",B
 35300,"New Haven-Milford, CT",B
 35380,"New Orleans-Metairie, LA",B
@@ -381,6 +384,7 @@ geography,label,geo_level
 44420,"Staunton-Waynesboro, VA",B
 44700,"Stockton-Lodi, CA",B
 44940,"Sumter, SC",B
+44999,"Not in metropolitan area, RI",B
 45060,"Syracuse, NY",B
 45220,"Tallahassee, FL",B
 45300,"Tampa-St. Petersburg-Clearwater, FL",B
@@ -394,6 +398,7 @@ geography,label,geo_level
 46060,"Tucson, AZ",B
 46140,"Tulsa, OK",B
 46220,"Tuscaloosa, AL",B
+46300,"Twin Falls, ID",B
 46340,"Tyler, TX",B
 46520,"Urban Honolulu, HI",B
 46540,"Utica-Rome, NY",B

@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 55,"Wisconsin",S
 55001,"Adams, WI",C
 55003,"Ashland, WI",C
@@ -100,7 +100,7 @@ geography,label,geo_level
 5548140,"Wausau, WI",M
 5548580,"Whitewater-Elkhorn, WI",M
 5549220,"Wisconsin Rapids-Marshfield, WI",M
-5599999,"Nonmetropolitan, nonmicropolitan",M
+5599999,"Nonmetropolitan, nonmicropolitan, WI",M
 55550015,"015 Milwaukee WDA",W
 55550030,"030 Southeast WDA",W
 55550040,"040 Northwest WDA",W

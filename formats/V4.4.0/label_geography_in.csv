@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 18,"Indiana",S
 18001,"Adams, IN",C
 18003,"Allen, IN",C
@@ -131,7 +131,7 @@ geography,label,geo_level
 1847340,"Wabash, IN",M
 1847700,"Warsaw, IN",M
 1847780,"Washington, IN",M
-1899999,"Nonmetropolitan, nonmicropolitan",M
+1899999,"Nonmetropolitan, nonmicropolitan, IN",M
 18180001,"Economic Growth Region 1",W
 18180002,"Economic Growth Region 2",W
 18180003,"Economic Growth Region 3",W

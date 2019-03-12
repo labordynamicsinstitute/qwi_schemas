@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 39,"Ohio",S
 39001,"Adams, OH",C
 39003,"Allen, OH",C
@@ -135,7 +135,7 @@ geography,label,geo_level
 3949300,"Wooster, OH",M
 3949660,"Youngstown-Warren-Boardman, OH-PA (OH part)",M
 3949780,"Zanesville, OH",M
-3999999,"Nonmetropolitan, nonmicropolitan",M
+3999999,"Nonmetropolitan, nonmicropolitan, OH",M
 39000001,"Southwest Ohio",W
 39000002,"Northeast Ohio",W
 39000003,"Central Ohio",W

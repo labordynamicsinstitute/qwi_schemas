@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 41,"Oregon",S
 41001,"Baker, OR",C
 41003,"Benton, OR",C
@@ -56,7 +56,7 @@ geography,label,geo_level
 4140700,"Roseburg, OR",M
 4141420,"Salem, OR",M
 4145520,"The Dalles, OR",M
-4199999,"Nonmetropolitan, nonmicropolitan",M
+4199999,"Nonmetropolitan, nonmicropolitan, OR",M
 41410001,"Northwest Oregon WIA",W
 41410002,"Portland Metro WIA",W
 41410003,"Clackamas WIA",W

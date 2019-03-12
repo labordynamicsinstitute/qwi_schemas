@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 48,"Texas",S
 48001,"Anderson, TX",C
 48003,"Andrews, TX",C
@@ -323,7 +323,7 @@ geography,label,geo_level
 4847380,"Waco, TX",M
 4848660,"Wichita Falls, TX",M
 4849820,"Zapata, TX",M
-4899999,"Nonmetropolitan, nonmicropolitan",M
+4899999,"Nonmetropolitan, nonmicropolitan, TX",M
 48000001,"01 Panhandle WDA",W
 48000002,"02 South Plains WDA",W
 48000003,"03 North Texas WDA",W

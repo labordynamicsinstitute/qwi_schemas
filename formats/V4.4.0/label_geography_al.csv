@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 01,"Alabama",S
 01001,"Autauga, AL",C
 01003,"Baldwin, AL",C
@@ -93,7 +93,7 @@ geography,label,geo_level
 0145980,"Troy, AL",M
 0146220,"Tuscaloosa, AL",M
 0146740,"Valley, AL",M
-0199999,"Nonmetropolitan, nonmicropolitan",M
+0199999,"Nonmetropolitan, nonmicropolitan, AL",M
 01010001,"North Alabama Works",W
 01010002,"East Alabama Works",W
 01010003,"West Alabama Works",W

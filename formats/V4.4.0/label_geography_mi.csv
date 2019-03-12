@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 26,"Michigan",S
 26001,"Alcona, MI",C
 26003,"Alger, MI",C
@@ -118,7 +118,7 @@ geography,label,geo_level
 2643780,"South Bend-Mishawaka, IN-MI (MI part)",M
 2644780,"Sturgis, MI",M
 2645900,"Traverse City, MI",M
-2699999,"Nonmetropolitan, nonmicropolitan",M
+2699999,"Nonmetropolitan, nonmicropolitan, MI",M
 26000002,"Region 7B Emp & Trng Consortium",W
 26000003,"Calhoun Intermediate School District",W
 26000004,"Saginaw-Midland-Bay Michigan Works!",W
@@ -139,7 +139,7 @@ geography,label,geo_level
 26000023,"Oakland County Employment and Training Division",W
 26000026,"Western Upper Peninsula Michigan Works!",W
 26000029,"Livingston County Michigan Works!",W
-26000030,"Washtenaw County Employment Training and Community",W
+26000030,"Washtenaw County Employment Training and Community Services",W
 26000031,"Southeast Michigan Community Alliance",W
 26000032,"Ottawa County Michigan Works!",W
 26000033,"Kent & Allegan Michigan Works!",W

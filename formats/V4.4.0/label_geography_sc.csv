@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 45,"South Carolina",S
 45001,"Abbeville, SC",C
 45003,"Aiken, SC",C
@@ -63,7 +63,7 @@ geography,label,geo_level
 4542860,"Seneca, SC",M
 4543900,"Spartanburg, SC",M
 4544940,"Sumter, SC",M
-4599999,"Nonmetropolitan, nonmicropolitan",M
+4599999,"Nonmetropolitan, nonmicropolitan, SC",M
 45000010,"10 Pendleton District W",W
 45000015,"15 Greenville WIB",W
 45000020,"20 Upstate WIB",W

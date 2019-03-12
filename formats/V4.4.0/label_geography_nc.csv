@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 37,"North Carolina",S
 37001,"Alamance, NC",C
 37003,"Alexander, NC",C
@@ -141,7 +141,7 @@ geography,label,geo_level
 3748900,"Wilmington, NC",M
 3748980,"Wilson, NC",M
 3749180,"Winston-Salem, NC",M
-3799999,"Nonmetropolitan, nonmicropolitan",M
+3799999,"Nonmetropolitan, nonmicropolitan, NC",M
 37000001,"01 NE Workforce Investment Consortium WDB",W
 37000005,"05 Cape Fear SDA Job Training Consortium WDB",W
 37000007,"07 Capital Area Workforce Development WDB",W

@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 24,"Maryland",S
 24001,"Allegany, MD",C
 24003,"Anne Arundel, MD",C
@@ -33,7 +33,7 @@ geography,label,geo_level
 2437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (MD part)",M
 2441540,"Salisbury, MD-DE (MD part)",M
 2447900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (MD part)",M
-2499999,"Nonmetropolitan, nonmicropolitan",M
+2499999,"Nonmetropolitan, nonmicropolitan, MD",M
 24001001,"01 Anne Arundel WIA",W
 24001002,"02 Baltimore County WIA",W
 24001003,"03 Baltimore City WIA",W
@@ -41,7 +41,7 @@ geography,label,geo_level
 24001005,"05 Lower Shore WIA",W
 24001006,"06 MID-Maryland WIA",W
 24001007,"07 Montgomery WIA",W
-24001008,"08 Prince Georges WIA",W
+24001008,"08 Prince George's WIA",W
 24001009,"09 Southern Maryland WIA",W
 24001010,"10 Susquehanna WIA",W
 24001011,"11 Upper Shore WIA",W

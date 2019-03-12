@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 54,"West Virginia",S
 54001,"Barbour, WV",C
 54003,"Berkeley, WV",C
@@ -72,7 +72,7 @@ geography,label,geo_level
 5448260,"Weirton-Steubenville, WV-OH (WV part)",M
 5448540,"Wheeling, WV-OH (WV part)",M
 5449020,"Winchester, VA-WV (WV part)",M
-5499999,"Nonmetropolitan, nonmicropolitan",M
+5499999,"Nonmetropolitan, nonmicropolitan, WV",M
 5454WIA1,"01 Workforce Investment Area Region 1",W
 5454WIA2,"02 Workforce Investment Area Region 2",W
 5454WIA3,"03 Workforce Investment Area Region 3",W

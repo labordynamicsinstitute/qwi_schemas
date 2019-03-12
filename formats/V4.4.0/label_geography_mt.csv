@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 30,"Montana",S
 30001,"Beaverhead, MT",C
 30003,"Big Horn, MT",C
@@ -63,6 +63,6 @@ geography,label,geo_level
 3025740,"Helena, MT",M
 3028060,"Kalispell, MT",M
 3033540,"Missoula, MT",M
-3099999,"Nonmetropolitan, nonmicropolitan",M
+3099999,"Nonmetropolitan, nonmicropolitan, MT",M
 30100001,"01 CEP WIB",W
 30100002,"02 Balance of State WIB",W

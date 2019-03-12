@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 12,"Florida",S
 12001,"Alachua, FL",C
 12003,"Baker, FL",C
@@ -96,7 +96,7 @@ geography,label,geo_level
 1245300,"Tampa-St. Petersburg-Clearwater, FL",M
 1245540,"The Villages, FL",M
 1248100,"Wauchula, FL",M
-1299999,"Nonmetropolitan, nonmicropolitan",M
+1299999,"Nonmetropolitan, nonmicropolitan, FL",M
 12000001,"CareerSource Escarosa",W
 12000002,"CareerSource Okaloosa Walton",W
 12000003,"CareerSource Chipola",W

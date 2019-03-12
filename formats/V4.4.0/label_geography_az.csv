@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 04,"Arizona",S
 04001,"Apache, AZ",C
 04003,"Cochise, AZ",C
@@ -26,7 +26,7 @@ geography,label,geo_level
 0443420,"Sierra Vista-Douglas, AZ",M
 0446060,"Tucson, AZ",M
 0449740,"Yuma, AZ",M
-0499999,"Nonmetropolitan, nonmicropolitan",M
+0499999,"Nonmetropolitan, nonmicropolitan, AZ",M
 04004005,"Cochise County LWIB",W
 04004010,"Gila/Pinal LWIB",W
 04004015,"Graham County LWIB",W

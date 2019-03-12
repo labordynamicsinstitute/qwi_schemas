@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 17,"Illinois",S
 17001,"Adams, IL",C
 17003,"Alexander, IL",C
@@ -135,7 +135,7 @@ geography,label,geo_level
 1744100,"Springfield, IL",M
 1744580,"Sterling, IL",M
 1745380,"Taylorville, IL",M
-1799999,"Nonmetropolitan, nonmicropolitan",M
+1799999,"Nonmetropolitan, nonmicropolitan, IL",M
 17000001,"Lake County WIB",W
 17000002,"McHenry County WIB",W
 17000003,"Northern IL Workforce Alliance",W

@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 40,"Oklahoma",S
 40001,"Adair, OK",C
 40003,"Alfalfa, OK",C
@@ -99,7 +99,7 @@ geography,label,geo_level
 4046140,"Tulsa, OK",M
 4048220,"Weatherford, OK",M
 4049260,"Woodward, OK",M
-4099999,"Nonmetropolitan, nonmicropolitan",M
+4099999,"Nonmetropolitan, nonmicropolitan, OK",M
 40000001,"01 Northwest WIA",W
 40000002,"02 North Central WIA",W
 40000003,"03 Tulsa WIA",W

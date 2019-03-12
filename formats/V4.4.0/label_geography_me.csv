@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 23,"Maine",S
 23001,"Androscoggin, ME",C
 23003,"Aroostook, ME",C
@@ -20,7 +20,7 @@ geography,label,geo_level
 2312620,"Bangor, ME",M
 2330340,"Lewiston-Auburn, ME",M
 2338860,"Portland-South Portland, ME",M
-2399999,"Nonmetropolitan, nonmicropolitan",M
+2399999,"Nonmetropolitan, nonmicropolitan, ME",M
 23000001,"01 Aroostook/Washington WIA",W
 23000002,"02 Central/Western WIA",W
 23000003,"03 Six County Coastal WIA",W

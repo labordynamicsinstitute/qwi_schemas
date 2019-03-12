@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 31,"Nebraska",S
 31001,"Adams, NE",C
 31003,"Antelope, NE",C
@@ -106,7 +106,7 @@ geography,label,geo_level
 3136540,"Omaha-Council Bluffs, NE-IA (NE part)",M
 3142420,"Scottsbluff, NE",M
 3143580,"Sioux City, IA-NE-SD (NE part)",M
-3199999,"Nonmetropolitan, nonmicropolitan",M
+3199999,"Nonmetropolitan, nonmicropolitan, NE",M
 31000820,"Omaha Consortium",W
 31000821,"Lincoln MSA",W
 31000822,"Grand Island MSA",W

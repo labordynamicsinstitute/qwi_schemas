@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 05,"Arkansas",S
 05001,"Arkansas, AR",C
 05003,"Ashley, AR",C
@@ -98,7 +98,7 @@ geography,label,geo_level
 0540780,"Russellville, AR",M
 0542620,"Searcy, AR",M
 0545500,"Texarkana, TX-AR (AR part)",M
-0599999,"Nonmetropolitan, nonmicropolitan",M
+0599999,"Nonmetropolitan, nonmicropolitan, AR",M
 05000001,"01 Central WIB",W
 05000002,"02 Eastern WIB",W
 05000003,"03 Little Rock WIB",W

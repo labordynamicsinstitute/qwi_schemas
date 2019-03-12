@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 46,"South Dakota",S
 46003,"Aurora, SD",C
 46005,"Beadle, SD",C
@@ -78,7 +78,7 @@ geography,label,geo_level
 4646820,"Vermillion, SD",M
 4647980,"Watertown, SD",M
 4649460,"Yankton, SD",M
-4699999,"Nonmetropolitan, nonmicropolitan",M
+4699999,"Nonmetropolitan, nonmicropolitan, SD",M
 46396600,"Rapid City MSA WIB",W
 46436200,"Sioux Falls MSA WIB",W
 46460001,"Central Area WIB",W

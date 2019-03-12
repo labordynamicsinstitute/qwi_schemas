@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 25,"Massachusetts",S
 25001,"Barnstable, MA",C
 25003,"Berkshire, MA",C
@@ -22,7 +22,7 @@ geography,label,geo_level
 2544140,"Springfield, MA",M
 2547240,"Vineyard Haven, MA",M
 2549340,"Worcester, MA-CT (MA part)",M
-2599999,"Nonmetropolitan, nonmicropolitan",M
+2599999,"Nonmetropolitan, nonmicropolitan, MA",M
 25000001,"Berkshire County WIA",W
 25000002,"Franklin/Hampshire WIA",W
 25000003,"Hampden County WIA",W

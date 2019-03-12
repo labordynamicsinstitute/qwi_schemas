@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 09,"Connecticut",S
 09001,"Fairfield, CT",C
 09003,"Hartford, CT",C
@@ -14,7 +14,7 @@ geography,label,geo_level
 0935980,"Norwich-New London, CT",M
 0945860,"Torrington, CT",M
 0949340,"Worcester, MA-CT (CT part)",M
-0999999,"Nonmetropolitan, nonmicropolitan",M
+0999999,"Nonmetropolitan, nonmicropolitan, CT",M
 09090001,"Eastern WIA",W
 09090002,"North Central WIA",W
 09090003,"Northwest WIA",W

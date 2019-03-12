@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 28,"Mississippi",S
 28001,"Adams, MS",C
 28003,"Alcorn, MS",C
@@ -105,7 +105,7 @@ geography,label,geo_level
 2846180,"Tupelo, MS",M
 2846980,"Vicksburg, MS",M
 2848500,"West Point, MS",M
-2899999,"Nonmetropolitan, nonmicropolitan",M
+2899999,"Nonmetropolitan, nonmicropolitan, MS",M
 28280001,"01 Delta WIB",W
 28280002,"02 The Mississippi Partnership WIB",W
 28280003,"03 Southcentral Mississippi Works WIB",W

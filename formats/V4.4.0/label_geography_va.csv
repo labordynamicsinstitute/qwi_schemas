@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 51,"Virginia",S
 51001,"Accomack, VA",C
 51003,"Albemarle, VA",C
@@ -148,7 +148,7 @@ geography,label,geo_level
 5147260,"Virginia Beach-Norfolk-Newport News, VA-NC (VA part)",M
 5147900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (VA part)",M
 5149020,"Winchester, VA-WV (VA part)",M
-5199999,"Nonmetropolitan, nonmicropolitan",M
+5199999,"Nonmetropolitan, nonmicropolitan, VA",M
 51000441,"Southwestern Virginia LWIA I",W
 51000442,"New River/Mt. Rogers LWIA II",W
 51000443,"Western Virginia LWIA III",W

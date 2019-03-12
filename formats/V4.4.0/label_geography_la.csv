@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 22,"Louisiana",S
 22001,"Acadia, LA",C
 22003,"Allen, LA",C
@@ -83,7 +83,7 @@ geography,label,geo_level
 2236660,"Opelousas, LA",M
 2240820,"Ruston, LA",M
 2243340,"Shreveport-Bossier City, LA",M
-2299999,"Nonmetropolitan, nonmicropolitan",M
+2299999,"Nonmetropolitan, nonmicropolitan, LA",M
 22220005,"East Baton Rouge Parish WIA",W
 22220015,"Jefferson Parish WIA",W
 22220025,"Orleans Parish WIA",W

@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 08,"Colorado",S
 08001,"Adams, CO",C
 08003,"Alamosa, CO",C
@@ -81,7 +81,7 @@ geography,label,geo_level
 0839380,"Pueblo, CO",M
 0844460,"Steamboat Springs, CO",M
 0844540,"Sterling, CO",M
-0899999,"Nonmetropolitan, nonmicropolitan",M
+0899999,"Nonmetropolitan, nonmicropolitan, CO",M
 080800AD,"Adams WIB",W
 080800AR,"Arapahoe/Douglas WIB",W
 080800BO,"Boulder WIB",W

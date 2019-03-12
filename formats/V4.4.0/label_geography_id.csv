@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 16,"Idaho",S
 16001,"Ada, ID",C
 16003,"Adams, ID",C
@@ -60,7 +60,7 @@ geography,label,geo_level
 1639940,"Rexburg, ID",M
 1641760,"Sandpoint, ID",M
 1646300,"Twin Falls, ID",M
-1699999,"Nonmetropolitan, nonmicropolitan",M
+1699999,"Nonmetropolitan, nonmicropolitan, ID",M
 16160010,"01 North WIB",W
 16160020,"02 North Central WIB",W
 16160030,"03 Southwest WIB",W

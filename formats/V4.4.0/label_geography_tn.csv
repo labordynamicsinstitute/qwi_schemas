@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 47,"Tennessee",S
 47001,"Anderson, TN",C
 47003,"Bedford, TN",C
@@ -122,7 +122,7 @@ geography,label,geo_level
 4743180,"Shelbyville, TN",M
 4746100,"Tullahoma-Manchester, TN",M
 4746460,"Union City, TN-KY (TN part)",M
-4799999,"Nonmetropolitan, nonmicropolitan",M
+4799999,"Nonmetropolitan, nonmicropolitan, TN",M
 47LWIA01,"01 Local Workforce Investment Area",W
 47LWIA02,"02 Local Workforce Investment Area",W
 47LWIA03,"03 Local Workforce Investment Area",W

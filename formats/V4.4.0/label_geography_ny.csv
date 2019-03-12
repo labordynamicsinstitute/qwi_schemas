@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 36,"New York",S
 36001,"Albany, NY",C
 36003,"Allegany, NY",C
@@ -88,7 +88,7 @@ geography,label,geo_level
 3645060,"Syracuse, NY",M
 3646540,"Utica-Rome, NY",M
 3648060,"Watertown-Fort Drum, NY",M
-3699999,"Nonmetropolitan, nonmicropolitan",M
+3699999,"Nonmetropolitan, nonmicropolitan, NY",M
 36360051,"Albany/Rensselaer/Schenectady LWIA",W
 36360151,"New York City LWIA",W
 36360302,"City of Yonkers LWIA",W

@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 34,"New Jersey",S
 34001,"Atlantic, NJ",C
 34003,"Bergen, NJ",C
@@ -28,7 +28,7 @@ geography,label,geo_level
 3437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (NJ part)",M
 3445940,"Trenton, NJ",M
 3447220,"Vineland-Bridgeton, NJ",M
-3499999,"Nonmetropolitan, nonmicropolitan",M
+3499999,"Nonmetropolitan, nonmicropolitan, NJ",M
 34340001,"01 Atlantic-Cape May WIB",W
 34340002,"02 Bergen WIB",W
 34340003,"03 Burlington WIB",W

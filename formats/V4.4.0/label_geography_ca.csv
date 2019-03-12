@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 06,"California",S
 06001,"Alameda, CA",C
 06003,"Alpine, CA",C
@@ -92,7 +92,7 @@ geography,label,geo_level
 0646700,"Vallejo-Fairfield, CA",M
 0647300,"Visalia-Porterville, CA",M
 0649700,"Yuba City, CA",M
-0699999,"Nonmetropolitan, nonmicropolitan",M
+0699999,"Nonmetropolitan, nonmicropolitan, CA",M
 06000001,"01 Alameda County WIB",W
 06000003,"03 Oakland City WIB",W
 06000004,"04 Mother Lode Consortium WIB",W

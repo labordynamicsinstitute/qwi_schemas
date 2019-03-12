@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 56,"Wyoming",S
 56001,"Albany, WY",C
 56003,"Big Horn, WY",C
@@ -32,5 +32,5 @@ geography,label,geo_level
 5640180,"Riverton, WY",M
 5640540,"Rock Springs, WY",M
 5643260,"Sheridan, WY",M
-5699999,"Nonmetropolitan, nonmicropolitan",M
+5699999,"Nonmetropolitan, nonmicropolitan, WY",M
 56000001,"01 Wyoming WIB",W

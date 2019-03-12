@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 38,"North Dakota",S
 38001,"Adams, ND",C
 38003,"Barnes, ND",C
@@ -61,7 +61,7 @@ geography,label,geo_level
 3833500,"Minot, ND",M
 3847420,"Wahpeton, ND-MN (ND part)",M
 3848780,"Williston, ND",M
-3899999,"Nonmetropolitan, nonmicropolitan",M
+3899999,"Nonmetropolitan, nonmicropolitan, ND",M
 38000001,"01 Williston WIB",W
 38000002,"02 Minot WIB",W
 38000003,"03 Devils Lake WIB",W

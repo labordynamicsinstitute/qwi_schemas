@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 29,"Missouri",S
 29001,"Adair, MO",C
 29003,"Andrew, MO",C
@@ -143,7 +143,7 @@ geography,label,geo_level
 2944180,"Springfield, MO",M
 2947660,"Warrensburg, MO",M
 2948460,"West Plains, MO",M
-2999999,"Nonmetropolitan, nonmicropolitan",M
+2999999,"Nonmetropolitan, nonmicropolitan, MO",M
 29290001,"001 Northwest Region WIB",W
 29290002,"002 Northeast Region WIB",W
 29290003,"003 Kansas City Vicinity Region WIB",W

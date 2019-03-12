@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 13,"Georgia",S
 13001,"Appling, GA",C
 13003,"Atkinson, GA",C
@@ -198,7 +198,7 @@ geography,label,geo_level
 1347080,"Vidalia, GA",M
 1347580,"Warner Robins, GA",M
 1348180,"Waycross, GA",M
-1399999,"Nonmetropolitan, nonmicropolitan",M
+1399999,"Nonmetropolitan, nonmicropolitan, GA",M
 13000001,"01 Northwest Georgia WIB",W
 13000002,"02 Georgia Mountains WIB",W
 13000003,"03 City of Atlanta WIB",W

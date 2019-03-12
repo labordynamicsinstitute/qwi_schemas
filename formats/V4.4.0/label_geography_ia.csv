@@ -1,4 +1,4 @@
-geography,label,geo_level
+﻿geography,label,geo_level
 19,"Iowa",S
 19001,"Adair, IA",C
 19003,"Adams, IA",C
@@ -125,7 +125,7 @@ geography,label,geo_level
 1944020,"Spirit Lake, IA",M
 1944740,"Storm Lake, IA",M
 1947940,"Waterloo-Cedar Falls, IA",M
-1999999,"Nonmetropolitan, nonmicropolitan",M
+1999999,"Nonmetropolitan, nonmicropolitan, IA",M
 19190001,"01 Region 1 - Dubuque WIB",W
 19190002,"02 Region 2 - Mason City WIB",W
 19190003,"03 Region 3 & 4 - Spencer WIB",W
