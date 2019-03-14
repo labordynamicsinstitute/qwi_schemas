@@ -1,0 +1,103 @@
+﻿geography,label,geo_level
+08,"Colorado",S
+08001,"Adams, CO",C
+08003,"Alamosa, CO",C
+08005,"Arapahoe, CO",C
+08007,"Archuleta, CO",C
+08009,"Baca, CO",C
+08011,"Bent, CO",C
+08013,"Boulder, CO",C
+08014,"Broomfield, CO",C
+08015,"Chaffee, CO",C
+08017,"Cheyenne, CO",C
+08019,"Clear Creek, CO",C
+08021,"Conejos, CO",C
+08023,"Costilla, CO",C
+08025,"Crowley, CO",C
+08027,"Custer, CO",C
+08029,"Delta, CO",C
+08031,"Denver, CO",C
+08033,"Dolores, CO",C
+08035,"Douglas, CO",C
+08037,"Eagle, CO",C
+08039,"Elbert, CO",C
+08041,"El Paso, CO",C
+08043,"Fremont, CO",C
+08045,"Garfield, CO",C
+08047,"Gilpin, CO",C
+08049,"Grand, CO",C
+08051,"Gunnison, CO",C
+08053,"Hinsdale, CO",C
+08055,"Huerfano, CO",C
+08057,"Jackson, CO",C
+08059,"Jefferson, CO",C
+08061,"Kiowa, CO",C
+08063,"Kit Carson, CO",C
+08065,"Lake, CO",C
+08067,"La Plata, CO",C
+08069,"Larimer, CO",C
+08071,"Las Animas, CO",C
+08073,"Lincoln, CO",C
+08075,"Logan, CO",C
+08077,"Mesa, CO",C
+08079,"Mineral, CO",C
+08081,"Moffat, CO",C
+08083,"Montezuma, CO",C
+08085,"Montrose, CO",C
+08087,"Morgan, CO",C
+08089,"Otero, CO",C
+08091,"Ouray, CO",C
+08093,"Park, CO",C
+08095,"Phillips, CO",C
+08097,"Pitkin, CO",C
+08099,"Prowers, CO",C
+08101,"Pueblo, CO",C
+08103,"Rio Blanco, CO",C
+08105,"Rio Grande, CO",C
+08107,"Routt, CO",C
+08109,"Saguache, CO",C
+08111,"San Juan, CO",C
+08113,"San Miguel, CO",C
+08115,"Sedgwick, CO",C
+08117,"Summit, CO",C
+08119,"Teller, CO",C
+08121,"Washington, CO",C
+08123,"Weld, CO",C
+08125,"Yuma, CO",C
+0814500,"Boulder, CO",M
+0814720,"Breckenridge, CO",M
+0815860,"Cañon City, CO",M
+0817820,"Colorado Springs, CO",M
+0818780,"Craig, CO",M
+0819740,"Denver-Aurora-Lakewood, CO",M
+0820420,"Durango, CO",M
+0820780,"Edwards, CO",M
+0822660,"Fort Collins, CO",M
+0822820,"Fort Morgan, CO",M
+0824060,"Glenwood Springs, CO",M
+0824300,"Grand Junction, CO",M
+0824540,"Greeley, CO",M
+0833940,"Montrose, CO",M
+0839380,"Pueblo, CO",M
+0844460,"Steamboat Springs, CO",M
+0844540,"Sterling, CO",M
+0899999,"Nonmetropolitan, nonmicropolitan, CO",M
+080800AD,"Adams WIB",W
+080800AR,"Arapahoe/Douglas WIB",W
+080800BO,"Boulder WIB",W
+080800BR,"Broomfield WIB",W
+080800DE,"Denver WIB",W
+080800EA,"Eastern WIB",W
+080800ET,"El Paso/Teller WIB",W
+080800LR,"Larimer WIB",W
+080800ME,"Mesa WIB",W
+080800NW,"Northwest WIB",W
+080800PB,"Pueblo WIB",W
+080800RR,"Rural Resort WIB",W
+080800SC,"South Central WIB",W
+080800SE,"Southeast WIB",W
+080800SW,"Southwest WIB",W
+080800TR,"Jefferson/Tri-County WIB",W
+080800UA,"Upper Arkansas WIB",W
+080800WE,"Western WIB",W
+080800WL,"Weld WIB",W
