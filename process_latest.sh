@@ -4,7 +4,15 @@
 FILES=$(pwd $0)/formats
 GLOBALSH=write_all.sh
 # Change this to 'lehd' to finalize
-VERSION=draft
+[[ -z $1 ]] && BRANCH=master || BRANCH=$1
+case $BRANCH in
+    lehd-deploy|LEHD-DEPLOY)
+        VERSION=official
+        ;;
+    *)
+        VERSION=lehd
+        ;;
+esac
 
 # find latest
 latest=$(cd formats; ls -1d * | grep -E "V[0-9]" | tail -1)
