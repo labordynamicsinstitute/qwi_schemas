@@ -1,18 +1,11 @@
 = LEHD Public Use  Schema V4.4.0 - File and Directory Naming Convention
-Lars Vilhuber <ces.qwi.feedback@census.gov>
+Lars Vilhuber <>
 19 March 2019
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
 
-
-[IMPORTANT]
-.Important
-==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
-==============================================
-	
 
 Purpose
 -------
@@ -232,6 +225,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Mar 19 22:48:30 UTC 2019
+This revision: Tue Mar 19 23:11:18 UTC 2019
 *******************
 
