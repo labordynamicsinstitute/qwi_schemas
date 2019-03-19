@@ -9,25 +9,27 @@ These are NOT official publication standards of any agency. However, they may tu
 
 For official LEHD-published schema, see http://lehd.ces.census.gov/data/schema/
 
-You can browse the following schemas:
+You can browse the following schemas (in reverse chronological order of major versions):
 
-* [v3.5](formats/v3.5): Simply a store (incomplete) of the previous version.
+* V4.4 versions
+    * [V4.4.0](formats/V4.4.0/lehd_public_use_schema.html): The released V4.4.0 version.
+* V4.3 versions
+    * [V4.3.0](formats/V4.3.0/lehd_public_use_schema.html): The released V4.3.0 version.
+    * [V4.3.1](formats/V4.3.1/lehd_public_use_schema.html): The released V4.3.1 version.
+* V4.2 released versions
+    * [V4.2.0](formats/V4.2.0/lehd_public_use_schema.html): The released V4.2 version.
+* V4.1 released versions
+    * [V4.1.0](formats/V4.1.0/lehd_public_use_schema.html): The released V4.1.0 version.
+    * [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version.
+    * [V4.1.2](formats/V4.1.2/lehd_public_use_schema.html): The released V4.1.2 version.
+    * [V4.1.3](formats/V4.1.3/lehd_public_use_schema.html): The released V4.1.3 version.
 * V4.0 released versions
     * [V4.0](formats/V4.0/lehd_public_use_schema.html): A translation of the current version in use at [http://lehd.ces.census.gov/data](http://lehd.ces.census.gov/data) for QWI.
     * [V4.0.1](formats/V4.0.1/lehd_public_use_schema.html): First schema in this proposed format, including updates to geography files for R2015Q2 data releases by the Census Bureau, LEHD Program.
     * [V4.0.2](formats/V4.0.2/lehd_public_use_schema.html): An update to 4.0.1 reflecting change of industry coding to NAICS 2012.
     * [V4.0.3](formats/V4.0.3/lehd_public_use_schema.html): An update to 4.0.2 reflecting geography changes for R2015Q4
     * [V4.0.4](formats/V4.0.4/lehd_public_use_schema.html): An update to 4.0.3 reflecting geography changes for R2016Q1
-* V4.1 released versions
-    * [V4.1.0](formats/V4.1.0/lehd_public_use_schema.html): The released V4.1.0 version.
-    * [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version.
-    * [V4.1.2](formats/V4.1.2/lehd_public_use_schema.html): The released V4.1.2 version.
-    * [V4.1.3](formats/V4.1.3/lehd_public_use_schema.html): The released V4.1.3 version.
-* V4.2 released versions
-    * [V4.2.0](formats/V4.2.0/lehd_public_use_schema.html): The released V4.2 version.
-* V4.3 versions
-    * [V4.3.0](formats/V4.3.0/lehd_public_use_schema.html): The released V4.3.0 version.
-    * [V4.3.1](formats/V4.3.1/lehd_public_use_schema.html): The released V4.3.1 version.
+* [v3.5](formats/v3.5): Simply a store (incomplete) of the previous version.
 
 
 If you are not already there, you might find that browsing [http://labordynamicsinstitute.github.io/qwi_schemas/](http://labordynamicsinstitute.github.io/qwi_schemas/) is easier.
