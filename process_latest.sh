@@ -4,7 +4,7 @@
 FILES=$(pwd $0)/formats
 GLOBALSH=write_all.sh
 # Change this to 'lehd' to finalize
-VERSION=draft
+[[ -z $1 ]] && VERSION=draft || VERSION=$1
 
 # find latest
 latest=$(cd formats; ls -1d * | grep -E "V[0-9]" | tail -1)
