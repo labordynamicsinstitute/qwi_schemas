@@ -18,7 +18,7 @@
           <h1>LEHD schemas</h1>
           <p>Unofficial LEHD Schema files</p>
 
-          <p class="view"><a href="https://github.com/labordynamicsinstitute/qwi_schemas">View the Project on GitHub <small>labordynamicsinstitute/qwi_schemas</small></a></p>
+          <p class="view"><a href="https://doi.org/10.5281/zenodo.597959"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.597959.svg" class="bare" /></a></p>
 
 
           <ul>
