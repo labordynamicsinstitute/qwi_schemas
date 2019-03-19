@@ -1,0 +1,30 @@
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+- 2015-03-10: Correction of the TIGER vintage that is used for geographic references
+- 2015-03-11: Added URL for J2J
+- 2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
+- 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
+- 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
+- 2015-04-26: Changes to name of variable schema files (qwipu -> qwi), addition of variability variable schema files.
+- 2015-04-28: Fixed small typos in QWI variable short names
+- 2015-05-18: Updated agg_level description, replaced agg_level.csv file
+- 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
+- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+- 2015-08-07: Minor text change for agg_level, modified agg_level file.
+- 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
+- 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+- 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+- 2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
+
+=== Version 4.1c-draft from 4.0
+- added J2J, National QWI spec
+- added geohi category of ALL, US
+- added definitions of variability measures
+- added definitions of rates on separate file
+- added naming convention for additional files
+- added agg_level variable

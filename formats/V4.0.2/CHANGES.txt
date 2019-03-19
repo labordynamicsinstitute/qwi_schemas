@@ -1,0 +1,16 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2015-04-01: Initial version
+- 2015-08-07: Corrected release that the switch to NAICS 2012 was made
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status variables)
+
+=== Version 4.0.1 from 4.0
+- 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+=== Version 4.0.2 from 4.0.1
+- 2015-04-01: switched NAICS coding from 2007 to 2012

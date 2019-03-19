@@ -1,0 +1,9 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2018-06-25: Initial release
+
+=== Version 4.3.0 from 4.2.0
+- Changed the format of the version.txt file. This does not affect data files, but it does affect the metadata, and thus requires an increase in the minor version.
+- Changed the description of the download locations of the QWI files, as part of the "naming" schema.

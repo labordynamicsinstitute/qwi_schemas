@@ -1,0 +1,9 @@
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+- 2015-03-10: Correction of the TIGER vintage that is used for geographic references
+
+=== Version 4.1-draft from 4.0
+- added J2J, National QWI spec

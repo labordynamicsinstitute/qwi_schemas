@@ -1,0 +1,8 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2017-04-04: Initial release
+
+=== Version 4.2a-draft from 4.1.1
+- See github

@@ -1,0 +1,18 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2017-08-21: Initial release
+- 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
+- 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
+- 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
+- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv, removed unused label_geography_cbsa.csv
+- 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
+- 2017-10-30: Description on J2JOD earnings measures reversed, fixed. Only affects the J2J app metadata.
+- 2017-12-18: Description on J2JOD earnings measures reversed, should have also fixed on J2JOD description.
+
+=== Version 4.2b-draft from V4.2a-draft
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
+
+=== Version 4.2a-draft from 4.1.1
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1[Github]

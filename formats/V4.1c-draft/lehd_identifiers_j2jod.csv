@@ -1,0 +1,25 @@
+Variable,Type,label
+periodicity,Char(1),Periodicity of report
+seasonadj,Char(1),Seasonal Adjustment Indicator
+geo_level,Char(1),Group: Geographic level of aggregation of destination job
+geography,Char(8),Group: Geography code of destination job
+ind_level,Char(1),Group: Industry level of aggregation of destination job
+industry,Char(5),Group: Industry code of destination job
+ownercode,Char(3),Group: Ownership group code of destination job
+sex,Char(1),Group: Gender code
+agegrp,Char(3),Group: Age group code (WIA)
+race,Char(2),Group: race
+ethnicity,Char(2),Group: ethnicity
+education,Char(2),Group: education
+firmage,Char(1),Group: Firm Age group
+firmsize,Char(1),Group: Firm Size group
+year,Num,Time: Year
+quarter,Num,Time: Quarter
+agg_level,Num,Aggregation Level Indicator
+geo_level_orig,Char(1),Group: Geographic level of aggregation of origin job
+geography_orig,Char(8),Group: Geography code of origin job
+ind_level_orig,Char(1),Group: Industry level of aggregation of origin job
+industry_orig,Char(5),Group: Industry code of origin job
+ownercode_orig,Char(3),Group: Ownership group code of origin job
+firmage_orig,Char(1),Group: Firm Age group of origin job
+firmsize_orig,Char(1),Group: Firm Size group of origin job

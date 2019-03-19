@@ -1,0 +1,4 @@
+type,Used By,Description
+"[type]_[id]",qwix,CSV files queried from the LED Extraction Tool at http://ledextract.ces.census.gov/.
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa],qwi qwir qwiv qwivr j2j j2jr j2jod,Common convention for currently provided files.
+" [type]_[geohi]_[all,all_aggregations]_[sa]",j2j j2jr j2jod,Certain files are provided in a consolidated format containing multiple aggregations.

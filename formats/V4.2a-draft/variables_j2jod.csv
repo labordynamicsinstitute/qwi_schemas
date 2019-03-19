@@ -1,0 +1,5 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
+EE,ee,sEE,Job-to-Job Flows (Continuous Employment),Job flows with no observed nonemployment spell,Count,Flow,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Job flows with a short nonemployment spell,Count,Flow,1
+EES,fee,sEES,Stable Job-to-Job Flows (Continuous Employment),Job flows from stable employment into stable employment with no observed nonemployment spell,Count,Flow,1
+AQHireS,faq_doma2,sAQHireS,Stable Job-to-Job Flows (Brief Nonemployment),Job flows from stable employment into stable employment with a short nonemployment spell,Count,Flow,1

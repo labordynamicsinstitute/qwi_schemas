@@ -1,0 +1,69 @@
+﻿geography,label,geo_level
+16,"Idaho",S
+16001,"Ada, ID",C
+16003,"Adams, ID",C
+16005,"Bannock, ID",C
+16007,"Bear Lake, ID",C
+16009,"Benewah, ID",C
+16011,"Bingham, ID",C
+16013,"Blaine, ID",C
+16015,"Boise, ID",C
+16017,"Bonner, ID",C
+16019,"Bonneville, ID",C
+16021,"Boundary, ID",C
+16023,"Butte, ID",C
+16025,"Camas, ID",C
+16027,"Canyon, ID",C
+16029,"Caribou, ID",C
+16031,"Cassia, ID",C
+16033,"Clark, ID",C
+16035,"Clearwater, ID",C
+16037,"Custer, ID",C
+16039,"Elmore, ID",C
+16041,"Franklin, ID",C
+16043,"Fremont, ID",C
+16045,"Gem, ID",C
+16047,"Gooding, ID",C
+16049,"Idaho, ID",C
+16051,"Jefferson, ID",C
+16053,"Jerome, ID",C
+16055,"Kootenai, ID",C
+16057,"Latah, ID",C
+16059,"Lemhi, ID",C
+16061,"Lewis, ID",C
+16063,"Lincoln, ID",C
+16065,"Madison, ID",C
+16067,"Minidoka, ID",C
+16069,"Nez Perce, ID",C
+16071,"Oneida, ID",C
+16073,"Owyhee, ID",C
+16075,"Payette, ID",C
+16077,"Power, ID",C
+16079,"Shoshone, ID",C
+16081,"Teton, ID",C
+16083,"Twin Falls, ID",C
+16085,"Valley, ID",C
+16087,"Washington, ID",C
+1613940,"Blackfoot, ID",M
+1614260,"Boise City, ID",M
+1615420,"Burley, ID",M
+1617660,"Coeur d'Alene, ID",M
+1625200,"Hailey, ID",M
+1626820,"Idaho Falls, ID",M
+1627220,"Jackson, WY-ID (ID part)",M
+1630300,"Lewiston, ID-WA (ID part)",M
+1630860,"Logan, UT-ID (ID part)",M
+1634140,"Moscow, ID",M
+1634300,"Mountain Home, ID",M
+1636620,"Ontario, OR-ID (ID part)",M
+1638540,"Pocatello, ID",M
+1639940,"Rexburg, ID",M
+1641760,"Sandpoint, ID",M
+1646300,"Twin Falls, ID",M
+1699999,"Nonmetropolitan, nonmicropolitan, ID",M
+16160010,"01 North WIB",W
+16160020,"02 North Central WIB",W
+16160030,"03 Southwest WIB",W
+16160040,"04 South Central WIB",W
+16160050,"05 Southeast WIB",W
+16160060,"06 Northeast WIB",W

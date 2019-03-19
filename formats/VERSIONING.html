@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use Data Schema Versioning</title>
+<link rel="stylesheet" href="./asciidoc.css" type="text/css" />
+
+
+<script type="text/javascript" src="./asciidoc.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(3);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>LEHD Public Use Data Schema Versioning</h1>
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:lars.vilhuber@cornell.edu">lars.vilhuber@cornell.edu</a>&gt;</code></span><br />
+<span id="revdate">15 March 2016</span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="VERSIONING.pdf">Printable version</a> )</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome. Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4">lars.vilhuber@cornell.edu</a>.</p></div>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="scope">1. Scope</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics
+Program, including the Quarterly Workforce Indicators (QWI) and
+Job-to-Job Flows (J2J), are available for download according to
+structural and file naming schema. The data themselves are available as
+Comma-Separated Value (CSV) files through the LEHD website’s Data page
+at <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> as well as through the
+<a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="history">2. History</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The first published schema for the Quarterly Workforce Indicators (QWI)
+was v3.5, used for QWI files releases through R2013Q1. No formal
+document describing the schema was released, but a user-contributed
+"<a href="v3.5/QWI-cheatsheet.txt">Cheatsheet</a>" was available. A
+restructuring of the data and file naming conventions lead to V4.0 for
+releases starting with R2013Q2. The newer schema was described in the
+form of a <a href="V4.0/QWIPU_Data_Schema.pdf">PDF document</a> that was
+occassionally updated to reflect corrections and enhancements. All data
+releases were accompanied by a set of CSV files for allowable values of
+variables and flags, accompanying each collection of tabulations for
+each state.</p></div>
+<div class="paragraph"><p>Starting with release R2015Q2, a more formal and flexible structure was
+implemented, and published as V4.0.1. As changes occur to elements of
+the schema, version numbers are incremented (see
+<a href="#Versioning">Versioning</a>). Broader changes are first published as
+draft schemas (typically used by draft or "beta" releases of data),
+before becoming finalized. All versions are retained on this server.</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="v3.5">v3.5</a> First documented schema
+</p>
+</li>
+<li>
+<p>
+<a href="V4.0">V4.0</a> Second documented schema, change in file naming conventions;
+added and dropped variables.
+</p>
+</li>
+<li>
+<p>
+<a href="V4.0.1">V4.0.1</a> First formally structured schema documentation of V4 schema.
+</p>
+</li>
+<li>
+<p>
+V4.1 Additional files and variables (not finalized yet)
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="usage">3. Usage</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Each data release is accompanied by a file specifying a compact notation
+for metadata. For instance, the R2015Q2 release of Missouri QWI by race
+and ethnicity for all firm types (archived
+<a href="http://download.vrdc.cornell.edu/qwipu/R2015Q2/mo/rh/f/">here</a> or
+<a href="http://lehd.ces.census.gov/pub/mo/R2015Q2/DVD-rh_f/">here</a>) would have a
+file called <em>version_rh_f.txt</em> with the following content:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code>QWIRH_F MO 29 1995:1-2014:3 V4.0.1 R2015Q2 qwipu_mo_20150601_1902</code></pre>
+</div></div>
+<div class="paragraph"><p>where the fifth component (V4.0.1) identifies the schema being used. Thus,
+all value labels, the naming and structure of the files, the geographic
+and industry coding vintages, etc. can be deduced from the information
+available in the <a href="V4.0.1">V4.0.1</a> directory.</p></div>
+<div class="paragraph"><p>Names of data files follow certain rules, which are documented in the file "lehd_csv_naming".</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+In the example above, the file can be found at <a href="V4.0.1/lehd_csv_naming.html">V4.0.1/lehd_csv_naming.html</a>.
+</p>
+</li>
+<li>
+<p>
+The latest version of "lehd_csv_naming" can be found at <a href="latest/lehd_csv_naming.html">latest/lehd_csv_naming.html</a>.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>For each <strong>identifier variable</strong> on the data file, a set of allowable values is defined. Definitions of allowable values are provided as CSV files, with headers. Available <strong>indicator variables</strong> are defined, and labels provided. These definitions are summarized in the file "lehd_public_use_schema" (formerly named "QWIPU_Data_Schema.pdf").</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+For instance, in the example above, the file can be found at link:V4.0.1/lehd_public_use_schema.html
+</p>
+</li>
+<li>
+<p>
+(QWI) <strong>indicators</strong> are named and listed in the section "<a href="V4.0.1/lehd_public_use_schema.html#_a_id_indicators_a_indicators">Indicators</a>" in <a href="V4.0.1/lehd_public_use_schema.html">V4.0.1/lehd_public_use_schema.html</a> in human-readable form, and as machine-readable CSV files at <a href="V4.0.1/variables_qwipu.csv">V4.0.1/variables_qwipu.csv</a> .
+</p>
+</li>
+<li>
+<p>
+<strong>Identifiers</strong> for the QWI files are listed in the section "<a href="V4.0.1/lehd_public_use_schema.html#_a_id_identifiers_a_identifiers">Identifiers</a>" in machine-readable form, and as CSV files at <a href="V4.0.1/lehd_identifiers_qwi.csv">V4.0.1/lehd_identifiers_qwi.csv</a> (note: different files may have different identifiers).
+</p>
+</li>
+<li>
+<p>
+One of the available <strong>identifiers</strong> is "agegrp", for which the allowable values are listed at "<a href="V4.0.1/lehd_public_use_schema.html#_agegrp">agegrp</a>" and provided in machine-readable form at <a href="V4.0.1/label_agegrp.csv">V4.0.1/label_agegrp.csv</a>
+</p>
+</li>
+<li>
+<p>
+The latest version of "lehd_public_use_schema" can be found at <a href="latest/lehd_public_use_schema.html">latest/lehd_public_use_schema.html</a>
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="versioning">4. Versioning</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Versioning rules follow <a href="http://semver.org/spec/v2.0.0.html">Semantic
+Versioning V2.0.0</a>, which states that</p></div>
+<div class="quoteblock">
+<div class="content">
+<div class="paragraph"><p>Given a version number MAJOR.MINOR.PATCH, increment the:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+MAJOR version when you make incompatible API changes,
+</p>
+</li>
+<li>
+<p>
+MINOR version when you add functionality in a backwards-compatible
+manner, and
+</p>
+</li>
+<li>
+<p>
+PATCH version when you make backwards-compatible bug fixes.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="attribution">
+</div></div>
+<div class="paragraph"><p>In practice,</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+LEHD increments the major number when a new data format is used that
+would break import procedures by outside systems (variables are dropped, are in a
+different order, existing variables change names; file naming
+conventions change for existing files)
+</p>
+</li>
+<li>
+<p>
+LEHD increments the minor number when
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+variables are added, without changing order of existing variables
+</p>
+</li>
+<li>
+<p>
+new types of data are added (e.g., J2J, LODES) without changing
+existing files
+</p>
+</li>
+<li>
+<p>
+changes in values are of a "significant" nature
+</p>
+</li>
+<li>
+<p>
+changes to the structure of the schema documentation are made
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+LEHD increments the "patch" number when changes are made to existing
+codes that do not break import of data, or change the interpretation of
+the data in a significant way
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+a description is corrected
+</p>
+</li>
+<li>
+<p>
+a set of value labels is changed in a minimal way
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+LEHD does not increment the version number when corrections to the
+human readable schema documentation itself are made, but does indicate
+such changes in the CHANGE section with the calendar date of the
+revision.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Examples of "patch"-level changes are:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+updated geography definitions
+(changes in state-specific geographies impacting a small set of areas,
+for instance a WIB or a small number of counties) (see CHANGES in
+<a href="V4.0.1/CHANGES.txt">V4.0.1</a>, <a href="V4.0.2/CHANGES.txt">V4.0.2</a>,
+<a href="V4.0.3/CHANGES.txt">V4.0.3</a> for examples)
+</p>
+</li>
+<li>
+<p>
+change in NAICS coding
+affecting only a small number of industries (see CHANGES in
+<a href="V4.0.2/CHANGES.txt">V4.0.2</a> for an example).
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Switching from SIC to
+NAICS would have been a <em>major</em> version number change, changing from
+NAICS 1997 to 2007 - which had more significant changes, but did not
+fundamentally change the way the data are read in - would have been a
+<em>minor</em> version number change.</p></div>
+<div class="paragraph"><p>Additional revisions within a "patch"-level schema will be identified in
+the CHANGES.txt by date, but will not otherwise carry a different
+version number. Revisions are only used to correct for bugs, and to
+improve documentation of the schema itself, but not to change the
+schema.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="draft-versions">5. Draft Versions</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>LEHD will publish a draft version of minor or major schema changes, in
+order to be able to allow for comments by the community. A draft schema
+may also accompany <em>beta</em> data products, where both schema and data are
+published to elicit comments from the public. Draft versions do not
+necessarily lead to a final specification, and should be treated as work
+in progress.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="most-current-version">6. Most Current Version</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>For convenience, the latest non-draft version is accessible at
+<a href="http://lehd.ces.census.gov/data/schema/latest/">http://lehd.ces.census.gov/data/schema/latest/</a>. However, users should
+note that at any point in time, data published by LEHD may reference an
+older schema, as noted in the Usage section above. Users are strongly
+encouraged to reference a well-specified revision number in their
+programs, derived from the "version*txt" file provided with each data
+release.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="curation">7. Curation</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>LEHD commits to keeping a public record of all major, minor, and patch
+versions of the schema in an accessible, public location (currently, at
+<a href="http://lehd.ces.census.gov/data/schema/">http://lehd.ces.census.gov/data/schema/</a>). Additional revisions are
+stored internally in code versioning systems, and can be provided upon
+request.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="changes">8. Changes</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This section is reserved for documentation of changes to this document. For documentation of changes to the schema, see the "CHANGES.txt" file in each versioned schema directory.</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+V1.0 2016-03-15: First release.
+</p>
+</li>
+</ul></div>
+<div style="page-break-after:always"></div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p>This revision: Tue Mar 15 18:01:51 EDT 2016</p></div>
+</div></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2016-03-15 18:01:51 EDT
+</div>
+</div>
+</body>
+</html>

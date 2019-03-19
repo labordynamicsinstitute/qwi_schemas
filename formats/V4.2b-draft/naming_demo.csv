@@ -1,0 +1,6 @@
+type,Description
+d,No demographic detail
+rh,Race by Ethnicity tabulations
+sa,Sex by Age tabulations
+se,Sex by Education tabulations
+sarhe,Collection of sa-rh-se tabulations

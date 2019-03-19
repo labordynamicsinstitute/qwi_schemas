@@ -1,0 +1,326 @@
+= LEHD Public Use Data Schema v4.0.1
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+30 April 2015
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+
+( link:QWIPU_Data_Schema.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+	
+
+
+The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+ are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and at an (occassional) mirror site at http://download.vrdc.cornell.edu/qwipu/.
+
+This document describes the data schema for QWI files. For each variable,
+a set of allowable values is defined. Definitions are provided as CSV files,
+with header variable definitions. The naming conventions of the data files is documented in link:lehd_csv_naming.html[]. Changes relative to the original v4.0 version are listed <<changes,at the end>>.
+
+
+Basic Schema
+------------
+Each file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>.
+
+=== Generic structure
+
+[width="30%",format="csv",cols="<2",options="header"]
+|===================================================
+Column name
+[ Identifier1 ]
+[ Identifier2 ]
+[ Identifier3 ]
+[ ... ]
+[ Indicator 1 ]
+[ Indicator 2 ]
+[ Indicator 3 ]
+[ ... ]
+[ Status Flag 1 ]
+[ Status Flag 2 ]
+[ Status Flag 3 ]
+[ ... ]
+|===================================================
+
+Note: A full list of indicators for each type of file are shown below in the <<indicators,Indicators>> section.
+While all indicators are included in the CSV files, only the requested indicators
+will be included in data outputs from the LED Extraction Tool.
+
+<<<
+
+=== [[identifiers]]Identifiers
+Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
+Identifiers without the year and quarter component can be considered a series identifier.
+
+==== Identifiers for qwi
+( link:lehd_identifiers_qwi.csv[] )
+
+[width="100%",format="csv",cols="2*^1,<3",options="header"]
+|===================================================
+include::lehd_identifiers_qwi.csv[]
+|===================================================
+<<<
+
+
+
+<<<
+=== [[indicators]]Indicators
+The following tables and associated mapping files
+list the indicators available on each file.  The ''Indicator Variable'' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the ''Alternate name'' may appear in related documentation and articles. The ''Status Flag'' is used to indicate publication or data quality status (see <<statusflags,Status Flags>>). The ''Indicator Name'' is a more verbose description of the indicator.
+
+
+( link:variables_qwipu.csv[variables_qwipu.csv] )
+[width="95%",format="csv",cols="3*^2,<5",options="header"]
+|===================================================
+include::variables_qwipu.csv[]
+|===================================================
+
+<<<
+
+
+== [[catvars]]Categorical Variables
+Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.
+
+
+=== agegrp
+( link:label_agegrp.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_agegrp.csv[]
+|===================================================
+
+=== education
+( link:label_education.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_education.csv[]
+|===================================================
+
+=== ethnicity
+( link:label_ethnicity.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ethnicity.csv[]
+|===================================================
+
+=== firmage
+( link:label_firmage.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_firmage.csv[]
+|===================================================
+
+=== firmsize
+( link:label_firmsize.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_firmsize.csv[]
+|===================================================
+
+=== ownercode
+( link:label_ownercode.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ownercode.csv[]
+|===================================================
+
+=== periodicity
+( link:label_periodicity.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_periodicity.csv[]
+|===================================================
+
+=== race
+( link:label_race.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_race.csv[]
+|===================================================
+
+=== seasonadj
+( link:label_seasonadj.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_seasonadj.csv[]
+|===================================================
+
+=== sex
+( link:label_sex.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_sex.csv[]
+|===================================================
+
+<<<
+=== Industry ===
+
+ 
+[[ind_level]]
+==== Industry levels
+( link:label_ind_level.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_ind_level.csv[]
+|===================================================
+
+
+==== Industry
+( link:label_industry.csv[] )
+
+Only a small subset of available values shown.
+The 2007 NAICS (North American Industry Classification System) is used for all years.
+For a full listing of all valid NAICS codes, see http://www.census.gov/eos/www/naics/.
+
+[width="90%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::tmp2.csv[]
+|===================================================
+<<<
+
+=== Geography ===
+
+  
+[[geo_level]]
+==== Geographic levels
+
+
+( link:label_geo_level.csv[] )
+
+[width="40%",format="csv",cols="^1,<3",options="header"]
+|===================================================
+include::label_geo_level.csv[]
+|===================================================
+
+
+Geography labels are provided in separate files, in directories by state. Note that cross-state CBSA will have
+state-specific parts, and thus will appear in multiple files.
+A separate link:label_fipsnum.csv[label_fipsnum.csv] contains values and labels
+for all entities of geo_level 'n' or 's', and is a summary of separately available files.
+
+==== State-level values ====
+( link:label_fipsnum.csv[] )
+
+[width="40%",format="csv",cols="^1,<3",options="header"]
+|===================================================
+include::tmp.csv[]
+|===================================================
+
+==== Detailed state and substate level values
+
+For a full listing of all valid geography codes (except for WIA codes), see http://www.census.gov/geo/maps-data/data/tiger.html.
+Note about geography codes: Four types of geography codes are represented with this field. Each geography
+has its own code structure.
+
+- State is the 2-digit http://quickfacts.census.gov/qfd/meta/long_fips.htm[FIPS] code.
+- County is the 5-digit FIPS code.
+- Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit http://www.census.gov/population/metro/[CBSA] code provided by the Census Bureau’s Geography Division.
+** In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
+- The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
+
+The 2014 vintage of Census TIGER geography is used for all tabulations as of the 2014Q3 release.
+
+
+[format="csv",width="50%",cols="^1,^3",options="header"]
+|===================================================
+State,Format file
+AK,link:ak/label_geography.csv[]
+AL,link:al/label_geography.csv[]
+AR,link:ar/label_geography.csv[]
+AZ,link:az/label_geography.csv[]
+CA,link:ca/label_geography.csv[]
+CO,link:co/label_geography.csv[]
+CT,link:ct/label_geography.csv[]
+DC,link:dc/label_geography.csv[]
+DE,link:de/label_geography.csv[]
+FL,link:fl/label_geography.csv[]
+GA,link:ga/label_geography.csv[]
+HI,link:hi/label_geography.csv[]
+IA,link:ia/label_geography.csv[]
+ID,link:id/label_geography.csv[]
+IL,link:il/label_geography.csv[]
+IN,link:in/label_geography.csv[]
+KS,link:ks/label_geography.csv[]
+KY,link:ky/label_geography.csv[]
+LA,link:la/label_geography.csv[]
+MD,link:md/label_geography.csv[]
+ME,link:me/label_geography.csv[]
+MI,link:mi/label_geography.csv[]
+MN,link:mn/label_geography.csv[]
+MO,link:mo/label_geography.csv[]
+MS,link:ms/label_geography.csv[]
+MT,link:mt/label_geography.csv[]
+NC,link:nc/label_geography.csv[]
+ND,link:nd/label_geography.csv[]
+NE,link:ne/label_geography.csv[]
+NH,link:nh/label_geography.csv[]
+NJ,link:nj/label_geography.csv[]
+NM,link:nm/label_geography.csv[]
+NV,link:nv/label_geography.csv[]
+NY,link:ny/label_geography.csv[]
+OH,link:oh/label_geography.csv[]
+OK,link:ok/label_geography.csv[]
+OR,link:or/label_geography.csv[]
+PA,link:pa/label_geography.csv[]
+RI,link:ri/label_geography.csv[]
+SC,link:sc/label_geography.csv[]
+SD,link:sd/label_geography.csv[]
+TN,link:tn/label_geography.csv[]
+TX,link:tx/label_geography.csv[]
+UT,link:ut/label_geography.csv[]
+VA,link:va/label_geography.csv[]
+VT,link:vt/label_geography.csv[]
+WA,link:wa/label_geography.csv[]
+WI,link:wi/label_geography.csv[]
+WV,link:wv/label_geography.csv[]
+WY,link:wy/label_geography.csv[]
+|===================================================
+
+<<<
+== [[statusflags]]Status flags
+( link:label_flags.csv[] )
+
+Each status flag in the tables above contains one of the following valid values.
+The values and their interpretation are listed in the table below.
+
+
+[width="80%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::label_flags.csv[]
+|===================================================
+
+<<<
+
+
+== [[changes]] Changes
+
+=== Version 4.0.1 from 4.0
+- 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+
+<<<
+*******************
+This revision: Thu Apr 30 11:36:23 EDT 2015
+*******************
+

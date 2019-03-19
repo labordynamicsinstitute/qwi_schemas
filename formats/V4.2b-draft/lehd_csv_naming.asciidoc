@@ -1,0 +1,229 @@
+= LEHD Public Use CSV Naming Schema V4.2b-draft - CSV Naming Convention
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+07 September 2017
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+:ext-relative: {outfilesuffix}
+
+( link:lehd_csv_naming.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+
+
+Purpose
+-------
+The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
+This document describes the file naming schema for LEHD-provided CSV files.
+
+Schema for Data File Contents
+-----------------------------
+
+The contents (schema) for LEHD data files are described in  link:lehd_public_use_schema{ext-relative}[].
+The contents (schema) for shapefiles are described in link:lehd_shapefiles{ext-relative}[].
+
+Extends
+-------
+This version reimplements some features from  V4.0. Many files compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema, but compatibility is not guaranteed.
+
+Supersedes
+----------
+This version supersedes V4.1.0, for files released as of R2016Q4
+
+
+Basic Schema
+------------
+
+All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
+some other identifier.
+
+-------------------
+[TYPE]_[DETAILS].[EXT]
+-------------------
+
+( link:naming_convention.csv[] )
+
+
+[width="90%",format="csv",delim=",",cols="^1,<3,<5",options="header"]
+|===================================================
+include::tmp_naming_convention.csv[]
+|===================================================
+
+=== QWIPU from the LED Extraction Tool
+Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+------------------------------------
+[type]_[id].[EXT]
+------------------------------------
+where +[id]+ is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.
+
+
+=== [[versionqwi]]Metadata for QWI data files (version.txt)
+Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
+--------------------------------
+version_[demo]_[fas].txt
+--------------------------------
+where each name component is described in more detail <<components,below>>.
+
+=== [[versionj2j]]Metadata for J2J data files (version.txt)
+Metadata accompanies the data files, identifying provenance, geographic and temporal coverage. These files follow the following naming convention:
+--------------------------------
+version_[type].txt
+--------------------------------
+where each name component is described in more detail <<components,below>>.
+
+=== [[version_j2jod]]Metadata for J2JOD files
+Because the origin-destination (J2JOD) data link two regions, we provide an auxiliary file with the time range for which cells containing data for each geographic pairing may appear in a data release. The reference region will always be either the origin or the destination.
+These files follow the following naming convention:
+--------------------------------
+j2jod_[geography]_avail.csv
+--------------------------------
+where each name component is described in more detail <<components,below>>.
+
+
+
+
+== [[components]]Description of Filename Components
+
+=== Types
+
+( link:naming_type.csv[] )
+
+[width="90%",format="csv",delim=";",cols="^1,<3,<5,<3",options="header"]
+|===================================================
+include::naming_type.csv[]
+|===================================================
+
+=== geohi
+( link:naming_geohi.csv[] )
+
+The geohi component is based on one of two possible code sets:
+
+- the lower-case alphabetic FIPS or postal state code based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2] (see also link:label_stusps.csv[] for upper-case variants).
+- the numeric CBSA code corresponding to the metropolitan areas (see link:label_geography_metro.csv[])
+- It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+type,Description
+all,"Collection of all available states"
+us,"National data (50 states + DC)"
+st,Any legal 2-character lower-case state postal code
+NNNNN,Any valid CBSA-derived code listed in link:label_geography_metro.csv[]
+|===================================================
+
+=== demo
+( link:naming_demo.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_demo.csv[]
+|===================================================
+
+<<<
+
+
+=== fas
+( link:naming_fas.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_fas.csv[]
+|===================================================
+
+<<<
+
+
+=== geocat
+( link:naming_geocat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_geocat.csv[]
+|===================================================
+
+<<<
+
+
+=== indcat
+( link:naming_indcat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_indcat.csv[]
+|===================================================
+
+<<<
+
+
+=== owncat
+( link:naming_owncat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_owncat.csv[]
+|===================================================
+
+<<<
+
+
+=== sa
+( link:naming_sa.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_sa.csv[]
+|===================================================
+
+<<<
+
+
+=== ext
+( link:naming_ext.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_ext.csv[]
+|===================================================
+
+<<<
+
+
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2017-08-21: Initial release
+- 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This does not affect the structure or contents of any released data files, but it affects the unreleased J2J app updates downstream.
+- 2017-09-07: clarifying the version.txt description - removed the mention of fips replacing by geonum
+- 2017-09-07: Moved stusps to the geography section, where it rightfully belongs.
+- 2017-09-07: Clarified language and usage of metropolitan area codes in label_geography_metro.csv, removed unused label_geography_cbsa.csv
+- 2017-09-07: Expanded definition of [geohi] to include CBSA codes for metropolitan areas
+
+=== Version 4.2b-draft from V4.2a-draft
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/12?closed=1[Github]
+
+=== Version 4.2a-draft from 4.1.1
+- See https://github.com/labordynamicsinstitute/qwi_schemas/milestone/5?closed=1[Github]
+
+[IMPORTANT]
+.Important
+==============================================
+Some of the data products noted above do not exist yet.
+==============================================
+
+<<<
+*******************
+This revision: Thu Sep  7 15:26:40 EDT 2017
+*******************
+

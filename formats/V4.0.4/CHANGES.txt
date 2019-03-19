@@ -1,0 +1,26 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2015-12-22: Initial release
+- 2016-03-15: Added better cross-links between CSV naming schame, and datafile schema
+- 2016-03-15: Corrected label_geo_level.csv to include the national level value.
+- 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status variables)
+
+=== Version 4.0.1 from 4.0
+- 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+=== Version 4.0.2 from 4.0.1
+- 2015-04-01: switched NAICS coding from 2007 to 2012
+
+=== Version 4.0.3 from 4.0.2
+- 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added MA.
+
+=== Version 4.0.4 from 4.0.3
+- 2015-11-30: updated OR.
+- 2015-12-10: Added consolidated geography label file label_geography_all.csv
+- 2015-12-22: Updated the identification of the correct geo vintage
+- 2015-12-22: Added a link to NAICS 2012 tables
+- 2015-12-22: Removing the 99 row in industry values - only used for internal error checking

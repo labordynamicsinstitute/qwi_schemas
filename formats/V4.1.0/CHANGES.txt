@@ -1,0 +1,40 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2016-09-26: Initial release
+- 2016-10-06: Fixed a rendering issue with an empty column.
+- 2016-10-06: Modified the label for firm age and firm size to contain mention of "Not Available For Public-Sector Firms"
+- 2016-10-06: Changed description of agg_level
+- 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
+- 2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
+- 2017-03-07: Corrected naming of files inside shapefile ZIP files
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
+
+=== Version 4.1 from 4.0.5
+- 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
+  - Changed structure of state-level geography labels (flat directory structure)
+  - Describes National QWI files and J2J files (both of which are still in beta), added J2J, National QWI spec
+  - added additional geo_level for CBSA (complete), additional description, sources in label_geo_level.csv
+- 2016-08-10: Added description,definition of SHP files
+- 2016-08-11: Modified Indicator Names for J2J variable metadata.
+- 2016-08-31: adjusted AL, AR, GA, IA, KY, LA, MN, MS, NM, PA, TN, TX metropolitan areas for 2016 geo vintage
+
+==== In more detail
+  - added geohi category of ALL, US, add naming_geohi.csv
+  - added naming convention for additional files
+  - added agg_level variable
+  - Changes to name of variable schema files (qwipu -> qwi), addition of variability and rate variable schema files.
+  - Addition of a column identifying the type of variable on QWI
+  - Renamed file from QWIPU_Data_Schema.pdf to lehd_public_use_schema.pdf
+  - Addition of variable schema description for J2J
+  - Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+  - Updated documentation-generating scripts to the latest. Documents are now identified by date, not revision
+  - Added a concatenation of geography files as label_geography.csv.
+  - Added a column geo_level to all label_geography_* files
+  - Changed fipsnum to force readin of FIPS as character, include geo_level, US.
+  - Added additional legal values for firmage and firmsize, as used by J2J
+  - Added Federal government to files  (for National QWI)
+  - Clarified description of filenaming components
+  - Sundry small additional changes, building out the schema
+  - Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.

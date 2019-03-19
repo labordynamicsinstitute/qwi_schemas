@@ -1,0 +1,41 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
+MHire,all_doma2,sMHire,Hires,Hires into a worker's main job,Count,Hire,1
+MSep,all_doms2,sMSep,Separations,Separations from a worker's main job,Count,Separation,1
+MJobStart,first_dome,sMJobStart,Main Job Starts,New main jobs due to hires and instances when a previously existing secondary job becomes the main source of earnings,Count,Employment,1
+MJobEnd,last_domb,sMJobEnd,Main Job Ends,End of main jobs due to separations and instances when another job becomes the main source of earnings,Count,Employment,1
+EEHire,ee_doma2,sEEHire,Job-to-Job Hires (Continuous Employment),Hires following a separation with no observed nonemployment spell,Count,Hire,1
+EESep,ee_doms2,sEESep,Job-to-Job Separations (Continuous Employment),Separations followed by a hire with no observed nonemployment spell,Count,Separation,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Hires (Brief Nonemployment),Hires following a separation with a short nonemployment spell,Count,Hire,1
+AQSep,aq_doms2,sAQSep,Job-to-Job Separations (Brief Nonemployment),Separations followed by a hire with a short nonemployment spell,Count,Separation,1
+J2JHire,j2j_doma2,sJ2JHire,Job-to-Job Hires,Hires following a separation (short or no observed nonemployment spell),Count,Hire,1
+J2JSep,j2j_doms2,sJ2JSep,Job-to-Job Separations,Separations followed by a hire (short or no observed nonemployment spell),Count,Separation,1
+NEHire,ne_doma2,sNEHire,Hires from Nonemployment,Hires following any spell of nonemployment,Count,Hire,1
+ENSep,en_doms2,sENSep,Separations to Nonemployment,Separations into any spell of nonemployment,Count,Separation,1
+NEPersist,ne2_doma2,sNEPersist,Hires from Persistent Nonemployment,Hires following a spell of persistent nonemployment,Count,Hire,1
+ENPersist,en2_doms2,sENPersist,Separations to Persistent Nonemployment,Separations into a spell of persistent nonemployment,Count,Separation,1
+NEFullQ,ne2p_doma2,sNEFullQ,Hires from Full-Quarter Nonemployment,Hires following a spell of full-quarter nonemployment (does not include intermittently employed),Count,Hire,1
+ENFullQ,en2p_doms2,sENFullQ,Separations to Full-Quarter Nonemployment,Separations into a spell of full-quarter nonemployment (does not include intermittently employed),Count,Separation,1
+MainB,domB,sMainB,Employment (Beginning of Quarter),Main jobs held on the first day of the quarter,Count,Employment,1
+MainE,domE,sMainE,Employment (End of Quarter),Main jobs held on the last day of the quarter,Count,Employment,1
+MHireR,all_doma2_rate,sMHireR,Hires,Rate of hires into a worker's main job,Rate,Hire,(MainB+MainE)/2
+MSepR,all_doms2_rate,sMSepR,Separations,Rate of separations from a worker's main job,Rate,Separation,(MainB+MainE)/2
+MJobStartR,all_dest_rate,sMJobStartR,Main Job Starts,Rate of new main jobs due to hires and instances when a previously existing secondary job becomes the main source of earnings,Rate,Employment,(MainB+MainE)/2
+MJobEndR,all_orgin_rate,sMJobEndR,Main Job Ends,Rate of the end of main jobs due to separations and instances when another job becomes the main source of earnings,Rate,Employment,(MainB+MainE)/2
+EEHireR,eea_rate,sEEHireR,Job-to-Job Hires (Continuous Employment),Rate of hires following a separation with no observed nonemployment spell,Rate,Hire,(MainB+MainE)/2
+EESepR,ees_rate,sEESepR,Job-to-Job Separations (Continuous Employment),Rate of separations followed by a hire with no observed nonemployment spell,Rate,Separation,(MainB+MainE)/2
+AQHireR,aq_doma2_rate,sAQHireR,Job-to-Job Hires (Brief Nonemployment),Rate of hires following a separation with a short nonemployment spell,Rate,Hire,(MainB+MainE)/2
+AQSepR,aq_doms2_rate,sAQSepR,Job-to-Job Separations (Brief Nonemployment),Rate of separations followed by a hire with a short nonemployment spell,Rate,Separation,(MainB+MainE)/2
+J2JHireR,eeall_doma2_rate,sJ2JHireR,Job-to-Job Hires,Rate of hires following a separation (short or no observed nonemployment spell),Rate,Hire,(MainB+MainE)/2
+J2JSepR,eeall_doms2_rate,sJ2JSepR,Job-to-Job Separations,Rate of separations followed by a hire (short or no observed nonemployment spell),Rate,Separation,(MainB+MainE)/2
+NEHireR,ne_doma2_rate,sNEHireR,Hires from Nonemployment,Rate of hires following any spell of nonemployment,Rate,Hire,(MainB+MainE)/2
+ENSepR,en_doms2_rate,sENSepR,Separations to Nonemployment,Rate of separations into any spell of nonemployment,Rate,Separation,(MainB+MainE)/2
+NEPersistR,ne2_doma2_rate,sNEPersistR,Hires from Persistent Nonemployment,Rate of hires following a spell of persistent nonemployment,Rate,Hire,(MainB+MainE)/2
+ENPersistR,en2_doms2_rate,sENPersistR,Separations to Persistent Nonemployment,Rate of separations into a spell of persistent nonemployment,Rate,Separation,(MainB+MainE)/2
+NEFullQR,ne2p_doma2_rate,sNEFullQR,Hires from Full-Quarter Nonemployment,Rate of hires following a spell of full-quarter nonemployment (does not include intermittently employed),Rate,Hire,(MainB+MainE)/2
+ENFullQR,en2p_doms2_rate,sENFullQR,Separations to Full-Quarter Nonemployment,Rate of separations into a spell of full-quarter nonemployment (does not include intermittently employed),Rate,Separation,(MainB+MainE)/2
+EE,ee,sEE,Job-to-Job Flows (Continuous Employment),Job flows with no observed nonemployment spell,Count,Flow,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Job flows with a short nonemployment spell,Count,Flow,1
+J2J,ee+aq_doma2,sJ2J,Job-to-Job Flows,Job flows with a short or no observed nonemployment spell,Count,Flow,1
+EES,fee,sEEFullQ,Stable Job-to-Job Flows (Continuous Employment),Job flows from stable employment into stable employment with no observed nonemployment spell,Count,Flow,1
+AQHireS,faq_doma2,sAQFullQHire,Stable Job-to-Job Flows (Brief Nonemployment),Job flows from stable employment into stable employment with a short nonemployment spell,Count,Flow,1
+J2JS,fee+faq_doma2,sJ2JS,Stable Job-to-Job Flows,Job flows from stable employment into stable employment with a short or no observed nonemployment spell,Count,Flow,1

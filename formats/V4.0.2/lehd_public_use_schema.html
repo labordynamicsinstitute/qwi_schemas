@@ -1,0 +1,1496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use Data Schema v4.0.2</title>
+<link rel="stylesheet" href="./asciidoc.css" type="text/css" />
+
+
+<script type="text/javascript" src="./asciidoc.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(3);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>LEHD Public Use Data Schema v4.0.2</h1>
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="revdate">10 December 2015</span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="QWIPU_Data_Schema.pdf">Printable version</a> )</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1">ces.qwi.feedback@census.gov</a>.
+.</p></div>
+</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+ are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> .</p></div>
+<div class="paragraph"><p>This document describes the data schema for QWI files. For each variable,
+a set of allowable values is defined. Definitions are provided as CSV files,
+with header variable definitions. The naming conventions of the data files is documented in <a href="lehd_csv_naming.html">lehd_csv_naming.html</a>. Changes relative to the original v4.0 version are listed <a href="#changes">at the end</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_schema">1. Basic Schema</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Each file is structured as a CSV file. The first columns contain <a href="#identifiers">[identifiers]</a>, subsequent columns contain <a href="#indicators">[indicators]</a>, followed by <a href="#statusflags">status flags</a>.</p></div>
+<div class="sect2">
+<h3 id="_generic_structure">1.1. Generic structure</h3>
+<div class="tableblock">
+<table rules="all"
+width="30%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<thead>
+<tr>
+<th align="left" valign="top">Column name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">[ Identifier1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Identifier2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Identifier3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Indicator 1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Indicator 2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Indicator 3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Status Flag 1 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Status Flag 2 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ Status Flag 3 ]</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">[ &#8230; ]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>Note: A full list of indicators for each type of file are shown below in the <a href="#indicators">Indicators</a> section.
+While all indicators are included in the CSV files, only the requested indicators
+will be included in data outputs from the LED Extraction Tool.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_identifiers_a_identifiers">1.2. <a id="identifiers"></a>Identifiers</h3>
+<div class="paragraph"><p>Records, unless otherwise noted, are parts of time-series data. Unique record identifiers are noted below, by file type.
+Identifiers without the year and quarter component can be considered a series identifier.</p></div>
+<div class="sect3">
+<h4 id="_identifiers_for_qwi">1.2.1. Identifiers for qwi</h4>
+<div class="paragraph"><p>( <a href="lehd_identifiers_qwi.csv">lehd_identifiers_qwi.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="20%" />
+<col width="60%" />
+<thead>
+<tr>
+<th align="center" valign="top">Variable</th>
+<th align="center" valign="top">Type</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">periodicity</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Periodicity of report</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">seasonadj</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Seasonal Adjustment Indicator</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">geo_level</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Group: Geographic level of aggregation</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">geography</p></td>
+<td align="center" valign="top"><p class="table">Char(8)</p></td>
+<td align="left" valign="top"><p class="table">Group: Geography code</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ind_level</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Group: Industry level of aggregation</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">industry</p></td>
+<td align="center" valign="top"><p class="table">Char(5)</p></td>
+<td align="left" valign="top"><p class="table">Group: Industry code</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ownercode</p></td>
+<td align="center" valign="top"><p class="table">Char(3)</p></td>
+<td align="left" valign="top"><p class="table">Group: Ownership group code</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">sex</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Group: Gender code</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">agegrp</p></td>
+<td align="center" valign="top"><p class="table">Char(3)</p></td>
+<td align="left" valign="top"><p class="table">Group: Age group code (WIA)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">race</p></td>
+<td align="center" valign="top"><p class="table">Char(2)</p></td>
+<td align="left" valign="top"><p class="table">Group: race</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ethnicity</p></td>
+<td align="center" valign="top"><p class="table">Char(2)</p></td>
+<td align="left" valign="top"><p class="table">Group: ethnicity</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">education</p></td>
+<td align="center" valign="top"><p class="table">Char(2)</p></td>
+<td align="left" valign="top"><p class="table">Group: education</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">firmage</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Group: Firm Age group</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">firmsize</p></td>
+<td align="center" valign="top"><p class="table">Char(1)</p></td>
+<td align="left" valign="top"><p class="table">Group: Firm Size group</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">year</p></td>
+<td align="center" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Time: Year</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">quarter</p></td>
+<td align="center" valign="top"><p class="table">Num</p></td>
+<td align="left" valign="top"><p class="table">Time: Quarter</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_a_id_indicators_a_indicators">1.3. <a id="indicators"></a>Indicators</h3>
+<div class="paragraph"><p>The following tables and associated mapping files
+list the indicators available on each file.  The <em>'Indicator Variable</em>' is the short name of the variable on the CSV files, suitable for machine processing in a wide variety of statistical applications. When given, the <em>'Alternate name</em>' may appear in related documentation and articles. The <em>'Status Flag</em>' is used to indicate publication or data quality status (see <a href="#statusflags">Status Flags</a>). The <em>'Indicator Name</em>' is a more verbose description of the indicator.</p></div>
+<div class="paragraph"><p>( <a href="variables_qwipu.csv">variables_qwipu.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="95%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="18%" />
+<col width="18%" />
+<col width="18%" />
+<col width="45%" />
+<thead>
+<tr>
+<th align="center" valign="top">Indicator Variable</th>
+<th align="center" valign="top">Alternate name</th>
+<th align="center" valign="top">Status Flag</th>
+<th align="left" valign="top">Indicator Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">Emp</p></td>
+<td align="center" valign="top"><p class="table">B</p></td>
+<td align="center" valign="top"><p class="table">sEmp</p></td>
+<td align="left" valign="top"><p class="table">Beginning-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EmpEnd</p></td>
+<td align="center" valign="top"><p class="table">E</p></td>
+<td align="center" valign="top"><p class="table">sEmpEnd</p></td>
+<td align="left" valign="top"><p class="table">End-of-Quarter Employment: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EmpS</p></td>
+<td align="center" valign="top"><p class="table">F</p></td>
+<td align="center" valign="top"><p class="table">sEmpS</p></td>
+<td align="left" valign="top"><p class="table">Full-Quarter Employment (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EmpSpv</p></td>
+<td align="center" valign="top"><p class="table">Fprev</p></td>
+<td align="center" valign="top"><p class="table">sEmpSpv</p></td>
+<td align="left" valign="top"><p class="table">Full-Quarter Employment in the Previous Quarter: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EmpTotal</p></td>
+<td align="center" valign="top"><p class="table">M</p></td>
+<td align="center" valign="top"><p class="table">sEmpTotal</p></td>
+<td align="left" valign="top"><p class="table">Employment - Reference Quarter: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirA</p></td>
+<td align="center" valign="top"><p class="table">A</p></td>
+<td align="center" valign="top"><p class="table">sHirA</p></td>
+<td align="left" valign="top"><p class="table">Hires All: Counts (Accessions)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirN</p></td>
+<td align="center" valign="top"><p class="table">H1</p></td>
+<td align="center" valign="top"><p class="table">sHirN</p></td>
+<td align="left" valign="top"><p class="table">Hires New: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirR</p></td>
+<td align="center" valign="top"><p class="table">R1</p></td>
+<td align="center" valign="top"><p class="table">sHirR</p></td>
+<td align="left" valign="top"><p class="table">Hires Recalls: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Sep</p></td>
+<td align="center" valign="top"><p class="table">S</p></td>
+<td align="center" valign="top"><p class="table">sSep</p></td>
+<td align="left" valign="top"><p class="table">Separations: Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEnd</p></td>
+<td align="center" valign="top"><p class="table">A2</p></td>
+<td align="center" valign="top"><p class="table">sHirAEnd</p></td>
+<td align="left" valign="top"><p class="table">End-of-Quarter Hires</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEndR</p></td>
+<td align="center" valign="top"><p class="table">A2R</p></td>
+<td align="center" valign="top"><p class="table">sHirAEndR</p></td>
+<td align="left" valign="top"><p class="table">End-of-Quarter Hiring Rate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepBeg</p></td>
+<td align="center" valign="top"><p class="table">S2</p></td>
+<td align="center" valign="top"><p class="table">sSepBeg</p></td>
+<td align="left" valign="top"><p class="table">Beginning-of-Quarter Separations</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepBegR</p></td>
+<td align="center" valign="top"><p class="table">S2R</p></td>
+<td align="center" valign="top"><p class="table">sSepBegR</p></td>
+<td align="left" valign="top"><p class="table">Beginning-of-Quarter Separation Rate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAs</p></td>
+<td align="center" valign="top"><p class="table">A3</p></td>
+<td align="center" valign="top"><p class="table">sHirAs</p></td>
+<td align="left" valign="top"><p class="table">Hires All (Stable): Counts (Flows into Full-Quarter Employment)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirNs</p></td>
+<td align="center" valign="top"><p class="table">H3</p></td>
+<td align="center" valign="top"><p class="table">sHirNs</p></td>
+<td align="left" valign="top"><p class="table">Hires New (Stable): Counts (New Hires to Full-Quarter Status)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepS</p></td>
+<td align="center" valign="top"><p class="table">S3</p></td>
+<td align="center" valign="top"><p class="table">sSepS</p></td>
+<td align="left" valign="top"><p class="table">Separations (Stable): Counts (Flow out of Full-Quarter Employment)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SepSnx</p></td>
+<td align="center" valign="top"><p class="table">S3R</p></td>
+<td align="center" valign="top"><p class="table">sSepSnx</p></td>
+<td align="left" valign="top"><p class="table">Separations (Stable): Next Quarter: Counts (Flow out of Full-Quarter Employment)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">TurnOvrS</p></td>
+<td align="center" valign="top"><p class="table">FT</p></td>
+<td align="center" valign="top"><p class="table">sTurnOvrS</p></td>
+<td align="left" valign="top"><p class="table">Turnover (Stable)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbGn</p></td>
+<td align="center" valign="top"><p class="table">JC</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbGn</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Gains: Counts (Job Creation)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJobLs</p></td>
+<td align="center" valign="top"><p class="table">JD</p></td>
+<td align="center" valign="top"><p class="table">sFrmJobLs</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Loss: Counts (Job Destruction)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbC</p></td>
+<td align="center" valign="top"><p class="table">JF</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbC</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Change: Net Change</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEndRepl</p></td>
+<td align="center" valign="top"><p class="table">EI</p></td>
+<td align="center" valign="top"><p class="table">sHirAEndRepl</p></td>
+<td align="left" valign="top"><p class="table">Replacement Hires</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HirAEndReplr</p></td>
+<td align="center" valign="top"><p class="table">EIR</p></td>
+<td align="center" valign="top"><p class="table">sHirAEndReplr</p></td>
+<td align="left" valign="top"><p class="table">Replacement Hiring Rate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbGnS</p></td>
+<td align="center" valign="top"><p class="table">FJC</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbGnS</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Gains (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbLsS</p></td>
+<td align="center" valign="top"><p class="table">FJD</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbLsS</p></td>
+<td align="left" valign="top"><p class="table">Firm Job Loss (Stable): Counts</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FrmJbCS</p></td>
+<td align="center" valign="top"><p class="table">FJF</p></td>
+<td align="center" valign="top"><p class="table">sFrmJbCS</p></td>
+<td align="left" valign="top"><p class="table">Job Change (Stable): Net Change</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EarnS</p></td>
+<td align="center" valign="top"><p class="table">ZW3</p></td>
+<td align="center" valign="top"><p class="table">sEarnS</p></td>
+<td align="left" valign="top"><p class="table">Full Quarter Employment (Stable): Average Monthly Earnings</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EarnBeg</p></td>
+<td align="center" valign="top"><p class="table">ZW1</p></td>
+<td align="center" valign="top"><p class="table">sEarnBeg</p></td>
+<td align="left" valign="top"><p class="table">Beginning-of-Quarter Employment: Average Monthly Earnings</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EarnHirAS</p></td>
+<td align="center" valign="top"><p class="table">ZWFA</p></td>
+<td align="center" valign="top"><p class="table">sEarnHirAS</p></td>
+<td align="left" valign="top"><p class="table">Hires All (Stable): Average Monthly Earnings</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EarnHireNS</p></td>
+<td align="center" valign="top"><p class="table">ZWFH</p></td>
+<td align="center" valign="top"><p class="table">sEarnHireNS</p></td>
+<td align="left" valign="top"><p class="table">Hires New (Stable): Average Monthly Earnings</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">EarnSepS</p></td>
+<td align="center" valign="top"><p class="table">ZWFS</p></td>
+<td align="center" valign="top"><p class="table">sEarnSepS</p></td>
+<td align="left" valign="top"><p class="table">Separations (Stable): Average Monthly Earnings</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Payroll</p></td>
+<td align="center" valign="top"><p class="table">W1</p></td>
+<td align="center" valign="top"><p class="table">sPayroll</p></td>
+<td align="left" valign="top"><p class="table">Total Quarterly Payroll: Sum</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_catvars_a_categorical_variables">2. <a id="catvars"></a>Categorical Variables</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Categorical variable descriptions are displayed above each table, with the variable name shown in parentheses. Unless otherwise stated, every possible value/label combination for each categorical variable is listed. Please note that not all values will be available in every table.</p></div>
+<div class="sect2">
+<h3 id="_agegrp">2.1. agegrp</h3>
+<div class="paragraph"><p>( <a href="label_agegrp.csv">label_agegrp.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">agegrp</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">A00</p></td>
+<td align="left" valign="top"><p class="table">All Ages (14-99)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A01</p></td>
+<td align="left" valign="top"><p class="table">14-18</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A02</p></td>
+<td align="left" valign="top"><p class="table">19-21</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A03</p></td>
+<td align="left" valign="top"><p class="table">22-24</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A04</p></td>
+<td align="left" valign="top"><p class="table">25-34</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A05</p></td>
+<td align="left" valign="top"><p class="table">35-44</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A06</p></td>
+<td align="left" valign="top"><p class="table">45-54</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A07</p></td>
+<td align="left" valign="top"><p class="table">55-64</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A08</p></td>
+<td align="left" valign="top"><p class="table">65-99</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_education">2.2. education</h3>
+<div class="paragraph"><p>( <a href="label_education.csv">label_education.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">education</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">E0</p></td>
+<td align="left" valign="top"><p class="table">All Education Categories</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">E1</p></td>
+<td align="left" valign="top"><p class="table">Less than high school</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">E2</p></td>
+<td align="left" valign="top"><p class="table">High school or equivalent, no college</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">E3</p></td>
+<td align="left" valign="top"><p class="table">Some college or Associate degree</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">E4</p></td>
+<td align="left" valign="top"><p class="table">Bachelor&#8217;s degree or advanced degree</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">E5</p></td>
+<td align="left" valign="top"><p class="table">Educational attainment not available (workers aged 24 or younger)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ethnicity">2.3. ethnicity</h3>
+<div class="paragraph"><p>( <a href="label_ethnicity.csv">label_ethnicity.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">ethnicity</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">A0</p></td>
+<td align="left" valign="top"><p class="table">All Ethnicities</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A1</p></td>
+<td align="left" valign="top"><p class="table">Not Hispanic or Latino</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A2</p></td>
+<td align="left" valign="top"><p class="table">Hispanic or Latino</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_firmage">2.4. firmage</h3>
+<div class="paragraph"><p>( <a href="label_firmage.csv">label_firmage.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">firmage</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">All Firm Ages</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0-1 Years</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2</p></td>
+<td align="left" valign="top"><p class="table">2-3 Years</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">3</p></td>
+<td align="left" valign="top"><p class="table">4-5 Years</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">4</p></td>
+<td align="left" valign="top"><p class="table">6-10 Years</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">5</p></td>
+<td align="left" valign="top"><p class="table">11+ Years</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_firmsize">2.5. firmsize</h3>
+<div class="paragraph"><p>( <a href="label_firmsize.csv">label_firmsize.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">firmsize</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">All Firm Sizes</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">0-19 Employees</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2</p></td>
+<td align="left" valign="top"><p class="table">20-49 Employees</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">3</p></td>
+<td align="left" valign="top"><p class="table">50-249 Employees</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">4</p></td>
+<td align="left" valign="top"><p class="table">250-499 Employees</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">5</p></td>
+<td align="left" valign="top"><p class="table">500+ Employees</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ownercode">2.6. ownercode</h3>
+<div class="paragraph"><p>( <a href="label_ownercode.csv">label_ownercode.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">ownercode</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">A00</p></td>
+<td align="left" valign="top"><p class="table">All (1-5)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A05</p></td>
+<td align="left" valign="top"><p class="table">All Private (5)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_periodicity">2.7. periodicity</h3>
+<div class="paragraph"><p>( <a href="label_periodicity.csv">label_periodicity.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">periodicity</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">A</p></td>
+<td align="left" valign="top"><p class="table">Annual data</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Q</p></td>
+<td align="left" valign="top"><p class="table">Quarterly data</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_race">2.8. race</h3>
+<div class="paragraph"><p>( <a href="label_race.csv">label_race.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">race</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">A0</p></td>
+<td align="left" valign="top"><p class="table">All Races</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A1</p></td>
+<td align="left" valign="top"><p class="table">White Alone</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A2</p></td>
+<td align="left" valign="top"><p class="table">Black or African American Alone</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A3</p></td>
+<td align="left" valign="top"><p class="table">American Indian or Alaska Native Alone</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A4</p></td>
+<td align="left" valign="top"><p class="table">Asian Alone</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A5</p></td>
+<td align="left" valign="top"><p class="table">Native Hawaiian or Other Pacific Islander Alone</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A6</p></td>
+<td align="left" valign="top"><p class="table">Some Other Race Alone (Not Used)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A7</p></td>
+<td align="left" valign="top"><p class="table">Two or More Race Groups</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_seasonadj">2.9. seasonadj</h3>
+<div class="paragraph"><p>( <a href="label_seasonadj.csv">label_seasonadj.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">seasonadj</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">S</p></td>
+<td align="left" valign="top"><p class="table">Seasonally adjusted</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">U</p></td>
+<td align="left" valign="top"><p class="table">Not seasonally adjusted</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sex">2.10. sex</h3>
+<div class="paragraph"><p>( <a href="label_sex.csv">label_sex.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">sex</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">0</p></td>
+<td align="left" valign="top"><p class="table">All Sexes</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">Male</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2</p></td>
+<td align="left" valign="top"><p class="table">Female</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_industry">2.11. Industry</h3>
+<div class="sect3">
+<h4 id="ind_level">2.11.1. Industry levels</h4>
+<div class="paragraph"><p>( <a href="label_ind_level.csv">label_ind_level.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">ind_level</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">3</p></td>
+<td align="left" valign="top"><p class="table">NAICS Subsectors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">4</p></td>
+<td align="left" valign="top"><p class="table">NAICS Industry Groups</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A</p></td>
+<td align="left" valign="top"><p class="table">All Industries</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">S</p></td>
+<td align="left" valign="top"><p class="table">NAICS Sectors</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_industry_2">2.11.2. Industry</h4>
+<div class="paragraph"><p>( <a href="label_industry.csv">label_industry.csv</a> )</p></div>
+<div class="paragraph"><p>Only a small subset of available values shown.
+The 2012 NAICS (North American Industry Classification System) is used for all years.
+QWI releases prior to R2015Q3 used the 2007 NAICS classification (see Schema v4.0.1).
+For a full listing of all valid NAICS codes, see <a href="http://www.census.gov/eos/www/naics/">http://www.census.gov/eos/www/naics/</a>.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="90%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">industry</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">00</p></td>
+<td align="left" valign="top"><p class="table">All NAICS Sectors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">000</p></td>
+<td align="left" valign="top"><p class="table">All NAICS Subsectors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">0000</p></td>
+<td align="left" valign="top"><p class="table">All NAICS Industry Groups</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">11</p></td>
+<td align="left" valign="top"><p class="table">Agriculture, Forestry, Fishing and Hunting</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">111</p></td>
+<td align="left" valign="top"><p class="table">Crop Production</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1111</p></td>
+<td align="left" valign="top"><p class="table">Oilseed and Grain Farming</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1112</p></td>
+<td align="left" valign="top"><p class="table">Vegetable and Melon Farming</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2382</p></td>
+<td align="left" valign="top"><p class="table">Building Equipment Contractors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2383</p></td>
+<td align="left" valign="top"><p class="table">Building Finishing Contractors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">2389</p></td>
+<td align="left" valign="top"><p class="table">Other Specialty Trade Contractors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">31-33</p></td>
+<td align="left" valign="top"><p class="table">Manufacturing</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">311</p></td>
+<td align="left" valign="top"><p class="table">Food Manufacturing</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">3111</p></td>
+<td align="left" valign="top"><p class="table">Animal Food Manufacturing</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">3112</p></td>
+<td align="left" valign="top"><p class="table">Grain and Oilseed Milling</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">3113</p></td>
+<td align="left" valign="top"><p class="table">Sugar and Confectionery Product Manufacturing</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geography">2.12. Geography</h3>
+<div class="sect3">
+<h4 id="geo_level">2.12.1. Geographic levels</h4>
+<div class="paragraph"><p>( <a href="label_geo_level.csv">label_geo_level.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="40%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="75%" />
+<thead>
+<tr>
+<th align="center" valign="top">geo_level</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">C</p></td>
+<td align="left" valign="top"><p class="table">Counties</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">M</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">S</p></td>
+<td align="left" valign="top"><p class="table">States</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">W</p></td>
+<td align="left" valign="top"><p class="table">Workforce Investment Areas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>Geography labels are provided in separate files, in directories by state. Note that cross-state CBSA will have
+state-specific parts, and thus will appear in multiple files.
+A separate <a href="label_fipsnum.csv">label_fipsnum.csv</a> contains values and labels
+for all entities of geo_level <em>n</em> or <em>s</em>, and is a summary of separately available files.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_state_level_values">2.12.2. State-level values</h4>
+<div class="paragraph"><p>( <a href="label_fipsnum.csv">label_fipsnum.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="40%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="75%" />
+<thead>
+<tr>
+<th align="center" valign="top">geography</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">02</p></td>
+<td align="left" valign="top"><p class="table">Alaska</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">01</p></td>
+<td align="left" valign="top"><p class="table">Alabama</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">05</p></td>
+<td align="left" valign="top"><p class="table">Arkansas</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">04</p></td>
+<td align="left" valign="top"><p class="table">Arizona</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">06</p></td>
+<td align="left" valign="top"><p class="table">California</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">08</p></td>
+<td align="left" valign="top"><p class="table">Colorado</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">09</p></td>
+<td align="left" valign="top"><p class="table">Connecticut</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">&#8230;</p></td>
+<td align="left" valign="top"><p class="table"></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">47</p></td>
+<td align="left" valign="top"><p class="table">Tennessee</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">48</p></td>
+<td align="left" valign="top"><p class="table">Texas</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">49</p></td>
+<td align="left" valign="top"><p class="table">Utah</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">51</p></td>
+<td align="left" valign="top"><p class="table">Virginia</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">50</p></td>
+<td align="left" valign="top"><p class="table">Vermont</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">53</p></td>
+<td align="left" valign="top"><p class="table">Washington</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">55</p></td>
+<td align="left" valign="top"><p class="table">Wisconsin</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">54</p></td>
+<td align="left" valign="top"><p class="table">West Virginia</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_detailed_state_and_substate_level_values">2.12.3. Detailed state and substate level values</h4>
+<div class="paragraph"><p>For a full listing of all valid geography codes (except for WIA codes), see <a href="http://www.census.gov/geo/maps-data/data/tiger.html">http://www.census.gov/geo/maps-data/data/tiger.html</a>.
+Note about geography codes: Four types of geography codes are represented with this field. Each geography
+has its own code structure.</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+State is the 2-digit <a href="http://quickfacts.census.gov/qfd/meta/long_fips.htm">FIPS</a> code.
+</p>
+</li>
+<li>
+<p>
+County is the 5-digit FIPS code.
+</p>
+</li>
+<li>
+<p>
+Metropolitan/Micropolitan codes are constructed from the 2-digit state FIPS code and the 5-digit <a href="http://www.census.gov/population/metro/">CBSA</a> code provided by the Census Bureau’s Geography Division.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+In the QWI, the metropolitan/micropolitan areas are the state parts of the full CBSA areas.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+The WIA code is constructed from the 2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>The 2014 vintage of Census TIGER geography is used for all tabulations as of the R2014Q3 release.</p></div>
+<div class="paragraph"><p>For convenience, a composite file containing all geocodes is available as
+<a href="label_geography_all.csv">label_geography_all.csv</a>.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="25%" />
+<col width="75%" />
+<thead>
+<tr>
+<th align="center" valign="top">State</th>
+<th align="center" valign="top">Format file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">AK</p></td>
+<td align="center" valign="top"><p class="table"><a href="ak/label_geography.csv">ak/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AL</p></td>
+<td align="center" valign="top"><p class="table"><a href="al/label_geography.csv">al/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AR</p></td>
+<td align="center" valign="top"><p class="table"><a href="ar/label_geography.csv">ar/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">AZ</p></td>
+<td align="center" valign="top"><p class="table"><a href="az/label_geography.csv">az/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">CA</p></td>
+<td align="center" valign="top"><p class="table"><a href="ca/label_geography.csv">ca/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">CO</p></td>
+<td align="center" valign="top"><p class="table"><a href="co/label_geography.csv">co/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">CT</p></td>
+<td align="center" valign="top"><p class="table"><a href="ct/label_geography.csv">ct/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">DC</p></td>
+<td align="center" valign="top"><p class="table"><a href="dc/label_geography.csv">dc/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">DE</p></td>
+<td align="center" valign="top"><p class="table"><a href="de/label_geography.csv">de/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">FL</p></td>
+<td align="center" valign="top"><p class="table"><a href="fl/label_geography.csv">fl/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">GA</p></td>
+<td align="center" valign="top"><p class="table"><a href="ga/label_geography.csv">ga/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">HI</p></td>
+<td align="center" valign="top"><p class="table"><a href="hi/label_geography.csv">hi/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">IA</p></td>
+<td align="center" valign="top"><p class="table"><a href="ia/label_geography.csv">ia/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ID</p></td>
+<td align="center" valign="top"><p class="table"><a href="id/label_geography.csv">id/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">IL</p></td>
+<td align="center" valign="top"><p class="table"><a href="il/label_geography.csv">il/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">IN</p></td>
+<td align="center" valign="top"><p class="table"><a href="in/label_geography.csv">in/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">KS</p></td>
+<td align="center" valign="top"><p class="table"><a href="ks/label_geography.csv">ks/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">KY</p></td>
+<td align="center" valign="top"><p class="table"><a href="ky/label_geography.csv">ky/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">LA</p></td>
+<td align="center" valign="top"><p class="table"><a href="la/label_geography.csv">la/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MD</p></td>
+<td align="center" valign="top"><p class="table"><a href="md/label_geography.csv">md/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ME</p></td>
+<td align="center" valign="top"><p class="table"><a href="me/label_geography.csv">me/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MI</p></td>
+<td align="center" valign="top"><p class="table"><a href="mi/label_geography.csv">mi/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MN</p></td>
+<td align="center" valign="top"><p class="table"><a href="mn/label_geography.csv">mn/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MO</p></td>
+<td align="center" valign="top"><p class="table"><a href="mo/label_geography.csv">mo/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MS</p></td>
+<td align="center" valign="top"><p class="table"><a href="ms/label_geography.csv">ms/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">MT</p></td>
+<td align="center" valign="top"><p class="table"><a href="mt/label_geography.csv">mt/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NC</p></td>
+<td align="center" valign="top"><p class="table"><a href="nc/label_geography.csv">nc/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ND</p></td>
+<td align="center" valign="top"><p class="table"><a href="nd/label_geography.csv">nd/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NE</p></td>
+<td align="center" valign="top"><p class="table"><a href="ne/label_geography.csv">ne/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NH</p></td>
+<td align="center" valign="top"><p class="table"><a href="nh/label_geography.csv">nh/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NJ</p></td>
+<td align="center" valign="top"><p class="table"><a href="nj/label_geography.csv">nj/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NM</p></td>
+<td align="center" valign="top"><p class="table"><a href="nm/label_geography.csv">nm/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NV</p></td>
+<td align="center" valign="top"><p class="table"><a href="nv/label_geography.csv">nv/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">NY</p></td>
+<td align="center" valign="top"><p class="table"><a href="ny/label_geography.csv">ny/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">OH</p></td>
+<td align="center" valign="top"><p class="table"><a href="oh/label_geography.csv">oh/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">OK</p></td>
+<td align="center" valign="top"><p class="table"><a href="ok/label_geography.csv">ok/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">OR</p></td>
+<td align="center" valign="top"><p class="table"><a href="or/label_geography.csv">or/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">PA</p></td>
+<td align="center" valign="top"><p class="table"><a href="pa/label_geography.csv">pa/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">RI</p></td>
+<td align="center" valign="top"><p class="table"><a href="ri/label_geography.csv">ri/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SC</p></td>
+<td align="center" valign="top"><p class="table"><a href="sc/label_geography.csv">sc/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">SD</p></td>
+<td align="center" valign="top"><p class="table"><a href="sd/label_geography.csv">sd/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">TN</p></td>
+<td align="center" valign="top"><p class="table"><a href="tn/label_geography.csv">tn/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">TX</p></td>
+<td align="center" valign="top"><p class="table"><a href="tx/label_geography.csv">tx/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">UT</p></td>
+<td align="center" valign="top"><p class="table"><a href="ut/label_geography.csv">ut/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">VA</p></td>
+<td align="center" valign="top"><p class="table"><a href="va/label_geography.csv">va/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">VT</p></td>
+<td align="center" valign="top"><p class="table"><a href="vt/label_geography.csv">vt/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">WA</p></td>
+<td align="center" valign="top"><p class="table"><a href="wa/label_geography.csv">wa/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">WI</p></td>
+<td align="center" valign="top"><p class="table"><a href="wi/label_geography.csv">wi/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">WV</p></td>
+<td align="center" valign="top"><p class="table"><a href="wv/label_geography.csv">wv/label_geography.csv</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">WY</p></td>
+<td align="center" valign="top"><p class="table"><a href="wy/label_geography.csv">wy/label_geography.csv</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_statusflags_a_status_flags">3. <a id="statusflags"></a>Status flags</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="label_flags.csv">label_flags.csv</a> )</p></div>
+<div class="paragraph"><p>Each status flag in the tables above contains one of the following valid values.
+The values and their interpretation are listed in the table below.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="80%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">flag</th>
+<th align="left" valign="top">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">-2</p></td>
+<td align="left" valign="top"><p class="table">no data available in this category for this quarter</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">-1</p></td>
+<td align="left" valign="top"><p class="table">data not available to compute this estimate</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">1</p></td>
+<td align="left" valign="top"><p class="table">OK</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">5</p></td>
+<td align="left" valign="top"><p class="table">Value suppressed because it does not meet US Census Bureau publication standards.</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">6</p></td>
+<td align="left" valign="top"><p class="table">Value calculated from other released measures - no significant distortion</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">7</p></td>
+<td align="left" valign="top"><p class="table">Value calculated from other released measures - some of which have significantly distorted data</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">9</p></td>
+<td align="left" valign="top"><p class="table">Data significantly distorted - fuzzed value released</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">10</p></td>
+<td align="left" valign="top"><p class="table">Aggregate of cells - no significant distortion</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">11</p></td>
+<td align="left" valign="top"><p class="table">Aggregate of cells not released because component cells do not meet U.S. Census Bureau publication standards</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">12</p></td>
+<td align="left" valign="top"><p class="table">Aggregate of cells - some of which have significantly distorted data</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">4. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_this_version_revisions">4.1. This version (revisions)</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-08-07: Corrected release that the switch to NAICS 2012 was made
+</p>
+</li>
+<li>
+<p>
+2015-12-10: Added consolidated geography label file label_geography_all.csv
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_0_1_from_4_0">4.2. Version 4.0.1 from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-02-24: removed obsolete flag values
+</p>
+</li>
+<li>
+<p>
+2015-04-01: updated IL, NE geography definitions
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_0_2_from_4_0_1">4.3. Version 4.0.2 from 4.0.1</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-04-01: switched NAICS coding from 2007 to 2012
+</p>
+</li>
+</ul></div>
+<div style="page-break-after:always"></div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p>This revision: Thu Dec 10 11:49:46 EST 2015</p></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2015-12-10 11:49:46 EST
+</div>
+</div>
+</body>
+</html>

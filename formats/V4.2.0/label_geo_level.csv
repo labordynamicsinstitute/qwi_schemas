@@ -1,0 +1,7 @@
+geo_level,label,description,sourceurl,source
+B,"Metropolitan (complete)","Identifies 5-digit CBSA code for metropolitan areas provided by the Census Bureau’s Geography Division. Balance of state including micropolitan areas are identified by custom codes as [ST]999","http://www.census.gov/population/metro/","U.S. Census Bureau, Population Division; Office of Management and Budget, July 2015 delineations"
+C,"Counties","Identifies 5-digit FIPS/ANSI code for counties","https://www.census.gov/geo/reference/codes/cou.html","U.S. Census Bureau, Population Division; 2010 FIPS Codes for Counties and County Equivalent Entities"
+M,"Metropolitan/Micropolitan (state part)","Identifies 7-digit code constructed from the 2-digit state FIPS code and the 5-digit CBSA code provided by the Census Bureau’s Geography Division","http://www.census.gov/population/metro/","U.S. Census Bureau, Population Division; Office of Management and Budget, July 2015 delineations"
+N,"National (50 States + DC)","Custom code using '00' to denote national scope",,
+S,"States","Identifies 2-digit FIPS/ANSI codes","https://www.census.gov/geo/reference/ansi_statetables.html","U.S. Census Bureau, Population Division; American National Standards Institute (ANSI) Codes for States, the District of Columbia, Puerto Rico, and the Insular Areas of the United State"
+W,"Workforce Investment Areas","2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners",,

@@ -1,0 +1,204 @@
+= LEHD Public Use CSV Naming Schema V4.1c-draft - CSV Naming Convention
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+13 April 2016
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+
+( link:lehd_csv_naming.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+==============================================
+	
+
+Purpose
+-------
+The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
+This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
+
+Extends
+-------
+This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.
+
+Supersedes
+----------
+For the specified files, this is the first schema.
+
+
+Basic Schema
+------------
+
+All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
+some other identifier.
+
+-------------------
+[TYPE]_[DETAILS].[EXT]
+-------------------
+
+
+=== QWIPU from the LED Extraction Tool
+Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+------------------------------------
+[type]_[id].[EXT]
+------------------------------------
+where +[id]+ is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.
+
+=== Other files
+Files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
+--------------------------------
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]
+--------------------------------
+where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
+
+
+
+== Description of Filename Components
+
+=== Types
+
+( link:naming_type.csv[] )
+
+[width="90%",format="csv",delim=";",cols="^1,<3,<5,<3",options="header"]
+|===================================================
+include::naming_type.csv[]
+|===================================================
+
+=== geohi
+( link:naming_geohi.csv[] )
+
+This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on https://catalog.data.gov/dataset/fips-state-codes[FIPS PUB 5-2]. It is expanded to encompass additional codes denoting national coverage, or a collection of states.
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+type,Description
+all,Collection of all available states
+us,National data (50 states + DC)
+st,Any legal 2-character state postal code (see link:naming_geohi.csv[] )
+|===================================================
+
+=== demo
+( link:naming_demo.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_demo.csv[]
+|===================================================
+
+<<<
+
+
+=== fas
+( link:naming_fas.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_fas.csv[]
+|===================================================
+
+<<<
+
+
+=== geocat
+( link:naming_geocat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_geocat.csv[]
+|===================================================
+
+<<<
+
+
+=== indcat
+( link:naming_indcat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_indcat.csv[]
+|===================================================
+
+<<<
+
+
+=== owncat
+( link:naming_owncat.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_owncat.csv[]
+|===================================================
+
+<<<
+
+
+=== sa
+( link:naming_sa.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_sa.csv[]
+|===================================================
+
+<<<
+
+
+=== ext
+( link:naming_ext.csv[] )
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_ext.csv[]
+|===================================================
+
+<<<
+
+
+== [[changes]] Changes
+
+=== This version from previous releases of this document
+- 2015-02-25: corrected flag values
+- 2015-02-25: documents are now identified by date, not revision
+- 2015-03-10: Correction of the TIGER vintage that is used for geographic references
+- 2015-03-11: Added URL for J2J
+- 2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
+- 2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg -> of. At this time, no such files have been released.
+- 2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
+- 2015-04-26: Changes to name of variable schema files (qwipu -> qwi), addition of variability variable schema files.
+- 2015-04-28: Fixed small typos in QWI variable short names
+- 2015-05-18: Updated agg_level description, replaced agg_level.csv file
+- 2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
+- 2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+- 2015-08-07: Minor text change for agg_level, modified agg_level file.
+- 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
+- 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+- 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+- 2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
+
+=== Version 4.1c-draft from 4.0
+- added J2J, National QWI spec
+- added geohi category of ALL, US
+- added definitions of variability measures
+- added definitions of rates on separate file
+- added naming convention for additional files
+- added agg_level variable
+
+[IMPORTANT]
+.Important
+==============================================
+Some of the data products noted above do not exist yet.
+==============================================
+
+<<<
+*******************
+This revision: Wed Apr 13 08:36:12 EDT 2016
+*******************
+

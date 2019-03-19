@@ -1,0 +1,170 @@
+= LEHD Public Use CSV Naming Schema v4.0.1 - CSV Naming Convention
+Lars Vilhuber <lars.vilhuber@cornell.edu>
+30 April 2015
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
+
+( link:lehd_csv_naming.pdf[Printable version] )
+
+
+
+[IMPORTANT]
+.Important
+==============================================
+This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+Feedback is welcome. Please write us at
+link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+==============================================
+
+
+Purpose
+-------
+The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal Employer-Household Dynamics Program
+are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+
+This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  link:lehd_public_use_schema.html[].
+
+Extends
+-------
+This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.
+
+Basic Schema
+------------
+
+All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
+some other identifier.
+
+-------------------
+[TYPE]_[DETAILS].csv
+-------------------
+
+=== QWIPU from the LED Extraction Tool
+CSV files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+------------------------------------
+[type]_[id].csv
+------------------------------------
+where +[id]+ is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.
+
+=== Other files
+Full CSV files downloaded from the LEHD website at http://lehd.ces.census.gov/data follow the following naming convention:
+--------------------------------
+[type]_[fipsalpha]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa]
+--------------------------------
+where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.
+
+
+
+== Description of Filename Components
+
+=== Types
+
+( link:naming_type.csv[] )
+
+[width="90%",format="csv",delim=";",cols="^1,<3,<5,<3",options="header"]
+|===================================================
+include::naming_type.csv[]
+|===================================================
+
+=== fipsalpha
+( link:naming_fipsalpha.csv[] )
+
+This component is the alphabetic FIPS state code equivalent to the numeric FIPS code in link:label_fipsnum.csv[], based on FIPS PUB 5-2.
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+type,Description
+st,Any legal 2-character state postal code (see link:naming_fipsalpha.csv[] ))
+|===================================================
+
+=== demo
+( link:naming_demo.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_demo.csv[]
+|===================================================
+
+<<<
+
+
+=== fas
+( link:naming_fas.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_fas.csv[]
+|===================================================
+
+<<<
+
+
+=== geocat
+( link:naming_geocat.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_geocat.csv[]
+|===================================================
+
+<<<
+
+
+=== indcat
+( link:naming_indcat.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_indcat.csv[]
+|===================================================
+
+<<<
+
+
+=== owncat
+( link:naming_owncat.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_owncat.csv[]
+|===================================================
+
+<<<
+
+
+=== sa
+( link:naming_sa.csv[] )
+
+
+
+[width="60%",format="csv",cols="^1,<4",options="header"]
+|===================================================
+include::naming_sa.csv[]
+|===================================================
+
+<<<
+
+
+== [[changes]] Changes
+
+=== Version 4.0.1 from 4.0
+- 2015-02-24: removed obsolete flag values
+- 2015-04-01: updated IL, NE geography definitions
+
+
+<<<
+*******************
+This revision: Thu Apr 30 11:36:05 EDT 2015
+*******************
+

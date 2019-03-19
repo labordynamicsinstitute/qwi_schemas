@@ -1,0 +1,9 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
+EE,ee_doma2,sEE,Job-to-Job Flows (Continuous Employment),Job flows with no observed nonemployment spell,Count,Hire,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Flows (Brief Nonemployment),Job flows with a short nonemployment spell,Count,Hire,1
+EES,fee_doma2,sEES,Stable Job-to-Job Flows (Continuous Employment),Job flows from stable employment into stable employment with no observed nonemployment spell,Count,Hire,1
+AQHireS,faq_doma2,sAQHireS,Stable Job-to-Job Flows (Brief Nonemployment),Job flows from stable employment into stable employment with a short nonemployment spell,Count,Hire,1
+EESEarn_Orig,fee_doma2_jfqearn,sEESEarn_Orig,Average Earnings prior to Job-to-Job Flows (Continuous Employment),Average quarterly earnings prior to job flows with no observed nonemployment spell,Dollars,Earnings,EES
+EESEarn_Dest,fee_doma2_kfqearn,sEESEarn_Dest,Average Earnings following Job-to-Job Flows (Continuous Employment),Average quarterly earnings following job flows with no observed nonemployment spell,Dollars,Earnings,EES
+AQHireSEarn_Orig,faq_doma2_jfqearn,sAQHireSEarn_Orig,Average Earnings prior to Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings prior to job flows with a short nonemployment spell,Dollars,Earnings,AQHireS
+AQHireSEarn_Dest,faq_doma2_kfqearn,sAQHireSEarn_Dest,Average Earnings following Job-to-Job Flows (Brief Nonemployment),Average quarterly earnings following job flows with a short nonemployment spell,Dollars,Earnings,AQHireS

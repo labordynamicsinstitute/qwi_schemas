@@ -1,0 +1,628 @@
+
+****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2a-draft ******
+Lars Vilhuber
+<lars.vilhuber@cornell.edu>
+03 April 2017
+Table of Contents
+JavaScript must be enabled in your browser to display the table of contents.
+( Printable_version )
+            Important
+            This document is not an official Census Bureau publication. It is
+[Important] compiled from publicly accessible information by Lars Vilhuber
+            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
+            welcome. Please write us at lars.vilhuber@cornell.edu.
+***** 1. Purpose *****
+The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal
+Employer-Household Dynamics Program are accessible through the J2J_Explorer_
+(beta). This document provides information on the schema used to format files
+downloaded through that application.
+***** 2. Additional information *****
+The complete LEHD schema is documented in lehd_public_use_schema.html. LEHD-
+provided SHP files are separately described in lehd_shapefiles.html. The naming
+conventions of the data files is documented in lehd_csv_naming.html.
+***** 3. Extends *****
+This is the first version of the schema for the J2J Explorer (beta)
+application.
+***** 4. Supersedes *****
+No prior version.
+***** 5. Basic Schema *****
+Each data file is structured as a CSV file. The first columns contain
+[identifiers], subsequent columns contain [indicators], followed by status
+flags.
+**** 5.1. Generic structure ****
+Column name
+[ Identifier1 ]
+[ Identifier2 ]
+[ Identifier3 ]
+[ … ]
+[ Indicator 1 ]
+[ Indicator 2 ]
+[ Indicator 3 ]
+[ … ]
+[ Status Flag 1 ]
+[ Status Flag 2 ]
+[ Status Flag 3 ]
+[ … ]
+Note: The J2J Explorer (beta) provides the full set of J2J indicators in
+addition to two composite Origin-Destination indicators. Files downloadable
+through other means may be structured differently, please consult the complete
+LEHD schema in lehd_public_use_schema.html.
+5.2. Identifiers
+Records, unless otherwise noted, are parts of time-series data. Unique record
+identifiers are noted below, by file type. Identifiers without the year and
+quarter component can be considered a series identifier.
+*** 5.2.1. Mapping for Identifiers ***
+( lehd_mapping_identifiers.csv )
+Each of the released files has a set of variables uniquely identifying records
+(Identifiers). The table below relates the set of identifier specifications to
+the released files. The actual CSV files containing the identifiers for each
+set are listed after this table. Each identifier can take on a specified list
+of values, documented in the section on Categorical_Variables.
+identifiers            QWI NQWI J2J J2JR J2JOD LODES
+lehd_identifiers_qwi    1    1
+lehd_identifiers_j2j             1    1
+lehd_identifiers_j2jod                      1
+*** 5.2.2. Identifiers for j2j ***
+( lehd_identifiers_j2j.csv )
+  Variable    Type  label
+periodicity Char(1) Periodicity of report
+ seasonadj  Char(1) Seasonal Adjustment Indicator
+ geo_level  Char(1) Group: Geographic level of aggregation
+ geography  Char(8) Group: Geography code
+ ind_level  Char(1) Group: Industry level of aggregation
+  industry  Char(5) Group: Industry code
+ ownercode  Char(3) Group: Ownership group code
+      sex   Char(1) Group: Gender code
+   agegrp   Char(3) Group: Age group code (WIA)
+     race   Char(2) Group: race
+ ethnicity  Char(2) Group: ethnicity
+ education  Char(2) Group: education
+   firmage  Char(1) Group: Firm Age group
+  firmsize  Char(1) Group: Firm Size group
+     year      Num  Time: Year
+   quarter     Num  Time: Quarter
+ agg_level     Num  Aggregation Level Indicator
+*** 5.2.3. Identifiers for j2jod ***
+( lehd_identifiers_j2jod.csv )
+    Variable     Type  label
+  periodicity  Char(1) Periodicity of report
+   seasonadj   Char(1) Seasonal Adjustment Indicator
+   geo_level   Char(1) Group: Geographic level of aggregation of destination
+                       job
+   geography   Char(8) Group: Geography code of destination job
+   ind_level   Char(1) Group: Industry level of aggregation of destination job
+    industry   Char(5) Group: Industry code of destination job
+   ownercode   Char(3) Group: Ownership group code of destination job
+        sex    Char(1) Group: Gender code
+      agegrp   Char(3) Group: Age group code (WIA)
+       race    Char(2) Group: race
+   ethnicity   Char(2) Group: ethnicity
+   education   Char(2) Group: education
+     firmage   Char(1) Group: Firm Age group
+    firmsize   Char(1) Group: Firm Size group
+       year       Num  Time: Year
+     quarter      Num  Time: Quarter
+   agg_level      Num  Aggregation Level Indicator
+geo_level_orig Char(1) Group: Geographic level of aggregation of origin job
+geography_orig Char(8) Group: Geography code of origin job
+ind_level_orig Char(1) Group: Industry level of aggregation of origin job
+industry_orig  Char(5) Group: Industry code of origin job
+ownercode_orig Char(3) Group: Ownership group code of origin job
+ firmage_orig  Char(1) Group: Firm Age group of origin job
+firmsize_orig  Char(1) Group: Firm Size group of origin job
+*** 5.2.4. Identifiers for qwi ***
+( lehd_identifiers_qwi.csv )
+  Variable    Type  label
+periodicity Char(1) Periodicity of report
+ seasonadj  Char(1) Seasonal Adjustment Indicator
+ geo_level  Char(1) Group: Geographic level of aggregation
+ geography  Char(8) Group: Geography code
+ ind_level  Char(1) Group: Industry level of aggregation
+  industry  Char(5) Group: Industry code
+ ownercode  Char(3) Group: Ownership group code
+      sex   Char(1) Group: Gender code
+   agegrp   Char(3) Group: Age group code (WIA)
+     race   Char(2) Group: race
+ ethnicity  Char(2) Group: ethnicity
+ education  Char(2) Group: education
+   firmage  Char(1) Group: Firm Age group
+  firmsize  Char(1) Group: Firm Size group
+     year      Num  Time: Year
+   quarter     Num  Time: Quarter
+5.3. Indicators
+The following tables and associated mapping files list the indicators available
+on each file. The 'Indicator Variable' is the short name of the variable on the
+CSV files, suitable for machine processing in a wide variety of statistical
+applications. When given, the 'Alternate name' may appear in related
+documentation and articles. The 'Status Flag' is used to indicate publication
+or data quality status (see Status_Flags). The 'Indicator Name' is a more
+verbose name for the indicator. The 'Description' provides a complete
+description of the indicator. 'Units' identify the type of variable: counts,
+rates, monetary amounts. 'Concept' classifies each indicator in a descriptive
+category: employment, hire, separation, earnings, or flow. The 'Base' indicates
+the denominator used to compute the statistic, and may be 1.
+( variables_j2japp.csv )
+Indicator   Alternate Name  Status Flag  Indicator Name Description                                Units Concept           Base
+ Variable
+   MHire        all_doma2       sMHire   Hires          Hires into a worker’s main job           Count Hire                1
+    MSep        all_doms2        sMSep   Separations    Separations from a worker’s main job     Count Separation          1
+MJobStart      first_dome    sMJobStart  Main Job       New main jobs due to hires and instances   Count Employment          1
+                                         Starts         when a previously existing secondary job
+                                                        becomes the main source of earnings
+  MJobEnd       last_domb      sMJobEnd  Main Job Ends  End of main jobs due to separations and    Count Employment          1
+                                                        instances when another job becomes the
+                                                        main source of earnings
+   EEHire        ee_doma2      sEEHire   Job-to-Job     Hires following a separation with no       Count Hire                1
+                                         Hires          observed nonemployment spell
+                                         (Continuous
+                                         Employment)
+   EESep         ee_doms2       sEESep   Job-to-Job     Separations followed by a hire with no     Count Separation          1
+                                         Separations    observed nonemployment spell
+                                         (Continuous
+                                         Employment)
+   AQHire        aq_doma2      sAQHire   Job-to-Job     Hires following a separation with a short  Count Hire                1
+                                         Hires (Brief   nonemployment spell
+                                         Nonemployment)
+   AQSep         aq_doms2       sAQSep   Job-to-Job     Separations followed by a hire with a      Count Separation          1
+                                         Separations    short nonemployment spell
+                                         (Brief
+                                         Nonemployment)
+  J2JHire       j2j_doma2      sJ2JHire  Job-to-Job     Hires following a separation (short or no  Count Hire                1
+                                         Hires          observed nonemployment spell)
+   J2JSep       j2j_doms2      sJ2JSep   Job-to-Job     Separations followed by a hire (short or   Count Separation          1
+                                         Separations    no observed nonemployment spell)
+   NEHire        ne_doma2      sNEHire   Hires from     Hires following any spell of nonemployment Count Hire                1
+                                         Nonemployment
+   ENSep         en_doms2       sENSep   Separations to Separations into any spell of              Count Separation          1
+                                         Nonemployment  nonemployment
+NEPersist       ne2_doma2    sNEPersist  Hires from     Hires following a spell of persistent      Count Hire                1
+                                         Persistent     nonemployment
+                                         Nonemployment
+ENPersist       en2_doms2    sENPersist  Separations to Separations into a spell of persistent     Count Separation          1
+                                         Persistent     nonemployment
+                                         Nonemployment
+  NEFullQ      ne2p_doma2      sNEFullQ  Hires from     Hires following a spell of full-quarter    Count Hire                1
+                                         Full-Quarter   nonemployment (does not include
+                                         Nonemployment  intermittently employed)
+  ENFullQ      en2p_doms2      sENFullQ  Separations to Separations into a spell of full-quarter   Count Separation          1
+                                         Full-Quarter   nonemployment (does not include
+                                         Nonemployment  intermittently employed)
+   MainB            domB        sMainB   Employment     Main jobs held on the first day of the     Count Employment          1
+                                         (Beginning of  quarter
+                                         Quarter)
+   MainE            domE        sMainE   Employment     Main jobs held on the last day of the      Count Employment          1
+                                         (End of        quarter
+                                         Quarter)
+   MHireR   all_doma2_rate     sMHireR   Hires          Rate of hires into a worker’s main job   Rate  Hire       (MainB+MainE)/
+                                                                                                                          2
+   MSepR    all_doms2_rate      sMSepR   Separations    Rate of separations from a worker’s main Rate  Separation (MainB+MainE)/
+                                                        job                                                               2
+MJobStartR   all_dest_rate  sMJobStartR  Main Job       Rate of new main jobs due to hires and     Rate  Employment (MainB+MainE)/
+                                         Starts         instances when a previously existing                              2
+                                                        secondary job becomes the main source of
+                                                        earnings
+ MJobEndR   all_orgin_rate    sMJobEndR  Main Job Ends  Rate of the end of main jobs due to        Rate  Employment (MainB+MainE)/
+                                                        separations and instances when another job                        2
+                                                        becomes the main source of earnings
+  EEHireR        eea_rate      sEEHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                         Hires          no observed nonemployment spell                                   2
+                                         (Continuous
+                                         Employment)
+   EESepR        ees_rate      sEESepR   Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    with no observed nonemployment spell                              2
+                                         (Continuous
+                                         Employment)
+  AQHireR    aq_doma2_rate     sAQHireR  Job-to-Job     Rate of hires following a separation with  Rate  Hire       (MainB+MainE)/
+                                         Hires (Brief   a short nonemployment spell                                       2
+                                         Nonemployment)
+   AQSepR    aq_doms2_rate     sAQSepR   Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    with a short nonemployment spell                                  2
+                                         (Brief
+                                         Nonemployment)
+ J2JHireR  eeall_doma2_rate   sJ2JHireR  Job-to-Job     Rate of hires following a separation       Rate  Hire       (MainB+MainE)/
+                                         Hires          (short or no observed nonemployment spell)                        2
+  J2JSepR  eeall_doms2_rate    sJ2JSepR  Job-to-Job     Rate of separations followed by a hire     Rate  Separation (MainB+MainE)/
+                                         Separations    (short or no observed nonemployment spell)                        2
+  NEHireR    ne_doma2_rate     sNEHireR  Hires from     Rate of hires following any spell of       Rate  Hire       (MainB+MainE)/
+                                         Nonemployment  nonemployment                                                     2
+   ENSepR    en_doms2_rate     sENSepR   Separations to Rate of separations into any spell of      Rate  Separation (MainB+MainE)/
+                                         Nonemployment  nonemployment                                                     2
+NEPersistR  ne2_doma2_rate  sNEPersistR  Hires from     Rate of hires following a spell of         Rate  Hire       (MainB+MainE)/
+                                         Persistent     persistent nonemployment                                          2
+                                         Nonemployment
+ENPersistR  en2_doms2_rate  sENPersistR  Separations to Rate of separations into a spell of        Rate  Separation (MainB+MainE)/
+                                         Persistent     persistent nonemployment                                          2
+                                         Nonemployment
+ NEFullQR  ne2p_doma2_rate    sNEFullQR  Hires from     Rate of hires following a spell of full-   Rate  Hire       (MainB+MainE)/
+                                         Full-Quarter   quarter nonemployment (does not include                           2
+                                         Nonemployment  intermittently employed)
+ ENFullQR  en2p_doms2_rate    sENFullQR  Separations to Rate of separations into a spell of full-  Rate  Separation (MainB+MainE)/
+                                         Full-Quarter   quarter nonemployment (does not include                           2
+                                         Nonemployment  intermittently employed)
+      EE             ee           sEE    Job-to-Job     Job flows with no observed nonemployment   Count Flow                1
+                                         Flows          spell
+                                         (Continuous
+                                         Employment)
+   AQHire        aq_doma2      sAQHire   Job-to-Job     Job flows with a short nonemployment spell Count Flow                1
+                                         Flows (Brief
+                                         Nonemployment)
+     J2J      ee+aq_doma2         sJ2J   Job-to-Job     Job flows with a short or no observed      Count Flow                1
+                                         Flows          nonemployment spell
+     EES            fee        sEEFullQ  Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with no observed
+                                         (Continuous    nonemployment spell
+                                         Employment)
+  AQHireS       faq_doma2   sAQFullQHire Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with a short
+                                         (Brief         nonemployment spell
+                                         Nonemployment)
+    J2JS     fee+faq_doma2       sJ2JS   Stable Job-to- Job flows from stable employment into      Count Flow                1
+                                         Job Flows      stable employment with a short or no
+                                                        observed nonemployment spell
+6. Categorical Variables
+Categorical variable descriptions are displayed above each table, with the
+variable name shown in parentheses. Unless otherwise stated, every possible
+value/label combination for each categorical variable is listed. Please note
+that not all values will be available in every table.
+**** 6.1. agegrp ****
+( label_agegrp.csv )
+agegrp label
+  A00  All Ages (14-99)
+  A01  14-18
+  A02  19-21
+  A03  22-24
+  A04  25-34
+  A05  35-44
+  A06  45-54
+  A07  55-64
+  A08  65-99
+**** 6.2. education ****
+( label_education.csv )
+education label
+     E0   All Education Categories
+     E1   Less than high school
+     E2   High school or equivalent, no college
+     E3   Some college or Associate degree
+     E4   Bachelor’s degree or advanced degree
+     E5   Educational attainment not available (workers aged 24 or younger)
+**** 6.3. ethnicity ****
+( label_ethnicity.csv )
+ethnicity label
+     A0   All Ethnicities
+     A1   Not Hispanic or Latino
+     A2   Hispanic or Latino
+**** 6.4. firmage ****
+( label_firmage.csv )
+firmage label
+    0   All Firm Ages
+    1   0-1 Years
+    2   2-3 Years
+    3   4-5 Years
+    4   6-10 Years
+    5   11+ Years
+    N   Firm Age Not Available For Public-Sector Firms
+**** 6.5. firmsize ****
+( label_firmsize.csv )
+firmsize label
+     0   All Firm Sizes
+     1   0-19 Employees
+     2   20-49 Employees
+     3   50-249 Employees
+     4   250-499 Employees
+     5   500+ Employees
+     N   Firm Size Not Available For Public-Sector Firms
+**** 6.6. ownercode ****
+( label_ownercode.csv )
+ownercode label
+    A00   All (1-5)
+    A01   Federal government
+    A05   All Private (5)
+**** 6.7. periodicity ****
+( label_periodicity.csv )
+periodicity label
+       A    Annual data
+       Q    Quarterly data
+**** 6.8. quarter ****
+( label_quarter.csv )
+quarter label
+    1   1st Quarter of the Year (January-March)
+    2   2nd Quarter of the Year (April-June)
+    3   3rd Quarter of the Year (July-September)
+    4   4th Quarter of the Year (October-December)
+**** 6.9. race ****
+( label_race.csv )
+race label
+ A0  All Races
+ A1  White Alone
+ A2  Black or African American Alone
+ A3  American Indian or Alaska Native Alone
+ A4  Asian Alone
+ A5  Native Hawaiian or Other Pacific Islander Alone
+ A6  Some Other Race Alone (Not Used)
+ A7  Two or More Race Groups
+**** 6.10. seasonadj ****
+( label_seasonadj.csv )
+seasonadj label
+      S   Seasonally adjusted
+      U   Not seasonally adjusted
+**** 6.11. sex ****
+( label_sex.csv )
+sex label
+ 0  All Sexes
+ 1  Male
+ 2  Female
+**** 6.12. stusps ****
+( label_stusps.csv )
+geography stusps
+     01   AL
+     02   AK
+     04   AZ
+     05   AR
+     06   CA
+     08   CO
+     09   CT
+     10   DE
+     11   DC
+     12   FL
+     13   GA
+     15   HI
+     16   ID
+     17   IL
+     18   IN
+     19   IA
+     20   KS
+     21   KY
+     22   LA
+     23   ME
+     24   MD
+     25   MA
+     26   MI
+     27   MN
+     28   MS
+     29   MO
+     30   MT
+     31   NE
+     32   NV
+     33   NH
+     34   NJ
+     35   NM
+     36   NY
+     37   NC
+     38   ND
+     39   OH
+     40   OK
+     41   OR
+     42   PA
+     44   RI
+     45   SC
+     46   SD
+     47   TN
+     48   TX
+     49   UT
+     50   VT
+     51   VA
+     53   WA
+     54   WV
+     55   WI
+     56   WY
+     72   PR
+     78   VI
+**** 6.13. Industry ****
+*** 6.13.1. Industry levels ***
+( label_ind_level.csv )
+ind_level label
+      A   All Industries
+      S   NAICS Sectors
+      3   NAICS Subsectors
+      4   NAICS Industry Groups
+*** 6.13.2. Industry ***
+( label_industry.csv )
+Only a small subset of available values shown. The 2012 NAICS (North American
+Industry Classification System) is used for all years. QWI releases prior to
+R2015Q3 used the 2007 NAICS classification (see Schema_v4.0.1). For a full
+listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
+naics/naicsrch?chart=2012.
+industry label
+    00   All NAICS Sectors
+   000   All NAICS Subsectors
+   0000  All NAICS Industry Groups
+    11   Agriculture, Forestry, Fishing and Hunting
+   111   Crop Production
+   1111  Oilseed and Grain Farming
+   1112  Vegetable and Melon Farming
+    …
+   2382  Building Equipment Contractors
+   2383  Building Finishing Contractors
+   2389  Other Specialty Trade Contractors
+  31-33  Manufacturing
+   311   Food Manufacturing
+   3111  Animal Food Manufacturing
+   3112  Grain and Oilseed Milling
+   3113  Sugar and Confectionery Product Manufacturing
+    …
+**** 6.14. Geography ****
+6.14.1.  Geographic levels
+Geography labels for data files are provided in separate files, by scope. Each
+file label_geograpy_SCOPE.csv may contain one or more types of records as
+flagged by geo_level. For convenience, a composite file containing all geocodes
+is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
+geography is used for all tabulations as of the R2015Q4 release.
+Shapefiles are described in a separate_document.
+( label_geo_level.csv )
+geo_level label         description                                                                sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census http://
+          (complete)    Bureau’s Geography Division                                              www.census.gov/
+                                                                                                   population/metro/
+      C   Counties      Identifies 5-digit FIPS code                                               https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/codes/
+                                                                                                   cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   http://
+          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
+          (state part)                                                                             population/metro/
+      N   National (50  Custom code using 00 to denote national scope
+          States + DC)
+      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
+                                                                                                   www.census.gov/geo/
+                                                                                                   reference/
+                                                                                                   ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
+          Investment    State Partners
+          Areas
+*** 6.14.2. National and state-level values ***
+( label_fipsnum.csv )
+The file label_fipsnum.csv contains values and labels for all entities of
+geo_level N or S, and is a summary of separately available files.
+geography label                     geo_level
+     00   National (50 States + DC)       N
+     01   Alabama                         S
+     02   Alaska                          S
+     04   Arizona                         S
+     05   Arkansas                        S
+     06   California                      S
+     08   Colorado                        S
+     …
+     45   South Carolina                  S
+     46   South Dakota                    S
+     47   Tennessee                       S
+     48   Texas                           S
+     49   Utah                            S
+     50   Vermont                         S
+     51   Virginia                        S
+     53   Washington                      S
+*** 6.14.3. Detailed state and substate level values ***
+Note: cross-state CBSA, in records of type geo_level = M, are present on files
+of type label_geography_XX.csv. A particular cross-state CBSA will appear on
+multiple files.
+Scope            Format file
+   US    label_geography_us.csv
+METRO  label_geography_metro.csv
+States
+   AK    label_geography_ak.csv
+   AL    label_geography_al.csv
+   AR    label_geography_ar.csv
+   AZ    label_geography_az.csv
+   CA    label_geography_ca.csv
+   CO    label_geography_co.csv
+   CT    label_geography_ct.csv
+   DC    label_geography_dc.csv
+   DE    label_geography_de.csv
+   FL    label_geography_fl.csv
+   GA    label_geography_ga.csv
+   HI    label_geography_hi.csv
+   IA    label_geography_ia.csv
+   ID    label_geography_id.csv
+   IL    label_geography_il.csv
+   IN    label_geography_in.csv
+   KS    label_geography_ks.csv
+   KY    label_geography_ky.csv
+   LA    label_geography_la.csv
+   MA    label_geography_ma.csv
+   MD    label_geography_md.csv
+   ME    label_geography_me.csv
+   MI    label_geography_mi.csv
+   MN    label_geography_mn.csv
+   MO    label_geography_mo.csv
+   MS    label_geography_ms.csv
+   MT    label_geography_mt.csv
+   NC    label_geography_nc.csv
+   ND    label_geography_nd.csv
+   NE    label_geography_ne.csv
+   NH    label_geography_nh.csv
+   NJ    label_geography_nj.csv
+   NM    label_geography_nm.csv
+   NV    label_geography_nv.csv
+   NY    label_geography_ny.csv
+   OH    label_geography_oh.csv
+   OK    label_geography_ok.csv
+   OR    label_geography_or.csv
+   PA    label_geography_pa.csv
+   RI    label_geography_ri.csv
+   SC    label_geography_sc.csv
+   SD    label_geography_sd.csv
+   TN    label_geography_tn.csv
+   TX    label_geography_tx.csv
+   UT    label_geography_ut.csv
+   VA    label_geography_va.csv
+   VT    label_geography_vt.csv
+   WA    label_geography_wa.csv
+   WI    label_geography_wi.csv
+   WV    label_geography_wv.csv
+   WY    label_geography_wy.csv
+**** 6.15. Aggregation level ****
+( label_agg_level.csv )
+Measures within the J2J and QWI data products are tabulated on many different
+dimensions, including demographic characteristics, geography, industry, and
+other firm characteristics. For Origin-Destination (O-D) tables,
+characteristics of the origin and destination firm can be tabulated separately.
+Every tabulation level is assigned a unique aggregation index, represented by
+the agg_level variable. This index starts from 1, representing a national level
+grand total (all industries, workers, etc.), and progresses through different
+combinations of characteristics. There are gaps in the progression to leave
+space for aggregation levels that may be included in future data releases.
+agg_level is currently reported only for J2J data products.
+The following variables are included in the label_agg_level.csv file:
+Variable       Description
+agg_level      index representing level of aggregation reported on a given
+               record
+worker_char    demographic (worker) characteristics reported on record
+firm_char      firm characteristics reported on record. These will be the
+               characteristics of the destination firm in O-D tabulations
+firm_orig_char characteristics of origin firm reported on record (O-
+               D tabulations only)
+j2j            Flag: Aggregation level available on J2J counts tables
+j2jr           Flag: Aggregation level available on J2J rates tables
+j2jod          Flag: Aggregation level available on J2J O-D tables
+qwi            Flag: Aggregation level available on QWI
+The characteristics available on an aggregation level are repeated using a
+series of flags following the standard schema:
+    * geo_level - geographic level of table
+    * ind_level - industry level of table
+    * by_ variables - flags indicating other dimensions reported, including
+      ownership, demographics, firm age and size.
+A shortened representation of the file is provided below, the complete file is
+available in the link above.
+agg_level worker_char firm_char    firm_orig_char j2j j2jr j2jod qwi geo_level
+        1                                         1   1    1     0   N
+        2 Sex                                     1   1    1     0   N
+        3 Age                                     1   1    1     0   N
+        4 Sex * Age                               1   1    1     0   N
+        5 Race                                    1   1    1     0   N
+        9 Ethnicity                               1   1    1     0   N
+       13 Race *                                  1   1    1     0   N
+          Ethnicity
+        …
+      129             Firm Size                   1   1    1     0   N
+      257             NAICS Sector                1   1    1     0   N
+      258 Sex         NAICS Sector                0   0    0     0   N
+        …
+     1029 Race        State                       1   1    1     0   S
+     1033 Ethnicity   State                       1   1    1     0   S
+     1037 Race *      State                       1   1    1     0   S
+          Ethnicity
+        …
+7. Status flags
+( label_flags.csv )
+Each status flag in the tables above contains one of the following valid
+values. The values and their interpretation are listed in the table below.
+            Important
+[Important] Note: Currently, the J2J tables only contain status flags -1 and 1.
+            Status flags with values 10 or above only appear in online
+            applications, not in CSV files.
+flag label
+ -2  no data available in this category for this quarter
+ -1  data not available to compute this estimate
+  1  OK
+  5  Value suppressed because it does not meet US Census Bureau publication
+     standards.
+  6  Value calculated from other released measures - no significant distortion
+  7  Value calculated from other released measures - some of which have
+     significantly distorted data
+  9  Data significantly distorted - fuzzed value released
+ 10  Aggregate of cells - no significant distortion
+ 11  Aggregate of cells not released because component cells do not meet U.S.
+     Census Bureau publication standards
+ 12  Aggregate of cells - some of which have significantly distorted data
+This revision: Mon Apr 3 16:46:26 EDT 2017
+===============================================================================
+Last updated 2017-04-03 16:46:26 EDT

@@ -1,0 +1,101 @@
+/*****************************************************************
+The following is a list of columns that are distributed on the DVD. 
+The listing is intended to give a quick definition of each of the  
+the columns in all of the csv files in alphabetic order 
+*******************************************************************/
+
+ Column Name  Column Description
+ CreateDate   File Creation Date
+ EarnEnd      Employees end-of-quarter : Average monthly earnings
+ EarnHirAC    Hires All: Average change in monthly earnings
+ EarnHirAS    Hires All stable jobs: Average monthly earnings
+ EarnHirNS    Hires New stable jobs: Average monthly earnings
+ EarnS        Employees stable jobs: Average monthly earnings
+ EarnSepC     Separations: Average change in monthly earnings
+ EarnSepS     Separations stable jobs: Average monthly earnings
+ Emp          Employment: Counts
+ EmpEnd       Employment end-of-quarter: Counts
+ EmpS         Employment stable jobs: Counts
+ EmpTotal     Employment reference quarter: Counts
+ FrmJbC       Firm jobs change: Net Change
+ FrmJbCS      Firm stable jobs change: Net Change
+ FrmJbGn      Firm Job Gains: Counts
+ FrmJbGnS     Firm Gain stable jobs: Counts
+ FrmJbLs      Firm Job Loss: Counts
+ FrmJbLsS     Firm Loss stable jobs: Counts
+ HirA         Hires All: Counts
+ HirAS        Hires All stable jobs: Counts
+ HirN         Hires New: Counts
+ HirNS        Hires New stable jobs: Counts
+ HirR         Hires Recalls: Counts
+ NEmpHirA     Hires All: Average quarters of non-employment
+ NEmpHirN     Hires New: Average quarters of non-employment
+ NEmpHirR     Hire Recalls: Average quarters of non-employment
+ NEmpSep      Separations: Average periods of non-employment
+ Payroll      Total quarterly payroll: Sum
+ Sep          Separations: Counts
+ SepS         Separations stable jobs: Counts
+ TurnOvrS     Turnover stable jobs: Ratio
+ agegrp       Group: Age group code (WIA)
+ agegrpfm     Group: Age group name (WIA)
+ county       Group: FIPS County code
+ countyfm     Group: FIPS County name
+ education    Group: education code
+ educationfm  Group: education name
+ ethnicity    Group: ethnicity code
+ ethnicityfm  Group: ethnicity name
+ firmage      Group: Firm Age group code
+ firmagefm    Group: Firm Age group name
+ firmsize     Group: Firm Size group code
+ firmsizefm   Group: Firm Size group name
+ metro        Group: FIPS Metro Area code
+ metrofm      Group: FIPS Metro Area name
+ naics3       Group: NAICS 3-digit industry code
+ naics3fm     Group: NAICS 3-digit industry name
+ naics4       Group: NAICS 4-digit industry code
+ naics4fm     Group: NAICS 4-digit industry name
+ naicssec     Group: NAICS Sector code
+ naicssecfm   Group: NAICS Sector name
+ ownercode    Group: Ownership group code
+ ownerfm      Group: Ownership group name
+ quarter      Time: Quarter
+ qwi_geo      Group: QWI Geocode
+ qwi_ind      Group: QWI NAICS Industry Code
+ race         Group: race code
+ racefm       Group: race name
+ sEarnEnd     Status: Employees end-of-quarter : Average monthly earnings
+ sEarnHirAC   Status: Hires All: Average change in monthly earnings
+ sEarnHirAS   Status: Hires All stable jobs: Average monthly earnings
+ sEarnHirNS   Status: Hires New stable jobs: Average monthly earnings
+ sEarnS       Status: Employees stable jobs: Average monthly earnings
+ sEarnSepC    Status: Separations: Average change in monthly earnings
+ sEarnSepS    Status: Separations stable jobs: Average monthly earnings
+ sEmp         Status: Employment: Counts
+ sEmpEnd      Status: Employment end-of-quarter: Counts
+ sEmpS        Status: Employment stable jobs: Counts
+ sEmpTotal    Status: Employment reference quarter: Counts
+ sFrmJbC      Status: Firm jobs change: Net Change
+ sFrmJbCS     Status: Firm stable jobs change: Net Change
+ sFrmJbGn     Status: Firm Job Gains: Counts
+ sFrmJbGnS    Status: Firm Gain stable jobs: Counts
+ sFrmJbLs     Status: Firm Job Loss: Counts
+ sFrmJbLsS    Status: Firm Loss stable jobs: Counts
+ sHirA        Status: Hires All: Counts
+ sHirAS       Status: Hires All stable jobs: Counts
+ sHirN        Status: Hires New: Counts
+ sHirNS       Status: Hires New stable jobs: Counts
+ sHirR        Status: Hires Recalls: Counts
+ sNEmpHirA    Status: Hires All: Average quarters of non-employment
+ sNEmpHirN    Status: Hires New: Average quarters of non-employment
+ sNEmpHirR    Status: Hire Recalls: Average quarters of non-employment
+ sNEmpSep     Status: Separations: Average periods of non-employment
+ sPayroll     Status: Total quarterly payroll: Sum
+ sSep         Status: Separations: Counts
+ sSepS        Status: Separations stable jobs: Counts
+ sTurnOvrS    Status: Turnover stable jobs: Ratio
+ sex          Group: Gender code
+ sexfm        Group: Gender name
+ state        Group: FIPS state numeric code
+ wib          Group: WIB code
+ wibfm        Group: WIB name
+ year         Time: Year

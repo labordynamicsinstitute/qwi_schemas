@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use CSV Naming Schema V4.1c-draft - CSV Naming Convention</title>
+<link rel="stylesheet" href="./asciidoc.css" type="text/css" />
+
+
+<script type="text/javascript" src="./asciidoc.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>LEHD Public Use CSV Naming Schema V4.1c-draft - CSV Naming Convention</h1>
+<span id="author">Lars Vilhuber</span><br />
+<span id="email"><code>&lt;<a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a>&gt;</code></span><br />
+<span id="revdate">13 April 2016</span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="lehd_csv_naming.pdf">Printable version</a> )</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>This specification is draft. Feedback is welcome. Please write us at <a href="mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft">ces.qwi.feedback@census.gov</a>.</p></div>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose">1. Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
+and Job-to-Job Flows (J2J), are available for download with the following data schema.
+These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
+<a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> and through LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a>.</p></div>
+<div class="paragraph"><p>This document describes the file naming schema for LEHD-provided CSV files. The contents (schema) are described in  <a href="lehd_public_use_schema.html">lehd_public_use_schema.html</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extends">2. Extends</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This version extends v4.0. Any file compliant with LEHD or QWI Schema v4.0 will also be compliant with this schema.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_supersedes">3. Supersedes</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>For the specified files, this is the first schema.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_schema">4. Basic Schema</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>All files are preceded by a file type definition, followed by additional information on the aggregation level of the file, or
+some other identifier.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>[TYPE]_[DETAILS].[EXT]</code></pre>
+</div></div>
+<div class="sect2">
+<h3 id="_qwipu_from_the_led_extraction_tool">4.1. QWIPU from the LED Extraction Tool</h3>
+<div class="paragraph"><p>Files downloaded through the  LED Extraction Tool at <a href="http://ledextract.ces.census.gov/">http://ledextract.ces.census.gov/</a> follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>[type]_[id].[EXT]</code></pre>
+</div></div>
+<div class="paragraph"><p>where <code>[id]</code> is the Request ID (a unique string of characters) generated every time Submit Request'' is clicked. The ID references each query submission made to the database.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_other_files">4.2. Other files</h3>
+<div class="paragraph"><p>Files downloaded from the LEHD website at <a href="http://lehd.ces.census.gov/data">http://lehd.ces.census.gov/data</a> follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa].[EXT]</code></pre>
+</div></div>
+<div class="paragraph"><p>where each component is described in more detail below. Schema files detailing legal values for each component can be downloaded from this website.</p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description_of_filename_components">5. Description of Filename Components</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_types">5.1. Types</h3>
+<div class="paragraph"><p>( <a href="naming_type.csv">naming_type.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="90%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="8%" />
+<col width="25%" />
+<col width="41%" />
+<col width="25%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+<th align="left" valign="top">Explanation</th>
+<th align="left" valign="top">url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">j2j</p></td>
+<td align="left" valign="top"><p class="table">Job-to-Job Flows Counts (J2J)</p></td>
+<td align="left" valign="top"><p class="table">Counts of hires and separations, to and from employment and non-employment, summed across all establishments</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">j2jod</p></td>
+<td align="left" valign="top"><p class="table">Job-to-Job Flows Origin-Destination</p></td>
+<td align="left" valign="top"><p class="table">Origin and destination flows and earnings, tabulated by the destination establishment</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">j2jr</p></td>
+<td align="left" valign="top"><p class="table">Job-to-Job Flows Rates</p></td>
+<td align="left" valign="top"><p class="table">Hiring and separation rates, to and from employment and nonemployment, summed across all establishments</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/j2j_beta.html">http://lehd.ces.census.gov/data/j2j_beta.html</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">lodes</p></td>
+<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES)</p></td>
+<td align="left" valign="top"><p class="table">LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#lodes">http://lehd.ces.census.gov/data/#lodes</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwi</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Counts (QWIPU)</p></td>
+<td align="left" valign="top"><p class="table">The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).</p></td>
+<td align="left" valign="top"><p class="table"><a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a></p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwir</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Public Use Rates</p></td>
+<td align="left" valign="top"><p class="table">Rates for flow variables in the Quarterly Workforce Indicators (QWI)</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwirv</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures for Rates</p></td>
+<td align="left" valign="top"><p class="table">Variability measures for rates in the Quarterly Workforce Indicators (QWI)</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">qwiv</p></td>
+<td align="left" valign="top"><p class="table">Quarterly Workforce Indicators Variability Measures</p></td>
+<td align="left" valign="top"><p class="table">Variability measures for Quarterly Workforce Indicators (QWI)</p></td>
+<td align="left" valign="top"><p class="table">tbd</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geohi">5.2. geohi</h3>
+<div class="paragraph"><p>( <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></div>
+<div class="paragraph"><p>This component is based on the alphabetic FIPS state code equivalent to the numeric FIPS code in <a href="label_fipsnum.csv">label_fipsnum.csv</a>, based on <a href="https://catalog.data.gov/dataset/fips-state-codes">FIPS PUB 5-2</a>. It is expanded to encompass additional codes denoting national coverage, or a collection of states.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">all</p></td>
+<td align="left" valign="top"><p class="table">Collection of all available states</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">us</p></td>
+<td align="left" valign="top"><p class="table">National data (50 states + DC)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">st</p></td>
+<td align="left" valign="top"><p class="table">Any legal 2-character state postal code (see <a href="naming_geohi.csv">naming_geohi.csv</a> )</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_demo">5.3. demo</h3>
+<div class="paragraph"><p>( <a href="naming_demo.csv">naming_demo.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">d</p></td>
+<td align="left" valign="top"><p class="table">No demographic detail</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">rh</p></td>
+<td align="left" valign="top"><p class="table">Race by Ethnicity tabulations</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">sa</p></td>
+<td align="left" valign="top"><p class="table">Sex by Age tabulations</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">se</p></td>
+<td align="left" valign="top"><p class="table">Sex by Education tabulations</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_fas">5.4. fas</h3>
+<div class="paragraph"><p>( <a href="naming_fas.csv">naming_fas.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">f</p></td>
+<td align="left" valign="top"><p class="table">No firm size or age detail</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">fa</p></td>
+<td align="left" valign="top"><p class="table">Tabulations by firm age</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">fs</p></td>
+<td align="left" valign="top"><p class="table">Tabulations by firm size</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_geocat">5.5. geocat</h3>
+<div class="paragraph"><p>( <a href="naming_geocat.csv">naming_geocat.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">gc</p></td>
+<td align="left" valign="top"><p class="table">Counties</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gm</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gn</p></td>
+<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gs</p></td>
+<td align="left" valign="top"><p class="table">States</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gw</p></td>
+<td align="left" valign="top"><p class="table">Workforce Investment Areas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_indcat">5.6. indcat</h3>
+<div class="paragraph"><p>( <a href="naming_indcat.csv">naming_indcat.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">n</p></td>
+<td align="left" valign="top"><p class="table">all industries</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">ns</p></td>
+<td align="left" valign="top"><p class="table">NAICS sectors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">n3</p></td>
+<td align="left" valign="top"><p class="table">NAICS subsectors</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">n4</p></td>
+<td align="left" valign="top"><p class="table">NAICS industry groups</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_owncat">5.7. owncat</h3>
+<div class="paragraph"><p>( <a href="naming_owncat.csv">naming_owncat.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">of</p></td>
+<td align="left" valign="top"><p class="table">Federal government (QWI Code A01)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">op</p></td>
+<td align="left" valign="top"><p class="table">All Private (QWI Code A05)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">oslp</p></td>
+<td align="left" valign="top"><p class="table">State, local, and private ownership categories (QWI Code A00)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_sa">5.8. sa</h3>
+<div class="paragraph"><p>( <a href="naming_sa.csv">naming_sa.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">s</p></td>
+<td align="left" valign="top"><p class="table">Seasonally adjusted</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">u</p></td>
+<td align="left" valign="top"><p class="table">Not seasonally adjusted</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_ext">5.9. ext</h3>
+<div class="paragraph"><p>( <a href="naming_ext.csv">naming_ext.csv</a> )</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">csv</p></td>
+<td align="left" valign="top"><p class="table">Comma-Separated file</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">pdf</p></td>
+<td align="left" valign="top"><p class="table">PDF file (printable)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">xls</p></td>
+<td align="left" valign="top"><p class="table">Excel file (only select output)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_id_changes_a_changes">6. <a id="changes"></a> Changes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_this_version_from_previous_releases_of_this_document">6.1. This version from previous releases of this document</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+2015-02-25: corrected flag values
+</p>
+</li>
+<li>
+<p>
+2015-02-25: documents are now identified by date, not revision
+</p>
+</li>
+<li>
+<p>
+2015-03-10: Correction of the TIGER vintage that is used for geographic references
+</p>
+</li>
+<li>
+<p>
+2015-03-11: Added URL for J2J
+</p>
+</li>
+<li>
+<p>
+2015-03-11: Correction of typo in type naming convention, rename of naming_fipsalpha.csv to naming_geohi.csv to be consistent.
+</p>
+</li>
+<li>
+<p>
+2015-03-17: Changing of naming convention for to-be-released files based on federal government from fg &#8594; of. At this time, no such files have been released.
+</p>
+</li>
+<li>
+<p>
+2015-04-24: Changes to alternate name of SepSnx and EmpSpv, tentative rate names
+</p>
+</li>
+<li>
+<p>
+2015-04-26: Changes to name of variable schema files (qwipu &#8594; qwi), addition of variability variable schema files.
+</p>
+</li>
+<li>
+<p>
+2015-04-28: Fixed small typos in QWI variable short names
+</p>
+</li>
+<li>
+<p>
+2015-05-18: Updated agg_level description, replaced agg_level.csv file
+</p>
+</li>
+<li>
+<p>
+2015-05-22: Fixed minor rendering bug for QWI rate variability names. No change to actual metadata.
+</p>
+</li>
+<li>
+<p>
+2015-06-09: Fixed a minor coding error in label_fipsnum.csv, added a concatenation of geography files as label_geography_all.csv.
+</p>
+</li>
+<li>
+<p>
+2015-08-07: Minor text change for agg_level, modified agg_level file.
+</p>
+</li>
+<li>
+<p>
+2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
+</p>
+</li>
+<li>
+<p>
+2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+</p>
+</li>
+<li>
+<p>
+2016-03-16: Removed extraneous empty lines
+</p>
+</li>
+<li>
+<p>
+2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+</p>
+</li>
+<li>
+<p>
+2016-04-13: Fixed typo in variables_qwi.csv (HirAS, HirNS, and status variables)
+</p>
+</li>
+<li>
+<p>
+2016-04-13: Fixed typo in variables_qwi*v.csv (HirAS, HirNS)
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_version_4_1c_draft_from_4_0">6.2. Version 4.1c-draft from 4.0</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+added J2J, National QWI spec
+</p>
+</li>
+<li>
+<p>
+added geohi category of ALL, US
+</p>
+</li>
+<li>
+<p>
+added definitions of variability measures
+</p>
+</li>
+<li>
+<p>
+added definitions of rates on separate file
+</p>
+</li>
+<li>
+<p>
+added naming convention for additional files
+</p>
+</li>
+<li>
+<p>
+added agg_level variable
+</p>
+</li>
+</ul></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>Some of the data products noted above do not exist yet.</p></div>
+</td>
+</tr></table>
+</div>
+<div style="page-break-after:always"></div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p>This revision: Wed Apr 13 08:36:12 EDT 2016</p></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2016-04-13 08:36:12 EDT
+</div>
+</div>
+</body>
+</html>

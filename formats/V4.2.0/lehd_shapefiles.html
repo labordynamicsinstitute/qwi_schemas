@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.9" />
+<title>LEHD Public Use Shapefile Data</title>
+<link rel="stylesheet" href="./asciidoc.css" type="text/css" />
+
+
+<script type="text/javascript" src="./asciidoc.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(3);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>LEHD Public Use Shapefile Data</h1>
+<span id="author">Heath Hayward, Matthew Graham, Lars Vilhuber &lt;lars.vilhuber@cornell.edu&gt;</span><br />
+<span id="revdate">17 April 2018</span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>( <a href="lehd_shapefiles.pdf">Printable version</a> )</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/important.png" alt="Important" />
+</td>
+<td class="content">
+<div class="title">Important</div>
+<div class="paragraph"><p>This document is not an official Census Bureau publication. It is compiled from publicly accessible information
+by Lars Vilhuber (<a href="http://www.ilr.cornell.edu/ldi/">Labor Dynamics Institute, Cornell University</a>).
+Feedback is welcome.
+Please write us at
+<a href="mailto:lars.vilhuber@cornell.edu?subject=LEHD_Shapefiles">lars.vilhuber@cornell.edu</a>.</p></div>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scope">1. Scope</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The public-use data from the Longitudinal Employer-Household Dynamics
+Program, including the Quarterly Workforce Indicators (QWI) and
+Job-to-Job Flows (J2J), are available for download according to
+<a href="lehd_public_use_schema.html">structural</a> and
+<a href="lehd_csv_naming.html">file naming</a> schema.
+The data themselves are available as
+Comma-Separated Value (CSV) files through the LEHD website&#8217;s Data page
+at <a href="http://lehd.ces.census.gov/data/">http://lehd.ces.census.gov/data/</a> as well as through the
+<a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p></div>
+<div class="paragraph"><p>Shapefiles are used to provide mapping functionality in <a href="http://qwiexplorer.ces.census.gov/">QWI Explorer</a> and <a href="https://j2jexplorer.ces.census.gov/">Job-to-Job Explorer (Beta)</a>.
+They are created by transforming input shapefiles sourced from <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line</a>.
+New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[<a href="http://lehd.ces.census.gov/data/#qwi">http://lehd.ces.census.gov/data/#qwi</a>] and J2J[<a href="http://lehd.ces.census.gov/data/#j2j">http://lehd.ces.census.gov/data/#j2j</a>] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sources">2. Sources</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Files are derived from   <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line 2017 shapefiles</a>:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="http://www2.census.gov/geo/tiger/TIGER2017/STATE/">tl_2017_us_state</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/">tl_2017_us_county</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www2.census.gov/geo/tiger/TIGER2017/CBSA/">tl_2017_us_cbsa</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www2.census.gov/geo/tiger/TIGER2017/PLACE/">tl_2017_(ST)_place</a>  (for creation of WIA/WIB shapefile)
+</p>
+</li>
+<li>
+<p>
+<a href="http://www2.census.gov/geo/tiger/TIGER2017/COUSUB/">tl_2017_(ST)_cousub</a> (for creation of WIA/WIB shapefile)
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transformations">3. Transformations</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The following major transformations are applied to the input files:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+All geographies are reprojected to <a href="http://spatialreference.org/ref/epsg/wgs-84/">WGS-1984 Geographic Coordinate System</a>
+</p>
+</li>
+<li>
+<p>
+Shoreline water has been clipped out to provide a more recognizable depiction of the coastlines.
+</p>
+</li>
+<li>
+<p>
+Each layer is given internal point coordinates (stored as double) based on the WGS-1984 projection (decimal degrees).
+</p>
+</li>
+<li>
+<p>
+Each layer is run through a "simplify polygon" procedure to remove unnecessary complexity from the features.
+</p>
+</li>
+<li>
+<p>
+Features from Guam, American Samoa, and the Northern Mariana Islands have been removed because they are not used in current LEHD tabulations.
+</p>
+</li>
+<li>
+<p>
+Each shapefile&#8217;s attribute table has been updated to conform to the standard LEHD output format, defined in <a href="#format">Format</a> section
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_outputs">4. Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Output shapefiles – grouped by paired products – are listed below. Each shapefile includes specific notes on its preparation.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_naming_schema">5. Basic Naming Schema</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>All files follow the following naming convention:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>[type]]_[geocat].zip</code></pre>
+</div></div>
+<div class="paragraph"><p>where [type] = lehd_shp and <a href="naming_geocat.csv">geocat</a> contains</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="20%" />
+<col width="80%" />
+<thead>
+<tr>
+<th align="center" valign="top">type</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">gb</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan (complete)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gc</p></td>
+<td align="left" valign="top"><p class="table">Counties</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gm</p></td>
+<td align="left" valign="top"><p class="table">Metropolitan/Micropolitan (state parts)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gn</p></td>
+<td align="left" valign="top"><p class="table">National (50 States + DC)</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gs</p></td>
+<td align="left" valign="top"><p class="table">States</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">gw</p></td>
+<td align="left" valign="top"><p class="table">Workforce Investment Areas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_a_id_format_a_format">5.1. <a id="format"></a> FORMAT</h3>
+<div class="paragraph"><p>( <a href="variables_shp.csv">variables_shp.csv</a> )</p></div>
+<div class="paragraph"><p>Files are distributed as <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">ESRI Shapefiles</a>, packaged as <a href="https://en.wikipedia.org/wiki/Zip_(file_format)">ZIP</a> files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml</a> .</p></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="14%" />
+<col width="14%" />
+<col width="35%" />
+<col width="35%" />
+<thead>
+<tr>
+<th align="left" valign="top">column</th>
+<th align="left" valign="top">label</th>
+<th align="left" valign="top">description</th>
+<th align="left" valign="top">type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table">STUSPS</p></td>
+<td align="left" valign="top"><p class="table">State USPS code</p></td>
+<td align="left" valign="top"><p class="table">FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></td>
+<td align="left" valign="top"><p class="table">string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">GEOGRAPHY</p></td>
+<td align="left" valign="top"><p class="table">Nationally unique identifier</p></td>
+<td align="left" valign="top"><p class="table">Derived from Nationally Unique Federal Information Processing Series (FIPS) Code as per <a href="https://www.census.gov/geo/reference/ansi.html">https://www.census.gov/geo/reference/ansi.html</a> (see notes)</p></td>
+<td align="left" valign="top"><p class="table">string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">NAME</p></td>
+<td align="left" valign="top"><p class="table">Feature Name</p></td>
+<td align="left" valign="top"><p class="table">Full Census Name of Geography Feature</p></td>
+<td align="left" valign="top"><p class="table">string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">LABEL</p></td>
+<td align="left" valign="top"><p class="table">Feature Label</p></td>
+<td align="left" valign="top"><p class="table">Shorter Census Name of Geography Feature for Thematic Mapping</p></td>
+<td align="left" valign="top"><p class="table">string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">INTPTLAT</p></td>
+<td align="left" valign="top"><p class="table">Internal Point Latitude</p></td>
+<td align="left" valign="top"><p class="table">Internal Point Latitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td align="left" valign="top"><p class="table">double</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">INTPTLON</p></td>
+<td align="left" valign="top"><p class="table">Internal Point Longitude</p></td>
+<td align="left" valign="top"><p class="table">Internal Point Longitude in WGS-1984 Decimal Degrees as per <a href="http://spatialreference.org/ref/epsg/wgs-84/">http://spatialreference.org/ref/epsg/wgs-84/</a></p></td>
+<td align="left" valign="top"><p class="table">double</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_values">5.2. Values</h3>
+<div class="sect3">
+<h4 id="_stusps">5.2.1. STUSPS</h4>
+<div class="paragraph"><p>( <a href="label_stusps.csv">label_stusps.csv</a> )</p></div>
+<div class="paragraph"><p>FIPS State Postal Code as per <a href="https://www.census.gov/geo/reference/codes/cou.html">https://www.census.gov/geo/reference/codes/cou.html</a></p></div>
+</div>
+<div class="sect3">
+<h4 id="_geography">5.2.2. GEOGRAPHY</h4>
+<div class="paragraph"><p>( <a href="label_geography.csv">label_geography.csv</a> )
+The valid codes correspond to those listed on <a href="label_geography.csv">label_geography.csv</a> and <a href="label_geography_metro.csv">label_geography_metro.csv</a>.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_name">5.2.3. NAME</h4>
+<div class="paragraph"><p>This is a string that corresponds in general to the <em>label</em> field on <a href="label_geography.csv">label_geography.csv</a> and <a href="label_geography_metro.csv">label_geography_metro.csv</a>. Minor deviations for ease of exposition are possible.</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_common_files">5.3. Common files</h3>
+<div class="sect3">
+<h4 id="_state">5.3.1. State</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gs.zip">lehd_shp_gs.zip</a> )</p></div>
+<div class="paragraph"><p>No transformations occur to this layer other than those listed above.</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qwi_geographies">5.4. QWI Geographies</h3>
+<div class="sect3">
+<h4 id="_county">5.4.1. County</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gc.zip">lehd_shp_gc.zip</a> )</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+STUSPS is appended to the NAME field so that county names are nationally unique. Example: "Cook, IL"
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_cbsa_within_state">5.4.2. CBSA - within State</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gm.zip">lehd_shp_gm.zip</a> )</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+All features are split into state-specific CBSA features by intersecting each feature with the state shapefile features.
+</p>
+</li>
+<li>
+<p>
+The STUSPS field is added during the intersect with the state shapefile.
+</p>
+</li>
+<li>
+<p>
+STFIPS (i.e. FIPS State Code as per <a href="https://www.census.gov/geo/reference/ansi_statetables.html">https://www.census.gov/geo/reference/ansi_statetables.html</a>) is prepended to the CBSA code (<a href="https://www.census.gov/population/metro/data/def.html">https://www.census.gov/population/metro/data/def.html</a>) to create the GEOGRAPHY field to distinguish state-parts of the same CBSA (i.e. make them nationally unique).
+</p>
+</li>
+<li>
+<p>
+The text "([STUSPS] part)" is appended to the NAME field only for those CBSA features that are split by state lines.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_workforce_investment_board_areas">5.4.3. Workforce Investment Board Areas</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gw.zip">lehd_shp_gw.zip</a> )</p></div>
+<div class="paragraph"><p>The WIA/WIB shapefiles are built from the Place, County Subdivision, and County shapefiles from TIGER/Line based on definitions provided by the LED state partners.</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_job_to_job_flow_geographies">5.5. Job-to-Job Flow Geographies</h3>
+<div class="sect3">
+<h4 id="_metropolitan_complete">5.5.1. Metropolitan (complete)</h4>
+<div class="paragraph"><p>( <a href="lehd_shp_gb.zip">lehd_shp_gb.zip</a> )</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Micropolitan areas are removed and state remainder areas are added as new features. State remainders are assigned unique codes ([STUSPS]+999) and names ("Not in metropolitan area, [STUSPS]").
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="versioning">6. Versioning</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Versioning rules follow <a href="http://semver.org/spec/v2.0.0.html">Semantic
+Versioning V2.0.0</a>, which states that</p></div>
+<div class="quoteblock">
+<div class="content">
+<div class="paragraph"><p>Given a version number MAJOR.MINOR.PATCH, increment the:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+MAJOR version when you make incompatible API changes,
+</p>
+</li>
+<li>
+<p>
+MINOR version when you add functionality in a backwards-compatible
+manner, and
+</p>
+</li>
+<li>
+<p>
+PATCH version when you make backwards-compatible bug fixes.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="attribution">
+</div></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="changes">7. Changes</h2>
+<div class="sectionbody">
+<div style="page-break-after:always"></div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p>This revision: Tue Apr 17 17:55:07 EDT 2018</p></div>
+</div></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated
+ 2018-04-17 17:55:07 EDT
+</div>
+</div>
+</body>
+</html>

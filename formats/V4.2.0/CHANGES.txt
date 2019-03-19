@@ -1,0 +1,18 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2017-12-15: Initial release
+- 2018-03-23: Fix EOL issues
+- 2018-06-04: Additional EOL issues
+
+=== Version 4.2.0 from 4.1.3
+- Updated industry classification from NAICS 2012 to NAICS 2017
+- Added a column +ind_level+ to label_industry.csv similar to the +geo_level+
+- Added additional columns to the variable metadata schema for greater clarity
+* Description,
+* Concept,
+* Base
+- Added a (draft) taxonomy of concepts used in the LEHD data world (link:label_concept_draft.csv[label_concept_draft.csv])
+- Fixed the labeling of ownership code +A00+ to correctly reflect scope
+- Added files describing the number of quarters of data availability required relative to start and end quarters (link:lags_qwi.csv[] and link:lags_j2j.csv[]), and its metadata (link:variables_lags.csv[])

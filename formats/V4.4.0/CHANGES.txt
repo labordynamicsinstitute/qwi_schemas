@@ -1,0 +1,10 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2019-02-21: Initial release
+
+=== Version 4.4.0 from 4.3.1
+- Underlying geovintage updated to reflect 2018 census geography
+- Updated shapefiles based on TIGER 2018
+- PR geography labels added

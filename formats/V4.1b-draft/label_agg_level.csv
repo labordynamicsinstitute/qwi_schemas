@@ -1,0 +1,25 @@
+agg_level,worker_char,firm_char,firm_orig_char,j2j,j2jr,j2jod,qwi,geo_level,ind_level,by_ownercode,by_sex,by_agegrp,by_race,by_ethnicity,by_education,by_firmage,by_firmsize
+1,,,,1,1,,,N,A,0,0,0,0,0,0,0,0
+2,Sex,,,1,1,,,N,A,0,1,0,0,0,0,0,0
+3,Age,,,1,1,,,N,A,0,0,1,0,0,0,0,0
+4,Sex * Age,,,1,1,,,N,A,0,1,1,0,0,0,0,0
+5,Race,,,1,1,,,N,A,0,0,0,1,0,0,0,0
+9,Ethnicity,,,1,1,,,N,A,0,0,0,0,1,0,0,0
+13,Race * Ethnicity,,,1,1,,,N,A,0,0,0,1,1,0,0,0
+17,Education,,,1,1,,,N,A,0,0,0,0,0,1,0,0
+18,Sex * Education,,,1,1,,,N,A,0,1,0,0,0,1,0,0
+65,,Firm Age,,1,1,,,N,A,0,0,0,0,0,0,1,0
+129,,Firm Size,,1,1,,,N,A,0,0,0,0,0,0,0,1
+257,,NAICS Sector,,1,1,,,N,S,0,0,0,0,0,0,0,0
+1025,,State,,1,1,,,S,A,0,0,0,0,0,0,0,0
+1026,Sex,State,,1,1,,,S,A,0,1,0,0,0,0,0,0
+1027,Age,State,,1,1,,,S,A,0,0,1,0,0,0,0,0
+1028,Sex * Age,State,,1,1,,,S,A,0,1,1,0,0,0,0,0
+1029,Race,State,,1,1,,,S,A,0,0,0,1,0,0,0,0
+1033,Ethnicity,State,,1,1,,,S,A,0,0,0,0,1,0,0,0
+1037,Race * Ethnicity,State,,1,1,,,S,A,0,0,0,1,1,0,0,0
+1041,Education,State,,1,1,,,S,A,0,0,0,0,0,1,0,0
+1042,Sex * Education,State,,1,1,,,S,A,0,1,0,0,0,1,0,0
+1089,,Firm Age * State,,1,1,,,S,A,0,0,0,0,0,0,1,0
+1153,,Firm Size * State,,1,1,,,S,A,0,0,0,0,0,0,0,1
+1281,,NAICS Sector * State,,1,1,,,S,S,0,0,0,0,0,0,0,0

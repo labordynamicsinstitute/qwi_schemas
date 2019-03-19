@@ -1,0 +1,6 @@
+type,Used By,Description
+[type]_[id],qwix,CSV files queried from the LED Extraction Tool at http://ledextract.ces.census.gov/.
+[type]_[geohi]_[demo]_[fas]_[geocat]_[indcat]_[ownercat]_[sa],qwi qwir qwiv qwivr j2j j2jr j2jod,Common convention for currently provided files.
+lehd_shp_[geocat].zip,shapefiles,ZIP files containing data for shapefiles
+version_[type].txt,metadata,Machine-readable text files with metadata on geographic and temporal coverage 
+j2jod_[geography]_avail.csv,metadata,Complex metadata (used only in J2JOD) - see below

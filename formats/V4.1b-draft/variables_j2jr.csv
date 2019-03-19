@@ -1,0 +1,17 @@
+Indicator Variable,Alternate name,Status Flag,Indicator Name,Base
+MHireR,all_doma2_rate,sMHireR,Main Job Accessions - Rate,(MainB+MainE)/2
+MSepR,all_doms2_rate,sMSepR,Main Job Separations - Rate,(MainB+MainE)/2
+MJobStartR,all_dest_rate,sMJobStartRate,Main Job Starts - Rate,(MainB+MainE)/2
+MJobEndR,all_orgin_rate,sMJobEndRate,Main Job Ends - Rate,(MainB+MainE)/2
+EEHireR,eea_rate,sEEHireRate,EE Accessions - Rate,(MainB+MainE)/2
+EESepR,ees_rate,sEESepR,EE Separations - Rate,(MainB+MainE)/2
+AQHireR,aq_doma2_rate,sAQHireR,AQ Accessions - Short Duration Nonemployment Spell - Rate,(MainB+MainE)/2
+AQSepR,aq_doms2_rate,sAQSepR,AQ Separations - Short Duration Nonemployment Spell - Rate,(MainB+MainE)/2
+J2JHireR,eeall_doma2_rate,sJ2JHireR,Job-to-Job Accessions - Rate,(MainB+MainE)/2
+J2JSepR,eeall_doms2_rate,sJ2JSepR,Job-to-Job Separations - Rate,(MainB+MainE)/2
+NEHireR,ne_doma2_rate,sNEHireR,Main Job Accessions - Any Nonemployment Spell - Rate,(MainB+MainE)/2
+ENSepR,en_doms2_rate,sENSepR,Main Job Separations - Any Nonemployment Spell - Rate,(MainB+MainE)/2
+NEPersistR,ne2_doma2_rate,sNEPersistR,Main Job Accessions - Persistent Nonemployment Spell - Rate,(MainB+MainE)/2
+ENPersistR,en2_doms2_rate,sENPersistR,Main Job Separations - Persistent Nonemployment Spell - Rate,(MainB+MainE)/2
+NEFullQR,ne2p_doma2_rate,sNEFullQR,Main Job Accessions - Full-qtr Nonemployment Spell - Rate,(MainB+MainE)/2
+ENFullQR,en2p_doms2_rate,sENFullQR,Main Job Separations - Full-qtr Nonemployment Spell - Rate,(MainB+MainE)/2
