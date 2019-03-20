@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.4.0
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-19 March 2019
+20 March 2019
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -665,6 +665,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Tue Mar 19 23:11:21 UTC 2019
+This revision: Wed Mar 20 15:27:54 UTC 2019
 *******************
 
