@@ -661,10 +661,12 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - Underlying geovintage updated to reflect 2018 census geography
 - Updated shapefiles based on TIGER 2018
 - PR geography labels added
+- Added state part to non-metro/non-micro areas in state label files
+- Removed nonexistent VT geography from labels
 
 
 <<<
 *******************
-This revision: Wed Mar 20 15:27:54 UTC 2019
+This revision: Wed Mar 20 18:56:20 UTC 2019
 *******************
 
