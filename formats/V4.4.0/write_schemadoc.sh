@@ -44,6 +44,10 @@ versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/$versionvintage/$versionstate
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionj2jvintage/j2j/$versionstate
 
+previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
+
+echo "DEBUG TEST " $cwd
+
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
@@ -109,7 +113,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.2.0, for files released as of R2018Q3.
+This version supersedes ${previousvintage}, for files released as of ${versionvintage}.
 
 Basic Schema
 ------------
