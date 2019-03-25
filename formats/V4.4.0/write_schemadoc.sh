@@ -63,7 +63,7 @@ case $version in
 .Important
 ==============================================
 This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+by Lars Vilhuber (https://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
@@ -95,7 +95,7 @@ Purpose
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available  through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
+https://lehd.ces.census.gov/data/ and through the LED Extraction Tool at https://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -111,7 +111,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes ${previousvintage}, for files released as of ${versionvintage}.
+This version supersedes ${previousvintage}
 
 Basic Schema
 ------------
@@ -440,7 +440,7 @@ echo "
 Only a small subset of available values shown.
 The 2017 NAICS (North American Industry Classification System) is used for all years.
 QWI releases prior to R2018Q1 used the 2012 NAICS classification (see link:../V4.1.3[Schema v4.1.3]).
-For a full listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
+For a full listing of all valid 2017 NAICS codes, see https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
