@@ -514,6 +514,9 @@ include::$tmp_geo_csv[]
 " >> $asciifile
 done
 
+
+tmp_stusps_csv=$(mktemp -p $cwd)
+cut -d ',' -f 1,2 label_stusps.csv >> $tmp_stusps_csv
 echo "
 
 ==== [[geostate]]National and state-level values ====
@@ -533,9 +536,9 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 ( link:label_stusps.csv[] )
 
-[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+[width=\"40%\",format=\"csv\",cols=\"^1,<2\",options=\"header\"]
 |===================================================
-include::label_stusps.csv[]
+include::$tmp_stusps_csv[]
 |===================================================
 
 
