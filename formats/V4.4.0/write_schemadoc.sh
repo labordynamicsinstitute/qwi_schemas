@@ -592,6 +592,8 @@ echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 head -31 $nsfile | tail -3 >> $nsfileshort
 echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 
+tmp_nsfileshort_csv=$(mktemp -p $cwd)
+cut -d ',' -f 1-9 $nsfileshort >> $tmp_nsfileshort_csv
 echo "
 <<<
 === Aggregation level
@@ -621,7 +623,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width=\"90%\",format=\"csv\",cols=\">1,3*<2,5*<1\",options=\"header\"]
 |===================================================
-include::$nsfileshort[]
+include::$tmp_nsfileshort_csv[]
 |===================================================
 ">> $asciifile
 
