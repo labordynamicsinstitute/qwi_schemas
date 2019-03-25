@@ -193,6 +193,7 @@ FIPS State Postal Code as per https://www.census.gov/geo/reference/codes/cou.htm
 
 ==== GEOGRAPHY
 ( link:label_geography.csv[] )
+
 The valid codes correspond to those listed on link:label_geography.csv[] and link:label_geography_metro.csv[].
 
 ==== NAME
