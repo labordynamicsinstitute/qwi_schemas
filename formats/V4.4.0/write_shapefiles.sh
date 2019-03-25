@@ -197,7 +197,9 @@ FIPS State Postal Code as per https://www.census.gov/geo/reference/codes/cou.htm
 The valid codes correspond to those listed on link:label_geography.csv[].
 
 ==== NAME
-This is a string that corresponds in general to the 'label' field on link:label_geography.csv[] and link:label_geography_metro.csv[]. Minor deviations for ease of exposition are possible.
+( link:label_geography.csv[] )
+
+This is a string that corresponds in general to the 'label' field on link:label_geography.csv[]. Minor deviations for ease of exposition are possible.
 
 === Common files
 ==== State
