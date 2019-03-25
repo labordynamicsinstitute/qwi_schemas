@@ -54,7 +54,7 @@ case $version in
 .Important
 ==============================================
 This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+by Lars Vilhuber (https://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. " >> $asciifile
 	;;
 	draft|*)
@@ -126,28 +126,28 @@ link:lehd_public_use_schema{ext-relative}[structural] and
 link:lehd_csv_naming{ext-relative}[file naming] schema.
 The data themselves are available as
 Comma-Separated Value (CSV) files through the LEHD website's Data page
-at http://lehd.ces.census.gov/data/ as well as through the
-http://ledextract.ces.census.gov/[LED Extraction Tool].
+at https://lehd.ces.census.gov/data/ as well as through the
+https://ledextract.ces.census.gov/[LED Extraction Tool].
 
-Shapefiles are used to provide mapping functionality in http://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer (Beta)].
+Shapefiles are used to provide mapping functionality in https://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer (Beta)].
 They are created by transforming input shapefiles sourced from https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line].
-New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[http://lehd.ces.census.gov/data/#qwi] and J2J[http://lehd.ces.census.gov/data/#j2j] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
+New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[https://lehd.ces.census.gov/data/#qwi] and J2J[https://lehd.ces.census.gov/data/#j2j] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
 
 Sources
 -------
 Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2017 shapefiles]:
 
-* http://www2.census.gov/geo/tiger/TIGER2017/STATE/[tl_2017_us_state]
-* http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/[tl_2017_us_county]
-* http://www2.census.gov/geo/tiger/TIGER2017/CBSA/[tl_2017_us_cbsa]
-* http://www2.census.gov/geo/tiger/TIGER2017/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
-* http://www2.census.gov/geo/tiger/TIGER2017/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2017/STATE/[tl_2017_us_state]
+* https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/[tl_2017_us_county]
+* https://www2.census.gov/geo/tiger/TIGER2017/CBSA/[tl_2017_us_cbsa]
+* https://www2.census.gov/geo/tiger/TIGER2017/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2017/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
 The following major transformations are applied to the input files:
 
-* All geographies are reprojected to http://spatialreference.org/ref/epsg/wgs-84/[WGS-1984 Geographic Coordinate System]
+* All geographies are reprojected to https://spatialreference.org/ref/epsg/wgs-84/[WGS-1984 Geographic Coordinate System]
 * Shoreline water has been clipped out to provide a more recognizable depiction of the coastlines.
 * Each layer is given internal point coordinates (stored as double) based on the WGS-1984 projection (decimal degrees).
 * Each layer is run through a "simplify polygon" procedure to remove unnecessary complexity from the features.
@@ -178,7 +178,7 @@ include::naming_geocat.csv[]
 === [[format]] FORMAT
 ( link:variables_shp.csv[variables_shp.csv] )
 
-Files are distributed as http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml[ESRI Shapefiles], packaged as https://en.wikipedia.org/wiki/Zip_(file_format)[ZIP] files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml .
+Files are distributed as https://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml[ESRI Shapefiles], packaged as https://en.wikipedia.org/wiki/Zip_(file_format)[ZIP] files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to https://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml .
 
 [width="60%",format="csv",cols="<2,<2,<5,<5",options="header"]
 |===================================================
@@ -234,7 +234,7 @@ The WIA/WIB shapefiles are built from the Place, County Subdivision, and County 
 Versioning
 ----------
 
-Versioning rules follow http://semver.org/spec/v2.0.0.html[Semantic
+Versioning rules follow https://semver.org/spec/v2.0.0.html[Semantic
 Versioning V2.0.0], which states that
 
 ________________________________________________________________________________
