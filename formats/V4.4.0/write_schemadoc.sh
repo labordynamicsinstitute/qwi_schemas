@@ -41,8 +41,8 @@ versionvintage=R2018Q3
 # versionj2jvintage=$versionvintage
 versionj2jvintage=R2018Q2
 versionstate=de
-versionurl=https://lehd.ces.census.gov/data/qwi/$versionvintage/$versionstate
-versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionj2jvintage/j2j/$versionstate
+versionurl=https://lehd.ces.census.gov/data/qwi/${versionvintage}/${versionstate}
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/${versionj2jvintage}/${versionstate}/j2j
 previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
 
 
