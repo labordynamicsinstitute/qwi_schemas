@@ -507,7 +507,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 ( link:${arg}[] )
 
-[width=\"80%\",format=\"csv\",cols=\"^1,<3,<8\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"^1,<3,<8\",options=\"header\"]
 |===================================================
 include::$tmp_geo_csv[]
 |===================================================
