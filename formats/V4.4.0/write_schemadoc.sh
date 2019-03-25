@@ -43,10 +43,8 @@ versionj2jvintage=R2018Q2
 versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/$versionvintage/$versionstate
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionj2jvintage/j2j/$versionstate
-
 previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
 
-echo "DEBUG TEST " $cwd
 
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
@@ -496,6 +494,8 @@ done
 for arg in   $(ls label_geo_level*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
+	tmp_geo_csv=$(mktemp -p $cwd)
+	cut -d ',' -f 1,2,3 $arg >> $tmp_geo_csv
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
@@ -507,9 +507,9 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 ( link:${arg}[] )
 
-[width=\"80%\",format=\"csv\",cols=\"^1,<3,<8,<8\",options=\"header\"]
+[width=\"80%\",format=\"csv\",cols=\"^1,<3,<8\",options=\"header\"]
 |===================================================
-include::$arg[]
+include::$tmp_geo_csv[]
 |===================================================
 " >> $asciifile
 done
@@ -741,4 +741,5 @@ asciidoctor-pdf -a pdf-page-size=letter -a icons -a toc -a numbered -a outfilesu
 #html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 #[[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
 echo "Removing tmp files"
+rm -f $cwd/tmp.* #remove files made by mktemp
 #rm tmp*
