@@ -131,7 +131,7 @@ https://ledextract.ces.census.gov/[LED Extraction Tool].
 
 Shapefiles are used to provide mapping functionality in https://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer (Beta)].
 They are created by transforming input shapefiles sourced from https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line].
-New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[https://lehd.ces.census.gov/data/#qwi] and J2J[https://lehd.ces.census.gov/data/#j2j] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
+New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the https://lehd.ces.census.gov/data/#qwi[QWI] and https://lehd.ces.census.gov/data/#j2j[J2J] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
 
 Sources
 -------
