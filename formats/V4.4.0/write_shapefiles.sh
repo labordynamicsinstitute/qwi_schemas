@@ -164,7 +164,7 @@ Basic Naming Schema
 All files follow the following naming convention:
 
 --------------------------------
-[type]]_[geocat].zip
+[type]_[geocat].zip
 --------------------------------
 
 where [type] = lehd_shp and link:naming_geocat.csv[geocat] contains
