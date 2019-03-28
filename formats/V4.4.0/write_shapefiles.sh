@@ -137,11 +137,11 @@ Sources
 -------
 Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2017 shapefiles]:
 
-* https://www2.census.gov/geo/tiger/TIGER2017/STATE/[tl_2017_us_state]
-* https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/[tl_2017_us_county]
-* https://www2.census.gov/geo/tiger/TIGER2017/CBSA/[tl_2017_us_cbsa]
-* https://www2.census.gov/geo/tiger/TIGER2017/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
-* https://www2.census.gov/geo/tiger/TIGER2017/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2018/STATE/[tl_2017_us_state]
+* https://www2.census.gov/geo/tiger/TIGER2018/COUNTY/[tl_2017_us_county]
+* https://www2.census.gov/geo/tiger/TIGER2018/CBSA/[tl_2017_us_cbsa]
+* https://www2.census.gov/geo/tiger/TIGER2018/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2018/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
