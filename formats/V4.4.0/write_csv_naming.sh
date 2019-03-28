@@ -104,7 +104,7 @@ This version modifies a portion of the structure of the metadata. Many files com
 
 Supersedes
 ----------
-This version supersedes ${previousvintage}
+This version supersedes ${previousvintage}, for files released as of R2019Q1.
 
 
 Basic Filename Schema

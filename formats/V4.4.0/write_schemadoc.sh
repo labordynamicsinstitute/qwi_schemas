@@ -111,7 +111,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes ${previousvintage}
+This version supersedes ${previousvintage}, for files released as of R2019Q1.
 
 Basic Schema
 ------------
