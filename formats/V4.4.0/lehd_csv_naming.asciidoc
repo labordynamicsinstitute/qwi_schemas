@@ -28,7 +28,7 @@ This version modifies a portion of the structure of the metadata. Many files com
 
 Supersedes
 ----------
-This version supersedes V4.3.1
+This version supersedes V4.3.1, for files released as of R2019Q1.
 
 
 Basic Filename Schema
@@ -227,6 +227,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Thu Mar 28 12:51:05 UTC 2019
+This revision: Thu Mar 28 13:57:21 UTC 2019
 *******************
 
