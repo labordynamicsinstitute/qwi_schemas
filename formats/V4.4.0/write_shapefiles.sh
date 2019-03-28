@@ -88,6 +88,8 @@ function untar_payload()
 
 untar_payload >> $asciifile
 
+cat CHANGES.txt >> $asciifile
+
 echo "
 
 <<<
@@ -248,8 +250,3 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 ________________________________________________________________________________
-
-
-[[changes]]
-Changes
--------
