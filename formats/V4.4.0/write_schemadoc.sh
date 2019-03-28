@@ -41,8 +41,10 @@ versionvintage=R2018Q3
 # versionj2jvintage=$versionvintage
 versionj2jvintage=R2018Q2
 versionstate=de
-versionurl=https://lehd.ces.census.gov/data/qwi/$versionvintage/$versionstate
-versionj2jurl=https://lehd.ces.census.gov/data/j2j/$versionj2jvintage/j2j/$versionstate
+versionurl=https://lehd.ces.census.gov/data/qwi/${versionvintage}/${versionstate}
+versionj2jurl=https://lehd.ces.census.gov/data/j2j/${versionj2jvintage}/${versionstate}/j2j
+previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
+
 
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
@@ -61,7 +63,7 @@ case $version in
 .Important
 ==============================================
 This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+by Lars Vilhuber (https://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. Please write us at
 link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
 ==============================================
@@ -93,7 +95,7 @@ Purpose
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available  through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
+https://lehd.ces.census.gov/data/ and through the LED Extraction Tool at https://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -109,7 +111,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.2.0, for files released as of R2018Q3.
+This version supersedes ${previousvintage}
 
 Basic Schema
 ------------
@@ -438,7 +440,7 @@ echo "
 Only a small subset of available values shown.
 The 2017 NAICS (North American Industry Classification System) is used for all years.
 QWI releases prior to R2018Q1 used the 2012 NAICS classification (see link:../V4.1.3[Schema v4.1.3]).
-For a full listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
+For a full listing of all valid 2017 NAICS codes, see https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
 
 [width=\"90%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
@@ -492,6 +494,8 @@ done
 for arg in   $(ls label_geo_level*csv)
 do
   name="$(echo ${arg%*.csv}| sed 's/label_//')"
+	tmp_geo_csv=$(mktemp -p $cwd)
+	cut -d ',' -f 1,2,3 $arg >> $tmp_geo_csv
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
@@ -503,13 +507,16 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 ( link:${arg}[] )
 
-[width=\"80%\",format=\"csv\",cols=\"^1,<3,<8,<8\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"^1,<3,<8\",options=\"header\"]
 |===================================================
-include::$arg[]
+include::$tmp_geo_csv[]
 |===================================================
 " >> $asciifile
 done
 
+
+tmp_stusps_csv=$(mktemp -p $cwd)
+cut -d ',' -f 1,2 label_stusps.csv >> $tmp_stusps_csv
 echo "
 
 ==== [[geostate]]National and state-level values ====
@@ -529,9 +536,9 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 ( link:label_stusps.csv[] )
 
-[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+[width=\"40%\",format=\"csv\",cols=\"^1,<2\",options=\"header\"]
 |===================================================
-include::label_stusps.csv[]
+include::$tmp_stusps_csv[]
 |===================================================
 
 
@@ -585,6 +592,8 @@ echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 head -31 $nsfile | tail -3 >> $nsfileshort
 echo "...,,,,,,,,,,,,,,,,,,,,,," >> $nsfileshort
 
+tmp_nsfileshort_csv=$(mktemp -p $cwd)
+cut -d ',' -f 1-9 $nsfileshort >> $tmp_nsfileshort_csv
 echo "
 <<<
 === Aggregation level
@@ -614,7 +623,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width=\"90%\",format=\"csv\",cols=\">1,3*<2,5*<1\",options=\"header\"]
 |===================================================
-include::$nsfileshort[]
+include::$tmp_nsfileshort_csv[]
 |===================================================
 ">> $asciifile
 
@@ -737,4 +746,5 @@ asciidoctor-pdf -a pdf-page-size=letter -a icons -a toc -a numbered -a outfilesu
 #html2text $(basename $asciifile .asciidoc).html > $(basename $asciifile .asciidoc).txt
 #[[ -f $(basename $asciifile .asciidoc).txt  ]] && echo "$(basename $asciifile .asciidoc).txt created"
 echo "Removing tmp files"
+rm -f $cwd/tmp.* #remove files made by mktemp
 #rm tmp*

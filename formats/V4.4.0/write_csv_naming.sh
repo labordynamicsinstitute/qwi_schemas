@@ -36,6 +36,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 
 # create ascii doc version
 asciifile=lehd_csv_naming.asciidoc
+previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
 echo "= LEHD Public Use  Schema $numversion - File and Directory Naming Convention"> $asciifile
 echo "Lars Vilhuber <${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
@@ -54,7 +55,7 @@ echo "
 .Important
 ==============================================
 This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
+by Lars Vilhuber (https://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
 Feedback is welcome. Please write us at
 link:mailto:${author}?subject=LEHD_Schema_v4[${author}].
 ==============================================
@@ -87,7 +88,7 @@ Purpose
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+https://lehd.ces.census.gov/data/ and through LED Extraction Tool at https://ledextract.ces.census.gov/.
 
 This document describes the file and directory naming schema for LEHD-provided CSV files.
 
@@ -103,7 +104,7 @@ This version modifies a portion of the structure of the metadata. Many files com
 
 Supersedes
 ----------
-This version supersedes V4.2, for files released as of R2018Q3
+This version supersedes ${previousvintage}
 
 
 Basic Filename Schema
@@ -123,6 +124,7 @@ some other identifier.
 cat naming_convention.csv | sed 's+_+\\_+g' | sed 's+\\_\[id\]+_[id]+' |
  sed 's+\\_\[sa\]+_[sa]+' | sed 's+\\_\[geocat\]\.zip+_[geocat].zip+' |
  sed 's+\\_\[fas\]\.+_[fas].+' | sed 's+\\_\[geography\]\\_+_[geography]_+' > tmp_naming_convention.csv
+
 echo "
 [width=\"90%\",format=\"csv\",delim=\",\",cols=\"^1,<3,<5\",options=\"header\"]
 |===================================================
@@ -130,7 +132,7 @@ include::tmp_naming_convention.csv[]
 |===================================================
 
 === QWIPU from the LED Extraction Tool
-Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+Files downloaded through the  LED Extraction Tool at https://ledextract.ces.census.gov/ follow the following naming convention:
 ....................................
  [type]_[id].[EXT]
 ....................................
