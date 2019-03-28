@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.4.0
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-20 March 2019
+28 March 2019
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -19,7 +19,7 @@ Purpose
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available  through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through the LED Extraction Tool at http://ledextract.ces.census.gov/.
+https://lehd.ces.census.gov/data/ and through the LED Extraction Tool at https://ledextract.ces.census.gov/.
 
 This document describes the data schema for LEHD files. LEHD-provided SHP files are separately described in link:lehd_shapefiles{ext-relative}[]. For each variable,
 a set of allowable values is defined. Definitions are provided as CSV files,
@@ -35,7 +35,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes V4.2.0, for files released as of R2018Q3.
+This version supersedes V4.3.1
 
 Basic Schema
 ------------
@@ -406,7 +406,7 @@ include::label_ind_level.csv[]
 Only a small subset of available values shown.
 The 2017 NAICS (North American Industry Classification System) is used for all years.
 QWI releases prior to R2018Q1 used the 2012 NAICS classification (see link:../V4.1.3[Schema v4.1.3]).
-For a full listing of all valid 2017 NAICS codes, see http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
+For a full listing of all valid 2017 NAICS codes, see https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017.
 
 [width="90%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
@@ -428,9 +428,9 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 ( link:label_geo_level.csv[] )
 
-[width="80%",format="csv",cols="^1,<3,<8,<8",options="header"]
+[width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::label_geo_level.csv[]
+include::/documents/formats/V4.4.0/tmp.jhEmKh[]
 |===================================================
 
 
@@ -452,9 +452,9 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 ( link:label_stusps.csv[] )
 
-[width="60%",format="csv",cols="^1,<4",options="header"]
+[width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::label_stusps.csv[]
+include::/documents/formats/V4.4.0/tmp.mGfDFb[]
 |===================================================
 
 
@@ -554,7 +554,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::tmp_label_agg_level.csv[]
+include::/documents/formats/V4.4.0/tmp.EgiOCb[]
 |===================================================
 
 
@@ -609,15 +609,9 @@ QWI_FS DE 10 1998:3-2017:3 V4.3.0 R2018Q3 qwipu_de_20180813_1413
 --------------------------------
 Similarly, the metadata for the R2018Q2 release of
 Delaware J2J
-tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2018Q2/j2j/de/version_j2j.txt[here]) has  the following content:
+tabulations (obtained from https://lehd.ces.census.gov/data/j2j/R2018Q2/de/j2j/version_j2j.txt[here]) has  the following content:
 --------------------------------
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>301 Moved Permanently</title>
-</head><body>
-<h1>Moved Permanently</h1>
-<p>The document has moved <a href="http://lehd.ces.census.gov/data/j2j/R2018Q2/de/j2j/version_j2j.txt">here</a>.</p>
-</body></html>
+J2J DE 10 2000:2-2017:2 V4.2.0 R2018Q2 j2jpu_de_20180817_1654
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
 
@@ -667,6 +661,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Wed Mar 20 18:56:20 UTC 2019
+This revision: Thu Mar 28 12:51:08 UTC 2019
 *******************
 

@@ -1,6 +1,6 @@
 = LEHD Public Use  Schema V4.4.0 - File and Directory Naming Convention
 Lars Vilhuber <>
-20 March 2019
+28 March 2019
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -12,7 +12,7 @@ Purpose
 The public-use data from the Longitudinal Employer-Household Dynamics Program, including the Quarterly Workforce Indicators (QWI)
 and Job-to-Job Flows (J2J), are available for download with the following data schema.
 These data are available as Comma-Separated Value (CSV) files through the LEHD website’s Data page at
-http://lehd.ces.census.gov/data/ and through LED Extraction Tool at http://ledextract.ces.census.gov/.
+https://lehd.ces.census.gov/data/ and through LED Extraction Tool at https://ledextract.ces.census.gov/.
 
 This document describes the file and directory naming schema for LEHD-provided CSV files.
 
@@ -28,7 +28,7 @@ This version modifies a portion of the structure of the metadata. Many files com
 
 Supersedes
 ----------
-This version supersedes V4.2, for files released as of R2018Q3
+This version supersedes V4.3.1
 
 
 Basic Filename Schema
@@ -50,7 +50,7 @@ include::tmp_naming_convention.csv[]
 |===================================================
 
 === QWIPU from the LED Extraction Tool
-Files downloaded through the  LED Extraction Tool at http://ledextract.ces.census.gov/ follow the following naming convention:
+Files downloaded through the  LED Extraction Tool at https://ledextract.ces.census.gov/ follow the following naming convention:
 ....................................
  [type]_[id].[EXT]
 ....................................
@@ -227,6 +227,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Wed Mar 20 18:56:17 UTC 2019
+This revision: Thu Mar 28 12:51:05 UTC 2019
 *******************
 

@@ -15,7 +15,7 @@
 <h1>LEHD Public Use Shapefile Data</h1>
 <div class="details">
 <span id="author" class="author">Heath Hayward, Matthew Graham, Lars Vilhuber &lt;Patrick.Hayward@census.gov&gt;</span><br>
-<span id="revdate">20 March 2019</span>
+<span id="revdate">28 March 2019</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -94,13 +94,13 @@ Job-to-Job Flows (J2J), are available for download according to
 <a href="lehd_csv_naming.html">file naming</a> schema.
 The data themselves are available as
 Comma-Separated Value (CSV) files through the LEHD website&#8217;s Data page
-at <a href="http://lehd.ces.census.gov/data/" class="bare">http://lehd.ces.census.gov/data/</a> as well as through the
-<a href="http://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p>
+at <a href="https://lehd.ces.census.gov/data/" class="bare">https://lehd.ces.census.gov/data/</a> as well as through the
+<a href="https://ledextract.ces.census.gov/">LED Extraction Tool</a>.</p>
 </div>
 <div class="paragraph">
-<p>Shapefiles are used to provide mapping functionality in <a href="http://qwiexplorer.ces.census.gov/">QWI Explorer</a> and <a href="https://j2jexplorer.ces.census.gov/">Job-to-Job Explorer (Beta)</a>.
+<p>Shapefiles are used to provide mapping functionality in <a href="https://qwiexplorer.ces.census.gov/">QWI Explorer</a> and <a href="https://j2jexplorer.ces.census.gov/">Job-to-Job Explorer (Beta)</a>.
 They are created by transforming input shapefiles sourced from <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">TIGER/Line</a>.
-New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the QWI[<a href="http://lehd.ces.census.gov/data/#qwi" class="bare">http://lehd.ces.census.gov/data/#qwi</a>] and J2J[<a href="http://lehd.ces.census.gov/data/#j2j" class="bare">http://lehd.ces.census.gov/data/#j2j</a>] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.</p>
+New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the <a href="https://lehd.ces.census.gov/data/#qwi">QWI</a> and <a href="https://lehd.ces.census.gov/data/#j2j">J2J</a> data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.</p>
 </div>
 </div>
 </div>
@@ -113,19 +113,19 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://www2.census.gov/geo/tiger/TIGER2017/STATE/">tl_2017_us_state</a></p>
+<p><a href="https://www2.census.gov/geo/tiger/TIGER2017/STATE/">tl_2017_us_state</a></p>
 </li>
 <li>
-<p><a href="http://www2.census.gov/geo/tiger/TIGER2017/COUNTY/">tl_2017_us_county</a></p>
+<p><a href="https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/">tl_2017_us_county</a></p>
 </li>
 <li>
-<p><a href="http://www2.census.gov/geo/tiger/TIGER2017/CBSA/">tl_2017_us_cbsa</a></p>
+<p><a href="https://www2.census.gov/geo/tiger/TIGER2017/CBSA/">tl_2017_us_cbsa</a></p>
 </li>
 <li>
-<p><a href="http://www2.census.gov/geo/tiger/TIGER2017/PLACE/">tl_2017_(ST)_place</a>  (for creation of WIA/WIB shapefile)</p>
+<p><a href="https://www2.census.gov/geo/tiger/TIGER2017/PLACE/">tl_2017_(ST)_place</a>  (for creation of WIA/WIB shapefile)</p>
 </li>
 <li>
-<p><a href="http://www2.census.gov/geo/tiger/TIGER2017/COUSUB/">tl_2017_(ST)_cousub</a> (for creation of WIA/WIB shapefile)</p>
+<p><a href="https://www2.census.gov/geo/tiger/TIGER2017/COUSUB/">tl_2017_(ST)_cousub</a> (for creation of WIA/WIB shapefile)</p>
 </li>
 </ul>
 </div>
@@ -140,7 +140,7 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 <div class="ulist">
 <ul>
 <li>
-<p>All geographies are reprojected to <a href="http://spatialreference.org/ref/epsg/wgs-84/">WGS-1984 Geographic Coordinate System</a></p>
+<p>All geographies are reprojected to <a href="https://spatialreference.org/ref/epsg/wgs-84/">WGS-1984 Geographic Coordinate System</a></p>
 </li>
 <li>
 <p>Shoreline water has been clipped out to provide a more recognizable depiction of the coastlines.</p>
@@ -177,7 +177,7 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>[type]]_[geocat].zip</pre>
+<pre>[type]_[geocat].zip</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -227,7 +227,7 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 <p>( <a href="variables_shp.csv">variables_shp.csv</a> )</p>
 </div>
 <div class="paragraph">
-<p>Files are distributed as <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">ESRI Shapefiles</a>, packaged as <a href="https://en.wikipedia.org/wiki/Zip_(file_format)">ZIP</a> files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to <a href="http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml" class="bare">http://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml</a> .</p>
+<p>Files are distributed as <a href="https://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml">ESRI Shapefiles</a>, packaged as <a href="https://en.wikipedia.org/wiki/Zip_(file_format)">ZIP</a> files. The SHP component of these archives is described here. Other components (dbf, prj, shx) files are not documented here, we refer users to <a href="https://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml" class="bare">https://www.digitalpreservation.gov/formats/fdd/fdd000280.shtml</a> .</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
 <colgroup>
@@ -298,14 +298,19 @@ New TIGER/Line shapefiles are typically released by the Census Bureau&#8217;s Ge
 <div class="sect3">
 <h4 id="_geography">5.2.2. GEOGRAPHY</h4>
 <div class="paragraph">
-<p>( <a href="label_geography.csv" class="bare">label_geography.csv</a> )
-The valid codes correspond to those listed on <a href="label_geography.csv" class="bare">label_geography.csv</a> and <a href="label_geography_metro.csv" class="bare">label_geography_metro.csv</a>.</p>
+<p>( <a href="label_geography.csv" class="bare">label_geography.csv</a> )</p>
+</div>
+<div class="paragraph">
+<p>The valid codes correspond to those listed on <a href="label_geography.csv" class="bare">label_geography.csv</a>.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_name">5.2.3. NAME</h4>
 <div class="paragraph">
-<p>This is a string that corresponds in general to the 'label' field on <a href="label_geography.csv" class="bare">label_geography.csv</a> and <a href="label_geography_metro.csv" class="bare">label_geography_metro.csv</a>. Minor deviations for ease of exposition are possible.</p>
+<p>( <a href="label_geography.csv" class="bare">label_geography.csv</a> )</p>
+</div>
+<div class="paragraph">
+<p>This is a string that corresponds in general to the 'label' field on <a href="label_geography.csv" class="bare">label_geography.csv</a>. Minor deviations for ease of exposition are possible.</p>
 </div>
 </div>
 </div>
@@ -390,7 +395,7 @@ The valid codes correspond to those listed on <a href="label_geography.csv" clas
 <h2 id="versioning">6. Versioning</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Versioning rules follow <a href="http://semver.org/spec/v2.0.0.html">Semantic
+<p>Versioning rules follow <a href="https://semver.org/spec/v2.0.0.html">Semantic
 Versioning V2.0.0</a>, which states that</p>
 </div>
 <div class="quoteblock">
@@ -423,7 +428,7 @@ manner, and</p>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Wed Mar 20 18:56:28 UTC 2019</p>
+<p>This revision: Thu Mar 28 12:51:15 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -432,7 +437,7 @@ manner, and</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-03-20 18:56:28 UTC
+Last updated 2019-03-28 12:51:15 UTC
 </div>
 </div>
 </body>
