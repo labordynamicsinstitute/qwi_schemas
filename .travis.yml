@@ -3,6 +3,12 @@ sudo: required
 services:
   - docker                  
 
+# safelist
+branches:
+  only:
+  - master
+  - lehd-deploy
+  
 before_install:            
   - mkdir -p output
   - docker pull asciidoctor/docker-asciidoctor
