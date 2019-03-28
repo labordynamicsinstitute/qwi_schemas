@@ -35,13 +35,13 @@ New TIGER/Line shapefiles are typically released by the Census Bureau's Geograph
 
 Sources
 -------
-Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2017 shapefiles]:
+Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2018 shapefiles]:
 
-* https://www2.census.gov/geo/tiger/TIGER2017/STATE/[tl_2017_us_state]
-* https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/[tl_2017_us_county]
-* https://www2.census.gov/geo/tiger/TIGER2017/CBSA/[tl_2017_us_cbsa]
-* https://www2.census.gov/geo/tiger/TIGER2017/PLACE/[tl_2017_(ST)_place]  (for creation of WIA/WIB shapefile)
-* https://www2.census.gov/geo/tiger/TIGER2017/COUSUB/[tl_2017_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2018/STATE/[tl_2018_us_state]
+* https://www2.census.gov/geo/tiger/TIGER2018/COUNTY/[tl_2018_us_county]
+* https://www2.census.gov/geo/tiger/TIGER2018/CBSA/[tl_2018_us_cbsa]
+* https://www2.census.gov/geo/tiger/TIGER2018/PLACE/[tl_2018_(ST)_place]  (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2018/COUSUB/[tl_2018_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
@@ -148,15 +148,22 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 ________________________________________________________________________________
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
+=== This version (revisions)
+- 2019-02-21: Initial release
 
-[[changes]]
-Changes
--------
+=== Version 4.4.0 from 4.3.1
+- Underlying geovintage updated to reflect 2018 census geography
+- Updated shapefiles based on TIGER 2018
+- PR geography labels added
+- Added state part to non-metro/non-micro areas in state label files
+- Removed nonexistent VT geography from labels
 
 
 <<<
 *******************
-This revision: Thu Mar 28 13:57:31 UTC 2019
+This revision: Thu Mar 28 19:30:00 UTC 2019
 *******************
 
