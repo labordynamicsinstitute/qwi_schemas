@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
-28 March 2019
+01 April 2019
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
 
@@ -153,6 +153,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 === This version (revisions)
 - 2019-02-21: Initial release
+- 2019-03-31: Minor layout changes for better readability
 
 === Version 4.4.0 from 4.3.1
 - Underlying geovintage updated to reflect 2018 census geography
@@ -164,6 +165,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Mar 28 19:30:00 UTC 2019
+This revision: Mon Apr  1 14:15:10 UTC 2019
 *******************
 
