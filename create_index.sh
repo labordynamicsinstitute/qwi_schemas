@@ -2,17 +2,27 @@
 if [[ -z $1 ]]
 	then
 	cat << EOF
-	$0 start
+	$0 [branch]
 
 	will generate a index.html page from fragments for gh-pages.
 
 	Requires: multimarkdown
+
+	Only runs on gh-pages branch. Does not run on other branches
 EOF
 exit 0
 fi
 
-cat header.frag > index.html
-multimarkdown README.md >> index.html
-cat footer.frag >> index.html
-git add index.html
-git status
+wd=$(dirname $0)
+echo $wd
+
+case $1 in
+   gh-pages)
+	cat $wd/header.frag > $wd/index.html
+	multimarkdown $wd/README.md >> $wd/index.html
+	cat $wd/footer.frag >> $wd/index.html
+	;;
+   *)
+   echo "does not run for branch $1"
+   ;;
+esac
