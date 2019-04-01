@@ -7,7 +7,7 @@ Experimental LEHD Schema files, that may or may not later be incorporated into p
 
 These are NOT official publication standards of any agency. However, they may turn out to be useful.
 
-For official LEHD-published schema, see http://lehd.ces.census.gov/data/schema/
+For official LEHD-published schema, see [http://lehd.ces.census.gov/data/schema/](http://lehd.ces.census.gov/data/schema/)
 
 You can browse the following schemas (in reverse chronological order of major versions):
 

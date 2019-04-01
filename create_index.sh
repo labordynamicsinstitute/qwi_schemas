@@ -8,7 +8,7 @@ if [[ -z $1 ]]
 
 	Requires: multimarkdown
 
-	Only runs on gh-pages branch. Does not run on other branches
+	Does not run on lehd-related  branches. 
 EOF
 exit 0
 fi
@@ -17,12 +17,12 @@ wd=$(dirname $0)
 echo $wd
 
 case $1 in
-   gh-pages)
-	cat $wd/header.frag > $wd/index.html
+   lehd*)
+   echo "does not run for branch $1"
+   ;;
+   *)
+	cat $wd/header.frag | sed "s/BUILDDATE/$(date)/" | sed "s/BUILDINFO/$1/"> $wd/index.html
 	multimarkdown $wd/README.md >> $wd/index.html
 	cat $wd/footer.frag >> $wd/index.html
 	;;
-   *)
-   echo "does not run for branch $1"
-   ;;
 esac
