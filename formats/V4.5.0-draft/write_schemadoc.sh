@@ -391,7 +391,7 @@ Categorical variable descriptions are displayed above each table, with the varia
 " >> $asciifile
 
 # we do industry and geo last
-for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps|concept_draft")
+for arg in $(ls label_*csv| grep -vE "geo|ind_level|industry|agg_level|flags|fips|stusps|concept_draft|pseo|cip|inst|degree")
 do
   name=$(echo ${arg%*.csv}| sed 's/label_//')
   echo "=== $name
