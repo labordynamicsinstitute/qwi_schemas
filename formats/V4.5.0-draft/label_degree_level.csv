@@ -1,0 +1,12 @@
+degree_level,label
+00,All Degree Levels
+01,Certificate < 1 year
+02,Certificate 1-2 years
+03,Associates
+04,Certificate 2-4 years
+05,Baccalaureate
+06,Post-Bacc Certificate
+07,Masters
+08,Post-Masters Certificate 
+17,Doctoral - Research/Scholarship
+18,Doctoral - Professional Practice
