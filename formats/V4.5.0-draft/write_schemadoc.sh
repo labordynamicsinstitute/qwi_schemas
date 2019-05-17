@@ -450,7 +450,7 @@ include::tmp2.csv[]
 " >> $asciifile
 done
 
-echo "<<<
+echo "
 === Institution ===
 
 ==== Institution levels
@@ -477,6 +477,50 @@ echo "
 include::$tmp_inst_rows[]
 |===================================================
 " >> $asciifile
+
+echo "
+=== Degree level
+( link:label_degree_level.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::label_degree_level.csv[]
+|===================================================
+" >> $asciifile
+
+echo "
+=== CIP
+
+==== CIP levels
+( link:label_cip_level.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::label_cip_level.csv[]
+|===================================================
+" >> $asciifile
+
+tmp_cip_cols=$(mktemp -p $cwd)
+tmp_cip_rows=$(mktemp -p $cwd)
+# use python to parse mixed quote csvs
+python -c 'import sys,csv
+w = csv.writer(sys.stdout)
+for row in csv.reader(sys.stdin):
+    w.writerow((row[0],row[1],row[4]))' < label_cipcode.csv > $tmp_cip_cols
+head -5 $tmp_cip_cols > $tmp_cip_rows
+echo "...,," >> $tmp_cip_rows
+head -100 $tmp_cip_cols | tail -5  >> $tmp_cip_rows
+echo "...,," >> $tmp_cip_rows
+echo "
+==== CIP code
+( link:label_cipcode.csv[] )
+
+[width=\"90%\",format=\"csv\",cols=\"<1,<3,<6\",options=\"header\"]
+|===================================================
+include::$tmp_cip_rows[]
+|===================================================
+" >> $asciifile
+
 
 ################################ Geo formats
 # now do geography
