@@ -450,6 +450,33 @@ include::tmp2.csv[]
 " >> $asciifile
 done
 
+echo "<<<
+=== Institution ===
+
+==== Institution levels
+( link:inst_level.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
+|===================================================
+include::inst_level.csv[]
+|===================================================
+" >> $asciifile
+
+tmp_inst_cols=$(mktemp -p $cwd)
+tmp_inst_rows=$(mktemp -p $cwd)
+cut -d ',' -f 1,2,4 label_institution.csv >> $tmp_inst_cols
+head -8 $tmp_inst_cols > $tmp_inst_rows
+echo "...,," >> $tmp_inst_rows
+head -100 $tmp_inst_cols | tail -8  >> $tmp_inst_rows
+echo "
+==== Institution
+( link:label_institution.csv[] )
+
+[width=\"60%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
+|===================================================
+include::$tmp_inst_rows[]
+|===================================================
+" >> $asciifile
 
 ################################ Geo formats
 # now do geography
