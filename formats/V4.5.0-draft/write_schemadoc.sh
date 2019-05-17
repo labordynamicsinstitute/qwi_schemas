@@ -668,6 +668,8 @@ cut -d ',' -f 1-9 $nsfileshort >> $tmp_nsfileshort_csv
 echo "
 <<<
 === Aggregation level
+
+==== J2J
 ( link:$nsfile[] )
 
 Measures within the J2J and QWI data products are tabulated on many different dimensions, including demographic characteristics, geography, industry, and other firm characteristics. For Origin-Destination (O-D) tables, characteristics of the origin and destination firm can be tabulated separately.  Every tabulation level is assigned a unique aggregation index, represented by the agg_level variable. This index starts from 1, representing a national level grand total (all industries, workers, etc.), and progresses through different combinations of characteristics. There are gaps in the progression to leave space for aggregation levels that may be included in future data releases.
@@ -697,6 +699,29 @@ A shortened representation of the file is provided below, the complete file is a
 include::$tmp_nsfileshort_csv[]
 |===================================================
 ">> $asciifile
+
+# use all cols
+tmp_pseoagg_cols=label_agg_level_pseo.csv
+tmp_pseoagg_rows=$(mktemp -p $cwd)
+
+head -5 $tmp_pseoagg_cols > $tmp_pseoagg_rows
+echo "...,,,,,,,," >> $tmp_pseoagg_rows
+head -50 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
+echo "...,,,,,,,," >> $tmp_pseoagg_rows
+head -100 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
+echo "...,,,,,,,," >> $tmp_pseoagg_rows
+
+
+echo "
+==== PSEO
+( link:label_agg_level_pseo.csv[] )
+
+[width=\"90%\",format=\"csv\",cols=\"^1,2*<3,6*^1\",options=\"header\"]
+|===================================================
+include::$tmp_pseoagg_rows[]
+|===================================================
+">> $asciifile
+
 
 
 arg=label_flags.csv
