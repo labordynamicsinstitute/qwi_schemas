@@ -4,4 +4,4 @@ type,Used By,Description
 lehd_shp_[geocat].zip,shapefiles,ZIP files containing data for shapefiles
 version_[type].txt,metadata,Machine-readable text files with metadata on geographic and temporal coverage
 j2jod_[geography]_avail.csv,metadata,Complex metadata (used only in J2JOD) - see below
-pseo_[institution geography], pseo, CSV data files broken by the geography of the institution. All file contains all institutions.
+pseo_[institution state/all].csv, pseo, CSV data files broken by the institution state or a single file with all institutions.
