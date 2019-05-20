@@ -1,0 +1,441 @@
+agg_level,worker_char,firm_char,firm_orig_char,j2j,j2jr,j2jod,qwi,geo_level,ind_level,by_ownercode,by_sex,by_agegrp,by_race,by_ethnicity,by_education,by_firmage,by_firmsize,geo_level_orig,ind_level_orig,by_ownercode_orig,by_firmage_orig,by_firmsize_orig
+1,,,,1,1,1,0,N,A,0,0,0,0,0,0,0,0,N,A,0,0,0
+2,Sex,,,1,1,1,0,N,A,0,1,0,0,0,0,0,0,N,A,0,0,0
+3,Age,,,1,1,1,0,N,A,0,0,1,0,0,0,0,0,N,A,0,0,0
+4,Sex * Age,,,1,1,1,0,N,A,0,1,1,0,0,0,0,0,N,A,0,0,0
+5,Race,,,1,1,1,0,N,A,0,0,0,1,0,0,0,0,N,A,0,0,0
+9,Ethnicity,,,1,1,1,0,N,A,0,0,0,0,1,0,0,0,N,A,0,0,0
+13,Race * Ethnicity,,,1,1,1,0,N,A,0,0,0,1,1,0,0,0,N,A,0,0,0
+17,Education,,,1,1,1,0,N,A,0,0,0,0,0,1,0,0,N,A,0,0,0
+18,Sex * Education,,,1,1,1,0,N,A,0,1,0,0,0,1,0,0,N,A,0,0,0
+65,,Firm Age,,1,1,1,0,N,A,0,0,0,0,0,0,1,0,N,A,0,0,0
+129,,Firm Size,,1,1,1,0,N,A,0,0,0,0,0,0,0,1,N,A,0,0,0
+257,,NAICS Sector,,1,1,1,0,N,S,0,0,0,0,0,0,0,0,N,A,0,0,0
+258,Sex,NAICS Sector,,1,1,1,0,N,S,0,1,0,0,0,0,0,0,N,A,0,0,0
+259,Age,NAICS Sector,,1,1,1,0,N,S,0,0,1,0,0,0,0,0,N,A,0,0,0
+260,Sex * Age,NAICS Sector,,1,1,1,0,N,S,0,1,1,0,0,0,0,0,N,A,0,0,0
+261,Race,NAICS Sector,,1,1,1,0,N,S,0,0,0,1,0,0,0,0,N,A,0,0,0
+265,Ethnicity,NAICS Sector,,1,1,1,0,N,S,0,0,0,0,1,0,0,0,N,A,0,0,0
+269,Race * Ethnicity,NAICS Sector,,1,1,1,0,N,S,0,0,0,1,1,0,0,0,N,A,0,0,0
+273,Education,NAICS Sector,,1,1,1,0,N,S,0,0,0,0,0,1,0,0,N,A,0,0,0
+274,Sex * Education,NAICS Sector,,1,1,1,0,N,S,0,1,0,0,0,1,0,0,N,A,0,0,0
+321,,Firm Age * NAICS Sector,,1,1,1,0,N,S,0,0,0,0,0,0,1,0,N,A,0,0,0
+385,,Firm Size * NAICS Sector,,1,1,1,0,N,S,0,0,0,0,0,0,0,1,N,A,0,0,0
+513,,NAICS Subsector,,0,0,0,0,N,3,0,0,0,0,0,0,0,0,N,A,0,0,0
+1025,,State,,1,1,1,0,S,A,0,0,0,0,0,0,0,0,N,A,0,0,0
+1026,Sex,State,,1,1,1,0,S,A,0,1,0,0,0,0,0,0,N,A,0,0,0
+1027,Age,State,,1,1,1,0,S,A,0,0,1,0,0,0,0,0,N,A,0,0,0
+1028,Sex * Age,State,,1,1,1,0,S,A,0,1,1,0,0,0,0,0,N,A,0,0,0
+1029,Race,State,,1,1,1,0,S,A,0,0,0,1,0,0,0,0,N,A,0,0,0
+1033,Ethnicity,State,,1,1,1,0,S,A,0,0,0,0,1,0,0,0,N,A,0,0,0
+1037,Race * Ethnicity,State,,1,1,1,0,S,A,0,0,0,1,1,0,0,0,N,A,0,0,0
+1041,Education,State,,1,1,1,0,S,A,0,0,0,0,0,1,0,0,N,A,0,0,0
+1042,Sex * Education,State,,1,1,1,0,S,A,0,1,0,0,0,1,0,0,N,A,0,0,0
+1089,,Firm Age * State,,1,1,1,0,S,A,0,0,0,0,0,0,1,0,N,A,0,0,0
+1153,,Firm Size * State,,1,1,1,0,S,A,0,0,0,0,0,0,0,1,N,A,0,0,0
+1281,,NAICS Sector * State,,1,1,1,0,S,S,0,0,0,0,0,0,0,0,N,A,0,0,0
+1282,Sex,NAICS Sector * State,,1,1,1,0,S,S,0,1,0,0,0,0,0,0,N,A,0,0,0
+1283,Age,NAICS Sector * State,,1,1,1,0,S,S,0,0,1,0,0,0,0,0,N,A,0,0,0
+1284,Sex * Age,NAICS Sector * State,,1,1,1,0,S,S,0,1,1,0,0,0,0,0,N,A,0,0,0
+1285,Race,NAICS Sector * State,,1,1,1,0,S,S,0,0,0,1,0,0,0,0,N,A,0,0,0
+1289,Ethnicity,NAICS Sector * State,,1,1,1,0,S,S,0,0,0,0,1,0,0,0,N,A,0,0,0
+1293,Race * Ethnicity,NAICS Sector * State,,1,1,1,0,S,S,0,0,0,1,1,0,0,0,N,A,0,0,0
+1297,Education,NAICS Sector * State,,1,1,1,0,S,S,0,0,0,0,0,1,0,0,N,A,0,0,0
+1298,Sex * Education,NAICS Sector * State,,1,1,1,0,S,S,0,1,0,0,0,1,0,0,N,A,0,0,0
+1345,,Firm Age * NAICS Sector * State,,1,1,1,0,S,S,0,0,0,0,0,0,1,0,N,A,0,0,0
+1409,,Firm Size * NAICS Sector * State,,1,1,1,0,S,S,0,0,0,0,0,0,0,1,N,A,0,0,0
+1537,,NAICS Subsector * State,,0,0,0,0,S,3,0,0,0,0,0,0,0,0,N,A,0,0,0
+3073,,Metro-complete,,1,1,1,0,B,A,0,0,0,0,0,0,0,0,N,A,0,0,0
+3074,Sex,Metro-complete,,1,1,1,0,B,A,0,1,0,0,0,0,0,0,N,A,0,0,0
+3075,Age,Metro-complete,,1,1,1,0,B,A,0,0,1,0,0,0,0,0,N,A,0,0,0
+3076,Sex * Age,Metro-complete,,1,1,1,0,B,A,0,1,1,0,0,0,0,0,N,A,0,0,0
+3077,Race,Metro-complete,,1,1,1,0,B,A,0,0,0,1,0,0,0,0,N,A,0,0,0
+3081,Ethnicity,Metro-complete,,1,1,1,0,B,A,0,0,0,0,1,0,0,0,N,A,0,0,0
+3085,Race * Ethnicity,Metro-complete,,1,1,1,0,B,A,0,0,0,1,1,0,0,0,N,A,0,0,0
+3089,Education,Metro-complete,,1,1,1,0,B,A,0,0,0,0,0,1,0,0,N,A,0,0,0
+3090,Sex * Education,Metro-complete,,1,1,1,0,B,A,0,1,0,0,0,1,0,0,N,A,0,0,0
+3329,,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,0,0,0,0,0,0,N,A,0,0,0
+3330,Sex,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,1,0,0,0,0,0,0,N,A,0,0,0
+3331,Age,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,1,0,0,0,0,0,N,A,0,0,0
+3332,Sex * Age,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,1,1,0,0,0,0,0,N,A,0,0,0
+3333,Race,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,0,1,0,0,0,0,N,A,0,0,0
+3337,Ethnicity,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,0,0,1,0,0,0,N,A,0,0,0
+3341,Race * Ethnicity,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,0,1,1,0,0,0,N,A,0,0,0
+3345,Education,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,0,0,0,0,1,0,0,N,A,0,0,0
+3346,Sex * Education,NAICS Sector * Metro-complete,,1,1,1,0,B,S,0,1,0,0,0,1,0,0,N,A,0,0,0
+12289,,,Origin [Firm Age],0,0,1,0,N,A,0,0,0,0,0,0,0,0,N,A,0,1,0
+12353,,Destination [Firm Age],Origin [Firm Age],0,0,0,0,N,A,0,0,0,0,0,0,1,0,N,A,0,1,0
+12545,,Destination [NAICS Sector],Origin [Firm Age],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,A,0,1,0
+12609,,Destination [Firm Age * NAICS Sector],Origin [Firm Age],0,0,0,0,N,S,0,0,0,0,0,0,1,0,N,A,0,1,0
+13313,,Destination [State],Origin [Firm Age],0,0,1,0,S,A,0,0,0,0,0,0,0,0,N,A,0,1,0
+13377,,Destination [Firm Age * State],Origin [Firm Age],0,0,1,0,S,A,0,0,0,0,0,0,1,0,N,A,0,1,0
+13569,,Destination [NAICS Sector * State],Origin [Firm Age],0,0,1,0,S,S,0,0,0,0,0,0,0,0,N,A,0,1,0
+13633,,Destination [Firm Age * NAICS Sector * State],Origin [Firm Age],0,0,1,0,S,S,0,0,0,0,0,0,1,0,N,A,0,1,0
+24577,,,Origin [Firm Size],0,0,1,0,N,A,0,0,0,0,0,0,0,0,N,A,0,0,1
+24705,,Destination [Firm Size],Origin [Firm Size],0,0,0,0,N,A,0,0,0,0,0,0,0,1,N,A,0,0,1
+24833,,Destination [NAICS Sector],Origin [Firm Size],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,A,0,0,1
+24961,,Destination [Firm Size * NAICS Sector],Origin [Firm Size],0,0,0,0,N,S,0,0,0,0,0,0,0,1,N,A,0,0,1
+25601,,Destination [State],Origin [Firm Size],0,0,1,0,S,A,0,0,0,0,0,0,0,0,N,A,0,0,1
+25729,,Destination [Firm Size * State],Origin [Firm Size],0,0,1,0,S,A,0,0,0,0,0,0,0,1,N,A,0,0,1
+25857,,Destination [NAICS Sector * State],Origin [Firm Size],0,0,1,0,S,S,0,0,0,0,0,0,0,0,N,A,0,0,1
+25985,,Destination [Firm Size * NAICS Sector * State],Origin [Firm Size],0,0,1,0,S,S,0,0,0,0,0,0,0,1,N,A,0,0,1
+49153,,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,0,0,0,0,0,0,N,S,0,0,0
+49154,Sex,,Origin [NAICS Sector],0,0,1,0,N,A,0,1,0,0,0,0,0,0,N,S,0,0,0
+49155,Age,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,1,0,0,0,0,0,N,S,0,0,0
+49156,Sex * Age,,Origin [NAICS Sector],0,0,1,0,N,A,0,1,1,0,0,0,0,0,N,S,0,0,0
+49157,Race,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,0,1,0,0,0,0,N,S,0,0,0
+49161,Ethnicity,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,0,0,1,0,0,0,N,S,0,0,0
+49165,Race * Ethnicity,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,0,1,1,0,0,0,N,S,0,0,0
+49169,Education,,Origin [NAICS Sector],0,0,1,0,N,A,0,0,0,0,0,1,0,0,N,S,0,0,0
+49170,Sex * Education,,Origin [NAICS Sector],0,0,1,0,N,A,0,1,0,0,0,1,0,0,N,S,0,0,0
+49217,,Destination [Firm Age],Origin [NAICS Sector],0,0,0,0,N,A,0,0,0,0,0,0,1,0,N,S,0,0,0
+49281,,Destination [Firm Size],Origin [NAICS Sector],0,0,0,0,N,A,0,0,0,0,0,0,0,1,N,S,0,0,0
+49409,,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,S,0,0,0
+49410,Sex,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,1,0,0,0,0,0,0,N,S,0,0,0
+49411,Age,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,1,0,0,0,0,0,N,S,0,0,0
+49412,Sex * Age,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,1,1,0,0,0,0,0,N,S,0,0,0
+49413,Race,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,1,0,0,0,0,N,S,0,0,0
+49417,Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,0,1,0,0,0,N,S,0,0,0
+49421,Race * Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,1,1,0,0,0,N,S,0,0,0
+49425,Education,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,1,0,0,N,S,0,0,0
+49426,Sex * Education,Destination [NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,1,0,0,0,1,0,0,N,S,0,0,0
+49473,,Destination [Firm Age * NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,1,0,N,S,0,0,0
+49537,,Destination [Firm Size * NAICS Sector],Origin [NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,0,1,N,S,0,0,0
+49665,,Destination [NAICS Subsector],Origin [NAICS Sector],0,0,0,0,N,3,0,0,0,0,0,0,0,0,N,S,0,0,0
+50177,,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,0,0,N,S,0,0,0
+50178,Sex,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,1,0,0,0,0,0,0,N,S,0,0,0
+50179,Age,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,1,0,0,0,0,0,N,S,0,0,0
+50180,Sex * Age,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,1,1,0,0,0,0,0,N,S,0,0,0
+50181,Race,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,1,0,0,0,0,N,S,0,0,0
+50185,Ethnicity,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,0,1,0,0,0,N,S,0,0,0
+50189,Race * Ethnicity,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,1,1,0,0,0,N,S,0,0,0
+50193,Education,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,1,0,0,N,S,0,0,0
+50194,Sex * Education,Destination [State],Origin [NAICS Sector],0,0,1,0,S,A,0,1,0,0,0,1,0,0,N,S,0,0,0
+50241,,Destination [Firm Age * State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,1,0,N,S,0,0,0
+50305,,Destination [Firm Size * State],Origin [NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,0,1,N,S,0,0,0
+50433,,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,0,0,N,S,0,0,0
+50434,Sex,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,1,0,0,0,0,0,0,N,S,0,0,0
+50435,Age,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,1,0,0,0,0,0,N,S,0,0,0
+50436,Sex * Age,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,1,1,0,0,0,0,0,N,S,0,0,0
+50437,Race,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,1,0,0,0,0,N,S,0,0,0
+50441,Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,0,1,0,0,0,N,S,0,0,0
+50445,Race * Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,1,1,0,0,0,N,S,0,0,0
+50449,Education,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,1,0,0,N,S,0,0,0
+50450,Sex * Education,Destination [NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,1,0,0,0,1,0,0,N,S,0,0,0
+50497,,Destination [Firm Age * NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,1,0,N,S,0,0,0
+50561,,Destination [Firm Size * NAICS Sector * State],Origin [NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,0,1,N,S,0,0,0
+50689,,Destination [NAICS Subsector * State],Origin [NAICS Sector],0,0,0,0,S,3,0,0,0,0,0,0,0,0,N,S,0,0,0
+52225,,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,0,0,0,0,0,0,N,S,0,0,0
+52226,Sex,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,1,0,0,0,0,0,0,N,S,0,0,0
+52227,Age,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,1,0,0,0,0,0,N,S,0,0,0
+52228,Sex * Age,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,1,1,0,0,0,0,0,N,S,0,0,0
+52229,Race,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,0,1,0,0,0,0,N,S,0,0,0
+52233,Ethnicity,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,0,0,1,0,0,0,N,S,0,0,0
+52237,Race * Ethnicity,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,0,1,1,0,0,0,N,S,0,0,0
+52241,Education,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,0,0,0,0,1,0,0,N,S,0,0,0
+52242,Sex * Education,Destination [Metro-complete],Origin [NAICS Sector],0,0,1,0,B,A,0,1,0,0,0,1,0,0,N,S,0,0,0
+52481,,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,0,0,0,0,0,0,N,S,0,0,0
+52482,Sex,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,1,0,0,0,0,0,0,N,S,0,0,0
+52483,Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,1,0,0,0,0,0,N,S,0,0,0
+52484,Sex * Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,1,1,0,0,0,0,0,N,S,0,0,0
+52485,Race,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,0,1,0,0,0,0,N,S,0,0,0
+52489,Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,0,0,1,0,0,0,N,S,0,0,0
+52493,Race * Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,0,1,1,0,0,0,N,S,0,0,0
+52497,Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,0,0,0,0,1,0,0,N,S,0,0,0
+52498,Sex * Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector],0,0,1,0,B,S,0,1,0,0,0,1,0,0,N,S,0,0,0
+61441,,,Origin [Firm Age * NAICS Sector],0,0,1,0,N,A,0,0,0,0,0,0,0,0,N,S,0,1,0
+61505,,Destination [Firm Age],Origin [Firm Age * NAICS Sector],0,0,0,0,N,A,0,0,0,0,0,0,1,0,N,S,0,1,0
+61697,,Destination [NAICS Sector],Origin [Firm Age * NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,S,0,1,0
+61761,,Destination [Firm Age * NAICS Sector],Origin [Firm Age * NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,1,0,N,S,0,1,0
+62465,,Destination [State],Origin [Firm Age * NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,0,0,N,S,0,1,0
+62529,,Destination [Firm Age * State],Origin [Firm Age * NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,1,0,N,S,0,1,0
+62721,,Destination [NAICS Sector * State],Origin [Firm Age * NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,0,0,N,S,0,1,0
+62785,,Destination [Firm Age * NAICS Sector * State],Origin [Firm Age * NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,1,0,N,S,0,1,0
+73729,,,Origin [Firm Size * NAICS Sector],0,0,1,0,N,A,0,0,0,0,0,0,0,0,N,S,0,0,1
+73857,,Destination [Firm Size],Origin [Firm Size * NAICS Sector],0,0,0,0,N,A,0,0,0,0,0,0,0,1,N,S,0,0,1
+73985,,Destination [NAICS Sector],Origin [Firm Size * NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,S,0,0,1
+74113,,Destination [Firm Size * NAICS Sector],Origin [Firm Size * NAICS Sector],0,0,0,0,N,S,0,0,0,0,0,0,0,1,N,S,0,0,1
+74753,,Destination [State],Origin [Firm Size * NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,0,0,N,S,0,0,1
+74881,,Destination [Firm Size * State],Origin [Firm Size * NAICS Sector],0,0,1,0,S,A,0,0,0,0,0,0,0,1,N,S,0,0,1
+75009,,Destination [NAICS Sector * State],Origin [Firm Size * NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,0,0,N,S,0,0,1
+75137,,Destination [Firm Size * NAICS Sector * State],Origin [Firm Size * NAICS Sector],0,0,1,0,S,S,0,0,0,0,0,0,0,1,N,S,0,0,1
+98305,,,Origin [NAICS Subsector],0,0,0,0,N,A,0,0,0,0,0,0,0,0,N,3,0,0,0
+98561,,Destination [NAICS Sector],Origin [NAICS Subsector],0,0,0,0,N,S,0,0,0,0,0,0,0,0,N,3,0,0,0
+98817,,Destination [NAICS Subsector],Origin [NAICS Subsector],0,0,0,0,N,3,0,0,0,0,0,0,0,0,N,3,0,0,0
+99329,,Destination [State],Origin [NAICS Subsector],0,0,0,0,S,A,0,0,0,0,0,0,0,0,N,3,0,0,0
+99585,,Destination [NAICS Sector * State],Origin [NAICS Subsector],0,0,0,0,S,S,0,0,0,0,0,0,0,0,N,3,0,0,0
+99841,,Destination [NAICS Subsector * State],Origin [NAICS Subsector],0,0,0,0,S,3,0,0,0,0,0,0,0,0,N,3,0,0,0
+196609,,,Origin [State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,A,0,0,0
+196610,Sex,,Origin [State],0,0,1,0,N,A,0,1,0,0,0,0,0,0,S,A,0,0,0
+196611,Age,,Origin [State],0,0,1,0,N,A,0,0,1,0,0,0,0,0,S,A,0,0,0
+196612,Sex * Age,,Origin [State],0,0,1,0,N,A,0,1,1,0,0,0,0,0,S,A,0,0,0
+196613,Race,,Origin [State],0,0,1,0,N,A,0,0,0,1,0,0,0,0,S,A,0,0,0
+196617,Ethnicity,,Origin [State],0,0,1,0,N,A,0,0,0,0,1,0,0,0,S,A,0,0,0
+196621,Race * Ethnicity,,Origin [State],0,0,1,0,N,A,0,0,0,1,1,0,0,0,S,A,0,0,0
+196625,Education,,Origin [State],0,0,1,0,N,A,0,0,0,0,0,1,0,0,S,A,0,0,0
+196626,Sex * Education,,Origin [State],0,0,1,0,N,A,0,1,0,0,0,1,0,0,S,A,0,0,0
+196673,,Destination [Firm Age],Origin [State],0,0,1,0,N,A,0,0,0,0,0,0,1,0,S,A,0,0,0
+196737,,Destination [Firm Size],Origin [State],0,0,1,0,N,A,0,0,0,0,0,0,0,1,S,A,0,0,0
+196865,,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,A,0,0,0
+196866,Sex,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,1,0,0,0,0,0,0,S,A,0,0,0
+196867,Age,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,1,0,0,0,0,0,S,A,0,0,0
+196868,Sex * Age,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,1,1,0,0,0,0,0,S,A,0,0,0
+196869,Race,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,1,0,0,0,0,S,A,0,0,0
+196873,Ethnicity,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,0,1,0,0,0,S,A,0,0,0
+196877,Race * Ethnicity,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,1,1,0,0,0,S,A,0,0,0
+196881,Education,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,0,0,1,0,0,S,A,0,0,0
+196882,Sex * Education,Destination [NAICS Sector],Origin [State],0,0,1,0,N,S,0,1,0,0,0,1,0,0,S,A,0,0,0
+196929,,Destination [Firm Age * NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,0,0,0,1,0,S,A,0,0,0
+196993,,Destination [Firm Size * NAICS Sector],Origin [State],0,0,1,0,N,S,0,0,0,0,0,0,0,1,S,A,0,0,0
+197121,,Destination [NAICS Subsector],Origin [State],0,0,0,0,N,3,0,0,0,0,0,0,0,0,S,A,0,0,0
+197633,,Destination [State],Origin [State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,A,0,0,0
+197634,Sex,Destination [State],Origin [State],0,0,1,0,S,A,0,1,0,0,0,0,0,0,S,A,0,0,0
+197635,Age,Destination [State],Origin [State],0,0,1,0,S,A,0,0,1,0,0,0,0,0,S,A,0,0,0
+197636,Sex * Age,Destination [State],Origin [State],0,0,1,0,S,A,0,1,1,0,0,0,0,0,S,A,0,0,0
+197637,Race,Destination [State],Origin [State],0,0,1,0,S,A,0,0,0,1,0,0,0,0,S,A,0,0,0
+197641,Ethnicity,Destination [State],Origin [State],0,0,1,0,S,A,0,0,0,0,1,0,0,0,S,A,0,0,0
+197645,Race * Ethnicity,Destination [State],Origin [State],0,0,1,0,S,A,0,0,0,1,1,0,0,0,S,A,0,0,0
+197649,Education,Destination [State],Origin [State],0,0,1,0,S,A,0,0,0,0,0,1,0,0,S,A,0,0,0
+197650,Sex * Education,Destination [State],Origin [State],0,0,1,0,S,A,0,1,0,0,0,1,0,0,S,A,0,0,0
+197697,,Destination [Firm Age * State],Origin [State],0,0,1,0,S,A,0,0,0,0,0,0,1,0,S,A,0,0,0
+197761,,Destination [Firm Size * State],Origin [State],0,0,1,0,S,A,0,0,0,0,0,0,0,1,S,A,0,0,0
+197889,,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,A,0,0,0
+197890,Sex,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,1,0,0,0,0,0,0,S,A,0,0,0
+197891,Age,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,1,0,0,0,0,0,S,A,0,0,0
+197892,Sex * Age,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,1,1,0,0,0,0,0,S,A,0,0,0
+197893,Race,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,1,0,0,0,0,S,A,0,0,0
+197897,Ethnicity,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,0,1,0,0,0,S,A,0,0,0
+197901,Race * Ethnicity,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,1,1,0,0,0,S,A,0,0,0
+197905,Education,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,0,0,1,0,0,S,A,0,0,0
+197906,Sex * Education,Destination [NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,1,0,0,0,1,0,0,S,A,0,0,0
+197953,,Destination [Firm Age * NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,0,0,0,1,0,S,A,0,0,0
+198017,,Destination [Firm Size * NAICS Sector * State],Origin [State],0,0,1,0,S,S,0,0,0,0,0,0,0,1,S,A,0,0,0
+198145,,Destination [NAICS Subsector * State],Origin [State],0,0,0,0,S,3,0,0,0,0,0,0,0,0,S,A,0,0,0
+199681,,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,0,0,0,0,0,0,S,A,0,0,0
+199682,Sex,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,1,0,0,0,0,0,0,S,A,0,0,0
+199683,Age,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,1,0,0,0,0,0,S,A,0,0,0
+199684,Sex * Age,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,1,1,0,0,0,0,0,S,A,0,0,0
+199685,Race,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,0,1,0,0,0,0,S,A,0,0,0
+199689,Ethnicity,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,0,0,1,0,0,0,S,A,0,0,0
+199693,Race * Ethnicity,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,0,1,1,0,0,0,S,A,0,0,0
+199697,Education,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,0,0,0,0,1,0,0,S,A,0,0,0
+199698,Sex * Education,Destination [Metro-complete],Origin [State],0,0,1,0,B,A,0,1,0,0,0,1,0,0,S,A,0,0,0
+199937,,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,0,0,0,0,0,0,S,A,0,0,0
+199938,Sex,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,1,0,0,0,0,0,0,S,A,0,0,0
+199939,Age,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,1,0,0,0,0,0,S,A,0,0,0
+199940,Sex * Age,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,1,1,0,0,0,0,0,S,A,0,0,0
+199941,Race,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,0,1,0,0,0,0,S,A,0,0,0
+199945,Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,0,0,1,0,0,0,S,A,0,0,0
+199949,Race * Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,0,1,1,0,0,0,S,A,0,0,0
+199953,Education,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,0,0,0,0,1,0,0,S,A,0,0,0
+199954,Sex * Education,Destination [NAICS Sector * Metro-complete],Origin [State],0,0,1,0,B,S,0,1,0,0,0,1,0,0,S,A,0,0,0
+208897,,,Origin [Firm Age * State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,A,0,1,0
+208961,,Destination [Firm Age],Origin [Firm Age * State],0,0,1,0,N,A,0,0,0,0,0,0,1,0,S,A,0,1,0
+209153,,Destination [NAICS Sector],Origin [Firm Age * State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,A,0,1,0
+209217,,Destination [Firm Age * NAICS Sector],Origin [Firm Age * State],0,0,1,0,N,S,0,0,0,0,0,0,1,0,S,A,0,1,0
+209921,,Destination [State],Origin [Firm Age * State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,A,0,1,0
+209985,,Destination [Firm Age * State],Origin [Firm Age * State],0,0,1,0,S,A,0,0,0,0,0,0,1,0,S,A,0,1,0
+210177,,Destination [NAICS Sector * State],Origin [Firm Age * State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,A,0,1,0
+210241,,Destination [Firm Age * NAICS Sector * State],Origin [Firm Age * State],0,0,1,0,S,S,0,0,0,0,0,0,1,0,S,A,0,1,0
+221185,,,Origin [Firm Size * State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,A,0,0,1
+221313,,Destination [Firm Size],Origin [Firm Size * State],0,0,1,0,N,A,0,0,0,0,0,0,0,1,S,A,0,0,1
+221441,,Destination [NAICS Sector],Origin [Firm Size * State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,A,0,0,1
+221569,,Destination [Firm Size * NAICS Sector],Origin [Firm Size * State],0,0,1,0,N,S,0,0,0,0,0,0,0,1,S,A,0,0,1
+222209,,Destination [State],Origin [Firm Size * State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,A,0,0,1
+222337,,Destination [Firm Size * State],Origin [Firm Size * State],0,0,1,0,S,A,0,0,0,0,0,0,0,1,S,A,0,0,1
+222465,,Destination [NAICS Sector * State],Origin [Firm Size * State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,A,0,0,1
+222593,,Destination [Firm Size * NAICS Sector * State],Origin [Firm Size * State],0,0,1,0,S,S,0,0,0,0,0,0,0,1,S,A,0,0,1
+245761,,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,S,0,0,0
+245762,Sex,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,1,0,0,0,0,0,0,S,S,0,0,0
+245763,Age,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,1,0,0,0,0,0,S,S,0,0,0
+245764,Sex * Age,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,1,1,0,0,0,0,0,S,S,0,0,0
+245765,Race,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,1,0,0,0,0,S,S,0,0,0
+245769,Ethnicity,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,1,0,0,0,S,S,0,0,0
+245773,Race * Ethnicity,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,1,1,0,0,0,S,S,0,0,0
+245777,Education,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,1,0,0,S,S,0,0,0
+245778,Sex * Education,,Origin [NAICS Sector * State],0,0,1,0,N,A,0,1,0,0,0,1,0,0,S,S,0,0,0
+245825,,Destination [Firm Age],Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,1,0,S,S,0,0,0
+245889,,Destination [Firm Size],Origin [NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,0,1,S,S,0,0,0
+246017,,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,S,0,0,0
+246018,Sex,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,1,0,0,0,0,0,0,S,S,0,0,0
+246019,Age,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,1,0,0,0,0,0,S,S,0,0,0
+246020,Sex * Age,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,1,1,0,0,0,0,0,S,S,0,0,0
+246021,Race,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,1,0,0,0,0,S,S,0,0,0
+246025,Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,1,0,0,0,S,S,0,0,0
+246029,Race * Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,1,1,0,0,0,S,S,0,0,0
+246033,Education,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,1,0,0,S,S,0,0,0
+246034,Sex * Education,Destination [NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,1,0,0,0,1,0,0,S,S,0,0,0
+246081,,Destination [Firm Age * NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,1,0,S,S,0,0,0
+246145,,Destination [Firm Size * NAICS Sector],Origin [NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,0,1,S,S,0,0,0
+246273,,Destination [NAICS Subsector],Origin [NAICS Sector * State],0,0,0,0,N,3,0,0,0,0,0,0,0,0,S,S,0,0,0
+246785,,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,S,0,0,0
+246786,Sex,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,1,0,0,0,0,0,0,S,S,0,0,0
+246787,Age,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,1,0,0,0,0,0,S,S,0,0,0
+246788,Sex * Age,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,1,1,0,0,0,0,0,S,S,0,0,0
+246789,Race,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,1,0,0,0,0,S,S,0,0,0
+246793,Ethnicity,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,1,0,0,0,S,S,0,0,0
+246797,Race * Ethnicity,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,1,1,0,0,0,S,S,0,0,0
+246801,Education,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,1,0,0,S,S,0,0,0
+246802,Sex * Education,Destination [State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,1,0,0,0,1,0,0,S,S,0,0,0
+246849,,Destination [Firm Age * State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,1,0,S,S,0,0,0
+246913,,Destination [Firm Size * State],Origin [NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,0,1,S,S,0,0,0
+247041,,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,S,0,0,0
+247042,Sex,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,1,0,0,0,0,0,0,S,S,0,0,0
+247043,Age,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,1,0,0,0,0,0,S,S,0,0,0
+247044,Sex * Age,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,1,1,0,0,0,0,0,S,S,0,0,0
+247045,Race,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,1,0,0,0,0,S,S,0,0,0
+247049,Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,1,0,0,0,S,S,0,0,0
+247053,Race * Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,1,1,0,0,0,S,S,0,0,0
+247057,Education,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,1,0,0,S,S,0,0,0
+247058,Sex * Education,Destination [NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,1,0,0,0,1,0,0,S,S,0,0,0
+247105,,Destination [Firm Age * NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,1,0,S,S,0,0,0
+247169,,Destination [Firm Size * NAICS Sector * State],Origin [NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,0,1,S,S,0,0,0
+247297,,Destination [NAICS Subsector * State],Origin [NAICS Sector * State],0,0,0,0,S,3,0,0,0,0,0,0,0,0,S,S,0,0,0
+248833,,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,0,0,0,0,0,0,S,S,0,0,0
+248834,Sex,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,1,0,0,0,0,0,0,S,S,0,0,0
+248835,Age,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,1,0,0,0,0,0,S,S,0,0,0
+248836,Sex * Age,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,1,1,0,0,0,0,0,S,S,0,0,0
+248837,Race,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,0,1,0,0,0,0,S,S,0,0,0
+248841,Ethnicity,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,0,0,1,0,0,0,S,S,0,0,0
+248845,Race * Ethnicity,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,0,1,1,0,0,0,S,S,0,0,0
+248849,Education,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,0,0,0,0,1,0,0,S,S,0,0,0
+248850,Sex * Education,Destination [Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,A,0,1,0,0,0,1,0,0,S,S,0,0,0
+249089,,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,0,0,0,0,0,0,S,S,0,0,0
+249090,Sex,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,1,0,0,0,0,0,0,S,S,0,0,0
+249091,Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,1,0,0,0,0,0,S,S,0,0,0
+249092,Sex * Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,1,1,0,0,0,0,0,S,S,0,0,0
+249093,Race,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,0,1,0,0,0,0,S,S,0,0,0
+249097,Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,0,0,1,0,0,0,S,S,0,0,0
+249101,Race * Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,0,1,1,0,0,0,S,S,0,0,0
+249105,Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,0,0,0,0,1,0,0,S,S,0,0,0
+249106,Sex * Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * State],0,0,1,0,B,S,0,1,0,0,0,1,0,0,S,S,0,0,0
+258049,,,Origin [Firm Age * NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,S,0,1,0
+258113,,Destination [Firm Age],Origin [Firm Age * NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,1,0,S,S,0,1,0
+258305,,Destination [NAICS Sector],Origin [Firm Age * NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,S,0,1,0
+258369,,Destination [Firm Age * NAICS Sector],Origin [Firm Age * NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,1,0,S,S,0,1,0
+259073,,Destination [State],Origin [Firm Age * NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,S,0,1,0
+259137,,Destination [Firm Age * State],Origin [Firm Age * NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,1,0,S,S,0,1,0
+259329,,Destination [NAICS Sector * State],Origin [Firm Age * NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,S,0,1,0
+259393,,Destination [Firm Age * NAICS Sector * State],Origin [Firm Age * NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,1,0,S,S,0,1,0
+270337,,,Origin [Firm Size * NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,0,0,S,S,0,0,1
+270465,,Destination [Firm Size],Origin [Firm Size * NAICS Sector * State],0,0,1,0,N,A,0,0,0,0,0,0,0,1,S,S,0,0,1
+270593,,Destination [NAICS Sector],Origin [Firm Size * NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,0,0,S,S,0,0,1
+270721,,Destination [Firm Size * NAICS Sector],Origin [Firm Size * NAICS Sector * State],0,0,1,0,N,S,0,0,0,0,0,0,0,1,S,S,0,0,1
+271361,,Destination [State],Origin [Firm Size * NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,0,0,S,S,0,0,1
+271489,,Destination [Firm Size * State],Origin [Firm Size * NAICS Sector * State],0,0,1,0,S,A,0,0,0,0,0,0,0,1,S,S,0,0,1
+271617,,Destination [NAICS Sector * State],Origin [Firm Size * NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,0,0,S,S,0,0,1
+271745,,Destination [Firm Size * NAICS Sector * State],Origin [Firm Size * NAICS Sector * State],0,0,1,0,S,S,0,0,0,0,0,0,0,1,S,S,0,0,1
+294913,,,Origin [NAICS Subsector * State],0,0,0,0,N,A,0,0,0,0,0,0,0,0,S,3,0,0,0
+295169,,Destination [NAICS Sector],Origin [NAICS Subsector * State],0,0,0,0,N,S,0,0,0,0,0,0,0,0,S,3,0,0,0
+295425,,Destination [NAICS Subsector],Origin [NAICS Subsector * State],0,0,0,0,N,3,0,0,0,0,0,0,0,0,S,3,0,0,0
+295937,,Destination [State],Origin [NAICS Subsector * State],0,0,0,0,S,A,0,0,0,0,0,0,0,0,S,3,0,0,0
+296193,,Destination [NAICS Sector * State],Origin [NAICS Subsector * State],0,0,0,0,S,S,0,0,0,0,0,0,0,0,S,3,0,0,0
+296449,,Destination [NAICS Subsector * State],Origin [NAICS Subsector * State],0,0,0,0,S,3,0,0,0,0,0,0,0,0,S,3,0,0,0
+589825,,,Origin [Metro-complete],0,0,1,0,N,A,0,0,0,0,0,0,0,0,B,A,0,0,0
+589826,Sex,,Origin [Metro-complete],0,0,1,0,N,A,0,1,0,0,0,0,0,0,B,A,0,0,0
+589827,Age,,Origin [Metro-complete],0,0,1,0,N,A,0,0,1,0,0,0,0,0,B,A,0,0,0
+589828,Sex * Age,,Origin [Metro-complete],0,0,1,0,N,A,0,1,1,0,0,0,0,0,B,A,0,0,0
+589829,Race,,Origin [Metro-complete],0,0,1,0,N,A,0,0,0,1,0,0,0,0,B,A,0,0,0
+589833,Ethnicity,,Origin [Metro-complete],0,0,1,0,N,A,0,0,0,0,1,0,0,0,B,A,0,0,0
+589837,Race * Ethnicity,,Origin [Metro-complete],0,0,1,0,N,A,0,0,0,1,1,0,0,0,B,A,0,0,0
+589841,Education,,Origin [Metro-complete],0,0,1,0,N,A,0,0,0,0,0,1,0,0,B,A,0,0,0
+589842,Sex * Education,,Origin [Metro-complete],0,0,1,0,N,A,0,1,0,0,0,1,0,0,B,A,0,0,0
+590081,,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,0,0,0,0,0,0,B,A,0,0,0
+590082,Sex,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,1,0,0,0,0,0,0,B,A,0,0,0
+590083,Age,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,1,0,0,0,0,0,B,A,0,0,0
+590084,Sex * Age,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,1,1,0,0,0,0,0,B,A,0,0,0
+590085,Race,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,0,1,0,0,0,0,B,A,0,0,0
+590089,Ethnicity,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,0,0,1,0,0,0,B,A,0,0,0
+590093,Race * Ethnicity,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,0,1,1,0,0,0,B,A,0,0,0
+590097,Education,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,0,0,0,0,1,0,0,B,A,0,0,0
+590098,Sex * Education,Destination [NAICS Sector],Origin [Metro-complete],0,0,1,0,N,S,0,1,0,0,0,1,0,0,B,A,0,0,0
+590849,,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,0,0,0,0,0,0,B,A,0,0,0
+590850,Sex,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,1,0,0,0,0,0,0,B,A,0,0,0
+590851,Age,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,1,0,0,0,0,0,B,A,0,0,0
+590852,Sex * Age,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,1,1,0,0,0,0,0,B,A,0,0,0
+590853,Race,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,0,1,0,0,0,0,B,A,0,0,0
+590857,Ethnicity,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,0,0,1,0,0,0,B,A,0,0,0
+590861,Race * Ethnicity,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,0,1,1,0,0,0,B,A,0,0,0
+590865,Education,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,0,0,0,0,1,0,0,B,A,0,0,0
+590866,Sex * Education,Destination [State],Origin [Metro-complete],0,0,1,0,S,A,0,1,0,0,0,1,0,0,B,A,0,0,0
+591105,,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,0,0,0,0,0,0,B,A,0,0,0
+591106,Sex,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,1,0,0,0,0,0,0,B,A,0,0,0
+591107,Age,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,1,0,0,0,0,0,B,A,0,0,0
+591108,Sex * Age,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,1,1,0,0,0,0,0,B,A,0,0,0
+591109,Race,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,0,1,0,0,0,0,B,A,0,0,0
+591113,Ethnicity,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,0,0,1,0,0,0,B,A,0,0,0
+591117,Race * Ethnicity,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,0,1,1,0,0,0,B,A,0,0,0
+591121,Education,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,0,0,0,0,1,0,0,B,A,0,0,0
+591122,Sex * Education,Destination [NAICS Sector * State],Origin [Metro-complete],0,0,1,0,S,S,0,1,0,0,0,1,0,0,B,A,0,0,0
+592897,,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,0,0,0,0,0,0,B,A,0,0,0
+592898,Sex,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,1,0,0,0,0,0,0,B,A,0,0,0
+592899,Age,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,1,0,0,0,0,0,B,A,0,0,0
+592900,Sex * Age,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,1,1,0,0,0,0,0,B,A,0,0,0
+592901,Race,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,0,1,0,0,0,0,B,A,0,0,0
+592905,Ethnicity,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,0,0,1,0,0,0,B,A,0,0,0
+592909,Race * Ethnicity,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,0,1,1,0,0,0,B,A,0,0,0
+592913,Education,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,0,0,0,0,1,0,0,B,A,0,0,0
+592914,Sex * Education,Destination [Metro-complete],Origin [Metro-complete],0,0,1,0,B,A,0,1,0,0,0,1,0,0,B,A,0,0,0
+593153,,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,0,0,0,0,0,0,B,A,0,0,0
+593154,Sex,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,1,0,0,0,0,0,0,B,A,0,0,0
+593155,Age,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,1,0,0,0,0,0,B,A,0,0,0
+593156,Sex * Age,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,1,1,0,0,0,0,0,B,A,0,0,0
+593157,Race,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,0,1,0,0,0,0,B,A,0,0,0
+593161,Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,0,0,1,0,0,0,B,A,0,0,0
+593165,Race * Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,0,1,1,0,0,0,B,A,0,0,0
+593169,Education,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,0,0,0,0,1,0,0,B,A,0,0,0
+593170,Sex * Education,Destination [NAICS Sector * Metro-complete],Origin [Metro-complete],0,0,1,0,B,S,0,1,0,0,0,1,0,0,B,A,0,0,0
+638977,,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,0,0,0,0,0,0,B,S,0,0,0
+638978,Sex,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,1,0,0,0,0,0,0,B,S,0,0,0
+638979,Age,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,1,0,0,0,0,0,B,S,0,0,0
+638980,Sex * Age,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,1,1,0,0,0,0,0,B,S,0,0,0
+638981,Race,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,0,1,0,0,0,0,B,S,0,0,0
+638985,Ethnicity,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,0,0,1,0,0,0,B,S,0,0,0
+638989,Race * Ethnicity,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,0,1,1,0,0,0,B,S,0,0,0
+638993,Education,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,0,0,0,0,1,0,0,B,S,0,0,0
+638994,Sex * Education,,Origin [NAICS Sector * Metro-complete],0,0,1,0,N,A,0,1,0,0,0,1,0,0,B,S,0,0,0
+639233,,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,0,0,0,0,0,0,B,S,0,0,0
+639234,Sex,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,1,0,0,0,0,0,0,B,S,0,0,0
+639235,Age,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,1,0,0,0,0,0,B,S,0,0,0
+639236,Sex * Age,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,1,1,0,0,0,0,0,B,S,0,0,0
+639237,Race,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,0,1,0,0,0,0,B,S,0,0,0
+639241,Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,0,0,1,0,0,0,B,S,0,0,0
+639245,Race * Ethnicity,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,0,1,1,0,0,0,B,S,0,0,0
+639249,Education,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,0,0,0,0,1,0,0,B,S,0,0,0
+639250,Sex * Education,Destination [NAICS Sector],Origin [NAICS Sector * Metro-complete],0,0,1,0,N,S,0,1,0,0,0,1,0,0,B,S,0,0,0
+640001,,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,0,0,0,0,0,0,B,S,0,0,0
+640002,Sex,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,1,0,0,0,0,0,0,B,S,0,0,0
+640003,Age,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,1,0,0,0,0,0,B,S,0,0,0
+640004,Sex * Age,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,1,1,0,0,0,0,0,B,S,0,0,0
+640005,Race,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,0,1,0,0,0,0,B,S,0,0,0
+640009,Ethnicity,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,0,0,1,0,0,0,B,S,0,0,0
+640013,Race * Ethnicity,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,0,1,1,0,0,0,B,S,0,0,0
+640017,Education,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,0,0,0,0,1,0,0,B,S,0,0,0
+640018,Sex * Education,Destination [State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,A,0,1,0,0,0,1,0,0,B,S,0,0,0
+640257,,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,0,0,0,0,0,0,B,S,0,0,0
+640258,Sex,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,1,0,0,0,0,0,0,B,S,0,0,0
+640259,Age,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,1,0,0,0,0,0,B,S,0,0,0
+640260,Sex * Age,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,1,1,0,0,0,0,0,B,S,0,0,0
+640261,Race,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,0,1,0,0,0,0,B,S,0,0,0
+640265,Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,0,0,1,0,0,0,B,S,0,0,0
+640269,Race * Ethnicity,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,0,1,1,0,0,0,B,S,0,0,0
+640273,Education,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,0,0,0,0,1,0,0,B,S,0,0,0
+640274,Sex * Education,Destination [NAICS Sector * State],Origin [NAICS Sector * Metro-complete],0,0,1,0,S,S,0,1,0,0,0,1,0,0,B,S,0,0,0
+642049,,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,0,0,0,0,0,0,B,S,0,0,0
+642050,Sex,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,1,0,0,0,0,0,0,B,S,0,0,0
+642051,Age,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,1,0,0,0,0,0,B,S,0,0,0
+642052,Sex * Age,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,1,1,0,0,0,0,0,B,S,0,0,0
+642053,Race,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,0,1,0,0,0,0,B,S,0,0,0
+642057,Ethnicity,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,0,0,1,0,0,0,B,S,0,0,0
+642061,Race * Ethnicity,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,0,1,1,0,0,0,B,S,0,0,0
+642065,Education,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,0,0,0,0,1,0,0,B,S,0,0,0
+642066,Sex * Education,Destination [Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,A,0,1,0,0,0,1,0,0,B,S,0,0,0
+642305,,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,0,0,0,0,0,0,B,S,0,0,0
+642306,Sex,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,1,0,0,0,0,0,0,B,S,0,0,0
+642307,Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,1,0,0,0,0,0,B,S,0,0,0
+642308,Sex * Age,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,1,1,0,0,0,0,0,B,S,0,0,0
+642309,Race,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,0,1,0,0,0,0,B,S,0,0,0
+642313,Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,0,0,1,0,0,0,B,S,0,0,0
+642317,Race * Ethnicity,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,0,1,1,0,0,0,B,S,0,0,0
+642321,Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,0,0,0,0,1,0,0,B,S,0,0,0
+642322,Sex * Education,Destination [NAICS Sector * Metro-complete],Origin [NAICS Sector * Metro-complete],0,0,1,0,B,S,0,1,0,0,0,1,0,0,B,S,0,0,0

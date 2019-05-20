@@ -1,0 +1,14 @@
+Variable,Type,label
+agg_level_pseo,Numeric,Aggregation level
+inst_level,Char(1),Tabulation level of the institution
+institution,Char(6),Place of the institution
+degree_level,Char(2),Degree level code
+cip_level,Char(1),Degree field level of aggregation
+cipcode,Char(7),Degree field
+grad_cohort,char(4),First year of graduation cohort (YYYY) - All Cohorts 0000
+cohort_years,Numeric,Number of years in graduation cohort
+cpi_reportyear,Numeric,Year of dollars expressed (YYYY)
+geo_level,Char(1),Group: Geographic level of employment
+geography,Char(8),Group: Geography code of employment
+ind_level,Char(1),Group: Industry level of employment
+industry,Char(5),Group: Industry code of employment
