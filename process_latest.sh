@@ -15,7 +15,7 @@ case $BRANCH in
 esac
 
 # find latest
-latest=$(cd formats; ls -1d * | grep -E "V[0-9]" | tail -1)
+[[ -z $2 ]] && latest=$(cd formats; ls -1d * | grep -E "V[0-9]" | tail -1) || latest=$2
 
 # diagnostics
 echo "========================================="
