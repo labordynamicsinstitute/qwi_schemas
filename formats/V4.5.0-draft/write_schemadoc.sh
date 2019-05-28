@@ -503,6 +503,9 @@ echo "
 === Degree level
 ( link:label_degree_level.csv[] )
 
+The degree levels are sourced from the
+https://surveys.nces.ed.gov/ipeds/VisInstructions.aspx?survey=10&id=30080&show=part#chunk_1526[National Center for Education Statistics (NCES), Integrated Postsecondary Education Data System (IPEDS)].
+
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
 include::label_degree_level.csv[]
