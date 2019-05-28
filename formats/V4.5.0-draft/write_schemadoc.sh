@@ -148,7 +148,7 @@ Identifiers without the year and quarter component can be considered a series id
 " >> $asciifile
 
 ############################## Identifiers
-for arg in  lehd_mapping_identifiers.csv
+for arg in lehd_mapping_identifiers.csv
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
   echo "==== $name
@@ -165,7 +165,8 @@ include::$arg[]
 " >> $asciifile
 done
 
-for arg in   $(ls lehd_identifiers_*csv)
+### Hardcode identifier order
+for arg in lehd_identifiers_qwi.csv lehd_identifiers_j2j.csv lehd_identifiers_j2jod.csv lehd_identifiers_pseo.csv
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/ident/Ident/')"
   echo "==== $name
@@ -179,6 +180,7 @@ include::$arg[]
 
 " >> $asciifile
 done
+
 
 ################################# Variables
 echo "
