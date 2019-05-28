@@ -465,10 +465,13 @@ include::tmp2.csv[]
 done
 
 echo "
-=== Institution ===
+=== Educational Institution ===
 
-==== Institution levels
+==== Institution Levels
 ( link:inst_level.csv[] )
+
+Educational institutions are tabulated individually in the current data release.
+Future releases may aggregate to institutions to higher levels, such as state or Census Division.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
@@ -485,6 +488,10 @@ head -100 $tmp_inst_cols | tail -8  >> $tmp_inst_rows
 echo "
 ==== Institution
 ( link:label_institution.csv[] )
+
+Institution identifiers are sourced from the
+https://ifap.ed.gov/ifap/fedSchoolCodeList.jsp[U.S. Department of Education, Federal Student Aid office].
+This list has been supplemented with records for regional groupings of institutions.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
