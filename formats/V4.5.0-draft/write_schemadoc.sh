@@ -745,6 +745,27 @@ echo "
 ==== PSEO
 ( link:label_agg_level_pseo.csv[] )
 
+Measures within the PSEO data product can be tabulated by characteristics of the graduate
+(e.g., institution attended, instructional program, degree level, etc.) and by characteristics of employment
+(state, industry). All measures may not be available on all levels of aggregation - for example,
+earnings variables may not be available when tabulating by place and industry of work, though counts are.
+Every tabulation level is assigned a unique aggregation index, represented by the agg_level_pseo variable.
+This index starts from 1, representing a national level grand total (all institutions, graduates, industries,
+etc.), and progresses through different combinations of characteristics. There are gaps in the progression to
+leave space for aggregation levels that may be included in future data releases. Aggregation levels that are
+available in the PSEO release will be flagged.
+
+The following variables are included in the link:label_agg_level_pseo.csv[] file:
+
+[width=\"60%\",format=\"csv\",cols=\"<2,<5\",options=\"header\"]
+|===================================================
+Variable,Description
+agg_level_pseo, index representing level of aggregation reported on a given record
+grad_char,Characteristics of graduate and program
+firm_char,Characterstics of place of employment
+pseo,Flag: aggregation level available on PSEO
+|===================================================
+
 [width=\"90%\",format=\"csv\",cols=\"^1,2*<3,6*^1\",options=\"header\"]
 |===================================================
 include::$tmp_pseoagg_rows[]
