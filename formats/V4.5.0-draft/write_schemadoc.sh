@@ -148,7 +148,7 @@ Identifiers without the year and quarter component can be considered a series id
 " >> $asciifile
 
 ############################## Identifiers
-for arg in  lehd_mapping_identifiers.csv
+for arg in lehd_mapping_identifiers.csv
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/mapping/Mapping/; s/ident/Ident/')"
   echo "==== $name
@@ -165,7 +165,8 @@ include::$arg[]
 " >> $asciifile
 done
 
-for arg in   $(ls lehd_identifiers_*csv)
+### Hardcode identifier order
+for arg in lehd_identifiers_qwi.csv lehd_identifiers_j2j.csv lehd_identifiers_j2jod.csv lehd_identifiers_pseo.csv
 do
   name="$(echo ${arg%*.csv}| sed 's/lehd_//; s/_/ for /; s/ident/Ident/')"
   echo "==== $name
@@ -179,6 +180,7 @@ include::$arg[]
 
 " >> $asciifile
 done
+
 
 ################################# Variables
 echo "
@@ -463,10 +465,13 @@ include::tmp2.csv[]
 done
 
 echo "
-=== Institution ===
+=== Educational Institution ===
 
-==== Institution levels
+==== Institution Levels
 ( link:inst_level.csv[] )
+
+Educational institutions are tabulated individually in the current data release.
+Future releases may aggregate to institutions to higher levels, such as state or Census Division.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
@@ -484,6 +489,10 @@ echo "
 ==== Institution
 ( link:label_institution.csv[] )
 
+Institution identifiers are sourced from the
+https://ifap.ed.gov/ifap/fedSchoolCodeList.jsp[U.S. Department of Education, Federal Student Aid office].
+This list has been supplemented with records for regional groupings of institutions.
+
 [width=\"60%\",format=\"csv\",cols=\"^1,<5,^1\",options=\"header\"]
 |===================================================
 include::$tmp_inst_rows[]
@@ -494,6 +503,9 @@ echo "
 === Degree level
 ( link:label_degree_level.csv[] )
 
+The degree levels are sourced from the
+https://surveys.nces.ed.gov/ipeds/VisInstructions.aspx?survey=10&id=30080&show=part#chunk_1526[National Center for Education Statistics (NCES), Integrated Postsecondary Education Data System (IPEDS)].
+
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
 include::label_degree_level.csv[]
@@ -501,7 +513,7 @@ include::label_degree_level.csv[]
 " >> $asciifile
 
 echo "
-=== CIP
+=== Classification of Instruction Programs (CIP)
 
 ==== CIP levels
 ( link:label_cip_level.csv[] )
@@ -526,6 +538,11 @@ echo "...,," >> $tmp_cip_rows
 echo "
 ==== CIP code
 ( link:label_cipcode.csv[] )
+
+CIP codes are sourced from the https://nces.ed.gov/ipeds/cipcode/[National Center for Education Statistics (NCES), Integrated Postsecondary Education Data System (IPEDS)].
+Data are reported using 2010 CIP codes, for all years.
+In 4-digit CIP tabulations, higher degree levels are collapsed to the 2-Digit CIP family,
+using custom codes (e.g., 01.XX, 02.XX, etc.).
 
 [width=\"90%\",format=\"csv\",cols=\"<1,<3,<6\",options=\"header\"]
 |===================================================
@@ -727,6 +744,27 @@ echo "...,,,,,,,," >> $tmp_pseoagg_rows
 echo "
 ==== PSEO
 ( link:label_agg_level_pseo.csv[] )
+
+Measures within the PSEO data product can be tabulated by characteristics of the graduate
+(e.g., institution attended, instructional program, degree level, etc.) and by characteristics of employment
+(state, industry). All measures may not be available on all levels of aggregation - for example,
+earnings variables may not be available when tabulating by place and industry of work, though counts are.
+Every tabulation level is assigned a unique aggregation index, represented by the agg_level_pseo variable.
+This index starts from 1, representing a national level grand total (all institutions, graduates, industries,
+etc.), and progresses through different combinations of characteristics. There are gaps in the progression to
+leave space for aggregation levels that may be included in future data releases. Aggregation levels that are
+available in the PSEO release will be flagged.
+
+The following variables are included in the link:label_agg_level_pseo.csv[] file:
+
+[width=\"60%\",format=\"csv\",cols=\"<2,<5\",options=\"header\"]
+|===================================================
+Variable,Description
+agg_level_pseo, index representing level of aggregation reported on a given record
+grad_char,Characteristics of graduate and program
+firm_char,Characterstics of place of employment
+pseo,Flag: aggregation level available on PSEO
+|===================================================
 
 [width=\"90%\",format=\"csv\",cols=\"^1,2*<3,6*^1\",options=\"header\"]
 |===================================================
