@@ -1,4 +1,5 @@
-identifiers,QWI,NQWI,J2J,J2JR,J2JOD,LODES
-lehd_identifiers_qwi,1,1,,,,
-lehd_identifiers_j2j,,,1,1,,
-lehd_identifiers_j2jod,,,,,1,
+identifiers,QWI,NQWI,J2J,J2JR,J2JOD,PSEOE,PSEOF,LODES
+lehd_identifiers_qwi,1,1,,,,,,
+lehd_identifiers_j2j,,,1,1,,,,
+lehd_identifiers_j2jod,,,,,1,,,
+lehd_identifiers_pseo,,,,,,1,1,
