@@ -37,9 +37,11 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
-versionvintage=R2018Q3
+# the 'latest_release' keyword is a symlink in the raw data ftp for the most recent version
+versionvintage=latest_release
 # versionj2jvintage=$versionvintage
-versionj2jvintage=R2018Q2
+# the 'latest_release' keyword is a symlink in the raw data ftp for the most recent version
+versionj2jvintage=latest_release
 versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/${versionvintage}/${versionstate}
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/${versionj2jvintage}/${versionstate}/j2j
