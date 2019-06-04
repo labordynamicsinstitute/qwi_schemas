@@ -15,7 +15,7 @@
 <h1>LEHD Public Use  Schema V4.5.0-draft - File and Directory Naming Convention</h1>
 <div class="details">
 <span id="author" class="author">Lars Vilhuber &lt;&gt;</span><br>
-<span id="revdate">03 June 2019</span>
+<span id="revdate">04 June 2019</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -157,9 +157,14 @@ some other identifier.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Complex metadata (used only in J2JOD) - see below</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">pseo\_[institution state/all].csv</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">pseoe\_[institution state/all].csv</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">pseo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CSV data files broken by the institution state or a single file with all institutions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PSEO Earnings data broken by institution state or a single file with all institutions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">pseof\_[institution state/all].csv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pseo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PSEO Flows data broken by institution state or a single file with all institutions.</p></td>
 </tr>
 </tbody>
 </table>
@@ -326,6 +331,20 @@ These files follow the following naming convention:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">LEHD Shapefiles</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="lehd_shapefiles.html" class="bare">lehd_shapefiles.html</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">pseoe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pseo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post Secondary Employment Outcomes - Earnings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counts of employed graduates by institution, with earnings quartiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lehd.ces.census.gov/data/#pseo" class="bare">https://lehd.ces.census.gov/data/#pseo</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">pseof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pseo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post Secondary Employment Outcomes - Flows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Counts of employed graduates by institution, location of work and industry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lehd.ces.census.gov/data/#pseo" class="bare">https://lehd.ces.census.gov/data/#pseo</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -667,7 +686,10 @@ These files follow the following naming convention:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Added PSEO draft schema files</p>
+<p>Added PSEO draft schema csv files</p>
+</li>
+<li>
+<p>Added PSEO sourcing and documentation</p>
 </li>
 </ul>
 </div>
@@ -690,7 +712,7 @@ These files follow the following naming convention:</p>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Mon Jun  3 14:49:41 UTC 2019</p>
+<p>This revision: Tue Jun  4 16:23:13 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -700,7 +722,7 @@ These files follow the following naming convention:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-03 14:49:41 UTC
+Last updated 2019-06-04 16:23:13 UTC
 </div>
 </div>
 </body>

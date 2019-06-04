@@ -5,4 +5,5 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2019-05-16: Initial release
 
 === Version 4.5.0 from 4.4.0
-- Added PSEO draft schema files
+- Added PSEO draft schema csv files
+- Added PSEO sourcing and documentation

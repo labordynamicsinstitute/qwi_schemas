@@ -37,9 +37,11 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
-versionvintage=R2018Q3
+# the 'latest_release' keyword is a symlink in the raw data ftp for the most recent version
+versionvintage=latest_release
 # versionj2jvintage=$versionvintage
-versionj2jvintage=R2018Q2
+# the 'latest_release' keyword is a symlink in the raw data ftp for the most recent version
+versionj2jvintage=latest_release
 versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/${versionvintage}/${versionstate}
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/${versionj2jvintage}/${versionstate}/j2j
@@ -251,17 +253,27 @@ include::variables_j2jod.csv[]
 <<<
 " >> $asciifile
 
-tmp_pseovars_cols=$(mktemp -p $cwd)
-cut -d ',' -f 1,5,6,7 variables_pseo.csv >> $tmp_pseovars_cols
+tmp_pseoevars_cols=$(mktemp -p $cwd)
+cut -d ',' -f 1,5,6,7 variables_pseoe.csv >> $tmp_pseoevars_cols
 echo "
-==== Post-Secondary Employment Outcomes (PSEO)
-( link:variables_pseo.csv[] )
+==== Post-Secondary Employment Outcomes Earnings (PSEOE)
+( link:variables_pseoe.csv[] )
 [width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
 |===================================================
-include::$tmp_pseovars_cols[]
+include::$tmp_pseoevars_cols[]
 |===================================================
 <<<
+" >> $asciifile
 
+tmp_pseofvars_cols=$(mktemp -p $cwd)
+cut -d ',' -f 1,5,6,7 variables_pseof.csv >> $tmp_pseofvars_cols
+echo "
+==== Post-Secondary Employment Outcomes Flows(PSEOF)
+( link:variables_pseof.csv[] )
+[width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
+|===================================================
+include::$tmp_pseofvars_cols[]
+|===================================================
 <<<
 " >> $asciifile
 
