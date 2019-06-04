@@ -8,3 +8,5 @@ qwir,qwi,Quarterly Workforce Indicators Public Use Rates,"Rates for flow variabl
 qwirv,qwi,Quarterly Workforce Indicators Variability Measures for Rates,"Variability measures for rates in the Quarterly Workforce Indicators (QWI)",tbd
 qwiv,qwi,Quarterly Workforce Indicators Variability Measures,"Variability measures for Quarterly Workforce Indicators (QWI)",tbd
 lehd_shp,all,LEHD Shapefiles,"Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer",link:lehd_shapefiles.html[]
+pseoe, pseo, Post Secondary Employment Outcomes - Earnings, Counts of employed graduates by institution, with earnings quartiles, https://lehd.ces.census.gov/data/#pseo
+pseof, pseo, Post Secondary Employment Outcomes - Flows, Counts of employed graduates by institution, location of work and industry, https://lehd.ces.census.gov/data/#pseo
