@@ -762,11 +762,11 @@ tmp_pseoagg_cols=label_agg_level_pseo.csv
 tmp_pseoagg_rows=$(mktemp -p $cwd)
 
 head -5 $tmp_pseoagg_cols > $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 head -50 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 head -100 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 
 
 echo "
@@ -794,7 +794,7 @@ firm_char,Characterstics of place of employment
 pseo,Flag: aggregation level available on PSEO
 |===================================================
 
-[width=\"90%\",format=\"csv\",cols=\"^1,2*<3,6*^1\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"^1,2*<3,8*^1\",options=\"header\"]
 |===================================================
 include::$tmp_pseoagg_rows[]
 |===================================================
