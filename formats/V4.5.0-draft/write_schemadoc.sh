@@ -254,11 +254,11 @@ include::variables_j2jod.csv[]
 " >> $asciifile
 
 tmp_pseoevars_cols=$(mktemp -p $cwd)
-cut -d ',' -f 1,5,6,7 variables_pseoe.csv >> $tmp_pseoevars_cols
+cut -d ',' -f 1,3,5,6,7 variables_pseoe.csv >> $tmp_pseoevars_cols
 echo "
 ==== Post-Secondary Employment Outcomes Earnings (PSEOE)
 ( link:variables_pseoe.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"<1,<3,<5,2*<1\",options=\"header\"]
 |===================================================
 include::$tmp_pseoevars_cols[]
 |===================================================
@@ -266,11 +266,11 @@ include::$tmp_pseoevars_cols[]
 " >> $asciifile
 
 tmp_pseofvars_cols=$(mktemp -p $cwd)
-cut -d ',' -f 1,5,6,7 variables_pseof.csv >> $tmp_pseofvars_cols
+cut -d ',' -f 1,3,5,6,7 variables_pseof.csv >> $tmp_pseofvars_cols
 echo "
 ==== Post-Secondary Employment Outcomes Flows(PSEOF)
 ( link:variables_pseof.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"<1,<3,<5,2*<1\",options=\"header\"]
 |===================================================
 include::$tmp_pseofvars_cols[]
 |===================================================
