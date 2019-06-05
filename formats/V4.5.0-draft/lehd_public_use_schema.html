@@ -16,7 +16,7 @@
 <div class="details">
 <span id="author" class="author">Lars Vilhuber</span><br>
 <span id="email" class="email"><a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a></span><br>
-<span id="revdate">04 June 2019</span>
+<span id="revdate">05 June 2019</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -742,18 +742,13 @@ to the released files. The actual CSV files containing the identifiers for each 
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">grad_cohort</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">char(4)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Char(4)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">First year of graduation cohort (YYYY) - All Cohorts 0000</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">cohort_years</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">grad_cohort_years</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Number of years in graduation cohort</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">cpi_reportyear</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">Numeric</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Year of dollars expressed (YYYY)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">geo_level</p></td>
@@ -3571,17 +3566,17 @@ using custom codes (e.g., 01.XX, 02.XX, etc.).</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">00</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All 2-digit CIP Codes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All instructional programs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All 2-digit CIP Codes</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">00.XX</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All 4-digit CIP Codes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All instructional programs</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All instructional programs</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">00.XXXX</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All 6-digit CIP Codes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All instructional programs</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All instructional programs</p></td>
 </tr>
 <tr>
@@ -3796,6 +3791,79 @@ for all entities of <a href="#geolevel">geo_level</a> 'N' or 'S', and is a summa
 <td class="tableblock halign-center valign-top"><p class="tableblock">53</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Washington</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>( <a href="label_geography_division.csv" class="bare">label_geography_division.csv</a> )</p>
+</div>
+<div class="paragraph">
+<p>The file <a href="label_geography_division.csv">label_geography_division.csv</a> contains values and labels
+for all entities of <a href="#geolevel">geo_level</a> 'D'.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 40%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">geography</th>
+<th class="tableblock halign-left valign-top">label</th>
+<th class="tableblock halign-center valign-top">geo_level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New England Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Middle Atlantic Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">East North Central Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">West North Central Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">South Atlantic Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">East South Central Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">West South Central Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mountain Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pacific Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unclassified</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
 </tr>
 </tbody>
 </table>
@@ -4062,6 +4130,11 @@ for all entities of <a href="#geolevel">geo_level</a> 'N' or 'S', and is a summa
 <td class="tableblock halign-center valign-top"><p class="tableblock">US</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="label_geography_us.csv" class="bare">label_geography_us.csv</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">DIVISION</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="label_geography_division.csv" class="bare">label_geography_division.csv</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">METRO</p></td>
@@ -4700,143 +4773,165 @@ available in the PSEO release will be flagged.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIP 2-digit</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level * CIP 2-digit</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">pseoe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pseof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * Institution ID</p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">47</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIP 4-digit * Start Year for Graduation Cohort * Institution ID</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * CIP 2-digit * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">42</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * CIP 4-digit * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">44</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">49</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NAICS Sector</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">188</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">190</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">192</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">97</p></td>
+<td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Census Division</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">188</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * Start Year for Graduation Cohort * Institution ID</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">98</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Census Division</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">99</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CIP 2-digit</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Census Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">190</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">N</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NAICS Sector * Census Division</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">S</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
@@ -5199,7 +5294,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Tue Jun  4 16:23:16 UTC 2019</p>
+<p>This revision: Wed Jun  5 12:49:43 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -5209,7 +5304,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-04 16:23:16 UTC
+Last updated 2019-06-05 12:49:43 UTC
 </div>
 </div>
 </body>

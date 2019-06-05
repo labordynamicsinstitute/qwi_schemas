@@ -1,7 +1,7 @@
 cipcode,label,cip_level,CIPFamily,CIPDefinition
-00,All 2-digit CIP Codes,A,00,All instructional programs
-00.XX,All 4-digit CIP Codes,A,00,All instructional programs
-00.XXXX,All 6-digit CIP Codes,A,00,All instructional programs
+00,All instructional programs,A,00,All 2-digit CIP Codes
+00.XX,All instructional programs,A,00,All instructional programs
+00.XXXX,All instructional programs,A,00,All instructional programs
 01,"Agriculture, Agriculture Operations, and Related Sciences.",2,01,"Instructional programs that focus on agriculture and related sciences and that prepare individuals to apply specific knowledge, methods, and techniques to the management and performance of agricultural operations."
 03,Natural Resources and Conservation.,2,03,Instructional programs that focus on the various natural resources and conservation fields and prepare individuals for related occupations.
 04,Architecture and Related Services.,2,04,Instructional programs that prepare individuals for professional practice in the various architecture-related fields and focus on the study of related aesthetic and socioeconomic aspects of the built environment.

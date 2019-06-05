@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
-04 June 2019
+05 June 2019
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
 
@@ -161,6 +161,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Tue Jun  4 16:23:24 UTC 2019
+This revision: Wed Jun  5 12:49:51 UTC 2019
 *******************
 

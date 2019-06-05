@@ -592,6 +592,7 @@ include::$tmp_cip_rows[]
 	grep -E ",M$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
 	grep -E ",W$" tmp3.csv | sort    -k 1 -t , >> label_geography.csv
 	grep -E ",B$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
+	grep -E ",D$" tmp3.csv | sort -n -k 1 -t , >> label_geography.csv
   # we check that we have the same numbers
 
 	# convert to UTF-8
@@ -642,6 +643,16 @@ for all entities of <<geolevel,geo_level>> 'N' or 'S', and is a summary of separ
 include::tmp.csv[]
 |===================================================
 
+( link:label_geography_division.csv[] )
+
+The file link:label_geography_division.csv[label_geography_division.csv] contains values and labels
+for all entities of <<geolevel,geo_level>> 'D'.
+
+[width=\"40%\",format=\"csv\",cols=\"^1,<3,^1\",options=\"header\"]
+|===================================================
+include::label_geography_division.csv[]
+|===================================================
+
 ==== [[stusps]]State postal codes
 
 Some parts of the schema use (lower or upper-case) state postal codes.
@@ -677,6 +688,11 @@ Scope,Types,Format file" >> $asciifile
 	do
 	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
 	echo "$state,N,link:${arg}[]" >> $asciifile
+	done
+	for arg in label_geography_division.csv
+	do
+	state=$(echo ${arg%*.csv} | awk -F_ ' { print $3 } '| tr [a-z] [A-Z])
+	echo "$state,D,link:${arg}[]" >> $asciifile
 	done
 	for arg in label_geography_metro.csv
 	do
