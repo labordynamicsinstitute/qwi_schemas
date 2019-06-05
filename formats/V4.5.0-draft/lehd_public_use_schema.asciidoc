@@ -192,18 +192,18 @@ include::variables_j2jod.csv[]
 
 ==== Post-Secondary Employment Outcomes Earnings (PSEOE)
 ( link:variables_pseoe.csv[] )
-[width="95%",format="csv",cols="<1,<5,2*<1",options="header"]
+[width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.OkBODf[]
+include::/documents/formats/V4.5.0-draft/tmp.kjChea[]
 |===================================================
 <<<
 
 
 ==== Post-Secondary Employment Outcomes Flows(PSEOF)
 ( link:variables_pseof.csv[] )
-[width="95%",format="csv",cols="<1,<5,2*<1",options="header"]
+[width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.mCHdAj[]
+include::/documents/formats/V4.5.0-draft/tmp.leIPCG[]
 |===================================================
 <<<
 
@@ -444,14 +444,14 @@ include::tmp2.csv[]
 === Educational Institution ===
 
 ==== Institution Levels
-( link:inst_level.csv[] )
+( link:label_inst_level.csv[] )
 
 Educational institutions are tabulated individually in the current data release.
 Future releases may aggregate to institutions to higher levels, such as state or Census Division.
 
 [width="60%",format="csv",cols="^1,<4",options="header"]
 |===================================================
-include::inst_level.csv[]
+include::;label_inst_level.csv[]
 |===================================================
 
 
@@ -464,7 +464,7 @@ This list has been supplemented with records for regional groupings of instituti
 
 [width="60%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.HLngcn[]
+include::/documents/formats/V4.5.0-draft/tmp.AeolJa[]
 |===================================================
 
 
@@ -501,7 +501,7 @@ using custom codes (e.g., 01.XX, 02.XX, etc.).
 
 [width="90%",format="csv",cols="<1,<3,<6",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.bjPcnP[]
+include::/documents/formats/V4.5.0-draft/tmp.GLpdpC[]
 |===================================================
 
 === [[geography]]Geography ===
@@ -520,7 +520,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 [width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.MDFeBF[]
+include::/documents/formats/V4.5.0-draft/tmp.AnOHiD[]
 |===================================================
 
 
@@ -554,7 +554,7 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 [width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.keFMMd[]
+include::/documents/formats/V4.5.0-draft/tmp.CMADEl[]
 |===================================================
 
 
@@ -657,7 +657,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.amMiAE[]
+include::/documents/formats/V4.5.0-draft/tmp.ephoDf[]
 |===================================================
 
 
@@ -685,9 +685,9 @@ firm_char,Characterstics of place of employment
 pseo,Flag: aggregation level available on PSEO
 |===================================================
 
-[width="90%",format="csv",cols="^1,2*<3,6*^1",options="header"]
+[width="90%",format="csv",cols="^1,2*<3,8*^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.EffMgP[]
+include::/documents/formats/V4.5.0-draft/tmp.kNhcCC[]
 |===================================================
 
 
@@ -791,6 +791,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Wed Jun  5 18:32:11 UTC 2019
+This revision: Wed Jun  5 19:00:20 UTC 2019
 *******************
 

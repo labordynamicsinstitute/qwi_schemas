@@ -254,11 +254,11 @@ include::variables_j2jod.csv[]
 " >> $asciifile
 
 tmp_pseoevars_cols=$(mktemp -p $cwd)
-cut -d ',' -f 1,5,6,7 variables_pseoe.csv >> $tmp_pseoevars_cols
+cut -d ',' -f 1,3,5,6,7 variables_pseoe.csv >> $tmp_pseoevars_cols
 echo "
 ==== Post-Secondary Employment Outcomes Earnings (PSEOE)
 ( link:variables_pseoe.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"<1,<3,<5,2*<1\",options=\"header\"]
 |===================================================
 include::$tmp_pseoevars_cols[]
 |===================================================
@@ -266,11 +266,11 @@ include::$tmp_pseoevars_cols[]
 " >> $asciifile
 
 tmp_pseofvars_cols=$(mktemp -p $cwd)
-cut -d ',' -f 1,5,6,7 variables_pseof.csv >> $tmp_pseofvars_cols
+cut -d ',' -f 1,3,5,6,7 variables_pseof.csv >> $tmp_pseofvars_cols
 echo "
 ==== Post-Secondary Employment Outcomes Flows(PSEOF)
 ( link:variables_pseof.csv[] )
-[width=\"95%\",format=\"csv\",cols=\"<1,<5,2*<1\",options=\"header\"]
+[width=\"95%\",format=\"csv\",cols=\"<1,<3,<5,2*<1\",options=\"header\"]
 |===================================================
 include::$tmp_pseofvars_cols[]
 |===================================================
@@ -480,14 +480,14 @@ echo "
 === Educational Institution ===
 
 ==== Institution Levels
-( link:inst_level.csv[] )
+( link:label_inst_level.csv[] )
 
 Educational institutions are tabulated individually in the current data release.
 Future releases may aggregate to institutions to higher levels, such as state or Census Division.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
-include::inst_level.csv[]
+include::;label_inst_level.csv[]
 |===================================================
 " >> $asciifile
 
@@ -762,11 +762,11 @@ tmp_pseoagg_cols=label_agg_level_pseo.csv
 tmp_pseoagg_rows=$(mktemp -p $cwd)
 
 head -5 $tmp_pseoagg_cols > $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 head -50 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 head -100 $tmp_pseoagg_cols | tail -3 >> $tmp_pseoagg_rows
-echo "...,,,,,,,," >> $tmp_pseoagg_rows
+echo "...,,,,,,,,,," >> $tmp_pseoagg_rows
 
 
 echo "
@@ -794,7 +794,7 @@ firm_char,Characterstics of place of employment
 pseo,Flag: aggregation level available on PSEO
 |===================================================
 
-[width=\"90%\",format=\"csv\",cols=\"^1,2*<3,6*^1\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"^1,2*<3,8*^1\",options=\"header\"]
 |===================================================
 include::$tmp_pseoagg_rows[]
 |===================================================
