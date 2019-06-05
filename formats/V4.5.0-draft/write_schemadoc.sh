@@ -480,14 +480,14 @@ echo "
 === Educational Institution ===
 
 ==== Institution Levels
-( link:inst_level.csv[] )
+( link:label_inst_level.csv[] )
 
 Educational institutions are tabulated individually in the current data release.
 Future releases may aggregate to institutions to higher levels, such as state or Census Division.
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
-include::inst_level.csv[]
+include::;label_inst_level.csv[]
 |===================================================
 " >> $asciifile
 
