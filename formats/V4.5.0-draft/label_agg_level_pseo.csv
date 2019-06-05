@@ -1,193 +1,25 @@
-agg_level_pseo,grad_char,firm_char,cip_level,inst_level,geo_level,ind_level,by_grad_cohort,by_degree_level
-1,,,A,N,N,A,0,0
-2,Degree Level,,A,N,N,A,0,1
-3,CIP 2-digit,,2,N,N,A,0,0
-4,Degree Level * CIP 2-digit,,2,N,N,A,0,1
-5,CIP 4-digit,,4,N,N,A,0,0
-6,Degree Level * CIP 4-digit,,4,N,N,A,0,1
-7,Start Year for Graduation Cohort,,A,N,N,A,1,0
-8,Degree Level * Start Year for Graduation Cohort,,A,N,N,A,1,1
-9,CIP 2-digit * Start Year for Graduation Cohort,,2,N,N,A,1,0
-10,Degree Level * CIP 2-digit * Start Year for Graduation Cohort,,2,N,N,A,1,1
-11,CIP 4-digit * Start Year for Graduation Cohort,,4,N,N,A,1,0
-12,Degree Level * CIP 4-digit * Start Year for Graduation Cohort,,4,N,N,A,1,1
-13,Census Division of Institution,,A,D,N,A,0,0
-14,Degree Level * Census Division of Institution,,A,D,N,A,0,1
-15,CIP 2-digit * Census Division of Institution,,2,D,N,A,0,0
-16,Degree Level * CIP 2-digit * Census Division of Institution,,2,D,N,A,0,1
-17,CIP 4-digit * Census Division of Institution,,4,D,N,A,0,0
-18,Degree Level * CIP 4-digit * Census Division of Institution,,4,D,N,A,0,1
-19,Start Year for Graduation Cohort * Census Division of Institution,,A,D,N,A,1,0
-20,Degree Level * Start Year for Graduation Cohort * Census Division of Institution,,A,D,N,A,1,1
-21,CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,,2,D,N,A,1,0
-22,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,,2,D,N,A,1,1
-23,CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,,4,D,N,A,1,0
-24,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,,4,D,N,A,1,1
-25,State of Institution,,A,S,N,A,0,0
-26,Degree Level * State of Institution,,A,S,N,A,0,1
-27,CIP 2-digit * State of Institution,,2,S,N,A,0,0
-28,Degree Level * CIP 2-digit * State of Institution,,2,S,N,A,0,1
-29,CIP 4-digit * State of Institution,,4,S,N,A,0,0
-30,Degree Level * CIP 4-digit * State of Institution,,4,S,N,A,0,1
-31,Start Year for Graduation Cohort * State of Institution,,A,S,N,A,1,0
-32,Degree Level * Start Year for Graduation Cohort * State of Institution,,A,S,N,A,1,1
-33,CIP 2-digit * Start Year for Graduation Cohort * State of Institution,,2,S,N,A,1,0
-34,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * State of Institution,,2,S,N,A,1,1
-35,CIP 4-digit * Start Year for Graduation Cohort * State of Institution,,4,S,N,A,1,0
-36,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * State of Institution,,4,S,N,A,1,1
-37,Institution ID,,A,I,N,A,0,0
-38,Degree Level * Institution ID,,A,I,N,A,0,1
-39,CIP 2-digit * Institution ID,,2,I,N,A,0,0
-40,Degree Level * CIP 2-digit * Institution ID,,2,I,N,A,0,1
-41,CIP 4-digit * Institution ID,,4,I,N,A,0,0
-42,Degree Level * CIP 4-digit * Institution ID,,4,I,N,A,0,1
-43,Start Year for Graduation Cohort * Institution ID,,A,I,N,A,1,0
-44,Degree Level * Start Year for Graduation Cohort * Institution ID,,A,I,N,A,1,1
-45,CIP 2-digit * Start Year for Graduation Cohort * Institution ID,,2,I,N,A,1,0
-46,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,,2,I,N,A,1,1
-47,CIP 4-digit * Start Year for Graduation Cohort * Institution ID,,4,I,N,A,1,0
-48,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,,4,I,N,A,1,1
-49,,NAICS Sector,A,N,N,S,0,0
-50,Degree Level,NAICS Sector,A,N,N,S,0,1
-51,CIP 2-digit,NAICS Sector,2,N,N,S,0,0
-52,Degree Level * CIP 2-digit,NAICS Sector,2,N,N,S,0,1
-53,CIP 4-digit,NAICS Sector,4,N,N,S,0,0
-54,Degree Level * CIP 4-digit,NAICS Sector,4,N,N,S,0,1
-55,Start Year for Graduation Cohort,NAICS Sector,A,N,N,S,1,0
-56,Degree Level * Start Year for Graduation Cohort,NAICS Sector,A,N,N,S,1,1
-57,CIP 2-digit * Start Year for Graduation Cohort,NAICS Sector,2,N,N,S,1,0
-58,Degree Level * CIP 2-digit * Start Year for Graduation Cohort,NAICS Sector,2,N,N,S,1,1
-59,CIP 4-digit * Start Year for Graduation Cohort,NAICS Sector,4,N,N,S,1,0
-60,Degree Level * CIP 4-digit * Start Year for Graduation Cohort,NAICS Sector,4,N,N,S,1,1
-61,Census Division of Institution,NAICS Sector,A,D,N,S,0,0
-62,Degree Level * Census Division of Institution,NAICS Sector,A,D,N,S,0,1
-63,CIP 2-digit * Census Division of Institution,NAICS Sector,2,D,N,S,0,0
-64,Degree Level * CIP 2-digit * Census Division of Institution,NAICS Sector,2,D,N,S,0,1
-65,CIP 4-digit * Census Division of Institution,NAICS Sector,4,D,N,S,0,0
-66,Degree Level * CIP 4-digit * Census Division of Institution,NAICS Sector,4,D,N,S,0,1
-67,Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,A,D,N,S,1,0
-68,Degree Level * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,A,D,N,S,1,1
-69,CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,2,D,N,S,1,0
-70,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,2,D,N,S,1,1
-71,CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,4,D,N,S,1,0
-72,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector,4,D,N,S,1,1
-73,State of Institution,NAICS Sector,A,S,N,S,0,0
-74,Degree Level * State of Institution,NAICS Sector,A,S,N,S,0,1
-75,CIP 2-digit * State of Institution,NAICS Sector,2,S,N,S,0,0
-76,Degree Level * CIP 2-digit * State of Institution,NAICS Sector,2,S,N,S,0,1
-77,CIP 4-digit * State of Institution,NAICS Sector,4,S,N,S,0,0
-78,Degree Level * CIP 4-digit * State of Institution,NAICS Sector,4,S,N,S,0,1
-79,Start Year for Graduation Cohort * State of Institution,NAICS Sector,A,S,N,S,1,0
-80,Degree Level * Start Year for Graduation Cohort * State of Institution,NAICS Sector,A,S,N,S,1,1
-81,CIP 2-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector,2,S,N,S,1,0
-82,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector,2,S,N,S,1,1
-83,CIP 4-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector,4,S,N,S,1,0
-84,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector,4,S,N,S,1,1
-85,Institution ID,NAICS Sector,A,I,N,S,0,0
-86,Degree Level * Institution ID,NAICS Sector,A,I,N,S,0,1
-87,CIP 2-digit * Institution ID,NAICS Sector,2,I,N,S,0,0
-88,Degree Level * CIP 2-digit * Institution ID,NAICS Sector,2,I,N,S,0,1
-89,CIP 4-digit * Institution ID,NAICS Sector,4,I,N,S,0,0
-90,Degree Level * CIP 4-digit * Institution ID,NAICS Sector,4,I,N,S,0,1
-91,Start Year for Graduation Cohort * Institution ID,NAICS Sector,A,I,N,S,1,0
-92,Degree Level * Start Year for Graduation Cohort * Institution ID,NAICS Sector,A,I,N,S,1,1
-93,CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,2,I,N,S,1,0
-94,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,2,I,N,S,1,1
-95,CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,4,I,N,S,1,0
-96,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,4,I,N,S,1,1
-97,,Census Division,A,N,D,A,0,0
-98,Degree Level,Census Division,A,N,D,A,0,1
-99,CIP 2-digit,Census Division,2,N,D,A,0,0
-100,Degree Level * CIP 2-digit,Census Division,2,N,D,A,0,1
-101,CIP 4-digit,Census Division,4,N,D,A,0,0
-102,Degree Level * CIP 4-digit,Census Division,4,N,D,A,0,1
-103,Start Year for Graduation Cohort,Census Division,A,N,D,A,1,0
-104,Degree Level * Start Year for Graduation Cohort,Census Division,A,N,D,A,1,1
-105,CIP 2-digit * Start Year for Graduation Cohort,Census Division,2,N,D,A,1,0
-106,Degree Level * CIP 2-digit * Start Year for Graduation Cohort,Census Division,2,N,D,A,1,1
-107,CIP 4-digit * Start Year for Graduation Cohort,Census Division,4,N,D,A,1,0
-108,Degree Level * CIP 4-digit * Start Year for Graduation Cohort,Census Division,4,N,D,A,1,1
-109,Census Division of Institution,Census Division,A,D,D,A,0,0
-110,Degree Level * Census Division of Institution,Census Division,A,D,D,A,0,1
-111,CIP 2-digit * Census Division of Institution,Census Division,2,D,D,A,0,0
-112,Degree Level * CIP 2-digit * Census Division of Institution,Census Division,2,D,D,A,0,1
-113,CIP 4-digit * Census Division of Institution,Census Division,4,D,D,A,0,0
-114,Degree Level * CIP 4-digit * Census Division of Institution,Census Division,4,D,D,A,0,1
-115,Start Year for Graduation Cohort * Census Division of Institution,Census Division,A,D,D,A,1,0
-116,Degree Level * Start Year for Graduation Cohort * Census Division of Institution,Census Division,A,D,D,A,1,1
-117,CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,Census Division,2,D,D,A,1,0
-118,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,Census Division,2,D,D,A,1,1
-119,CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,Census Division,4,D,D,A,1,0
-120,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,Census Division,4,D,D,A,1,1
-121,State of Institution,Census Division,A,S,D,A,0,0
-122,Degree Level * State of Institution,Census Division,A,S,D,A,0,1
-123,CIP 2-digit * State of Institution,Census Division,2,S,D,A,0,0
-124,Degree Level * CIP 2-digit * State of Institution,Census Division,2,S,D,A,0,1
-125,CIP 4-digit * State of Institution,Census Division,4,S,D,A,0,0
-126,Degree Level * CIP 4-digit * State of Institution,Census Division,4,S,D,A,0,1
-127,Start Year for Graduation Cohort * State of Institution,Census Division,A,S,D,A,1,0
-128,Degree Level * Start Year for Graduation Cohort * State of Institution,Census Division,A,S,D,A,1,1
-129,CIP 2-digit * Start Year for Graduation Cohort * State of Institution,Census Division,2,S,D,A,1,0
-130,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * State of Institution,Census Division,2,S,D,A,1,1
-131,CIP 4-digit * Start Year for Graduation Cohort * State of Institution,Census Division,4,S,D,A,1,0
-132,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * State of Institution,Census Division,4,S,D,A,1,1
-133,Institution ID,Census Division,A,I,D,A,0,0
-134,Degree Level * Institution ID,Census Division,A,I,D,A,0,1
-135,CIP 2-digit * Institution ID,Census Division,2,I,D,A,0,0
-136,Degree Level * CIP 2-digit * Institution ID,Census Division,2,I,D,A,0,1
-137,CIP 4-digit * Institution ID,Census Division,4,I,D,A,0,0
-138,Degree Level * CIP 4-digit * Institution ID,Census Division,4,I,D,A,0,1
-139,Start Year for Graduation Cohort * Institution ID,Census Division,A,I,D,A,1,0
-140,Degree Level * Start Year for Graduation Cohort * Institution ID,Census Division,A,I,D,A,1,1
-141,CIP 2-digit * Start Year for Graduation Cohort * Institution ID,Census Division,2,I,D,A,1,0
-142,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,Census Division,2,I,D,A,1,1
-143,CIP 4-digit * Start Year for Graduation Cohort * Institution ID,Census Division,4,I,D,A,1,0
-144,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,Census Division,4,I,D,A,1,1
-145,,NAICS Sector * Census Division,A,N,D,S,0,0
-146,Degree Level,NAICS Sector * Census Division,A,N,D,S,0,1
-147,CIP 2-digit,NAICS Sector * Census Division,2,N,D,S,0,0
-148,Degree Level * CIP 2-digit,NAICS Sector * Census Division,2,N,D,S,0,1
-149,CIP 4-digit,NAICS Sector * Census Division,4,N,D,S,0,0
-150,Degree Level * CIP 4-digit,NAICS Sector * Census Division,4,N,D,S,0,1
-151,Start Year for Graduation Cohort,NAICS Sector * Census Division,A,N,D,S,1,0
-152,Degree Level * Start Year for Graduation Cohort,NAICS Sector * Census Division,A,N,D,S,1,1
-153,CIP 2-digit * Start Year for Graduation Cohort,NAICS Sector * Census Division,2,N,D,S,1,0
-154,Degree Level * CIP 2-digit * Start Year for Graduation Cohort,NAICS Sector * Census Division,2,N,D,S,1,1
-155,CIP 4-digit * Start Year for Graduation Cohort,NAICS Sector * Census Division,4,N,D,S,1,0
-156,Degree Level * CIP 4-digit * Start Year for Graduation Cohort,NAICS Sector * Census Division,4,N,D,S,1,1
-157,Census Division of Institution,NAICS Sector * Census Division,A,D,D,S,0,0
-158,Degree Level * Census Division of Institution,NAICS Sector * Census Division,A,D,D,S,0,1
-159,CIP 2-digit * Census Division of Institution,NAICS Sector * Census Division,2,D,D,S,0,0
-160,Degree Level * CIP 2-digit * Census Division of Institution,NAICS Sector * Census Division,2,D,D,S,0,1
-161,CIP 4-digit * Census Division of Institution,NAICS Sector * Census Division,4,D,D,S,0,0
-162,Degree Level * CIP 4-digit * Census Division of Institution,NAICS Sector * Census Division,4,D,D,S,0,1
-163,Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,A,D,D,S,1,0
-164,Degree Level * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,A,D,D,S,1,1
-165,CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,2,D,D,S,1,0
-166,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,2,D,D,S,1,1
-167,CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,4,D,D,S,1,0
-168,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Census Division of Institution,NAICS Sector * Census Division,4,D,D,S,1,1
-169,State of Institution,NAICS Sector * Census Division,A,S,D,S,0,0
-170,Degree Level * State of Institution,NAICS Sector * Census Division,A,S,D,S,0,1
-171,CIP 2-digit * State of Institution,NAICS Sector * Census Division,2,S,D,S,0,0
-172,Degree Level * CIP 2-digit * State of Institution,NAICS Sector * Census Division,2,S,D,S,0,1
-173,CIP 4-digit * State of Institution,NAICS Sector * Census Division,4,S,D,S,0,0
-174,Degree Level * CIP 4-digit * State of Institution,NAICS Sector * Census Division,4,S,D,S,0,1
-175,Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,A,S,D,S,1,0
-176,Degree Level * Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,A,S,D,S,1,1
-177,CIP 2-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,2,S,D,S,1,0
-178,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,2,S,D,S,1,1
-179,CIP 4-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,4,S,D,S,1,0
-180,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * State of Institution,NAICS Sector * Census Division,4,S,D,S,1,1
-181,Institution ID,NAICS Sector * Census Division,A,I,D,S,0,0
-182,Degree Level * Institution ID,NAICS Sector * Census Division,A,I,D,S,0,1
-183,CIP 2-digit * Institution ID,NAICS Sector * Census Division,2,I,D,S,0,0
-184,Degree Level * CIP 2-digit * Institution ID,NAICS Sector * Census Division,2,I,D,S,0,1
-185,CIP 4-digit * Institution ID,NAICS Sector * Census Division,4,I,D,S,0,0
-186,Degree Level * CIP 4-digit * Institution ID,NAICS Sector * Census Division,4,I,D,S,0,1
-187,Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,A,I,D,S,1,0
-188,Degree Level * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,A,I,D,S,1,1
-189,CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,2,I,D,S,1,0
-190,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,2,I,D,S,1,1
-191,CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,4,I,D,S,1,0
-192,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,4,I,D,S,1,1
+agg_level_pseo,grad_char,firm_char,cip_level,inst_level,geo_level,ind_level,by_grad_cohort,by_degree_level,pseoe,pseof
+38,Degree Level * Institution ID,,A,I,N,A,0,1,1,0
+40,Degree Level * CIP 2-digit * Institution ID,,2,I,N,A,0,1,0,0
+42,Degree Level * CIP 4-digit * Institution ID,,4,I,N,A,0,1,1,0
+44,Degree Level * Start Year for Graduation Cohort * Institution ID,,A,I,N,A,1,1,1,0
+46,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,,2,I,N,A,1,1,0,0
+48,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,,4,I,N,A,1,1,1,0
+86,Degree Level * Institution ID,NAICS Sector,A,I,N,S,0,1,0,1
+88,Degree Level * CIP 2-digit * Institution ID,NAICS Sector,2,I,N,S,0,1,0,1
+90,Degree Level * CIP 4-digit * Institution ID,NAICS Sector,4,I,N,S,0,1,0,0
+92,Degree Level * Start Year for Graduation Cohort * Institution ID,NAICS Sector,A,I,N,S,1,1,0,1
+94,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,2,I,N,S,1,1,0,1
+96,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector,4,I,N,S,1,1,0,0
+134,Degree Level * Institution ID,Census Division,A,I,D,A,0,1,0,1
+136,Degree Level * CIP 2-digit * Institution ID,Census Division,2,I,D,A,0,1,0,1
+138,Degree Level * CIP 4-digit * Institution ID,Census Division,4,I,D,A,0,1,0,0
+140,Degree Level * Start Year for Graduation Cohort * Institution ID,Census Division,A,I,D,A,1,1,0,1
+142,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,Census Division,2,I,D,A,1,1,0,1
+144,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,Census Division,4,I,D,A,1,1,0,0
+182,Degree Level * Institution ID,NAICS Sector * Census Division,A,I,D,S,0,1,0,1
+184,Degree Level * CIP 2-digit * Institution ID,NAICS Sector * Census Division,2,I,D,S,0,1,0,1
+186,Degree Level * CIP 4-digit * Institution ID,NAICS Sector * Census Division,4,I,D,S,0,1,0,0
+188,Degree Level * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,A,I,D,S,1,1,0,1
+190,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,2,I,D,S,1,1,0,1
+192,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,NAICS Sector * Census Division,4,I,D,S,1,1,0,0
