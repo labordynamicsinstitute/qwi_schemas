@@ -487,7 +487,7 @@ Future releases may aggregate to institutions to higher levels, such as state or
 
 [width=\"60%\",format=\"csv\",cols=\"^1,<4\",options=\"header\"]
 |===================================================
-include::;label_inst_level.csv[]
+include::label_inst_level.csv[]
 |===================================================
 " >> $asciifile
 
