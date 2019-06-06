@@ -194,7 +194,7 @@ include::variables_j2jod.csv[]
 ( link:variables_pseoe.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.mEFbAl[]
+include::/documents/formats/V4.5.0-draft/tmp.IHHKeO[]
 |===================================================
 <<<
 
@@ -203,7 +203,7 @@ include::/documents/formats/V4.5.0-draft/tmp.mEFbAl[]
 ( link:variables_pseof.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.FkdfmF[]
+include::/documents/formats/V4.5.0-draft/tmp.FePALP[]
 |===================================================
 <<<
 
@@ -464,7 +464,7 @@ This list has been supplemented with records for regional groupings of instituti
 
 [width="60%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.fMBeBm[]
+include::/documents/formats/V4.5.0-draft/tmp.ecpfda[]
 |===================================================
 
 
@@ -501,7 +501,7 @@ using custom codes (e.g., 01.XX, 02.XX, etc.).
 
 [width="90%",format="csv",cols="<1,<3,<6",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.hlphkD[]
+include::/documents/formats/V4.5.0-draft/tmp.GAdelA[]
 |===================================================
 
 === [[geography]]Geography ===
@@ -520,7 +520,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 [width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.dMODGd[]
+include::/documents/formats/V4.5.0-draft/tmp.kLkiif[]
 |===================================================
 
 
@@ -554,7 +554,7 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 [width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.nlEEkj[]
+include::/documents/formats/V4.5.0-draft/tmp.MomBPi[]
 |===================================================
 
 
@@ -657,7 +657,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.DLNmEE[]
+include::/documents/formats/V4.5.0-draft/tmp.EaMaPe[]
 |===================================================
 
 
@@ -687,7 +687,7 @@ pseo,Flag: aggregation level available on PSEO
 
 [width="90%",format="csv",cols="^1,2*<3,8*^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.NFGoEc[]
+include::/documents/formats/V4.5.0-draft/tmp.hHLHpC[]
 |===================================================
 
 
@@ -791,6 +791,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Thu Jun  6 17:30:57 UTC 2019
+This revision: Thu Jun  6 18:55:36 UTC 2019
 *******************
 

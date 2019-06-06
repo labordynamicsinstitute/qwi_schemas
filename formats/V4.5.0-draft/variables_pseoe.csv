@@ -11,3 +11,6 @@ y10_p25_earnings,y10_p25_earnings,status_y10_earnings,Earnings 25th percentile i
 y10_p50_earnings,y10_p50_earnings,status_y10_earnings,Earnings 50th percentile in year 10,Earnings 50th Percentile in year 10 (2016 Dollars),Dollars,Earnings,1
 y10_p75_earnings,y10_p75_earnings,status_y10_earnings,Earnings 75th percentile in year 10,Earnings 75th Percentile in year 10 (2016 Dollars),Dollars,Earnings,1
 y10_grads_earn,y10_grads_earn,status_y10_grads_earn,Graduates Employed in year 10,Count of employed graduates in year 10,Count,Employment,1
+y1_ipeds_count,y1_ipeds_count,status_ipeds_count,IPEDS Graduates for year 1,Count of IPEDS reported graduates of programs included in year 1 earnings ,Count, Graduates,1
+y5_ipeds_count,y5_ipeds_count,status_ipeds_count,IPEDS Graduates for year 5,Count of IPEDS reported graduates of programs included in year 5 earnings ,Count, Graduates,1
+y10_ipeds_count,y10_ipeds_count,status_ipeds_count,IPEDS Graduates for year 10,Count of IPEDS reported graduates of programs included in year 10 earnings ,Count, Graduates,1
