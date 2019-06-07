@@ -562,6 +562,18 @@ include::$tmp_cip_rows[]
 |===================================================
 " >> $asciifile
 
+echo "
+=== Grad Cohort
+
+This is a 4-digit number representing the first year of the graduation cohort. The length of the cohort will vary by degree_level as follows:
+
+* if degree_level=05, cohort is 3 years
+** e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012)
+* otherwise, cohort is 5 years
+** e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012, 2013, 2014)
+
+For tabulations across all cohorts, the grad_cohort will be recorded as 0000.
+" >> $asciifile
 
 ################################ Geo formats
 # now do geography
