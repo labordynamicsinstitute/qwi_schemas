@@ -16,7 +16,7 @@
 <div class="details">
 <span id="author" class="author">Lars Vilhuber</span><br>
 <span id="email" class="email"><a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a></span><br>
-<span id="revdate">06 June 2019</span>
+<span id="revdate">07 June 2019</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -92,18 +92,19 @@
 <li><a href="#_cip_code">6.15.2. CIP code</a></li>
 </ul>
 </li>
-<li><a href="#_geography">6.16. Geography</a>
+<li><a href="#_grad_cohort">6.16. Grad Cohort</a></li>
+<li><a href="#_geography">6.17. Geography</a>
 <ul class="sectlevel3">
-<li><a href="#geo_level">6.16.1.  Geographic levels</a></li>
-<li><a href="#_national_and_state_level_values">6.16.2. National and state-level values</a></li>
-<li><a href="#_state_postal_codes">6.16.3. State postal codes</a></li>
-<li><a href="#_detailed_state_and_substate_level_values">6.16.4. Detailed state and substate level values</a></li>
+<li><a href="#geo_level">6.17.1.  Geographic levels</a></li>
+<li><a href="#_national_and_state_level_values">6.17.2. National and state-level values</a></li>
+<li><a href="#_state_postal_codes">6.17.3. State postal codes</a></li>
+<li><a href="#_detailed_state_and_substate_level_values">6.17.4. Detailed state and substate level values</a></li>
 </ul>
 </li>
-<li><a href="#_aggregation_level">6.17. Aggregation level</a>
+<li><a href="#_aggregation_level">6.18. Aggregation level</a>
 <ul class="sectlevel3">
-<li><a href="#_j2j">6.17.1. J2J</a></li>
-<li><a href="#_pseo">6.17.2. PSEO</a></li>
+<li><a href="#_j2j">6.18.1. J2J</a></li>
+<li><a href="#_pseo">6.18.2. PSEO</a></li>
 </ul>
 </li>
 </ul>
@@ -3667,9 +3668,42 @@ using custom codes (e.g., 01.XX, 02.XX, etc.).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geography">6.16. <a id="geography"></a>Geography</h3>
+<h3 id="_grad_cohort">6.16. Grad Cohort</h3>
+<div class="paragraph">
+<p>This is a 4-digit number representing the first year of the graduation cohort. The length of the cohort will vary by degree_level as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>if degree_level=05, cohort is 3 years</p>
+<div class="ulist">
+<ul>
+<li>
+<p>e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>otherwise, cohort is 5 years</p>
+<div class="ulist">
+<ul>
+<li>
+<p>e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012, 2013, 2014)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For tabulations across all cohorts, the grad_cohort will be recorded as 0000.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geography">6.17. <a id="geography"></a>Geography</h3>
 <div class="sect3">
-<h4 id="geo_level">6.16.1. <a id="geolevel"></a> Geographic levels</h4>
+<h4 id="geo_level">6.17.1. <a id="geolevel"></a> Geographic levels</h4>
 <div class="paragraph">
 <p>Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <a href="#geolevel">geo_level</a>. For convenience, a composite file containing all geocodes is available as <a href="label_geography.csv" class="bare">label_geography.csv</a>.
 The 2018 vintage of  <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html">Census TIGER/Line geography</a> is used for all tabulations as of the R2019Q1 release.</p>
@@ -3733,7 +3767,7 @@ The 2018 vintage of  <a href="https://www.census.gov/geo/maps-data/data/tiger-li
 </table>
 </div>
 <div class="sect3">
-<h4 id="_national_and_state_level_values">6.16.2. <a id="geostate"></a>National and state-level values</h4>
+<h4 id="_national_and_state_level_values">6.17.2. <a id="geostate"></a>National and state-level values</h4>
 <div class="paragraph">
 <p>( <a href="label_fipsnum.csv" class="bare">label_fipsnum.csv</a> )</p>
 </div>
@@ -3912,7 +3946,7 @@ for all entities of <a href="#geolevel">geo_level</a> 'D'.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_state_postal_codes">6.16.3. <a id="stusps"></a>State postal codes</h4>
+<h4 id="_state_postal_codes">6.17.3. <a id="stusps"></a>State postal codes</h4>
 <div class="paragraph">
 <p>Some parts of the schema use (lower or upper-case) state postal codes.</p>
 </div>
@@ -4151,7 +4185,7 @@ for all entities of <a href="#geolevel">geo_level</a> 'D'.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_detailed_state_and_substate_level_values">6.16.4. <a id="geosubstate"></a>Detailed state and substate level values</h4>
+<h4 id="_detailed_state_and_substate_level_values">6.17.4. <a id="geosubstate"></a>Detailed state and substate level values</h4>
 <div class="paragraph">
 <p>Files of type 'label_geography_[ST].csv' will contain identifiers and labels for geographic areas entirely comprised within a given state '[ST]'. State-specific parts of cross-state CBSA, in records of type <a href="#geolevel">geo_level</a> = M, are present on files of type 'label_geography_[ST].csv'. The file <a href="label_geography_metro.csv" class="bare">label_geography_metro.csv</a> contains labels for records of type <a href="#geolevel">geo_level</a> = B, for metropolitan areas only.</p>
 </div>
@@ -4455,9 +4489,9 @@ for all entities of <a href="#geolevel">geo_level</a> 'D'.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aggregation_level">6.17. Aggregation level</h3>
+<h3 id="_aggregation_level">6.18. Aggregation level</h3>
 <div class="sect3">
-<h4 id="_j2j">6.17.1. J2J</h4>
+<h4 id="_j2j">6.18.1. J2J</h4>
 <div class="paragraph">
 <p>( <a href="label_agg_level.csv" class="bare">label_agg_level.csv</a> )</p>
 </div>
@@ -4741,7 +4775,7 @@ for all entities of <a href="#geolevel">geo_level</a> 'D'.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_pseo">6.17.2. PSEO</h4>
+<h4 id="_pseo">6.18.2. PSEO</h4>
 <div class="paragraph">
 <p>( <a href="label_agg_level_pseo.csv" class="bare">label_agg_level_pseo.csv</a> )</p>
 </div>
@@ -5345,7 +5379,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Thu Jun  6 18:55:36 UTC 2019</p>
+<p>This revision: Fri Jun  7 15:37:57 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -5355,7 +5389,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-06 18:55:36 UTC
+Last updated 2019-06-07 15:37:57 UTC
 </div>
 </div>
 </body>

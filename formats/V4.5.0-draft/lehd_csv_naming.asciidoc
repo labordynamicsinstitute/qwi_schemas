@@ -1,6 +1,6 @@
 = LEHD Public Use  Schema V4.5.0-draft - File and Directory Naming Convention
 Lars Vilhuber <>
-06 June 2019
+07 June 2019
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -224,6 +224,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Thu Jun  6 18:55:33 UTC 2019
+This revision: Fri Jun  7 15:37:54 UTC 2019
 *******************
 
