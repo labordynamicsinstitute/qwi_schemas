@@ -820,8 +820,9 @@ echo "
 == [[statusflags]]Status Flags
 ( link:${arg}[] )
 
-Each status flag in the tables above contains one of the following valid values.
-The values and their interpretation are listed in the table below.
+Most indicators in the LEHD data products have associated status flags. Each status flag in the tables above contains one of the following valid values. The values and their interpretation are listed in the tables below. Unless otherwise specified in this section, a status flag will take the values described in 7.1 Standard Status Flags.
+
+=== Standard Status Flags
 
 [IMPORTANT]
 .Important
@@ -834,6 +835,13 @@ Note: Currently, the J2J and PSEO tables only contain status flags '-1', '1', '5
 |===================================================
 include::$arg[]
 |===================================================
+
+=== IPEDS Count Status Flag
+
+Graduate counts are provided from public use data from the https://nces.ed.gov/ipeds/use-the-data[Integrated Postsecondary Education Data System (IPEDS)]. Counts are linked to graduation cohorts in the PSEO data and included in the PSEOE tables. In a small number of cases, misalignment in programs (CIPCODE) is observed between the IPEDS and PSEO counts. In these cases, the IPEDS counts adjusted to be consistent with those on PSEO, and the count is flagged accordingly.
+
+
+
 ">> $asciifile
 
 

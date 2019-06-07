@@ -109,7 +109,12 @@
 </li>
 </ul>
 </li>
-<li><a href="#_status_flags">7. Status Flags</a></li>
+<li><a href="#_status_flags">7. Status Flags</a>
+<ul class="sectlevel2">
+<li><a href="#_standard_status_flags">7.1. Standard Status Flags</a></li>
+<li><a href="#_ipeds_count_status_flag">7.2. IPEDS Count Status Flag</a></li>
+</ul>
+</li>
 <li><a href="#_metadata">8. Metadata</a>
 <ul class="sectlevel2">
 <li><a href="#_version_metadata_for_qwi_and_j2j_files_version_txt">8.1. Version Metadata for QWI and J2J Files (version.txt)</a></li>
@@ -5036,9 +5041,10 @@ available in the PSEO release will be flagged.</p>
 <p>( <a href="label_flags.csv" class="bare">label_flags.csv</a> )</p>
 </div>
 <div class="paragraph">
-<p>Each status flag in the tables above contains one of the following valid values.
-The values and their interpretation are listed in the table below.</p>
+<p>Most indicators in the LEHD data products have associated status flags. Each status flag in the tables above contains one of the following valid values. The values and their interpretation are listed in the tables below. Unless otherwise specified in this section, a status flag will take the values described in 7.1 Standard Status Flags.</p>
 </div>
+<div class="sect2">
+<h3 id="_standard_status_flags">7.1. Standard Status Flags</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -5108,7 +5114,14 @@ The values and their interpretation are listed in the table below.</p>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_ipeds_count_status_flag">7.2. IPEDS Count Status Flag</h3>
+<div class="paragraph">
+<p>Graduate counts are provided from public use data from the <a href="https://nces.ed.gov/ipeds/use-the-data">Integrated Postsecondary Education Data System (IPEDS)</a>. Counts are linked to graduation cohorts in the PSEO data and included in the PSEOE tables. In a small number of cases, misalignment in programs (CIPCODE) is observed between the IPEDS and PSEO counts. In these cases, the IPEDS counts adjusted to be consistent with those on PSEO, and the count is flagged accordingly.</p>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -5379,7 +5392,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Fri Jun  7 15:49:42 UTC 2019</p>
+<p>This revision: Fri Jun  7 19:24:53 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -5389,7 +5402,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-07 15:49:42 UTC
+Last updated 2019-06-07 19:24:53 UTC
 </div>
 </div>
 </body>
