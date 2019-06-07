@@ -826,7 +826,7 @@ The values and their interpretation are listed in the table below.
 [IMPORTANT]
 .Important
 ==============================================
-Note: Currently, the J2J tables only contain status flags '-1', '1', '5'. Status flags with values 10 or above only appear in online applications, not in CSV files.
+Note: Currently, the J2J and PSEO tables only contain status flags '-1', '1', '5'. Status flags with values 10 or above only appear in online applications, not in CSV files.
 ==============================================
 
 
