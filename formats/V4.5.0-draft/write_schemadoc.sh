@@ -565,14 +565,19 @@ include::$tmp_cip_rows[]
 echo "
 === Grad Cohort
 
-This is a 4-digit number representing the first year of the graduation cohort. The length of the cohort will vary by degree_level as follows:
+This is a 4-digit number representing the first year of the graduation cohort. The number of years in the cohort is reported in the separate grad_cohort_years variable. 
 
-* if degree_level=05, cohort is 3 years
-** e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012)
-* otherwise, cohort is 5 years
-** e.g., grad_cohort=2010 contains graduations years (2010, 2011, 2012, 2013, 2014)
+IMPORTANT: If grad_cohort is 2010 and grad_cohort_years is 3, then the cell includes graduates from (2010, 2011, and 2012).
 
-For tabulations across all cohorts, the grad_cohort will be recorded as 0000.
+When tabulating across all cohorts, the value *0000* will be used for grad_cohort.
+
+=== Grad Cohort Years
+
+This is the number of years in the cohort of reference (see grad_cohort). It varies by degree_level.
+
+IMPORTANT: If degree_level=05, grad_cohort_years=3 (3 year cohorts for bachelor's degrees) otherwise, grad_cohort_years=5 (5 year cohorts for all other degrees).
+
+Tabulations are not done across degree types, so grad_cohort_years will be reported when grad_cohort=0000.
 " >> $asciifile
 
 ################################ Geo formats
