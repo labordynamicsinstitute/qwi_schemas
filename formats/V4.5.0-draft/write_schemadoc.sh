@@ -842,6 +842,7 @@ include::$arg[]
 |===================================================
 
 === IPEDS Count Status Flag
+( link:label_flags_ipeds_count.csv[] )
 
 Graduate counts are provided from public use data from the https://nces.ed.gov/ipeds/use-the-data[Integrated Postsecondary Education Data System (IPEDS)]. Counts are linked to graduation cohorts in the PSEO data and included in the PSEOE tables. In a small number of cases, misalignment in programs (CIPCODE) is observed between the IPEDS and PSEO counts. In these cases, the IPEDS counts adjusted to be consistent with those on PSEO, and the count is flagged accordingly.
 
