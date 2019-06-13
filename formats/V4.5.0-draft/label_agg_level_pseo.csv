@@ -1,9 +1,9 @@
 agg_level_pseo,grad_char,firm_char,cip_level,inst_level,geo_level,ind_level,by_grad_cohort,by_degree_level,pseoe,pseof
-38,Degree Level * Institution ID,,A,I,N,A,0,1,1,0
-40,Degree Level * CIP 2-digit * Institution ID,,2,I,N,A,0,1,0,0
+38,Degree Level * Institution ID,,A,I,N,A,0,1,1,1
+40,Degree Level * CIP 2-digit * Institution ID,,2,I,N,A,0,1,0,1
 42,Degree Level * CIP 4-digit * Institution ID,,4,I,N,A,0,1,1,0
-44,Degree Level * Start Year for Graduation Cohort * Institution ID,,A,I,N,A,1,1,1,0
-46,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,,2,I,N,A,1,1,0,0
+44,Degree Level * Start Year for Graduation Cohort * Institution ID,,A,I,N,A,1,1,1,1
+46,Degree Level * CIP 2-digit * Start Year for Graduation Cohort * Institution ID,,2,I,N,A,1,1,0,1
 48,Degree Level * CIP 4-digit * Start Year for Graduation Cohort * Institution ID,,4,I,N,A,1,1,1,0
 86,Degree Level * Institution ID,NAICS Sector,A,I,N,S,0,1,0,1
 88,Degree Level * CIP 2-digit * Institution ID,NAICS Sector,2,I,N,S,0,1,0,1
