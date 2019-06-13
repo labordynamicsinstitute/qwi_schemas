@@ -567,7 +567,7 @@ echo "
 
 This is a 4-digit number representing the first year of the graduation cohort. The number of years in the cohort is reported in the separate grad_cohort_years variable. 
 
-IMPORTANT: If grad_cohort is 2010 and grad_cohort_years is 3, then the cell includes graduates from (2010, 2011, and 2012).
+If grad_cohort is 2010 and grad_cohort_years is 3, then the cell includes graduates from (2010, 2011, and 2012).
 
 When tabulating across all cohorts, the value *0000* will be used for grad_cohort.
 
@@ -575,7 +575,7 @@ When tabulating across all cohorts, the value *0000* will be used for grad_cohor
 
 This is the number of years in the cohort of reference (see grad_cohort). It varies by degree_level.
 
-IMPORTANT: If degree_level=05, grad_cohort_years=3 (3 year cohorts for bachelor's degrees) otherwise, grad_cohort_years=5 (5 year cohorts for all other degrees).
+If degree_level=05, grad_cohort_years=3 (3 year cohorts for bachelor's degrees) otherwise, grad_cohort_years=5 (5 year cohorts for all other degrees).
 
 Tabulations are not done across degree types, so grad_cohort_years will be reported when grad_cohort=0000.
 " >> $asciifile
