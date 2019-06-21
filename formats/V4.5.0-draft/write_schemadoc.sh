@@ -117,7 +117,7 @@ This version supersedes ${previousvintage}, for files released as of R2019Q1.
 
 Basic Schema
 ------------
-Each data file is structured as a CSV file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>. In some cases, visually formatted Excel (XLSX) files are also available,  containing the same information together with header lines  on each sheet.
+Each data file is structured as a CSV (comma separated values) file. The first columns contain <<identifiers>>, subsequent columns contain <<indicators>>, followed by <<statusflags,status flags>>. In some cases, visually formatted Excel (XLSX) files are also available, containing the same information together with header lines on each sheet. Excel versions may contain labels following each identifier variable, and data may be abridged from the CSV due to size limitations.
 
 === Generic structure
 
