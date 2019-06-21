@@ -814,8 +814,17 @@ Variable,Description
 agg_level_pseo, index representing level of aggregation reported on a given record
 grad_char,Characteristics of graduate and program
 firm_char,Characterstics of place of employment
-pseo,Flag: aggregation level available on PSEO
+pseoe,Flag: aggregation level available on PSEO Earnings
+pseoe,Flag: aggregation level available on PSEO Flows
 |===================================================
+
+The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
+
+- <<#_institution_levels,inst_levels>> - institution level of table
+- <<geolevel,geo_level>> - geographic level of table
+- <<ind_level,ind_level>> - industry level of table
+- by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
+
 
 [width=\"90%\",format=\"csv\",cols=\"^1,2*<3,8*^1\",options=\"header\"]
 |===================================================
