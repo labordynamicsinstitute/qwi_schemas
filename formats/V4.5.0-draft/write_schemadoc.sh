@@ -880,7 +880,7 @@ echo "
 == [[metadata]]Metadata
 ( link:${arg}[] )
 
-=== [[metadataqwij2j]]Version Metadata for QWI and J2J Files (version.txt)
+=== [[metadataqwij2j]]Version Metadata for QWI J2J, and PSEO Files (version.txt)
 
 Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
 --------------------------------
@@ -910,6 +910,13 @@ tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the follow
 $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
 Some J2J metadata may contain multiple lines, as necessary.
+
+The PSEO metadata will contain separate lines for the PSEOE and PSEOF tables. The year range for PSEO tables is based on the <<#_grad_cohort>>, the start year of the graduation cohort. An example for Colorado institutions has the following content:
+
+--------------------------------
+PSEOE CO 08 2001-2015 V4.5.0 2019Q1 pseopu_co_20190617_0839
+PSEOF CO 08 2001-2015 V4.5.0 2019Q1 pseopu_co_20190617_0839
+--------------------------------
 
 === [[metadataj2jod]]Additional Metadata for J2JOD Files (avail.csv)
 (link:variables_avail.csv[])
