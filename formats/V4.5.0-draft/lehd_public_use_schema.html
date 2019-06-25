@@ -16,7 +16,7 @@
 <div class="details">
 <span id="author" class="author">Lars Vilhuber</span><br>
 <span id="email" class="email"><a href="mailto:ces.qwi.feedback@census.gov">ces.qwi.feedback@census.gov</a></span><br>
-<span id="revdate">21 June 2019</span>
+<span id="revdate">25 June 2019</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -118,7 +118,7 @@
 </li>
 <li><a href="#_metadata">8. Metadata</a>
 <ul class="sectlevel2">
-<li><a href="#_version_metadata_for_qwi_and_j2j_files_version_txt">8.1. Version Metadata for QWI and J2J Files (version.txt)</a></li>
+<li><a href="#_version_metadata_for_qwi_j2j_and_pseo_files_version_txt">8.1. Version Metadata for QWI J2J, and PSEO Files (version.txt)</a></li>
 <li><a href="#_additional_metadata_for_j2jod_files_avail_csv">8.2. Additional Metadata for J2JOD Files (avail.csv)</a></li>
 <li><a href="#_metadata_on_indicator_availability">8.3. Metadata on Indicator Availability</a></li>
 </ul>
@@ -5179,7 +5179,7 @@ available in the PSEO release will be flagged.</p>
 <p>( <a href="variables_version.csv" class="bare">variables_version.csv</a> )</p>
 </div>
 <div class="sect2">
-<h3 id="_version_metadata_for_qwi_and_j2j_files_version_txt">8.1. <a id="metadataqwij2j"></a>Version Metadata for QWI and J2J Files (version.txt)</h3>
+<h3 id="_version_metadata_for_qwi_j2j_and_pseo_files_version_txt">8.1. <a id="metadataqwij2j"></a>Version Metadata for QWI J2J, and PSEO Files (version.txt)</h3>
 <div class="paragraph">
 <p>Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:</p>
 </div>
@@ -5230,12 +5230,12 @@ available in the PSEO release will be flagged.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">start</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">yyyy:q</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yyyy:q(QWI, J2J) yyyy(PSEO)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Start year and quarter</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">end</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">yyyy:q</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yyyy:q(QWI, J2J) yyyy(PSEO)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">End year and quarter</p></td>
 </tr>
 <tr>
@@ -5279,6 +5279,15 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 </div>
 <div class="paragraph">
 <p>Some J2J metadata may contain multiple lines, as necessary.</p>
+</div>
+<div class="paragraph">
+<p>The PSEO metadata will contain separate lines for the PSEOE and PSEOF tables. The year range for PSEO tables is based on the <a href="#_grad_cohort">Grad Cohort</a>, the start year of the graduation cohort. An example for Colorado institutions has the following content:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>PSEOE CO 08 2001-2015 V4.5.0 2019Q1 pseopu_co_20190617_0839
+PSEOF CO 08 2001-2015 V4.5.0 2019Q1 pseopu_co_20190617_0839</pre>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -5440,7 +5449,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>This revision: Fri Jun 21 21:18:25 UTC 2019</p>
+<p>This revision: Tue Jun 25 20:00:22 UTC 2019</p>
 </div>
 </div>
 </div>
@@ -5450,7 +5459,7 @@ tabulations (obtained from <a href="https://lehd.ces.census.gov/data/j2j/latest_
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-21 21:18:25 UTC
+Last updated 2019-06-25 20:00:22 UTC
 </div>
 </div>
 </body>
