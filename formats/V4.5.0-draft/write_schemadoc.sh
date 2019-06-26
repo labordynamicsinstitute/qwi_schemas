@@ -159,7 +159,7 @@ do
 Each of the released files has a set of variables uniquely identifying records ('Identifiers'). The table below relates the set of identifier specifications
 to the released files. The actual CSV files containing the identifiers for each set are listed after this table. Each identifier can take on a specified list of values, documented in the section on <<catvars,Categorical Variables>>.
 
-[width=\"80%\",format=\"csv\",cols=\"<3,6*^1\",options=\"header\"]
+[width=\"80%\",format=\"csv\",cols=\"<3,8*^1\",options=\"header\"]
 |===================================================
 include::$arg[]
 |===================================================
