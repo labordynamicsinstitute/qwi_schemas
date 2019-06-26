@@ -194,7 +194,7 @@ include::variables_j2jod.csv[]
 ( link:variables_pseoe.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.LeODai[]
+include::/documents/formats/V4.5.0-draft/tmp.JcKfhO[]
 |===================================================
 <<<
 
@@ -203,7 +203,7 @@ include::/documents/formats/V4.5.0-draft/tmp.LeODai[]
 ( link:variables_pseof.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.KnnBHg[]
+include::/documents/formats/V4.5.0-draft/tmp.BildFd[]
 |===================================================
 <<<
 
@@ -464,7 +464,7 @@ This list has been supplemented with records for regional groupings of instituti
 
 [width="60%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.oNibkE[]
+include::/documents/formats/V4.5.0-draft/tmp.ppnfAg[]
 |===================================================
 
 
@@ -500,7 +500,7 @@ In 4-digit CIP tabulations, select degree levels are collapsed to the 2-Digit CI
 
 [width="90%",format="csv",cols="<1,<3,<6",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.mkpLgm[]
+include::/documents/formats/V4.5.0-draft/tmp.cEkjeC[]
 |===================================================
 
 
@@ -542,7 +542,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 [width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.LgKeDI[]
+include::/documents/formats/V4.5.0-draft/tmp.lCJGLF[]
 |===================================================
 
 
@@ -576,7 +576,7 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 [width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.jlJhOa[]
+include::/documents/formats/V4.5.0-draft/tmp.donGmL[]
 |===================================================
 
 
@@ -679,7 +679,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.dOohLm[]
+include::/documents/formats/V4.5.0-draft/tmp.OIAHHL[]
 |===================================================
 
 
@@ -718,7 +718,7 @@ The characteristics available on an aggregation level are repeated using a serie
 
 [width="90%",format="csv",cols="^1,2*<3,8*^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.mECBdM[]
+include::/documents/formats/V4.5.0-draft/tmp.beFPlN[]
 |===================================================
 
 
@@ -760,7 +760,7 @@ include::label_flags_ipeds_count.csv[]
 == [[metadata]]Metadata
 ( link:variables_version.csv[] )
 
-=== [[metadataqwij2j]]Version Metadata for QWI J2J, and PSEO Files (version.txt)
+=== [[metadataqwij2j]]Version Metadata for QWI, J2J, and PSEO Files (version.txt)
 
 Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
 --------------------------------
@@ -842,6 +842,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Wed Jun 26 15:53:40 UTC 2019
+This revision: Wed Jun 26 15:58:50 UTC 2019
 *******************
 

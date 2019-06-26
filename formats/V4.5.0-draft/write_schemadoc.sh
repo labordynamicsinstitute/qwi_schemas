@@ -879,7 +879,7 @@ echo "
 == [[metadata]]Metadata
 ( link:${arg}[] )
 
-=== [[metadataqwij2j]]Version Metadata for QWI J2J, and PSEO Files (version.txt)
+=== [[metadataqwij2j]]Version Metadata for QWI, J2J, and PSEO Files (version.txt)
 
 Each data release is accompanied by one or more files with metadata on geographic and temporal coverage, in a compact notation. These files follow the following naming convention:
 --------------------------------
