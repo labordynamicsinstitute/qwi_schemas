@@ -888,7 +888,7 @@ $(awk -F, ' NR == 5 { print $1 }' naming_convention.csv  )
 where each component is described in more detail in link:lehd_csv_naming{ext-relative}[].
 
 The contents contains the following elements:
-[width=\"90%\",format=\"csv\",cols=\"<1,<2,<5\",options=\"header\"]
+[width=\"90%\",format=\"csv\",cols=\"<1,<3,<4\",options=\"header\"]
 |===================================================
 include::tmp_$arg[]
 |===================================================
