@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.5.0-draft
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-26 June 2019
+09 July 2019
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -194,7 +194,7 @@ include::variables_j2jod.csv[]
 ( link:variables_pseoe.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.cCaKMb[]
+include::/documents/formats/V4.5.0-draft/tmp.kDBhgE[]
 |===================================================
 <<<
 
@@ -203,7 +203,7 @@ include::/documents/formats/V4.5.0-draft/tmp.cCaKMb[]
 ( link:variables_pseof.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.JkLAbE[]
+include::/documents/formats/V4.5.0-draft/tmp.KfeCnh[]
 |===================================================
 <<<
 
@@ -464,7 +464,7 @@ This list has been supplemented with records for regional groupings of instituti
 
 [width="60%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.flOeeD[]
+include::/documents/formats/V4.5.0-draft/tmp.padJMF[]
 |===================================================
 
 
@@ -500,7 +500,7 @@ In 4-digit CIP tabulations, select degree levels are collapsed to the 2-Digit CI
 
 [width="90%",format="csv",cols="<1,<3,<6",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.enaAcg[]
+include::/documents/formats/V4.5.0-draft/tmp.CFPBfp[]
 |===================================================
 
 
@@ -542,7 +542,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 [width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.hHjGGE[]
+include::/documents/formats/V4.5.0-draft/tmp.DLlEkh[]
 |===================================================
 
 
@@ -576,7 +576,7 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 [width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.fEAJaI[]
+include::/documents/formats/V4.5.0-draft/tmp.aEhNiK[]
 |===================================================
 
 
@@ -679,7 +679,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.hAjGMD[]
+include::/documents/formats/V4.5.0-draft/tmp.DEiAgA[]
 |===================================================
 
 
@@ -718,7 +718,7 @@ The characteristics available on an aggregation level are repeated using a serie
 
 [width="90%",format="csv",cols="^1,2*<3,8*^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.HnEgbP[]
+include::/documents/formats/V4.5.0-draft/tmp.AgIiJA[]
 |===================================================
 
 
@@ -842,6 +842,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Wed Jun 26 22:50:12 UTC 2019
+This revision: Tue Jul  9 20:07:55 UTC 2019
 *******************
 
