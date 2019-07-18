@@ -766,6 +766,8 @@ include::variables_agg_level.csv[]
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
 
+- <<_cip_levels,cip_level>> - degree field reporting level of table
+- <<_institution_levels,inst_level>> - institution reporting level of table
 - <<geolevel,geo_level>> - geographic level of table
 - <<ind_level,ind_level>> - industry level of table
 - by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
@@ -814,7 +816,7 @@ agg_level_pseo, index representing level of aggregation reported on a given reco
 grad_char,Characteristics of graduate and program
 firm_char,Characterstics of place of employment
 pseoe,Flag: aggregation level available on PSEO Earnings
-pseoe,Flag: aggregation level available on PSEO Flows
+pseof,Flag: aggregation level available on PSEO Flows
 |===================================================
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
