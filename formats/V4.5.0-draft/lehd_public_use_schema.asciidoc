@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.5.0-draft
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-09 July 2019
+18 July 2019
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -194,7 +194,7 @@ include::variables_j2jod.csv[]
 ( link:variables_pseoe.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.kDBhgE[]
+include::/documents/formats/V4.5.0-draft/tmp.fAcKKo[]
 |===================================================
 <<<
 
@@ -203,7 +203,7 @@ include::/documents/formats/V4.5.0-draft/tmp.kDBhgE[]
 ( link:variables_pseof.csv[] )
 [width="95%",format="csv",cols="<1,<3,<5,2*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.KfeCnh[]
+include::/documents/formats/V4.5.0-draft/tmp.lmggJC[]
 |===================================================
 <<<
 
@@ -464,7 +464,7 @@ This list has been supplemented with records for regional groupings of instituti
 
 [width="60%",format="csv",cols="^1,<5,^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.padJMF[]
+include::/documents/formats/V4.5.0-draft/tmp.HeJGjB[]
 |===================================================
 
 
@@ -500,7 +500,7 @@ In 4-digit CIP tabulations, select degree levels are collapsed to the 2-Digit CI
 
 [width="90%",format="csv",cols="<1,<3,<6",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.CFPBfp[]
+include::/documents/formats/V4.5.0-draft/tmp.JcBkKk[]
 |===================================================
 
 
@@ -542,7 +542,7 @@ Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate docume
 
 [width="90%",format="csv",cols="^1,<3,<8",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.DLlEkh[]
+include::/documents/formats/V4.5.0-draft/tmp.HMJlge[]
 |===================================================
 
 
@@ -576,7 +576,7 @@ Some parts of the schema use (lower or upper-case) state postal codes.
 
 [width="40%",format="csv",cols="^1,<2",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.aEhNiK[]
+include::/documents/formats/V4.5.0-draft/tmp.dDDcnM[]
 |===================================================
 
 
@@ -670,6 +670,8 @@ include::variables_agg_level.csv[]
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
 
+- <<_cip_levels,cip_level>> - degree field reporting level of table
+- <<_institution_levels,inst_level>> - institution reporting level of table
 - <<geolevel,geo_level>> - geographic level of table
 - <<ind_level,ind_level>> - industry level of table
 - by_ variables - flags indicating other dimensions reported, including ownership, demographics, firm age and size.
@@ -679,7 +681,7 @@ A shortened representation of the file is provided below, the complete file is a
 
 [width="90%",format="csv",cols=">1,3*<2,5*<1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.DEiAgA[]
+include::/documents/formats/V4.5.0-draft/tmp.GFghpB[]
 |===================================================
 
 
@@ -705,7 +707,7 @@ agg_level_pseo, index representing level of aggregation reported on a given reco
 grad_char,Characteristics of graduate and program
 firm_char,Characterstics of place of employment
 pseoe,Flag: aggregation level available on PSEO Earnings
-pseoe,Flag: aggregation level available on PSEO Flows
+pseof,Flag: aggregation level available on PSEO Flows
 |===================================================
 
 The characteristics available on an aggregation level are repeated using a series of flags following the standard schema:
@@ -718,7 +720,7 @@ The characteristics available on an aggregation level are repeated using a serie
 
 [width="90%",format="csv",cols="^1,2*<3,8*^1",options="header"]
 |===================================================
-include::/documents/formats/V4.5.0-draft/tmp.AgIiJA[]
+include::/documents/formats/V4.5.0-draft/tmp.oLdbHj[]
 |===================================================
 
 
@@ -842,6 +844,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Tue Jul  9 20:07:55 UTC 2019
+This revision: Thu Jul 18 20:30:50 UTC 2019
 *******************
 
