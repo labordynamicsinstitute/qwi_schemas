@@ -5,4 +5,3 @@ M,"Metropolitan/Micropolitan (state part)","Identifies 7-digit code constructed 
 N,"National (50 States + DC)","Custom code using '00' to denote national scope",,
 S,"States","Identifies 2-digit FIPS/ANSI codes","https://www.census.gov/geo/reference/ansi_statetables.html","U.S. Census Bureau, Population Division; American National Standards Institute (ANSI) Codes for States, the District of Columbia, Puerto Rico, and the Insular Areas of the United State"
 W,"Workforce Investment Areas","2-digit state FIPS code and the 6-digit WIA identifier provided by LED State Partners",,
-
