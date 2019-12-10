@@ -3283,7 +3283,7 @@
 10380,"Aguadilla-Isabela, PR",B
 10420,"Akron, OH",B
 10500,"Albany, GA",B
-10540,"Albany, OR",B
+10540,"Albany-Lebanon, OR",B
 10580,"Albany-Schenectady-Troy, NY",B
 10740,"Albuquerque, NM",B
 10780,"Alexandria, LA",B
@@ -3294,17 +3294,17 @@
 11180,"Ames, IA",B
 11260,"Anchorage, AK",B
 11460,"Ann Arbor, MI",B
-11500,"Anniston-Oxford-Jacksonville, AL",B
+11500,"Anniston-Oxford, AL",B
 11540,"Appleton, WI",B
 11640,"Arecibo, PR",B
 11700,"Asheville, NC",B
 11999,"Not in metropolitan area, DC",B
 12020,"Athens-Clarke County, GA",B
-12060,"Atlanta-Sandy Springs-Roswell, GA",B
+12060,"Atlanta-Sandy Springs-Alpharetta, GA",B
 12100,"Atlantic City-Hammonton, NJ",B
 12220,"Auburn-Opelika, AL",B
 12260,"Augusta-Richmond County, GA-SC",B
-12420,"Austin-Round Rock, TX",B
+12420,"Austin-Round Rock-Georgetown, TX",B
 12540,"Bakersfield, CA",B
 12580,"Baltimore-Columbia-Towson, MD",B
 12620,"Bangor, ME",B
@@ -3316,12 +3316,12 @@
 13140,"Beaumont-Port Arthur, TX",B
 13220,"Beckley, WV",B
 13380,"Bellingham, WA",B
-13460,"Bend-Redmond, OR",B
+13460,"Bend, OR",B
 13740,"Billings, MT",B
 13780,"Binghamton, NY",B
 13820,"Birmingham-Hoover, AL",B
 13900,"Bismarck, ND",B
-13980,"Blacksburg-Christiansburg-Radford, VA",B
+13980,"Blacksburg-Christiansburg, VA",B
 13999,"Not in metropolitan area, GA",B
 14010,"Bloomington, IL",B
 14020,"Bloomington, IN",B
@@ -3330,11 +3330,11 @@
 14460,"Boston-Cambridge-Newton, MA-NH",B
 14500,"Boulder, CO",B
 14540,"Bowling Green, KY",B
-14740,"Bremerton-Silverdale, WA",B
+14740,"Bremerton-Silverdale-Port Orchard, WA",B
 14860,"Bridgeport-Stamford-Norwalk, CT",B
 15180,"Brownsville-Harlingen, TX",B
 15260,"Brunswick, GA",B
-15380,"Buffalo-Cheektowaga-Niagara Falls, NY",B
+15380,"Buffalo-Cheektowaga, NY",B
 15500,"Burlington, NC",B
 15540,"Burlington-South Burlington, VT",B
 15680,"California-Lexington Park, MD",B
@@ -3380,7 +3380,7 @@
 19180,"Danville, IL",B
 19300,"Daphne-Fairhope-Foley, AL",B
 19340,"Davenport-Moline-Rock Island, IA-IL",B
-19380,"Dayton, OH",B
+19430,"Dayton-Kettering, OH",B
 19460,"Decatur, AL",B
 19500,"Decatur, IL",B
 19660,"Deltona-Daytona Beach-Ormond Beach, FL",B
@@ -3403,14 +3403,14 @@
 21340,"El Paso, TX",B
 21420,"Enid, OK",B
 21500,"Erie, PA",B
-21660,"Eugene, OR",B
+21660,"Eugene-Springfield, OR",B
 21780,"Evansville, IN-KY",B
 21820,"Fairbanks, AK",B
 21999,"Not in metropolitan area, KY",B
 22020,"Fargo, ND-MN",B
 22140,"Farmington, NM",B
 22180,"Fayetteville, NC",B
-22220,"Fayetteville-Springdale-Rogers, AR-MO",B
+22220,"Fayetteville-Springdale-Rogers, AR",B
 22380,"Flagstaff, AZ",B
 22420,"Flint, MI",B
 22500,"Florence, SC",B
@@ -3431,26 +3431,26 @@
 24220,"Grand Forks, ND-MN",B
 24260,"Grand Island, NE",B
 24300,"Grand Junction, CO",B
-24340,"Grand Rapids-Wyoming, MI",B
+24340,"Grand Rapids-Kentwood, MI",B
 24420,"Grants Pass, OR",B
 24500,"Great Falls, MT",B
 24540,"Greeley, CO",B
 24580,"Green Bay, WI",B
 24660,"Greensboro-High Point, NC",B
 24780,"Greenville, NC",B
-24860,"Greenville-Anderson-Mauldin, SC",B
+24860,"Greenville-Anderson, SC",B
 24999,"Not in metropolitan area, MD",B
 25020,"Guayama, PR",B
-25060,"Gulfport-Biloxi-Pascagoula, MS",B
+25060,"Gulfport-Biloxi, MS",B
 25180,"Hagerstown-Martinsburg, MD-WV",B
 25220,"Hammond, LA",B
 25260,"Hanford-Corcoran, CA",B
 25420,"Harrisburg-Carlisle, PA",B
 25500,"Harrisonburg, VA",B
-25540,"Hartford-West Hartford-East Hartford, CT",B
+25540,"Hartford-East Hartford-Middletown, CT",B
 25620,"Hattiesburg, MS",B
 25860,"Hickory-Lenoir-Morganton, NC",B
-25940,"Hilton Head Island-Bluffton-Beaufort, SC",B
+25940,"Hilton Head Island-Bluffton, SC",B
 25980,"Hinesville, GA",B
 25999,"Not in metropolitan area, MA",B
 26140,"Homosassa Springs, FL",B
@@ -3482,7 +3482,7 @@
 28140,"Kansas City, MO-KS",B
 28420,"Kennewick-Richland, WA",B
 28660,"Killeen-Temple, TX",B
-28700,"Kingsport-Bristol-Bristol, TN-VA",B
+28700,"Kingsport-Bristol, TN-VA",B
 28740,"Kingston, NY",B
 28940,"Knoxville, TN",B
 28999,"Not in metropolitan area, MS",B
@@ -3521,7 +3521,7 @@
 31540,"Madison, WI",B
 31700,"Manchester-Nashua, NH",B
 31740,"Manhattan, KS",B
-31860,"Mankato-North Mankato, MN",B
+31860,"Mankato, MN",B
 31900,"Mansfield, OH",B
 31999,"Not in metropolitan area, NE",B
 32420,"Mayagüez, PR",B
@@ -3530,11 +3530,11 @@
 32820,"Memphis, TN-MS-AR",B
 32900,"Merced, CA",B
 32999,"Not in metropolitan area, NV",B
-33100,"Miami-Fort Lauderdale-West Palm Beach, FL",B
+33100,"Miami-Fort Lauderdale-Pompano Beach, FL",B
 33140,"Michigan City-La Porte, IN",B
 33220,"Midland, MI",B
 33260,"Midland, TX",B
-33340,"Milwaukee-Waukesha-West Allis, WI",B
+33340,"Milwaukee-Waukesha, WI",B
 33460,"Minneapolis-St. Paul-Bloomington, MN-WI",B
 33540,"Missoula, MT",B
 33660,"Mobile, AL",B
@@ -3550,14 +3550,14 @@
 34740,"Muskegon, MI",B
 34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",B
 34900,"Napa, CA",B
-34940,"Naples-Immokalee-Marco Island, FL",B
+34940,"Naples-Marco Island, FL",B
 34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",B
 34999,"Not in metropolitan area, NJ",B
 35100,"New Bern, NC",B
 35300,"New Haven-Milford, CT",B
 35380,"New Orleans-Metairie, LA",B
 35620,"New York-Newark-Jersey City, NY-NJ-PA",B
-35660,"Niles-Benton Harbor, MI",B
+35660,"Niles, MI",B
 35840,"North Port-Sarasota-Bradenton, FL",B
 35980,"Norwich-New London, CT",B
 35999,"Not in metropolitan area, NM",B
@@ -3566,7 +3566,7 @@
 36220,"Odessa, TX",B
 36260,"Ogden-Clearfield, UT",B
 36420,"Oklahoma City, OK",B
-36500,"Olympia-Tumwater, WA",B
+36500,"Olympia-Lacey-Tumwater, WA",B
 36540,"Omaha-Council Bluffs, NE-IA",B
 36740,"Orlando-Kissimmee-Sanford, FL",B
 36780,"Oshkosh-Neenah, WI",B
@@ -3580,7 +3580,7 @@
 37900,"Peoria, IL",B
 37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",B
 37999,"Not in metropolitan area, NC",B
-38060,"Phoenix-Mesa-Scottsdale, AZ",B
+38060,"Phoenix-Mesa-Chandler, AZ",B
 38220,"Pine Bluff, AR",B
 38300,"Pittsburgh, PA",B
 38340,"Pittsfield, MA",B
@@ -3590,13 +3590,14 @@
 38900,"Portland-Vancouver-Hillsboro, OR-WA",B
 38940,"Port St. Lucie, FL",B
 38999,"Not in metropolitan area, ND",B
-39140,"Prescott, AZ",B
+39100,"Poughkeepsie-Newburgh-Middletown, NY",B
+39150,"Prescott Valley-Prescott, AZ",B
 39300,"Providence-Warwick, RI-MA",B
 39340,"Provo-Orem, UT",B
 39380,"Pueblo, CO",B
 39460,"Punta Gorda, FL",B
 39540,"Racine, WI",B
-39580,"Raleigh, NC",B
+39580,"Raleigh-Cary, NC",B
 39660,"Rapid City, SD",B
 39740,"Reading, PA",B
 39820,"Redding, CA",B
@@ -3610,7 +3611,7 @@
 40420,"Rockford, IL",B
 40580,"Rocky Mount, NC",B
 40660,"Rome, GA",B
-40900,"Sacramento--Roseville--Arden-Arcade, CA",B
+40900,"Sacramento-Roseville-Folsom, CA",B
 40980,"Saginaw, MI",B
 40999,"Not in metropolitan area, OK",B
 41060,"St. Cloud, MN",B
@@ -3623,22 +3624,22 @@
 41620,"Salt Lake City, UT",B
 41660,"San Angelo, TX",B
 41700,"San Antonio-New Braunfels, TX",B
-41740,"San Diego-Carlsbad, CA",B
-41860,"San Francisco-Oakland-Hayward, CA",B
+41740,"San Diego-Chula Vista-Carlsbad, CA",B
+41860,"San Francisco-Oakland-Berkeley, CA",B
 41900,"San Germán, PR",B
 41940,"San Jose-Sunnyvale-Santa Clara, CA",B
-41980,"San Juan-Carolina-Caguas, PR",B
+41980,"San Juan-Bayamón-Caguas, PR",B
 41999,"Not in metropolitan area, OR",B
-42020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA",B
+42020,"San Luis Obispo-Paso Robles, CA",B
 42100,"Santa Cruz-Watsonville, CA",B
 42140,"Santa Fe, NM",B
 42200,"Santa Maria-Santa Barbara, CA",B
-42220,"Santa Rosa, CA",B
+42220,"Santa Rosa-Petaluma, CA",B
 42340,"Savannah, GA",B
-42540,"Scranton--Wilkes-Barre--Hazleton, PA",B
+42540,"Scranton--Wilkes-Barre, PA",B
 42660,"Seattle-Tacoma-Bellevue, WA",B
 42680,"Sebastian-Vero Beach, FL",B
-42700,"Sebring, FL",B
+42700,"Sebring-Avon Park, FL",B
 42999,"Not in metropolitan area, PA",B
 43100,"Sheboygan, WI",B
 43300,"Sherman-Denison, TX",B
@@ -3654,8 +3655,8 @@
 44180,"Springfield, MO",B
 44220,"Springfield, OH",B
 44300,"State College, PA",B
-44420,"Staunton-Waynesboro, VA",B
-44700,"Stockton-Lodi, CA",B
+44420,"Staunton, VA",B
+44700,"Stockton, CA",B
 44940,"Sumter, SC",B
 44999,"Not in metropolitan area, RI",B
 45060,"Syracuse, NY",B
@@ -3666,7 +3667,7 @@
 45540,"The Villages, FL",B
 45780,"Toledo, OH",B
 45820,"Topeka, KS",B
-45940,"Trenton, NJ",B
+45940,"Trenton-Princeton, NJ",B
 45999,"Not in metropolitan area, SC",B
 46060,"Tucson, AZ",B
 46140,"Tulsa, OK",B
@@ -3676,12 +3677,12 @@
 46520,"Urban Honolulu, HI",B
 46540,"Utica-Rome, NY",B
 46660,"Valdosta, GA",B
-46700,"Vallejo-Fairfield, CA",B
+46700,"Vallejo, CA",B
 46999,"Not in metropolitan area, SD",B
 47020,"Victoria, TX",B
 47220,"Vineland-Bridgeton, NJ",B
 47260,"Virginia Beach-Norfolk-Newport News, VA-NC",B
-47300,"Visalia-Porterville, CA",B
+47300,"Visalia, CA",B
 47380,"Waco, TX",B
 47460,"Walla Walla, WA",B
 47580,"Warner Robins, GA",B
@@ -3689,7 +3690,7 @@
 47940,"Waterloo-Cedar Falls, IA",B
 47999,"Not in metropolitan area, TN",B
 48060,"Watertown-Fort Drum, NY",B
-48140,"Wausau, WI",B
+48140,"Wausau-Weston, WI",B
 48260,"Weirton-Steubenville, WV-OH",B
 48300,"Wenatchee, WA",B
 48540,"Wheeling, WV-OH",B
@@ -3702,6 +3703,7 @@
 49180,"Winston-Salem, NC",B
 49340,"Worcester, MA-CT",B
 49420,"Yakima, WA",B
+49500,"Yauco, PR",B
 49620,"York-Hanover, PA",B
 49660,"Youngstown-Warren-Boardman, OH-PA",B
 49700,"Yuba City, CA",B
@@ -3717,7 +3719,7 @@
 78999,"Not in metropolitan area, VI",B
 0110700,"Albertville, AL",M
 0110760,"Alexander City, AL",M
-0111500,"Anniston-Oxford-Jacksonville, AL",M
+0111500,"Anniston-Oxford, AL",M
 0112120,"Atmore, AL",M
 0112220,"Auburn-Opelika, AL",M
 0113820,"Birmingham-Hoover, AL",M
@@ -3732,6 +3734,8 @@
 0122840,"Fort Payne, AL",M
 0123460,"Gadsden, AL",M
 0126620,"Huntsville, AL",M
+0127530,"Jasper, AL",M
+0129300,"LaGrange, GA-AL (AL part)",M
 0133660,"Mobile, AL",M
 0133860,"Montgomery, AL",M
 0137120,"Ozark, AL",M
@@ -3740,7 +3744,6 @@
 0145180,"Talladega-Sylacauga, AL",M
 0145980,"Troy, AL",M
 0146220,"Tuscaloosa, AL",M
-0146740,"Valley, AL",M
 0199999,"Nonmetropolitan, nonmicropolitan, AL",M
 0211260,"Anchorage, AK",M
 0221820,"Fairbanks, AK",M
@@ -3751,8 +3754,8 @@
 0429420,"Lake Havasu City-Kingman, AZ",M
 0435700,"Nogales, AZ",M
 0437740,"Payson, AZ",M
-0438060,"Phoenix-Mesa-Scottsdale, AZ",M
-0439140,"Prescott, AZ",M
+0438060,"Phoenix-Mesa-Chandler, AZ",M
+0439150,"Prescott Valley-Prescott, AZ",M
 0440940,"Safford, AZ",M
 0443320,"Show Low, AZ",M
 0443420,"Sierra Vista-Douglas, AZ",M
@@ -3764,7 +3767,7 @@
 0514180,"Blytheville, AR",M
 0515780,"Camden, AR",M
 0520980,"El Dorado, AR",M
-0522220,"Fayetteville-Springdale-Rogers, AR-MO (AR part)",M
+0522220,"Fayetteville-Springdale-Rogers, AR",M
 0522620,"Forrest City, AR",M
 0522900,"Fort Smith, AR-OK (AR part)",M
 0525460,"Harrison, AR",M
@@ -3788,7 +3791,7 @@
 0617340,"Clearlake, CA",M
 0618860,"Crescent City, CA",M
 0620940,"El Centro, CA",M
-0621700,"Eureka-Arcata-Fortuna, CA",M
+0621700,"Eureka-Arcata, CA",M
 0623420,"Fresno, CA",M
 0625260,"Hanford-Corcoran, CA",M
 0631080,"Los Angeles-Long Beach-Anaheim, CA",M
@@ -3800,22 +3803,22 @@
 0639780,"Red Bluff, CA",M
 0639820,"Redding, CA",M
 0640140,"Riverside-San Bernardino-Ontario, CA",M
-0640900,"Sacramento--Roseville--Arden-Arcade, CA",M
+0640900,"Sacramento-Roseville-Folsom, CA",M
 0641500,"Salinas, CA",M
-0641740,"San Diego-Carlsbad, CA",M
-0641860,"San Francisco-Oakland-Hayward, CA",M
+0641740,"San Diego-Chula Vista-Carlsbad, CA",M
+0641860,"San Francisco-Oakland-Berkeley, CA",M
 0641940,"San Jose-Sunnyvale-Santa Clara, CA",M
-0642020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA",M
+0642020,"San Luis Obispo-Paso Robles, CA",M
 0642100,"Santa Cruz-Watsonville, CA",M
 0642200,"Santa Maria-Santa Barbara, CA",M
-0642220,"Santa Rosa, CA",M
+0642220,"Santa Rosa-Petaluma, CA",M
 0643760,"Sonora, CA",M
-0644700,"Stockton-Lodi, CA",M
+0644700,"Stockton, CA",M
 0645000,"Susanville, CA",M
 0646020,"Truckee-Grass Valley, CA",M
 0646380,"Ukiah, CA",M
-0646700,"Vallejo-Fairfield, CA",M
-0647300,"Visalia-Porterville, CA",M
+0646700,"Vallejo, CA",M
+0647300,"Visalia, CA",M
 0649700,"Yuba City, CA",M
 0699999,"Nonmetropolitan, nonmicropolitan, CA",M
 0814500,"Boulder, CO",M
@@ -3837,7 +3840,7 @@
 0844540,"Sterling, CO",M
 0899999,"Nonmetropolitan, nonmicropolitan, CO",M
 0914860,"Bridgeport-Stamford-Norwalk, CT",M
-0925540,"Hartford-West Hartford-East Hartford, CT",M
+0925540,"Hartford-East Hartford-Middletown, CT",M
 0935300,"New Haven-Milford, CT",M
 0935980,"Norwich-New London, CT",M
 0945860,"Torrington, CT",M
@@ -3860,8 +3863,8 @@
 1228580,"Key West, FL",M
 1229380,"Lake City, FL",M
 1229460,"Lakeland-Winter Haven, FL",M
-1233100,"Miami-Fort Lauderdale-West Palm Beach, FL",M
-1234940,"Naples-Immokalee-Marco Island, FL",M
+1233100,"Miami-Fort Lauderdale-Pompano Beach, FL",M
+1234940,"Naples-Marco Island, FL",M
 1235840,"North Port-Sarasota-Bradenton, FL",M
 1236100,"Ocala, FL",M
 1236380,"Okeechobee, FL",M
@@ -3873,7 +3876,7 @@
 1238940,"Port St. Lucie, FL",M
 1239460,"Punta Gorda, FL",M
 1242680,"Sebastian-Vero Beach, FL",M
-1242700,"Sebring, FL",M
+1242700,"Sebring-Avon Park, FL",M
 1245220,"Tallahassee, FL",M
 1245300,"Tampa-St. Petersburg-Clearwater, FL",M
 1245540,"The Villages, FL",M
@@ -3882,7 +3885,7 @@
 1310500,"Albany, GA",M
 1311140,"Americus, GA",M
 1312020,"Athens-Clarke County, GA",M
-1312060,"Atlanta-Sandy Springs-Roswell, GA",M
+1312060,"Atlanta-Sandy Springs-Alpharetta, GA",M
 1312260,"Augusta-Richmond County, GA-SC (GA part)",M
 1312460,"Bainbridge, GA",M
 1315260,"Brunswick, GA",M
@@ -3901,7 +3904,7 @@
 1325980,"Hinesville, GA",M
 1327600,"Jefferson, GA",M
 1327700,"Jesup, GA",M
-1329300,"LaGrange, GA",M
+1329300,"LaGrange, GA-AL (GA part)",M
 1331420,"Macon-Bibb County, GA",M
 1333300,"Milledgeville, GA",M
 1334220,"Moultrie, GA",M
@@ -3943,7 +3946,6 @@
 1699999,"Nonmetropolitan, nonmicropolitan, ID",M
 1714010,"Bloomington, IL",M
 1715460,"Burlington, IA-IL (IL part)",M
-1715900,"Canton, IL",M
 1716020,"Cape Girardeau, MO-IL (IL part)",M
 1716060,"Carbondale-Marion, IL",M
 1716460,"Centralia, IL",M
@@ -3963,7 +3965,7 @@
 1730660,"Lincoln, IL",M
 1731380,"Macomb, IL",M
 1734500,"Mount Vernon, IL",M
-1736860,"Ottawa-Peru, IL",M
+1736837,"Ottawa, IL",M
 1737140,"Paducah, KY-IL (IL part)",M
 1737900,"Peoria, IL",M
 1738700,"Pontiac, IL",M
@@ -4007,6 +4009,7 @@
 1837940,"Peru, IN",M
 1838500,"Plymouth, IN",M
 1839980,"Richmond, IN",M
+1842500,"Scottsburg, IN",M
 1842980,"Seymour, IN",M
 1843780,"South Bend-Mishawaka, IN-MI (IN part)",M
 1845460,"Terre Haute, IN",M
@@ -4016,7 +4019,6 @@
 1847780,"Washington, IN",M
 1899999,"Nonmetropolitan, nonmicropolitan, IN",M
 1911180,"Ames, IA",M
-1914340,"Boone, IA",M
 1915460,"Burlington, IA-IL (IA part)",M
 1916140,"Carroll, IA",M
 1916300,"Cedar Rapids, IA",M
@@ -4031,7 +4033,6 @@
 1932260,"Marshalltown, IA",M
 1932380,"Mason City, IA",M
 1934700,"Muscatine, IA",M
-1935500,"Newton, IA",M
 1936540,"Omaha-Council Bluffs, NE-IA (IA part)",M
 1936820,"Oskaloosa, IA",M
 1936900,"Ottumwa, IA",M
@@ -4042,7 +4043,6 @@
 1944740,"Storm Lake, IA",M
 1947940,"Waterloo-Cedar Falls, IA",M
 1999999,"Nonmetropolitan, nonmicropolitan, IA",M
-2011680,"Arkansas City-Winfield, KS",M
 2011860,"Atchison, KS",M
 2017700,"Coffeyville, KS",M
 2019980,"Dodge City, KS",M
@@ -4051,7 +4051,6 @@
 2024460,"Great Bend, KS",M
 2025700,"Hays, KS",M
 2026740,"Hutchinson, KS",M
-2027920,"Junction City, KS",M
 2028140,"Kansas City, MO-KS (KS part)",M
 2029940,"Lawrence, KS",M
 2030580,"Liberal, KS",M
@@ -4064,6 +4063,7 @@
 2041460,"Salina, KS",M
 2045820,"Topeka, KS",M
 2048620,"Wichita, KS",M
+2049060,"Winfield, KS",M
 2099999,"Nonmetropolitan, nonmicropolitan, KS",M
 2112680,"Bardstown, KY",M
 2114540,"Bowling Green, KY",M
@@ -4090,10 +4090,8 @@
 2137140,"Paducah, KY-IL (KY part)",M
 2140080,"Richmond-Berea, KY",M
 2143700,"Somerset, KY",M
-2146460,"Union City, TN-KY (KY part)",M
 2199999,"Nonmetropolitan, nonmicropolitan, KY",M
 2210780,"Alexandria, LA",M
-2212820,"Bastrop, LA",M
 2212940,"Baton Rouge, LA",M
 2214220,"Bogalusa, LA",M
 2219760,"DeRidder, LA",M
@@ -4103,6 +4101,7 @@
 2227660,"Jennings, LA",M
 2229180,"Lafayette, LA",M
 2229340,"Lake Charles, LA",M
+2233380,"Minden, LA",M
 2233740,"Monroe, LA",M
 2234020,"Morgan City, LA",M
 2235020,"Natchez, MS-LA (LA part)",M
@@ -4129,7 +4128,6 @@
 2499999,"Nonmetropolitan, nonmicropolitan, MD",M
 2512700,"Barnstable Town, MA",M
 2514460,"Boston-Cambridge-Newton, MA-NH (MA part)",M
-2524640,"Greenfield Town, MA",M
 2538340,"Pittsfield, MA",M
 2539300,"Providence-Warwick, RI-MA (MA part)",M
 2544140,"Springfield, MA",M
@@ -4148,11 +4146,10 @@
 2619820,"Detroit-Warren-Dearborn, MI",M
 2621540,"Escanaba, MI",M
 2622420,"Flint, MI",M
-2624340,"Grand Rapids-Wyoming, MI",M
+2624340,"Grand Rapids-Kentwood, MI",M
 2625880,"Hillsdale, MI",M
 2626090,"Holland, MI",M
 2626340,"Houghton, MI",M
-2626960,"Ionia, MI",M
 2627020,"Iron Mountain, MI-WI (MI part)",M
 2627100,"Jackson, MI",M
 2628020,"Kalamazoo-Portage, MI",M
@@ -4164,8 +4161,7 @@
 2633780,"Monroe, MI",M
 2634380,"Mount Pleasant, MI",M
 2634740,"Muskegon, MI",M
-2635660,"Niles-Benton Harbor, MI",M
-2637020,"Owosso, MI",M
+2635660,"Niles, MI",M
 2640980,"Saginaw, MI",M
 2642300,"Sault Ste. Marie, MI",M
 2643780,"South Bend-Mishawaka, IN-MI (MI part)",M
@@ -4186,7 +4182,7 @@
 2724330,"Grand Rapids, MN",M
 2726780,"Hutchinson, MN",M
 2729100,"La Crosse-Onalaska, WI-MN (MN part)",M
-2731860,"Mankato-North Mankato, MN",M
+2731860,"Mankato, MN",M
 2732140,"Marshall, MN",M
 2733460,"Minneapolis-St. Paul-Bloomington, MN-WI (MN part)",M
 2735580,"New Ulm, MN",M
@@ -4207,7 +4203,7 @@
 2824740,"Greenville, MS",M
 2824900,"Greenwood, MS",M
 2824980,"Grenada, MS",M
-2825060,"Gulfport-Biloxi-Pascagoula, MS",M
+2825060,"Gulfport-Biloxi, MS",M
 2825620,"Hattiesburg, MS",M
 2826940,"Indianola, MS",M
 2827140,"Jackson, MS",M
@@ -4227,7 +4223,6 @@
 2916020,"Cape Girardeau, MO-IL (MO part)",M
 2917860,"Columbia, MO",M
 2922100,"Farmington, MO",M
-2922220,"Fayetteville-Springdale-Rogers, AR-MO (MO part)",M
 2922780,"Fort Leonard Wood, MO",M
 2922800,"Fort Madison-Keokuk, IA-IL-MO (MO part)",M
 2925300,"Hannibal, MO",M
@@ -4284,12 +4279,12 @@
 3239900,"Reno, NV",M
 3249080,"Winnemucca, NV",M
 3299999,"Nonmetropolitan, nonmicropolitan, NV",M
-3313620,"Berlin, NH-VT (NH part)",M
+3313620,"Berlin, NH",M
 3314460,"Boston-Cambridge-Newton, MA-NH (NH part)",M
-3317200,"Claremont-Lebanon, NH-VT (NH part)",M
 3318180,"Concord, NH",M
 3328300,"Keene, NH",M
 3329060,"Laconia, NH",M
+3330100,"Lebanon, NH-VT (NH part)",M
 3331700,"Manchester-Nashua, NH",M
 3399999,"Nonmetropolitan, nonmicropolitan, NH",M
 3410900,"Allentown-Bethlehem-Easton, PA-NJ (NJ part)",M
@@ -4297,7 +4292,7 @@
 3435620,"New York-Newark-Jersey City, NY-NJ-PA (NJ part)",M
 3436140,"Ocean City, NJ",M
 3437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (NJ part)",M
-3445940,"Trenton, NJ",M
+3445940,"Trenton-Princeton, NJ",M
 3447220,"Vineland-Bridgeton, NJ",M
 3499999,"Nonmetropolitan, nonmicropolitan, NJ",M
 3510460,"Alamogordo, NM",M
@@ -4325,7 +4320,7 @@
 3612180,"Auburn, NY",M
 3612860,"Batavia, NY",M
 3613780,"Binghamton, NY",M
-3615380,"Buffalo-Cheektowaga-Niagara Falls, NY",M
+3615380,"Buffalo-Cheektowaga, NY",M
 3618500,"Corning, NY",M
 3618660,"Cortland, NY",M
 3621300,"Elmira, NY",M
@@ -4341,6 +4336,7 @@
 3636460,"Olean, NY",M
 3636580,"Oneonta, NY",M
 3638460,"Plattsburgh, NY",M
+3639100,"Poughkeepsie-Newburgh-Middletown, NY",M
 3640380,"Rochester, NY",M
 3642900,"Seneca Falls, NY",M
 3645060,"Syracuse, NY",M
@@ -4354,7 +4350,6 @@
 3715500,"Burlington, NC",M
 3716740,"Charlotte-Concord-Gastonia, NC-SC (NC part)",M
 3719000,"Cullowhee, NC",M
-3720380,"Dunn, NC",M
 3720500,"Durham-Chapel Hill, NC",M
 3721020,"Elizabeth City, NC",M
 3722180,"Fayetteville, NC",M
@@ -4375,9 +4370,8 @@
 3734820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (NC part)",M
 3735100,"New Bern, NC",M
 3735900,"North Wilkesboro, NC",M
-3737080,"Oxford, NC",M
 3738240,"Pinehurst-Southern Pines, NC",M
-3739580,"Raleigh, NC",M
+3739580,"Raleigh-Cary, NC",M
 3740260,"Roanoke Rapids, NC",M
 3740460,"Rockingham, NC",M
 3740580,"Rocky Mount, NC",M
@@ -4403,7 +4397,7 @@
 3911780,"Ashtabula, OH",M
 3911900,"Athens, OH",M
 3913340,"Bellefontaine, OH",M
-3915340,"Bucyrus, OH",M
+3915340,"Bucyrus-Galion, OH",M
 3915740,"Cambridge, OH",M
 3915940,"Canton-Massillon, OH",M
 3916380,"Celina, OH",M
@@ -4412,7 +4406,7 @@
 3917460,"Cleveland-Elyria, OH",M
 3918140,"Columbus, OH",M
 3918740,"Coshocton, OH",M
-3919380,"Dayton, OH",M
+3919430,"Dayton-Kettering, OH",M
 3919580,"Defiance, OH",M
 3922300,"Findlay, OH",M
 3923380,"Fremont, OH",M
@@ -4427,7 +4421,6 @@
 3935420,"New Philadelphia-Dover, OH",M
 3935940,"Norwalk, OH",M
 3938580,"Point Pleasant, WV-OH (OH part)",M
-3938840,"Port Clinton, OH",M
 3939020,"Portsmouth, OH",M
 3941400,"Salem, OH",M
 3941780,"Sandusky, OH",M
@@ -4469,13 +4462,13 @@
 4048220,"Weatherford, OK",M
 4049260,"Woodward, OK",M
 4099999,"Nonmetropolitan, nonmicropolitan, OK",M
-4110540,"Albany, OR",M
+4110540,"Albany-Lebanon, OR",M
 4111820,"Astoria, OR",M
-4113460,"Bend-Redmond, OR",M
+4113460,"Bend, OR",M
 4115060,"Brookings, OR",M
 4118300,"Coos Bay, OR",M
 4118700,"Corvallis, OR",M
-4121660,"Eugene, OR",M
+4121660,"Eugene-Springfield, OR",M
 4124420,"Grants Pass, OR",M
 4125840,"Hermiston-Pendleton, OR",M
 4126220,"Hood River, OR",M
@@ -4518,7 +4511,7 @@
 4239740,"Reading, PA",M
 4241260,"St. Marys, PA",M
 4242380,"Sayre, PA",M
-4242540,"Scranton--Wilkes-Barre--Hazleton, PA",M
+4242540,"Scranton--Wilkes-Barre, PA",M
 4242780,"Selinsgrove, PA",M
 4243740,"Somerset, PA",M
 4244300,"State College, PA",M
@@ -4538,15 +4531,16 @@
 4522500,"Florence, SC",M
 4523500,"Gaffney, SC",M
 4523860,"Georgetown, SC",M
-4524860,"Greenville-Anderson-Mauldin, SC",M
+4524860,"Greenville-Anderson, SC",M
 4524940,"Greenwood, SC",M
-4525940,"Hilton Head Island-Bluffton-Beaufort, SC",M
+4525940,"Hilton Head Island-Bluffton, SC",M
 4534820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (SC part)",M
 4535140,"Newberry, SC",M
 4536700,"Orangeburg, SC",M
 4542860,"Seneca, SC",M
 4543900,"Spartanburg, SC",M
 4544940,"Sumter, SC",M
+4546420,"Union, SC",M
 4599999,"Nonmetropolitan, nonmicropolitan, SC",M
 4610100,"Aberdeen, SD",M
 4615100,"Brookings, SD",M
@@ -4573,7 +4567,7 @@
 4724620,"Greeneville, TN",M
 4727180,"Jackson, TN",M
 4727740,"Johnson City, TN",M
-4728700,"Kingsport-Bristol-Bristol, TN-VA (TN part)",M
+4728700,"Kingsport-Bristol, TN-VA (TN part)",M
 4728940,"Knoxville, TN",M
 4729980,"Lawrenceburg, TN",M
 4730280,"Lewisburg, TN",M
@@ -4587,14 +4581,14 @@
 4742940,"Sevierville, TN",M
 4743180,"Shelbyville, TN",M
 4746100,"Tullahoma-Manchester, TN",M
-4746460,"Union City, TN-KY (TN part)",M
+4746460,"Union City, TN",M
 4799999,"Nonmetropolitan, nonmicropolitan, TN",M
 4810180,"Abilene, TX",M
 4810860,"Alice, TX",M
 4811100,"Amarillo, TX",M
 4811380,"Andrews, TX",M
 4811980,"Athens, TX",M
-4812420,"Austin-Round Rock, TX",M
+4812420,"Austin-Round Rock-Georgetown, TX",M
 4813060,"Bay City, TX",M
 4813140,"Beaumont-Port Arthur, TX",M
 4813300,"Beeville, TX",M
@@ -4615,6 +4609,7 @@
 4821340,"El Paso, TX",M
 4823240,"Fredericksburg, TX",M
 4823620,"Gainesville, TX",M
+4824180,"Granbury, TX",M
 4825820,"Hereford, TX",M
 4826420,"Houston-The Woodlands-Sugar Land, TX",M
 4826660,"Huntsville, TX",M
@@ -4628,7 +4623,6 @@
 4830980,"Longview, TX",M
 4831180,"Lubbock, TX",M
 4831260,"Lufkin, TX",M
-4832220,"Marshall, TX",M
 4832580,"McAllen-Edinburg-Mission, TX",M
 4833260,"Midland, TX",M
 4833420,"Mineral Wells, TX",M
@@ -4638,11 +4632,13 @@
 4837300,"Palestine, TX",M
 4837420,"Pampa, TX",M
 4837580,"Paris, TX",M
+4837770,"Pearsall, TX",M
 4837780,"Pecos, TX",M
 4838380,"Plainview, TX",M
 4838920,"Port Lavaca, TX",M
 4839700,"Raymondville, TX",M
-4840100,"Rio Grande City, TX",M
+4840100,"Rio Grande City-Roma, TX",M
+4840530,"Rockport, TX",M
 4841660,"San Angelo, TX",M
 4841700,"San Antonio-New Braunfels, TX",M
 4843300,"Sherman-Denison, TX",M
@@ -4667,35 +4663,33 @@
 4939340,"Provo-Orem, UT",M
 4941100,"St. George, UT",M
 4941620,"Salt Lake City, UT",M
-4944920,"Summit Park, UT",M
 4946860,"Vernal, UT",M
 4999999,"Nonmetropolitan, nonmicropolitan, UT",M
 5012740,"Barre, VT",M
 5013540,"Bennington, VT",M
-5013620,"Berlin, NH-VT (VT part)",M
 5015540,"Burlington-South Burlington, VT",M
-5017200,"Claremont-Lebanon, NH-VT (VT part)",M
+5030100,"Lebanon, NH-VT (VT part)",M
 5040860,"Rutland, VT",M
 5099999,"Nonmetropolitan, nonmicropolitan, VT",M
 5113720,"Big Stone Gap, VA",M
-5113980,"Blacksburg-Christiansburg-Radford, VA",M
+5113980,"Blacksburg-Christiansburg, VA",M
 5114140,"Bluefield, WV-VA (VA part)",M
 5116820,"Charlottesville, VA",M
 5119260,"Danville, VA",M
 5125500,"Harrisonburg, VA",M
-5128700,"Kingsport-Bristol-Bristol, TN-VA (VA part)",M
+5128700,"Kingsport-Bristol, TN-VA (VA part)",M
 5131340,"Lynchburg, VA",M
 5132300,"Martinsville, VA",M
 5140060,"Richmond, VA",M
 5140220,"Roanoke, VA",M
-5144420,"Staunton-Waynesboro, VA",M
+5144420,"Staunton, VA",M
 5147260,"Virginia Beach-Norfolk-Newport News, VA-NC (VA part)",M
 5147900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (VA part)",M
 5149020,"Winchester, VA-WV (VA part)",M
 5199999,"Nonmetropolitan, nonmicropolitan, VA",M
 5310140,"Aberdeen, WA",M
 5313380,"Bellingham, WA",M
-5314740,"Bremerton-Silverdale, WA",M
+5314740,"Bremerton-Silverdale-Port Orchard, WA",M
 5316500,"Centralia, WA",M
 5321260,"Ellensburg, WA",M
 5328420,"Kennewick-Richland, WA",M
@@ -4704,7 +4698,7 @@
 5334180,"Moses Lake, WA",M
 5334580,"Mount Vernon-Anacortes, WA",M
 5336020,"Oak Harbor, WA",M
-5336500,"Olympia-Tumwater, WA",M
+5336500,"Olympia-Lacey-Tumwater, WA",M
 5336830,"Othello, WA",M
 5338820,"Port Angeles, WA",M
 5338900,"Portland-Vancouver-Hillsboro, OR-WA (WA part)",M
@@ -4725,8 +4719,8 @@
 5421900,"Fairmont, WV",M
 5425180,"Hagerstown-Martinsburg, MD-WV (WV part)",M
 5426580,"Huntington-Ashland, WV-KY-OH (WV part)",M
-5430880,"Logan, WV",M
 5434060,"Morgantown, WV",M
+5434350,"Mount Gay-Shamrock, WV",M
 5437620,"Parkersburg-Vienna, WV",M
 5438580,"Point Pleasant, WV-OH (WV part)",M
 5447900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (WV part)",M
@@ -4749,8 +4743,7 @@
 5531820,"Manitowoc, WI",M
 5531940,"Marinette, WI-MI (WI part)",M
 5532860,"Menomonie, WI",M
-5532980,"Merrill, WI",M
-5533340,"Milwaukee-Waukesha-West Allis, WI",M
+5533340,"Milwaukee-Waukesha, WI",M
 5533460,"Minneapolis-St. Paul-Bloomington, MN-WI (WI part)",M
 5536780,"Oshkosh-Neenah, WI",M
 5538420,"Platteville, WI",M
@@ -4759,8 +4752,8 @@
 5543100,"Sheboygan, WI",M
 5544620,"Stevens Point, WI",M
 5548020,"Watertown-Fort Atkinson, WI",M
-5548140,"Wausau, WI",M
-5548580,"Whitewater-Elkhorn, WI",M
+5548140,"Wausau-Weston, WI",M
+5548580,"Whitewater, WI",M
 5549220,"Wisconsin Rapids-Marshfield, WI",M
 5599999,"Nonmetropolitan, nonmicropolitan, WI",M
 5616220,"Casper, WY",M
@@ -4773,7 +4766,6 @@
 5640540,"Rock Springs, WY",M
 5643260,"Sheridan, WY",M
 5699999,"Nonmetropolitan, nonmicropolitan, WY",M
-7210260,"Adjuntas, PR",M
 7210380,"Aguadilla-Isabela, PR",M
 7211640,"Arecibo, PR",M
 7217620,"Coamo, PR",M
@@ -4783,8 +4775,9 @@
 7232420,"Mayagüez, PR",M
 7238660,"Ponce, PR",M
 7241900,"San Germán, PR",M
-7241980,"San Juan-Carolina-Caguas, PR",M
+7241980,"San Juan-Bayamón-Caguas, PR",M
 7242180,"Santa Isabel, PR",M
+7249500,"Yauco, PR",M
 7299999,"Nonmetropolitan, nonmicropolitan, PR",M
 01010001,"North Alabama Works",W
 01010002,"East Alabama Works",W
@@ -5357,7 +5350,6 @@
 50000011,"11 Rutland Region Educational WIB",W
 50000012,"12 Upper Valley Commerce and Education WIB",W
 50000013,"13 Windham WIB",W
-50000999,"99 Unspecified WIB",W
 51000441,"Southwestern Virginia LWIA I",W
 51000442,"New River/Mt. Rogers LWIA II",W
 51000443,"Western Virginia LWIA III",W

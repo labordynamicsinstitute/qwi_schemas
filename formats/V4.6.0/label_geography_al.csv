@@ -69,7 +69,7 @@
 01133,"Winston, AL",C
 0110700,"Albertville, AL",M
 0110760,"Alexander City, AL",M
-0111500,"Anniston-Oxford-Jacksonville, AL",M
+0111500,"Anniston-Oxford, AL",M
 0112120,"Atmore, AL",M
 0112220,"Auburn-Opelika, AL",M
 0113820,"Birmingham-Hoover, AL",M
@@ -84,6 +84,8 @@
 0122840,"Fort Payne, AL",M
 0123460,"Gadsden, AL",M
 0126620,"Huntsville, AL",M
+0127530,"Jasper, AL",M
+0129300,"LaGrange, GA-AL (AL part)",M
 0133660,"Mobile, AL",M
 0133860,"Montgomery, AL",M
 0137120,"Ozark, AL",M
@@ -92,7 +94,6 @@
 0145180,"Talladega-Sylacauga, AL",M
 0145980,"Troy, AL",M
 0146220,"Tuscaloosa, AL",M
-0146740,"Valley, AL",M
 0199999,"Nonmetropolitan, nonmicropolitan, AL",M
 01010001,"North Alabama Works",W
 01010002,"East Alabama Works",W
