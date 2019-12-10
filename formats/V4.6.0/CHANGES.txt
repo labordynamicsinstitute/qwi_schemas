@@ -1,0 +1,13 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2019-02-21: Initial release
+- 2019-03-31: Minor layout changes for better readability
+
+=== Version 4.4.0 from 4.3.1
+- Underlying geovintage updated to reflect 2018 census geography
+- Updated shapefiles based on TIGER 2018
+- PR geography labels added
+- Added state part to non-metro/non-micro areas in state label files
+- Removed nonexistent VT geography from labels
