@@ -1,0 +1,79 @@
+﻿geography,label,geo_level
+45,"South Carolina",S
+45001,"Abbeville, SC",C
+45003,"Aiken, SC",C
+45005,"Allendale, SC",C
+45007,"Anderson, SC",C
+45009,"Bamberg, SC",C
+45011,"Barnwell, SC",C
+45013,"Beaufort, SC",C
+45015,"Berkeley, SC",C
+45017,"Calhoun, SC",C
+45019,"Charleston, SC",C
+45021,"Cherokee, SC",C
+45023,"Chester, SC",C
+45025,"Chesterfield, SC",C
+45027,"Clarendon, SC",C
+45029,"Colleton, SC",C
+45031,"Darlington, SC",C
+45033,"Dillon, SC",C
+45035,"Dorchester, SC",C
+45037,"Edgefield, SC",C
+45039,"Fairfield, SC",C
+45041,"Florence, SC",C
+45043,"Georgetown, SC",C
+45045,"Greenville, SC",C
+45047,"Greenwood, SC",C
+45049,"Hampton, SC",C
+45051,"Horry, SC",C
+45053,"Jasper, SC",C
+45055,"Kershaw, SC",C
+45057,"Lancaster, SC",C
+45059,"Laurens, SC",C
+45061,"Lee, SC",C
+45063,"Lexington, SC",C
+45065,"McCormick, SC",C
+45067,"Marion, SC",C
+45069,"Marlboro, SC",C
+45071,"Newberry, SC",C
+45073,"Oconee, SC",C
+45075,"Orangeburg, SC",C
+45077,"Pickens, SC",C
+45079,"Richland, SC",C
+45081,"Saluda, SC",C
+45083,"Spartanburg, SC",C
+45085,"Sumter, SC",C
+45087,"Union, SC",C
+45089,"Williamsburg, SC",C
+45091,"York, SC",C
+4512260,"Augusta-Richmond County, GA-SC (SC part)",M
+4513500,"Bennettsville, SC",M
+4516700,"Charleston-North Charleston, SC",M
+4516740,"Charlotte-Concord-Gastonia, NC-SC (SC part)",M
+4517900,"Columbia, SC",M
+4522500,"Florence, SC",M
+4523500,"Gaffney, SC",M
+4523860,"Georgetown, SC",M
+4524860,"Greenville-Anderson, SC",M
+4524940,"Greenwood, SC",M
+4525940,"Hilton Head Island-Bluffton, SC",M
+4534820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (SC part)",M
+4535140,"Newberry, SC",M
+4536700,"Orangeburg, SC",M
+4542860,"Seneca, SC",M
+4543900,"Spartanburg, SC",M
+4544940,"Sumter, SC",M
+4546420,"Union, SC",M
+4599999,"Nonmetropolitan, nonmicropolitan, SC",M
+45000010,"10 Pendleton District W",W
+45000015,"15 Greenville WIB",W
+45000020,"20 Upstate WIB",W
+45000025,"25 Upper Savannah WIB",W
+45000045,"45 Pee Dee WIB",W
+45000050,"50 Lower Savannah WIB",W
+45000060,"60 Catawba WIB",W
+45000065,"65 Santee-Lynches WIB",W
+45000085,"85 Waccamaw WIB",W
+45000095,"95 Trident WIB",W
+45000105,"05 Midlands WIB",W
+45000110,"10 Lowcountry WIB",W

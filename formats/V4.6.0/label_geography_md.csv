@@ -1,0 +1,48 @@
+﻿geography,label,geo_level
+24,"Maryland",S
+24001,"Allegany, MD",C
+24003,"Anne Arundel, MD",C
+24005,"Baltimore, MD",C
+24009,"Calvert, MD",C
+24011,"Caroline, MD",C
+24013,"Carroll, MD",C
+24015,"Cecil, MD",C
+24017,"Charles, MD",C
+24019,"Dorchester, MD",C
+24021,"Frederick, MD",C
+24023,"Garrett, MD",C
+24025,"Harford, MD",C
+24027,"Howard, MD",C
+24029,"Kent, MD",C
+24031,"Montgomery, MD",C
+24033,"Prince George's, MD",C
+24035,"Queen Anne's, MD",C
+24037,"St. Mary's, MD",C
+24039,"Somerset, MD",C
+24041,"Talbot, MD",C
+24043,"Washington, MD",C
+24045,"Wicomico, MD",C
+24047,"Worcester, MD",C
+24510,"Baltimore, MD",C
+2412580,"Baltimore-Columbia-Towson, MD",M
+2415680,"California-Lexington Park, MD",M
+2415700,"Cambridge, MD",M
+2419060,"Cumberland, MD-WV (MD part)",M
+2420660,"Easton, MD",M
+2425180,"Hagerstown-Martinsburg, MD-WV (MD part)",M
+2437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (MD part)",M
+2441540,"Salisbury, MD-DE (MD part)",M
+2447900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (MD part)",M
+2499999,"Nonmetropolitan, nonmicropolitan, MD",M
+24001001,"01 Anne Arundel WIA",W
+24001002,"02 Baltimore County WIA",W
+24001003,"03 Baltimore City WIA",W
+24001004,"04 Frederick WIA",W
+24001005,"05 Lower Shore WIA",W
+24001006,"06 MID-Maryland WIA",W
+24001007,"07 Montgomery WIA",W
+24001008,"08 Prince George's WIA",W
+24001009,"09 Southern Maryland WIA",W
+24001010,"10 Susquehanna WIA",W
+24001011,"11 Upper Shore WIA",W
+24001012,"12 Western Maryland WIA",W

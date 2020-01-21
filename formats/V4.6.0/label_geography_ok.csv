@@ -1,0 +1,114 @@
+﻿geography,label,geo_level
+40,"Oklahoma",S
+40001,"Adair, OK",C
+40003,"Alfalfa, OK",C
+40005,"Atoka, OK",C
+40007,"Beaver, OK",C
+40009,"Beckham, OK",C
+40011,"Blaine, OK",C
+40013,"Bryan, OK",C
+40015,"Caddo, OK",C
+40017,"Canadian, OK",C
+40019,"Carter, OK",C
+40021,"Cherokee, OK",C
+40023,"Choctaw, OK",C
+40025,"Cimarron, OK",C
+40027,"Cleveland, OK",C
+40029,"Coal, OK",C
+40031,"Comanche, OK",C
+40033,"Cotton, OK",C
+40035,"Craig, OK",C
+40037,"Creek, OK",C
+40039,"Custer, OK",C
+40041,"Delaware, OK",C
+40043,"Dewey, OK",C
+40045,"Ellis, OK",C
+40047,"Garfield, OK",C
+40049,"Garvin, OK",C
+40051,"Grady, OK",C
+40053,"Grant, OK",C
+40055,"Greer, OK",C
+40057,"Harmon, OK",C
+40059,"Harper, OK",C
+40061,"Haskell, OK",C
+40063,"Hughes, OK",C
+40065,"Jackson, OK",C
+40067,"Jefferson, OK",C
+40069,"Johnston, OK",C
+40071,"Kay, OK",C
+40073,"Kingfisher, OK",C
+40075,"Kiowa, OK",C
+40077,"Latimer, OK",C
+40079,"Le Flore, OK",C
+40081,"Lincoln, OK",C
+40083,"Logan, OK",C
+40085,"Love, OK",C
+40087,"McClain, OK",C
+40089,"McCurtain, OK",C
+40091,"McIntosh, OK",C
+40093,"Major, OK",C
+40095,"Marshall, OK",C
+40097,"Mayes, OK",C
+40099,"Murray, OK",C
+40101,"Muskogee, OK",C
+40103,"Noble, OK",C
+40105,"Nowata, OK",C
+40107,"Okfuskee, OK",C
+40109,"Oklahoma, OK",C
+40111,"Okmulgee, OK",C
+40113,"Osage, OK",C
+40115,"Ottawa, OK",C
+40117,"Pawnee, OK",C
+40119,"Payne, OK",C
+40121,"Pittsburg, OK",C
+40123,"Pontotoc, OK",C
+40125,"Pottawatomie, OK",C
+40127,"Pushmataha, OK",C
+40129,"Roger Mills, OK",C
+40131,"Rogers, OK",C
+40133,"Seminole, OK",C
+40135,"Sequoyah, OK",C
+40137,"Stephens, OK",C
+40139,"Texas, OK",C
+40141,"Tillman, OK",C
+40143,"Tulsa, OK",C
+40145,"Wagoner, OK",C
+40147,"Washington, OK",C
+40149,"Washita, OK",C
+40151,"Woods, OK",C
+40153,"Woodward, OK",C
+4010220,"Ada, OK",M
+4011060,"Altus, OK",M
+4011620,"Ardmore, OK",M
+4012780,"Bartlesville, OK",M
+4020340,"Duncan, OK",M
+4020460,"Durant, OK",M
+4021120,"Elk City, OK",M
+4021420,"Enid, OK",M
+4022900,"Fort Smith, AR-OK (OK part)",M
+4025100,"Guymon, OK",M
+4030020,"Lawton, OK",M
+4032540,"McAlester, OK",M
+4033060,"Miami, OK",M
+4034780,"Muskogee, OK",M
+4036420,"Oklahoma City, OK",M
+4038620,"Ponca City, OK",M
+4043060,"Shawnee, OK",M
+4044660,"Stillwater, OK",M
+4045140,"Tahlequah, OK",M
+4046140,"Tulsa, OK",M
+4048220,"Weatherford, OK",M
+4049260,"Woodward, OK",M
+4099999,"Nonmetropolitan, nonmicropolitan, OK",M
+40000001,"01 Northwest WIA",W
+40000002,"02 North Central WIA",W
+40000003,"03 Tulsa WIA",W
+40000004,"04 Northeast WIA",W
+40000005,"05 Southwest WIA",W
+40000006,"06 South Central WIA",W
+40000007,"07 Southern WIA",W
+40000008,"08 Southeast WIA",W
+40000009,"09 Central WIA",W
+40000010,"10 East Central WIA",W
+40000011,"11 Cleveland WIA",W
+40000012,"12 Eastern WIA",W

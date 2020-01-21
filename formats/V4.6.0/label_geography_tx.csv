@@ -1,0 +1,356 @@
+﻿geography,label,geo_level
+48,"Texas",S
+48001,"Anderson, TX",C
+48003,"Andrews, TX",C
+48005,"Angelina, TX",C
+48007,"Aransas, TX",C
+48009,"Archer, TX",C
+48011,"Armstrong, TX",C
+48013,"Atascosa, TX",C
+48015,"Austin, TX",C
+48017,"Bailey, TX",C
+48019,"Bandera, TX",C
+48021,"Bastrop, TX",C
+48023,"Baylor, TX",C
+48025,"Bee, TX",C
+48027,"Bell, TX",C
+48029,"Bexar, TX",C
+48031,"Blanco, TX",C
+48033,"Borden, TX",C
+48035,"Bosque, TX",C
+48037,"Bowie, TX",C
+48039,"Brazoria, TX",C
+48041,"Brazos, TX",C
+48043,"Brewster, TX",C
+48045,"Briscoe, TX",C
+48047,"Brooks, TX",C
+48049,"Brown, TX",C
+48051,"Burleson, TX",C
+48053,"Burnet, TX",C
+48055,"Caldwell, TX",C
+48057,"Calhoun, TX",C
+48059,"Callahan, TX",C
+48061,"Cameron, TX",C
+48063,"Camp, TX",C
+48065,"Carson, TX",C
+48067,"Cass, TX",C
+48069,"Castro, TX",C
+48071,"Chambers, TX",C
+48073,"Cherokee, TX",C
+48075,"Childress, TX",C
+48077,"Clay, TX",C
+48079,"Cochran, TX",C
+48081,"Coke, TX",C
+48083,"Coleman, TX",C
+48085,"Collin, TX",C
+48087,"Collingsworth, TX",C
+48089,"Colorado, TX",C
+48091,"Comal, TX",C
+48093,"Comanche, TX",C
+48095,"Concho, TX",C
+48097,"Cooke, TX",C
+48099,"Coryell, TX",C
+48101,"Cottle, TX",C
+48103,"Crane, TX",C
+48105,"Crockett, TX",C
+48107,"Crosby, TX",C
+48109,"Culberson, TX",C
+48111,"Dallam, TX",C
+48113,"Dallas, TX",C
+48115,"Dawson, TX",C
+48117,"Deaf Smith, TX",C
+48119,"Delta, TX",C
+48121,"Denton, TX",C
+48123,"DeWitt, TX",C
+48125,"Dickens, TX",C
+48127,"Dimmit, TX",C
+48129,"Donley, TX",C
+48131,"Duval, TX",C
+48133,"Eastland, TX",C
+48135,"Ector, TX",C
+48137,"Edwards, TX",C
+48139,"Ellis, TX",C
+48141,"El Paso, TX",C
+48143,"Erath, TX",C
+48145,"Falls, TX",C
+48147,"Fannin, TX",C
+48149,"Fayette, TX",C
+48151,"Fisher, TX",C
+48153,"Floyd, TX",C
+48155,"Foard, TX",C
+48157,"Fort Bend, TX",C
+48159,"Franklin, TX",C
+48161,"Freestone, TX",C
+48163,"Frio, TX",C
+48165,"Gaines, TX",C
+48167,"Galveston, TX",C
+48169,"Garza, TX",C
+48171,"Gillespie, TX",C
+48173,"Glasscock, TX",C
+48175,"Goliad, TX",C
+48177,"Gonzales, TX",C
+48179,"Gray, TX",C
+48181,"Grayson, TX",C
+48183,"Gregg, TX",C
+48185,"Grimes, TX",C
+48187,"Guadalupe, TX",C
+48189,"Hale, TX",C
+48191,"Hall, TX",C
+48193,"Hamilton, TX",C
+48195,"Hansford, TX",C
+48197,"Hardeman, TX",C
+48199,"Hardin, TX",C
+48201,"Harris, TX",C
+48203,"Harrison, TX",C
+48205,"Hartley, TX",C
+48207,"Haskell, TX",C
+48209,"Hays, TX",C
+48211,"Hemphill, TX",C
+48213,"Henderson, TX",C
+48215,"Hidalgo, TX",C
+48217,"Hill, TX",C
+48219,"Hockley, TX",C
+48221,"Hood, TX",C
+48223,"Hopkins, TX",C
+48225,"Houston, TX",C
+48227,"Howard, TX",C
+48229,"Hudspeth, TX",C
+48231,"Hunt, TX",C
+48233,"Hutchinson, TX",C
+48235,"Irion, TX",C
+48237,"Jack, TX",C
+48239,"Jackson, TX",C
+48241,"Jasper, TX",C
+48243,"Jeff Davis, TX",C
+48245,"Jefferson, TX",C
+48247,"Jim Hogg, TX",C
+48249,"Jim Wells, TX",C
+48251,"Johnson, TX",C
+48253,"Jones, TX",C
+48255,"Karnes, TX",C
+48257,"Kaufman, TX",C
+48259,"Kendall, TX",C
+48261,"Kenedy, TX",C
+48263,"Kent, TX",C
+48265,"Kerr, TX",C
+48267,"Kimble, TX",C
+48269,"King, TX",C
+48271,"Kinney, TX",C
+48273,"Kleberg, TX",C
+48275,"Knox, TX",C
+48277,"Lamar, TX",C
+48279,"Lamb, TX",C
+48281,"Lampasas, TX",C
+48283,"La Salle, TX",C
+48285,"Lavaca, TX",C
+48287,"Lee, TX",C
+48289,"Leon, TX",C
+48291,"Liberty, TX",C
+48293,"Limestone, TX",C
+48295,"Lipscomb, TX",C
+48297,"Live Oak, TX",C
+48299,"Llano, TX",C
+48301,"Loving, TX",C
+48303,"Lubbock, TX",C
+48305,"Lynn, TX",C
+48307,"McCulloch, TX",C
+48309,"McLennan, TX",C
+48311,"McMullen, TX",C
+48313,"Madison, TX",C
+48315,"Marion, TX",C
+48317,"Martin, TX",C
+48319,"Mason, TX",C
+48321,"Matagorda, TX",C
+48323,"Maverick, TX",C
+48325,"Medina, TX",C
+48327,"Menard, TX",C
+48329,"Midland, TX",C
+48331,"Milam, TX",C
+48333,"Mills, TX",C
+48335,"Mitchell, TX",C
+48337,"Montague, TX",C
+48339,"Montgomery, TX",C
+48341,"Moore, TX",C
+48343,"Morris, TX",C
+48345,"Motley, TX",C
+48347,"Nacogdoches, TX",C
+48349,"Navarro, TX",C
+48351,"Newton, TX",C
+48353,"Nolan, TX",C
+48355,"Nueces, TX",C
+48357,"Ochiltree, TX",C
+48359,"Oldham, TX",C
+48361,"Orange, TX",C
+48363,"Palo Pinto, TX",C
+48365,"Panola, TX",C
+48367,"Parker, TX",C
+48369,"Parmer, TX",C
+48371,"Pecos, TX",C
+48373,"Polk, TX",C
+48375,"Potter, TX",C
+48377,"Presidio, TX",C
+48379,"Rains, TX",C
+48381,"Randall, TX",C
+48383,"Reagan, TX",C
+48385,"Real, TX",C
+48387,"Red River, TX",C
+48389,"Reeves, TX",C
+48391,"Refugio, TX",C
+48393,"Roberts, TX",C
+48395,"Robertson, TX",C
+48397,"Rockwall, TX",C
+48399,"Runnels, TX",C
+48401,"Rusk, TX",C
+48403,"Sabine, TX",C
+48405,"San Augustine, TX",C
+48407,"San Jacinto, TX",C
+48409,"San Patricio, TX",C
+48411,"San Saba, TX",C
+48413,"Schleicher, TX",C
+48415,"Scurry, TX",C
+48417,"Shackelford, TX",C
+48419,"Shelby, TX",C
+48421,"Sherman, TX",C
+48423,"Smith, TX",C
+48425,"Somervell, TX",C
+48427,"Starr, TX",C
+48429,"Stephens, TX",C
+48431,"Sterling, TX",C
+48433,"Stonewall, TX",C
+48435,"Sutton, TX",C
+48437,"Swisher, TX",C
+48439,"Tarrant, TX",C
+48441,"Taylor, TX",C
+48443,"Terrell, TX",C
+48445,"Terry, TX",C
+48447,"Throckmorton, TX",C
+48449,"Titus, TX",C
+48451,"Tom Green, TX",C
+48453,"Travis, TX",C
+48455,"Trinity, TX",C
+48457,"Tyler, TX",C
+48459,"Upshur, TX",C
+48461,"Upton, TX",C
+48463,"Uvalde, TX",C
+48465,"Val Verde, TX",C
+48467,"Van Zandt, TX",C
+48469,"Victoria, TX",C
+48471,"Walker, TX",C
+48473,"Waller, TX",C
+48475,"Ward, TX",C
+48477,"Washington, TX",C
+48479,"Webb, TX",C
+48481,"Wharton, TX",C
+48483,"Wheeler, TX",C
+48485,"Wichita, TX",C
+48487,"Wilbarger, TX",C
+48489,"Willacy, TX",C
+48491,"Williamson, TX",C
+48493,"Wilson, TX",C
+48495,"Winkler, TX",C
+48497,"Wise, TX",C
+48499,"Wood, TX",C
+48501,"Yoakum, TX",C
+48503,"Young, TX",C
+48505,"Zapata, TX",C
+48507,"Zavala, TX",C
+4810180,"Abilene, TX",M
+4810860,"Alice, TX",M
+4811100,"Amarillo, TX",M
+4811380,"Andrews, TX",M
+4811980,"Athens, TX",M
+4812420,"Austin-Round Rock-Georgetown, TX",M
+4813060,"Bay City, TX",M
+4813140,"Beaumont-Port Arthur, TX",M
+4813300,"Beeville, TX",M
+4813700,"Big Spring, TX",M
+4814300,"Bonham, TX",M
+4814420,"Borger, TX",M
+4814780,"Brenham, TX",M
+4815180,"Brownsville-Harlingen, TX",M
+4815220,"Brownwood, TX",M
+4817780,"College Station-Bryan, TX",M
+4818580,"Corpus Christi, TX",M
+4818620,"Corsicana, TX",M
+4819100,"Dallas-Fort Worth-Arlington, TX",M
+4819620,"Del Rio, TX",M
+4820300,"Dumas, TX",M
+4820580,"Eagle Pass, TX",M
+4820900,"El Campo, TX",M
+4821340,"El Paso, TX",M
+4823240,"Fredericksburg, TX",M
+4823620,"Gainesville, TX",M
+4824180,"Granbury, TX",M
+4825820,"Hereford, TX",M
+4826420,"Houston-The Woodlands-Sugar Land, TX",M
+4826660,"Huntsville, TX",M
+4827380,"Jacksonville, TX",M
+4828500,"Kerrville, TX",M
+4828660,"Killeen-Temple, TX",M
+4828780,"Kingsville, TX",M
+4829500,"Lamesa, TX",M
+4829700,"Laredo, TX",M
+4830220,"Levelland, TX",M
+4830980,"Longview, TX",M
+4831180,"Lubbock, TX",M
+4831260,"Lufkin, TX",M
+4832580,"McAllen-Edinburg-Mission, TX",M
+4833260,"Midland, TX",M
+4833420,"Mineral Wells, TX",M
+4834420,"Mount Pleasant, TX",M
+4834860,"Nacogdoches, TX",M
+4836220,"Odessa, TX",M
+4837300,"Palestine, TX",M
+4837420,"Pampa, TX",M
+4837580,"Paris, TX",M
+4837770,"Pearsall, TX",M
+4837780,"Pecos, TX",M
+4838380,"Plainview, TX",M
+4838920,"Port Lavaca, TX",M
+4839700,"Raymondville, TX",M
+4840100,"Rio Grande City-Roma, TX",M
+4840530,"Rockport, TX",M
+4841660,"San Angelo, TX",M
+4841700,"San Antonio-New Braunfels, TX",M
+4843300,"Sherman-Denison, TX",M
+4843660,"Snyder, TX",M
+4844500,"Stephenville, TX",M
+4844860,"Sulphur Springs, TX",M
+4845020,"Sweetwater, TX",M
+4845500,"Texarkana, TX-AR (TX part)",M
+4846340,"Tyler, TX",M
+4846620,"Uvalde, TX",M
+4846900,"Vernon, TX",M
+4847020,"Victoria, TX",M
+4847380,"Waco, TX",M
+4848660,"Wichita Falls, TX",M
+4849820,"Zapata, TX",M
+4899999,"Nonmetropolitan, nonmicropolitan, TX",M
+48000001,"01 Panhandle WDA",W
+48000002,"02 South Plains WDA",W
+48000003,"03 North Texas WDA",W
+48000004,"04 North Central WDA",W
+48000005,"05 Tarrant County WDA",W
+48000006,"06 Dallas WDA",W
+48000007,"07 North East WDA",W
+48000008,"08 East Texas WDA",W
+48000009,"09 West Central WDA",W
+48000010,"10 Upper Rio Grande WDA",W
+48000011,"11 Permian Basin WDA",W
+48000012,"12 Concho Valley WDA",W
+48000013,"13 Heart of Texas WDA",W
+48000014,"14 Capital Area WDA",W
+48000015,"15 Rural Capital WDA",W
+48000016,"16 Brazos Valley WDA",W
+48000017,"17 Deep East Texas WDA",W
+48000018,"18 South East Texas WDA",W
+48000019,"19 Golden Crescent WDA",W
+48000020,"20 Alamo WDA",W
+48000021,"21 South Texas WDA",W
+48000022,"22 Coastal Bend WDA",W
+48000023,"23 Lower Rio Grande WDA",W
+48000024,"24 Cameron County WDA",W
+48000025,"25 Texoma WDA",W
+48000026,"26 Central Texas WDA",W
+48000027,"27 Middle Rio Grande WDA",W
+48000028,"28 Gulf Coast WDA",W

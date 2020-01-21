@@ -1,0 +1,125 @@
+﻿geography,label,geo_level
+36,"New York",S
+36001,"Albany, NY",C
+36003,"Allegany, NY",C
+36005,"Bronx, NY",C
+36007,"Broome, NY",C
+36009,"Cattaraugus, NY",C
+36011,"Cayuga, NY",C
+36013,"Chautauqua, NY",C
+36015,"Chemung, NY",C
+36017,"Chenango, NY",C
+36019,"Clinton, NY",C
+36021,"Columbia, NY",C
+36023,"Cortland, NY",C
+36025,"Delaware, NY",C
+36027,"Dutchess, NY",C
+36029,"Erie, NY",C
+36031,"Essex, NY",C
+36033,"Franklin, NY",C
+36035,"Fulton, NY",C
+36037,"Genesee, NY",C
+36039,"Greene, NY",C
+36041,"Hamilton, NY",C
+36043,"Herkimer, NY",C
+36045,"Jefferson, NY",C
+36047,"Kings, NY",C
+36049,"Lewis, NY",C
+36051,"Livingston, NY",C
+36053,"Madison, NY",C
+36055,"Monroe, NY",C
+36057,"Montgomery, NY",C
+36059,"Nassau, NY",C
+36061,"New York, NY",C
+36063,"Niagara, NY",C
+36065,"Oneida, NY",C
+36067,"Onondaga, NY",C
+36069,"Ontario, NY",C
+36071,"Orange, NY",C
+36073,"Orleans, NY",C
+36075,"Oswego, NY",C
+36077,"Otsego, NY",C
+36079,"Putnam, NY",C
+36081,"Queens, NY",C
+36083,"Rensselaer, NY",C
+36085,"Richmond, NY",C
+36087,"Rockland, NY",C
+36089,"St. Lawrence, NY",C
+36091,"Saratoga, NY",C
+36093,"Schenectady, NY",C
+36095,"Schoharie, NY",C
+36097,"Schuyler, NY",C
+36099,"Seneca, NY",C
+36101,"Steuben, NY",C
+36103,"Suffolk, NY",C
+36105,"Sullivan, NY",C
+36107,"Tioga, NY",C
+36109,"Tompkins, NY",C
+36111,"Ulster, NY",C
+36113,"Warren, NY",C
+36115,"Washington, NY",C
+36117,"Wayne, NY",C
+36119,"Westchester, NY",C
+36121,"Wyoming, NY",C
+36123,"Yates, NY",C
+3610580,"Albany-Schenectady-Troy, NY",M
+3611220,"Amsterdam, NY",M
+3612180,"Auburn, NY",M
+3612860,"Batavia, NY",M
+3613780,"Binghamton, NY",M
+3615380,"Buffalo-Cheektowaga, NY",M
+3618500,"Corning, NY",M
+3618660,"Cortland, NY",M
+3621300,"Elmira, NY",M
+3624020,"Glens Falls, NY",M
+3624100,"Gloversville, NY",M
+3626460,"Hudson, NY",M
+3627060,"Ithaca, NY",M
+3627460,"Jamestown-Dunkirk-Fredonia, NY",M
+3628740,"Kingston, NY",M
+3631660,"Malone, NY",M
+3635620,"New York-Newark-Jersey City, NY-NJ-PA (NY part)",M
+3636300,"Ogdensburg-Massena, NY",M
+3636460,"Olean, NY",M
+3636580,"Oneonta, NY",M
+3638460,"Plattsburgh, NY",M
+3639100,"Poughkeepsie-Newburgh-Middletown, NY",M
+3640380,"Rochester, NY",M
+3642900,"Seneca Falls, NY",M
+3645060,"Syracuse, NY",M
+3646540,"Utica-Rome, NY",M
+3648060,"Watertown-Fort Drum, NY",M
+3699999,"Nonmetropolitan, nonmicropolitan, NY",M
+36360051,"Albany/Rensselaer/Schenectady LWIA",W
+36360151,"New York City LWIA",W
+36360302,"City of Yonkers LWIA",W
+36360451,"Chemung/Schuyler/Steuben LWIA",W
+36360602,"Hempstead/Long Beach Consortium LWIA",W
+36360651,"Jefferson/Lewis LWIA",W
+36360752,"Oyster Bay/North Hempstead/Glen Cove LWIA",W
+36360801,"Niagara County LWIA",W
+36360901,"Oneida/Herkimer/Madison LWIA",W
+36360951,"Orange County LWIA",W
+36361001,"Oswego County LWIA",W
+36361051,"Rockland County LWIA",W
+36361101,"St. Lawrence County LWIA",W
+36361151,"Saratoga/Warren/Washington LWIA",W
+36361201,"Suffolk County LWIA",W
+36361251,"Ulster County LWIA",W
+36361351,"Columbia/Greene LWIA",W
+36361401,"Sullivan County LWIA",W
+36361451,"Fulton/Montgomery/Schoharie LWIA",W
+36361501,"Clinton/Essex/Franklin/Hamilton LWIA",W
+36361551,"Chenango/Delaware/Otsego LWIA",W
+36361651,"Ontario/Seneca/Wayne/Yates LWIA",W
+36361701,"Genesee/Livingston/Orleans/Wyoming LWIA",W
+36361751,"Erie County LWIA",W
+36361851,"Onondaga County LWIA",W
+36361951,"Cayuga/Cortland LWIA",W
+36362101,"Allegany/Cattaraugus LWIA",W
+36362151,"Chautauqua County LWIA",W
+36362201,"Broome/Tioga LWIA",W
+36362251,"Tompkins County LWIA",W
+36362301,"Dutchess County LWIA",W
+36362352,"Putnam/Westchester LWIA",W
+36362401,"Monroe County LWIA",W

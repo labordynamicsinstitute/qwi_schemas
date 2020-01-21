@@ -1,0 +1,166 @@
+﻿geography,label,geo_level
+51,"Virginia",S
+51001,"Accomack, VA",C
+51003,"Albemarle, VA",C
+51005,"Alleghany, VA",C
+51007,"Amelia, VA",C
+51009,"Amherst, VA",C
+51011,"Appomattox, VA",C
+51013,"Arlington, VA",C
+51015,"Augusta, VA",C
+51017,"Bath, VA",C
+51019,"Bedford, VA",C
+51021,"Bland, VA",C
+51023,"Botetourt, VA",C
+51025,"Brunswick, VA",C
+51027,"Buchanan, VA",C
+51029,"Buckingham, VA",C
+51031,"Campbell, VA",C
+51033,"Caroline, VA",C
+51035,"Carroll, VA",C
+51036,"Charles City, VA",C
+51037,"Charlotte, VA",C
+51041,"Chesterfield, VA",C
+51043,"Clarke, VA",C
+51045,"Craig, VA",C
+51047,"Culpeper, VA",C
+51049,"Cumberland, VA",C
+51051,"Dickenson, VA",C
+51053,"Dinwiddie, VA",C
+51057,"Essex, VA",C
+51059,"Fairfax, VA",C
+51061,"Fauquier, VA",C
+51063,"Floyd, VA",C
+51065,"Fluvanna, VA",C
+51067,"Franklin, VA",C
+51069,"Frederick, VA",C
+51071,"Giles, VA",C
+51073,"Gloucester, VA",C
+51075,"Goochland, VA",C
+51077,"Grayson, VA",C
+51079,"Greene, VA",C
+51081,"Greensville, VA",C
+51083,"Halifax, VA",C
+51085,"Hanover, VA",C
+51087,"Henrico, VA",C
+51089,"Henry, VA",C
+51091,"Highland, VA",C
+51093,"Isle of Wight, VA",C
+51095,"James City, VA",C
+51097,"King and Queen, VA",C
+51099,"King George, VA",C
+51101,"King William, VA",C
+51103,"Lancaster, VA",C
+51105,"Lee, VA",C
+51107,"Loudoun, VA",C
+51109,"Louisa, VA",C
+51111,"Lunenburg, VA",C
+51113,"Madison, VA",C
+51115,"Mathews, VA",C
+51117,"Mecklenburg, VA",C
+51119,"Middlesex, VA",C
+51121,"Montgomery, VA",C
+51125,"Nelson, VA",C
+51127,"New Kent, VA",C
+51131,"Northampton, VA",C
+51133,"Northumberland, VA",C
+51135,"Nottoway, VA",C
+51137,"Orange, VA",C
+51139,"Page, VA",C
+51141,"Patrick, VA",C
+51143,"Pittsylvania, VA",C
+51145,"Powhatan, VA",C
+51147,"Prince Edward, VA",C
+51149,"Prince George, VA",C
+51153,"Prince William, VA",C
+51155,"Pulaski, VA",C
+51157,"Rappahannock, VA",C
+51159,"Richmond, VA",C
+51161,"Roanoke, VA",C
+51163,"Rockbridge, VA",C
+51165,"Rockingham, VA",C
+51167,"Russell, VA",C
+51169,"Scott, VA",C
+51171,"Shenandoah, VA",C
+51173,"Smyth, VA",C
+51175,"Southampton, VA",C
+51177,"Spotsylvania, VA",C
+51179,"Stafford, VA",C
+51181,"Surry, VA",C
+51183,"Sussex, VA",C
+51185,"Tazewell, VA",C
+51187,"Warren, VA",C
+51191,"Washington, VA",C
+51193,"Westmoreland, VA",C
+51195,"Wise, VA",C
+51197,"Wythe, VA",C
+51199,"York, VA",C
+51510,"Alexandria, VA",C
+51520,"Bristol, VA",C
+51530,"Buena Vista, VA",C
+51540,"Charlottesville, VA",C
+51550,"Chesapeake, VA",C
+51570,"Colonial Heights, VA",C
+51580,"Covington, VA",C
+51590,"Danville, VA",C
+51595,"Emporia, VA",C
+51600,"Fairfax, VA",C
+51610,"Falls Church, VA",C
+51620,"Franklin, VA",C
+51630,"Fredericksburg, VA",C
+51640,"Galax, VA",C
+51650,"Hampton, VA",C
+51660,"Harrisonburg, VA",C
+51670,"Hopewell, VA",C
+51678,"Lexington, VA",C
+51680,"Lynchburg, VA",C
+51683,"Manassas, VA",C
+51685,"Manassas Park, VA",C
+51690,"Martinsville, VA",C
+51700,"Newport News, VA",C
+51710,"Norfolk, VA",C
+51720,"Norton, VA",C
+51730,"Petersburg, VA",C
+51735,"Poquoson, VA",C
+51740,"Portsmouth, VA",C
+51750,"Radford, VA",C
+51760,"Richmond, VA",C
+51770,"Roanoke, VA",C
+51775,"Salem, VA",C
+51790,"Staunton, VA",C
+51800,"Suffolk, VA",C
+51810,"Virginia Beach, VA",C
+51820,"Waynesboro, VA",C
+51830,"Williamsburg, VA",C
+51840,"Winchester, VA",C
+5113720,"Big Stone Gap, VA",M
+5113980,"Blacksburg-Christiansburg, VA",M
+5114140,"Bluefield, WV-VA (VA part)",M
+5116820,"Charlottesville, VA",M
+5119260,"Danville, VA",M
+5125500,"Harrisonburg, VA",M
+5128700,"Kingsport-Bristol, TN-VA (VA part)",M
+5131340,"Lynchburg, VA",M
+5132300,"Martinsville, VA",M
+5140060,"Richmond, VA",M
+5140220,"Roanoke, VA",M
+5144420,"Staunton, VA",M
+5147260,"Virginia Beach-Norfolk-Newport News, VA-NC (VA part)",M
+5147900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (VA part)",M
+5149020,"Winchester, VA-WV (VA part)",M
+5199999,"Nonmetropolitan, nonmicropolitan, VA",M
+51000441,"Southwestern Virginia LWIA I",W
+51000442,"New River/Mt. Rogers LWIA II",W
+51000443,"Western Virginia LWIA III",W
+51000444,"Shenandoah Valley LWIA IV",W
+51000446,"Piedmont Workforce Network LWIA VI",W
+51000447,"Region 2000/Central VA LWIA VII",W
+51000448,"South Central LWIA VIII",W
+51000449,"Capital Region Workforce Partnership LWIA IX",W
+51000451,"Northern Virginia LWIA XI",W
+51000452,"Alexandria/Arlington LWIA XII",W
+51000453,"Bay Consortium LWIA XIII",W
+51000454,"Greater Peninsula LWIA XIV",W
+51000455,"Crater Area LWIA XV",W
+51000456,"Hampton Roads LWIA XVI",W
+51000457,"West Piedmont LWIA XVII",W
