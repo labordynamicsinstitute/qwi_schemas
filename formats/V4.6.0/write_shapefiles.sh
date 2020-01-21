@@ -40,7 +40,7 @@ basefile=lehd_shapefiles
 asciifile=${basefile}.asciidoc
 
 echo "= LEHD Public Use Shapefile Data" > $asciifile
-echo "Heath Hayward, Matthew Graham, Lars Vilhuber <${author}>" >> $asciifile
+echo "<${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
@@ -131,19 +131,19 @@ Comma-Separated Value (CSV) files through the LEHD website's Data page
 at https://lehd.ces.census.gov/data/ as well as through the
 https://ledextract.ces.census.gov/[LED Extraction Tool].
 
-Shapefiles are used to provide mapping functionality in https://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer (Beta)].
+Shapefiles are used to provide mapping functionality in https://qwiexplorer.ces.census.gov/[QWI Explorer] and https://j2jexplorer.ces.census.gov/[Job-to-Job Explorer].
 They are created by transforming input shapefiles sourced from https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line].
-New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the https://lehd.ces.census.gov/data/#qwi[QWI] and https://lehd.ces.census.gov/data/#j2j[J2J] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in November or December of each year.
+New TIGER/Line shapefiles are typically released by the Census Bureau's Geography Division in August of each year, which are then processed by the LEHD program as new tabulation areas for the https://lehd.ces.census.gov/data/#qwi[QWI] and https://lehd.ces.census.gov/data/#j2j[J2J] data products. The LEHD shapefiles will be made available in the data schema in coordination with the public release of QWI and J2J data products, usually in December or January of each year.
 
 Sources
 -------
-Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2018 shapefiles]:
+Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2018 shapefiles]:
 
-* https://www2.census.gov/geo/tiger/TIGER2018/STATE/[tl_2018_us_state]
-* https://www2.census.gov/geo/tiger/TIGER2018/COUNTY/[tl_2018_us_county]
-* https://www2.census.gov/geo/tiger/TIGER2018/CBSA/[tl_2018_us_cbsa]
-* https://www2.census.gov/geo/tiger/TIGER2018/PLACE/[tl_2018_(ST)_place]  (for creation of WIA/WIB shapefile)
-* https://www2.census.gov/geo/tiger/TIGER2018/COUSUB/[tl_2018_(ST)_cousub] (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2019/STATE/[tl_2019_us_state]
+* https://www2.census.gov/geo/tiger/TIGER2019/COUNTY/[tl_2019_us_county]
+* https://www2.census.gov/geo/tiger/TIGER2019/CBSA/[tl_2019_us_cbsa]
+* https://www2.census.gov/geo/tiger/TIGER2019/PLACE/[tl_2019_(ST)_place]  (for creation of WIA/WIB shapefile)
+* https://www2.census.gov/geo/tiger/TIGER2019/COUSUB/[tl_2019_(ST)_cousub] (for creation of WIA/WIB shapefile)
 
 Transformations
 ---------------
@@ -152,7 +152,6 @@ The following major transformations are applied to the input files:
 * All geographies are reprojected to https://spatialreference.org/ref/epsg/wgs-84/[WGS-1984 Geographic Coordinate System]
 * Shoreline water has been clipped out to provide a more recognizable depiction of the coastlines.
 * Each layer is given internal point coordinates (stored as double) based on the WGS-1984 projection (decimal degrees).
-* Each layer is run through a "simplify polygon" procedure to remove unnecessary complexity from the features.
 * Features from Guam, American Samoa, and the Northern Mariana Islands have been removed because they are not used in current LEHD tabulations.
 * Each shapefile's attribute table has been updated to conform to the standard LEHD output format, defined in <<format,Format>> section
 
