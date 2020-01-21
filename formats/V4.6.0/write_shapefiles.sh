@@ -134,7 +134,7 @@ New TIGER/Line shapefiles are typically released by the Census Bureau's Geograph
 
 Sources
 -------
-Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2018 shapefiles]:
+Files are derived from   https://www.census.gov/geo/maps-data/data/tiger-line.html[TIGER/Line 2019 shapefiles]:
 
 * https://www2.census.gov/geo/tiger/TIGER2019/STATE/[tl_2019_us_state]
 * https://www2.census.gov/geo/tiger/TIGER2019/COUNTY/[tl_2019_us_county]
