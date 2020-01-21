@@ -1,0 +1,221 @@
+﻿geography,label,geo_level
+13,"Georgia",S
+13001,"Appling, GA",C
+13003,"Atkinson, GA",C
+13005,"Bacon, GA",C
+13007,"Baker, GA",C
+13009,"Baldwin, GA",C
+13011,"Banks, GA",C
+13013,"Barrow, GA",C
+13015,"Bartow, GA",C
+13017,"Ben Hill, GA",C
+13019,"Berrien, GA",C
+13021,"Bibb, GA",C
+13023,"Bleckley, GA",C
+13025,"Brantley, GA",C
+13027,"Brooks, GA",C
+13029,"Bryan, GA",C
+13031,"Bulloch, GA",C
+13033,"Burke, GA",C
+13035,"Butts, GA",C
+13037,"Calhoun, GA",C
+13039,"Camden, GA",C
+13043,"Candler, GA",C
+13045,"Carroll, GA",C
+13047,"Catoosa, GA",C
+13049,"Charlton, GA",C
+13051,"Chatham, GA",C
+13053,"Chattahoochee, GA",C
+13055,"Chattooga, GA",C
+13057,"Cherokee, GA",C
+13059,"Clarke, GA",C
+13061,"Clay, GA",C
+13063,"Clayton, GA",C
+13065,"Clinch, GA",C
+13067,"Cobb, GA",C
+13069,"Coffee, GA",C
+13071,"Colquitt, GA",C
+13073,"Columbia, GA",C
+13075,"Cook, GA",C
+13077,"Coweta, GA",C
+13079,"Crawford, GA",C
+13081,"Crisp, GA",C
+13083,"Dade, GA",C
+13085,"Dawson, GA",C
+13087,"Decatur, GA",C
+13089,"DeKalb, GA",C
+13091,"Dodge, GA",C
+13093,"Dooly, GA",C
+13095,"Dougherty, GA",C
+13097,"Douglas, GA",C
+13099,"Early, GA",C
+13101,"Echols, GA",C
+13103,"Effingham, GA",C
+13105,"Elbert, GA",C
+13107,"Emanuel, GA",C
+13109,"Evans, GA",C
+13111,"Fannin, GA",C
+13113,"Fayette, GA",C
+13115,"Floyd, GA",C
+13117,"Forsyth, GA",C
+13119,"Franklin, GA",C
+13121,"Fulton, GA",C
+13123,"Gilmer, GA",C
+13125,"Glascock, GA",C
+13127,"Glynn, GA",C
+13129,"Gordon, GA",C
+13131,"Grady, GA",C
+13133,"Greene, GA",C
+13135,"Gwinnett, GA",C
+13137,"Habersham, GA",C
+13139,"Hall, GA",C
+13141,"Hancock, GA",C
+13143,"Haralson, GA",C
+13145,"Harris, GA",C
+13147,"Hart, GA",C
+13149,"Heard, GA",C
+13151,"Henry, GA",C
+13153,"Houston, GA",C
+13155,"Irwin, GA",C
+13157,"Jackson, GA",C
+13159,"Jasper, GA",C
+13161,"Jeff Davis, GA",C
+13163,"Jefferson, GA",C
+13165,"Jenkins, GA",C
+13167,"Johnson, GA",C
+13169,"Jones, GA",C
+13171,"Lamar, GA",C
+13173,"Lanier, GA",C
+13175,"Laurens, GA",C
+13177,"Lee, GA",C
+13179,"Liberty, GA",C
+13181,"Lincoln, GA",C
+13183,"Long, GA",C
+13185,"Lowndes, GA",C
+13187,"Lumpkin, GA",C
+13189,"McDuffie, GA",C
+13191,"McIntosh, GA",C
+13193,"Macon, GA",C
+13195,"Madison, GA",C
+13197,"Marion, GA",C
+13199,"Meriwether, GA",C
+13201,"Miller, GA",C
+13205,"Mitchell, GA",C
+13207,"Monroe, GA",C
+13209,"Montgomery, GA",C
+13211,"Morgan, GA",C
+13213,"Murray, GA",C
+13215,"Muscogee, GA",C
+13217,"Newton, GA",C
+13219,"Oconee, GA",C
+13221,"Oglethorpe, GA",C
+13223,"Paulding, GA",C
+13225,"Peach, GA",C
+13227,"Pickens, GA",C
+13229,"Pierce, GA",C
+13231,"Pike, GA",C
+13233,"Polk, GA",C
+13235,"Pulaski, GA",C
+13237,"Putnam, GA",C
+13239,"Quitman, GA",C
+13241,"Rabun, GA",C
+13243,"Randolph, GA",C
+13245,"Richmond, GA",C
+13247,"Rockdale, GA",C
+13249,"Schley, GA",C
+13251,"Screven, GA",C
+13253,"Seminole, GA",C
+13255,"Spalding, GA",C
+13257,"Stephens, GA",C
+13259,"Stewart, GA",C
+13261,"Sumter, GA",C
+13263,"Talbot, GA",C
+13265,"Taliaferro, GA",C
+13267,"Tattnall, GA",C
+13269,"Taylor, GA",C
+13271,"Telfair, GA",C
+13273,"Terrell, GA",C
+13275,"Thomas, GA",C
+13277,"Tift, GA",C
+13279,"Toombs, GA",C
+13281,"Towns, GA",C
+13283,"Treutlen, GA",C
+13285,"Troup, GA",C
+13287,"Turner, GA",C
+13289,"Twiggs, GA",C
+13291,"Union, GA",C
+13293,"Upson, GA",C
+13295,"Walker, GA",C
+13297,"Walton, GA",C
+13299,"Ware, GA",C
+13301,"Warren, GA",C
+13303,"Washington, GA",C
+13305,"Wayne, GA",C
+13307,"Webster, GA",C
+13309,"Wheeler, GA",C
+13311,"White, GA",C
+13313,"Whitfield, GA",C
+13315,"Wilcox, GA",C
+13317,"Wilkes, GA",C
+13319,"Wilkinson, GA",C
+13321,"Worth, GA",C
+1310500,"Albany, GA",M
+1311140,"Americus, GA",M
+1312020,"Athens-Clarke County, GA",M
+1312060,"Atlanta-Sandy Springs-Alpharetta, GA",M
+1312260,"Augusta-Richmond County, GA-SC (GA part)",M
+1312460,"Bainbridge, GA",M
+1315260,"Brunswick, GA",M
+1315660,"Calhoun, GA",M
+1316340,"Cedartown, GA",M
+1316860,"Chattanooga, TN-GA (GA part)",M
+1317980,"Columbus, GA-AL (GA part)",M
+1318380,"Cordele, GA",M
+1318460,"Cornelia, GA",M
+1319140,"Dalton, GA",M
+1320060,"Douglas, GA",M
+1320140,"Dublin, GA",M
+1321640,"Eufaula, AL-GA (GA part)",M
+1322340,"Fitzgerald, GA",M
+1323580,"Gainesville, GA",M
+1325980,"Hinesville, GA",M
+1327600,"Jefferson, GA",M
+1327700,"Jesup, GA",M
+1329300,"LaGrange, GA-AL (GA part)",M
+1331420,"Macon-Bibb County, GA",M
+1333300,"Milledgeville, GA",M
+1334220,"Moultrie, GA",M
+1340660,"Rome, GA",M
+1341220,"St. Marys, GA",M
+1342340,"Savannah, GA",M
+1344340,"Statesboro, GA",M
+1344900,"Summerville, GA",M
+1345580,"Thomaston, GA",M
+1345620,"Thomasville, GA",M
+1345700,"Tifton, GA",M
+1345740,"Toccoa, GA",M
+1346660,"Valdosta, GA",M
+1347080,"Vidalia, GA",M
+1347580,"Warner Robins, GA",M
+1348180,"Waycross, GA",M
+1399999,"Nonmetropolitan, nonmicropolitan, GA",M
+13000001,"01 Northwest Georgia WIB",W
+13000002,"02 Georgia Mountains WIB",W
+13000003,"03 City of Atlanta WIB",W
+13000004,"04 Cobb County WIB",W
+13000005,"05 DeKalb County WIB",W
+13000006,"06 Fulton County WIB",W
+13000007,"07 Atlanta Regional WIB",W
+13000008,"08 West Central WIB",W
+13000009,"09 Northeast WIB",W
+13000010,"10 Macon-Bibb WIB",W
+13000011,"11 Middle Georgia WIB",W
+13000012,"12 Richmond/Burke WIB",W
+13000013,"13 East Central Georgia WIB",W
+13000014,"14 Lower Chattahoochee WIB",W
+13000015,"15 Middle Flint WIB",W
+13000016,"16 Heart of Georgia/Altamaha WIB",W
+13000017,"17 Southwest Georgia WIB",W
+13000018,"18 South Georgia WIB",W
+13000019,"19 Southeast Georgia WIB",W
+13000020,"20 Coastal WIB",W

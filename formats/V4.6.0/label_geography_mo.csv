@@ -1,0 +1,159 @@
+﻿geography,label,geo_level
+29,"Missouri",S
+29001,"Adair, MO",C
+29003,"Andrew, MO",C
+29005,"Atchison, MO",C
+29007,"Audrain, MO",C
+29009,"Barry, MO",C
+29011,"Barton, MO",C
+29013,"Bates, MO",C
+29015,"Benton, MO",C
+29017,"Bollinger, MO",C
+29019,"Boone, MO",C
+29021,"Buchanan, MO",C
+29023,"Butler, MO",C
+29025,"Caldwell, MO",C
+29027,"Callaway, MO",C
+29029,"Camden, MO",C
+29031,"Cape Girardeau, MO",C
+29033,"Carroll, MO",C
+29035,"Carter, MO",C
+29037,"Cass, MO",C
+29039,"Cedar, MO",C
+29041,"Chariton, MO",C
+29043,"Christian, MO",C
+29045,"Clark, MO",C
+29047,"Clay, MO",C
+29049,"Clinton, MO",C
+29051,"Cole, MO",C
+29053,"Cooper, MO",C
+29055,"Crawford, MO",C
+29057,"Dade, MO",C
+29059,"Dallas, MO",C
+29061,"Daviess, MO",C
+29063,"DeKalb, MO",C
+29065,"Dent, MO",C
+29067,"Douglas, MO",C
+29069,"Dunklin, MO",C
+29071,"Franklin, MO",C
+29073,"Gasconade, MO",C
+29075,"Gentry, MO",C
+29077,"Greene, MO",C
+29079,"Grundy, MO",C
+29081,"Harrison, MO",C
+29083,"Henry, MO",C
+29085,"Hickory, MO",C
+29087,"Holt, MO",C
+29089,"Howard, MO",C
+29091,"Howell, MO",C
+29093,"Iron, MO",C
+29095,"Jackson, MO",C
+29097,"Jasper, MO",C
+29099,"Jefferson, MO",C
+29101,"Johnson, MO",C
+29103,"Knox, MO",C
+29105,"Laclede, MO",C
+29107,"Lafayette, MO",C
+29109,"Lawrence, MO",C
+29111,"Lewis, MO",C
+29113,"Lincoln, MO",C
+29115,"Linn, MO",C
+29117,"Livingston, MO",C
+29119,"McDonald, MO",C
+29121,"Macon, MO",C
+29123,"Madison, MO",C
+29125,"Maries, MO",C
+29127,"Marion, MO",C
+29129,"Mercer, MO",C
+29131,"Miller, MO",C
+29133,"Mississippi, MO",C
+29135,"Moniteau, MO",C
+29137,"Monroe, MO",C
+29139,"Montgomery, MO",C
+29141,"Morgan, MO",C
+29143,"New Madrid, MO",C
+29145,"Newton, MO",C
+29147,"Nodaway, MO",C
+29149,"Oregon, MO",C
+29151,"Osage, MO",C
+29153,"Ozark, MO",C
+29155,"Pemiscot, MO",C
+29157,"Perry, MO",C
+29159,"Pettis, MO",C
+29161,"Phelps, MO",C
+29163,"Pike, MO",C
+29165,"Platte, MO",C
+29167,"Polk, MO",C
+29169,"Pulaski, MO",C
+29171,"Putnam, MO",C
+29173,"Ralls, MO",C
+29175,"Randolph, MO",C
+29177,"Ray, MO",C
+29179,"Reynolds, MO",C
+29181,"Ripley, MO",C
+29183,"St. Charles, MO",C
+29185,"St. Clair, MO",C
+29186,"Ste. Genevieve, MO",C
+29187,"St. Francois, MO",C
+29189,"St. Louis, MO",C
+29195,"Saline, MO",C
+29197,"Schuyler, MO",C
+29199,"Scotland, MO",C
+29201,"Scott, MO",C
+29203,"Shannon, MO",C
+29205,"Shelby, MO",C
+29207,"Stoddard, MO",C
+29209,"Stone, MO",C
+29211,"Sullivan, MO",C
+29213,"Taney, MO",C
+29215,"Texas, MO",C
+29217,"Vernon, MO",C
+29219,"Warren, MO",C
+29221,"Washington, MO",C
+29223,"Wayne, MO",C
+29225,"Webster, MO",C
+29227,"Worth, MO",C
+29229,"Wright, MO",C
+29510,"St. Louis, MO",C
+2914700,"Branson, MO",M
+2916020,"Cape Girardeau, MO-IL (MO part)",M
+2917860,"Columbia, MO",M
+2922100,"Farmington, MO",M
+2922780,"Fort Leonard Wood, MO",M
+2922800,"Fort Madison-Keokuk, IA-IL-MO (MO part)",M
+2925300,"Hannibal, MO",M
+2927620,"Jefferson City, MO",M
+2927900,"Joplin, MO",M
+2928140,"Kansas City, MO-KS (MO part)",M
+2928380,"Kennett, MO",M
+2928860,"Kirksville, MO",M
+2930060,"Lebanon, MO",M
+2932180,"Marshall, MO",M
+2932340,"Maryville, MO",M
+2933020,"Mexico, MO",M
+2933620,"Moberly, MO",M
+2938740,"Poplar Bluff, MO",M
+2939500,"Quincy, IL-MO (MO part)",M
+2940620,"Rolla, MO",M
+2941140,"St. Joseph, MO-KS (MO part)",M
+2941180,"St. Louis, MO-IL (MO part)",M
+2942740,"Sedalia, MO",M
+2943460,"Sikeston, MO",M
+2944180,"Springfield, MO",M
+2947660,"Warrensburg, MO",M
+2948460,"West Plains, MO",M
+2999999,"Nonmetropolitan, nonmicropolitan, MO",M
+29290001,"001 Northwest Region WIB",W
+29290002,"002 Northeast Region WIB",W
+29290003,"003 Kansas City Vicinity Region WIB",W
+29290004,"004 West Central Region WIB",W
+29290006,"006 St. Louis City Region WIB",W
+29290007,"007 Southwest Region WIB",W
+29290008,"008 Ozark Region WIB",W
+29290010,"010 South Central Region WIB",W
+29290011,"011 Southeast Region WIB",W
+29290012,"012 East Jackson County Region WIB",W
+29290013,"013 St. Louis County Region WIB",W
+29290014,"014 St. Charles County Region WIB",W
+29290015,"015 Jefferson/Franklin County Consortium WIB",W
+29290016,"5/9 Central Region WIB",W

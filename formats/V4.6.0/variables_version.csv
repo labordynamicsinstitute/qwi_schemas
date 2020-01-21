@@ -1,0 +1,10 @@
+Component,Source,Description
+product,[type],Type as described in naming convention
+fas,[fas],(optional - concatenated with product) used for QWI to distinguish separate tabulations from the legal [fas] values as described in naming convention
+geo,stusps or METRO,Covered geography (uppercase state postal code including entire nation or the word METRO)
+geonum,geography,Numeric geography code
+start,yyyy:q,Start year and quarter
+end,yyyy:q,End year and quarter
+schema,Vx.y.z,Version of the schema
+release,RyyyyQq,Release quarter (identifies when the data was created)
+internal,various,Internal identifier used for provenance tracking

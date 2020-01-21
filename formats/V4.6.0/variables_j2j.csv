@@ -1,0 +1,36 @@
+Indicator Variable,Alternate Name,Status Flag,Indicator Name,Description,Units,Concept,Base
+MHire,all_doma2,sMHire,Hires,Hires into a worker's main job,Count,Hire,1
+MSep,all_doms2,sMSep,Separations,Separations from a worker's main job,Count,Separation,1
+MJobStart,first_dome,sMJobStart,Main Job Starts,New main jobs due to hires and instances when a previously existing secondary job becomes the main source of earnings,Count,Hire,1
+MJobEnd,last_domb,sMJobEnd,Main Job Ends,End of main jobs due to separations and instances when another job becomes the main source of earnings,Count,Separation,1
+EEHire,ee_doma2,sEEHire,Job-to-Job Hires (Continuous Employment),Hires following a separation with no observed nonemployment spell,Count,Hire,1
+EESep,ee_doms2,sEESep,Job-to-Job Separations (Continuous Employment),Separations followed by a hire with no observed nonemployment spell,Count,Separation,1
+AQHire,aq_doma2,sAQHire,Job-to-Job Hires (Brief Nonemployment),Hires following a separation with a short nonemployment spell,Count,Hire,1
+AQSep,aq_doms2,sAQSep,Job-to-Job Separations (Brief Nonemployment),Separations followed by a hire with a short nonemployment spell,Count,Separation,1
+J2JHire,j2j_doma2,sJ2JHire,Job-to-Job Hires,Hires following a separation (short or no observed nonemployment spell),Count,Hire,1
+J2JSep,j2j_doms2,sJ2JSep,Job-to-Job Separations,Separations followed by a hire (short or no observed nonemployment spell),Count,Separation,1
+NEHire,ne_doma2,sNEHire,Hires from Nonemployment,Hires following any spell of nonemployment,Count,Hire,1
+ENSep,en_doms2,sENSep,Separations to Nonemployment,Separations into any spell of nonemployment,Count,Separation,1
+NEPersist,ne2_doma2,sNEPersist,Hires from Persistent Nonemployment,Hires following a spell of persistent nonemployment,Count,Hire,1
+ENPersist,en2_doms2,sENPersist,Separations to Persistent Nonemployment,Separations into a spell of persistent nonemployment,Count,Separation,1
+NEFullQ,ne2p_doma2,sNEFullQ,Hires from Full-Quarter Nonemployment,Hires following a spell of full-quarter nonemployment (does not include intermittently employed),Count,Hire,1
+ENFullQ,en2p_doms2,sENFullQ,Separations to Full-Quarter Nonemployment,Separations into a spell of full-quarter nonemployment (does not include intermittently employed),Count,Separation,1
+MainB,domB,sMainB,Employment (Beginning of Quarter),Main jobs held on the first day of the quarter,Count,Employment,1
+MainE,domE,sMainE,Employment (End of Quarter),Main jobs held on the last day of the quarter,Count,Employment,1
+EESepS,fee_doms2,sEESepS,Stable Job-to-Job Separations (Continuous Employment),Separations from stable employment followed by a hire to stable employment with no observed nonemployment spell,Count,Separation,1
+EEHireS,fee_doma2,sEEHireS,Stable Job-to-Job Hires (Continuous Employment),Hires to stable employment following a separation from stable employment with no observed nonemployment spell,Count,Hire,1
+AQSepS,faq_doms2,sAQSepS,Stable Job-to-Job Separations (Brief Nonemployment),Separations from stable employment followed by a hire to stable employment with a short nonemployment spell,Count,Separation,1
+AQHireS,faq_doma2,sAQHireS,Stable Job-to-Job Hires (Brief Nonemployment),Hires to stable employment following a separation from stable employment with a short nonemployment spell,Count,Hire,1
+NEPersistS,fne2_doma2,sNEPersistS,Stable Hires from Persistent Nonemployment,Hires to stable employment following a spell of persistent nonemployment,Count,Hire,1
+ENPersistS,fen2_doms2,sENPersistS,Stable Separations to Persistent Nonemployment,Separations from stable employment into a spell of persistent nonemployment,Count,Separation,1
+JobStayS,f4dombe,sJobStayS,Stable Job Stayer,Stable main jobs that did not change during the reference quarter,Count,Employment,1
+MainBS,fdomb,sMainBS,Stable Employment (Beginning of Quarter),Stable main jobs held on the first day of the quarter,Count,Employment,1
+MainES,fdome,sMainES,Stable Employment (End of Quarter),Stable main jobs held on the last day of the quarter,Count,Employment,1
+NEHireSEarn_Dest,fne2_doma2_kfqearn,sNEHireSEarn_Dest,Average Earnings following Stable Hires from Persistent Nonemployment,Average quarterly earnings following hires to stable employment from a spell of persistent nonemployment,Dollars,Earnings,NEPersistS
+ENSepSEarn_Orig,fen2_doms2_jfqearn,sENSepSEarn_Orig,Average Earnings prior to Stable Separations to Persistent Nonemployment,Average quarterly earnings prior to separations from stable employment into a spell of persistent nonemployment,Dollars,Earnings,ENPersistS
+JobStaySEarn_Orig,f4dombe_jfqearn,sJobStaySEarn_Orig,Average Earnings prior to Stable Job Stayer,Average quarterly earnings in the previous quarter when workers stayed in a stable job,Dollars,Earnings,JobStayS
+JobStaySEarn_Dest,f4dombe_kfqearn,sJobStaySEarn_Dest,Average Earnings following Stable Job Stayer,Average quarterly earnings in the quarter when workers stayed in a stable job,Dollars,Earnings,JobStayS
+EESepSEarn_Orig,fee_doms2_jfqearn,sEESepSEarn_Orig,Average Earnings prior to Stable Job-to-Job Separations (Continuous Employment),Average quarterly earnings prior to job flows with no observed nonemployment spell,Dollars,Earnings,EESepS
+EEHireSEarn_Dest,fee_doma2_kfqearn,sEEHireSEarn_Dest,Average Earnings following Stable Job-to-Job Hires (Continuous Employment),Average quarterly earnings following job flows with no observed nonemployment spell,Dollars,Earnings,EEHireS
+AQSepSEarn_Orig,faq_doms2_jfqearn,sAQSepSEarn_Orig,Average Earnings prior to Stable Job-to-Job Separations (Brief Nonemployment),Average quarterly earnings prior to job flows with a short nonemployment spell,Dollars,Earnings,AQSepS
+AQHireSEarn_Dest,faq_doma2_kfqearn,sAQHireSEarn_Dest,Average Earnings following Stable Job-to-Job Hires (Brief Nonemployment),Average quarterly earnings following job flows with a short nonemployment spell,Dollars,Earnings,AQHireS

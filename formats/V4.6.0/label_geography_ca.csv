@@ -1,0 +1,144 @@
+﻿geography,label,geo_level
+06,"California",S
+06001,"Alameda, CA",C
+06003,"Alpine, CA",C
+06005,"Amador, CA",C
+06007,"Butte, CA",C
+06009,"Calaveras, CA",C
+06011,"Colusa, CA",C
+06013,"Contra Costa, CA",C
+06015,"Del Norte, CA",C
+06017,"El Dorado, CA",C
+06019,"Fresno, CA",C
+06021,"Glenn, CA",C
+06023,"Humboldt, CA",C
+06025,"Imperial, CA",C
+06027,"Inyo, CA",C
+06029,"Kern, CA",C
+06031,"Kings, CA",C
+06033,"Lake, CA",C
+06035,"Lassen, CA",C
+06037,"Los Angeles, CA",C
+06039,"Madera, CA",C
+06041,"Marin, CA",C
+06043,"Mariposa, CA",C
+06045,"Mendocino, CA",C
+06047,"Merced, CA",C
+06049,"Modoc, CA",C
+06051,"Mono, CA",C
+06053,"Monterey, CA",C
+06055,"Napa, CA",C
+06057,"Nevada, CA",C
+06059,"Orange, CA",C
+06061,"Placer, CA",C
+06063,"Plumas, CA",C
+06065,"Riverside, CA",C
+06067,"Sacramento, CA",C
+06069,"San Benito, CA",C
+06071,"San Bernardino, CA",C
+06073,"San Diego, CA",C
+06075,"San Francisco, CA",C
+06077,"San Joaquin, CA",C
+06079,"San Luis Obispo, CA",C
+06081,"San Mateo, CA",C
+06083,"Santa Barbara, CA",C
+06085,"Santa Clara, CA",C
+06087,"Santa Cruz, CA",C
+06089,"Shasta, CA",C
+06091,"Sierra, CA",C
+06093,"Siskiyou, CA",C
+06095,"Solano, CA",C
+06097,"Sonoma, CA",C
+06099,"Stanislaus, CA",C
+06101,"Sutter, CA",C
+06103,"Tehama, CA",C
+06105,"Trinity, CA",C
+06107,"Tulare, CA",C
+06109,"Tuolumne, CA",C
+06111,"Ventura, CA",C
+06113,"Yolo, CA",C
+06115,"Yuba, CA",C
+0612540,"Bakersfield, CA",M
+0617020,"Chico, CA",M
+0617340,"Clearlake, CA",M
+0618860,"Crescent City, CA",M
+0620940,"El Centro, CA",M
+0621700,"Eureka-Arcata, CA",M
+0623420,"Fresno, CA",M
+0625260,"Hanford-Corcoran, CA",M
+0631080,"Los Angeles-Long Beach-Anaheim, CA",M
+0631460,"Madera, CA",M
+0632900,"Merced, CA",M
+0633700,"Modesto, CA",M
+0634900,"Napa, CA",M
+0637100,"Oxnard-Thousand Oaks-Ventura, CA",M
+0639780,"Red Bluff, CA",M
+0639820,"Redding, CA",M
+0640140,"Riverside-San Bernardino-Ontario, CA",M
+0640900,"Sacramento-Roseville-Folsom, CA",M
+0641500,"Salinas, CA",M
+0641740,"San Diego-Chula Vista-Carlsbad, CA",M
+0641860,"San Francisco-Oakland-Berkeley, CA",M
+0641940,"San Jose-Sunnyvale-Santa Clara, CA",M
+0642020,"San Luis Obispo-Paso Robles, CA",M
+0642100,"Santa Cruz-Watsonville, CA",M
+0642200,"Santa Maria-Santa Barbara, CA",M
+0642220,"Santa Rosa-Petaluma, CA",M
+0643760,"Sonora, CA",M
+0644700,"Stockton, CA",M
+0645000,"Susanville, CA",M
+0646020,"Truckee-Grass Valley, CA",M
+0646380,"Ukiah, CA",M
+0646700,"Vallejo, CA",M
+0647300,"Visalia, CA",M
+0649700,"Yuba City, CA",M
+0699999,"Nonmetropolitan, nonmicropolitan, CA",M
+06000001,"01 Alameda County WIB",W
+06000003,"03 Oakland City WIB",W
+06000004,"04 Mother Lode Consortium WIB",W
+06000005,"05 Golden Sierra Consortium WIB",W
+06000007,"07 NCC (North Central Counties Consortium) WIB",W
+06000008,"08 Contra Costa County WIB",W
+06000009,"09 Richmond City WIB",W
+06000011,"11 Fresno County WIB",W
+06000012,"12 Humboldt County WIB",W
+06000013,"13 Imperial County WIB",W
+06000014,"14 Kern, Inyo, Mono Consortium WIB",W
+06000015,"15 Kings County WIB",W
+06000016,"16 NoRTEC WIB",W
+06000017,"17 Los Angeles County WIB",W
+06000019,"19 Foothill Consortium WIB",W
+06000020,"20 Verdugo Consortium WIB",W
+06000026,"26 Pacific Gateway",W
+06000027,"27 Los Angeles City WIB",W
+06000028,"28 Madera County WIB",W
+06000029,"29 Marin County WIB",W
+06000030,"30 Mendocino County WIB",W
+06000031,"31 Merced County WIB",W
+06000032,"32 Monterey County WIB",W
+06000033,"33 Napa County WIB",W
+06000034,"34 Orange County WIB",W
+06000035,"35 Riverside County WIB",W
+06000037,"37 Sacramento County WIB",W
+06000038,"38 San Benito County WIB",W
+06000040,"40 San Bernardino County WIB",W
+06000041,"41 San Bernardino City WIB",W
+06000042,"42 San Diego County WIB",W
+06000045,"45 San Francisco City/County WIB",W
+06000046,"46 San Joaquin County WIB",W
+06000048,"48 San Luis Obispo County WIB",W
+06000049,"49 San Mateo County WIB",W
+06000050,"50 Santa Barbara County WIB",W
+06000051,"51 San Jose - Silicon Valley WIB",W
+06000052,"52 NOVA (North Valley Consortium) WIB",W
+06000053,"53 Santa Cruz County WIB",W
+06000055,"55 Solano County WIB",W
+06000056,"56 Sonoma County WIB",W
+06000057,"57 Stanislaus County WIB",W
+06000058,"58 Tulare County WIB",W
+06000059,"59 Ventura County WIB",W
+06000060,"60 Yolo County WIB",W
+06000061,"61 South Bay Consortium WIB",W
+06000062,"62 SELACO (Southeast Los Angeles County) WIB",W
+06000072,"72 Anaheim City WIB",W
+06000073,"73 Santa Ana City WIB",W

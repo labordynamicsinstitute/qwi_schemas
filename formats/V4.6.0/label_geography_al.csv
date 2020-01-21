@@ -1,0 +1,104 @@
+﻿geography,label,geo_level
+01,"Alabama",S
+01001,"Autauga, AL",C
+01003,"Baldwin, AL",C
+01005,"Barbour, AL",C
+01007,"Bibb, AL",C
+01009,"Blount, AL",C
+01011,"Bullock, AL",C
+01013,"Butler, AL",C
+01015,"Calhoun, AL",C
+01017,"Chambers, AL",C
+01019,"Cherokee, AL",C
+01021,"Chilton, AL",C
+01023,"Choctaw, AL",C
+01025,"Clarke, AL",C
+01027,"Clay, AL",C
+01029,"Cleburne, AL",C
+01031,"Coffee, AL",C
+01033,"Colbert, AL",C
+01035,"Conecuh, AL",C
+01037,"Coosa, AL",C
+01039,"Covington, AL",C
+01041,"Crenshaw, AL",C
+01043,"Cullman, AL",C
+01045,"Dale, AL",C
+01047,"Dallas, AL",C
+01049,"DeKalb, AL",C
+01051,"Elmore, AL",C
+01053,"Escambia, AL",C
+01055,"Etowah, AL",C
+01057,"Fayette, AL",C
+01059,"Franklin, AL",C
+01061,"Geneva, AL",C
+01063,"Greene, AL",C
+01065,"Hale, AL",C
+01067,"Henry, AL",C
+01069,"Houston, AL",C
+01071,"Jackson, AL",C
+01073,"Jefferson, AL",C
+01075,"Lamar, AL",C
+01077,"Lauderdale, AL",C
+01079,"Lawrence, AL",C
+01081,"Lee, AL",C
+01083,"Limestone, AL",C
+01085,"Lowndes, AL",C
+01087,"Macon, AL",C
+01089,"Madison, AL",C
+01091,"Marengo, AL",C
+01093,"Marion, AL",C
+01095,"Marshall, AL",C
+01097,"Mobile, AL",C
+01099,"Monroe, AL",C
+01101,"Montgomery, AL",C
+01103,"Morgan, AL",C
+01105,"Perry, AL",C
+01107,"Pickens, AL",C
+01109,"Pike, AL",C
+01111,"Randolph, AL",C
+01113,"Russell, AL",C
+01115,"St. Clair, AL",C
+01117,"Shelby, AL",C
+01119,"Sumter, AL",C
+01121,"Talladega, AL",C
+01123,"Tallapoosa, AL",C
+01125,"Tuscaloosa, AL",C
+01127,"Walker, AL",C
+01129,"Washington, AL",C
+01131,"Wilcox, AL",C
+01133,"Winston, AL",C
+0110700,"Albertville, AL",M
+0110760,"Alexander City, AL",M
+0111500,"Anniston-Oxford, AL",M
+0112120,"Atmore, AL",M
+0112220,"Auburn-Opelika, AL",M
+0113820,"Birmingham-Hoover, AL",M
+0117980,"Columbus, GA-AL (AL part)",M
+0118980,"Cullman, AL",M
+0119300,"Daphne-Fairhope-Foley, AL",M
+0119460,"Decatur, AL",M
+0120020,"Dothan, AL",M
+0121460,"Enterprise, AL",M
+0121640,"Eufaula, AL-GA (AL part)",M
+0122520,"Florence-Muscle Shoals, AL",M
+0122840,"Fort Payne, AL",M
+0123460,"Gadsden, AL",M
+0126620,"Huntsville, AL",M
+0127530,"Jasper, AL",M
+0129300,"LaGrange, GA-AL (AL part)",M
+0133660,"Mobile, AL",M
+0133860,"Montgomery, AL",M
+0137120,"Ozark, AL",M
+0142460,"Scottsboro, AL",M
+0142820,"Selma, AL",M
+0145180,"Talladega-Sylacauga, AL",M
+0145980,"Troy, AL",M
+0146220,"Tuscaloosa, AL",M
+0199999,"Nonmetropolitan, nonmicropolitan, AL",M
+01010001,"North Alabama Works",W
+01010002,"East Alabama Works",W
+01010003,"West Alabama Works",W
+01010004,"Central Six Alabama Works",W
+01010005,"Central Alabama Works",W
+01010006,"Southeast Alabama Works",W
+01010007,"Southwest Alabama Works",W

@@ -1,0 +1,9 @@
+Variable,Description
+agg_level,index representing level of aggregation reported on a given record
+worker_char,demographic (worker) characteristics reported on record
+firm_char,firm characteristics reported on record. These will be the characteristics of the destination firm in O-D tabulations
+firm_orig_char,characteristics of origin firm reported on record (O-D tabulations only)
+j2j,Flag: Aggregation level available on J2J counts tables
+j2jr,Flag: Aggregation level available on J2J rates tables
+j2jod,Flag: Aggregation level available on J2J O-D tables
+qwi,Flag: Aggregation level available on QWI

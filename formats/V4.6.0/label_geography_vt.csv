@@ -1,0 +1,34 @@
+﻿geography,label,geo_level
+50,"Vermont",S
+50001,"Addison, VT",C
+50003,"Bennington, VT",C
+50005,"Caledonia, VT",C
+50007,"Chittenden, VT",C
+50009,"Essex, VT",C
+50011,"Franklin, VT",C
+50013,"Grand Isle, VT",C
+50015,"Lamoille, VT",C
+50017,"Orange, VT",C
+50019,"Orleans, VT",C
+50021,"Rutland, VT",C
+50023,"Washington, VT",C
+50025,"Windham, VT",C
+50027,"Windsor, VT",C
+5012740,"Barre, VT",M
+5013540,"Bennington, VT",M
+5015540,"Burlington-South Burlington, VT",M
+5030100,"Lebanon, NH-VT (VT part)",M
+5040860,"Rutland, VT",M
+5099999,"Nonmetropolitan, nonmicropolitan, VT",M
+50000001,"01 Addison County Business Education WIB",W
+50000002,"02 Bennington County School and Workforce WIB",W
+50000003,"03 Bradford Area WIB",W
+50000004,"04 Central Vermont WIB",W
+50000005,"05 Connecticut River Valley WIB",W
+50000006,"06 Franklin / Grand Isle WIB",W
+50000007,"07 Lake Champlain Regional WIB",W
+50000008,"08 Lamoille Valley WIB",W
+50000009,"09 Northeast Kingdom WIB",W
+50000011,"11 Rutland Region Educational WIB",W
+50000012,"12 Upper Valley Commerce and Education WIB",W
+50000013,"13 Windham WIB",W

@@ -1,0 +1,123 @@
+﻿geography,label,geo_level
+12,"Florida",S
+12001,"Alachua, FL",C
+12003,"Baker, FL",C
+12005,"Bay, FL",C
+12007,"Bradford, FL",C
+12009,"Brevard, FL",C
+12011,"Broward, FL",C
+12013,"Calhoun, FL",C
+12015,"Charlotte, FL",C
+12017,"Citrus, FL",C
+12019,"Clay, FL",C
+12021,"Collier, FL",C
+12023,"Columbia, FL",C
+12027,"DeSoto, FL",C
+12029,"Dixie, FL",C
+12031,"Duval, FL",C
+12033,"Escambia, FL",C
+12035,"Flagler, FL",C
+12037,"Franklin, FL",C
+12039,"Gadsden, FL",C
+12041,"Gilchrist, FL",C
+12043,"Glades, FL",C
+12045,"Gulf, FL",C
+12047,"Hamilton, FL",C
+12049,"Hardee, FL",C
+12051,"Hendry, FL",C
+12053,"Hernando, FL",C
+12055,"Highlands, FL",C
+12057,"Hillsborough, FL",C
+12059,"Holmes, FL",C
+12061,"Indian River, FL",C
+12063,"Jackson, FL",C
+12065,"Jefferson, FL",C
+12067,"Lafayette, FL",C
+12069,"Lake, FL",C
+12071,"Lee, FL",C
+12073,"Leon, FL",C
+12075,"Levy, FL",C
+12077,"Liberty, FL",C
+12079,"Madison, FL",C
+12081,"Manatee, FL",C
+12083,"Marion, FL",C
+12085,"Martin, FL",C
+12086,"Miami-Dade, FL",C
+12087,"Monroe, FL",C
+12089,"Nassau, FL",C
+12091,"Okaloosa, FL",C
+12093,"Okeechobee, FL",C
+12095,"Orange, FL",C
+12097,"Osceola, FL",C
+12099,"Palm Beach, FL",C
+12101,"Pasco, FL",C
+12103,"Pinellas, FL",C
+12105,"Polk, FL",C
+12107,"Putnam, FL",C
+12109,"St. Johns, FL",C
+12111,"St. Lucie, FL",C
+12113,"Santa Rosa, FL",C
+12115,"Sarasota, FL",C
+12117,"Seminole, FL",C
+12119,"Sumter, FL",C
+12121,"Suwannee, FL",C
+12123,"Taylor, FL",C
+12125,"Union, FL",C
+12127,"Volusia, FL",C
+12129,"Wakulla, FL",C
+12131,"Walton, FL",C
+12133,"Washington, FL",C
+1211580,"Arcadia, FL",M
+1215980,"Cape Coral-Fort Myers, FL",M
+1217500,"Clewiston, FL",M
+1218880,"Crestview-Fort Walton Beach-Destin, FL",M
+1219660,"Deltona-Daytona Beach-Ormond Beach, FL",M
+1223540,"Gainesville, FL",M
+1226140,"Homosassa Springs, FL",M
+1227260,"Jacksonville, FL",M
+1228580,"Key West, FL",M
+1229380,"Lake City, FL",M
+1229460,"Lakeland-Winter Haven, FL",M
+1233100,"Miami-Fort Lauderdale-Pompano Beach, FL",M
+1234940,"Naples-Marco Island, FL",M
+1235840,"North Port-Sarasota-Bradenton, FL",M
+1236100,"Ocala, FL",M
+1236380,"Okeechobee, FL",M
+1236740,"Orlando-Kissimmee-Sanford, FL",M
+1237260,"Palatka, FL",M
+1237340,"Palm Bay-Melbourne-Titusville, FL",M
+1237460,"Panama City, FL",M
+1237860,"Pensacola-Ferry Pass-Brent, FL",M
+1238940,"Port St. Lucie, FL",M
+1239460,"Punta Gorda, FL",M
+1242680,"Sebastian-Vero Beach, FL",M
+1242700,"Sebring-Avon Park, FL",M
+1245220,"Tallahassee, FL",M
+1245300,"Tampa-St. Petersburg-Clearwater, FL",M
+1245540,"The Villages, FL",M
+1248100,"Wauchula, FL",M
+1299999,"Nonmetropolitan, nonmicropolitan, FL",M
+12000001,"CareerSource Escarosa",W
+12000002,"CareerSource Okaloosa Walton",W
+12000003,"CareerSource Chipola",W
+12000004,"CareerSource Gulf Coast",W
+12000005,"CareerSource Capital Region",W
+12000006,"CareerSource North Florida",W
+12000007,"CareerSource Florida Crown",W
+12000008,"CareerSource Northeast Florida",W
+12000009,"CareerSource North Central Florida",W
+12000010,"CareerSource Citrus Levy Marion",W
+12000011,"CareerSource Flagler Volusia",W
+12000012,"CareerSource Central Florida",W
+12000013,"CareerSource Brevard",W
+12000014,"CareerSource Pinellas",W
+12000015,"CareerSource Tampa Bay",W
+12000016,"CareerSource Pasco Hernando",W
+12000017,"CareerSource Polk",W
+12000018,"CareerSource Suncoast",W
+12000019,"CareerSource Heartland",W
+12000020,"CareerSource Research Coast",W
+12000021,"CareerSource Palm Beach County",W
+12000022,"CareerSource Broward",W
+12000023,"CareerSource South Florida",W
+12000024,"CareerSource Southwest Florida",W

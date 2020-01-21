@@ -1,0 +1,166 @@
+﻿geography,label,geo_level
+37,"North Carolina",S
+37001,"Alamance, NC",C
+37003,"Alexander, NC",C
+37005,"Alleghany, NC",C
+37007,"Anson, NC",C
+37009,"Ashe, NC",C
+37011,"Avery, NC",C
+37013,"Beaufort, NC",C
+37015,"Bertie, NC",C
+37017,"Bladen, NC",C
+37019,"Brunswick, NC",C
+37021,"Buncombe, NC",C
+37023,"Burke, NC",C
+37025,"Cabarrus, NC",C
+37027,"Caldwell, NC",C
+37029,"Camden, NC",C
+37031,"Carteret, NC",C
+37033,"Caswell, NC",C
+37035,"Catawba, NC",C
+37037,"Chatham, NC",C
+37039,"Cherokee, NC",C
+37041,"Chowan, NC",C
+37043,"Clay, NC",C
+37045,"Cleveland, NC",C
+37047,"Columbus, NC",C
+37049,"Craven, NC",C
+37051,"Cumberland, NC",C
+37053,"Currituck, NC",C
+37055,"Dare, NC",C
+37057,"Davidson, NC",C
+37059,"Davie, NC",C
+37061,"Duplin, NC",C
+37063,"Durham, NC",C
+37065,"Edgecombe, NC",C
+37067,"Forsyth, NC",C
+37069,"Franklin, NC",C
+37071,"Gaston, NC",C
+37073,"Gates, NC",C
+37075,"Graham, NC",C
+37077,"Granville, NC",C
+37079,"Greene, NC",C
+37081,"Guilford, NC",C
+37083,"Halifax, NC",C
+37085,"Harnett, NC",C
+37087,"Haywood, NC",C
+37089,"Henderson, NC",C
+37091,"Hertford, NC",C
+37093,"Hoke, NC",C
+37095,"Hyde, NC",C
+37097,"Iredell, NC",C
+37099,"Jackson, NC",C
+37101,"Johnston, NC",C
+37103,"Jones, NC",C
+37105,"Lee, NC",C
+37107,"Lenoir, NC",C
+37109,"Lincoln, NC",C
+37111,"McDowell, NC",C
+37113,"Macon, NC",C
+37115,"Madison, NC",C
+37117,"Martin, NC",C
+37119,"Mecklenburg, NC",C
+37121,"Mitchell, NC",C
+37123,"Montgomery, NC",C
+37125,"Moore, NC",C
+37127,"Nash, NC",C
+37129,"New Hanover, NC",C
+37131,"Northampton, NC",C
+37133,"Onslow, NC",C
+37135,"Orange, NC",C
+37137,"Pamlico, NC",C
+37139,"Pasquotank, NC",C
+37141,"Pender, NC",C
+37143,"Perquimans, NC",C
+37145,"Person, NC",C
+37147,"Pitt, NC",C
+37149,"Polk, NC",C
+37151,"Randolph, NC",C
+37153,"Richmond, NC",C
+37155,"Robeson, NC",C
+37157,"Rockingham, NC",C
+37159,"Rowan, NC",C
+37161,"Rutherford, NC",C
+37163,"Sampson, NC",C
+37165,"Scotland, NC",C
+37167,"Stanly, NC",C
+37169,"Stokes, NC",C
+37171,"Surry, NC",C
+37173,"Swain, NC",C
+37175,"Transylvania, NC",C
+37177,"Tyrrell, NC",C
+37179,"Union, NC",C
+37181,"Vance, NC",C
+37183,"Wake, NC",C
+37185,"Warren, NC",C
+37187,"Washington, NC",C
+37189,"Watauga, NC",C
+37191,"Wayne, NC",C
+37193,"Wilkes, NC",C
+37195,"Wilson, NC",C
+37197,"Yadkin, NC",C
+37199,"Yancey, NC",C
+3710620,"Albemarle, NC",M
+3711700,"Asheville, NC",M
+3714380,"Boone, NC",M
+3714820,"Brevard, NC",M
+3715500,"Burlington, NC",M
+3716740,"Charlotte-Concord-Gastonia, NC-SC (NC part)",M
+3719000,"Cullowhee, NC",M
+3720500,"Durham-Chapel Hill, NC",M
+3721020,"Elizabeth City, NC",M
+3722180,"Fayetteville, NC",M
+3722580,"Forest City, NC",M
+3724140,"Goldsboro, NC",M
+3724660,"Greensboro-High Point, NC",M
+3724780,"Greenville, NC",M
+3725780,"Henderson, NC",M
+3725860,"Hickory-Lenoir-Morganton, NC",M
+3727340,"Jacksonville, NC",M
+3728620,"Kill Devil Hills, NC",M
+3728820,"Kinston, NC",M
+3729900,"Laurinburg, NC",M
+3731300,"Lumberton, NC",M
+3732000,"Marion, NC",M
+3733980,"Morehead City, NC",M
+3734340,"Mount Airy, NC",M
+3734820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (NC part)",M
+3735100,"New Bern, NC",M
+3735900,"North Wilkesboro, NC",M
+3738240,"Pinehurst-Southern Pines, NC",M
+3739580,"Raleigh-Cary, NC",M
+3740260,"Roanoke Rapids, NC",M
+3740460,"Rockingham, NC",M
+3740580,"Rocky Mount, NC",M
+3741820,"Sanford, NC",M
+3743140,"Shelby, NC",M
+3747260,"Virginia Beach-Norfolk-Newport News, VA-NC (NC part)",M
+3747820,"Washington, NC",M
+3748900,"Wilmington, NC",M
+3748980,"Wilson, NC",M
+3749180,"Winston-Salem, NC",M
+3799999,"Nonmetropolitan, nonmicropolitan, NC",M
+37000001,"01 NE Workforce Investment Consortium WDB",W
+37000005,"05 Cape Fear SDA Job Training Consortium WDB",W
+37000007,"07 Capital Area Workforce Development WDB",W
+37000009,"09 Durham Service Delivery Area WDB",W
+37000011,"11 Centralina Workforce Development Consortium WDB",W
+37000013,"13 Charlotte/Mecklenburg WDB",W
+37000015,"15 Cumberland County Local Area WDB",W
+37000017,"17 Davidson County Local Area WDB",W
+37000019,"19 Gaston County Local Area WDB",W
+37000021,"21 Greensboro/High Point/Guilford Consortium WDB",W
+37000023,"23 Kerr-Tar Council of Governments WDB",W
+37000025,"25 Lumber River Council of Governments WDB",W
+37000027,"27 Mid-Carolina Local Area Council of Govts WDB",W
+37000029,"29 Mountain Area Service Delivery Area WDB",W
+37000031,"31 Eastern Carolina Job Training Consortium WDB",W
+37000033,"33 Northwest Piedmont Job Training Consortium WDB",W
+37000035,"35 Region C Job Training Consortium WDB",W
+37000037,"37 High Country Council of Governments WDB",W
+37000039,"39 Pee Dee Region Workforce Consortium WDB",W
+37000041,"41 Region L Job Training Consortium WDB",W
+37000043,"43 Region Q Workforce Investment Consortium WDB",W
+37000045,"45 Regional Partnership Local Area WDB",W
+37000047,"47 Southwestern Planning Commission WDB",W
+37000049,"49 Western Piedmont Job Training Consortium WDB",W

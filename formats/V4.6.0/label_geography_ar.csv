@@ -1,0 +1,111 @@
+﻿geography,label,geo_level
+05,"Arkansas",S
+05001,"Arkansas, AR",C
+05003,"Ashley, AR",C
+05005,"Baxter, AR",C
+05007,"Benton, AR",C
+05009,"Boone, AR",C
+05011,"Bradley, AR",C
+05013,"Calhoun, AR",C
+05015,"Carroll, AR",C
+05017,"Chicot, AR",C
+05019,"Clark, AR",C
+05021,"Clay, AR",C
+05023,"Cleburne, AR",C
+05025,"Cleveland, AR",C
+05027,"Columbia, AR",C
+05029,"Conway, AR",C
+05031,"Craighead, AR",C
+05033,"Crawford, AR",C
+05035,"Crittenden, AR",C
+05037,"Cross, AR",C
+05039,"Dallas, AR",C
+05041,"Desha, AR",C
+05043,"Drew, AR",C
+05045,"Faulkner, AR",C
+05047,"Franklin, AR",C
+05049,"Fulton, AR",C
+05051,"Garland, AR",C
+05053,"Grant, AR",C
+05055,"Greene, AR",C
+05057,"Hempstead, AR",C
+05059,"Hot Spring, AR",C
+05061,"Howard, AR",C
+05063,"Independence, AR",C
+05065,"Izard, AR",C
+05067,"Jackson, AR",C
+05069,"Jefferson, AR",C
+05071,"Johnson, AR",C
+05073,"Lafayette, AR",C
+05075,"Lawrence, AR",C
+05077,"Lee, AR",C
+05079,"Lincoln, AR",C
+05081,"Little River, AR",C
+05083,"Logan, AR",C
+05085,"Lonoke, AR",C
+05087,"Madison, AR",C
+05089,"Marion, AR",C
+05091,"Miller, AR",C
+05093,"Mississippi, AR",C
+05095,"Monroe, AR",C
+05097,"Montgomery, AR",C
+05099,"Nevada, AR",C
+05101,"Newton, AR",C
+05103,"Ouachita, AR",C
+05105,"Perry, AR",C
+05107,"Phillips, AR",C
+05109,"Pike, AR",C
+05111,"Poinsett, AR",C
+05113,"Polk, AR",C
+05115,"Pope, AR",C
+05117,"Prairie, AR",C
+05119,"Pulaski, AR",C
+05121,"Randolph, AR",C
+05123,"St. Francis, AR",C
+05125,"Saline, AR",C
+05127,"Scott, AR",C
+05129,"Searcy, AR",C
+05131,"Sebastian, AR",C
+05133,"Sevier, AR",C
+05135,"Sharp, AR",C
+05137,"Stone, AR",C
+05139,"Union, AR",C
+05141,"Van Buren, AR",C
+05143,"Washington, AR",C
+05145,"White, AR",C
+05147,"Woodruff, AR",C
+05149,"Yell, AR",C
+0511660,"Arkadelphia, AR",M
+0512900,"Batesville, AR",M
+0514180,"Blytheville, AR",M
+0515780,"Camden, AR",M
+0520980,"El Dorado, AR",M
+0522220,"Fayetteville-Springdale-Rogers, AR",M
+0522620,"Forrest City, AR",M
+0522900,"Fort Smith, AR-OK (AR part)",M
+0525460,"Harrison, AR",M
+0525760,"Helena-West Helena, AR",M
+0526260,"Hope, AR",M
+0526300,"Hot Springs, AR",M
+0527860,"Jonesboro, AR",M
+0530780,"Little Rock-North Little Rock-Conway, AR",M
+0531620,"Magnolia, AR",M
+0531680,"Malvern, AR",M
+0532820,"Memphis, TN-MS-AR (AR part)",M
+0534260,"Mountain Home, AR",M
+0537500,"Paragould, AR",M
+0538220,"Pine Bluff, AR",M
+0540780,"Russellville, AR",M
+0542620,"Searcy, AR",M
+0545500,"Texarkana, TX-AR (AR part)",M
+0599999,"Nonmetropolitan, nonmicropolitan, AR",M
+05000001,"01 Central WIB",W
+05000002,"02 Eastern WIB",W
+05000003,"03 Little Rock WIB",W
+05000004,"04 North Central WIB",W
+05000005,"05 Northeast WIB",W
+05000006,"06 Northwest WIB",W
+05000007,"07 Southeast WIB",W
+05000008,"08 Southwest WIB",W
+05000009,"09 West Central WIB",W
+05000010,"10 Western WIB",W

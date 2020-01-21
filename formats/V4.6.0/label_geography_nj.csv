@@ -1,0 +1,48 @@
+﻿geography,label,geo_level
+34,"New Jersey",S
+34001,"Atlantic, NJ",C
+34003,"Bergen, NJ",C
+34005,"Burlington, NJ",C
+34007,"Camden, NJ",C
+34009,"Cape May, NJ",C
+34011,"Cumberland, NJ",C
+34013,"Essex, NJ",C
+34015,"Gloucester, NJ",C
+34017,"Hudson, NJ",C
+34019,"Hunterdon, NJ",C
+34021,"Mercer, NJ",C
+34023,"Middlesex, NJ",C
+34025,"Monmouth, NJ",C
+34027,"Morris, NJ",C
+34029,"Ocean, NJ",C
+34031,"Passaic, NJ",C
+34033,"Salem, NJ",C
+34035,"Somerset, NJ",C
+34037,"Sussex, NJ",C
+34039,"Union, NJ",C
+34041,"Warren, NJ",C
+3410900,"Allentown-Bethlehem-Easton, PA-NJ (NJ part)",M
+3412100,"Atlantic City-Hammonton, NJ",M
+3435620,"New York-Newark-Jersey City, NY-NJ-PA (NJ part)",M
+3436140,"Ocean City, NJ",M
+3437980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (NJ part)",M
+3445940,"Trenton-Princeton, NJ",M
+3447220,"Vineland-Bridgeton, NJ",M
+3499999,"Nonmetropolitan, nonmicropolitan, NJ",M
+34340001,"01 Atlantic-Cape May WIB",W
+34340002,"02 Bergen WIB",W
+34340003,"03 Burlington WIB",W
+34340004,"04 Camden WIB",W
+34340005,"05 Cumberland-Salem WIB",W
+34340006,"06 Essex WIB",W
+34340007,"07 Gloucester WIB",W
+34340008,"08 Greater Raritan WIB",W
+34340009,"09 Hudson-Jersey City WIB",W
+34340010,"10 Mercer WIB",W
+34340011,"11 Middlesex WIB",W
+34340012,"12 Monmouth WIB",W
+34340013,"13 Morris-Sussex-Warren WIB",W
+34340014,"14 Newark WIB",W
+34340015,"15 Ocean WIB",W
+34340016,"16 Passaic WIB",W
+34340017,"17 Union WIB",W
