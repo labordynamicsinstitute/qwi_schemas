@@ -38,7 +38,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 asciifile=lehd_csv_naming.asciidoc
 previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
 echo "= LEHD Public Use  Schema $numversion - File and Directory Naming Convention"> $asciifile
-echo "Lars Vilhuber <${author}>" >> $asciifile
+echo "<${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 :ext-relative: {outfilesuffix}
 
@@ -104,7 +104,7 @@ This version modifies a portion of the structure of the metadata. Many files com
 
 Supersedes
 ----------
-This version supersedes ${previousvintage}, for files released as of R2019Q1.
+This version supersedes V4.4.0, for files released as of R2020Q1.
 
 
 Basic Filename Schema
