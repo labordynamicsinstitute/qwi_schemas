@@ -84,7 +84,7 @@ function untar_payload()
 }
 
 untar_payload >> $asciifile
-
+echo "" >> $asciifile
 cat CHANGES.txt >> $asciifile
 
 echo "
