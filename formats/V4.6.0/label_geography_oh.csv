@@ -1,0 +1,143 @@
+﻿geography,label,geo_level
+39,"Ohio",S
+39001,"Adams, OH",C
+39003,"Allen, OH",C
+39005,"Ashland, OH",C
+39007,"Ashtabula, OH",C
+39009,"Athens, OH",C
+39011,"Auglaize, OH",C
+39013,"Belmont, OH",C
+39015,"Brown, OH",C
+39017,"Butler, OH",C
+39019,"Carroll, OH",C
+39021,"Champaign, OH",C
+39023,"Clark, OH",C
+39025,"Clermont, OH",C
+39027,"Clinton, OH",C
+39029,"Columbiana, OH",C
+39031,"Coshocton, OH",C
+39033,"Crawford, OH",C
+39035,"Cuyahoga, OH",C
+39037,"Darke, OH",C
+39039,"Defiance, OH",C
+39041,"Delaware, OH",C
+39043,"Erie, OH",C
+39045,"Fairfield, OH",C
+39047,"Fayette, OH",C
+39049,"Franklin, OH",C
+39051,"Fulton, OH",C
+39053,"Gallia, OH",C
+39055,"Geauga, OH",C
+39057,"Greene, OH",C
+39059,"Guernsey, OH",C
+39061,"Hamilton, OH",C
+39063,"Hancock, OH",C
+39065,"Hardin, OH",C
+39067,"Harrison, OH",C
+39069,"Henry, OH",C
+39071,"Highland, OH",C
+39073,"Hocking, OH",C
+39075,"Holmes, OH",C
+39077,"Huron, OH",C
+39079,"Jackson, OH",C
+39081,"Jefferson, OH",C
+39083,"Knox, OH",C
+39085,"Lake, OH",C
+39087,"Lawrence, OH",C
+39089,"Licking, OH",C
+39091,"Logan, OH",C
+39093,"Lorain, OH",C
+39095,"Lucas, OH",C
+39097,"Madison, OH",C
+39099,"Mahoning, OH",C
+39101,"Marion, OH",C
+39103,"Medina, OH",C
+39105,"Meigs, OH",C
+39107,"Mercer, OH",C
+39109,"Miami, OH",C
+39111,"Monroe, OH",C
+39113,"Montgomery, OH",C
+39115,"Morgan, OH",C
+39117,"Morrow, OH",C
+39119,"Muskingum, OH",C
+39121,"Noble, OH",C
+39123,"Ottawa, OH",C
+39125,"Paulding, OH",C
+39127,"Perry, OH",C
+39129,"Pickaway, OH",C
+39131,"Pike, OH",C
+39133,"Portage, OH",C
+39135,"Preble, OH",C
+39137,"Putnam, OH",C
+39139,"Richland, OH",C
+39141,"Ross, OH",C
+39143,"Sandusky, OH",C
+39145,"Scioto, OH",C
+39147,"Seneca, OH",C
+39149,"Shelby, OH",C
+39151,"Stark, OH",C
+39153,"Summit, OH",C
+39155,"Trumbull, OH",C
+39157,"Tuscarawas, OH",C
+39159,"Union, OH",C
+39161,"Van Wert, OH",C
+39163,"Vinton, OH",C
+39165,"Warren, OH",C
+39167,"Washington, OH",C
+39169,"Wayne, OH",C
+39171,"Williams, OH",C
+39173,"Wood, OH",C
+39175,"Wyandot, OH",C
+3910420,"Akron, OH",M
+3911740,"Ashland, OH",M
+3911780,"Ashtabula, OH",M
+3911900,"Athens, OH",M
+3913340,"Bellefontaine, OH",M
+3915340,"Bucyrus-Galion, OH",M
+3915740,"Cambridge, OH",M
+3915940,"Canton-Massillon, OH",M
+3916380,"Celina, OH",M
+3917060,"Chillicothe, OH",M
+3917140,"Cincinnati, OH-KY-IN (OH part)",M
+3917460,"Cleveland-Elyria, OH",M
+3918140,"Columbus, OH",M
+3918740,"Coshocton, OH",M
+3919430,"Dayton-Kettering, OH",M
+3919580,"Defiance, OH",M
+3922300,"Findlay, OH",M
+3923380,"Fremont, OH",M
+3924820,"Greenville, OH",M
+3926580,"Huntington-Ashland, WV-KY-OH (OH part)",M
+3927160,"Jackson, OH",M
+3930620,"Lima, OH",M
+3931900,"Mansfield, OH",M
+3931930,"Marietta, OH",M
+3932020,"Marion, OH",M
+3934540,"Mount Vernon, OH",M
+3935420,"New Philadelphia-Dover, OH",M
+3935940,"Norwalk, OH",M
+3938580,"Point Pleasant, WV-OH (OH part)",M
+3939020,"Portsmouth, OH",M
+3941400,"Salem, OH",M
+3941780,"Sandusky, OH",M
+3943380,"Sidney, OH",M
+3944220,"Springfield, OH",M
+3945660,"Tiffin, OH",M
+3945780,"Toledo, OH",M
+3946500,"Urbana, OH",M
+3946780,"Van Wert, OH",M
+3947540,"Wapakoneta, OH",M
+3947920,"Washington Court House, OH",M
+3948260,"Weirton-Steubenville, WV-OH (OH part)",M
+3948540,"Wheeling, WV-OH (OH part)",M
+3948940,"Wilmington, OH",M
+3949300,"Wooster, OH",M
+3949660,"Youngstown-Warren-Boardman, OH-PA (OH part)",M
+3949780,"Zanesville, OH",M
+3999999,"Nonmetropolitan, nonmicropolitan, OH",M
+39000001,"Southwest Ohio",W
+39000002,"Northeast Ohio",W
+39000003,"Central Ohio",W
+39000004,"West Ohio",W
+39000005,"Southeast Ohio",W
+39000006,"Northwest Ohio",W

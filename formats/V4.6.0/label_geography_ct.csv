@@ -1,0 +1,22 @@
+﻿geography,label,geo_level
+09,"Connecticut",S
+09001,"Fairfield, CT",C
+09003,"Hartford, CT",C
+09005,"Litchfield, CT",C
+09007,"Middlesex, CT",C
+09009,"New Haven, CT",C
+09011,"New London, CT",C
+09013,"Tolland, CT",C
+09015,"Windham, CT",C
+0914860,"Bridgeport-Stamford-Norwalk, CT",M
+0925540,"Hartford-East Hartford-Middletown, CT",M
+0935300,"New Haven-Milford, CT",M
+0935980,"Norwich-New London, CT",M
+0945860,"Torrington, CT",M
+0949340,"Worcester, MA-CT (CT part)",M
+0999999,"Nonmetropolitan, nonmicropolitan, CT",M
+09090001,"Eastern WIA",W
+09090002,"North Central WIA",W
+09090003,"Northwest WIA",W
+09090004,"South Central WIA",W
+09090005,"Southwest WIA",W

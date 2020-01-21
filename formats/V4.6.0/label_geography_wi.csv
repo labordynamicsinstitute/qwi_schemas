@@ -1,0 +1,113 @@
+﻿geography,label,geo_level
+55,"Wisconsin",S
+55001,"Adams, WI",C
+55003,"Ashland, WI",C
+55005,"Barron, WI",C
+55007,"Bayfield, WI",C
+55009,"Brown, WI",C
+55011,"Buffalo, WI",C
+55013,"Burnett, WI",C
+55015,"Calumet, WI",C
+55017,"Chippewa, WI",C
+55019,"Clark, WI",C
+55021,"Columbia, WI",C
+55023,"Crawford, WI",C
+55025,"Dane, WI",C
+55027,"Dodge, WI",C
+55029,"Door, WI",C
+55031,"Douglas, WI",C
+55033,"Dunn, WI",C
+55035,"Eau Claire, WI",C
+55037,"Florence, WI",C
+55039,"Fond du Lac, WI",C
+55041,"Forest, WI",C
+55043,"Grant, WI",C
+55045,"Green, WI",C
+55047,"Green Lake, WI",C
+55049,"Iowa, WI",C
+55051,"Iron, WI",C
+55053,"Jackson, WI",C
+55055,"Jefferson, WI",C
+55057,"Juneau, WI",C
+55059,"Kenosha, WI",C
+55061,"Kewaunee, WI",C
+55063,"La Crosse, WI",C
+55065,"Lafayette, WI",C
+55067,"Langlade, WI",C
+55069,"Lincoln, WI",C
+55071,"Manitowoc, WI",C
+55073,"Marathon, WI",C
+55075,"Marinette, WI",C
+55077,"Marquette, WI",C
+55078,"Menominee, WI",C
+55079,"Milwaukee, WI",C
+55081,"Monroe, WI",C
+55083,"Oconto, WI",C
+55085,"Oneida, WI",C
+55087,"Outagamie, WI",C
+55089,"Ozaukee, WI",C
+55091,"Pepin, WI",C
+55093,"Pierce, WI",C
+55095,"Polk, WI",C
+55097,"Portage, WI",C
+55099,"Price, WI",C
+55101,"Racine, WI",C
+55103,"Richland, WI",C
+55105,"Rock, WI",C
+55107,"Rusk, WI",C
+55109,"St. Croix, WI",C
+55111,"Sauk, WI",C
+55113,"Sawyer, WI",C
+55115,"Shawano, WI",C
+55117,"Sheboygan, WI",C
+55119,"Taylor, WI",C
+55121,"Trempealeau, WI",C
+55123,"Vernon, WI",C
+55125,"Vilas, WI",C
+55127,"Walworth, WI",C
+55129,"Washburn, WI",C
+55131,"Washington, WI",C
+55133,"Waukesha, WI",C
+55135,"Waupaca, WI",C
+55137,"Waushara, WI",C
+55139,"Winnebago, WI",C
+55141,"Wood, WI",C
+5511540,"Appleton, WI",M
+5512660,"Baraboo, WI",M
+5513180,"Beaver Dam, WI",M
+5516980,"Chicago-Naperville-Elgin, IL-IN-WI (WI part)",M
+5520260,"Duluth, MN-WI (WI part)",M
+5520740,"Eau Claire, WI",M
+5522540,"Fond du Lac, WI",M
+5524580,"Green Bay, WI",M
+5527020,"Iron Mountain, MI-WI (WI part)",M
+5527500,"Janesville-Beloit, WI",M
+5529100,"La Crosse-Onalaska, WI-MN (WI part)",M
+5531540,"Madison, WI",M
+5531820,"Manitowoc, WI",M
+5531940,"Marinette, WI-MI (WI part)",M
+5532860,"Menomonie, WI",M
+5533340,"Milwaukee-Waukesha, WI",M
+5533460,"Minneapolis-St. Paul-Bloomington, MN-WI (WI part)",M
+5536780,"Oshkosh-Neenah, WI",M
+5538420,"Platteville, WI",M
+5539540,"Racine, WI",M
+5543020,"Shawano, WI",M
+5543100,"Sheboygan, WI",M
+5544620,"Stevens Point, WI",M
+5548020,"Watertown-Fort Atkinson, WI",M
+5548140,"Wausau-Weston, WI",M
+5548580,"Whitewater, WI",M
+5549220,"Wisconsin Rapids-Marshfield, WI",M
+5599999,"Nonmetropolitan, nonmicropolitan, WI",M
+55550015,"015 Milwaukee WDA",W
+55550030,"030 Southeast WDA",W
+55550040,"040 Northwest WDA",W
+55550045,"045 Washington-Ozaukee-Waukesha WDA",W
+55550065,"065 West Central WDA",W
+55550085,"085 Western WDA",W
+55550090,"090 Fox Valley WDA",W
+55550095,"095 Bay Area WDA",W
+55550100,"100 North Central WDA",W
+55550105,"105 South Central WDA",W
+55550110,"110 Southwest WDA",W

@@ -1,0 +1,11 @@
+== [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
+
+=== This version (revisions)
+- 2020-01-21: Initial release
+
+=== Version 4.6.0 from 4.4.0
+- Underlying geovintage updated to reflect 2019 census geography
+- Updated shapefiles based on TIGER 2019
+- Added documentation of new J2J Earnings indicators (coming soon in next release of J2J data)
+

@@ -1,0 +1,158 @@
+﻿geography,label,geo_level
+21,"Kentucky",S
+21001,"Adair, KY",C
+21003,"Allen, KY",C
+21005,"Anderson, KY",C
+21007,"Ballard, KY",C
+21009,"Barren, KY",C
+21011,"Bath, KY",C
+21013,"Bell, KY",C
+21015,"Boone, KY",C
+21017,"Bourbon, KY",C
+21019,"Boyd, KY",C
+21021,"Boyle, KY",C
+21023,"Bracken, KY",C
+21025,"Breathitt, KY",C
+21027,"Breckinridge, KY",C
+21029,"Bullitt, KY",C
+21031,"Butler, KY",C
+21033,"Caldwell, KY",C
+21035,"Calloway, KY",C
+21037,"Campbell, KY",C
+21039,"Carlisle, KY",C
+21041,"Carroll, KY",C
+21043,"Carter, KY",C
+21045,"Casey, KY",C
+21047,"Christian, KY",C
+21049,"Clark, KY",C
+21051,"Clay, KY",C
+21053,"Clinton, KY",C
+21055,"Crittenden, KY",C
+21057,"Cumberland, KY",C
+21059,"Daviess, KY",C
+21061,"Edmonson, KY",C
+21063,"Elliott, KY",C
+21065,"Estill, KY",C
+21067,"Fayette, KY",C
+21069,"Fleming, KY",C
+21071,"Floyd, KY",C
+21073,"Franklin, KY",C
+21075,"Fulton, KY",C
+21077,"Gallatin, KY",C
+21079,"Garrard, KY",C
+21081,"Grant, KY",C
+21083,"Graves, KY",C
+21085,"Grayson, KY",C
+21087,"Green, KY",C
+21089,"Greenup, KY",C
+21091,"Hancock, KY",C
+21093,"Hardin, KY",C
+21095,"Harlan, KY",C
+21097,"Harrison, KY",C
+21099,"Hart, KY",C
+21101,"Henderson, KY",C
+21103,"Henry, KY",C
+21105,"Hickman, KY",C
+21107,"Hopkins, KY",C
+21109,"Jackson, KY",C
+21111,"Jefferson, KY",C
+21113,"Jessamine, KY",C
+21115,"Johnson, KY",C
+21117,"Kenton, KY",C
+21119,"Knott, KY",C
+21121,"Knox, KY",C
+21123,"Larue, KY",C
+21125,"Laurel, KY",C
+21127,"Lawrence, KY",C
+21129,"Lee, KY",C
+21131,"Leslie, KY",C
+21133,"Letcher, KY",C
+21135,"Lewis, KY",C
+21137,"Lincoln, KY",C
+21139,"Livingston, KY",C
+21141,"Logan, KY",C
+21143,"Lyon, KY",C
+21145,"McCracken, KY",C
+21147,"McCreary, KY",C
+21149,"McLean, KY",C
+21151,"Madison, KY",C
+21153,"Magoffin, KY",C
+21155,"Marion, KY",C
+21157,"Marshall, KY",C
+21159,"Martin, KY",C
+21161,"Mason, KY",C
+21163,"Meade, KY",C
+21165,"Menifee, KY",C
+21167,"Mercer, KY",C
+21169,"Metcalfe, KY",C
+21171,"Monroe, KY",C
+21173,"Montgomery, KY",C
+21175,"Morgan, KY",C
+21177,"Muhlenberg, KY",C
+21179,"Nelson, KY",C
+21181,"Nicholas, KY",C
+21183,"Ohio, KY",C
+21185,"Oldham, KY",C
+21187,"Owen, KY",C
+21189,"Owsley, KY",C
+21191,"Pendleton, KY",C
+21193,"Perry, KY",C
+21195,"Pike, KY",C
+21197,"Powell, KY",C
+21199,"Pulaski, KY",C
+21201,"Robertson, KY",C
+21203,"Rockcastle, KY",C
+21205,"Rowan, KY",C
+21207,"Russell, KY",C
+21209,"Scott, KY",C
+21211,"Shelby, KY",C
+21213,"Simpson, KY",C
+21215,"Spencer, KY",C
+21217,"Taylor, KY",C
+21219,"Todd, KY",C
+21221,"Trigg, KY",C
+21223,"Trimble, KY",C
+21225,"Union, KY",C
+21227,"Warren, KY",C
+21229,"Washington, KY",C
+21231,"Wayne, KY",C
+21233,"Webster, KY",C
+21235,"Whitley, KY",C
+21237,"Wolfe, KY",C
+21239,"Woodford, KY",C
+2112680,"Bardstown, KY",M
+2114540,"Bowling Green, KY",M
+2115820,"Campbellsville, KY",M
+2116420,"Central City, KY",M
+2117140,"Cincinnati, OH-KY-IN (KY part)",M
+2117300,"Clarksville, TN-KY (KY part)",M
+2119220,"Danville, KY",M
+2121060,"Elizabethtown-Fort Knox, KY",M
+2121780,"Evansville, IN-KY (KY part)",M
+2123180,"Frankfort, KY",M
+2123980,"Glasgow, KY",M
+2126580,"Huntington-Ashland, WV-KY-OH (KY part)",M
+2130460,"Lexington-Fayette, KY",M
+2130940,"London, KY",M
+2131140,"Louisville/Jefferson County, KY-IN (KY part)",M
+2131580,"Madisonville, KY",M
+2132460,"Mayfield, KY",M
+2132500,"Maysville, KY",M
+2133180,"Middlesborough, KY",M
+2134460,"Mount Sterling, KY",M
+2134660,"Murray, KY",M
+2136980,"Owensboro, KY",M
+2137140,"Paducah, KY-IL (KY part)",M
+2140080,"Richmond-Berea, KY",M
+2143700,"Somerset, KY",M
+2199999,"Nonmetropolitan, nonmicropolitan, KY",M
+2121000A,"A Purchase/Pennyrile WIB",W
+2121000B,"B Lincoln Trail WIB",W
+2121000C,"C Greater Louisville WIB",W
+2121000E,"E Northern Kentucky WIB",W
+2121000F,"F Tenco WIB",W
+2121000G,"G Ekcep WIB",W
+2121000H,"H Cumberlands WIB",W
+2121000I,"I Bluegrass WIB",W
+2121000J,"J Green River WIB",W
+2121000K,"K Barren River WIB",W

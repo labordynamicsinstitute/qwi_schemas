@@ -1,0 +1,10 @@
+type,product,Description,Explanation,url
+j2j,j2j,Job-to-Job Flows Counts (J2J),"Counts of hires and separations, to and from employment and non-employment, summed across all establishments",http://lehd.ces.census.gov/data/#j2j
+j2jod,j2j,Job-to-Job Flows Origin-Destination,"Origin and destination flows and earnings, tabulated by the destination establishment",http://lehd.ces.census.gov/data/#j2j
+j2jr,j2j,Job-to-Job Flows Rates,"Hiring and separation rates, to and from employment and nonemployment, summed across all establishments",http://lehd.ces.census.gov/data/#j2j
+lodes,lodes,LEHD Origin-Destination Employment Statistics (LODES),"LEHD Origin-Destination Employment Statistics (LODES) used by OnTheMap. Version 7 and higher of LODES was enumerated by 2010 census blocks. Version 6 and lower of LODES were enumerated with 2000 census blocks.",http://lehd.ces.census.gov/data/#lodes
+qwi,qwi,Quarterly Workforce Indicators Public Use Counts (QWIPU),"The Quarterly Workforce Indicators (QWI) are a set of economic indicators including employment, job creation, earnings, and other measures of employment flows. The QWI are reported using detailed firm characteristics (geography, industry, age, size) and worker demographics information (sex, age, education, race, ethnicity).",http://lehd.ces.census.gov/data/#qwi
+qwir,qwi,Quarterly Workforce Indicators Public Use Rates,"Rates for flow variables in the Quarterly Workforce Indicators (QWI)",tbd
+qwirv,qwi,Quarterly Workforce Indicators Variability Measures for Rates,"Variability measures for rates in the Quarterly Workforce Indicators (QWI)",tbd
+qwiv,qwi,Quarterly Workforce Indicators Variability Measures,"Variability measures for Quarterly Workforce Indicators (QWI)",tbd
+lehd_shp,all,LEHD Shapefiles,"Shapefiles are used to provide mapping functionality in QWI Explorer and Job-to-Job Explorer",link:lehd_shapefiles.html[]

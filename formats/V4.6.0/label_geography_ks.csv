@@ -1,0 +1,134 @@
+﻿geography,label,geo_level
+20,"Kansas",S
+20001,"Allen, KS",C
+20003,"Anderson, KS",C
+20005,"Atchison, KS",C
+20007,"Barber, KS",C
+20009,"Barton, KS",C
+20011,"Bourbon, KS",C
+20013,"Brown, KS",C
+20015,"Butler, KS",C
+20017,"Chase, KS",C
+20019,"Chautauqua, KS",C
+20021,"Cherokee, KS",C
+20023,"Cheyenne, KS",C
+20025,"Clark, KS",C
+20027,"Clay, KS",C
+20029,"Cloud, KS",C
+20031,"Coffey, KS",C
+20033,"Comanche, KS",C
+20035,"Cowley, KS",C
+20037,"Crawford, KS",C
+20039,"Decatur, KS",C
+20041,"Dickinson, KS",C
+20043,"Doniphan, KS",C
+20045,"Douglas, KS",C
+20047,"Edwards, KS",C
+20049,"Elk, KS",C
+20051,"Ellis, KS",C
+20053,"Ellsworth, KS",C
+20055,"Finney, KS",C
+20057,"Ford, KS",C
+20059,"Franklin, KS",C
+20061,"Geary, KS",C
+20063,"Gove, KS",C
+20065,"Graham, KS",C
+20067,"Grant, KS",C
+20069,"Gray, KS",C
+20071,"Greeley, KS",C
+20073,"Greenwood, KS",C
+20075,"Hamilton, KS",C
+20077,"Harper, KS",C
+20079,"Harvey, KS",C
+20081,"Haskell, KS",C
+20083,"Hodgeman, KS",C
+20085,"Jackson, KS",C
+20087,"Jefferson, KS",C
+20089,"Jewell, KS",C
+20091,"Johnson, KS",C
+20093,"Kearny, KS",C
+20095,"Kingman, KS",C
+20097,"Kiowa, KS",C
+20099,"Labette, KS",C
+20101,"Lane, KS",C
+20103,"Leavenworth, KS",C
+20105,"Lincoln, KS",C
+20107,"Linn, KS",C
+20109,"Logan, KS",C
+20111,"Lyon, KS",C
+20113,"McPherson, KS",C
+20115,"Marion, KS",C
+20117,"Marshall, KS",C
+20119,"Meade, KS",C
+20121,"Miami, KS",C
+20123,"Mitchell, KS",C
+20125,"Montgomery, KS",C
+20127,"Morris, KS",C
+20129,"Morton, KS",C
+20131,"Nemaha, KS",C
+20133,"Neosho, KS",C
+20135,"Ness, KS",C
+20137,"Norton, KS",C
+20139,"Osage, KS",C
+20141,"Osborne, KS",C
+20143,"Ottawa, KS",C
+20145,"Pawnee, KS",C
+20147,"Phillips, KS",C
+20149,"Pottawatomie, KS",C
+20151,"Pratt, KS",C
+20153,"Rawlins, KS",C
+20155,"Reno, KS",C
+20157,"Republic, KS",C
+20159,"Rice, KS",C
+20161,"Riley, KS",C
+20163,"Rooks, KS",C
+20165,"Rush, KS",C
+20167,"Russell, KS",C
+20169,"Saline, KS",C
+20171,"Scott, KS",C
+20173,"Sedgwick, KS",C
+20175,"Seward, KS",C
+20177,"Shawnee, KS",C
+20179,"Sheridan, KS",C
+20181,"Sherman, KS",C
+20183,"Smith, KS",C
+20185,"Stafford, KS",C
+20187,"Stanton, KS",C
+20189,"Stevens, KS",C
+20191,"Sumner, KS",C
+20193,"Thomas, KS",C
+20195,"Trego, KS",C
+20197,"Wabaunsee, KS",C
+20199,"Wallace, KS",C
+20201,"Washington, KS",C
+20203,"Wichita, KS",C
+20205,"Wilson, KS",C
+20207,"Woodson, KS",C
+20209,"Wyandotte, KS",C
+2011860,"Atchison, KS",M
+2017700,"Coffeyville, KS",M
+2019980,"Dodge City, KS",M
+2021380,"Emporia, KS",M
+2023780,"Garden City, KS",M
+2024460,"Great Bend, KS",M
+2025700,"Hays, KS",M
+2026740,"Hutchinson, KS",M
+2028140,"Kansas City, MO-KS (KS part)",M
+2029940,"Lawrence, KS",M
+2030580,"Liberal, KS",M
+2031740,"Manhattan, KS",M
+2032700,"McPherson, KS",M
+2036840,"Ottawa, KS",M
+2037660,"Parsons, KS",M
+2038260,"Pittsburg, KS",M
+2041140,"St. Joseph, MO-KS (KS part)",M
+2041460,"Salina, KS",M
+2045820,"Topeka, KS",M
+2048620,"Wichita, KS",M
+2049060,"Winfield, KS",M
+2099999,"Nonmetropolitan, nonmicropolitan, KS",M
+20200001,"01 Local Area I - Western WIB",W
+20200002,"02 Local Area II - Northeast WIB",W
+20200003,"03 Local Area III - Kansas City Area WIB",W
+20200004,"04 Local Area IV - South Central WIB",W
+20200005,"05 Local Area V - Southeast WIB",W

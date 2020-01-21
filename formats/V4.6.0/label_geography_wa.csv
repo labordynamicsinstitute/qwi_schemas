@@ -1,0 +1,76 @@
+﻿geography,label,geo_level
+53,"Washington",S
+53001,"Adams, WA",C
+53003,"Asotin, WA",C
+53005,"Benton, WA",C
+53007,"Chelan, WA",C
+53009,"Clallam, WA",C
+53011,"Clark, WA",C
+53013,"Columbia, WA",C
+53015,"Cowlitz, WA",C
+53017,"Douglas, WA",C
+53019,"Ferry, WA",C
+53021,"Franklin, WA",C
+53023,"Garfield, WA",C
+53025,"Grant, WA",C
+53027,"Grays Harbor, WA",C
+53029,"Island, WA",C
+53031,"Jefferson, WA",C
+53033,"King, WA",C
+53035,"Kitsap, WA",C
+53037,"Kittitas, WA",C
+53039,"Klickitat, WA",C
+53041,"Lewis, WA",C
+53043,"Lincoln, WA",C
+53045,"Mason, WA",C
+53047,"Okanogan, WA",C
+53049,"Pacific, WA",C
+53051,"Pend Oreille, WA",C
+53053,"Pierce, WA",C
+53055,"San Juan, WA",C
+53057,"Skagit, WA",C
+53059,"Skamania, WA",C
+53061,"Snohomish, WA",C
+53063,"Spokane, WA",C
+53065,"Stevens, WA",C
+53067,"Thurston, WA",C
+53069,"Wahkiakum, WA",C
+53071,"Walla Walla, WA",C
+53073,"Whatcom, WA",C
+53075,"Whitman, WA",C
+53077,"Yakima, WA",C
+5310140,"Aberdeen, WA",M
+5313380,"Bellingham, WA",M
+5314740,"Bremerton-Silverdale-Port Orchard, WA",M
+5316500,"Centralia, WA",M
+5321260,"Ellensburg, WA",M
+5328420,"Kennewick-Richland, WA",M
+5330300,"Lewiston, ID-WA (WA part)",M
+5331020,"Longview, WA",M
+5334180,"Moses Lake, WA",M
+5334580,"Mount Vernon-Anacortes, WA",M
+5336020,"Oak Harbor, WA",M
+5336500,"Olympia-Lacey-Tumwater, WA",M
+5336830,"Othello, WA",M
+5338820,"Port Angeles, WA",M
+5338900,"Portland-Vancouver-Hillsboro, OR-WA (WA part)",M
+5339420,"Pullman, WA",M
+5342660,"Seattle-Tacoma-Bellevue, WA",M
+5343220,"Shelton, WA",M
+5344060,"Spokane-Spokane Valley, WA",M
+5347460,"Walla Walla, WA",M
+5348300,"Wenatchee, WA",M
+5349420,"Yakima, WA",M
+5399999,"Nonmetropolitan, nonmicropolitan, WA",M
+53000001,"01 Olympic WIB",W
+53000002,"02 Pacific Mountain WIB",W
+53000003,"03 Northwest Washington WIB",W
+53000004,"04 Snohomish County WIB",W
+53000005,"05 Seattle/King County WIB",W
+53000006,"06 Tacoma/Pierce County WIB",W
+53000007,"07 Southwest Washington WIB",W
+53000008,"08 North Central WIB",W
+53000009,"09 Central Washington WIB",W
+53000010,"10 Eastern Washington WIB",W
+53000011,"11 Benton-Franklin WIB",W
+53000012,"12 Spokane WIB",W

@@ -1,0 +1,141 @@
+﻿geography,label,geo_level
+19,"Iowa",S
+19001,"Adair, IA",C
+19003,"Adams, IA",C
+19005,"Allamakee, IA",C
+19007,"Appanoose, IA",C
+19009,"Audubon, IA",C
+19011,"Benton, IA",C
+19013,"Black Hawk, IA",C
+19015,"Boone, IA",C
+19017,"Bremer, IA",C
+19019,"Buchanan, IA",C
+19021,"Buena Vista, IA",C
+19023,"Butler, IA",C
+19025,"Calhoun, IA",C
+19027,"Carroll, IA",C
+19029,"Cass, IA",C
+19031,"Cedar, IA",C
+19033,"Cerro Gordo, IA",C
+19035,"Cherokee, IA",C
+19037,"Chickasaw, IA",C
+19039,"Clarke, IA",C
+19041,"Clay, IA",C
+19043,"Clayton, IA",C
+19045,"Clinton, IA",C
+19047,"Crawford, IA",C
+19049,"Dallas, IA",C
+19051,"Davis, IA",C
+19053,"Decatur, IA",C
+19055,"Delaware, IA",C
+19057,"Des Moines, IA",C
+19059,"Dickinson, IA",C
+19061,"Dubuque, IA",C
+19063,"Emmet, IA",C
+19065,"Fayette, IA",C
+19067,"Floyd, IA",C
+19069,"Franklin, IA",C
+19071,"Fremont, IA",C
+19073,"Greene, IA",C
+19075,"Grundy, IA",C
+19077,"Guthrie, IA",C
+19079,"Hamilton, IA",C
+19081,"Hancock, IA",C
+19083,"Hardin, IA",C
+19085,"Harrison, IA",C
+19087,"Henry, IA",C
+19089,"Howard, IA",C
+19091,"Humboldt, IA",C
+19093,"Ida, IA",C
+19095,"Iowa, IA",C
+19097,"Jackson, IA",C
+19099,"Jasper, IA",C
+19101,"Jefferson, IA",C
+19103,"Johnson, IA",C
+19105,"Jones, IA",C
+19107,"Keokuk, IA",C
+19109,"Kossuth, IA",C
+19111,"Lee, IA",C
+19113,"Linn, IA",C
+19115,"Louisa, IA",C
+19117,"Lucas, IA",C
+19119,"Lyon, IA",C
+19121,"Madison, IA",C
+19123,"Mahaska, IA",C
+19125,"Marion, IA",C
+19127,"Marshall, IA",C
+19129,"Mills, IA",C
+19131,"Mitchell, IA",C
+19133,"Monona, IA",C
+19135,"Monroe, IA",C
+19137,"Montgomery, IA",C
+19139,"Muscatine, IA",C
+19141,"O'Brien, IA",C
+19143,"Osceola, IA",C
+19145,"Page, IA",C
+19147,"Palo Alto, IA",C
+19149,"Plymouth, IA",C
+19151,"Pocahontas, IA",C
+19153,"Polk, IA",C
+19155,"Pottawattamie, IA",C
+19157,"Poweshiek, IA",C
+19159,"Ringgold, IA",C
+19161,"Sac, IA",C
+19163,"Scott, IA",C
+19165,"Shelby, IA",C
+19167,"Sioux, IA",C
+19169,"Story, IA",C
+19171,"Tama, IA",C
+19173,"Taylor, IA",C
+19175,"Union, IA",C
+19177,"Van Buren, IA",C
+19179,"Wapello, IA",C
+19181,"Warren, IA",C
+19183,"Washington, IA",C
+19185,"Wayne, IA",C
+19187,"Webster, IA",C
+19189,"Winnebago, IA",C
+19191,"Winneshiek, IA",C
+19193,"Woodbury, IA",C
+19195,"Worth, IA",C
+19197,"Wright, IA",C
+1911180,"Ames, IA",M
+1915460,"Burlington, IA-IL (IA part)",M
+1916140,"Carroll, IA",M
+1916300,"Cedar Rapids, IA",M
+1917540,"Clinton, IA",M
+1919340,"Davenport-Moline-Rock Island, IA-IL (IA part)",M
+1919780,"Des Moines-West Des Moines, IA",M
+1920220,"Dubuque, IA",M
+1921840,"Fairfield, IA",M
+1922700,"Fort Dodge, IA",M
+1922800,"Fort Madison-Keokuk, IA-IL-MO (IA part)",M
+1926980,"Iowa City, IA",M
+1932260,"Marshalltown, IA",M
+1932380,"Mason City, IA",M
+1934700,"Muscatine, IA",M
+1936540,"Omaha-Council Bluffs, NE-IA (IA part)",M
+1936820,"Oskaloosa, IA",M
+1936900,"Ottumwa, IA",M
+1937800,"Pella, IA",M
+1943580,"Sioux City, IA-NE-SD (IA part)",M
+1943980,"Spencer, IA",M
+1944020,"Spirit Lake, IA",M
+1944740,"Storm Lake, IA",M
+1947940,"Waterloo-Cedar Falls, IA",M
+1999999,"Nonmetropolitan, nonmicropolitan, IA",M
+19190001,"01 Region 1 - Dubuque WIB",W
+19190002,"02 Region 2 - Mason City WIB",W
+19190003,"03 Region 3 & 4 - Spencer WIB",W
+19190005,"05 Region 5 - Fort Dodge WIB",W
+19190006,"06 Region 6 - Marshalltown WIB",W
+19190007,"07 Region 7 - Waterloo WIB",W
+19190008,"08 Region 8 - Carroll WIB",W
+19190009,"09 Region 9 - Davenport WIB",W
+19190010,"10 Region 10 - Cedar Rapids WIB",W
+19190011,"11 Region 11 - Des Moines WIB",W
+19190012,"12 Region 12 - Sioux City WIB",W
+19190013,"13 Region 13 - Council Bluffs WIB",W
+19190014,"14 Region 14 - Creston WIB",W
+19190015,"15 Region 15 - Ottumwa WIB",W
+19190016,"16 Region 16 - Burlington WIB",W

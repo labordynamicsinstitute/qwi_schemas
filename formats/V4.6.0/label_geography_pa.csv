@@ -1,0 +1,130 @@
+﻿geography,label,geo_level
+42,"Pennsylvania",S
+42001,"Adams, PA",C
+42003,"Allegheny, PA",C
+42005,"Armstrong, PA",C
+42007,"Beaver, PA",C
+42009,"Bedford, PA",C
+42011,"Berks, PA",C
+42013,"Blair, PA",C
+42015,"Bradford, PA",C
+42017,"Bucks, PA",C
+42019,"Butler, PA",C
+42021,"Cambria, PA",C
+42023,"Cameron, PA",C
+42025,"Carbon, PA",C
+42027,"Centre, PA",C
+42029,"Chester, PA",C
+42031,"Clarion, PA",C
+42033,"Clearfield, PA",C
+42035,"Clinton, PA",C
+42037,"Columbia, PA",C
+42039,"Crawford, PA",C
+42041,"Cumberland, PA",C
+42043,"Dauphin, PA",C
+42045,"Delaware, PA",C
+42047,"Elk, PA",C
+42049,"Erie, PA",C
+42051,"Fayette, PA",C
+42053,"Forest, PA",C
+42055,"Franklin, PA",C
+42057,"Fulton, PA",C
+42059,"Greene, PA",C
+42061,"Huntingdon, PA",C
+42063,"Indiana, PA",C
+42065,"Jefferson, PA",C
+42067,"Juniata, PA",C
+42069,"Lackawanna, PA",C
+42071,"Lancaster, PA",C
+42073,"Lawrence, PA",C
+42075,"Lebanon, PA",C
+42077,"Lehigh, PA",C
+42079,"Luzerne, PA",C
+42081,"Lycoming, PA",C
+42083,"McKean, PA",C
+42085,"Mercer, PA",C
+42087,"Mifflin, PA",C
+42089,"Monroe, PA",C
+42091,"Montgomery, PA",C
+42093,"Montour, PA",C
+42095,"Northampton, PA",C
+42097,"Northumberland, PA",C
+42099,"Perry, PA",C
+42101,"Philadelphia, PA",C
+42103,"Pike, PA",C
+42105,"Potter, PA",C
+42107,"Schuylkill, PA",C
+42109,"Snyder, PA",C
+42111,"Somerset, PA",C
+42113,"Sullivan, PA",C
+42115,"Susquehanna, PA",C
+42117,"Tioga, PA",C
+42119,"Union, PA",C
+42121,"Venango, PA",C
+42123,"Warren, PA",C
+42125,"Washington, PA",C
+42127,"Wayne, PA",C
+42129,"Westmoreland, PA",C
+42131,"Wyoming, PA",C
+42133,"York, PA",C
+4210900,"Allentown-Bethlehem-Easton, PA-NJ (PA part)",M
+4211020,"Altoona, PA",M
+4214100,"Bloomsburg-Berwick, PA",M
+4214620,"Bradford, PA",M
+4216540,"Chambersburg-Waynesboro, PA",M
+4220180,"DuBois, PA",M
+4220700,"East Stroudsburg, PA",M
+4221500,"Erie, PA",M
+4223900,"Gettysburg, PA",M
+4225420,"Harrisburg-Carlisle, PA",M
+4226500,"Huntingdon, PA",M
+4226860,"Indiana, PA",M
+4227780,"Johnstown, PA",M
+4229540,"Lancaster, PA",M
+4230140,"Lebanon, PA",M
+4230260,"Lewisburg, PA",M
+4230380,"Lewistown, PA",M
+4230820,"Lock Haven, PA",M
+4232740,"Meadville, PA",M
+4235260,"New Castle, PA",M
+4235620,"New York-Newark-Jersey City, NY-NJ-PA (PA part)",M
+4236340,"Oil City, PA",M
+4237980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (PA part)",M
+4238300,"Pittsburgh, PA",M
+4239060,"Pottsville, PA",M
+4239740,"Reading, PA",M
+4241260,"St. Marys, PA",M
+4242380,"Sayre, PA",M
+4242540,"Scranton--Wilkes-Barre, PA",M
+4242780,"Selinsgrove, PA",M
+4243740,"Somerset, PA",M
+4244300,"State College, PA",M
+4244980,"Sunbury, PA",M
+4247620,"Warren, PA",M
+4248700,"Williamsport, PA",M
+4249620,"York-Hanover, PA",M
+4249660,"Youngstown-Warren-Boardman, OH-PA (PA part)",M
+4299999,"Nonmetropolitan, nonmicropolitan, PA",M
+420CE175,"175 Central PA WIA",W
+420LV070,"070 Lehigh Valley WIA",W
+420NC125,"125 North Central WIA",W
+420NE055,"055 Lackawanna County WIA",W
+420NE075,"075 Luzerne-Schuylkill Counties WIA",W
+420NE135,"135 Pocono Counties WIA",W
+420NT130,"130 Northern Tier WIA",W
+420NW145,"145 West Central Job Partnership WIA",W
+420NW170,"170 Northwest WIA",W
+420SA100,"100 Southern Alleghenies WIA",W
+420SC180,"180 South Central WIA",W
+420SE015,"015 Berks County WIA",W
+420SE020,"020 Bucks County WIA",W
+420SE030,"030 Chester County WIA",W
+420SE035,"035 Delaware County WIA",W
+420SE060,"060 Lancaster County WIA",W
+420SE080,"080 Montgomery County WIA",W
+420SE090,"090 Philadelphia County WIA",W
+420SW005,"005 Allegheny County WIA",W
+420SW045,"045 Westmoreland/Fayette WIA",W
+420SW095,"095 City of Pittsburgh WIA",W
+420SW110,"110 Tri-County WIA",W
+420SW165,"165 Southwest Corner WIA",W

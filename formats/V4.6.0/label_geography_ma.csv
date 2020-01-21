@@ -1,0 +1,40 @@
+﻿geography,label,geo_level
+25,"Massachusetts",S
+25001,"Barnstable, MA",C
+25003,"Berkshire, MA",C
+25005,"Bristol, MA",C
+25007,"Dukes, MA",C
+25009,"Essex, MA",C
+25011,"Franklin, MA",C
+25013,"Hampden, MA",C
+25015,"Hampshire, MA",C
+25017,"Middlesex, MA",C
+25019,"Nantucket, MA",C
+25021,"Norfolk, MA",C
+25023,"Plymouth, MA",C
+25025,"Suffolk, MA",C
+25027,"Worcester, MA",C
+2512700,"Barnstable Town, MA",M
+2514460,"Boston-Cambridge-Newton, MA-NH (MA part)",M
+2538340,"Pittsfield, MA",M
+2539300,"Providence-Warwick, RI-MA (MA part)",M
+2544140,"Springfield, MA",M
+2547240,"Vineyard Haven, MA",M
+2549340,"Worcester, MA-CT (MA part)",M
+2599999,"Nonmetropolitan, nonmicropolitan, MA",M
+25000001,"Berkshire County WIA",W
+25000002,"Franklin/Hampshire WIA",W
+25000003,"Hampden County WIA",W
+25000004,"North Central WIA",W
+25000005,"Central MA WIA",W
+25000006,"Greater Lowell WIA",W
+25000007,"Lower Merrimack Valley WIA",W
+25000008,"North Shore WIA",W
+25000009,"Metro North WIA",W
+25000010,"Boston WIA",W
+25000011,"Metro South/West WIA",W
+25000012,"South Shore WIA",W
+25000013,"Brockton WIA",W
+25000014,"Bristol County WIA",W
+25000015,"Greater New Bedford WIA",W
+25000016,"Cape & Islands WIA",W
