@@ -47,7 +47,7 @@ previousvintage=$(cd ..; ls -1d * | grep -E "V[0-9]" | tail -2 | head -1)
 
 
 echo "= LEHD Public Use Data Schema $numversion" > $asciifile
-echo "Lars Vilhuber <${author}>" >> $asciifile
+echo "<${author}>" >> $asciifile
 echo "$(date +%d\ %B\ %Y)
 // a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
 :ext-relative: {outfilesuffix}
@@ -111,7 +111,7 @@ This version reimplements some features from  V4.0. Many files compliant with LE
 
 Supersedes
 ----------
-This version supersedes ${previousvintage}, for files released as of R2019Q1.
+This version supersedes V4.4.0, for files released as of R2020Q1.
 
 Basic Schema
 ------------
@@ -499,7 +499,7 @@ do
   echo "[[$name]]
 ==== [[geolevel]] Geographic levels
 Geography labels for data files are provided in separate files, by scope. Each file 'label_geograpy_SCOPE.csv' may contain one or more types of records as flagged by <<geolevel,geo_level>>. For convenience, a composite file containing all geocodes is available as link:label_geography.csv[].
-The 2018 vintage of  https://www.census.gov/geo/maps-data/data/tiger-line.html[Census TIGER/Line geography] is used for all tabulations as of the R2019Q1 release.
+The 2019 vintage of https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html[Census TIGER/Line geography] is used for all tabulations as of the R2020Q1 release.
 
 
 Shapefiles are described in a link:lehd_shapefiles{ext-relative}[separate document].
@@ -677,7 +677,7 @@ include::tmp_$arg[]
 
 For instance, the metadata for the $versionvintage QWI release of
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g')
-(obtained from $versionurl/version_qwi.txt[here]) has  the following content:
+(the latest can be viewed $versionurl/version_qwi.txt[here]) has  the following content:
 --------------------------------
 " >> $asciifile
 # During the RC phase, this won't work, since it is not published yet
@@ -686,7 +686,7 @@ $(curl $versionurl/version_qwi.txt)
 --------------------------------
 Similarly, the metadata for the $versionj2jvintage release of
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') J2J
-tabulations (obtained from $versionj2jurl/version_j2j.txt[here]) has  the following content:
+tabulations (the latest can be viewed $versionj2jurl/version_j2j.txt[here]) has  the following content:
 --------------------------------
 $(curl $versionj2jurl/version_j2j.txt)
 --------------------------------
