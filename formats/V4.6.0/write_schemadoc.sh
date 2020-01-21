@@ -37,9 +37,9 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
-versionvintage=R2019Q4
+versionvintage=latest_release
 # versionj2jvintage=$versionvintage
-versionj2jvintage=R2018Q2
+versionj2jvintage=latest_release
 versionstate=de
 versionurl=https://lehd.ces.census.gov/data/qwi/${versionvintage}/${versionstate}
 versionj2jurl=https://lehd.ces.census.gov/data/j2j/${versionj2jvintage}/${versionstate}/j2j
@@ -675,16 +675,16 @@ The contents contains the following elements:
 include::tmp_$arg[]
 |===================================================
 
-For instance, the metadata for the $versionvintage QWI release of
+For instance, the metadata for a recent QWI release of 
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g')
-(the latest can be viewed $versionurl/version_qwi.txt[here]) has  the following content:
+(the latest can be viewed $versionurl/version_qwi.txt[here]) has the following content:
 --------------------------------
 " >> $asciifile
 # During the RC phase, this won't work, since it is not published yet
 echo "
 $(curl $versionurl/version_qwi.txt)
 --------------------------------
-Similarly, the metadata for the $versionj2jvintage release of
+Similarly, the metadata for a recent release of 
 $(grep -E "^$versionstate," naming_geohi.csv | awk  -F, ' { print $2 } ' | sed 's/"//g') J2J
 tabulations (the latest can be viewed $versionj2jurl/version_j2j.txt[here]) has  the following content:
 --------------------------------
