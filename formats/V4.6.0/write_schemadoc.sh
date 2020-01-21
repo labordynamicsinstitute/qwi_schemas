@@ -37,7 +37,7 @@ sed 's/  /,/g;s/R N/R,N/; s/,,/,/g; s/,,/,/g; s/,,/,/g; s/, /,/g' column_definit
 # create ascii doc version
 asciifile=lehd_public_use_schema.asciidoc
 # this revision is used to dynamically download a sample for the version.txt. should be available for both QWI and J2J
-versionvintage=R2020Q1
+versionvintage=R2019Q4
 # versionj2jvintage=$versionvintage
 versionj2jvintage=R2018Q2
 versionstate=de
